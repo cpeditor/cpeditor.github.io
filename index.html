@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png"/>
+        <title>CP Editor: Competitive Programmer's Editor</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav justify-content-center">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"> <a class="nav-link" href="#aboutEditor">About</a></li> 
+									<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" id="download_windows">Windows</a></li>
+										<li class="nav-item"><a class="nav-link" id="download_mac">MacOS</a></li>
+										<li class="nav-item"><a class="nav-link" id="download_linux">Linux</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item"><a class="nav-link" href="https://github.com/cpeditor/cp-editor/blob/master/LICENSE">Software License</a></li> 								
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="nav-item"><a href="https://t.me/cpeditor" class="tickets_btn">Join Community</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="banner_content">
+								<h2>The Missing Editor <br />for Competitive Programmers</h2>
+								<p>CP Editor is specially designed for competitive programming. It helps you focus on your algorithm and automates the compilation, execution and testing. It even fetches test cases for you from different platforms and submits solution to Codeforces!</p>
+								<a class="banner_btn" href="https://github.com.com/cpeditor/cp-editor">View source</a>
+								<a class="banner_btn2" id="download_by_os" href="https://github.com/cpeditor/cp-editor/releases/latest">Download</a>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="home_left_img">
+								<img class="img-fluid" src="img/banner/home-left-1.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Work Area =================-->
+        <section class="work_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>How It work for you</h2>
+        			<p>CP Editor elimates all the repetitive and boring tasks that you have to do during a contest, it automates all the automatable task allowing you to only foucs on your code</p>
+        		</div>
+        		<div class="work_inner row">
+        			<div class="col-lg-4">
+        				<div class="work_item">
+        					<i class="lnr lnr-screen"></i>
+        					<a><h4>Fetch testcases</h4></a>
+        					<p>CP Editor can fetch testcase automatically from almost all competitive programming sites. Say bye to copy error-prone pasting</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="work_item">
+        					<i class="lnr lnr-code"></i>
+        					<a><h4>Code faster</h4></a>
+        					<p>Code faster with its amazing code snippets. In just two seconds you can insert a whole DFS code into your editor. Hey but don't plagiarise!</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="work_item">
+        					<i class="lnr lnr-clock"></i>
+        					<a href="#"><h4>Get verdicts</h4></a>
+        					<p>You can get verdicts for your sample testcases, We have also provided for you ways to add your own checker or choose one from testlib.h</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Work Area =================-->
+        
+        <!--================Made Life Area =================-->
+        <section class="made_life_area p_120">
+        	<div class="container">
+        		<div class="made_life_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+						<a class="nav-link" id="home-tab" data-toggle="tab" href="#easyUse" role="tab" aria-controls="home" aria-selected="true">Easy to use</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#themes" role="tab" aria-controls="profile" aria-selected="false">Variety of Themes</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link active" id="contact-tab" data-toggle="tab" href="#customizable" role="tab" aria-controls="contact" aria-selected="false">Highly Customizable</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" id="edge-tab" data-toggle="tab" href="#codeforces" role="tab" aria-controls="edge" aria-selected="false">Submit to Codeforces</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade" id="easyUse" role="tabpanel" aria-labelledby="home-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>We’ve made it <br />Easy to use</h3>
+										<h6>We believe ease of use is as imporatant as product itself</h6>
+										<p>So we designed the editor and every component with ease of use in mind. No hidden settings and no complex setups, All you need is a compiler and everything is just a click away.</p>
+										<a class="main_btn" href="#">Get Started Now</a>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="img/simple.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="themes" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Dark themes? <br />We got you covered</h3>
+										<h6>Our lives are colorful, why not our coding editor</h6>
+										<p>We have added five different themes for you to choose from Light, Drakula, Monkai, Solarised and Solarised Dark. If that does not satisfies you, ask us on our community and we will provide you more.</p>
+										<a class="main_btn" href="#">Get Started Now</a>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="img/themes.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade show active" id="customizable" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Why change your habits?<br />We can change the shortcuts</h3>
+										<h6>So you were used to some other editor that had some keybinding</h6>
+										<p>We understand that getting used to new keybindings are more difficult than getting used to a new language, So we have added options for you to choose your own keybindings for all actions in the editor.</p>
+										<a class="main_btn" href="#">Get Started Now</a>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="img/customizable.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="codeforces" role="tabpanel" aria-labelledby="edge-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>We can submit your <br/>Solutions to Codeforces</h3>
+										<h6>All thanks to Competitive Programming Community</h6>
+										<p>We have gathered all the best tools in competitive programming and merged it into one Editor. One such tool named CFTools, allows you to submit your solutions to Codeforces and get verdicts. We have added it's support in the editor.</p>
+										<a class="main_btn" href="#">Get Started Now</a>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="img/codeforces.jfif" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Made Life Area =================-->
+        
+        <!--================Screen Area =================-->
+        <section class="screen_area text-center p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Unique Screens that work perfectly</h2>
+        			<p> We have made a simple yet powerful UI that shouldn't confuse you when solving problems <br> Everything you need is always in front of your eyes</p>
+        		</div>
+        		<img class="img-fluid" src="img/banner/home-center-2.jpg" alt="">
+        	</div>
+        </section>
+        <!--================End Screen Area =================-->
+        
+        <!--================Testimonials Area =================-->
+        <section class="testimonials_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Feedback from Community</h2>
+        			<p>Our Community keeps us alive, Supports us and we love to hear their feedback <br> See what other Competitive Programmer's have to say about the our editor</p>
+        		</div>
+        		<div class="testi_slider owl-carousel">
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<!-- Ashar should add a round png of his image -->
+									<img src="img/testimonials/testi-5.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>I just Love CP Editor, it gets all my Competitive Programming stuff done very quickly and efficiently. One of the thing I like the most is ability to submit to codeforces directly from within the editor.</p>
+									<h4>Ashar Khan</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<!-- Yatharth should add a round png of his image -->
+									<img src="img/testimonials/testi-5.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Yatharh, please add your testimonials here. Ctrl + F to find me at index.html  your testimonials should be exactly 3 lines on website. Keep it simple and consice</p>
+									<h4>Yatharth Varma</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<!-- Ouuan should add a round png of his image -->
+									<img src="img/testimonials/testi-1.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Ouuan should add his testimonials here. Ctrl+f to find in index.html your testimonials should be exactly 3 lines on website. Keep it simple and consice</p>
+									<h4>Ouuan</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-2.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-1.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="testi_item">
+							<div class="media">
+								<div class="d-flex">
+									<img src="img/testimonials/testi-2.png" alt="">
+								</div>
+								<div class="media-body">
+									<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+									<h4>Mark Alviro Wiens</h4>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Testimonials Area =================-->
+        
+        <!--================Made Life Area =================-->
+        <section class="made_life_area made_white p_120">
+        	<div class="container">
+        		<div class="made_life_inner">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="img/banner/home-left-2.png" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Full support for<br />C/C++, Java and Python</h3>
+								<h6>Technically you can run all languages in the editor</h6>
+								<p>We officially support three languages in the editor. It really get's exciting when we give you opportunity to use different language in different tab with same one-click run options.</p>
+								<a class="main_btn" href="#">Get Started Now</a>
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Made Life Area =================-->
+        
+        <!--================Impress Area =================-->
+        <section class="impress_area p_120">
+        	<div class="container">
+        		<div class="impress_inner">
+					<h2>Got Impressed to our features?</h2>
+					<p>We are excited that you have chosen to try this editor. <br> We hope that our Editor will fulfill all your needs in Competitive Programming. <br> CP Editor is, "by the competitive programmers, to the competitive programmers, for the competitive programmers".</p>
+					<a class="banner_btn2" id = "download_by_os_bottom" href="https://github.com/cpeditor/cp-editor/releases/latest">Try it now</a>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Impress Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3 id="aboutEditor">About CP Editor</h3>
+        					</div>
+        					<p>CP Editor is a native Qt-based code editor. It's specially designed for competitive programming, unlike other editors/IDEs which are mainly for developers!</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+					</div>
+					
+					<!-- Uncomment and use in future -->
+
+        			<!-- <div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+					</div> -->
+					
+        			<!-- <div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Us</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        					</ul>
+        				</aside>
+					</div> -->
+					
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <!--gmaps Js-->
+        <script src="js/gmaps.min.js"></script>
+		<script src="js/theme.js"></script>
+		<script src="js/api/downloads.js"></script>
+    </body>
+</html>
