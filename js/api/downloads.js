@@ -50,7 +50,7 @@ function fetch_latest_release() {
             }
             if (release.name.endsWith(".AppImage")) {
                 document.getElementById('download_linux').setAttribute('href', release.browser_download_url)
-                if (os === "Windows") directUrl = release.browser_download_url
+                if (os === "Linux") directUrl = release.browser_download_url
             }
         });
 
