@@ -194,6 +194,18 @@
 	.price_inner{
 		margin-bottom: -30px;
 	}
+
+	.media{
+		flex-direction: column;
+	}
+	.testi_item{
+		height: 460px;
+	}
+	.testi_item .media .d-flex{
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+	
 }
 @media (max-width:767px){
 	.home_banner_area {
