@@ -2822,15 +2822,13 @@ h6 {
     transition: all 300ms linear 0s; }
     .testi_item .media .d-flex {
       width: 140px;
-      height: 130px;
       border-radius: 50%;
       margin-top: 8px;
       }
       
-      .yatharth{
-        background: url(../img/testimonials/yatharth.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+      .img-circular{
+        border-radius: 50%;
+        object-fit: cover;
       }
 
       .media-body{
