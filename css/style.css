@@ -93,7 +93,8 @@ button:focus {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px; } }
+    max-width: 1170px; }
+  }
 
 @media (min-width: 1620px) {
   .box_1620 {
@@ -2817,7 +2818,13 @@ h6 {
     background: #fff;
     transition: all 300ms linear 0s; }
     .testi_item .media .d-flex {
-      padding-right: 25px; }
+      width: 150px;
+      height: 130px;
+      padding-right: 20px; }
+      .testi_item .media .d-flex img{
+        width: 100%;
+        height: 100%;
+      }
     .testi_item .media .media-body p {
       margin-bottom: 20px; }
     .testi_item .media .media-body h4 {
