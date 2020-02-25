@@ -2816,14 +2816,27 @@ h6 {
 }
   .testi_item .media {
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
     height: 100%;
     background: #fff;
     transition: all 300ms linear 0s; }
     .testi_item .media .d-flex {
-      width: 150px;
+      width: 140px;
       height: 130px;
-      padding-right: 20px; }
+      border-radius: 50%;
+      margin-top: 8px;
+      }
+      
+      .yatharth{
+        background: url(../img/testimonials/yatharth.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .media-body{
+        padding: 8px 10px!important;
+      }
+
       .testi_item .media .d-flex img{
         width: 100%;
         height: 100%;
