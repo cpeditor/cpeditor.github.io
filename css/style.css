@@ -58,7 +58,9 @@ a {
 
 .row.m0 {
   margin: 0px; }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   line-height: 24px;
   font-size: 14px;
