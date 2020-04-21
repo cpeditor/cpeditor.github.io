@@ -58,13 +58,6 @@ description = "The IDE for competitive programming"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "Goldydocs"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
 [languages.zh]
 title = "CP Editor"
 description = "专为算法竞赛设计的 IDE"
@@ -104,6 +97,7 @@ url_latest_version = "https://github.com/cpeditor/cpeditor/releases/latest"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/cpeditor/cpeditor.github.io"
+github_branch = "hugo"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 github_project_repo = "https://github.com/cpeditor/cpeditor"
 
