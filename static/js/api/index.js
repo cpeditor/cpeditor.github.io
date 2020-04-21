@@ -22,13 +22,13 @@ function getOS() {
 }
 
 function fetch_latest_release() {
-    let uri = 'https://api.github.com/repos/cpeditor/cp-editor/releases/latest'
+    let uri = 'https://api.github.com/repos/cpeditor/cpeditor/releases/latest'
 
     fetch(uri)
         .then(res => res.json())
         .then((data) => {
             os = getOS()
-            let directUrl = 'https://github.com/cpeditor/cp-editor/releases/latest'
+            let directUrl = uri
 
             data.assets.forEach(release => {
                 if (release.name.endsWith(".exe")) {
