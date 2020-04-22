@@ -31,6 +31,29 @@ function versionCompare(v1, v2) {
     return 0;
 }
 
+function getOS() {
+    var userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        os = null;
+
+    if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'Mac OS';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'iOS';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'Windows';
+    } else if (/Android/.test(userAgent)) {
+        os = 'Android';
+    } else if (!os && /Linux/.test(platform)) {
+        os = 'Linux';
+    }
+
+    return os;
+}
+
 function fetch_releases() {
     let uri = 'https://api.github.com/repos/cpeditor/cpeditor/releases'
 
@@ -54,13 +77,17 @@ function fetch_releases() {
                     }
                 }
             });
+            var os = getOS();
             latestStable.assets.forEach(asset => {
                 if (asset.name.endsWith(".exe")) {
-                    $('#download_windows_stable').attr('href', asset.browser_download_url)
+                    $('#download_windows_stable').attr('href', asset.browser_download_url);
+                    if (os == "Windows") $('#platform-download').html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Windows</a>.');
                 } else if (asset.name.endsWith(".AppImage")) {
-                    $('#download_linux_stable').attr('href', asset.browser_download_url)
+                    $('#download_linux_stable').attr('href', asset.browser_download_url);
+                    if (os == "Linux") $('#platform-download').html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Linux</a>.');
                 } else if (asset.name.endsWith(".dmg")) {
-                    $('#download_macos_stable').attr('href', asset.browser_download_url)
+                    $('#download_macos_stable').attr('href', asset.browser_download_url);
+                    if (os == "Mac OS") $('#platform-download').html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on macOS</a>.');
                 }
             });
             latestBeta.assets.forEach(asset => {
