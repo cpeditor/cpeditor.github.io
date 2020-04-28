@@ -1,4 +1,3 @@
-
 ---
 title: "Main Window"
 linkTitle: "Main Window"

@@ -1,4 +1,3 @@
-
 ---
 title: "Install from binaries"
 linkTitle: "Install from binaries"

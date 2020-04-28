@@ -1,4 +1,3 @@
-
 ---
 title: "Use Artifacts"
 linkTitle: "Use Artifacts"
