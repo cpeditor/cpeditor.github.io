@@ -4,7 +4,9 @@
   "description": "Hugo theme for technical documentation.",
   "main": "none.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix-md-format": "remark content -o",
+    "check-md-format": "remark content -f"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,16 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.4.6",
-    "postcss-cli": "^5.0.1"
+    "postcss-cli": "^5.0.1",
+    "remark-cli": "^8.0.0",
+    "remark-frontmatter": "^2.0.0",
+    "remark-lint": "^7.0.0",
+    "remark-preset-lint-recommended": "^4.0.0"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      "remark-frontmatter"
+    ]
   }
 }
