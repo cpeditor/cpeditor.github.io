@@ -1,0 +1,30 @@
+name: "Check Markdown Format"
+
+on: [push, pull_request]
+
+jobs:
+  format:
+    name: "Check Markdown Format"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '13.x'
+    - run: npm install
+    - name: Check format
+      run: npm run check-md-format
+    - name: Fix format
+      if: failure()
+      run: npm run fix-md-format
+    - name: Create Pull Request
+      if: failure()
+      uses: peter-evans/create-pull-request@v2
+      with:
+        commit-message: "style: Format Markdown files"
+        title: "Format Markdown files for ${{ github.ref }}"
+        labels: "style"
+        assignees: "${{ github.actor }}"
+        reviewers: "${{ github.actor }}"
+        branch: 'auto-pr/remark-lint/${{ github.ref }}'
