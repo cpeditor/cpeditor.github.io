@@ -1,9 +1,10 @@
 ---
 title: "CP Editor Blog"
 linkTitle: "Blog"
-menu:
-  main:
-    weight: 30
+# Hide from the navbar until we have blog posts
+# menu:
+#   main:
+#     weight: 30
 ---
 
 
