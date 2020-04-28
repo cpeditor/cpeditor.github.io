@@ -61,7 +61,7 @@ a {
 html {
   scroll-behavior: smooth;
 }
-body {
+.td-main {
   line-height: 24px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
