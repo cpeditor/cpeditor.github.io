@@ -1,12 +1,12 @@
-name: "Build Test"
+name: "Deploy"
 
 on:
-  pull_request:
+  push:
     branches:
     - hugo
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -26,3 +26,10 @@ jobs:
       run: |
         git config --global core.quotePath false
         hugo --minify
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: master
+        commit_message: ${{ github.event.head_commit.message }}
