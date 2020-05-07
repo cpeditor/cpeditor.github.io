@@ -27,4 +27,4 @@ jobs:
     - name: Build Site
       run: |
         git config --global core.quotePath false
-        hugo --minify
+        HUGO_ENV=production hugo --minify
