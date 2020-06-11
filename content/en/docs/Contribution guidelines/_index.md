@@ -7,7 +7,7 @@ description: Read this for gettings started with contribution to CP Editor
 
 ## Welcome!
 
-You are here to help CP Editor? Awesome, feel free and read the following sections in order to know how to work on something and where to get help from. Your contribution matters a lot, CP Editor is getting better and better because of people like you. :smile:
+You are here to help CP Editor? Awesome, feel free and read the following sections in order to know how to work on something and where to get help from. Your contribution matters a lot, CP Editor is getting better and better because of people like you.
 
 ## What kinds of contributions are we looking for?
 
@@ -54,7 +54,7 @@ Please open an issue (describe the feature/bug like normal issues, and say that 
 -   Can I do it well if I've just started?
     -   Everyone knows nothing at the beginning. Don't worry, our cool contributors will help you when you meet difficulties. If you :heart: open source and keep trying, everything will be better and better.
 -   Do I need to learn about CMake?
-    -   No, you only need to know how to [build from source](https://github.com/cpeditor/cpeditor/blob/master/doc/INSTALL.md#Build-from-source).
+    -   No, you only need to know how to [build from source](https://cpeditor.github.io/docs/installation/build-from-source/).
 -   How to add a setting?
     -   You only have to edit [settings.json](https://github.com/cpeditor/cpeditor/blob/master/src/Settings/settings.json) and [PreferencesWindow.cpp](https://github.com/cpeditor/cpeditor/blob/master/src/Settings/PreferencesWindow.cpp). You can refer to other settings.
 -   Some files are missing when compiling.
