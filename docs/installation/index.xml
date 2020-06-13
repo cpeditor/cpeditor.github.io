@@ -14,7 +14,7 @@
 &lt;span style="color:#204a87">cd&lt;/span> cpeditor
 &lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
-&lt;p>Install &lt;a href="https://www.qt.io/download" target="_blank">Qt&lt;/a> (5.12 or higher), &lt;a href="https://cmake.org/download/" target="_blank">CMake&lt;/a> (3.12 or higher) and &lt;a href="https://www.python.org/downloads/" target="_blank">Python3&lt;/a>.&lt;/p>
+&lt;p>Install &lt;a href="https://www.qt.io/download" target="_blank">Qt&lt;/a> (5.14 or higher), &lt;a href="https://cmake.org/download/" target="_blank">CMake&lt;/a> (3.12 or higher) and &lt;a href="https://www.python.org/downloads/" target="_blank">Python3&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>On some Linux distributions and MacOS, you can install from your package manager. For example, &lt;code>sudo pacman -S qt5&lt;/code> on Arch Linux, &lt;code>brew install qt5&lt;/code> on Mac OS.&lt;/li>
 &lt;li>You can also download the &lt;a href="https://www.qt.io/offline-installers" target="_blank">offline installer&lt;/a>, or download from the &lt;a href="https://download.qt.io/static/mirrorlist/" target="_blank">mirrors&lt;/a>. The path from the root of the mirror should be like &lt;code>/qt/official_releases/qt/5.14/5.14.2/qt-opensource-&amp;lt;platform&amp;gt;-5.14.2.&amp;lt;suffix&amp;gt;&lt;/code> (or other versions).&lt;/li>
@@ -55,4 +55,4 @@ cmake --build . --config Release
 &lt;p>There are two AUR packages for CP Editor: &lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank">cpeditor&lt;/a> for the stable version and &lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank">cpeditor-git&lt;/a> for the alpha version.&lt;/p>
 &lt;p>Just like installing other packages from AUR, you need an AUR helper, if you don&amp;rsquo;t have one, you can install yay by &lt;code>sudo pacman -S yay&lt;/code>.&lt;/p>
 &lt;p>Then, run either &lt;code>yay -S cpeditor&lt;/code> or &lt;code>yay -S cpeditor-git&lt;/code>, choose the default options, and wait until the build finishes.&lt;/p>
-&lt;p>After the installation, you&amp;rsquo;ll be able to run CP Editor by &lt;code>cpeditor&lt;/code> in your terminal.&lt;/p></description></item></channel></rss>
+&lt;p>After the installation, you&amp;rsquo;ll be able to run CP Editor by &lt;code>cpeditor&lt;/code> in your terminal or launch from Menu like other apps.&lt;/p></description></item></channel></rss>
