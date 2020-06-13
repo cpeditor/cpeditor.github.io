@@ -2,7 +2,7 @@
 title: "Contribution Guidelines"
 linkTitle: "Contribution Guidelines"
 weight: 100
-description: How to make contributions 
+description: How to make contributions
 ---
 
 ## Welcome!
