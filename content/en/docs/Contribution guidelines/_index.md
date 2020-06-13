@@ -2,7 +2,7 @@
 title: "Contribution Guidelines"
 linkTitle: "Contribution Guidelines"
 weight: 100
-description: Read this for gettings started with contribution to CP Editor 
+description: How to make contributions 
 ---
 
 ## Welcome!
