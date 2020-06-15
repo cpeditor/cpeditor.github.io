@@ -5,6 +5,17 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
+    {
+      "login": "ouuan",
+      "name": "Yufan You",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/30581822?v=4",
+      "profile": "https://ouuan.github.io",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance"
+      ]
+    }
   ],
   "contributorsPerLine": 6,
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg)](#contributors-sparkles)",
