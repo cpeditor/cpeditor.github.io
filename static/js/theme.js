@@ -1,12 +1,12 @@
-;(function($){
-    "use strict"
+((function($){
+    "use strict";
 	
 	/*----------------------------------------------------*/
     /*  Testimonials Slider
     /*----------------------------------------------------*/
-    function testimonials_slider(){
-        if ( $('.testi_slider').length ){
-            $('.testi_slider').owlCarousel({
+    function testimonialsSlider(){
+        if ( $(".testi_slider").length ){
+            $(".testi_slider").owlCarousel({
                 loop:true,
                 margin: 30,
                 items: 2,
@@ -23,9 +23,10 @@
                         items: 2,
                     },
                 }
-            })
+            });
         }
     }
-    testimonials_slider();
 
-})(jQuery)
+    testimonialsSlider();
+
+})(jQuery));
