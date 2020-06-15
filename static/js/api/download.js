@@ -1,6 +1,6 @@
 function versionCompare(v1, v2) {
-    var v1parts = v1.split('.');
-    var v2parts = v2.split('.');
+    var v1parts = v1.split(".");
+    var v2parts = v2.split(".");
 
     function isValidPart(x) {
         return (/^\d+$/).test(x);
@@ -10,8 +10,13 @@ function versionCompare(v1, v2) {
         return NaN;
     }
 
-    while (v1parts.length < v2parts.length) v1parts.push("0");
-    while (v2parts.length < v1parts.length) v2parts.push("0");
+    while (v1parts.length < v2parts.length) {
+        v1parts.push("0");
+    }
+
+    while (v2parts.length < v1parts.length) {
+        v2parts.push("0");
+    }
 
     v1parts = v1parts.map(Number);
     v2parts = v2parts.map(Number);
@@ -47,7 +52,7 @@ function getOS() {
         os = 'Windows';
     } else if (/Android/.test(userAgent)) {
         os = 'Android';
-    } else if (!os && /Linux/.test(platform)) {
+    } else if (/Linux/.test(platform)) {
         os = 'Linux';
     }
 
@@ -58,48 +63,48 @@ function fetch_releases() {
     let uri = 'https://api.github.com/repos/cpeditor/cpeditor/releases'
 
     fetch(uri)
-        .then(res => res.json())
+        .then((res) => res.json())
         .then((data) => {
-            var latestStableVersion = '0.0.0',
+            var latestStableVersion = "0.0.0",
                 latestStable,
-                latestBetaVersion = '0.0.0',
+                latestBetaVersion = "0.0.0",
                 latestBeta;
             data.forEach(release => {
                 if (release.prerelease) {
-                    if (versionCompare(release.tag_name, latestBetaVersion) == 1) {
+                    if (versionCompare(release.tag_name, latestBetaVersion) === 1) {
                         latestBetaVersion = release.tag_name,
-                        latestBeta = release
+                        latestBeta = release;
                     }
                 } else {
-                    if (versionCompare(release.tag_name, latestStableVersion) == 1) {
+                    if (versionCompare(release.tag_name, latestStableVersion) === 1) {
                         latestStableVersion = release.tag_name,
-                        latestStable = release
+                        latestStable = release;
                     }
                 }
             });
             var os = getOS();
             latestStable.assets.forEach(asset => {
                 if (asset.name.endsWith(".exe")) {
-                    $('#download_windows_stable').attr('href', asset.browser_download_url);
-                    if (os == "Windows") $('#platform-download').html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Windows</a>.');
+                    $("#download_windows_stable").attr("href", asset.browser_download_url);
+                    if (os == "Windows") $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Windows</a>.');
                 } else if (asset.name.endsWith(".AppImage")) {
-                    $('#download_linux_stable').attr('href', asset.browser_download_url);
-                    if (os == "Linux") $('#platform-download').html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Linux</a>.');
+                    $("#download_linux_stable").attr('href', asset.browser_download_url);
+                    if (os == "Linux") $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Linux</a>.');
                 } else if (asset.name.endsWith(".dmg")) {
-                    $('#download_macos_stable').attr('href', asset.browser_download_url);
-                    if (os == "Mac OS") $('#platform-download').html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on macOS</a>.');
+                    $("#download_macos_stable").attr('href', asset.browser_download_url);
+                    if (os == "Mac OS") $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on macOS</a>.');
                 }
             });
             latestBeta.assets.forEach(asset => {
                 if (asset.name.endsWith(".exe")) {
-                    $('#download_windows_beta').attr('href', asset.browser_download_url)
+                    $("#download_windows_beta").attr('href', asset.browser_download_url);
                 } else if (asset.name.endsWith(".AppImage")) {
-                    $('#download_linux_beta').attr('href', asset.browser_download_url)
+                    $("#download_linux_beta").attr('href', asset.browser_download_url);
                 } else if (asset.name.endsWith(".dmg")) {
-                    $('#download_macos_beta').attr('href', asset.browser_download_url)
+                    $("#download_macos_beta").attr('href', asset.browser_download_url);
                 }
             });
         })
 }
 
-fetch_releases()
+fetch_releases();
