@@ -1,4 +1,4 @@
-(function($){
+((function($){
     "use strict";
 	
 	/*----------------------------------------------------*/
@@ -29,4 +29,4 @@
 
     testimonialsSlider();
 
-})(jQuery);
+})(jQuery));

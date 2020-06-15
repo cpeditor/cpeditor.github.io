@@ -60,7 +60,7 @@ function getOS() {
 }
 
 function fetch_releases() {
-    let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases"
+    let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases";
 
     fetch(uri)
         .then((res) => res.json())
@@ -87,17 +87,17 @@ function fetch_releases() {
                 if (asset.name.endsWith(".exe")) {
                     $("#download_windows_stable").attr("href", asset.browser_download_url);
                     if (os === "Windows") {
-                        $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Windows</a>.');
+                        $("#platform-download").html("You probably want to use <a class=\"text-light\" href=\"" + asset.browser_download_url + "\">the latest stable version on Windows</a>.");
                     }
                 } else if (asset.name.endsWith(".AppImage")) {
                     $("#download_linux_stable").attr("href", asset.browser_download_url);
                     if (os === "Linux") {
-                        $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Linux</a>.');
+                        $("#platform-download").html("You probably want to use <a class=\"text-light\" href=\"" + asset.browser_download_url + "\">the latest stable version on Linux</a>.");
                     }
                 } else if (asset.name.endsWith(".dmg")) {
                     $("#download_macos_stable").attr("href", asset.browser_download_url);
                     if (os === "Mac OS") {
-                        $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on macOS</a>.');
+                        $("#platform-download").html("You probably want to use <a class=\"text-light\" href=\"" + asset.browser_download_url + "\">the latest stable version on macOS</a>.");
                     }
                 }
             });

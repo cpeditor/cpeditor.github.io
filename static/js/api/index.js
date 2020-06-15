@@ -22,7 +22,7 @@ function getOS() {
 }
 
 function fetch_latest_release() {
-    let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases/latest"
+    let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases/latest";
 
     fetch(uri)
         .then(res => res.json())
