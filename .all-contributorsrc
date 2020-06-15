@@ -11,9 +11,9 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/30581822?v=4",
       "profile": "https://ouuan.github.io",
       "contributions": [
+        "maintenance",
         "code",
         "doc",
-        "maintenance",
         "review",
         "infra"
       ]
@@ -24,9 +24,18 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/22212259?v=4",
       "profile": "https://github.com/coder3101",
       "contributions": [
-        "doc",
         "maintenance",
+        "doc",
         "review"
+      ]
+    },
+    {
+      "login": "kidonng",
+      "name": "Kid",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/44045911?v=4",
+      "profile": "https://xuann.wang",
+      "contributions": [
+        "doc"
       ]
     }
   ],
