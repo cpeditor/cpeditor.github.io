@@ -40,7 +40,7 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/44045911?v=4",
       "profile": "https://xuann.wang",
       "contributions": [
-        "doc"
+        "content"
       ]
     },
     {
@@ -63,6 +63,15 @@
         "code",
         "design",
         "content"
+      ]
+    },
+    {
+      "login": "shakeabi",
+      "name": "Abishake",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/36559835?v=4",
+      "profile": "http://abishake.co",
+      "contributions": [
+        "bug"
       ]
     }
   ],
