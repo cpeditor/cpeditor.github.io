@@ -3,7 +3,7 @@
 ![Deploy status](https://github.com/cpeditor/cpeditor.github.io/workflows/Deploy/badge.svg?branch=hugo)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg)](#contributors-sparkles)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg)](#contributors-sparkles)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the official website of [CP Editor](https://github.com/cpeditor/cpeditor).
@@ -33,6 +33,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </td>
     <td align="center">
       <a href="https://github.com/yatharth1706"><img src="https://avatars2.githubusercontent.com/u/32243289?v=4" width="100px;" alt=""/></a><br /><a href="https://yatharth1706.github.io/"><sub><b>Yatharth Verma</b></sub></a><br /><a href="https://github.com/cpeditor/cpeditor.github.io/commits?author=yatharth1706" title="Code">💻</a> <a href="#design-yatharth1706" title="Design">🎨</a> <a href="#content-yatharth1706" title="Content">🖋</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/shakeabi"><img src="https://avatars2.githubusercontent.com/u/36559835?v=4" width="100px;" alt=""/></a><br /><a href="http://abishake.co"><sub><b>Abishake</b></sub></a><br /><a href="https://github.com/cpeditor/cpeditor.github.io/issues?q=author%3Ashakeabi" title="Bug reports">🐛</a>
     </td>
   </tr>
 </table>
