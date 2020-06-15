@@ -14,6 +14,8 @@
         "maintenance",
         "code",
         "doc",
+        "design",
+        "content",
         "review",
         "infra"
       ]
@@ -26,6 +28,8 @@
       "contributions": [
         "maintenance",
         "doc",
+        "design",
+        "content",
         "review"
       ]
     },
@@ -36,6 +40,17 @@
       "profile": "https://xuann.wang",
       "contributions": [
         "doc"
+      ]
+    },
+    {
+      "login": "nitishk72",
+      "name": "Nitish Kumar Singh",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/15886737?v=4",
+      "profile": "https://www.youtube.com/c/NitishKumarSingh",
+      "contributions": [
+        "code",
+        "design",
+        "content"
       ]
     }
   ],
