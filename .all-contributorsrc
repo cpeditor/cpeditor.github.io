@@ -13,7 +13,9 @@
       "contributions": [
         "code",
         "doc",
-        "maintenance"
+        "maintenance",
+        "review",
+        "infra"
       ]
     }
   ],
