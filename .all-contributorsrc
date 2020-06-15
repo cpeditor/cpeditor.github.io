@@ -27,6 +27,7 @@
       "profile": "https://github.com/coder3101",
       "contributions": [
         "maintenance",
+        "code",
         "doc",
         "design",
         "content",
@@ -47,6 +48,17 @@
       "name": "Nitish Kumar Singh",
       "avatar_url": "https://avatars2.githubusercontent.com/u/15886737?v=4",
       "profile": "https://www.youtube.com/c/NitishKumarSingh",
+      "contributions": [
+        "code",
+        "design",
+        "content"
+      ]
+    },
+    {
+      "login": "yatharth1706",
+      "name": "Yatharth Verma",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/32243289?v=4",
+      "profile": "https://yatharth1706.github.io/",
       "contributions": [
         "code",
         "design",
