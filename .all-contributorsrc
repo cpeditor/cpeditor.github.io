@@ -11,11 +11,22 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/30581822?v=4",
       "profile": "https://ouuan.github.io",
       "contributions": [
+        "maintenance",
         "code",
         "doc",
-        "maintenance",
         "review",
         "infra"
+      ]
+    },
+    {
+      "login": "coder3101",
+      "name": "Ashar",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22212259?v=4",
+      "profile": "https://github.com/coder3101",
+      "contributions": [
+        "maintenance",
+        "doc",
+        "review"
       ]
     },
     {
