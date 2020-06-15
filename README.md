@@ -20,7 +20,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/ouuan"><img src="https://avatars2.githubusercontent.com/u/30581822?v=4" width="100px;" alt=""/></a><br /><a href="https://ouuan.github.io"><sub><b>Yufan You</b></sub></a><br /><a href="https://github.com/cpeditor/cpeditor.github.io/commits?author=ouuan" title="Code">💻</a> <a href="https://github.com/cpeditor/cpeditor.github.io/commits?author=ouuan" title="Documentation">📖</a> <a href="#maintenance-ouuan" title="Maintenance">🚧</a>
+      <a href="https://github.com/ouuan"><img src="https://avatars2.githubusercontent.com/u/30581822?v=4" width="100px;" alt=""/></a><br /><a href="https://ouuan.github.io"><sub><b>Yufan You</b></sub></a><br /><a href="https://github.com/cpeditor/cpeditor.github.io/commits?author=ouuan" title="Code">💻</a> <a href="https://github.com/cpeditor/cpeditor.github.io/commits?author=ouuan" title="Documentation">📖</a> <a href="#maintenance-ouuan" title="Maintenance">🚧</a> <a href="https://github.com/cpeditor/cpeditor.github.io/pulls?q=is%3Apr+reviewed-by%3Aouuan" title="Reviewed Pull Requests">👀</a> <a href="#infra-ouuan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a>
     </td>
   </tr>
 </table>
