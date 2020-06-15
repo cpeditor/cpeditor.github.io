@@ -39,28 +39,28 @@ function versionCompare(v1, v2) {
 function getOS() {
     var userAgent = window.navigator.userAgent,
         platform = window.navigator.platform,
-        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+        windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+        iosPlatforms = ["iPhone", "iPad", "iPod"],
         os = null;
 
     if (macosPlatforms.indexOf(platform) !== -1) {
-        os = 'Mac OS';
+        os = "Mac OS";
     } else if (iosPlatforms.indexOf(platform) !== -1) {
-        os = 'iOS';
+        os = "iOS";
     } else if (windowsPlatforms.indexOf(platform) !== -1) {
-        os = 'Windows';
+        os = "Windows";
     } else if (/Android/.test(userAgent)) {
-        os = 'Android';
+        os = "Android";
     } else if (/Linux/.test(platform)) {
-        os = 'Linux';
+        os = "Linux";
     }
 
     return os;
 }
 
 function fetch_releases() {
-    let uri = 'https://api.github.com/repos/cpeditor/cpeditor/releases'
+    let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases"
 
     fetch(uri)
         .then((res) => res.json())
@@ -86,22 +86,28 @@ function fetch_releases() {
             latestStable.assets.forEach(asset => {
                 if (asset.name.endsWith(".exe")) {
                     $("#download_windows_stable").attr("href", asset.browser_download_url);
-                    if (os == "Windows") $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Windows</a>.');
+                    if (os === "Windows") {
+                        $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Windows</a>.');
+                    }
                 } else if (asset.name.endsWith(".AppImage")) {
-                    $("#download_linux_stable").attr('href', asset.browser_download_url);
-                    if (os == "Linux") $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Linux</a>.');
+                    $("#download_linux_stable").attr("href", asset.browser_download_url);
+                    if (os === "Linux") {
+                        $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on Linux</a>.');
+                    }
                 } else if (asset.name.endsWith(".dmg")) {
-                    $("#download_macos_stable").attr('href', asset.browser_download_url);
-                    if (os == "Mac OS") $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on macOS</a>.');
+                    $("#download_macos_stable").attr("href", asset.browser_download_url);
+                    if (os === "Mac OS") {
+                        $("#platform-download").html('You probably want to use <a class="text-light" href="' + asset.browser_download_url + '">the latest stable version on macOS</a>.');
+                    }
                 }
             });
             latestBeta.assets.forEach(asset => {
                 if (asset.name.endsWith(".exe")) {
-                    $("#download_windows_beta").attr('href', asset.browser_download_url);
+                    $("#download_windows_beta").attr("href", asset.browser_download_url);
                 } else if (asset.name.endsWith(".AppImage")) {
-                    $("#download_linux_beta").attr('href', asset.browser_download_url);
+                    $("#download_linux_beta").attr("href", asset.browser_download_url);
                 } else if (asset.name.endsWith(".dmg")) {
-                    $("#download_macos_beta").attr('href', asset.browser_download_url);
+                    $("#download_macos_beta").attr("href", asset.browser_download_url);
                 }
             });
         })
