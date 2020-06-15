@@ -21,16 +21,16 @@ function getOS() {
     return os;
 }
 
-function fetch_latest_release() {
+function fetchLatestRelease() {
     let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases/latest";
 
     fetch(uri)
-        .then(res => res.json())
+        .then((res) => res.json())
         .then((data) => {
             var os = getOS();
             let directUrl = uri;
 
-            data.assets.forEach(release => {
+            data.assets.forEach((release) => {
                 if (release.name.endsWith(".exe")) {
                     if (os === "Windows") {
                         directUrl = release.browser_download_url;
@@ -53,7 +53,7 @@ function fetch_latest_release() {
                 document.getElementById("download_by_os_bottom").setAttribute("href", directUrl);
                 document.getElementById("download_by_os_bottom").innerText = "Try it on " + getOS();
             }
-        })
+        });
 }
 
-fetch_latest_release();
+fetchLatestRelease();

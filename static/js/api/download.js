@@ -22,7 +22,7 @@ function versionCompare(v1, v2) {
     v2parts = v2parts.map(Number);
 
     for (var i = 0; i < v1parts.length; ++i) {
-        if (v1parts[i] == v2parts[i]) {
+        if (v1parts[i] === v2parts[i]) {
             continue;
         }
         else if (v1parts[i] > v2parts[i]) {
@@ -59,7 +59,7 @@ function getOS() {
     return os;
 }
 
-function fetch_releases() {
+function fetchReleases() {
     let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases";
 
     fetch(uri)
@@ -69,7 +69,7 @@ function fetch_releases() {
                 latestStable,
                 latestBetaVersion = "0.0.0",
                 latestBeta;
-            data.forEach(release => {
+            data.forEach((release) => {
                 if (release.prerelease) {
                     if (versionCompare(release.tag_name, latestBetaVersion) === 1) {
                         latestBetaVersion = release.tag_name,
@@ -83,7 +83,7 @@ function fetch_releases() {
                 }
             });
             var os = getOS();
-            latestStable.assets.forEach(asset => {
+            latestStable.assets.forEach((asset) => {
                 if (asset.name.endsWith(".exe")) {
                     $("#download_windows_stable").attr("href", asset.browser_download_url);
                     if (os === "Windows") {
@@ -101,7 +101,7 @@ function fetch_releases() {
                     }
                 }
             });
-            latestBeta.assets.forEach(asset => {
+            latestBeta.assets.forEach((asset) => {
                 if (asset.name.endsWith(".exe")) {
                     $("#download_windows_beta").attr("href", asset.browser_download_url);
                 } else if (asset.name.endsWith(".AppImage")) {
@@ -110,7 +110,7 @@ function fetch_releases() {
                     $("#download_macos_beta").attr("href", asset.browser_download_url);
                 }
             });
-        })
+        });
 }
 
-fetch_releases();
+fetchReleases();
