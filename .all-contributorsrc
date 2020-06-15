@@ -17,6 +17,17 @@
         "review",
         "infra"
       ]
+    },
+    {
+      "login": "coder3101",
+      "name": "Ashar",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22212259?v=4",
+      "profile": "https://github.com/coder3101",
+      "contributions": [
+        "doc",
+        "maintenance",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
