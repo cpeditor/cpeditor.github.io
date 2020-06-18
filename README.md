@@ -1,4 +1,4 @@
-# cpeditor.github.io
+# cpeditor.org
 
 ![Deploy status](https://github.com/cpeditor/cpeditor.github.io/workflows/Deploy/badge.svg?branch=hugo)
 
@@ -6,7 +6,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg)](#contributors-sparkles)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-This is the official website of [CP Editor](https://github.com/cpeditor/cpeditor).
+This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
 
 It's still under construction.
 
