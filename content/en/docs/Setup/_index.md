@@ -23,11 +23,11 @@ You need to configure the tool by the command `cf config` before using it.
 
 [Competitive Companion](https://github.com/jmerle/competitive-companion) is a web extension that can parse sample test cases from Online Judges.
 
-After you install it, you can parse sample test cases just by a click, instead of copy them manually.
+After you install it, you can parse sample test cases just by a click, instead of copying them manually.
 
 ## Change UI Language
 
-Now CP Editor is available in English, Chinese and Russian.
+Now CP Editor is available in multiple languages, including English and Chinese.
 
 You can change the UI language in Preferences->Appearance. Note that you need to restart the editor to apply the change.
 
