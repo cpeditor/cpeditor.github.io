@@ -116,7 +116,7 @@ $(document).ready(() => {
         },
         created() {
             this.userPlatform = this.selectedPlatform = getOS();
-            $.get("https://api.github.com/repos/cpeditor/cpeditor/releases")
+            $.get("https://api.github.com/repos/cpeditor/cpeditor/releases", { per_page: 10 })
                 .then((data) => {
                     this.releases = data;
                     if (this.releases.length > 0) {
