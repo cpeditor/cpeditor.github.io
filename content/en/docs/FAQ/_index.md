@@ -5,8 +5,6 @@ weight: 70
 description: Frequently asked questions by CP Editor users
 ---
 
--   I am using Java and the editor can't run my codes.
-    -   You have to use a **non-public** class for your solution, its name can be configured in Preferences->Language->Commands->Java Class Name (Default name is `a`).
 -   I get **DLL Missing error** when launching the application?
     -   Please download  [Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 -   How to use whole-application dark theme?
