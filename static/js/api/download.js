@@ -1,6 +1,8 @@
+"use strict";
+
 function versionCompare(v1, v2) {
-    var v1parts = v1.split(".");
-    var v2parts = v2.split(".");
+    let v1parts = v1.split(".");
+    let v2parts = v2.split(".");
 
     function isValidPart(x) {
         return (/^\d+$/).test(x);
@@ -21,7 +23,7 @@ function versionCompare(v1, v2) {
     v1parts = v1parts.map(Number);
     v2parts = v2parts.map(Number);
 
-    for (var i = 0; i < v1parts.length; ++i) {
+    for (let i = 0; i < v1parts.length; ++i) {
         if (v1parts[i] === v2parts[i]) {
             continue;
         }
@@ -37,12 +39,12 @@ function versionCompare(v1, v2) {
 }
 
 function getOS() {
-    var userAgent = window.navigator.userAgent,
+    const userAgent = window.navigator.userAgent,
         platform = window.navigator.platform,
         macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
         windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
-        iosPlatforms = ["iPhone", "iPad", "iPod"],
-        os = null;
+        iosPlatforms = ["iPhone", "iPad", "iPod"];
+    let os = null;
 
     if (macosPlatforms.indexOf(platform) !== -1) {
         os = "Mac OS";
@@ -59,58 +61,69 @@ function getOS() {
     return os;
 }
 
-function fetchReleases() {
-    let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases";
-
-    fetch(uri)
-        .then((res) => res.json())
-        .then((data) => {
-            var latestStableVersion = "0.0.0",
-                latestStable,
-                latestBetaVersion = "0.0.0",
-                latestBeta;
-            data.forEach((release) => {
-                if (release.prerelease) {
-                    if (versionCompare(release.tag_name, latestBetaVersion) === 1) {
-                        latestBetaVersion = release.tag_name,
-                        latestBeta = release;
-                    }
+$(document).ready(() => {
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            userPlatform: "Unknown",
+            selectedPlatform: "",
+            releases: [],
+            selectedAsset: ""
+        },
+        methods: {
+            isAssetSuitableForPlatform(asset, platform = this.userPlatform) {
+                const name = asset.name;
+                switch (platform) {
+                    case "Windows":
+                        return name.includes("windows") || name.endsWith("exe");
+                    case "Linux":
+                        return name.includes("linux") || name.endsWith("AppImage");
+                    case "Mac OS":
+                        return name.includes("macos") || name.endsWith("dmg");
+                    default:
+                        return false;
+                }
+            },
+            bestAssetForPlatform(assets, platform) {
+                const suitableAssets = assets.filter((asset) => this.isAssetSuitableForPlatform(asset, platform));
+                if (suitableAssets.length === 0) {
+                    return null;
+                } else if (suitableAssets.length === 1) {
+                    return suitableAssets[0];
                 } else {
-                    if (versionCompare(release.tag_name, latestStableVersion) === 1) {
-                        latestStableVersion = release.tag_name,
-                        latestStable = release;
-                    }
+                    return suitableAssets.find((asset) => !asset.browser_download_url.includes("portable"));
                 }
-            });
-            var os = getOS();
-            latestStable.assets.forEach((asset) => {
-                if (asset.name.endsWith(".exe")) {
-                    $("#download_windows_stable").attr("href", asset.browser_download_url);
-                    if (os === "Windows") {
-                        $("#platform-download").html("You probably want to use <a class=\"text-light\" href=\"" + asset.browser_download_url + "\">the latest stable version on Windows</a>.");
-                    }
-                } else if (asset.name.endsWith(".AppImage")) {
-                    $("#download_linux_stable").attr("href", asset.browser_download_url);
-                    if (os === "Linux") {
-                        $("#platform-download").html("You probably want to use <a class=\"text-light\" href=\"" + asset.browser_download_url + "\">the latest stable version on Linux</a>.");
-                    }
-                } else if (asset.name.endsWith(".dmg")) {
-                    $("#download_macos_stable").attr("href", asset.browser_download_url);
-                    if (os === "Mac OS") {
-                        $("#platform-download").html("You probably want to use <a class=\"text-light\" href=\"" + asset.browser_download_url + "\">the latest stable version on macOS</a>.");
-                    }
+            }
+        },
+        computed: {
+            latestStableRelease() {
+                return this.releases.find(({ prerelease }) => !prerelease);
+            },
+            latestStableAssetForUserPlatform() {
+                if (this.latestStableRelease) {
+                    return this.bestAssetForPlatform(this.latestStableRelease.assets, this.userPlatform);
+                } else {
+                    return null;
                 }
-            });
-            latestBeta.assets.forEach((asset) => {
-                if (asset.name.endsWith(".exe")) {
-                    $("#download_windows_beta").attr("href", asset.browser_download_url);
-                } else if (asset.name.endsWith(".AppImage")) {
-                    $("#download_linux_beta").attr("href", asset.browser_download_url);
-                } else if (asset.name.endsWith(".dmg")) {
-                    $("#download_macos_beta").attr("href", asset.browser_download_url);
+            }
+        },
+        watch: {
+            selectedPlatform(platform) {
+                if (this.latestStableRelease) {
+                    this.selectedAsset = this.bestAssetForPlatform(this.latestStableRelease.assets, platform);
                 }
-            });
-        });
-}
-
-fetchReleases();
+            }
+        },
+        created() {
+            this.userPlatform = this.selectedPlatform = getOS();
+            $.get("https://api.github.com/repos/cpeditor/cpeditor/releases")
+                .then((data) => {
+                    this.releases = data;
+                    if (this.releases.length > 0) {
+                        this.releases.sort((x, y) => versionCompare(x.tag_name, y.tag_name)).reverse();
+                        this.selectedAsset = this.latestStableAssetForUserPlatform;
+                    }
+                });
+        }
+    });
+});
