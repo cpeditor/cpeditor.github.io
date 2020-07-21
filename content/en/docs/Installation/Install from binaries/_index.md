@@ -9,7 +9,17 @@ Choose a version in the [Releases](https://github.com/cpeditor/cpeditor/releases
 
 ### Windows
 
-Download the `setup.exe` in the assets and install it. You may also need to install [Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
+#### Setup Version
+
+> The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.
+
+Download the `setup.exe` in the assets and install it.
+
+#### Portable Version
+
+> The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won't see it in the list of installed programs on your system.
+
+Download the `portable.zip` in the assets and unzip it to any directory you like.
 
 ### Linux
 

@@ -6,47 +6,73 @@ menu:
     weight: 50
 ---
 
-<section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
-	<div class="container text-center td-arrow-down">
-		<span class="h4 mb-0">
-            <h1>Get CP Editor for your platform and have a try!</h1>
-            <p id="platform-download" class="pt-3"></p>
-        </span>
-	</div>
-</section>
-
-<div class="container text-center pt-5">
-    <div class="row">
-        <div class="col-lg-4 col-md-12 pt-3">
-            <i class="fab fa-windows pb-3" style="font-size: 10rem"></i>
-            <a id="download_windows_stable" href="https://github.com/cpeditor/cpeditor/releases/latest/" type="button" class="btn btn-primary btn-block">Get Stable (Windows)</a>
-            <a id="download_windows_beta" href="https://github.com/cpeditor/cpeditor/releases/" type="button" class="btn btn-link btn-sm btn-block">Get Beta (Windows)</a>
-        </div>
-        <div class="col-lg-4 col-md-12 pt-3">
-            <i class="fab fa-linux pb-3" style="font-size: 10rem"></i>
-            <a id="download_linux_stable" href="https://github.com/cpeditor/cpeditor/releases/latest/" type="button" class="btn btn-primary btn-block">Get Stable (Linux)</a>
-            <a id="download_linux_beta" href="https://github.com/cpeditor/cpeditor/releases/" type="button" class="btn btn-link btn-sm btn-block">Get Beta (Linux)</a>
-        </div>
-        <div class="col-lg-4 col-md-12 pt-3">
-            <i class="fab fa-apple pb-3" style="font-size: 10rem"></i>
-            <a id="download_macos_stable" href="https://github.com/cpeditor/cpeditor/releases/latest/" type="button" class="btn btn-primary btn-block">Get Stable (macOS)</a>
-            <a id="download_macos_beta" href="https://github.com/cpeditor/cpeditor/releases/" type="button" class="btn btn-link btn-sm btn-block">Get Beta (macOS)</a>
-        </div>
-    </div>
-</div>
-
-<div class="container pt-4 pb-5 text-center">
-    <div class="row">
-        <div class="col-lg-4 col-md-12 pt-3">
-            <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">DLL missing on Windows?</a>
-        </div>
-        <div class="col-lg-4 col-md-12 pt-3">
-            <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">View all versions...</a>
-        </div>
-        <div class="col-lg-4 col-md-12 pt-3">
-            <a href="/docs/installation">Install instructions</a>
-        </div>
-    </div>
-</div>
-
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
 <script src="/js/api/download.js"></script>
+
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app" v-cloak>
+    <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
+        <div class="container text-center td-arrow-down">
+            <span class="h4 mb-0">
+                <h1>Get CP Editor on your machine and have a try!</h1>
+                <p v-if="latestStableAssetForUserPlatform" class="pt-3">
+                    You probably want to use
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
+                        the latest stable version on {{ userPlatform }}
+                    </a>.
+                </p>
+            </span>
+        </div>
+    </section>
+
+    <div v-if="releases.length === 0" class="container text-center pt-5">
+        <div class="row">
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <div v-else class="container pt-5">
+        <div class="row">
+            <div class="text-center col-lg-6 col-md-12 py-3">
+                <h2>Choose your platform and the version you want to download</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="/docs/installation">Install instructions</a></li>
+                    <li class="list-group-item">
+                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">All versions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-12 py-3">
+                <div class="form-group">
+                    <label for="platform">Platform</label>
+                    <select class="form-control" id="platform" v-model="selectedPlatform">
+                        <option>Windows</option>
+                        <option>Linux</option>
+                        <option>Mac OS</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="asset">Version</label>
+                    <select class="form-control" id="asset" v-model="selectedAsset">
+                        <template v-for="release in releases" :key="release.tag_name">
+                            <template v-for="asset in release.assets" :key="asset.id">
+                                <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
+                                    {{ asset.name }}
+                                    <span v-if="release === latestStableRelease">(Latest Stable)</span>
+                                    <span v-else-if="release === releases[0]">(Latest Beta)</span>
+                                </option>
+                            </template>
+                        </template>
+                    </select>
+                </div>
+                <a :href="selectedAsset.browser_download_url"
+                    :disabled="selectedAsset.browser_download_url === undefined"
+                    class="btn btn-primary btn-block">Download</a>
+            </div>
+        </div>
+    </div>
+</div>
