@@ -142,7 +142,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.bee712346b4db1afdc2ef8bd4a5e4ef3b78f48003e5945e9e43c128dbbed83c6c983513cb6dd7a6db4c971d7912e5871cda7dd0a390fb612122cc1727252f7ee.json"
+  data-offline-search-index-json-src="/offline-search-index.cb60eef2d7caed772f106f0da23d31125d6ef6539fa79bd27770392a144044b25eee95ce453d0289e24aeac129945503172d9f6dae898f7a3be7e828571c0c5e.json"
   data-offline-search-base-href="/"
 >
 
@@ -179,14 +179,9 @@ if (!doNotTrack) {
         </div>
     </section>
 
-    <div v-if="releases.length === 0" class="container text-center pt-5">
+    <div class="container pt-5">
         <div class="row">
-            <h2>Loading...</h2>
-        </div>
-    </div>
-    <div v-else class="container pt-5">
-        <div class="row">
-            <div class="text-center col-lg-6 col-md-12 py-3">
+            <div class="col-lg-6 text-center py-3">
                 <h2>Choose your platform and the version you want to download</h2>
                 <ul class="list-group">
                     <li class="list-group-item"><a href="/docs/installation">Install instructions</a></li>
@@ -195,32 +190,34 @@ if (!doNotTrack) {
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6 col-md-12 py-3">
-                <div class="form-group">
-                    <label for="platform">Platform</label>
-                    <select class="form-control" id="platform" v-model="selectedPlatform">
-                        <option>Windows</option>
-                        <option>Linux</option>
-                        <option>Mac OS</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="asset">Version</label>
-                    <select class="form-control" id="asset" v-model="selectedAsset">
-                        <template v-for="release in releases" :key="release.tag_name">
-                            <template v-for="asset in release.assets" :key="asset.id">
-                                <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
-                                    {{ asset.name }}
-                                    <span v-if="release === latestStableRelease">(Latest Stable)</span>
-                                    <span v-else-if="release === releases[0]">(Latest Beta)</span>
-                                </option>
+            <div class="col-lg-6 py-3">
+                <h2 v-if="releases.length === 0">Loading...</h2>
+                <h2 v-else-if="!selectedAsset" class="text-warning">No available asset found</h2>
+                <template v-else>
+                    <div class="form-group">
+                        <label for="platform">Platform</label>
+                        <select class="form-control" id="platform" v-model="selectedPlatform">
+                            <option v-for="platformOption in platformOptions">{{ platformOption }}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="asset">Version</label>
+                        <select class="form-control" id="asset" v-model="selectedAsset">
+                            <template v-for="release in releases" :key="release.tag_name">
+                                <template v-for="asset in release.assets" :key="asset.id">
+                                    <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
+                                        {{ asset.name }}
+                                        <span v-if="release === latestStableRelease">(Latest Stable)</span>
+                                        <span v-else-if="release === releases[0]">(Latest Beta)</span>
+                                    </option>
+                                </template>
                             </template>
-                        </template>
-                    </select>
-                </div>
-                <a :href="selectedAsset.browser_download_url"
-                    :disabled="selectedAsset.browser_download_url === undefined"
-                    class="btn btn-primary btn-block">Download</a>
+                        </select>
+                    </div>
+                    <a :href="selectedAsset.browser_download_url"
+                        :disabled="selectedAsset.browser_download_url === undefined"
+                        class="btn btn-primary btn-block">Download</a>
+                </template>
             </div>
         </div>
     </div>

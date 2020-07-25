@@ -68,7 +68,8 @@ $(document).ready(() => {
             userPlatform: "Unknown",
             selectedPlatform: "",
             releases: [],
-            selectedAsset: ""
+            selectedAsset: "",
+            platformOptions: ["Windows", "Linux", "Mac OS"]
         },
         methods: {
             isAssetSuitableForPlatform(asset, platform = this.userPlatform) {
@@ -115,13 +116,18 @@ $(document).ready(() => {
             }
         },
         created() {
-            this.userPlatform = this.selectedPlatform = getOS();
+            this.userPlatform = getOS();
+            if (this.platformOptions.includes(this.userPlatform)) {
+                this.selectedPlatform = this.userPlatform;
+            } else {
+                this.selectedPlatform = this.platformOptions[0];
+            }
             $.get("https://api.github.com/repos/cpeditor/cpeditor/releases", { per_page: 10 })
                 .then((data) => {
                     this.releases = data;
                     if (this.releases.length > 0) {
                         this.releases.sort((x, y) => versionCompare(x.tag_name, y.tag_name)).reverse();
-                        this.selectedAsset = this.latestStableAssetForUserPlatform;
+                        this.selectedAsset = this.bestAssetForPlatform(this.latestStableRelease.assets, this.selectedPlatform);
                     }
                 });
         }
