@@ -30,14 +30,9 @@ menu:
         </div>
     </section>
 
-    <div v-if="releases.length === 0" class="container text-center pt-5">
-        <div class="row">
-            <h2>Loading...</h2>
-        </div>
-    </div>
-    <div v-else class="container pt-5">
-        <div class="row">
-            <div class="text-center col-lg-6 col-md-12 py-3">
+    <div class="container pt-5">
+        <div class="row py-3">
+            <div class="col-lg-6 text-center">
                 <h2>Choose your platform and the version you want to download</h2>
                 <ul class="list-group">
                     <li class="list-group-item"><a href="/docs/installation">Install instructions</a></li>
@@ -46,7 +41,10 @@ menu:
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6 col-md-12 py-3">
+            <div v-if="releases.length === 0" class="col-lg-6">
+                <h2>Loading...</h2>
+            </div>
+            <div v-else class="col-lg-6">
                 <div class="form-group">
                     <label for="platform">Platform</label>
                     <select class="form-control" id="platform" v-model="selectedPlatform">
