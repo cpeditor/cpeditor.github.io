@@ -41,36 +41,34 @@ menu:
                     </li>
                 </ul>
             </div>
-            <div v-if="releases.length === 0" class="col-lg-6 py-3">
-                <h2>Loading...</h2>
-            </div>
-            <div v-else-if="!selectedAsset" class="col-lg-6 py-3">
-                <h2 class="text-warning">No available asset found</h2>
-            </div>
-            <div v-else class="col-lg-6 py-3">
-                <div class="form-group">
-                    <label for="platform">Platform</label>
-                    <select class="form-control" id="platform" v-model="selectedPlatform">
-                        <option v-for="platformOption in platformOptions">{{ platformOption }}</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="asset">Version</label>
-                    <select class="form-control" id="asset" v-model="selectedAsset">
-                        <template v-for="release in releases" :key="release.tag_name">
-                            <template v-for="asset in release.assets" :key="asset.id">
-                                <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
-                                    {{ asset.name }}
-                                    <span v-if="release === latestStableRelease">(Latest Stable)</span>
-                                    <span v-else-if="release === releases[0]">(Latest Beta)</span>
-                                </option>
+            <div class="col-lg-6 py-3">
+                <h2 v-if="releases.length === 0">Loading...</h2>
+                <h2 v-else-if="!selectedAsset" class="text-warning">No available asset found</h2>
+                <template v-else>
+                    <div class="form-group">
+                        <label for="platform">Platform</label>
+                        <select class="form-control" id="platform" v-model="selectedPlatform">
+                            <option v-for="platformOption in platformOptions">{{ platformOption }}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="asset">Version</label>
+                        <select class="form-control" id="asset" v-model="selectedAsset">
+                            <template v-for="release in releases" :key="release.tag_name">
+                                <template v-for="asset in release.assets" :key="asset.id">
+                                    <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
+                                        {{ asset.name }}
+                                        <span v-if="release === latestStableRelease">(Latest Stable)</span>
+                                        <span v-else-if="release === releases[0]">(Latest Beta)</span>
+                                    </option>
+                                </template>
                             </template>
-                        </template>
-                    </select>
-                </div>
-                <a :href="selectedAsset.browser_download_url"
-                    :disabled="selectedAsset.browser_download_url === undefined"
-                    class="btn btn-primary btn-block">Download</a>
+                        </select>
+                    </div>
+                    <a :href="selectedAsset.browser_download_url"
+                        :disabled="selectedAsset.browser_download_url === undefined"
+                        class="btn btn-primary btn-block">Download</a>
+                </template>
             </div>
         </div>
     </div>
