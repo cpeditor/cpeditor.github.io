@@ -3,7 +3,7 @@
 ![Deploy status](https://github.com/cpeditor/cpeditor.github.io/workflows/Deploy/badge.svg?branch=hugo)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg)](#contributors-sparkles)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg)](#contributors-sparkles)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
@@ -41,6 +41,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center">
       <a href="https://github.com/StudyingFather"><img src="https://avatars3.githubusercontent.com/u/23295419?v=4" width="100px;" alt=""/></a><br /><a href="https://studyingfather.com"><sub><b>Shuhao Zhang</b></sub></a><br /><a href="#content-StudyingFather" title="Content">🖋</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/TFKls"><img src="https://avatars3.githubusercontent.com/u/43710501?v=4" width="100px;" alt=""/></a><br /><a href="http://tfkls.dev"><sub><b>TFKls</b></sub></a><br /><a href="#content-TFKls" title="Content">🖋</a>
     </td>
   </tr>
 </table>
