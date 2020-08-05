@@ -29,6 +29,6 @@ jobs:
         id: check-links
         uses: peter-evans/link-checker@v1
         with:
-          args: -r public -d public
+          args: -r public -d public -x "https?:\/\/"
       - name: Fail on link errors
         run: exit ${{ steps.check-links.outputs.exit_code }}
