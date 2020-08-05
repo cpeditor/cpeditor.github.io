@@ -28,4 +28,4 @@ jobs:
       - name: Check links
         uses: peter-evans/link-checker@v1
         with:
-          args: -v -r public
+          args: -v -r public -d public
