@@ -7,6 +7,8 @@ weight: 50
 
 Clang Format is used to format the C++ codes. You can click Actions->Format Code or press the shortcut `Ctrl+Shift+I` to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
 
+**See also** [Setup Clang Format](../../setup#setup-clang-format).
+
 ### Path
 
 The path to the `clang-format` executable, or simply `clang-format` if it's in the `PATH` environment variable.
@@ -18,6 +20,8 @@ The Clang Format style. The content here is the same as the content of a `.clang
 You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
 
 ## Language Server
+
+**See also** [Setup Language Server](../../setup#setup-language-server).
 
 ### Use Linting with Language Server
 
@@ -40,6 +44,8 @@ Additional arguments for the language server program. See the documentation of t
 For example, if you are using `pyls` for Python, you probably want to use `python` as the language server program, and use `-m pyls` as the arguments.
 
 ## Competitive Companion
+
+**See also** [Setup Competitive Companion](../../setup#setup-competitive-companion).
 
 ### Open New Tabs
 
@@ -78,6 +84,8 @@ The format of the `${time}` place holder in the head comments. You can read the 
 You can use [CF Tool](https://github.com/xalanq/cf-tool/) to submit your solutions to [Codeforces](https://codeforces.com).
 
 To submit a solution, you have to either parse a problem by [Competitive Companion](#competitive-companion) from Codeforces, or manually set the problem URL of a tab in the context menu of it.
+
+**See also** [Setup CF Tool](../../setup#setup-cf-tool).
 
 ### Path
 
