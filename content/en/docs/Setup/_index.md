@@ -42,9 +42,9 @@ You need to add it to your system PATH, or set the path to it at [Preferences->E
 
 ## Setup Language Server
 
-You can use Language Server to lint your codes and get errors, warnings, etc.
+You can use [Language Server](https://microsoft.github.io/language-server-protocol/) to lint your codes and get errors, warnings, etc.
 
-You can install any language server program and set suitable settings in [Preferences->Extensions->Language Server](../preferences/extensions#language-server).
+You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../preferences/extensions#language-server).
 
 Though you can use any language server program you like, here are some suggestions if you are not sure which to use.
 
