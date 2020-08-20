@@ -25,7 +25,7 @@ Download the `portable.zip` in the assets and unzip it to any directory you like
 
 Download the `AppImage` in the assets, add execute permission to it (`chmod +x <AppImagePath>`), then run it.
 
-On Debian-based Linux distributions (Ubuntu, Linux Mint and etc.) you can download `.deb` package in the assets and run the command in terminal:
+On Debian-based Linux distributions (Ubuntu, Linux Mint, etc.) you can download `.deb` package in the assets and run the command in terminal:
 
     ```sh
     sudo apt install ./<path to .deb package>
