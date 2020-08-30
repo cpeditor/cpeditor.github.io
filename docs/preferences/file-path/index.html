@@ -26,13 +26,13 @@ You can use the following place holders:
  ${filename}: the complete file name ${basename}: the base file name without the suffix ${0-index}: the index of the test case started from 0 ${1-index}: the index of the test case started from 1  For example, a test case is the 3-rd test case of the source file /a/b/c." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/preferences/file-path/" />
-<meta property="article:modified_time" content="2020-08-18T18:34:36+08:00" /><meta property="og:site_name" content="CP Editor" />
+<meta property="article:modified_time" content="2020-08-30T22:18:39+08:00" /><meta property="og:site_name" content="CP Editor" />
 <meta itemprop="name" content="File Path">
 <meta itemprop="description" content="Testcases Input File Save Path &amp; Answer File Save Path The path where the test cases are saved. If it is a relative path, it is relative to the source file.
 You can use the following place holders:
  ${filename}: the complete file name ${basename}: the base file name without the suffix ${0-index}: the index of the test case started from 0 ${1-index}: the index of the test case started from 1  For example, a test case is the 3-rd test case of the source file /a/b/c.">
-<meta itemprop="dateModified" content="2020-08-18T18:34:36&#43;08:00" />
-<meta itemprop="wordCount" content="531">
+<meta itemprop="dateModified" content="2020-08-30T22:18:39&#43;08:00" />
+<meta itemprop="wordCount" content="546">
 
 
 
@@ -153,7 +153,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.55584785d6f6f3baef44e95c6fa913e58b69707cca18e4db3133a8c71e082fb2107db04e6296e28e35db9cd23e3fdbe5d31226fa8468c22e897a3319346e636b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d95805bed156256d29a02aa4a2d0cbc86a54d71594c0e0eb5b2f5d1854d2b5a289e5892d2ffd89c134008aa5cfd1cad1095073ef1a2ba4f04413b69bbb5a1dc.json"
   data-offline-search-base-href="/"
 >
 
@@ -183,7 +183,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.55584785d6f6f3baef44e95c6fa913e58b69707cca18e4db3133a8c71e082fb2107db04e6296e28e35db9cd23e3fdbe5d31226fa8468c22e897a3319346e636b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d95805bed156256d29a02aa4a2d0cbc86a54d71594c0e0eb5b2f5d1854d2b5a289e5892d2ffd89c134008aa5cfd1cad1095073ef1a2ba4f04413b69bbb5a1dc.json"
   data-offline-search-base-href="/"
 >
 
@@ -636,6 +636,9 @@ if (!doNotTrack) {
 <p>The default path when choosing where to save an untitled tab with problem URL.</p>
 <p>Each rule is a pair of <a href="../general#regular-expression">regular expression patterns</a>. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.</p>
 <p>When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.</p>
+<p>Here&rsquo;s an example of a rule:</p>
+<p>The problem URL regex: <code>codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)</code></p>
+<p>The file path: <code>/home/username/Codeforces/\1/\2</code></p>
 <h2 id="default-paths">Default Paths</h2>
 <p>The default path used when the user is asked for a file path.</p>
 <p>There are several actions, different actions can use different default paths.</p>
@@ -715,7 +718,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/a10d1f68fad6e585dcce1c2d11771b5f611b9073">feat: add documentation for preferences (#53) (a10d1f6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified August 30, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8c13a62315307bc857df89117bc93fd0a5d695b1">feat(Preferences/File Path): add an example of default file path for problem URL (#57) (8c13a62)</a>
 </div>
 </div>
 

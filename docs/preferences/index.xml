@@ -270,6 +270,9 @@
 &lt;p>The default path when choosing where to save an untitled tab with problem URL.&lt;/p>
 &lt;p>Each rule is a pair of &lt;a href="../general#regular-expression">regular expression patterns&lt;/a>. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.&lt;/p>
 &lt;p>When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.&lt;/p>
+&lt;p>Here&amp;rsquo;s an example of a rule:&lt;/p>
+&lt;p>The problem URL regex: &lt;code>codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)&lt;/code>&lt;/p>
+&lt;p>The file path: &lt;code>/home/username/Codeforces/\1/\2&lt;/code>&lt;/p>
 &lt;h2 id="default-paths">Default Paths&lt;/h2>
 &lt;p>The default path used when the user is asked for a file path.&lt;/p>
 &lt;p>There are several actions, different actions can use different default paths.&lt;/p>
