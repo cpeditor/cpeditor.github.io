@@ -45,6 +45,12 @@ Each rule is a pair of [regular expression patterns](../general#regular-expressi
 
 When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.
 
+Here's an example of a rule:
+
+The problem URL regex: `codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)`
+
+The file path: `/home/username/Codeforces/\1/\2`
+
 ## Default Paths
 
 The default path used when the user is asked for a file path.
