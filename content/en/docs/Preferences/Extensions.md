@@ -5,7 +5,7 @@ weight: 50
 
 ## Clang Format
 
-Clang Format is used to format the C++ codes. You can click Actions->Format Code or press the shortcut `Ctrl+Shift+I` to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
+Clang Format is used to format the C++ codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
 
 **See also** [Setup Clang Format](../../setup#setup-clang-format).
 

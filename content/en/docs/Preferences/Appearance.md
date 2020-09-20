@@ -53,7 +53,7 @@ Use "¶" to visualize the end-of-line in the diff viewer. It is useful if you wa
 
 Add an extra margin at the bottom of the code editor, so that you can scroll less.
 
-Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by `Ctrl+Z`.
+Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by <kbd>Ctrl+Z</kbd>.
 
 ### Custom Application Font
 
