@@ -4,7 +4,7 @@ weight: 50
 description: Some tips that may help
 ---
 
-### Shortcuts in the Preferences Window
+## Shortcuts in the Preferences Window
 
 You can use <kbd>Ctlr+D</kbd>, <kbd>Ctrl+R</kbd> and <kbd>Ctrl+S</kbd> for "Default", "Reset" and "Apply" respectively.
 
