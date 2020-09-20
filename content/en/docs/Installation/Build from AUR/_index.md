@@ -9,8 +9,6 @@ This method is only for Arch Linux (or other distros based on Arch Linux, includ
 
 There are two AUR packages for CP Editor: [cpeditor](https://aur.archlinux.org/packages/cpeditor/) for the stable version and [cpeditor-git](https://aur.archlinux.org/packages/cpeditor-git/) for the alpha version.
 
-Just like installing other packages from AUR, you need an AUR helper, if you don't have one, you can install yay by `sudo pacman -S yay`.
+If you have `yay` installed, you can run `yay -S cpeditor` to install. If you don't have `yay` and don't know how to install from AUR, you can read [how to install yay](https://github.com/Jguer/yay#installation) or [the Arch Wiki](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages).
 
-Then, run either `yay -S cpeditor` or `yay -S cpeditor-git`, choose the default options, and wait until the build finishes.
-
-After the installation, you'll be able to run CP Editor by `cpeditor` in your terminal or launch from Menu like other apps.
+After the installation, you'll be able to run CP Editor by `cpeditor` in your terminal or launch from the start menu like other apps.
