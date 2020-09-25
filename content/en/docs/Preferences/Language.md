@@ -128,13 +128,13 @@ Then you can use `int main` as the regex, `end` as the offset type, and `9` as t
 
 ### Manage Snippets
 
-You can add/delete/rename snippets in "Language->XXX->XXX Snippet". You can use `Ctrl+N` for "Add", `Ctrl+W` for "Del" and `F2` for "Rename".
+You can add/delete/rename snippets in "Language->XXX->XXX Snippet". You can use <kbd>Ctrl+N</kbd> for "Add", </kbd>Ctrl+W</kbd> for "Del" and </kbd>F2</kbd> for "Rename".
 
 You can also import snippets from files or extract your snippets to files in the "More" menu in the snippet page.
 
 ### Use Snippets
 
-You can insert a snippet into the code editor by either clicking "Actions->Use Snippets" or pressing `Ctrl+T`.
+You can insert a snippet into the code editor by either clicking "Actions->Use Snippets" or pressing </kbd>Ctrl+T</kbd>.
 
 When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.
 

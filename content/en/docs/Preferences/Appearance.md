@@ -15,6 +15,8 @@ The "default" style is either the most appropriate style on your platform, or th
 
 On Windows, there's an extra option "Auto Fusion". "Auto Fusion" is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).
 
+If there's anything wrong after you change the UI style, you can try restarting CP Editor.
+
 ### Editor Theme
 
 The syntax highlighting theme for the code editor.
@@ -53,7 +55,7 @@ Use "¶" to visualize the end-of-line in the diff viewer. It is useful if you wa
 
 Add an extra margin at the bottom of the code editor, so that you can scroll less.
 
-Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by `Ctrl+Z`.
+Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by <kbd>Ctrl+Z</kbd>.
 
 ### Custom Application Font
 
