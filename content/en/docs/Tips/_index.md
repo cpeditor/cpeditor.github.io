@@ -42,7 +42,7 @@ You can set a hotkey for switching view modes in Preferences.
 
 CP Editor supports some command-line options, run `cpeditor --help` for more information.
 
-On Windows, it's better to use Linux-like shells like git bash.
+On Windows, it's better to use UNIX-like shells like git bash.
 
 In the command line, you can open a non-existing file as a tab by `cpeditor <path>` (and you can save to this path later), open all C++ files in a directory recursively by `cpeditor --cpp <directory>` or temporarily disable [Restore last session at startup](../preferences/actions#restore-last-session-at-startup) by `cpeditor --no-hot-exit`.
 
