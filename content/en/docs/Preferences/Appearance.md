@@ -15,6 +15,8 @@ The "default" style is either the most appropriate style on your platform, or th
 
 On Windows, there's an extra option "Auto Fusion". "Auto Fusion" is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).
 
+If there's anything wrong after you change the UI style, you can try restarting CP Editor.
+
 ### Editor Theme
 
 The syntax highlighting theme for the code editor.
