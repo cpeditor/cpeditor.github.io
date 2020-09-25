@@ -92,10 +92,10 @@
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Then you can use &lt;code>int main&lt;/code> as the regex, &lt;code>end&lt;/code> as the offset type, and &lt;code>9&lt;/code> as the offset characters. After that, when opening a new tab, the cursor will be at the first line in the &lt;code>main&lt;/code> function.&lt;/p>
 &lt;h2 id="snippets">Snippets&lt;/h2>
 &lt;h3 id="manage-snippets">Manage Snippets&lt;/h3>
-&lt;p>You can add/delete/rename snippets in &amp;ldquo;Language-&amp;gt;XXX-&amp;gt;XXX Snippet&amp;rdquo;. You can use &lt;code>Ctrl+N&lt;/code> for &amp;ldquo;Add&amp;rdquo;, &lt;code>Ctrl+W&lt;/code> for &amp;ldquo;Del&amp;rdquo; and &lt;code>F2&lt;/code> for &amp;ldquo;Rename&amp;rdquo;.&lt;/p>
+&lt;p>You can add/delete/rename snippets in &amp;ldquo;Language-&amp;gt;XXX-&amp;gt;XXX Snippet&amp;rdquo;. You can use &lt;kbd>Ctrl+N&lt;/kbd> for &amp;ldquo;Add&amp;rdquo;, &lt;/kbd>Ctrl+W&lt;/kbd> for &amp;ldquo;Del&amp;rdquo; and &lt;/kbd>F2&lt;/kbd> for &amp;ldquo;Rename&amp;rdquo;.&lt;/p>
 &lt;p>You can also import snippets from files or extract your snippets to files in the &amp;ldquo;More&amp;rdquo; menu in the snippet page.&lt;/p>
 &lt;h3 id="use-snippets">Use Snippets&lt;/h3>
-&lt;p>You can insert a snippet into the code editor by either clicking &amp;ldquo;Actions-&amp;gt;Use Snippets&amp;rdquo; or pressing &lt;code>Ctrl+T&lt;/code>.&lt;/p>
+&lt;p>You can insert a snippet into the code editor by either clicking &amp;ldquo;Actions-&amp;gt;Use Snippets&amp;rdquo; or pressing &lt;/kbd>Ctrl+T&lt;/kbd>.&lt;/p>
 &lt;p>When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.&lt;/p>
 &lt;h2 id="parentheses">Parentheses&lt;/h2>
 &lt;p>You can set the parentheses settings for each language and each parenthesis.&lt;/p>
@@ -112,6 +112,7 @@
 &lt;p>The style used for the UI. The available options are different on different platforms.&lt;/p>
 &lt;p>The &amp;ldquo;default&amp;rdquo; style is either the most appropriate style on your platform, or the style specified by the &lt;code>--style&lt;/code> command line option.&lt;/p>
 &lt;p>On Windows, there&amp;rsquo;s an extra option &amp;ldquo;Auto Fusion&amp;rdquo;. &amp;ldquo;Auto Fusion&amp;rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).&lt;/p>
+&lt;p>If there&amp;rsquo;s anything wrong after you change the UI style, you can try restarting CP Editor.&lt;/p>
 &lt;h3 id="editor-theme">Editor Theme&lt;/h3>
 &lt;p>The syntax highlighting theme for the code editor.&lt;/p>
 &lt;h3 id="editor-font">Editor Font&lt;/h3>
@@ -131,7 +132,7 @@
 &lt;p>Use &amp;ldquo;¶&amp;rdquo; to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).&lt;/p>
 &lt;h3 id="add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor&lt;/h3>
 &lt;p>Add an extra margin at the bottom of the code editor, so that you can scroll less.&lt;/p>
-&lt;p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by &lt;code>Ctrl+Z&lt;/code>.&lt;/p>
+&lt;p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by &lt;kbd>Ctrl+Z&lt;/kbd>.&lt;/p>
 &lt;h3 id="custom-application-font">Custom Application Font&lt;/h3>
 &lt;p>Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.&lt;/p></description></item><item><title>Docs: Actions</title><link>/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>
@@ -190,7 +191,7 @@
 &lt;p>If this setting is disabled, external changes won&amp;rsquo;t be loaded.&lt;/p>
 &lt;p>&lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> overrides this setting. i.e. if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is enabled, external file changes will be loaded without confrimation regardless of &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> ; if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is disabled, the user will be asked whether to load the changes only when &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/preferences/extensions/</guid><description>
 &lt;h2 id="clang-format">Clang Format&lt;/h2>
-&lt;p>Clang Format is used to format the C++ codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;code>Ctrl+Shift+I&lt;/code> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
+&lt;p>Clang Format is used to format the C++ codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-clang-format">Setup Clang Format&lt;/a>.&lt;/p>
 &lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
