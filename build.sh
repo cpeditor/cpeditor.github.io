@@ -28,12 +28,12 @@ function build() {
     git reset --hard
 }
 
-git switch hugo
+git checkout hugo
 build
 rm -rf dist; mv public dist
 
 for branch in $version_branches; do
-    git switch "$branch"
+    git checkout "$branch"
     git submodule update
     build "$branch"
     mv public "dist/$branch"
