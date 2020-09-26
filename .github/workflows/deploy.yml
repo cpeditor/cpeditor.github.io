@@ -3,35 +3,33 @@ name: "Deploy"
 on:
   push:
     branches:
-    - hugo
+      - hugo
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: Fetch submodules
-      run: git submodule update --init --recursive
-    - name: Setup Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '13.x'
-    - run: npm install
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: '0.69.2'
-        extended: true
-    - name: Build Site
-      run: |
-        git config --global core.quotePath false
-        HUGO_ENV=production hugo --minify
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
-        publish_branch: master
-        commit_message: ${{ github.event.head_commit.message }}
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Fetch submodules
+        run: git submodule update --init --recursive
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "13.x"
+      - run: npm install
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.69.2"
+          extended: true
+      - name: Build Site
+        run: HUGO_ENV=production ./build.sh
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: master
+          commit_message: ${{ github.event.head_commit.message }}
