@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - hugo
+      - "v*.*"
 
 jobs:
   deploy:
@@ -11,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: hugo
           fetch-depth: 0
       - name: Fetch submodules
         run: git submodule update --init --recursive
