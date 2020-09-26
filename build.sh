@@ -10,7 +10,7 @@ function build() {
     sed -i "s/baseURL = \"\/\"/baseURL = \"\/$1\"/" config.toml
 
     if [[ "$1" != "" ]]; then
-        sed -i "s/version = \".*\"/version = \"$1\"/" config.toml
+        sed -i "s/^version = \".*\"/version = \"$1\"/" config.toml
     fi
 
     echo "[[params.versions]]
