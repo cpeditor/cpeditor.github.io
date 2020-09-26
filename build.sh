@@ -25,9 +25,8 @@ function build() {
 }
 
 git switch hugo
-rm -rf dist; mkdir -p dist
 build
-mv public/* dist
+rm -rf dist; mv public dist
 
 for branch in $version_branches; do
     git switch "$branch"
