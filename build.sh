@@ -31,6 +31,6 @@ rm -rf dist; mv public dist
 for branch in $version_branches; do
     git switch "$branch"
     git submodule update
-    build $branch
+    build "$branch"
     mv public "dist/$branch"
 done
