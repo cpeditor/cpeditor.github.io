@@ -4,7 +4,7 @@ set -e
 
 git config core.quotePath false
 
-version_branches="$(git for-each-ref --format='%(refname:short)' refs/heads/v*.*)"
+version_branches="$(git for-each-ref --format='%(refname:lstrip=3)' refs/remotes/origin/v*.*)"
 
 function build() {
     sed -i "s/baseURL = \"\/\"/baseURL = \"\/$1\"/" config.toml
