@@ -25,6 +25,10 @@ function build() {
 
     hugo --minify
 
+    if [[ "$1" != "" ]]; then
+        rm public/CNAME public/robots.txt
+    fi
+
     git reset --hard
 }
 
