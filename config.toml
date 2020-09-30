@@ -62,19 +62,19 @@ anonymizeIP = true
 [languages.en]
 title = "CP Editor"
 description = "The IDE for competitive programming"
-languageName ="English"
+languageName = "English"
 # Weight used for sorting.
 weight = 1
 [languages.zh]
 title = "CP Editor"
 description = "专为算法竞赛设计的 IDE"
-languageName ="中文"
+languageName = "中文"
 contentDir = "content/zh"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 # Everything below this are Site Params
 
@@ -96,11 +96,11 @@ archived_version = false
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the 
 # current doc set.
-version = "0.0"
+version = "alpha"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://github.com/cpeditor/cpeditor/releases/latest"
+url_latest_version = "/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/cpeditor/cpeditor.github.io"
@@ -152,23 +152,23 @@ enable = false
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
-	name = "Telegram"
-	url = "https://t.me/cpeditor"
-	icon = "fab fa-telegram"
-        desc = "Get help on Telegram"
+name = "Telegram"
+url = "https://t.me/cpeditor"
+icon = "fab fa-telegram"
+desc = "Get help on Telegram"
 [[params.links.user]]
-	name ="QQ Group"
-	url = "https://jq.qq.com/?_wv=1027&k=50eq8yF"
-	icon = "fab fa-qq"
-        desc = "QQ group for Chinese users"
+name = "QQ Group"
+url = "https://jq.qq.com/?_wv=1027&k=50eq8yF"
+icon = "fab fa-qq"
+desc = "QQ group for Chinese users"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/cpeditor/cpeditor"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
+name = "GitHub"
+url = "https://github.com/cpeditor/cpeditor"
+icon = "fab fa-github"
+desc = "Development takes place here!"
 [[params.links.developer]]
-	name = "Slack"
-	url = "https://join.slack.com/t/cpeditor/shared_invite/zt-ekfy0zb5-SrOi8SIox8oq61oRonBynw"
-	icon = "fab fa-slack"
-        desc = "Chat with other project developers"
+name = "Slack"
+url = "https://join.slack.com/t/cpeditor/shared_invite/zt-ekfy0zb5-SrOi8SIox8oq61oRonBynw"
+icon = "fab fa-slack"
+desc = "Chat with other project developers"
