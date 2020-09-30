@@ -4,7 +4,7 @@ set -e
 
 git config core.quotePath false
 
-version_branches="$(git for-each-ref --format='%(refname:short)' refs/heads/v*.*)"
+version_branches="$(git for-each-ref --format='%(refname:lstrip=3)' refs/remotes/*/v*.* | sort -u)"
 
 function build() {
     sed -i "s/baseURL = \"\/\"/baseURL = \"\/$1\"/" config.toml
@@ -24,6 +24,10 @@ function build() {
     done
 
     hugo --minify
+
+    if [[ "$1" != "" ]]; then
+        rm public/CNAME public/robots.txt
+    fi
 
     git reset --hard
 }
