@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.69.2" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/v6.7/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/v6.7/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/v6.7/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/v6.7/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/v6.7/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/v6.7/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/v6.7/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/v6.7/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/v6.7/favicons/android-192x192.png" sizes="192x192">
+
+<title>Appearance | CP Editor</title><meta property="og:title" content="Appearance" />
+<meta property="og:description" content="UI Language The human language used in the UI.
+UI Style The style used for the UI. The available options are different on different platforms.
+The &ldquo;default&rdquo; style is either the most appropriate style on your platform, or the style specified by the --style command line option.
+On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/v6.7/zh/docs/preferences/appearance/" />
+<meta property="article:modified_time" content="2020-10-01T21:22:08+08:00" /><meta property="og:site_name" content="CP Editor" />
+<meta itemprop="name" content="Appearance">
+<meta itemprop="description" content="UI Language The human language used in the UI.
+UI Style The style used for the UI. The available options are different on different platforms.
+The &ldquo;default&rdquo; style is either the most appropriate style on your platform, or the style specified by the --style command line option.
+On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).">
+<meta itemprop="dateModified" content="2020-10-01T21:22:08&#43;08:00" />
+<meta itemprop="wordCount" content="292">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Appearance"/>
+<meta name="twitter:description" content="UI Language The human language used in the UI.
+UI Style The style used for the UI. The available options are different on different platforms.
+The &ldquo;default&rdquo; style is either the most appropriate style on your platform, or the style specified by the --style command line option.
+On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light)."/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-96337051-5', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="/v6.7/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" as="style">
+<link href="/v6.7/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body class="td-page">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/v6.7/zh/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/v6.7/zh/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/v6.7/zh/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/v6.7/zh/community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/v6.7/zh/download/" ><span>Download</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/">alpha</a>
+	
+	<a class="dropdown-item" href="/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	中文
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/v6.7/docs/preferences/appearance/">English</a>
+	
+	<a class="dropdown-item" href="/v6.7/ru/docs/preferences/appearance/">Русский</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; 站内搜索…"
+  aria-label="站内搜索…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/v6.7/offline-search-index.98116f33744f21942ef84d044296ec8036f88bd999b3f2495f5184badb9cdab31acdb8541424beaa90dfb638a4c66f194a460601e89ef5d65fc47a6c17a66fbd.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; 站内搜索…"
+  aria-label="站内搜索…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/v6.7/offline-search-index.98116f33744f21942ef84d044296ec8036f88bd999b3f2495f5184badb9cdab31acdb8541424beaa90dfb638a4c66f194a460601e89ef5d65fc47a6c17a66fbd.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	中文
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/v6.7/docs/preferences/appearance/">English</a>
+	
+	<a class="dropdown-item" href="/v6.7/ru/docs/preferences/appearance/">Русский</a>
+	
+</div>
+    </div>
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="v67zhdocs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Installation</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocsinstallation">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/installation/install-from-binaries/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Install from binaries</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocsinstallationinstall-from-binaries">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/installation/build-from-source/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from source</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/installation/build-from-aur/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from AUR</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocsinstallationbuild-from-aur">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/setup/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Setup</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/preferences/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Preferences</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="v67zhdocspreferences">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferencescode-edit" href="/v6.7/zh/docs/preferences/code-edit/">Code Edit</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferenceslanguage" href="/v6.7/zh/docs/preferences/language/">Language</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-v67zhdocspreferencesappearance" href="/v6.7/zh/docs/preferences/appearance/">Appearance</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferencesactions" href="/v6.7/zh/docs/preferences/actions/">Actions</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferencesextensions" href="/v6.7/zh/docs/preferences/extensions/">Extensions</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferencesfile-path" href="/v6.7/zh/docs/preferences/file-path/">File Path</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferenceskey-bindings" href="/v6.7/zh/docs/preferences/key-bindings/">Key Bindings</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferencesadvanced" href="/v6.7/zh/docs/preferences/advanced/">Advanced</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-v67zhdocspreferencesgeneral" href="/v6.7/zh/docs/preferences/general/">General</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/source-code/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Source Code</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocssource-code">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/v6.7/zh/docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="v67zhdocsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/zh/docs/Preferences/Appearance.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Appearance" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> 提交项目问题</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#ui-language">UI Language</a></li>
+        <li><a href="#ui-style">UI Style</a></li>
+        <li><a href="#editor-theme">Editor Theme</a></li>
+        <li><a href="#editor-font">Editor Font</a></li>
+        <li><a href="#test-cases-font">Test Cases Font</a></li>
+        <li><a href="#message-logger-font">Message Logger Font</a></li>
+        <li><a href="#opacity">Opacity</a></li>
+        <li><a href="#test-case-maximum-height">Test Case Maximum Height</a></li>
+        <li><a href="#show-compile-and-run-only">Show Compile And Run Only</a></li>
+        <li><a href="#display-eoln-in-diff">Display EOLN in Diff</a></li>
+        <li><a href="#add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor</a></li>
+        <li><a href="#custom-application-font">Custom Application Font</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pageinfo pageinfo-primary">
+    这个页面还没有被翻译。
+    你可以帮助我们 <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/zh/docs/Preferences/Appearance.md'>翻译本页</a>。
+</div>
+
+
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/v6.7/zh/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/v6.7/zh/docs/preferences/">Preferences</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/v6.7/zh/docs/preferences/appearance/">Appearance</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>Appearance</h1>
+    
+	       
+	<h3 id="ui-language">UI Language</h3>
+<p>The human language used in the UI.</p>
+<h3 id="ui-style">UI Style</h3>
+<p>The style used for the UI. The available options are different on different platforms.</p>
+<p>The &ldquo;default&rdquo; style is either the most appropriate style on your platform, or the style specified by the <code>--style</code> command line option.</p>
+<p>On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).</p>
+<p>If there&rsquo;s anything wrong after you change the UI style, you can try restarting CP Editor.</p>
+<h3 id="editor-theme">Editor Theme</h3>
+<p>The syntax highlighting theme for the code editor.</p>
+<h3 id="editor-font">Editor Font</h3>
+<p>The font for the code editor.</p>
+<h3 id="test-cases-font">Test Cases Font</h3>
+<p>The font for the test cases.</p>
+<h3 id="message-logger-font">Message Logger Font</h3>
+<p>The font for the messages.</p>
+<h3 id="opacity">Opacity</h3>
+<p>The opacity of the main window.</p>
+<h3 id="test-case-maximum-height">Test Case Maximum Height</h3>
+<p>The maximum height of a test case before the scrollbar occurs.</p>
+<h3 id="show-compile-and-run-only">Show Compile And Run Only</h3>
+<p>Hide the compile only and run only buttons.</p>
+<p>It is useful if you don&rsquo;t care about the time used on compilation, or you are using Python which doesn&rsquo;t need to be compiled.</p>
+<h3 id="display-eoln-in-diff">Display EOLN in Diff</h3>
+<p>Use &ldquo;¶&rdquo; to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).</p>
+<h3 id="add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor</h3>
+<p>Add an extra margin at the bottom of the code editor, so that you can scroll less.</p>
+<p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by <kbd>Ctrl+Z</kbd>.</p>
+<h3 id="custom-application-font">Custom Application Font</h3>
+<p>Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.</p>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! You can <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 October 1, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/090d15cf5029abebc7751c2d53d9c33663144cb3">feat: add the structure of translations (#65) (090d15c)</a>
+</div>
+</div>
+
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://join.slack.com/t/cpeditor/shared_invite/zt-ekfy0zb5-SrOi8SIox8oq61oRonBynw">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="/v6.7/zh/about/">About CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/v6.7/js/main.min.664f21bf5eb0c31ebc661e2616e6c63e0448cec6d5636d869957be423c3cb952.js" integrity="sha256-Zk8hv16wwx68Zh4mFubGPgRIzsbVY22GmVe&#43;Qjw8uVI=" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
