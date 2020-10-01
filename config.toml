@@ -63,13 +63,19 @@ anonymizeIP = true
 title = "CP Editor"
 description = "The IDE for competitive programming"
 languageName = "English"
-# Weight used for sorting.
 weight = 1
 [languages.zh]
 title = "CP Editor"
 description = "专为算法竞赛设计的 IDE"
 languageName = "中文"
 contentDir = "content/zh"
+weight = 2
+[languages.ru]
+title = "CP Editor"
+description = "редактор, созданный для спортивного программирования"
+languageName = "Русский"
+contentDir = "content/ru"
+weight = 3
 
 [markup]
 [markup.goldmark]
