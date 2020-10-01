@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.69.2" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/ru/docs/installation/build-from-source/index.xml">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Build from source | CP Editor</title><meta property="og:title" content="Build from source" />
+<meta property="og:description" content="In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps, and is the only choice if your OS is not officially supported." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/ru/docs/installation/build-from-source/" />
+<meta property="og:site_name" content="CP Editor" />
+<meta itemprop="name" content="Build from source">
+<meta itemprop="description" content="In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps, and is the only choice if your OS is not officially supported."><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Build from source"/>
+<meta name="twitter:description" content="In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps, and is the only choice if your OS is not officially supported."/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-96337051-5', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" as="style">
+<link href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body class="td-section">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/ru/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/ru/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/ru/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/ru/community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/ru/download/" ><span>Download</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/">alpha</a>
+	
+	<a class="dropdown-item" href="/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Русский
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs/installation/build-from-source/">English</a>
+	
+	<a class="dropdown-item" href="/zh/docs/installation/build-from-source/">中文</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Поиск по сайту…"
+  aria-label="Поиск по сайту…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.62e36fd1ea6d595df84d889997ab108e8001eb359cb6f7f595986c9d94deada02b2d84ca641971c6ddbe62a331966dd1c97f0fcb7c41a6ad235e5ee6d7c6a26a.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Поиск по сайту…"
+  aria-label="Поиск по сайту…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.62e36fd1ea6d595df84d889997ab108e8001eb359cb6f7f595986c9d94deada02b2d84ca641971c6ddbe62a331966dd1c97f0fcb7c41a6ad235e5ee6d7c6a26a.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Русский
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs/installation/build-from-source/">English</a>
+	
+	<a class="dropdown-item" href="/zh/docs/installation/build-from-source/">中文</a>
+	
+</div>
+    </div>
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="rudocs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/installation/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Installation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="rudocsinstallation">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/installation/install-from-binaries/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Install from binaries</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocsinstallationinstall-from-binaries">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/installation/build-from-source/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Build from source</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="rudocsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/installation/build-from-aur/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from AUR</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocsinstallationbuild-from-aur">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/setup/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Setup</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/preferences/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Preferences</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocspreferences">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencescode-edit" href="/ru/docs/preferences/code-edit/">Code Edit</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferenceslanguage" href="/ru/docs/preferences/language/">Language</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesappearance" href="/ru/docs/preferences/appearance/">Appearance</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesactions" href="/ru/docs/preferences/actions/">Actions</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesextensions" href="/ru/docs/preferences/extensions/">Extensions</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesfile-path" href="/ru/docs/preferences/file-path/">File Path</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferenceskey-bindings" href="/ru/docs/preferences/key-bindings/">Key Bindings</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesadvanced" href="/ru/docs/preferences/advanced/">Advanced</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesgeneral" href="/ru/docs/preferences/general/">General</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/source-code/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Source Code</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocssource-code">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/ru/docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rudocsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/ru/docs/Installation/Build%20from%20source/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Отредактировать страницу</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Build%20from%20source" target="_blank"><i class="fab fa-github fa-fw"></i> Предложить изменения документации</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> Предложить доработки по проекту</a>
+
+</div>
+
+
+
+
+
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pageinfo pageinfo-primary">
+    This page hasn&#39;t been translated yet.
+    You can help us <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/ru/docs/Installation/Build from source/_index.md'>translate this page</a>.
+</div>
+
+
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/ru/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/ru/docs/installation/">Installation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/ru/docs/installation/build-from-source/">Build from source</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>Build from source</h1>
+        <div class="lead">In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps, and is the only choice if your OS is not officially supported.</div>
+	
+	<ol>
+<li>
+<p>Clone this repo and submodules:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+<span style="color:#204a87">cd</span> cpeditor
+</code></pre></div></li>
+<li>
+<p>Install <a href="https://www.qt.io/download" target="_blank">Qt</a> (5.14 or higher), <a href="https://cmake.org/download/" target="_blank">CMake</a> (3.12 or higher) and <a href="https://www.python.org/downloads/" target="_blank">Python3</a>.</p>
+<ul>
+<li>On some Linux distributions and MacOS, you can install from your package manager. For example, <code>sudo pacman -S qt5</code> on Arch Linux, <code>brew install qt5</code> on Mac OS.</li>
+<li>You can also download the <a href="https://www.qt.io/offline-installers" target="_blank">offline installer</a>, or download from the <a href="https://download.qt.io/static/mirrorlist/" target="_blank">mirrors</a>. The path from the root of the mirror should be like <code>/qt/official_releases/qt/5.14/5.14.2/qt-opensource-&lt;platform&gt;-5.14.2.&lt;suffix&gt;</code> (or other versions).</li>
+<li>You can also use <a href="https://github.com/miurahr/aqtinstall" target="_blank">aqtinstall</a> to install Qt.</li>
+</ul>
+</li>
+<li>
+<p>If CMake can&rsquo;t find the Qt installation path, you should set environment variable: <code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>. For example, on Mac, you can run something like <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.14.2&quot;</code>.</p>
+</li>
+<li>
+<p>Run the following commands:</p>
+<ul>
+<li>
+<p>Linux/MacOS:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir build
+<span style="color:#204a87">cd</span> build
+cmake .. -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
+cmake --build .
+</code></pre></div></li>
+<li>
+<p>Windows:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat"> <span style="color:#204a87;font-weight:bold">mkdir</span> build
+ <span style="color:#204a87;font-weight:bold">cd</span> build
+ cmake ..
+ cmake --build . --config Release
+</code></pre></div></li>
+</ul>
+</li>
+</ol>
+<p>On Linux, you will get <code>build/cpeditor</code>.</p>
+<p>On Mac, you will get <code>build/cpeditor.app</code>.</p>
+<p>On Windows, you will get <code>build/cpeditor.exe</code>, or <code>build/Release/cpeditor.exe</code>. You may need to gather the necessary DLLs. If you have installed CP Editor by a <code>setup.exe</code>, you can copy the DLLs from where CP Editor is installed (or copy the executable file to the installation path).</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! You can <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Изменено October 1, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/090d15cf5029abebc7751c2d53d9c33663144cb3">feat: add the structure of translations (#65) (090d15c)</a>
+</div>
+</div>
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://join.slack.com/t/cpeditor/shared_invite/zt-ekfy0zb5-SrOi8SIox8oq61oRonBynw">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="/ru/about/">About CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.664f21bf5eb0c31ebc661e2616e6c63e0448cec6d5636d869957be423c3cb952.js" integrity="sha256-Zk8hv16wwx68Zh4mFubGPgRIzsbVY22GmVe&#43;Qjw8uVI=" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

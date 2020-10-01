@@ -1,0 +1,72 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – Installation</title><link>/zh/docs/installation/</link><description>Recent content in Installation on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Install from binaries</title><link>/zh/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/install-from-binaries/</guid><description>
+&lt;p>Choose a version in the &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">Releases&lt;/a>, then download your binary.&lt;/p>
+&lt;h3 id="windows">Windows&lt;/h3>
+&lt;h4 id="setup-version">Setup Version&lt;/h4>
+&lt;blockquote>
+&lt;p>The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.&lt;/p>
+&lt;/blockquote>
+&lt;p>Download the &lt;code>setup.exe&lt;/code> in the assets and install it.&lt;/p>
+&lt;h4 id="portable-version">Portable Version&lt;/h4>
+&lt;blockquote>
+&lt;p>The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won&amp;rsquo;t see it in the list of installed programs on your system.&lt;/p>
+&lt;/blockquote>
+&lt;p>Download the &lt;code>portable.zip&lt;/code> in the assets and unzip it to any directory you like.&lt;/p>
+&lt;h3 id="linux">Linux&lt;/h3>
+&lt;p>Download the &lt;code>AppImage&lt;/code> in the assets, add execute permission to it (&lt;code>chmod +x &amp;lt;AppImagePath&amp;gt;&lt;/code>), then run it.&lt;/p>
+&lt;p>On Debian-based Linux distributions (Ubuntu, Linux Mint, etc.) you can download &lt;code>.deb&lt;/code> package in the assets and run the command in terminal:&lt;/p>
+&lt;pre>&lt;code>```sh
+sudo apt install &amp;lt;path to .deb package&amp;gt;
+```
+&lt;/code>&lt;/pre>
+&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or another graphical tools to install &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara and newer versions of these distributions or based on them.&lt;/p>
+&lt;h3 id="macos">MacOS&lt;/h3>
+&lt;p>Download the &lt;code>.dmg&lt;/code> file in the assets and install it.&lt;/p>
+&lt;p>You may need to click &amp;ldquo;Yes&amp;rdquo; to access Filesystem several times. Apple may report that this application does not comes from recognised developer and prevent you from launching app. Please add an exception to the Editor from &lt;code>Settings -&amp;gt; Security -&amp;gt; General&lt;/code>, and allow CP Editor to &lt;code>run anyways&lt;/code>&lt;/p></description></item><item><title>Docs: Build from source</title><link>/zh/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-source/</guid><description>
+&lt;ol>
+&lt;li>
+&lt;p>Clone this repo and submodules:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+&lt;span style="color:#204a87">cd&lt;/span> cpeditor
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Install &lt;a href="https://www.qt.io/download" target="_blank">Qt&lt;/a> (5.14 or higher), &lt;a href="https://cmake.org/download/" target="_blank">CMake&lt;/a> (3.12 or higher) and &lt;a href="https://www.python.org/downloads/" target="_blank">Python3&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>On some Linux distributions and MacOS, you can install from your package manager. For example, &lt;code>sudo pacman -S qt5&lt;/code> on Arch Linux, &lt;code>brew install qt5&lt;/code> on Mac OS.&lt;/li>
+&lt;li>You can also download the &lt;a href="https://www.qt.io/offline-installers" target="_blank">offline installer&lt;/a>, or download from the &lt;a href="https://download.qt.io/static/mirrorlist/" target="_blank">mirrors&lt;/a>. The path from the root of the mirror should be like &lt;code>/qt/official_releases/qt/5.14/5.14.2/qt-opensource-&amp;lt;platform&amp;gt;-5.14.2.&amp;lt;suffix&amp;gt;&lt;/code> (or other versions).&lt;/li>
+&lt;li>You can also use &lt;a href="https://github.com/miurahr/aqtinstall" target="_blank">aqtinstall&lt;/a> to install Qt.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>If CMake can&amp;rsquo;t find the Qt installation path, you should set environment variable: &lt;code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake&lt;/code>. For example, on Mac, you can run something like &lt;code>export CMAKE_PREFIX_PATH=&amp;quot;/usr/local/Cellar/qt/5.14.2&amp;quot;&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Run the following commands:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Linux/MacOS:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">mkdir build
+&lt;span style="color:#204a87">cd&lt;/span> build
+cmake .. -DCMAKE_BUILD_TYPE&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>Release
+cmake --build .
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Windows:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bat" data-lang="bat"> &lt;span style="color:#204a87;font-weight:bold">mkdir&lt;/span> build
+&lt;span style="color:#204a87;font-weight:bold">cd&lt;/span> build
+cmake ..
+cmake --build . --config Release
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>On Linux, you will get &lt;code>build/cpeditor&lt;/code>.&lt;/p>
+&lt;p>On Mac, you will get &lt;code>build/cpeditor.app&lt;/code>.&lt;/p>
+&lt;p>On Windows, you will get &lt;code>build/cpeditor.exe&lt;/code>, or &lt;code>build/Release/cpeditor.exe&lt;/code>. You may need to gather the necessary DLLs. If you have installed CP Editor by a &lt;code>setup.exe&lt;/code>, you can copy the DLLs from where CP Editor is installed (or copy the executable file to the installation path).&lt;/p></description></item><item><title>Docs: Use Artifacts</title><link>/zh/docs/installation/use-artifacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/use-artifacts/</guid><description>
+&lt;p>If you want to use the latest version (even later than the beta release), but don&amp;rsquo;t want to build from source, you can download Artifacts from &lt;a href="https://github.com/cpeditor/cpeditor/actions" target="_blank">GitHub Actions&lt;/a>.&lt;/p>
+&lt;p>However, it&amp;rsquo;s not recommended to use Artifacts, they are more unstable than beta releases, and may be a work in progress. You should read the commit logs and even the source codes before using Artifacts.&lt;/p>
+&lt;p>In order to run it on Windows/MacOS, you should install from &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">Releases&lt;/a> first (usually any version is OK, unless something like DLL missing happens). On Windows, replace &lt;code>cpeditor.exe&lt;/code> in your install folder with the Artifact. On Mac, run &lt;code>cp path/to/Artifact cpeditor.app/Contents/MacOs&lt;/code>, where &lt;code>cpeditor.app&lt;/code> is the one already installed on your machine.&lt;/p>
+&lt;p>In order to run it on Ubuntu 18.04, you need to install Qt. Other Linux distributions may not support binaries compiled on Ubuntu 18.04.&lt;/p></description></item><item><title>Docs: Build from AUR</title><link>/zh/docs/installation/build-from-aur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-aur/</guid><description>
+&lt;p>This method is only for Arch Linux (or other distros based on Arch Linux, including Manjaro) users.&lt;/p>
+&lt;p>There are two AUR packages for CP Editor: &lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank">cpeditor&lt;/a> for the stable version and &lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank">cpeditor-git&lt;/a> for the alpha version.&lt;/p>
+&lt;p>If you have &lt;code>yay&lt;/code> installed, you can run &lt;code>yay -S cpeditor&lt;/code> to install. If you don&amp;rsquo;t have &lt;code>yay&lt;/code> and don&amp;rsquo;t know how to install from AUR, you can read &lt;a href="https://github.com/Jguer/yay#installation" target="_blank">how to install yay&lt;/a> or &lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages" target="_blank">the Arch Wiki&lt;/a>.&lt;/p>
+&lt;p>After the installation, you&amp;rsquo;ll be able to run CP Editor by &lt;code>cpeditor&lt;/code> in your terminal or launch from the start menu like other apps.&lt;/p></description></item></channel></rss>
