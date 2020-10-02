@@ -14,11 +14,8 @@
 &lt;h3 id="linux">Linux&lt;/h3>
 &lt;p>Download the &lt;code>AppImage&lt;/code> in the assets, add execute permission to it (&lt;code>chmod +x &amp;lt;AppImagePath&amp;gt;&lt;/code>), then run it.&lt;/p>
 &lt;p>On Debian-based Linux distributions (Ubuntu, Linux Mint, etc.) you can download &lt;code>.deb&lt;/code> package in the assets and run the command in terminal:&lt;/p>
-&lt;pre>&lt;code>```sh
-sudo apt install &amp;lt;path to .deb package&amp;gt;
-```
-&lt;/code>&lt;/pre>
-&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or another graphical tools to install &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara and newer versions of these distributions or based on them.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">sudo apt install &amp;lt;path to .deb package&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or another graphical tools to install &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara and newer versions of these distributions or based on them.&lt;/p>
 &lt;h3 id="macos">MacOS&lt;/h3>
 &lt;p>Download the &lt;code>.dmg&lt;/code> file in the assets and install it.&lt;/p>
 &lt;p>You may need to click &amp;ldquo;Yes&amp;rdquo; to access Filesystem several times. Apple may report that this application does not comes from recognised developer and prevent you from launching app. Please add an exception to the Editor from &lt;code>Settings -&amp;gt; Security -&amp;gt; General&lt;/code>, and allow CP Editor to &lt;code>run anyways&lt;/code>&lt;/p></description></item><item><title>Docs: Build from source</title><link>/ru/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/installation/build-from-source/</guid><description>
