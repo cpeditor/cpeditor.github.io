@@ -92,7 +92,14 @@ $(document).ready(() => {
                 } else if (suitableAssets.length === 1) {
                     return suitableAssets[0];
                 } else {
-                    return suitableAssets.find((asset) => !asset.browser_download_url.includes("portable"));
+                    switch (platform) {
+                        case "Windows":
+                            return suitableAssets.find((asset) => asset.name.endsWith("exe"));
+                        case "Linux":
+                            return suitableAssets.find((asset) => asset.name.endsWith("AppImage"));
+                        default:
+                            return suitableAssets.find((asset) => !asset.name.includes("portable"));
+                    }
                 }
             }
         },
