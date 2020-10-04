@@ -11,7 +11,14 @@ linkTitle = "CP Editor"
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">
 
-<div style="margin: -15px;">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app" style="margin: -15px;" v-cloak>
 
 <!--================Home Banner Area =================-->
 <div class="home_banner_area">
@@ -23,7 +30,7 @@ linkTitle = "CP Editor"
 						<h2>算法竞赛选手们<br />所需要的 IDE</h2>
 						<p>CP Editor 专为算法竞赛设计，不像其它 IDE 主要是为了开发设计的。它可以帮助你自动化编译、运行、测试，从而让你专注于算法设计。它甚至可以从各种算法竞赛网站上获取样例，将代码提交到 Codeforces 上！</p>
 						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">查看源代码</a>
-						<a class="banner_btn2" id="download_by_os" href="https://github.com/cpeditor/cpeditor/releases/latest">下载</a>
+						<a class="banner_btn2" :href="downloadURL">为 {{ os }} 下载</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -280,7 +287,7 @@ linkTitle = "CP Editor"
 		<div class="impress_inner">
 			<h2>被 CP Editor 的强大功能所吸引了？</h2>
 			<p>很高兴你选择尝试 CP Editor。<br>我们希望 CP Editor 能够满足你在算法竞赛编程中的所有需求。<br>CP Editor 由算法竞赛选手创建，给算法竞赛选手使用，为算法竞赛选手着想。</p>
-			<a class="banner_btn2" id = "download_by_os_bottom" href="https://github.com/cpeditor/cpeditor/releases/latest">现在就试试</a>
+			<a class="banner_btn2" :href="downloadURL">在 {{ os }} 上试试</a>
 		</div>
 	</div>
 </div>

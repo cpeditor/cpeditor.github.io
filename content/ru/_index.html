@@ -11,7 +11,14 @@ linkTitle = "CP Editor"
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">
 
-<div style="margin: -15px;">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app" style="margin: -15px;" v-cloak>
 
 <!--================Home Banner Area =================-->
 <div class="home_banner_area">
@@ -23,7 +30,7 @@ linkTitle = "CP Editor"
 						<h2>The Missing Editor <br />for Competitive Programmers</h2>
 						<p>CP Editor is specially designed for competitive programming. It helps you focus on your algorithms and automates compilation, execution and testing of your code. It even fetches test cases for you from different platforms and submits solutions to Codeforces!</p>
 						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">View source</a>
-						<a class="banner_btn2" id="download_by_os" href="https://github.com/cpeditor/cpeditor/releases/latest">Download</a>
+						<a class="banner_btn2" :href="downloadURL">Get for {{ os }}</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -280,7 +287,7 @@ linkTitle = "CP Editor"
 		<div class="impress_inner">
 			<h2>Impressed by our features?</h2>
 			<p>We are excited that you have chosen to try out this editor. <br>We hope that our Editor will fulfill all your needs in Competitive Programming. <br>CP Editor is, "by competitive programmers, to competitive programmers, for competitive programmers".</p>
-			<a class="banner_btn2" id = "download_by_os_bottom" href="https://github.com/cpeditor/cpeditor/releases/latest">Try it now</a>
+			<a class="banner_btn2" :href="downloadURL">Try it on {{ os }}</a>
 		</div>
 	</div>
 </div>

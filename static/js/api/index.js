@@ -21,39 +21,31 @@ function getOS() {
     return os;
 }
 
-function fetchLatestRelease() {
-    let uri = "https://api.github.com/repos/cpeditor/cpeditor/releases/latest";
-
-    fetch(uri)
-        .then((res) => res.json())
-        .then((data) => {
-            var os = getOS();
-            let directUrl = uri;
-
-            data.assets.forEach((release) => {
-                if (release.name.endsWith(".exe")) {
-                    if (os === "Windows") {
-                        directUrl = release.browser_download_url;
+new Vue({
+    el: "#app",
+    data: {
+        os: getOS(),
+        downloadURL: "https://github.com/cpeditor/cpeditor/releases/latest"
+    },
+    created() {
+        fetch("https://api.github.com/repos/cpeditor/cpeditor/releases/latest")
+            .then((res) => res.json())
+            .then((data) => {
+                for (const asset of data.assets) {
+                    if (asset.name.endsWith(".exe")) {
+                        if (this.os === "Windows") {
+                            this.downloadURL = asset.browser_download_url;
+                        }
+                    } else if (asset.name.endsWith(".dmg")) {
+                        if (this.os === "Mac OS") {
+                            this.downloadURL = asset.browser_download_url;
+                        }
+                    } else if (asset.name.endsWith(".AppImage")) {
+                        if (this.os === "Linux") {
+                            this.downloadURL = asset.browser_download_url;
+                        }
                     }
-                } else if (release.name.endsWith(".dmg")) {
-                    if (os === "Mac OS") {
-                        directUrl = release.browser_download_url;
-                    }
-                } else if (release.name.endsWith(".AppImage")) {
-                    if (os === "Linux") {
-                        directUrl = release.browser_download_url;
-                    }
-                }
+                };
             });
-
-            if (os === "Windows" || os === "Linux" || os === "Mac OS") {
-                document.getElementById("download_by_os").setAttribute("href", directUrl);
-                document.getElementById("download_by_os").innerText = "Get for " + getOS();
-
-                document.getElementById("download_by_os_bottom").setAttribute("href", directUrl);
-                document.getElementById("download_by_os_bottom").innerText = "Try it on " + getOS();
-            }
-        });
-}
-
-fetchLatestRelease();
+    }
+});
