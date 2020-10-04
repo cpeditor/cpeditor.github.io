@@ -8,6 +8,40 @@
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
 
+## Build
+
+### Preparation
+
+```sh
+git clone --recurse-submodules https://github.com/cpeditor/cpeditor.github.io
+cd cpeditor.github.io
+npm install
+```
+
+### Build the current version
+
+```sh
+hugo
+```
+
+The site will be in the `public` directory.
+
+### Build the current version and preview on local server
+
+```sh
+hugo server
+```
+
+### Build all versions
+
+```sh
+./build.sh
+```
+
+The site will be in the `dist` directory.
+
+Windows users need to use UNIX-like shells. However, if you only want to contribute, you don't need to build all versions.
+
 ## Hall of Fame
 
 [![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/0)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/0)
