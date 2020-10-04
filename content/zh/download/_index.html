@@ -59,7 +59,7 @@ menu:
                                     <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
                                         {{ asset.name }}
                                         <span v-if="release === latestStableRelease">(最新稳定版)</span>
-                                        <span v-else-if="release === releases[0]">(最新预览)</span>
+                                        <span v-else-if="release === releases[0]">(最新预览版)</span>
                                     </option>
                                 </template>
                             </template>
