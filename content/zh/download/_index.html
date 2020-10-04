@@ -58,7 +58,7 @@ menu:
                                 <template v-for="asset in release.assets" :key="asset.id">
                                     <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
                                         {{ asset.name }}
-                                        <span v-if="release === latestStableRelease">(最新稳定)</span>
+                                        <span v-if="release === latestStableRelease">(最新稳定版)</span>
                                         <span v-else-if="release === releases[0]">(最新预览)</span>
                                     </option>
                                 </template>
