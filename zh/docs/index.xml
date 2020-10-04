@@ -107,7 +107,7 @@
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
 &lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
 &lt;h3 id="界面语言-ui-language">界面语言 (UI Language)&lt;/h3>
-&lt;p>UI 中使用的人类语言。&lt;/p>
+&lt;p>UI 中使用的自然语言。&lt;/p>
 &lt;h3 id="界面风格">界面风格&lt;/h3>
 &lt;p>用户界面使用的样式。可用选项在不同平台上有所不同。&lt;/p>
 &lt;p>“默认”样式要么是在你的平台上最合适的样式，要么是 &lt;code>--style&lt;/code> 命令行选项指定的样式。&lt;/p>

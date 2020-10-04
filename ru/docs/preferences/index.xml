@@ -107,7 +107,7 @@
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
 &lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: Appearance</title><link>/ru/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/appearance/</guid><description>
 &lt;h3 id="ui-language">UI Language&lt;/h3>
-&lt;p>The human language used in the UI.&lt;/p>
+&lt;p>The natural language used in the UI.&lt;/p>
 &lt;h3 id="ui-style">UI Style&lt;/h3>
 &lt;p>The style used for the UI. The available options are different on different platforms.&lt;/p>
 &lt;p>The &amp;ldquo;default&amp;rdquo; style is either the most appropriate style on your platform, or the style specified by the &lt;code>--style&lt;/code> command line option.&lt;/p>
