@@ -43,7 +43,7 @@ menu:
             </div>
             <div class="col-lg-6 py-3">
                 <h2 v-if="releases.length === 0">加载中...</h2>
-                <h2 v-else-if="!selectedAsset" class="text-warning">找不到可用文件</h2>
+                <h2 v-else-if="!selectedAsset" class="text-warning">找不到可下载的文件</h2>
                 <template v-else>
                     <div class="form-group">
                         <label for="platform">平台</label>
