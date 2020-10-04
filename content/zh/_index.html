@@ -30,7 +30,10 @@ linkTitle = "CP Editor"
 						<h2>算法竞赛选手们<br />所需要的 IDE</h2>
 						<p>CP Editor 专为算法竞赛设计，不像其它 IDE 主要是为了开发设计的。它可以帮助你自动化编译、运行、测试，从而让你专注于算法设计。它甚至可以从各种算法竞赛网站上获取样例，将代码提交到 Codeforces 上！</p>
 						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">查看源代码</a>
-						<a class="banner_btn2" :href="downloadURL">为 {{ os }} 下载</a>
+						<a class="banner_btn2" :href="downloadURL">
+							<template v-if="assetAvailable">为 {{ os }} 下载</template>
+							<template v-else>下载</template>
+						</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -287,7 +290,10 @@ linkTitle = "CP Editor"
 		<div class="impress_inner">
 			<h2>被 CP Editor 的强大功能所吸引了？</h2>
 			<p>很高兴你选择尝试 CP Editor。<br>我们希望 CP Editor 能够满足你在算法竞赛编程中的所有需求。<br>CP Editor 由算法竞赛选手创建，给算法竞赛选手使用，为算法竞赛选手着想。</p>
-			<a class="banner_btn2" :href="downloadURL">在 {{ os }} 上试试</a>
+			<a class="banner_btn2" :href="downloadURL">
+				<template v-if="assetAvailable">在 {{ os }} 上试试</template>
+				<template v-else>现在就试试</template>
+			</a>
 		</div>
 	</div>
 </div>

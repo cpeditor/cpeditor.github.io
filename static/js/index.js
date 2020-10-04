@@ -27,7 +27,8 @@ const vm = new Vue({
     el: "#app",
     data: {
         os: getOS(),
-        downloadURL: "https://github.com/cpeditor/cpeditor/releases/latest"
+        downloadURL: "https://github.com/cpeditor/cpeditor/releases/latest",
+        assetAvailable: false
     },
     created() {
         Vue.nextTick(() => {
@@ -56,20 +57,24 @@ const vm = new Vue({
         fetch("https://api.github.com/repos/cpeditor/cpeditor/releases/latest")
             .then((res) => res.json())
             .then((data) => {
-                for (const asset of data.assets) {
-                    if (asset.name.endsWith(".exe")) {
-                        if (this.os === "Windows") {
-                            this.downloadURL = asset.browser_download_url;
-                        }
-                    } else if (asset.name.endsWith(".dmg")) {
-                        if (this.os === "Mac OS") {
-                            this.downloadURL = asset.browser_download_url;
-                        }
-                    } else if (asset.name.endsWith(".AppImage")) {
-                        if (this.os === "Linux") {
-                            this.downloadURL = asset.browser_download_url;
-                        }
-                    }
+                let suffix;
+                switch (this.os) {
+                    case "Windows":
+                        suffix = ".exe";
+                        break;
+                    case "Mac OS":
+                        suffix = ".dmg";
+                        break;
+                    case "Linux":
+                        suffix = ".AppImage";
+                        break;
+                }
+
+                const suitableAsset = data.assets.find((asset) => asset.name.endsWith(suffix));
+
+                if (suitableAsset) {
+                    this.downloadURL = suitableAsset.browser_download_url;
+                    this.assetAvailable = true;
                 }
             });
     }

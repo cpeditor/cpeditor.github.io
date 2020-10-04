@@ -30,7 +30,10 @@ linkTitle = "CP Editor"
 						<h2>The Missing Editor <br />for Competitive Programmers</h2>
 						<p>CP Editor is specially designed for competitive programming. It helps you focus on your algorithms and automates compilation, execution and testing of your code. It even fetches test cases for you from different platforms and submits solutions to Codeforces!</p>
 						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">View source</a>
-						<a class="banner_btn2" :href="downloadURL">Get for {{ os }}</a>
+						<a class="banner_btn2" :href="downloadURL">
+							<template v-if="assetAvailable">Get for {{ os }}</template>
+							<template v-else>Download</template>
+						</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -287,7 +290,10 @@ linkTitle = "CP Editor"
 		<div class="impress_inner">
 			<h2>Impressed by our features?</h2>
 			<p>We are excited that you have chosen to try out this editor. <br>We hope that our Editor will fulfill all your needs in Competitive Programming. <br>CP Editor is, "by competitive programmers, to competitive programmers, for competitive programmers".</p>
-			<a class="banner_btn2" :href="downloadURL">Try it on {{ os }}</a>
+			<a class="banner_btn2" :href="downloadURL">
+				<template v-if="assetAvailable">Try it on {{ os }}</template>
+				<template v-else>Try it now</template>
+			</a>
 		</div>
 	</div>
 </div>
