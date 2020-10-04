@@ -5,7 +5,7 @@ weight: 30
 
 ### UI Language
 
-The human language used in the UI.
+The natural language used in the UI.
 
 ### UI Style
 
