@@ -45,7 +45,7 @@ new Vue({
                             this.downloadURL = asset.browser_download_url;
                         }
                     }
-                };
+                }
             });
     }
 });
