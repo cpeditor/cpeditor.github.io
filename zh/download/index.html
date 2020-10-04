@@ -21,14 +21,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Download CP Editor | CP Editor</title><meta property="og:title" content="Download CP Editor" />
+<title>下载 CP Editor | CP Editor</title><meta property="og:title" content="下载 CP Editor" />
 <meta property="og:description" content="专为算法竞赛设计的 IDE" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/zh/download/" />
 <meta property="og:site_name" content="CP Editor" />
-<meta itemprop="name" content="Download CP Editor">
+<meta itemprop="name" content="下载 CP Editor">
 <meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Download CP Editor"/>
+<meta name="twitter:title" content="下载 CP Editor"/>
 <meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
 
 
@@ -83,7 +83,7 @@ if (!doNotTrack) {
 				
 				
 				
-				<a class="nav-link" href="/zh/about/" ><span>About</span></a>
+				<a class="nav-link" href="/zh/about/" ><span>关于</span></a>
 			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -113,7 +113,7 @@ if (!doNotTrack) {
 				
 				
 				
-				<a class="nav-link active" href="/zh/download/" ><span class="active">Download</span></a>
+				<a class="nav-link active" href="/zh/download/" ><span class="active">下载</span></a>
 			</li>
 			
 			
@@ -159,7 +159,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.16f5c1e012c4f5cdcc3da7fca6268ae65795996ad851492d2b3cbed08a836539e672da0a5c45f8c75ca4ec76722e5c08991b415cb7f27df9233daaea4e802f8a.json"
+  data-offline-search-index-json-src="/offline-search-index.b59d8fa9c2161f604b30e497cf3788d1faefe5b5dfade80174e20672be068d3444b7eeea0e463c9df7bc1c5801cf736638985c2e02a79cfdd0153c371438cdbd.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -186,11 +186,11 @@ if (!doNotTrack) {
     <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
         <div class="container text-center td-arrow-down">
             <span class="h4 mb-0">
-                <h1>Get CP Editor on your machine and have a try!</h1>
+                <h1>在你的计算机上获取 CP Editor，然后试一试！</h1>
                 <p v-if="latestStableAssetForUserPlatform" class="pt-3">
-                    You probably want to use
+                    你可能想要使用
                     <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
-                        the latest stable version on {{ userPlatform }}
+                        在 {{ userPlatform }} 上的最新稳定版本
                     </a>.
                 </p>
             </span>
@@ -200,33 +200,33 @@ if (!doNotTrack) {
     <div class="container pt-5">
         <div class="row">
             <div class="col-lg-6 text-center py-3">
-                <h2>Choose your platform and the version you want to download</h2>
+                <h2>选择你使用的平台和想要下载的版本</h2>
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="/docs/installation">Install instructions</a></li>
+                    <li class="list-group-item"><a href="/docs/installation">安装说明</a></li>
                     <li class="list-group-item">
-                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">All versions</a>
+                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">所有版本</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-6 py-3">
-                <h2 v-if="releases.length === 0">Loading...</h2>
-                <h2 v-else-if="!selectedAsset" class="text-warning">No available asset found</h2>
+                <h2 v-if="releases.length === 0">加载中...</h2>
+                <h2 v-else-if="!selectedAsset" class="text-warning">找不到可下载的文件</h2>
                 <template v-else>
                     <div class="form-group">
-                        <label for="platform">Platform</label>
+                        <label for="platform">平台</label>
                         <select class="form-control" id="platform" v-model="selectedPlatform">
                             <option v-for="platformOption in platformOptions">{{ platformOption }}</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="asset">Version</label>
+                        <label for="asset">版本</label>
                         <select class="form-control" id="asset" v-model="selectedAsset">
                             <template v-for="release in releases" :key="release.tag_name">
                                 <template v-for="asset in release.assets" :key="asset.id">
                                     <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
                                         {{ asset.name }}
-                                        <span v-if="release === latestStableRelease">(Latest Stable)</span>
-                                        <span v-else-if="release === releases[0]">(Latest Beta)</span>
+                                        <span v-if="release === latestStableRelease">(最新稳定版)</span>
+                                        <span v-else-if="release === releases[0]">(最新预览版)</span>
                                     </option>
                                 </template>
                             </template>
@@ -234,12 +234,13 @@ if (!doNotTrack) {
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block">Download</a>
+                        class="btn btn-primary btn-block">下载</a>
                 </template>
             </div>
         </div>
     </div>
 </div>
+
 
 
       </main>
@@ -299,7 +300,7 @@ if (!doNotTrack) {
         <br>
         <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">CC BY-SA 4.0</a>.</small>
 	
-		<p class="mt-2 mb-0"><a href="/zh/about/">About CP Editor</a></p>
+		<p class="mt-2 mb-0"><a href="/zh/about/">关于 CP Editor</a></p>
 	
       </div>
     </div>
