@@ -159,7 +159,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.b59d8fa9c2161f604b30e497cf3788d1faefe5b5dfade80174e20672be068d3444b7eeea0e463c9df7bc1c5801cf736638985c2e02a79cfdd0153c371438cdbd.json"
+  data-offline-search-index-json-src="/offline-search-index.c858c06a510709b19c9dca00c448da8b943908c1c1c8fe6cecfb1a6721a0fc920407816004c457d51c6924f37889437577d8943ad3a5bd5e530d881fb9cb935a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -180,7 +180,14 @@ if (!doNotTrack) {
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">
 
-<div style="margin: -15px;">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app" style="margin: -15px;" v-cloak>
 
 <!--================Home Banner Area =================-->
 <div class="home_banner_area">
@@ -192,7 +199,10 @@ if (!doNotTrack) {
 						<h2>The Missing Editor <br />for Competitive Programmers</h2>
 						<p>CP Editor is specially designed for competitive programming. It helps you focus on your algorithms and automates compilation, execution and testing of your code. It even fetches test cases for you from different platforms and submits solutions to Codeforces!</p>
 						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">View source</a>
-						<a class="banner_btn2" id="download_by_os" href="https://github.com/cpeditor/cpeditor/releases/latest">Download</a>
+						<a class="banner_btn2" :href="downloadURL">
+							<template v-if="assetAvailable">Get for {{ os }}</template>
+							<template v-else>Download</template>
+						</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -449,19 +459,17 @@ if (!doNotTrack) {
 		<div class="impress_inner">
 			<h2>Impressed by our features?</h2>
 			<p>We are excited that you have chosen to try out this editor. <br>We hope that our Editor will fulfill all your needs in Competitive Programming. <br>CP Editor is, "by competitive programmers, to competitive programmers, for competitive programmers".</p>
-			<a class="banner_btn2" id = "download_by_os_bottom" href="https://github.com/cpeditor/cpeditor/releases/latest">Try it now</a>
+			<a class="banner_btn2" :href="downloadURL">
+				<template v-if="assetAvailable">Try it on {{ os }}</template>
+				<template v-else>Try it now</template>
+			</a>
 		</div>
 	</div>
 </div>
 <!--================End Impress Area =================-->
 
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
-<!--gmaps Js-->
-<script src="/js/theme.js"></script>
-<script src="/js/api/index.js"></script>
+<script src="/js/index.js"></script>
 
 </div>
 
