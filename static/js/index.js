@@ -1,3 +1,5 @@
+"use strict";
+
 function getOS() {
     var userAgent = window.navigator.userAgent,
         platform = window.navigator.platform,
@@ -21,13 +23,36 @@ function getOS() {
     return os;
 }
 
-new Vue({
+const vm = new Vue({
     el: "#app",
     data: {
         os: getOS(),
         downloadURL: "https://github.com/cpeditor/cpeditor/releases/latest"
     },
     created() {
+        Vue.nextTick(() => {
+            if ($(".testi_slider").length) {
+                $(".testi_slider").owlCarousel({
+                    loop: true,
+                    margin: 30,
+                    items: 2,
+                    nav: false,
+                    autoplay: true,
+                    smartSpeed: 1500,
+                    dots: false,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 2,
+                        },
+                    }
+                });
+            }
+        });
+
         fetch("https://api.github.com/repos/cpeditor/cpeditor/releases/latest")
             .then((res) => res.json())
             .then((data) => {
