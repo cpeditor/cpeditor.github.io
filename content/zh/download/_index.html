@@ -1,6 +1,6 @@
 ---
-title: Download CP Editor
-linkTitle: Download
+title: 下载 CP Editor
+linkTitle: 下载
 menu:
   main:
     weight: 50
@@ -19,11 +19,11 @@ menu:
     <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
         <div class="container text-center td-arrow-down">
             <span class="h4 mb-0">
-                <h1>Get CP Editor on your machine and have a try!</h1>
+                <h1>在你的计算机上获取 CP Editor，然后试一试！</h1>
                 <p v-if="latestStableAssetForUserPlatform" class="pt-3">
-                    You probably want to use
+                    你可能要使用
                     <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
-                        the latest stable version on {{ userPlatform }}
+                        在 {{ userPlatform }} 上的最新稳定版本
                     </a>.
                 </p>
             </span>
@@ -33,33 +33,33 @@ menu:
     <div class="container pt-5">
         <div class="row">
             <div class="col-lg-6 text-center py-3">
-                <h2>Choose your platform and the version you want to download</h2>
+                <h2>选择你要下载的平台上的版本</h2>
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="/docs/installation">Install instructions</a></li>
+                    <li class="list-group-item"><a href="/docs/installation">安装说明</a></li>
                     <li class="list-group-item">
-                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">All versions</a>
+                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">所有版本</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-6 py-3">
-                <h2 v-if="releases.length === 0">Loading...</h2>
-                <h2 v-else-if="!selectedAsset" class="text-warning">No available asset found</h2>
+                <h2 v-if="releases.length === 0">加载中...</h2>
+                <h2 v-else-if="!selectedAsset" class="text-warning">找不到可用文件</h2>
                 <template v-else>
                     <div class="form-group">
-                        <label for="platform">Platform</label>
+                        <label for="platform">平台</label>
                         <select class="form-control" id="platform" v-model="selectedPlatform">
                             <option v-for="platformOption in platformOptions">{{ platformOption }}</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="asset">Version</label>
+                        <label for="asset">版本</label>
                         <select class="form-control" id="asset" v-model="selectedAsset">
                             <template v-for="release in releases" :key="release.tag_name">
                                 <template v-for="asset in release.assets" :key="asset.id">
                                     <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
                                         {{ asset.name }}
-                                        <span v-if="release === latestStableRelease">(Latest Stable)</span>
-                                        <span v-else-if="release === releases[0]">(Latest Beta)</span>
+                                        <span v-if="release === latestStableRelease">(最新稳定)</span>
+                                        <span v-else-if="release === releases[0]">(最新预览)</span>
                                     </option>
                                 </template>
                             </template>
@@ -67,7 +67,7 @@ menu:
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block">Download</a>
+                        class="btn btn-primary btn-block">下载</a>
                 </template>
             </div>
         </div>
