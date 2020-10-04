@@ -11,7 +11,14 @@ linkTitle = "CP Editor"
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">
 
-<div style="margin: -15px;">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app" style="margin: -15px;" v-cloak>
 
 <!--================Home Banner Area =================-->
 <div class="home_banner_area">
@@ -20,10 +27,13 @@ linkTitle = "CP Editor"
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="banner_content">
-						<h2>The Missing Editor <br />for Competitive Programmers</h2>
-						<p>CP Editor is specially designed for competitive programming. It helps you focus on your algorithms and automates compilation, execution and testing of your code. It even fetches test cases for you from different platforms and submits solutions to Codeforces!</p>
-						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">View source</a>
-						<a class="banner_btn2" id="download_by_os" href="https://github.com/cpeditor/cpeditor/releases/latest">Download</a>
+						<h2>算法竞赛选手们<br />所需要的 IDE</h2>
+						<p>CP Editor 专为算法竞赛设计，不像其它 IDE 主要是为了开发设计的。它可以帮助你自动化编译、运行、测试，从而让你专注于算法设计。它甚至可以从各种算法竞赛网站上获取样例，将代码提交到 Codeforces 上！</p>
+						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">查看源代码</a>
+						<a class="banner_btn2" :href="downloadURL">
+							<template v-if="assetAvailable">为 {{ os }} 下载</template>
+							<template v-else>下载</template>
+						</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -41,29 +51,29 @@ linkTitle = "CP Editor"
 <div class="work_area p_120">
 	<div class="container">
 		<div class="main_title">
-			<h2>How it works for you</h2>
-			<p>CP Editor eliminates all the repetitive and boring tasks during algorithmic contests. It automates all that's reasonably possible and allows you to purely focus on your code.</p>
+			<h2>它如何为你工作</h2>
+			<p>CP Editor 解决了算法竞赛中重复和无聊的任务。它会尽可能地将操作自动化，让你完全专注于代码。</p>
 		</div>
 		<div class="work_inner row">
 			<div class="col-lg-4">
 				<div class="work_item">
 					<i class="lnr lnr-screen"></i>
-					<a><h4>Fetch testcases</h4></a>
-					<p>CP Editor can fetch testcases automatically from almost all competitive programming sites. Say bye to error-prone copy-pasting.</p>
+					<a><h4>获取测试用例</h4></a>
+					<p>CP Editor 可以从几乎所有的算法竞赛网站上自动获取样例。你再也不用手动进行麻烦的复制粘贴。</p>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="work_item">
 					<i class="lnr lnr-code"></i>
-					<a><h4>Code faster</h4></a>
-					<p>Code faster with its amazing customizable code snippets. In just two seconds you can insert a whole DFS code into your editor.</p>
+					<a><h4>更快地编程</h4></a>
+					<p>强大的可自定义代码片段功能可加快编程速度。在短短两秒钟内，你可以将整个 DFS 代码插入编辑器。</p>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="work_item">
 					<i class="lnr lnr-clock"></i>
-					<a href="#"><h4>Get verdicts</h4></a>
-					<p>You can get verdicts for your sample testcases in one click by built-in checkers or checkers from testlib. You can also add your own checkers.</p>
+					<a href="#"><h4>获取评测结果</h4></a>
+					<p>你可以通过内置检查器或来自 testlib 的检查器一键获取样例的评测结果。你也可以添加自己的 SPJ。</p>
 				</div>
 			</div>
 		</div>
@@ -77,16 +87,16 @@ linkTitle = "CP Editor"
 		<div class="made_life_inner">
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
-				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#withoutSaving" role="tab" aria-controls="home" aria-selected="true">Run without Saving</a>
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#withoutSaving" role="tab" aria-controls="home" aria-selected="true">运行而无需保存</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#themes" role="tab" aria-controls="profile" aria-selected="false">Variety of Themes</a>
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#themes" role="tab" aria-controls="profile" aria-selected="false">多种主题</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#linting" role="tab" aria-controls="contact" aria-selected="false">Code Linting</a>
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#linting" role="tab" aria-controls="contact" aria-selected="false">代码检查</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" id="edge-tab" data-toggle="tab" href="#codeforces" role="tab" aria-controls="edge" aria-selected="false">Submit to Codeforces</a>
+				<a class="nav-link" id="edge-tab" data-toggle="tab" href="#codeforces" role="tab" aria-controls="edge" aria-selected="false">提交至 Codeforces</a>
 				</li>
 			</ul>
 			<div class="tab-content" id="myTabContent">
@@ -94,10 +104,10 @@ linkTitle = "CP Editor"
 					<div class="row made_life_text">
 						<div class="col-lg-6">
 							<div class="left_side_text">
-								<h3>Run any code<br />At any time</h3>
-								<h6>We know that you want to test something without a temp file</h6>
-								<p>You can run your code in one click without saving and the hot exit feature makes it easy to restore your code from the last session.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<h3>在任何时候<br />运行任何代码</h3>
+								<h6>我们知道你想要无需临时文件就能进行测试</h6>
+								<p>你可以一键运行代码而无需保存，热退出功能使你可以轻松地从上一个会话中还原代码。</p>
+								<a class="main_btn" href="#">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -111,10 +121,10 @@ linkTitle = "CP Editor"
 					<div class="row made_life_text">
 						<div class="col-lg-6">
 							<div class="left_side_text">
-								<h3>Dark themes? <br />We've got you covered</h3>
-								<h6>Our lives are colorful, why not our coding editor</h6>
-								<p>We have added five different themes for you to choose from: Light, Drakula, Monkai, Solarized Light and Solarized Dark. If that does not satisfy you, ask us on our community pages and we will provide you more.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<h3>想要暗色模式？<br />我们提供了</h3>
+								<h6>我们的生活是丰富多彩的，难道代码编辑器就不吗？</h6>
+								<p>我们提供了五个不同的主题供你选择：Light, Drakula, Monkai, Solarized Light 以及 Solarized Dark。如果你不满意，请告诉我们，我们将为你提供更多。</p>
+								<a class="main_btn" href="#">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -128,10 +138,10 @@ linkTitle = "CP Editor"
 					<div class="row made_life_text">
 						<div class="col-lg-6">
 							<div class="left_side_text">
-								<h3>Errors and Warnings?<br />We lint them while you are coding</h3>
-								<h6>Save your precious contest time with code linting</h6>
-								<p>Using Language Servers, we provide real-time linting for errors and warnings in your code, just like Intellisense in VSCode and Atom. You can see squiggles under the warnings and hover over them to get tooltips.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<h3>错误和警告？<br />我们会在你打字的过程中指出</h3>
+								<h6>用代码检查节省宝贵的比赛时间 </h6>
+								<p>就像 VS Code 和 Atom 中的 Intellisense 那样，使用 Language Server，我们可以为代码中的错误和警告提供实时更新。你可以在警告下方看到波浪线，并将鼠标悬停在它们上方以获取提示。</p>
+								<a class="main_btn" href="#">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -145,10 +155,10 @@ linkTitle = "CP Editor"
 					<div class="row made_life_text">
 						<div class="col-lg-6">
 							<div class="left_side_text">
-								<h3>We can submit your <br/>Solutions to Codeforces</h3>
-								<h6>All thanks to Competitive Programming Community</h6>
-								<p>We have gathered the best tools in competitive programming and merged them into one editor. One such tool is called CF Tool. We have added it so you can submit and get verdicts in the editor.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<h3>我们可以将你的代码<br/>提交到 Codeforces</h3>
+								<h6>多亏了算法竞赛编程社区</h6>
+								<p>我们收集了算法竞赛编程中最好的工具，并将它们合并为一个 IDE。其中一种这样的工具称为 CF Tool。我们已经添加了它，因此，你可以在 CP Editor 中提交并获取评测结果。</p>
+								<a class="main_btn" href="#">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -168,8 +178,8 @@ linkTitle = "CP Editor"
 <div class="screen_area text-center p_120">
 	<div class="container">
 		<div class="main_title">
-			<h2>Unique Screens that work perfectly</h2>
-			<p> We have made a simple yet powerful UI that shouldn't confuse you when solving problems <br> Everything you need is always in front of your eyes</p>
+			<h2>独特的屏幕，完美地工作</h2>
+			<p> 我们已经创建了一个简洁而功能强大的 UI，在解决问题时不会让你感到困惑 <br> 你所需的一切始终在你的眼前</p>
 		</div>
 		<img class="img-fluid" src="/img/banner/home-center-2.jpg" alt="">
 	</div>
@@ -180,8 +190,8 @@ linkTitle = "CP Editor"
 <div class="testimonials_area p_120">
 	<div class="container">
 		<div class="main_title">
-			<h2>Feedback from Community</h2>
-			<p>Our Community support us and keep us alive. We would love to hear your feedback too!<br>See what other Competitive Programmers have to say about our editor</p>
+			<h2>来自社区的反馈</h2>
+			<p>我们的社区支持我们并让我们保持活力。我们也很想听听你的反馈！<br>看看其他算法竞赛选手们对 CP Editor 有什么看法</p>
 		</div>
 		<div class="testi_slider owl-carousel">
 			<div class="item">
@@ -262,10 +272,10 @@ linkTitle = "CP Editor"
 				</div>
 				<div class="col-lg-6">
 					<div class="left_side_text">
-						<h3>Full support for<br />C/C++, Java and Python</h3>
-						<h6>Use the language you like</h6>
-						<p>We officially support three languages in the editor. You can set your own compilation commands and pass runtime arguments to your code. It really gets exciting when you have the opportunity to use different languages in different tabs with one-click options.</p>
-						<a class="main_btn" href="#">Get Started Now</a>
+						<h3>全面支持<br />C/C++, Java 和 Python</h3>
+						<h6>使用你喜欢的语言</h6>
+						<p>我们支持三种编程语言。你可以设置自己的编译命令，并将运行时参数传递给代码。令人兴奋的是，你有机会在带有一键式选项的不同选项卡中使用不同的语言。</p>
+						<a class="main_btn" href="#">即刻开始</a>
 					</div>
 				</div>
 			</div>
@@ -278,20 +288,18 @@ linkTitle = "CP Editor"
 <div class="impress_area p_120">
 	<div class="container">
 		<div class="impress_inner">
-			<h2>Impressed by our features?</h2>
-			<p>We are excited that you have chosen to try out this editor. <br>We hope that our Editor will fulfill all your needs in Competitive Programming. <br>CP Editor is, "by competitive programmers, to competitive programmers, for competitive programmers".</p>
-			<a class="banner_btn2" id = "download_by_os_bottom" href="https://github.com/cpeditor/cpeditor/releases/latest">Try it now</a>
+			<h2>被 CP Editor 的强大功能所吸引了？</h2>
+			<p>很高兴你选择尝试 CP Editor。<br>我们希望 CP Editor 能够满足你在算法竞赛编程中的所有需求。<br>CP Editor 由算法竞赛选手创建，给算法竞赛选手使用，为算法竞赛选手着想。</p>
+			<a class="banner_btn2" :href="downloadURL">
+				<template v-if="assetAvailable">在 {{ os }} 上试试</template>
+				<template v-else>现在就试试</template>
+			</a>
 		</div>
 	</div>
 </div>
 <!--================End Impress Area =================-->
 
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
-<!--gmaps Js-->
-<script src="/js/theme.js"></script>
-<script src="/js/api/index.js"></script>
+<script src="/js/index.js"></script>
 
 </div>
