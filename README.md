@@ -3,14 +3,23 @@
 ![Deploy status](https://github.com/cpeditor/cpeditor.github.io/workflows/Deploy/badge.svg?branch=hugo)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg)](#contributors-sparkles)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg)](#all-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
 
-It's still under construction.
+## Hall of Fame
 
-## Contributors :sparkles:
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/0)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/0)
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/1)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/1)
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/2)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/2)
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/3)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/3)
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/4)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/4)
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/5)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/5)
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/6)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/6)
+[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/7)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/7)
+
+## All Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
