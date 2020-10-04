@@ -1,62 +1,62 @@
 ---
-title: "Appearance"
+title: "外观"
 weight: 30
 ---
 
-### UI Language
+### 界面语言 (UI Language)
 
-The human language used in the UI.
+UI 中使用的人类语言。
 
-### UI Style
+### 界面风格
 
-The style used for the UI. The available options are different on different platforms.
+用户界面使用的样式。可用选项在不同平台上有所不同。
 
-The "default" style is either the most appropriate style on your platform, or the style specified by the `--style` command line option.
+“默认”样式要么是在你的平台上最合适的样式，要么是 `--style` 命令行选项指定的样式。
 
-On Windows, there's an extra option "Auto Fusion". "Auto Fusion" is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).
+在 Windows 上，还有一个附加选项 “Auto Fusion”。“Auto Fusion” 是深色还是浅色取决于系统主题（即 Windows 应用程序主题是深色还是浅色）。
 
-If there's anything wrong after you change the UI style, you can try restarting CP Editor.
+更改 UI 样式后，如果有任何问题，可以尝试重新启动 CP Editor。
 
-### Editor Theme
+### 编辑器主题
 
-The syntax highlighting theme for the code editor.
+代码编辑器的语法高亮显示主题。
 
-### Editor Font
+### 编辑器字体
 
-The font for the code editor.
+代码编辑器的字体。
 
-### Test Cases Font
+### 测试用例字体
 
-The font for the test cases.
+测试用例的字体。
 
-### Message Logger Font
+### 消息字体
 
-The font for the messages.
+消息的字体。
 
-### Opacity
+### 不透明度
 
-The opacity of the main window.
+主窗口的不透明度。
 
-### Test Case Maximum Height
+### 测试用例最大高度
 
-The maximum height of a test case before the scrollbar occurs.
+滚动条出现之前测试用例的最大高度。
 
-### Show Compile And Run Only
+### 只显示编译并运行
 
-Hide the compile only and run only buttons.
+隐藏仅编译、仅运行这两个按钮。
 
-It is useful if you don't care about the time used on compilation, or you are using Python which doesn't need to be compiled.
+如果你不在乎编译所用的时间，或者你正在使用不需要编译的 Python，这将非常有用。
 
-### Display EOLN in Diff
+### 在差异查看器中显示行尾字符
 
-Use "¶" to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).
+使用 "¶" 在差异查看器中可视化行尾。如果你要查看行尾的差异（即末尾多余的空行），这将很有用。
 
-### Add extra margin at the bottom of the code editor
+### 在代码编辑器底部添加额外的边距
 
-Add an extra margin at the bottom of the code editor, so that you can scroll less.
+在代码编辑器的底部添加一个额外的边距，让你可以更少地滚动。
 
-Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by <kbd>Ctrl+Z</kbd>.
+由于技术原因，它可能会稍微影响操作历史记录，所以你可以通过 <kbd>Ctrl+Z</kbd> 撤消页边距更改。
 
-### Custom Application Font
+### 使用自定义的全局字体
 
-Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.
+对 UI 用自定义字体（代码编辑器，测试用例，消息等除外）来替代系统字体。
