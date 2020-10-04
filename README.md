@@ -12,6 +12,8 @@ This is the [official website](https://cpeditor.org) of [CP Editor](https://gith
 
 ### Preparation
 
+Make sure [Git](http://git-scm.com/), [Node.js](https://nodejs.org/) and [Hugo](https://gohugo.io/) are installed.
+
 ```sh
 git clone --recurse-submodules https://github.com/cpeditor/cpeditor.github.io
 cd cpeditor.github.io
