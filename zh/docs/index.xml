@@ -105,36 +105,36 @@
 &lt;h3 id="auto-remove">Auto Remove&lt;/h3>
 &lt;p>See &lt;a href="../code-edit#auto-remove-parentheses">Code Edit/Auto Remove Parentheses&lt;/a>.&lt;/p>
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
-&lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: Appearance</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
-&lt;h3 id="ui-language">UI Language&lt;/h3>
-&lt;p>The human language used in the UI.&lt;/p>
-&lt;h3 id="ui-style">UI Style&lt;/h3>
-&lt;p>The style used for the UI. The available options are different on different platforms.&lt;/p>
-&lt;p>The &amp;ldquo;default&amp;rdquo; style is either the most appropriate style on your platform, or the style specified by the &lt;code>--style&lt;/code> command line option.&lt;/p>
-&lt;p>On Windows, there&amp;rsquo;s an extra option &amp;ldquo;Auto Fusion&amp;rdquo;. &amp;ldquo;Auto Fusion&amp;rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).&lt;/p>
-&lt;p>If there&amp;rsquo;s anything wrong after you change the UI style, you can try restarting CP Editor.&lt;/p>
-&lt;h3 id="editor-theme">Editor Theme&lt;/h3>
-&lt;p>The syntax highlighting theme for the code editor.&lt;/p>
-&lt;h3 id="editor-font">Editor Font&lt;/h3>
-&lt;p>The font for the code editor.&lt;/p>
-&lt;h3 id="test-cases-font">Test Cases Font&lt;/h3>
-&lt;p>The font for the test cases.&lt;/p>
-&lt;h3 id="message-logger-font">Message Logger Font&lt;/h3>
-&lt;p>The font for the messages.&lt;/p>
-&lt;h3 id="opacity">Opacity&lt;/h3>
-&lt;p>The opacity of the main window.&lt;/p>
-&lt;h3 id="test-case-maximum-height">Test Case Maximum Height&lt;/h3>
-&lt;p>The maximum height of a test case before the scrollbar occurs.&lt;/p>
-&lt;h3 id="show-compile-and-run-only">Show Compile And Run Only&lt;/h3>
-&lt;p>Hide the compile only and run only buttons.&lt;/p>
-&lt;p>It is useful if you don&amp;rsquo;t care about the time used on compilation, or you are using Python which doesn&amp;rsquo;t need to be compiled.&lt;/p>
-&lt;h3 id="display-eoln-in-diff">Display EOLN in Diff&lt;/h3>
-&lt;p>Use &amp;ldquo;¶&amp;rdquo; to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).&lt;/p>
-&lt;h3 id="add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor&lt;/h3>
-&lt;p>Add an extra margin at the bottom of the code editor, so that you can scroll less.&lt;/p>
-&lt;p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by &lt;kbd>Ctrl+Z&lt;/kbd>.&lt;/p>
-&lt;h3 id="custom-application-font">Custom Application Font&lt;/h3>
-&lt;p>Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.&lt;/p></description></item><item><title>Docs: Actions</title><link>/zh/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/actions/</guid><description>
+&lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
+&lt;h3 id="界面语言-ui-language">界面语言 (UI Language)&lt;/h3>
+&lt;p>UI 中使用的人类语言。&lt;/p>
+&lt;h3 id="界面风格">界面风格&lt;/h3>
+&lt;p>用户界面使用的样式。可用选项在不同平台上有所不同。&lt;/p>
+&lt;p>“默认”样式要么是在你的平台上最合适的样式，要么是 &lt;code>--style&lt;/code> 命令行选项指定的样式。&lt;/p>
+&lt;p>在 Windows 上，还有一个附加选项 “Auto Fusion”。“Auto Fusion” 是深色还是浅色取决于系统主题（即 Windows 应用程序主题是深色还是浅色）。&lt;/p>
+&lt;p>更改 UI 样式后，如果有任何问题，可以尝试重新启动 CP Editor。&lt;/p>
+&lt;h3 id="编辑器主题">编辑器主题&lt;/h3>
+&lt;p>代码编辑器的语法高亮显示主题。&lt;/p>
+&lt;h3 id="编辑器字体">编辑器字体&lt;/h3>
+&lt;p>代码编辑器的字体。&lt;/p>
+&lt;h3 id="测试用例字体">测试用例字体&lt;/h3>
+&lt;p>测试用例的字体。&lt;/p>
+&lt;h3 id="消息字体">消息字体&lt;/h3>
+&lt;p>消息的字体。&lt;/p>
+&lt;h3 id="不透明度">不透明度&lt;/h3>
+&lt;p>主窗口的不透明度。&lt;/p>
+&lt;h3 id="测试用例最大高度">测试用例最大高度&lt;/h3>
+&lt;p>滚动条出现之前测试用例的最大高度。&lt;/p>
+&lt;h3 id="只显示编译并运行">只显示编译并运行&lt;/h3>
+&lt;p>隐藏仅编译、仅运行这两个按钮。&lt;/p>
+&lt;p>如果你不在乎编译所用的时间，或者你正在使用不需要编译的 Python，这将非常有用。&lt;/p>
+&lt;h3 id="在差异查看器中显示行尾字符">在差异查看器中显示行尾字符&lt;/h3>
+&lt;p>使用 &amp;ldquo;¶&amp;rdquo; 在差异查看器中可视化行尾。如果你要查看行尾的差异（即末尾多余的空行），这将很有用。&lt;/p>
+&lt;h3 id="在代码编辑器底部添加额外的边距">在代码编辑器底部添加额外的边距&lt;/h3>
+&lt;p>在代码编辑器的底部添加一个额外的边距，让你可以更少地滚动。&lt;/p>
+&lt;p>由于技术原因，它可能会稍微影响操作历史记录，所以你可以通过 &lt;kbd>Ctrl+Z&lt;/kbd> 撤消页边距更改。&lt;/p>
+&lt;h3 id="使用自定义的全局字体">使用自定义的全局字体&lt;/h3>
+&lt;p>对 UI 用自定义字体（代码编辑器，测试用例，消息等除外）来替代系统字体。&lt;/p></description></item><item><title>Docs: Actions</title><link>/zh/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>
 &lt;h3 id="save-files-faster">Save Files Faster&lt;/h3>
 &lt;p>Use &lt;a href="https://doc.qt.io/qt-5/qfile.html" target="_blank">&lt;code>QFile&lt;/code>&lt;/a> instead of &lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank">&lt;code>QSaveFile&lt;/code>&lt;/a> to save files.&lt;/p>
