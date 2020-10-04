@@ -34,6 +34,8 @@ The site will be in the `public` directory.
 hugo server
 ```
 
+To preview, open `localhost:1313` (you can see the `1313` in the output of the command, if the output shows another port, use the port in the output) in your browser.
+
 ### Build all versions
 
 ```sh
