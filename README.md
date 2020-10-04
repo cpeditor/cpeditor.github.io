@@ -3,7 +3,7 @@
 ![Deploy status](https://github.com/cpeditor/cpeditor.github.io/workflows/Deploy/badge.svg?branch=hugo)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg)](#all-contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg)](#all-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
@@ -94,6 +94,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </td>
     <td align="center">
       <a href="https://github.com/IZOBRETATEL777"><img src="https://avatars0.githubusercontent.com/u/32099652?v=4" width="100px;" alt=""/></a><br /><a href="https://github.com/IZOBRETATEL777"><sub><b>IZOBRETATEL777</b></sub></a><br /><a href="#content-IZOBRETATEL777" title="Content">🖋</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ChungZH"><img src="https://avatars0.githubusercontent.com/u/42088872?v=4" width="100px;" alt=""/></a><br /><a href="https://chungzh.cc/"><sub><b>Flex Zhong</b></sub></a><br /><a href="#translation-ChungZH" title="Translation">🌍</a>
     </td>
   </tr>
 </table>
