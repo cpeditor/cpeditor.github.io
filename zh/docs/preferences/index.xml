@@ -320,12 +320,12 @@
 &lt;p>The maximum number of characters in a test case to be loaded.&lt;/p>
 &lt;p>A loaded test case will be elided and read-only if it&amp;rsquo;s too long.&lt;/p>
 &lt;h2 id="network-proxy">Network Proxy&lt;/h2>
-&lt;p>The proxy server used to check for updates.&lt;/p></description></item><item><title>Docs: General</title><link>/zh/docs/preferences/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/general/</guid><description>
-&lt;h3 id="temporary-directory">Temporary Directory&lt;/h3>
-&lt;p>In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.&lt;/p>
-&lt;p>You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.&lt;/p>
-&lt;p>On Linux, it&amp;rsquo;s &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>. On Windows, it&amp;rsquo;s &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>.&lt;/p>
-&lt;h3 id="regular-expression">Regular Expression&lt;/h3>
-&lt;p>The &lt;a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expression&lt;/a> is used to match patterns in a string and find and replace substrings.&lt;/p>
-&lt;p>You can find many online regex cources, for example: &lt;a href="https://regexone.com/">https://regexone.com/&lt;/a>.&lt;/p>
-&lt;p>In CP Editor, you can use &lt;code>\1&lt;/code>, &lt;code>\2&lt;/code>, etc. for the content of the first/second capture group in the replacement patterns.&lt;/p></description></item></channel></rss>
+&lt;p>The proxy server used to check for updates.&lt;/p></description></item><item><title>Docs: 通用</title><link>/zh/docs/preferences/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/general/</guid><description>
+&lt;h3 id="临时文件夹">临时文件夹&lt;/h3>
+&lt;p>在 CP Editor 中，每个文件都有一个临时目录，可用于保存可执行文件等等。&lt;/p>
+&lt;p>你可以将其视为一个能够安全地为每个标签页（即每个文件）保存内容而不影响磁盘上其他文件的地方，并且在关闭标签页时它会被自动删除。&lt;/p>
+&lt;p>在 Linux 上，它位于 &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>。在 Windows 上，它位于 &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>。&lt;/p>
+&lt;h3 id="正则表达式">正则表达式&lt;/h3>
+&lt;p>&lt;a href="https://baike.baidu.com/item/%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" target="_blank">正则表达式&lt;/a> 用于匹配字符串中的模式以及查找和替换子字符串。&lt;/p>
+&lt;p>你可以找到许多在线正则表达式课程，例如：&lt;a href="https://deerchao.cn/tutorials/regex/regex.htm" target="_blank">正则表达式30分钟入门教程&lt;/a>。.&lt;/p>
+&lt;p>在 CP Editor 中，你可以使用 &lt;code>\1&lt;/code>, &lt;code>\2&lt;/code> 等用于替换模式中的第一个/第二个捕获组的内容。&lt;/p></description></item></channel></rss>
