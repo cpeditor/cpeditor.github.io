@@ -33,6 +33,10 @@ The font for the test cases.
 
 The font for the messages.
 
+### Show only Monospaced Font
+
+When checked the font picker dialog shows only Monospaced Fonts.
+
 ### Opacity
 
 The opacity of the main window.
