@@ -1,20 +1,20 @@
 ---
-title: "General"
+title: "通用"
 weight: 1000
 ---
 
-### Temporary Directory
+### 临时文件夹
 
-In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.
+在 CP Editor 中，每个文件都有一个临时目录，可用于保存可执行文件等等。
 
-You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.
+你可以将其视为一个能够安全地为每个标签页（即每个文件）保存内容而不影响磁盘上其他文件的地方，并且在关闭标签页时它会被自动删除。
 
-On Linux, it's `/tmp/CP Editor-XXXXXX`. On Windows, it's `C:\Users\<username>\AppData\Local\Temp\CP Editor-XXXXXX`.
+在 Linux 上，它位于 `/tmp/CP Editor-XXXXXX`。在 Windows 上，它位于 `C:\Users\<username>\AppData\Local\Temp\CP Editor-XXXXXX`。
 
-### Regular Expression
+### 正则表达式
 
-The [regular expression](https://en.wikipedia.org/wiki/Regular_expression) is used to match patterns in a string and find and replace substrings.
+[正则表达式](https://baike.baidu.com/item/正则表达式) 用于匹配字符串中的模式以及查找和替换子字符串。
 
-You can find many online regex cources, for example: <https://regexone.com/>.
+你可以找到许多在线正则表达式课程，例如：[正则表达式30分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)。.
 
-In CP Editor, you can use `\1`, `\2`, etc. for the content of the first/second capture group in the replacement patterns.
+在 CP Editor 中，你可以使用 `\1`, `\2` 等用于替换模式中的第一个/第二个捕获组的内容。
