@@ -1,64 +1,64 @@
 ---
-title: "Advanced"
+title: "高级"
 weight: 80
 ---
 
-## Update
+## 更新
 
-### Check for updates on startup
+### 启动时检查更新
 
-When CP Editor starts, checks whether there are new versions of CP Editor.
+在 CP Editor 启动时，检查是否有新版本的 CP Editor。
 
-If there are new versions, a pop-up window will ask you whether to update or not.
+如果有新版本，则会弹出一个窗口询问你是否进行更新。
 
-### Use the beta version
+### 使用测试版本
 
-When checking for updates, check for beta versions. The beta versions usually have more features and improvements, but they are not as stable as the stable versions.
+检查更新时，检查 Beta 版本。 Beta 版通常具有更多功能和改进，但不如稳定版稳定。
 
-## Limits
+## 限制
 
-### Default Time Limit
+### 默认时间限制
 
-The default time limit when executing programs.
+执行程序的默认时间限制。
 
-The program will be killed if it doesn't terminate in the time limit.
+超时的程序会被终止。
 
-### Output Length Limit
+### 输出长度限制
 
-The maximum number of characters in the output of the program.
+程序的最大输出字符数。
 
-The program will be killed if either of its stdout or stderr is too long.
+stdout 或 stderr 过长的程序将会被终止。
 
-### Output Display Length Limit
+### 输出显示长度限制
 
-The maximum number of characters to be displayed for the output of the program.
+会显示出来的程序输出的最大字符数。
 
-If the output is too long, it will be elided.
+如果输出过长，超长部分会被省略。
 
-### Message Length Limit
+### 消息长度限制
 
-The maximum number of characters in each message in the top-right corner of the main window.
+主窗口右上角内每条信息的最大长度。
 
-The message will be elided if it's too long.
+超长部分将会被省略。
 
-### HTML Diff Viewer Length Limit
+### HTML 差异查看器长度限制
 
-The maximum number of characters in the HTML Diff Viewer.
+HTML 差异查看器中的最大字符数。
 
-The Diff Viewer will fall back to plain text if either of the output or the expected output is too long.
+如果输出或预期输出太长，Diff Viewer 将回退成纯文本。
 
-### Open File Length Limit
+### 打开文件长度限制
 
-The maximum number of characters in a source file to open.
+允许打开的文件的最大字符数。
 
-A source file won't be opened if it's too long.
+如果超长，将不会打开。
 
-### Load Test Case Length Limit
+### 加载测试用例长度限制
 
-The maximum number of characters in a test case to be loaded.
+测试用例中要加载的最大字符数。
 
-A loaded test case will be elided and read-only if it's too long.
+如果加载的测试用例过长，它将被删除并且为只读。
 
-## Network Proxy
+## 网络代理
 
-The proxy server used to check for updates.
+用于检查更新的代理服务器。
