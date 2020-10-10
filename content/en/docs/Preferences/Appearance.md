@@ -55,7 +55,7 @@ This section allows you to set fonts for different UI components of the Editor.
 
 ### Show only Monospaced Font
 
-When checked the font picker dialog shows only Monospaced Fonts.
+When checked the font picker dialog shows only monospaced fonts.
 
 ### Editor Font
 
