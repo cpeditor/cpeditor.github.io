@@ -1,8 +1,8 @@
 ---
-title: "Install from binaries"
-linkTitle: "Install from binaries"
+title: "安装可执行文件"
+linkTitle: "安装可执行文件"
 weight: 10
-description: This is the easiest way to install CP Editor, and is recommended for most users.
+description: 这是安装 CP Editor 最简单的方式，推荐大多数用户使用。
 ---
 
 在 [Release](https://github.com/cpeditor/cpeditor/releases) 页面选择你需要的版本，下载相应的可执行文件。
