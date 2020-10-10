@@ -106,6 +106,7 @@
 &lt;p>See &lt;a href="../code-edit#auto-remove-parentheses">Code Edit/Auto Remove Parentheses&lt;/a>.&lt;/p>
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
 &lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
+&lt;h2 id="通用">通用&lt;/h2>
 &lt;h3 id="界面语言-ui-language">界面语言 (UI Language)&lt;/h3>
 &lt;p>UI 中使用的自然语言。&lt;/p>
 &lt;h3 id="界面风格">界面风格&lt;/h3>
@@ -115,12 +116,6 @@
 &lt;p>更改 UI 样式后，如果有任何问题，可以尝试重新启动 CP Editor。&lt;/p>
 &lt;h3 id="编辑器主题">编辑器主题&lt;/h3>
 &lt;p>代码编辑器的语法高亮显示主题。&lt;/p>
-&lt;h3 id="编辑器字体">编辑器字体&lt;/h3>
-&lt;p>代码编辑器的字体。&lt;/p>
-&lt;h3 id="测试用例字体">测试用例字体&lt;/h3>
-&lt;p>测试用例的字体。&lt;/p>
-&lt;h3 id="消息字体">消息字体&lt;/h3>
-&lt;p>消息的字体。&lt;/p>
 &lt;h3 id="不透明度">不透明度&lt;/h3>
 &lt;p>主窗口的不透明度。&lt;/p>
 &lt;h3 id="测试用例最大高度">测试用例最大高度&lt;/h3>
@@ -129,10 +124,19 @@
 &lt;p>隐藏仅编译、仅运行这两个按钮。&lt;/p>
 &lt;p>如果你不在乎编译所用的时间，或者你正在使用不需要编译的 Python，这将非常有用。&lt;/p>
 &lt;h3 id="在差异查看器中显示行尾字符">在差异查看器中显示行尾字符&lt;/h3>
-&lt;p>使用 &amp;ldquo;¶&amp;rdquo; 在差异查看器中可视化行尾。如果你要查看行尾的差异（即末尾多余的空行），这将很有用。&lt;/p>
+&lt;p>使用字符 &amp;ldquo;¶&amp;rdquo; 在差异查看器中可视化行尾。如果你要查看行尾的差异（即末尾多余的空行），这将很有用。&lt;/p>
 &lt;h3 id="在代码编辑器底部添加额外的边距">在代码编辑器底部添加额外的边距&lt;/h3>
 &lt;p>在代码编辑器的底部添加一个额外的边距，让你可以更少地滚动。&lt;/p>
 &lt;p>由于技术原因，它可能会稍微影响操作历史记录，所以你可以通过 &lt;kbd>Ctrl+Z&lt;/kbd> 撤消页边距更改。&lt;/p>
+&lt;h2 id="字体">字体&lt;/h2>
+&lt;h3 id="仅显示等宽字体">仅显示等宽字体&lt;/h3>
+&lt;p>在为下面的设置选择字体时只显示等宽字体。&lt;/p>
+&lt;h3 id="编辑器字体">编辑器字体&lt;/h3>
+&lt;p>代码编辑器的字体。&lt;/p>
+&lt;h3 id="测试用例字体">测试用例字体&lt;/h3>
+&lt;p>测试用例的字体。&lt;/p>
+&lt;h3 id="消息字体">消息字体&lt;/h3>
+&lt;p>消息的字体。&lt;/p>
 &lt;h3 id="使用自定义的全局字体">使用自定义的全局字体&lt;/h3>
 &lt;p>对 UI 用自定义字体（代码编辑器，测试用例，消息等除外）来替代系统字体。&lt;/p></description></item><item><title>Docs: Actions</title><link>/zh/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>

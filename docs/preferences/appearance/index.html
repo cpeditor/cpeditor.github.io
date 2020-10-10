@@ -22,29 +22,32 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Appearance | CP Editor</title><meta property="og:title" content="Appearance" />
-<meta property="og:description" content="UI Language The natural language used in the UI.
+<meta property="og:description" content="General This section contains general appearance settings such as themes and styles.
+UI Language The natural language used in the UI.
 UI Style The style used for the UI. The available options are different on different platforms.
 The &ldquo;default&rdquo; style is either the most appropriate style on your platform, or the style specified by the --style command line option.
-On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light)." />
+On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/preferences/appearance/" />
-<meta property="article:modified_time" content="2020-10-04T16:31:32+08:00" /><meta property="og:site_name" content="CP Editor" />
+<meta property="article:modified_time" content="2020-10-10T17:14:54+05:30" /><meta property="og:site_name" content="CP Editor" />
 <meta itemprop="name" content="Appearance">
-<meta itemprop="description" content="UI Language The natural language used in the UI.
+<meta itemprop="description" content="General This section contains general appearance settings such as themes and styles.
+UI Language The natural language used in the UI.
 UI Style The style used for the UI. The available options are different on different platforms.
 The &ldquo;default&rdquo; style is either the most appropriate style on your platform, or the style specified by the --style command line option.
-On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).">
-<meta itemprop="dateModified" content="2020-10-04T16:31:32&#43;08:00" />
-<meta itemprop="wordCount" content="292">
+On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.">
+<meta itemprop="dateModified" content="2020-10-10T17:14:54&#43;05:30" />
+<meta itemprop="wordCount" content="333">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Appearance"/>
-<meta name="twitter:description" content="UI Language The natural language used in the UI.
+<meta name="twitter:description" content="General This section contains general appearance settings such as themes and styles.
+UI Language The natural language used in the UI.
 UI Style The style used for the UI. The available options are different on different platforms.
 The &ldquo;default&rdquo; style is either the most appropriate style on your platform, or the style specified by the --style command line option.
-On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light)."/>
+On Windows, there&rsquo;s an extra option &ldquo;Auto Fusion&rdquo;. &ldquo;Auto Fusion&rdquo; is either dark or light depending on the system theme (i."/>
 
 
 <script type="application/javascript">
@@ -175,7 +178,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c4b38b8ed87111e38d789b9c9cb04522397afe9243400f959931bd1660079dbc54301302b06304e2a8dddbee9cd21793df9908c6539b5ba12850f076789fd721.json"
+  data-offline-search-index-json-src="/offline-search-index.98fad764a7f22a0f906a802f17dd2e910934871fc65fe089429d360ae01c44da6ee243368978b5ed928aa830a24e1fe64a497d5e95351b9d6896a296b7a7c662.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -206,7 +209,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c4b38b8ed87111e38d789b9c9cb04522397afe9243400f959931bd1660079dbc54301302b06304e2a8dddbee9cd21793df9908c6539b5ba12850f076789fd721.json"
+  data-offline-search-index-json-src="/offline-search-index.98fad764a7f22a0f906a802f17dd2e910934871fc65fe089429d360ae01c44da6ee243368978b5ed928aa830a24e1fe64a497d5e95351b9d6896a296b7a7c662.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -573,19 +576,24 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#general">General</a>
       <ul>
         <li><a href="#ui-language">UI Language</a></li>
         <li><a href="#ui-style">UI Style</a></li>
         <li><a href="#editor-theme">Editor Theme</a></li>
-        <li><a href="#editor-font">Editor Font</a></li>
-        <li><a href="#test-cases-font">Test Cases Font</a></li>
-        <li><a href="#message-logger-font">Message Logger Font</a></li>
         <li><a href="#opacity">Opacity</a></li>
         <li><a href="#test-case-maximum-height">Test Case Maximum Height</a></li>
         <li><a href="#show-compile-and-run-only">Show Compile And Run Only</a></li>
         <li><a href="#display-eoln-in-diff">Display EOLN in Diff</a></li>
         <li><a href="#add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor</a></li>
+      </ul>
+    </li>
+    <li><a href="#font">Font</a>
+      <ul>
+        <li><a href="#show-only-monospaced-font">Show only Monospaced Font</a></li>
+        <li><a href="#editor-font">Editor Font</a></li>
+        <li><a href="#test-cases-font">Test Cases Font</a></li>
+        <li><a href="#message-logger-font">Message Logger Font</a></li>
         <li><a href="#custom-application-font">Custom Application Font</a></li>
       </ul>
     </li>
@@ -640,7 +648,9 @@ if (!doNotTrack) {
 	<h1>Appearance</h1>
     
 	       
-	<h3 id="ui-language">UI Language</h3>
+	<h2 id="general">General</h2>
+<p>This section contains general appearance settings such as themes and styles.</p>
+<h3 id="ui-language">UI Language</h3>
 <p>The natural language used in the UI.</p>
 <h3 id="ui-style">UI Style</h3>
 <p>The style used for the UI. The available options are different on different platforms.</p>
@@ -649,12 +659,6 @@ if (!doNotTrack) {
 <p>If there&rsquo;s anything wrong after you change the UI style, you can try restarting CP Editor.</p>
 <h3 id="editor-theme">Editor Theme</h3>
 <p>The syntax highlighting theme for the code editor.</p>
-<h3 id="editor-font">Editor Font</h3>
-<p>The font for the code editor.</p>
-<h3 id="test-cases-font">Test Cases Font</h3>
-<p>The font for the test cases.</p>
-<h3 id="message-logger-font">Message Logger Font</h3>
-<p>The font for the messages.</p>
 <h3 id="opacity">Opacity</h3>
 <p>The opacity of the main window.</p>
 <h3 id="test-case-maximum-height">Test Case Maximum Height</h3>
@@ -667,6 +671,16 @@ if (!doNotTrack) {
 <h3 id="add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor</h3>
 <p>Add an extra margin at the bottom of the code editor, so that you can scroll less.</p>
 <p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by <kbd>Ctrl+Z</kbd>.</p>
+<h2 id="font">Font</h2>
+<p>This section allows you to set fonts for different UI components of the Editor.</p>
+<h3 id="show-only-monospaced-font">Show only Monospaced Font</h3>
+<p>When checked the font picker dialog shows only monospaced fonts.</p>
+<h3 id="editor-font">Editor Font</h3>
+<p>The font for the code editor.</p>
+<h3 id="test-cases-font">Test Cases Font</h3>
+<p>The font for the test cases.</p>
+<h3 id="message-logger-font">Message Logger Font</h3>
+<p>The font for the messages.</p>
 <h3 id="custom-application-font">Custom Application Font</h3>
 <p>Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.</p>
 
@@ -732,7 +746,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified October 4, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/bacc91635bed45f706c0fae4ae21a107cbf8cecc">fix(Appearance): use &#34;natural language&#34; instead of &#34;human language&#34; (#71) (bacc916)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 10, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/60122cd7197adabf1258b36743fadd0bc2b5dd7a">feat(Appearance): add &#34;Show Monospaced Font&#34; and split into General and Font (#75) (60122cd)</a>
 </div>
 </div>
 
