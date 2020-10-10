@@ -1,14 +1,16 @@
 ---
-title: "Build from AUR"
-linkTitle: "Build from AUR"
+title: "从 AUR 构建"
+linkTitle: "从 AUR 构建"
 weight: 40
-description: This is recommended for Arch and Manjaro Linux users. You can use an AUR helper to check for updates and get the latest features. What's more, since the AppImage is built on Ubuntu, you can only use the fusion theme, but if it's built on Arch Linux with KDE you can use other themes like Breeze.
+description: 这是 Arch Linux 用户的推荐安装方法。你可以使用 AUR 安装器来进行更新，轻松享受最新的特性。并且，由于 AppImage 是在 Ubuntu 上构建的，只能使用 Fusion 主题，但如果是在使用 KDE 桌面环境的 Arch Linux 上构建的，就可以使用 Breeze（微风）等主题。
 ---
 
-This method is only for Arch Linux (or other distros based on Arch Linux, including Manjaro) users.
+如果你使用的是基于 Arch Linux 的 Linux 发行版（如 Manjaro 等系统），则可以使用该方法进行安装。
 
-There are two AUR packages for CP Editor: [cpeditor](https://aur.archlinux.org/packages/cpeditor/) for the stable version and [cpeditor-git](https://aur.archlinux.org/packages/cpeditor-git/) for the alpha version.
+CP Editor 在 AUR 上有两个包：稳定版 [cpeditor](https://aur.archlinux.org/packages/cpeditor/) 和 alpha 版 [cpeditor-git](https://aur.archlinux.org/packages/cpeditor-git/)。
 
-If you have `yay` installed, you can run `yay -S cpeditor` to install. If you don't have `yay` and don't know how to install from AUR, you can read [how to install yay](https://github.com/Jguer/yay#installation) or [the Arch Wiki](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages).
+就像安装其它 AUR 包一样，首先你需要有一个 AUR 安装器（如 [yay](https://github.com/Jguer/yay)）。如果你没有，可以通过 `sudo pacman -S yay` 安装一个。
 
-After the installation, you'll be able to run CP Editor by `cpeditor` in your terminal or launch from the start menu like other apps.
+接着，运行 `yay -S cpeditor` 或 `yay -S cpeditor-git`，选择默认选项即可。
+
+安装完成后，你就可以在终端中使用 `cpeditor` 来运行 CP Editor 了。
