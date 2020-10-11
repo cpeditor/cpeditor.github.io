@@ -42,4 +42,4 @@ description: 通过这种方式，你可以使用最新的还未发布的特性�
 
 在 macOS 上，你会得到 `build/cpeditor.app`。
 
-在 Windows 上，你会得到 `build/cpeditor.exe` 或 `build/Release/cpeditor.exe`。你可能需要手动添加需要的 DLL 以使 CP Editor 正常运行，如果你安装过 CP Editor，可以从安装目录将 DLL 拷贝过来（或者将可执行文件复制到安装目录覆盖原来的）。
+在 Windows 上，你会得到 `build/cpeditor.exe` 或 `build/Release/cpeditor.exe`。如果打开时提示 DLL 缺失，你可以将 `%QtPath%\%QtVersion%\%Compiler%\bin`（例如：`D:\Qt\5.15.1\msvc2019_64\bin`）加入 PATH 环境变量。

@@ -42,4 +42,4 @@ On Linux, you will get `build/cpeditor`.
 
 On Mac, you will get `build/cpeditor.app`.
 
-On Windows, you will get `build/cpeditor.exe`, or `build/Release/cpeditor.exe`. You may need to gather the necessary DLLs. If you have installed CP Editor by a `setup.exe`, you can copy the DLLs from where CP Editor is installed (or copy the executable file to the installation path).
+On Windows, you will get `build\cpeditor.exe`, or `build\Release\cpeditor.exe`. If there are DLLs missing, you can add `%QtPath%\%QtVersion%\%Compiler%\bin` (for example, `D:\Qt\5.15.1\msvc2019_64\bin`) to the PATH environmental variable.
