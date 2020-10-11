@@ -53,11 +53,11 @@ The maximum number of characters in a source file to open.
 
 A source file won't be opened if it's too long.
 
-### Load Test Case Length Limit
+### Display Test Case Length Limit
 
-The maximum number of characters in a test case to be loaded.
+The maximum number of characters in a test case to be displayed.
 
-A loaded test case will be elided and read-only if it's too long.
+A test case will be elided and read-only if it's too long.
 
 ## Network Proxy
 
