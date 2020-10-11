@@ -29,7 +29,7 @@
 &lt;li>
 &lt;p>安装 &lt;a href="https://www.qt.io/download" target="_blank">Qt&lt;/a>（5.15 或更高版本）, &lt;a href="https://cmake.org/download/" target="_blank">CMake&lt;/a>（3.12 或更高版本）以及 &lt;a href="https://www.python.org/downloads/" target="_blank">Python3&lt;/a>。&lt;/p>
 &lt;ul>
-&lt;li>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 &lt;code>sudo pacman -S qt5-base&lt;/code>，在 macOS 上可以使用 &lt;code>brew install qt5&lt;/code>.=。&lt;/li>
+&lt;li>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 &lt;code>sudo pacman -S qt5-base&lt;/code>，在 macOS 上可以使用 &lt;code>brew install qt5&lt;/code>。&lt;/li>
 &lt;li>你还可以使用 &lt;a href="https://github.com/miurahr/aqtinstall" target="_blank">aqtinstall&lt;/a> 来下载并安装。&lt;/li>
 &lt;/ul>
 &lt;/li>
