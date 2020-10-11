@@ -161,7 +161,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.9cfc0c11eadcd64992cfad0d168b8dcff8b1f40c06d2437bb9b3d5eaac08587aa824148215df05b6c0920321ac4e487c56f6967ce82786e88aea117b7a2bef92.json"
+  data-offline-search-index-json-src="/offline-search-index.3fdeaf7889a401d6ae352bb87fcd2b32dbb82e7646b667d3ac10fb89ad659ab6aede499e7053af114ba92d46daa929a80e9be5d12620419fe0fac38652aa739a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -192,7 +192,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.9cfc0c11eadcd64992cfad0d168b8dcff8b1f40c06d2437bb9b3d5eaac08587aa824148215df05b6c0920321ac4e487c56f6967ce82786e88aea117b7a2bef92.json"
+  data-offline-search-index-json-src="/offline-search-index.3fdeaf7889a401d6ae352bb87fcd2b32dbb82e7646b667d3ac10fb89ad659ab6aede499e7053af114ba92d46daa929a80e9be5d12620419fe0fac38652aa739a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -612,21 +612,21 @@ if (!doNotTrack) {
 <span style="color:#204a87">cd</span> cpeditor
 </code></pre></div></li>
 <li>
-<p>Install <a href="https://www.qt.io/download" target="_blank">Qt</a> (5.14 or higher), <a href="https://cmake.org/download/" target="_blank">CMake</a> (3.12 or higher) and <a href="https://www.python.org/downloads/" target="_blank">Python3</a>.</p>
+<p>Install <a href="https://www.qt.io/download" target="_blank">Qt</a> (5.15 or higher), <a href="https://cmake.org/download/" target="_blank">CMake</a> (3.12 or higher) and <a href="https://www.python.org/downloads/" target="_blank">Python3</a>.</p>
 <ul>
-<li>On some Linux distributions and MacOS, you can install from your package manager. For example, <code>sudo pacman -S qt5</code> on Arch Linux, <code>brew install qt5</code> on Mac OS.</li>
-<li>You can also download the <a href="https://www.qt.io/offline-installers" target="_blank">offline installer</a>, or download from the <a href="https://download.qt.io/static/mirrorlist/" target="_blank">mirrors</a>. The path from the root of the mirror should be like <code>/qt/official_releases/qt/5.14/5.14.2/qt-opensource-&lt;platform&gt;-5.14.2.&lt;suffix&gt;</code> (or other versions).</li>
+<li>On some Linux distributions and macOS, you can install from your package manager. For example, <code>sudo pacman -S qt5</code> on Arch Linux, <code>brew install qt5</code> on macOS.</li>
+<li>You can also download the <a href="https://www.qt.io/offline-installers" target="_blank">offline installer</a>, or download from the <a href="https://download.qt.io/static/mirrorlist/" target="_blank">mirrors</a>. The path from the root of the mirror should be like <code>/qt/official_releases/qt/5.15/5.15.1/qt-opensource-&lt;platform&gt;-5.15.1.&lt;suffix&gt;</code> (or other versions).</li>
 <li>You can also use <a href="https://github.com/miurahr/aqtinstall" target="_blank">aqtinstall</a> to install Qt.</li>
 </ul>
 </li>
 <li>
-<p>If CMake can&rsquo;t find the Qt installation path, you should set environment variable: <code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>. For example, on Mac, you can run something like <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.14.2&quot;</code>.</p>
+<p>If CMake can&rsquo;t find the Qt installation path, you should set environment variable: <code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>. For example, on macOS, you can run something like <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.15.1&quot;</code>.</p>
 </li>
 <li>
 <p>Run the following commands:</p>
 <ul>
 <li>
-<p>Linux/MacOS:</p>
+<p>Linux/macOS:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir build
 <span style="color:#204a87">cd</span> build
 cmake .. -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
@@ -643,8 +643,8 @@ cmake --build .
 </li>
 </ol>
 <p>On Linux, you will get <code>build/cpeditor</code>.</p>
-<p>On Mac, you will get <code>build/cpeditor.app</code>.</p>
-<p>On Windows, you will get <code>build/cpeditor.exe</code>, or <code>build/Release/cpeditor.exe</code>. You may need to gather the necessary DLLs. If you have installed CP Editor by a <code>setup.exe</code>, you can copy the DLLs from where CP Editor is installed (or copy the executable file to the installation path).</p>
+<p>On macOS, you will get <code>build/cpeditor.app</code>.</p>
+<p>On Windows, you will get <code>build\cpeditor.exe</code>, or <code>build\Release\cpeditor.exe</code>. If there are DLLs missing, you can add <code>%QtPath%\%QtVersion%\%Compiler%\bin</code> (for example, <code>D:\Qt\5.15.1\msvc2019_64\bin</code>) to the PATH environmental variable.</p>
 
         <div class="section-index">
     
@@ -758,7 +758,7 @@ cmake --build .
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 13, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/2a4596219f8af1ae050c62184cfdcbce1ffce33f">Update Docs (#27) (2a45962)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 11, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/2b1bd46caadfbf3319ddf27fc8ef5a5fc480eb8f">feat(installation): update docs and add Chinese translation (#78) (2b1bd46)</a>
 </div>
 </div>
 
