@@ -1,27 +1,26 @@
 ---
-title: "Build from source"
-linkTitle: "Build from source"
+title: "从源代码构建"
+linkTitle: "从源代码构建"
 weight: 20
-description: In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps, and is the only choice if your OS is not officially supported.
+description: 通过这种方式，你可以使用最新的还未发布的特性，同时为参与开发做好准备。这需要更多的步骤，也是在你的操作系统不被支持时的唯一方案。
 ---
 
-1.  Clone this repo and submodules:
+1.  克隆源代码仓库以及子组件：
 
     ```sh
     git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
     cd cpeditor
     ```
 
-2.  Install [Qt](https://www.qt.io/download) (5.14 or higher), [CMake](https://cmake.org/download/) (3.12 or higher) and [Python3](https://www.python.org/downloads/).
-    -   On some Linux distributions and MacOS, you can install from your package manager. For example, `sudo pacman -S qt5` on Arch Linux, `brew install qt5` on Mac OS.
-    -   You can also download the [offline installer](https://www.qt.io/offline-installers), or download from the [mirrors](https://download.qt.io/static/mirrorlist/). The path from the root of the mirror should be like `/qt/official_releases/qt/5.14/5.14.2/qt-opensource-<platform>-5.14.2.<suffix>` (or other versions).
-    -   You can also use [aqtinstall](https://github.com/miurahr/aqtinstall) to install Qt.
+2.  安装 [Qt](https://www.qt.io/download)（5.15 或更高版本）, [CMake](https://cmake.org/download/)（3.12 或更高版本）以及 [Python3](https://www.python.org/downloads/)。
+    -   在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 `sudo pacman -S qt5-base`，在 macOS 上可以使用 `brew install qt5`.=。
+    -   你还可以使用 [aqtinstall](https://github.com/miurahr/aqtinstall) 来下载并安装。
 
-3.  If CMake can't find the Qt installation path, you should set environment variable: `CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`. For example, on Mac, you can run something like `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.14.2"`.
+3.  如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：`CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`。例如，在 macOS 上，你可以运行 `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.15.1"`。
 
-4.  Run the following commands:
+4.  执行如下命令完成构建过程。
 
-    -   Linux/MacOS:
+    -   Linux/macOS:
 
         ```sh
         mkdir build
@@ -31,6 +30,7 @@ description: In this way, you can get the latest unreleased features and get rea
         ```
 
     -   Windows:
+
         ```bat
          mkdir build
          cd build
@@ -38,8 +38,8 @@ description: In this way, you can get the latest unreleased features and get rea
          cmake --build . --config Release
         ```
 
-On Linux, you will get `build/cpeditor`.
+在 Linux 上，你会得到 `build/cpeditor`。
 
-On Mac, you will get `build/cpeditor.app`.
+在 macOS 上，你会得到 `build/cpeditor.app`。
 
-On Windows, you will get `build/cpeditor.exe`, or `build/Release/cpeditor.exe`. You may need to gather the necessary DLLs. If you have installed CP Editor by a `setup.exe`, you can copy the DLLs from where CP Editor is installed (or copy the executable file to the installation path).
+在 Windows 上，你会得到 `build/cpeditor.exe` 或 `build/Release/cpeditor.exe`。如果打开时提示 DLL 缺失，你可以将 `%QtPath%\%QtVersion%\%Compiler%\bin`（例如：`D:\Qt\5.15.1\msvc2019_64\bin`）加入 PATH 环境变量。

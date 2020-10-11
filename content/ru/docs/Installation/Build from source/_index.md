@@ -12,16 +12,16 @@ description: In this way, you can get the latest unreleased features and get rea
     cd cpeditor
     ```
 
-2.  Install [Qt](https://www.qt.io/download) (5.14 or higher), [CMake](https://cmake.org/download/) (3.12 or higher) and [Python3](https://www.python.org/downloads/).
-    -   On some Linux distributions and MacOS, you can install from your package manager. For example, `sudo pacman -S qt5` on Arch Linux, `brew install qt5` on Mac OS.
-    -   You can also download the [offline installer](https://www.qt.io/offline-installers), or download from the [mirrors](https://download.qt.io/static/mirrorlist/). The path from the root of the mirror should be like `/qt/official_releases/qt/5.14/5.14.2/qt-opensource-<platform>-5.14.2.<suffix>` (or other versions).
+2.  Install [Qt](https://www.qt.io/download) (5.15 or higher), [CMake](https://cmake.org/download/) (3.12 or higher) and [Python3](https://www.python.org/downloads/).
+    -   On some Linux distributions and macOS, you can install from your package manager. For example, `sudo pacman -S qt5` on Arch Linux, `brew install qt5` on macOS.
+    -   You can also download the [offline installer](https://www.qt.io/offline-installers), or download from the [mirrors](https://download.qt.io/static/mirrorlist/). The path from the root of the mirror should be like `/qt/official_releases/qt/5.15/5.15.1/qt-opensource-<platform>-5.15.1.<suffix>` (or other versions).
     -   You can also use [aqtinstall](https://github.com/miurahr/aqtinstall) to install Qt.
 
-3.  If CMake can't find the Qt installation path, you should set environment variable: `CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`. For example, on Mac, you can run something like `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.14.2"`.
+3.  If CMake can't find the Qt installation path, you should set environment variable: `CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`. For example, on macOS, you can run something like `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.15.1"`.
 
 4.  Run the following commands:
 
-    -   Linux/MacOS:
+    -   Linux/macOS:
 
         ```sh
         mkdir build
@@ -40,6 +40,6 @@ description: In this way, you can get the latest unreleased features and get rea
 
 On Linux, you will get `build/cpeditor`.
 
-On Mac, you will get `build/cpeditor.app`.
+On macOS, you will get `build/cpeditor.app`.
 
-On Windows, you will get `build/cpeditor.exe`, or `build/Release/cpeditor.exe`. You may need to gather the necessary DLLs. If you have installed CP Editor by a `setup.exe`, you can copy the DLLs from where CP Editor is installed (or copy the executable file to the installation path).
+On Windows, you will get `build\cpeditor.exe`, or `build\Release\cpeditor.exe`. If there are DLLs missing, you can add `%QtPath%\%QtVersion%\%Compiler%\bin` (for example, `D:\Qt\5.15.1\msvc2019_64\bin`) to the PATH environmental variable.
