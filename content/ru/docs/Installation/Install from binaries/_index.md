@@ -21,9 +21,11 @@ Download the `setup.exe` in the assets and install it.
 
 Download the `portable.zip` in the assets and unzip it to any directory you like.
 
-### Linux
+### Most Linux Distros
 
 Download the `AppImage` in the assets, add execute permission to it (`chmod +x <AppImagePath>`), then run it.
+
+### Debian-based Linux Distros
 
 On Debian-based Linux distributions (Ubuntu, Linux Mint, etc.) you can download `.deb` package in the assets and run the command in terminal:
 

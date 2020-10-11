@@ -17,15 +17,17 @@ description: 这是安装 CP Editor 最简单的方式，推荐大多数用户�
 
 #### 便携式版本
 
-> 使用便携式版本，无需安装过程即可使用 CP Editor。这意味着你可以将 CP Editor 存储在 U 盘等可移动介质中。
+> 使用便携式版本，无需安装即可使用 CP Editor。这意味着你可以将 CP Editor 存储在 U 盘等可移动介质中。
 >
 > 配置文件将存储在可执行文件所在的文件夹，CP Editor 将不会出现在你的系统的已安装程序列表中。
 
-下载 `portable.zip`，将其解压到你想要解压的位置。
+下载 `portable.zip`，将其解压到任意一个你想要存放的位置。
 
-### Linux
+### 绝大部分 Linux 发行版
 
 下载 `AppImage`，执行 `chmod +x <AppImagePath>` 给其添加执行权限，随后运行该文件。
+
+### Debian 系 Linux 发行版
 
 如果你使用的是 Debian 系的 Linux 发行版（Ubuntu，Linux Mint 等），可以下载 `.deb` 包，并在终端中执行如下命令：
 
