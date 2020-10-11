@@ -1,10 +1,10 @@
 ---
-title: "Preferences"
-linkTitle: "Preferences"
+title: "设置"
+linkTitle: "设置"
 weight: 40
-description: What do the preferences mean and how to set them
+description: 设置都是些什么意思以及如何设定它们
 ---
 
-You can set the preferences by either clicking Options->Preferences or pressing <kbd>Ctrl+P</kbd>.
+你可以通过点击 选项->设置 或者键入 <kbd>Ctrl+P</kbd> 设定设置。
 
-You can hover over the settings to see the tooltips. Usually, the tooltips are clear enough, but if you want a more detailed explaination, you can read the documentation.
+你可以将鼠标悬停在设置上以查看工具提示。通常，工具提示足够清晰，但是如果你需要更详细的说明，可以阅读文档。
