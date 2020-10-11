@@ -322,9 +322,9 @@
 &lt;h3 id="open-file-length-limit">Open File Length Limit&lt;/h3>
 &lt;p>The maximum number of characters in a source file to open.&lt;/p>
 &lt;p>A source file won&amp;rsquo;t be opened if it&amp;rsquo;s too long.&lt;/p>
-&lt;h3 id="load-test-case-length-limit">Load Test Case Length Limit&lt;/h3>
-&lt;p>The maximum number of characters in a test case to be loaded.&lt;/p>
-&lt;p>A loaded test case will be elided and read-only if it&amp;rsquo;s too long.&lt;/p>
+&lt;h3 id="display-test-case-length-limit">Display Test Case Length Limit&lt;/h3>
+&lt;p>The maximum number of characters in a test case to be displayed.&lt;/p>
+&lt;p>A test case will be elided and read-only if it&amp;rsquo;s too long.&lt;/p>
 &lt;h2 id="network-proxy">Network Proxy&lt;/h2>
 &lt;p>The proxy server used to check for updates.&lt;/p></description></item><item><title>Docs: General</title><link>/ru/docs/preferences/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/general/</guid><description>
 &lt;h3 id="temporary-directory">Temporary Directory&lt;/h3>

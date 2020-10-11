@@ -294,37 +294,37 @@
 &lt;li>You are asked to choose the path for &amp;ldquo;Load Single Test Case&amp;rdquo;, the default path is &lt;code>/a/e&lt;/code>, because &lt;code>testcase&lt;/code> was modified by choosing &lt;code>/a/e&lt;/code> for &amp;ldquo;Save File&amp;rdquo;.&lt;/li>
 &lt;/ol>
 &lt;p>In the preferences window, the default paths changed by an action is a comma-separated list.&lt;/p></description></item><item><title>Docs: Key Bindings</title><link>/zh/docs/preferences/key-bindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/key-bindings/</guid><description>
-&lt;p>You can set custom key bindings for many actions. You can change the key by clicking the edit and press the key you want. You can delete a custom key binding by clicking the button on the right.&lt;/p></description></item><item><title>Docs: Advanced</title><link>/zh/docs/preferences/advanced/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/advanced/</guid><description>
-&lt;h2 id="update">Update&lt;/h2>
-&lt;h3 id="check-for-updates-on-startup">Check for updates on startup&lt;/h3>
-&lt;p>When CP Editor starts, checks whether there are new versions of CP Editor.&lt;/p>
-&lt;p>If there are new versions, a pop-up window will ask you whether to update or not.&lt;/p>
-&lt;h3 id="use-the-beta-version">Use the beta version&lt;/h3>
-&lt;p>When checking for updates, check for beta versions. The beta versions usually have more features and improvements, but they are not as stable as the stable versions.&lt;/p>
-&lt;h2 id="limits">Limits&lt;/h2>
-&lt;h3 id="default-time-limit">Default Time Limit&lt;/h3>
-&lt;p>The default time limit when executing programs.&lt;/p>
-&lt;p>The program will be killed if it doesn&amp;rsquo;t terminate in the time limit.&lt;/p>
-&lt;h3 id="output-length-limit">Output Length Limit&lt;/h3>
-&lt;p>The maximum number of characters in the output of the program.&lt;/p>
-&lt;p>The program will be killed if either of its stdout or stderr is too long.&lt;/p>
-&lt;h3 id="output-display-length-limit">Output Display Length Limit&lt;/h3>
-&lt;p>The maximum number of characters to be displayed for the output of the program.&lt;/p>
-&lt;p>If the output is too long, it will be elided.&lt;/p>
-&lt;h3 id="message-length-limit">Message Length Limit&lt;/h3>
-&lt;p>The maximum number of characters in each message in the top-right corner of the main window.&lt;/p>
-&lt;p>The message will be elided if it&amp;rsquo;s too long.&lt;/p>
-&lt;h3 id="html-diff-viewer-length-limit">HTML Diff Viewer Length Limit&lt;/h3>
-&lt;p>The maximum number of characters in the HTML Diff Viewer.&lt;/p>
-&lt;p>The Diff Viewer will fall back to plain text if either of the output or the expected output is too long.&lt;/p>
-&lt;h3 id="open-file-length-limit">Open File Length Limit&lt;/h3>
-&lt;p>The maximum number of characters in a source file to open.&lt;/p>
-&lt;p>A source file won&amp;rsquo;t be opened if it&amp;rsquo;s too long.&lt;/p>
-&lt;h3 id="load-test-case-length-limit">Load Test Case Length Limit&lt;/h3>
-&lt;p>The maximum number of characters in a test case to be loaded.&lt;/p>
-&lt;p>A loaded test case will be elided and read-only if it&amp;rsquo;s too long.&lt;/p>
-&lt;h2 id="network-proxy">Network Proxy&lt;/h2>
-&lt;p>The proxy server used to check for updates.&lt;/p></description></item><item><title>Docs: 通用</title><link>/zh/docs/preferences/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/general/</guid><description>
+&lt;p>You can set custom key bindings for many actions. You can change the key by clicking the edit and press the key you want. You can delete a custom key binding by clicking the button on the right.&lt;/p></description></item><item><title>Docs: 高级</title><link>/zh/docs/preferences/advanced/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/advanced/</guid><description>
+&lt;h2 id="更新">更新&lt;/h2>
+&lt;h3 id="启动时检查更新">启动时检查更新&lt;/h3>
+&lt;p>在 CP Editor 启动时，检查是否有新版本的 CP Editor。&lt;/p>
+&lt;p>如果有新版本，则会弹出一个窗口询问你是否进行更新。&lt;/p>
+&lt;h3 id="使用测试版本">使用测试版本&lt;/h3>
+&lt;p>检查更新时，检查 Beta 版本。 Beta 版通常具有更多功能和改进，但不如稳定版稳定。&lt;/p>
+&lt;h2 id="限制">限制&lt;/h2>
+&lt;h3 id="默认时间限制">默认时间限制&lt;/h3>
+&lt;p>执行程序的默认时间限制。&lt;/p>
+&lt;p>超时的程序会被终止。&lt;/p>
+&lt;h3 id="输出长度限制">输出长度限制&lt;/h3>
+&lt;p>程序的最大输出字符数。&lt;/p>
+&lt;p>stdout 或 stderr 过长的程序将会被终止。&lt;/p>
+&lt;h3 id="输出显示长度限制">输出显示长度限制&lt;/h3>
+&lt;p>会显示出来的程序输出的最大字符数。&lt;/p>
+&lt;p>如果输出过长，超长部分会被省略。&lt;/p>
+&lt;h3 id="消息长度限制">消息长度限制&lt;/h3>
+&lt;p>主窗口右上角内每条信息的最大长度。&lt;/p>
+&lt;p>超长部分将会被省略。&lt;/p>
+&lt;h3 id="html-差异查看器长度限制">HTML 差异查看器长度限制&lt;/h3>
+&lt;p>HTML 差异查看器中的最大字符数。&lt;/p>
+&lt;p>如果输出或答案太长，差异查看器将以纯文本显示。&lt;/p>
+&lt;h3 id="打开文件长度限制">打开文件长度限制&lt;/h3>
+&lt;p>允许打开的文件的最大字符数。&lt;/p>
+&lt;p>如果文件超长，将不会被打开。&lt;/p>
+&lt;h3 id="显示测试用例长度限制">显示测试用例长度限制&lt;/h3>
+&lt;p>会显示出来的测试用例的最大字符数。&lt;/p>
+&lt;p>如果测试用例过长，超长部分会被省略，且测试用例会变得只读。&lt;/p>
+&lt;h2 id="网络代理">网络代理&lt;/h2>
+&lt;p>用于检查更新的代理服务器。&lt;/p></description></item><item><title>Docs: 通用</title><link>/zh/docs/preferences/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/general/</guid><description>
 &lt;h3 id="临时文件夹">临时文件夹&lt;/h3>
 &lt;p>在 CP Editor 中，每个文件都有一个临时目录，可用于保存可执行文件等等。&lt;/p>
 &lt;p>你可以将其视为一个能够安全地为每个标签页（即每个文件）保存内容而不影响磁盘上其他文件的地方，并且在关闭标签页时它会被自动删除。&lt;/p>
