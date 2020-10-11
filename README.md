@@ -87,7 +87,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/StudyingFather"><img src="https://avatars3.githubusercontent.com/u/23295419?v=4" width="100px;" alt=""/></a><br /><a href="https://studyingfather.com"><sub><b>Shuhao Zhang</b></sub></a><br /><a href="#content-StudyingFather" title="Content">🖋</a>
+      <a href="https://github.com/StudyingFather"><img src="https://avatars3.githubusercontent.com/u/23295419?v=4" width="100px;" alt=""/></a><br /><a href="https://studyingfather.com"><sub><b>Shuhao Zhang</b></sub></a><br /><a href="#content-StudyingFather" title="Content">🖋</a> <a href="#translation-StudyingFather" title="Translation">🌍</a>
     </td>
     <td align="center">
       <a href="https://github.com/TFKls"><img src="https://avatars3.githubusercontent.com/u/43710501?v=4" width="100px;" alt=""/></a><br /><a href="http://tfkls.dev"><sub><b>TFKls</b></sub></a><br /><a href="#content-TFKls" title="Content">🖋</a>
