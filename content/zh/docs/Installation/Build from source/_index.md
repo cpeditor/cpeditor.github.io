@@ -13,14 +13,14 @@ description: 通过这种方式，你可以使用最新的还未发布的特性�
     ```
 
 2. 安装 [Qt](https://www.qt.io/download)（5.15 或更高版本）, [CMake](https://cmake.org/download/)（3.12 或更高版本）以及 [Python3](https://www.python.org/downloads/)。
-   - 在一些 Linux 发行版和 MacOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 `sudo pacman -S qt5-base`，在 MacOS 上可以使用 `brew install qt5`.=。
+   - 在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 `sudo pacman -S qt5-base`，在 macOS 上可以使用 `brew install qt5`.=。
    - 你还可以使用 [aqtinstall](https://github.com/miurahr/aqtinstall) 来下载并安装。
 
-3. 如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：`CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`。例如，在 MacOS 上，你可以运行 `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.15.1"`。
+3. 如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：`CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`。例如，在 macOS 上，你可以运行 `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.15.1"`。
 
 4. 执行如下命令完成构建过程。
 
-    -   Linux/MacOS:
+    -   Linux/macOS:
 
         ```sh
         mkdir build
@@ -40,6 +40,6 @@ description: 通过这种方式，你可以使用最新的还未发布的特性�
 
 在 Linux 上，你会得到 `build/cpeditor`。
 
-在 MacOS 上，你会得到 `build/cpeditor.app`。
+在 macOS 上，你会得到 `build/cpeditor.app`。
 
 在 Windows 上，你会得到 `build/cpeditor.exe` 或 `build/Release/cpeditor.exe`。你可能需要手动添加需要的 DLL 以使 CP Editor 正常运行，如果你安装过 CP Editor，可以从安装目录将 DLL 拷贝过来（或者将可执行文件复制到安装目录覆盖原来的）。

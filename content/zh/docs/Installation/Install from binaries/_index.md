@@ -37,6 +37,6 @@ sudo apt install <path to .deb package>
 
 接下来输入密码，确认安装。你也可以使用 `Gdebi` 等图形化工具安装 `deb` 包，要求系统版本不低于 Debian 10 Buster，Ubuntu 18.04 Bionic Beaver，Linux Mint 19 Tara 或其他基于前述发行版的系统的相应版本。
 
-### MacOS
+### macOS
 
 下载 `.dmg` 文件然后安装。如果出现“未识别的开发者”等提示消息，请依然允许 CP Editor 运行。可以在 `Settings -> Security -> General` 中将 CP Editor 添加到白名单里。

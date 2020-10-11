@@ -35,7 +35,7 @@ sudo apt install <path to .deb package>
 
 Then type your root password and agree with the installation. You can also use `Gdebi` or another graphical tools to install `deb` package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara and newer versions of these distributions or based on them.
 
-### MacOS
+### macOS
 
 Download the `.dmg` file in the assets and install it.
 

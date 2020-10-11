@@ -13,7 +13,7 @@ description: In this way, you can get the latest unreleased features and get rea
     ```
 
 2.  Install [Qt](https://www.qt.io/download) (5.15 or higher), [CMake](https://cmake.org/download/) (3.12 or higher) and [Python3](https://www.python.org/downloads/).
-    -   On some Linux distributions and MacOS, you can install from your package manager. For example, `sudo pacman -S qt5` on Arch Linux, `brew install qt5` on Mac OS.
+    -   On some Linux distributions and macOS, you can install from your package manager. For example, `sudo pacman -S qt5` on Arch Linux, `brew install qt5` on macOS.
     -   You can also download the [offline installer](https://www.qt.io/offline-installers), or download from the [mirrors](https://download.qt.io/static/mirrorlist/). The path from the root of the mirror should be like `/qt/official_releases/qt/5.15/5.15.1/qt-opensource-<platform>-5.15.1.<suffix>` (or other versions).
     -   You can also use [aqtinstall](https://github.com/miurahr/aqtinstall) to install Qt.
 
@@ -21,7 +21,7 @@ description: In this way, you can get the latest unreleased features and get rea
 
 4.  Run the following commands:
 
-    -   Linux/MacOS:
+    -   Linux/macOS:
 
         ```sh
         mkdir build
