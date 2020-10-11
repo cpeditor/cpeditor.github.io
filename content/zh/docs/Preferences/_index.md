@@ -2,7 +2,7 @@
 title: "设置"
 linkTitle: "设置"
 weight: 40
-description: 设置的意义以及如何设定它们
+description: 设置都是些什么意思以及如何设定它们
 ---
 
 你可以通过点击 选项->设置 或者键入 <kbd>Ctrl+P</kbd> 设定设置。
