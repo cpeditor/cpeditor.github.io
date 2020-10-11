@@ -9,6 +9,6 @@ If you want to use the latest version (even later than the beta release), but do
 
 However, it's not recommended to use Artifacts, they are more unstable than beta releases, and may be a work in progress. You should read the commit logs and even the source codes before using Artifacts.
 
-In order to run it on Windows/macOS, you should install from [Releases](https://github.com/cpeditor/cpeditor/releases) first (usually any version is OK, unless something like DLL missing happens). On Windows, replace `cpeditor.exe` in your install folder with the Artifact. On Mac, run `cp path/to/Artifact cpeditor.app/Contents/MacOs`, where `cpeditor.app` is the one already installed on your machine.
+In order to run it on Windows/macOS, you should install from [Releases](https://github.com/cpeditor/cpeditor/releases) first (usually any version is OK, unless something like DLL missing happens). On Windows, replace `cpeditor.exe` in your install folder with the Artifact. On macOS, run `cp path/to/Artifact cpeditor.app/Contents/MacOs`, where `cpeditor.app` is the one already installed on your machine.
 
 In order to run it on Ubuntu 18.04, you need to install Qt. Other Linux distributions may not support binaries compiled on Ubuntu 18.04.
