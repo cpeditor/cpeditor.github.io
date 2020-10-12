@@ -41,3 +41,19 @@ You can choose the parentheses to jump out by Tab in the [Parentheses](../langua
 When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the [Tab Width](#tab-width).
 
 Note that this won't replace the existing tab characters. In [Auto Indent](#auto-indent), the tab characters in the old line will remain in the new line (however, the new indent inserted after `{` will be spaces).
+
+### Default cursor overwrites
+
+There are two modes of editing. Insert and Replace mode, Insert mode is common and most widely used, this is CP Editor and other editor's default mode. In Replace mode, the cursor replaces the next character with the pressed character. When this option is enabled the cursor for newly opened tab will be in Replace mode. It can be toggled for individual tabs by pressig INS/Insert Key on your keyboard.
+
+### Highlight Current Line
+
+If enabled the current line number is highlighted from the rest of the lines. In Vim mode, current line is never highlighted.
+
+### Enable Vim emulation
+
+If enabled the code editor uses vim emulation.
+
+### Vim Configuration
+
+The configuration to use in vim emulation.
