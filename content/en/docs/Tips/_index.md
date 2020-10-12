@@ -16,7 +16,7 @@ Besides the shortcuts in the menu, you can use the [Read-only Key Bindings](http
 
 ## Vim Emulation
 
-You can enable vim emulation in the code editor. [Most basic vim commands](https://github.com/cpeditor/FakeVim#supported-features) and some [custom commands] specific to CP Editor are supported. Please note, most Code Editor settings like Tab width, Indentation, Current line highlighting etc are disabled and when using vim mode but you can set them in CP Editor VimRC.
+You can enable vim emulation in the code editor. [Most basic vim commands](https://github.com/cpeditor/FakeVim#supported-features) and some [custom commands](../preferences/general#custom-vim-commands) specific to CP Editor are supported. Please note, most Code Editor settings like Tab width, Indentation, Current line highlighting etc are disabled and when using vim mode but you can set them in CP Editor VimRC.
 
 ## Drag and Drop
 

@@ -52,8 +52,8 @@ If enabled the current line number is highlighted from the rest of the lines. In
 
 ### Enable Vim emulation
 
-If enabled the code editor uses vim emulation.
+If enabled the code editor uses vim emulation. When Vim emulation is enabled shortcuts that user Control Key such as <kbd>Ctrl+N</kbd> will not be intercepted by CP Editor but by Code Editor. We provide some custom commands that can perform most of these tasks. You can check a list of all supported custom commands and its usage [here](../preferences/general#custom-vim-commands)
 
 ### Vim Configuration
 
-The configuration to use in vim emulation.
+The configuration to use in vim emulation. It is sourced just before vim emulation starts. The list of all supported vim commands are listed [here](https://github.com/cpeditor/FakeVim#supported-features)
