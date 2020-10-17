@@ -2,7 +2,7 @@
 title: "初始化"
 linkTitle: "初始化"
 weight: 30
-description: 初始化 CP Editor 以做好使用准备
+description: 完成 CP Editor 的初始化以做好使用准备
 ---
 
 ## 更改界面语言
