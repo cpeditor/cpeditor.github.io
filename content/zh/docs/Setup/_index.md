@@ -1,44 +1,44 @@
 ---
-title: "Setup"
-linkTitle: "Setup"
+title: "初始化"
+linkTitle: "初始化"
 weight: 30
-description: Setup CP Editor to prepare for using it
+description: 初始化 CP Editor 以做好使用准备
 ---
 
-## Change UI Language
+## 更改界面语言
 
-Now CP Editor is available in multiple languages, including English and Chinese.
+现在 CP Editor 支持多种语言，包括英文，中文和俄文。
 
-You can change the UI language in Preferences->Appearance. Note that you need to restart the editor to apply the change.
+在默认情况下 CP Editor 的界面语言与系统设置一致。如果你需要对界面语言进行更改，可以在设置->外观中进行更改。注意你需要重启编辑器以使更改生效。
 
-## Set Compile and Run Commands
+## 设置编译与运行命令
 
-You need to install `g++` / `python` / `java` depending on which language you are using. You need to add them to system PATH to have them found by the editor.
+根据你使用的编程语言，你需要安装 `g++` / `python` / `java` 等环境。你需要将它们加入 PATH 环境变量以使编辑器能找到它们。
 
-Then you can set the Compile and Run Commands in the preferences. For example, you can set C++ Commands in [Preferences->Languages->C++->C++ Commands](../preferences/language#c-commands).
+接下来在设置页面设置编译与运行命令。例如，你可以在 [设置->语言->C++->C++ 命令](../preferences/language#c-commands) 中设置 C++ 的相关命令。
 
-## Setup CF Tool
+## 安装 CF Tool
 
-In order to submit Codeforces problems in CP Editor, you need to install [CF Tool](https://github.com/xalanq/cf-tool).
+如果你需要在 CP Editor 中提交 Codeforces 题目，你需要安装 [CF Tool](https://github.com/xalanq/cf-tool)。
 
-You can add it to your system PATH to use it directly, or you can set the path to it in [Preferences->Extensions->CF Tool](../preferences/extensions#cf-tool).
+你可以将其加入 PATH 环境变量，或是在 [设置->扩展->CF Tool](../preferences/extensions#cf-tool) 中设置其路径。
 
-You need to configure the tool by running the command `cf config` in the command line before using it.
+在使用 CF Tool 之前，你需要在终端运行 `cf config` 命令完成相关配置。
 
-## Setup Competitive Companion
+## 安装 Competitive Companion
 
-[Competitive Companion](https://github.com/jmerle/competitive-companion) is used to parse problems/contests from online judges. After you install it, you can parse sample test cases by a single click, instead of copying them manually.
+[Competitive Companion](https://github.com/jmerle/competitive-companion) 用于从在线评测系统中解析题目/比赛的信息。在安装它后，你只需点击一下即可从题目中获取测试样例，免除了手动复制的麻烦。
 
-You can install it from the addon/extension markets:
+你可以通过安装浏览器扩展的方式来安装 Competitive Companion。
 
--   [Chrome Extension](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
--   [Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
+-   [Chrome](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
+-   [Firefox](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
 
-## Setup Clang Format
+## 安装 Clang Format
 
-The editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C++ code.
+CP Editor 使用 [Clang Format](http://releases.llvm.org/download.html) 来格式化 C++ 代码。
 
-You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../preferences/extensions#clang-format).
+你需要将其加入 PATH 环境变量，或是在 [设置->扩展->Clang Format](../preferences/extensions#clang-format) 中设置其路径。
 
 ## Setup Language Server
 
