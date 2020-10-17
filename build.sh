@@ -11,6 +11,7 @@ function build() {
 
     if [[ "$1" != "" ]]; then
         sed -i "s/^version = \".*\"/version = \"$1\"/" config.toml
+        sed -i "s/^github_branch = \".*\"/github_branch = \"$1\"/" config.toml
     fi
 
     echo "[[params.versions]]
