@@ -1,6 +1,7 @@
 ---
-title: "General"
+title: "Information"
 weight: 1000
+description: Information regarding terminologies or methodologies used in Documentations
 ---
 
 ### Temporary Directory

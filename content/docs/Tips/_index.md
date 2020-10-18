@@ -14,6 +14,10 @@ You can use <kbd>Ctlr+Tab</kbd> and <kbd>Ctlr+Shift+Tab</kbd> to go through the 
 
 Besides the shortcuts in the menu, you can use the [Read-only Key Bindings](https://doc.qt.io/qt-5/qtextedit.html#read-only-key-bindings) and the [Editing Key Bindings](https://doc.qt.io/qt-5/qtextedit.html#editing-key-bindings). There are also some hidden shortcuts: <kbd>Tab</kbd> (when there's a selection) and <kbd>Shift+Tab</kbd> for indent and unindent, <kbd>Ctrl+Enter</kbd> and <kbd>Ctrl+Shift+Enter</kbd> for inserting line after and before, <kbd>Shift+Delete</kbd> for deleting the current line.
 
+## Vim Emulation
+
+You can enable vim emulation in code editor. [Most basic vim commands](../general/vim-commands#vim-commands) and some [custom commands](../general/vim-commands#custom-vim-vommands) of CP Editor are supported. Many code editor settings like Tab width, Indentation, Current line highlighting are disabled when using vim mode but you can set them in [Vim configuration](../preferences/code-editing/#vim-configuration).
+
 ## Drag and Drop
 
 You can drag files and drop them into the main editor or the input/expected part of test cases.

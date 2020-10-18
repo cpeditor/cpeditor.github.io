@@ -1,5 +1,5 @@
 ---
-title: "Code Edit"
+title: "Code Editing"
 weight: 10
 ---
 
@@ -41,3 +41,20 @@ You can choose the parentheses to jump out by Tab in the [Parentheses](../langua
 When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the [Tab Width](#tab-width).
 
 Note that this won't replace the existing tab characters. In [Auto Indent](#auto-indent), the tab characters in the old line will remain in the new line (however, the new indent inserted after `{` will be spaces).
+
+### Default cursor overwrites
+
+There are two modes in text editing, Insert and Replace mode. Insert mode is common and most widely used, this is CP Editor and other editor’s default mode. In Replace mode, the cursor replaces the next character with the pressed character. If this option is enabled the cursor for newly opened tab will be in Replace mode. It can be toggled for individual tabs by pressig <kbd>INS</kbd> or <kbd>Insert</kbd> on your keyboard.
+
+
+### Highlight Current Line
+
+If enabled the current line number is highlighted from the rest of the lines. In Vim mode, current line is never highlighted.
+
+### Enable Vim emulation
+
+If enabled code editor uses vim emulation. In Vim emulation, Control Key such as <kbd>Ctrl+N</kbd> will not be intercepted by CP Editor but by Code Editor. We provide some custom commands that can perform most of these tasks. You can check a list of all supported custom commands and its usage [here](../../general/vim-commands/#custom-vim-commands)
+
+### Vim Configuration
+
+The configuration to use in vim mode. The list of all supported vim commands are listed [here](../../general/vim-commands/#vim-commands)
