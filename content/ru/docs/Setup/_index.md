@@ -9,7 +9,7 @@ description: Setup CP Editor to prepare for using it
 
 Now CP Editor is available in multiple languages, including English and Chinese.
 
-You can change the UI language in Preferences->Appearance. Note that you need to restart the editor to apply the change.
+You can change the UI language in Preferences->Appearance. Note that you need to restart CP Editor to apply the change.
 
 ## Set Compile and Run Commands
 

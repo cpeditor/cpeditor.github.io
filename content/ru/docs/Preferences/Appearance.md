@@ -5,8 +5,6 @@ weight: 30
 
 ## General
 
-This section contains general appearance settings such as themes and styles.
-
 ### UI Language
 
 The natural language used in the UI.
@@ -50,8 +48,6 @@ Add an extra margin at the bottom of the code editor, so that you can scroll les
 Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by <kbd>Ctrl+Z</kbd>.
 
 ## Font
-
-This section allows you to set fonts for different UI components of the Editor.
 
 ### Show only Monospaced Font
 

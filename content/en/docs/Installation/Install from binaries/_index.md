@@ -39,4 +39,4 @@ Then type your root password and agree with the installation. You can also use `
 
 Download the `.dmg` file in the assets and install it.
 
-You may need to click "Yes" to access Filesystem several times. Apple may report that this application does not comes from recognised developer and prevent you from launching app. Please add an exception to the Editor from `Settings -> Security -> General`, and allow CP Editor to `run anyways`
+You may need to click "Yes" to access Filesystem several times. Apple may report that this application does not comes from recognised developer and prevent you from launching app. Please add an exception to CP Editor from `Settings -> Security -> General`, and allow CP Editor to `run anyways`
