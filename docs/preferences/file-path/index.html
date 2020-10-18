@@ -8,6 +8,7 @@
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/preferences/file-path/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -22,26 +23,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>File Path | CP Editor</title><meta property="og:title" content="File Path" />
-<meta property="og:description" content="Testcases Input File Save Path &amp; Answer File Save Path The path where the test cases are saved. If it is a relative path, it is relative to the source file.
-You can use the following place holders:
- ${filename}: the complete file name ${basename}: the base file name without the suffix ${0-index}: the index of the test case started from 0 ${1-index}: the index of the test case started from 1  For example, a test case is the 3-rd test case of the source file /a/b/c." />
-<meta property="og:type" content="article" />
+<meta property="og:description" content="The IDE for competitive programming" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="/docs/preferences/file-path/" />
-<meta property="article:modified_time" content="2020-08-30T22:18:39+08:00" /><meta property="og:site_name" content="CP Editor" />
+<meta property="og:site_name" content="CP Editor" />
 <meta itemprop="name" content="File Path">
-<meta itemprop="description" content="Testcases Input File Save Path &amp; Answer File Save Path The path where the test cases are saved. If it is a relative path, it is relative to the source file.
-You can use the following place holders:
- ${filename}: the complete file name ${basename}: the base file name without the suffix ${0-index}: the index of the test case started from 0 ${1-index}: the index of the test case started from 1  For example, a test case is the 3-rd test case of the source file /a/b/c.">
-<meta itemprop="dateModified" content="2020-08-30T22:18:39&#43;08:00" />
-<meta itemprop="wordCount" content="546">
-
-
-
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="The IDE for competitive programming"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="File Path"/>
-<meta name="twitter:description" content="Testcases Input File Save Path &amp; Answer File Save Path The path where the test cases are saved. If it is a relative path, it is relative to the source file.
-You can use the following place holders:
- ${filename}: the complete file name ${basename}: the base file name without the suffix ${0-index}: the index of the test case started from 0 ${1-index}: the index of the test case started from 1  For example, a test case is the 3-rd test case of the source file /a/b/c."/>
+<meta name="twitter:description" content="The IDE for competitive programming"/>
 
 
 <script type="application/javascript">
@@ -60,8 +49,8 @@ if (!doNotTrack) {
 
 
 
-<link rel="preload" href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" as="style">
-<link href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.509a0b578a804e853972a302a017d9a2b39af605c7e6e89d8a6a700141394cd3.css" as="style">
+<link href="/scss/main.min.509a0b578a804e853972a302a017d9a2b39af605c7e6e89d8a6a700141394cd3.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -76,9 +65,10 @@ if (!doNotTrack) {
 
 
 
+
 </head>
 
-<body class="td-page">
+<body class="td-section">
   <header>
     
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -172,7 +162,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d4f3dfd22cee5858f0ec0ecf4f69399edcb5115a0dc4756576ff732a8f015746a07f25d15593e4572869fa5679fc59c14bc6e59ed2cad7af564bc37a735da70.json"
+  data-offline-search-index-json-src="/offline-search-index.66cd98fc7a20af422c7687390fe785667ae3c0055aaba7a53dce8a57b3706700d20caaf18771ba4cdb303edc54a6c5b2989ead00b74d9d529a39383e4dd99af9.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -203,7 +193,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d4f3dfd22cee5858f0ec0ecf4f69399edcb5115a0dc4756576ff732a8f015746a07f25d15593e4572869fa5679fc59c14bc6e59ed2cad7af564bc37a735da70.json"
+  data-offline-search-index-json-src="/offline-search-index.66cd98fc7a20af422c7687390fe785667ae3c0055aaba7a53dce8a57b3706700d20caaf18771ba4cdb303edc54a6c5b2989ead00b74d9d529a39383e4dd99af9.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -394,83 +384,6 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/preferences/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Preferences</a>
-  </li>
-  <ul>
-    <li class="collapse show" id="docspreferences">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferencescode-edit" href="/docs/preferences/code-edit/">Code Edit</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferenceslanguage" href="/docs/preferences/language/">Language</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferencesappearance" href="/docs/preferences/appearance/">Appearance</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferencesactions" href="/docs/preferences/actions/">Actions</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferencesextensions" href="/docs/preferences/extensions/">Extensions</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docspreferencesfile-path" href="/docs/preferences/file-path/">File Path</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferenceskey-bindings" href="/docs/preferences/key-bindings/">Key Bindings</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferencesadvanced" href="/docs/preferences/advanced/">Advanced</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docspreferencesgeneral" href="/docs/preferences/general/">General</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
   </li>
   <ul>
@@ -553,9 +466,7 @@ if (!doNotTrack) {
 
 
 
-
-
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/en/docs/Preferences/File%20Path.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/Preferences/File%20Path/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=File%20Path" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 
@@ -604,18 +515,8 @@ if (!doNotTrack) {
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="/docs/preferences/">Preferences</a>
 </li>
 
 
@@ -631,8 +532,8 @@ if (!doNotTrack) {
           
 <div class="td-content">
 	<h1>File Path</h1>
-    
-	       
+        
+	
 	<h2 id="testcases">Testcases</h2>
 <h3 id="input-file-save-path--answer-file-save-path">Input File Save Path &amp; Answer File Save Path</h3>
 <p>The path where the test cases are <a href="../actions#save-testcases-on-save">saved</a>. If it is a relative path, it is relative to the source file.</p>
@@ -680,6 +581,56 @@ if (!doNotTrack) {
 <li>You are asked to choose the path for &ldquo;Load Single Test Case&rdquo;, the default path is <code>/a/e</code>, because <code>testcase</code> was modified by choosing <code>/a/e</code> for &ldquo;Save File&rdquo;.</li>
 </ol>
 <p>In the preferences window, the default paths changed by an action is a comma-separated list.</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
 
 	
 		<style>
@@ -743,10 +694,9 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 30, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8c13a62315307bc857df89117bc93fd0a5d695b1">feat(Preferences/File Path): add an example of default file path for problem URL (#57) (8c13a62)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
 </div>
 </div>
-
 
         </main>
       </div>
@@ -828,7 +778,11 @@ if (!doNotTrack) {
 
 
 
-<script src="/js/main.min.664f21bf5eb0c31ebc661e2616e6c63e0448cec6d5636d869957be423c3cb952.js" integrity="sha256-Zk8hv16wwx68Zh4mFubGPgRIzsbVY22GmVe&#43;Qjw8uVI=" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/js/main.min.460c8ae21829f9b330823a08f34ac961d7d0daa8874c8c9eba7ea0484bb42a79.js" integrity="sha256-RgyK4hgp&#43;bMwgjoI80rJYdfQ2qiHTIyeun6gSEu0Knk=" crossorigin="anonymous"></script>
 
 
 

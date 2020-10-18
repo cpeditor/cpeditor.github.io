@@ -8,6 +8,7 @@
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
+<link rel="alternate" type="application/rss&#43;xml" href="/zh/docs/preferences/advanced/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -22,71 +23,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>高级 | CP Editor</title><meta property="og:title" content="高级" />
-<meta property="og:description" content="更新 启动时检查更新 在 CP Editor 启动时，检查是否有新版本的 CP Editor。
-如果有新版本，则会弹出一个窗口询问你是否进行更新。
-使用测试版本 检查更新时，检查 Beta 版本。 Beta 版通常具有更多功能和改进，但不如稳定版稳定。
-限制 默认时间限制 执行程序的默认时间限制。
-超时的程序会被终止。
-输出长度限制 程序的最大输出字符数。
-stdout 或 stderr 过长的程序将会被终止。
-输出显示长度限制 会显示出来的程序输出的最大字符数。
-如果输出过长，超长部分会被省略。
-消息长度限制 主窗口右上角内每条信息的最大长度。
-超长部分将会被省略。
-HTML 差异查看器长度限制 HTML 差异查看器中的最大字符数。
-如果输出或答案太长，差异查看器将以纯文本显示。
-打开文件长度限制 允许打开的文件的最大字符数。
-如果文件超长，将不会被打开。
-显示测试用例长度限制 会显示出来的测试用例的最大字符数。
-如果测试用例过长，超长部分会被省略，且测试用例会变得只读。
-网络代理 用于检查更新的代理服务器。" />
-<meta property="og:type" content="article" />
+<meta property="og:description" content="专为算法竞赛设计的 IDE" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="/zh/docs/preferences/advanced/" />
-<meta property="article:modified_time" content="2020-10-11T15:51:29+08:00" /><meta property="og:site_name" content="CP Editor" />
+<meta property="og:site_name" content="CP Editor" />
 <meta itemprop="name" content="高级">
-<meta itemprop="description" content="更新 启动时检查更新 在 CP Editor 启动时，检查是否有新版本的 CP Editor。
-如果有新版本，则会弹出一个窗口询问你是否进行更新。
-使用测试版本 检查更新时，检查 Beta 版本。 Beta 版通常具有更多功能和改进，但不如稳定版稳定。
-限制 默认时间限制 执行程序的默认时间限制。
-超时的程序会被终止。
-输出长度限制 程序的最大输出字符数。
-stdout 或 stderr 过长的程序将会被终止。
-输出显示长度限制 会显示出来的程序输出的最大字符数。
-如果输出过长，超长部分会被省略。
-消息长度限制 主窗口右上角内每条信息的最大长度。
-超长部分将会被省略。
-HTML 差异查看器长度限制 HTML 差异查看器中的最大字符数。
-如果输出或答案太长，差异查看器将以纯文本显示。
-打开文件长度限制 允许打开的文件的最大字符数。
-如果文件超长，将不会被打开。
-显示测试用例长度限制 会显示出来的测试用例的最大字符数。
-如果测试用例过长，超长部分会被省略，且测试用例会变得只读。
-网络代理 用于检查更新的代理服务器。">
-<meta itemprop="dateModified" content="2020-10-11T15:51:29&#43;08:00" />
-<meta itemprop="wordCount" content="44">
-
-
-
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="高级"/>
-<meta name="twitter:description" content="更新 启动时检查更新 在 CP Editor 启动时，检查是否有新版本的 CP Editor。
-如果有新版本，则会弹出一个窗口询问你是否进行更新。
-使用测试版本 检查更新时，检查 Beta 版本。 Beta 版通常具有更多功能和改进，但不如稳定版稳定。
-限制 默认时间限制 执行程序的默认时间限制。
-超时的程序会被终止。
-输出长度限制 程序的最大输出字符数。
-stdout 或 stderr 过长的程序将会被终止。
-输出显示长度限制 会显示出来的程序输出的最大字符数。
-如果输出过长，超长部分会被省略。
-消息长度限制 主窗口右上角内每条信息的最大长度。
-超长部分将会被省略。
-HTML 差异查看器长度限制 HTML 差异查看器中的最大字符数。
-如果输出或答案太长，差异查看器将以纯文本显示。
-打开文件长度限制 允许打开的文件的最大字符数。
-如果文件超长，将不会被打开。
-显示测试用例长度限制 会显示出来的测试用例的最大字符数。
-如果测试用例过长，超长部分会被省略，且测试用例会变得只读。
-网络代理 用于检查更新的代理服务器。"/>
+<meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
 
 
 <script type="application/javascript">
@@ -105,8 +49,8 @@ if (!doNotTrack) {
 
 
 
-<link rel="preload" href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" as="style">
-<link href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.509a0b578a804e853972a302a017d9a2b39af605c7e6e89d8a6a700141394cd3.css" as="style">
+<link href="/scss/main.min.509a0b578a804e853972a302a017d9a2b39af605c7e6e89d8a6a700141394cd3.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -121,9 +65,10 @@ if (!doNotTrack) {
 
 
 
+
 </head>
 
-<body class="td-page">
+<body class="td-section">
   <header>
     
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -217,7 +162,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d4f3dfd22cee5858f0ec0ecf4f69399edcb5115a0dc4756576ff732a8f015746a07f25d15593e4572869fa5679fc59c14bc6e59ed2cad7af564bc37a735da70.json"
+  data-offline-search-index-json-src="/offline-search-index.66cd98fc7a20af422c7687390fe785667ae3c0055aaba7a53dce8a57b3706700d20caaf18771ba4cdb303edc54a6c5b2989ead00b74d9d529a39383e4dd99af9.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -248,7 +193,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d4f3dfd22cee5858f0ec0ecf4f69399edcb5115a0dc4756576ff732a8f015746a07f25d15593e4572869fa5679fc59c14bc6e59ed2cad7af564bc37a735da70.json"
+  data-offline-search-index-json-src="/offline-search-index.66cd98fc7a20af422c7687390fe785667ae3c0055aaba7a53dce8a57b3706700d20caaf18771ba4cdb303edc54a6c5b2989ead00b74d9d529a39383e4dd99af9.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -439,83 +384,6 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/zh/docs/preferences/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">设置</a>
-  </li>
-  <ul>
-    <li class="collapse show" id="zhdocspreferences">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferencescode-edit" href="/zh/docs/preferences/code-edit/">Code Edit</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferenceslanguage" href="/zh/docs/preferences/language/">Language</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferencesappearance" href="/zh/docs/preferences/appearance/">外观</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferencesactions" href="/zh/docs/preferences/actions/">Actions</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferencesextensions" href="/zh/docs/preferences/extensions/">Extensions</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferencesfile-path" href="/zh/docs/preferences/file-path/">File Path</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferenceskey-bindings" href="/zh/docs/preferences/key-bindings/">Key Bindings</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-zhdocspreferencesadvanced" href="/zh/docs/preferences/advanced/">高级</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-zhdocspreferencesgeneral" href="/zh/docs/preferences/general/">通用</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
     <a  href="/zh/docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
   </li>
   <ul>
@@ -598,9 +466,7 @@ if (!doNotTrack) {
 
 
 
-
-
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/zh/docs/Preferences/Advanced.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/Preferences/Advanced/_index.zh.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=%e9%ab%98%e7%ba%a7" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
 
 
@@ -669,18 +535,8 @@ if (!doNotTrack) {
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="/zh/docs/">文档</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="/zh/docs/preferences/">设置</a>
 </li>
 
 
@@ -696,8 +552,8 @@ if (!doNotTrack) {
           
 <div class="td-content">
 	<h1>高级</h1>
-    
-	       
+        
+	
 	<h2 id="更新">更新</h2>
 <h3 id="启动时检查更新">启动时检查更新</h3>
 <p>在 CP Editor 启动时，检查是否有新版本的 CP Editor。</p>
@@ -728,6 +584,56 @@ if (!doNotTrack) {
 <p>如果测试用例过长，超长部分会被省略，且测试用例会变得只读。</p>
 <h2 id="网络代理">网络代理</h2>
 <p>用于检查更新的代理服务器。</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
 
 	
 		<style>
@@ -791,10 +697,9 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 October 11, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/2e544a28907406a11028f76f776bd5725c059ab7">feat(Advanced, Preferences): add Chinese translation (#76) (2e544a2)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
 </div>
 </div>
-
 
         </main>
       </div>
@@ -876,7 +781,11 @@ if (!doNotTrack) {
 
 
 
-<script src="/js/main.min.664f21bf5eb0c31ebc661e2616e6c63e0448cec6d5636d869957be423c3cb952.js" integrity="sha256-Zk8hv16wwx68Zh4mFubGPgRIzsbVY22GmVe&#43;Qjw8uVI=" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/js/main.min.460c8ae21829f9b330823a08f34ac961d7d0daa8874c8c9eba7ea0484bb42a79.js" integrity="sha256-RgyK4hgp&#43;bMwgjoI80rJYdfQ2qiHTIyeun6gSEu0Knk=" crossorigin="anonymous"></script>
 
 
 

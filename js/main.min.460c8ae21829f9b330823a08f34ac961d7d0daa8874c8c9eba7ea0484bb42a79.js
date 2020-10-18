@@ -10,4 +10,4 @@ $(window).scrollTop()+
 180
 }px)`,overflowY:'auto',});$html.append($searchResultBody);if(results.length===0){$searchResultBody.append($('<p>').text(`No results found for query "${searchQuery}"`));}else{results.forEach((r)=>{const doc=resultDetails.get(r.ref);const href=$searchInput.data('offline-search-base-href')+
 r.ref.replace(/^\//,'');const $entry=$('<div>').addClass('mt-4');$entry.append($('<small>').addClass('d-block text-muted').text(r.ref));$entry.append($('<a>').addClass('d-block').css({fontSize:'1.2rem',}).attr('href',href).text(doc.title));$entry.append($('<p>').text(doc.excerpt));$searchResultBody.append($entry);});}
-$targetSearchInput.on('shown.bs.popover',()=>{$('.search-result-close-button').on('click',()=>{$targetSearchInput.val('');$targetSearchInput.trigger('change');});});$targetSearchInput.data('content',$html[0].outerHTML).popover('show');};});})(jQuery);
+$targetSearchInput.on('shown.bs.popover',()=>{$('.search-result-close-button').on('click',()=>{$targetSearchInput.val('');$targetSearchInput.trigger('change');});});$targetSearchInput.data('content',$html[0].outerHTML).popover('show');};});})(jQuery);;

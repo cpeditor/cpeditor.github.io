@@ -8,6 +8,7 @@
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
+<link rel="alternate" type="application/rss&#43;xml" href="/ru/docs/preferences/general/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -22,29 +23,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>General | CP Editor</title><meta property="og:title" content="General" />
-<meta property="og:description" content="Temporary Directory In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.
-You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.
-On Linux, it&rsquo;s /tmp/CP Editor-XXXXXX. On Windows, it&rsquo;s C:\Users\&lt;username&gt;\AppData\Local\Temp\CP Editor-XXXXXX.
-Regular Expression The regular expression is used to match patterns in a string and find and replace substrings." />
-<meta property="og:type" content="article" />
+<meta property="og:description" content="редактор, созданный для спортивного программирования" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="/ru/docs/preferences/general/" />
-<meta property="article:modified_time" content="2020-10-01T21:22:08+08:00" /><meta property="og:site_name" content="CP Editor" />
+<meta property="og:site_name" content="CP Editor" />
 <meta itemprop="name" content="General">
-<meta itemprop="description" content="Temporary Directory In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.
-You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.
-On Linux, it&rsquo;s /tmp/CP Editor-XXXXXX. On Windows, it&rsquo;s C:\Users\&lt;username&gt;\AppData\Local\Temp\CP Editor-XXXXXX.
-Regular Expression The regular expression is used to match patterns in a string and find and replace substrings.">
-<meta itemprop="dateModified" content="2020-10-01T21:22:08&#43;08:00" />
-<meta itemprop="wordCount" content="115">
-
-
-
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="редактор, созданный для спортивного программирования"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="General"/>
-<meta name="twitter:description" content="Temporary Directory In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.
-You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.
-On Linux, it&rsquo;s /tmp/CP Editor-XXXXXX. On Windows, it&rsquo;s C:\Users\&lt;username&gt;\AppData\Local\Temp\CP Editor-XXXXXX.
-Regular Expression The regular expression is used to match patterns in a string and find and replace substrings."/>
+<meta name="twitter:description" content="редактор, созданный для спортивного программирования"/>
 
 
 <script type="application/javascript">
@@ -63,8 +49,8 @@ if (!doNotTrack) {
 
 
 
-<link rel="preload" href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" as="style">
-<link href="/scss/main.min.cf1e97eec3f71328eb83c5234c5252029e87d27e0c2bdc419937767af8e9581b.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.509a0b578a804e853972a302a017d9a2b39af605c7e6e89d8a6a700141394cd3.css" as="style">
+<link href="/scss/main.min.509a0b578a804e853972a302a017d9a2b39af605c7e6e89d8a6a700141394cd3.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -79,9 +65,10 @@ if (!doNotTrack) {
 
 
 
+
 </head>
 
-<body class="td-page">
+<body class="td-section">
   <header>
     
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -175,7 +162,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d4f3dfd22cee5858f0ec0ecf4f69399edcb5115a0dc4756576ff732a8f015746a07f25d15593e4572869fa5679fc59c14bc6e59ed2cad7af564bc37a735da70.json"
+  data-offline-search-index-json-src="/offline-search-index.66cd98fc7a20af422c7687390fe785667ae3c0055aaba7a53dce8a57b3706700d20caaf18771ba4cdb303edc54a6c5b2989ead00b74d9d529a39383e4dd99af9.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -206,7 +193,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.6d4f3dfd22cee5858f0ec0ecf4f69399edcb5115a0dc4756576ff732a8f015746a07f25d15593e4572869fa5679fc59c14bc6e59ed2cad7af564bc37a735da70.json"
+  data-offline-search-index-json-src="/offline-search-index.66cd98fc7a20af422c7687390fe785667ae3c0055aaba7a53dce8a57b3706700d20caaf18771ba4cdb303edc54a6c5b2989ead00b74d9d529a39383e4dd99af9.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -397,83 +384,6 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/ru/docs/preferences/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Preferences</a>
-  </li>
-  <ul>
-    <li class="collapse show" id="rudocspreferences">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencescode-edit" href="/ru/docs/preferences/code-edit/">Code Edit</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferenceslanguage" href="/ru/docs/preferences/language/">Language</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesappearance" href="/ru/docs/preferences/appearance/">Appearance</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesactions" href="/ru/docs/preferences/actions/">Actions</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesextensions" href="/ru/docs/preferences/extensions/">Extensions</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesfile-path" href="/ru/docs/preferences/file-path/">File Path</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferenceskey-bindings" href="/ru/docs/preferences/key-bindings/">Key Bindings</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-rudocspreferencesadvanced" href="/ru/docs/preferences/advanced/">Advanced</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-rudocspreferencesgeneral" href="/ru/docs/preferences/general/">General</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
     <a  href="/ru/docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
   </li>
   <ul>
@@ -556,9 +466,7 @@ if (!doNotTrack) {
 
 
 
-
-
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/ru/docs/Preferences/General.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Отредактировать страницу</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/Preferences/General/_index.ru.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Отредактировать страницу</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=General" target="_blank"><i class="fab fa-github fa-fw"></i> Предложить изменения документации</a>
 
 
@@ -605,7 +513,7 @@ if (!doNotTrack) {
 
 <div class="pageinfo pageinfo-primary">
     This page hasn&#39;t been translated yet.
-    You can help us <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/ru/docs/Preferences/General.md'>translate this page</a>.
+    You can help us <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/Preferences/General/_index.ru.md'>translate this page</a>.
 </div>
 
 
@@ -620,18 +528,8 @@ if (!doNotTrack) {
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="/ru/docs/">Documentation</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="/ru/docs/preferences/">Preferences</a>
 </li>
 
 
@@ -647,8 +545,8 @@ if (!doNotTrack) {
           
 <div class="td-content">
 	<h1>General</h1>
-    
-	       
+        
+	
 	<h3 id="temporary-directory">Temporary Directory</h3>
 <p>In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.</p>
 <p>You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.</p>
@@ -657,6 +555,56 @@ if (!doNotTrack) {
 <p>The <a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expression</a> is used to match patterns in a string and find and replace substrings.</p>
 <p>You can find many online regex cources, for example: <a href="https://regexone.com/">https://regexone.com/</a>.</p>
 <p>In CP Editor, you can use <code>\1</code>, <code>\2</code>, etc. for the content of the first/second capture group in the replacement patterns.</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
 
 	
 		<style>
@@ -720,10 +668,9 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Изменено October 1, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/090d15cf5029abebc7751c2d53d9c33663144cb3">feat: add the structure of translations (#65) (090d15c)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Изменено October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
 </div>
 </div>
-
 
         </main>
       </div>
@@ -805,7 +752,11 @@ if (!doNotTrack) {
 
 
 
-<script src="/js/main.min.664f21bf5eb0c31ebc661e2616e6c63e0448cec6d5636d869957be423c3cb952.js" integrity="sha256-Zk8hv16wwx68Zh4mFubGPgRIzsbVY22GmVe&#43;Qjw8uVI=" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/js/main.min.460c8ae21829f9b330823a08f34ac961d7d0daa8874c8c9eba7ea0484bb42a79.js" integrity="sha256-RgyK4hgp&#43;bMwgjoI80rJYdfQ2qiHTIyeun6gSEu0Knk=" crossorigin="anonymous"></script>
 
 
 
