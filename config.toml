@@ -10,9 +10,7 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content/en"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
@@ -68,13 +66,11 @@ weight = 1
 title = "CP Editor"
 description = "专为算法竞赛设计的 IDE"
 languageName = "中文"
-contentDir = "content/zh"
 weight = 2
 [languages.ru]
 title = "CP Editor"
 description = "редактор, созданный для спортивного программирования"
 languageName = "Русский"
-contentDir = "content/ru"
 weight = 3
 
 [markup]
