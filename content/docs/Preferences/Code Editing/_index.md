@@ -46,7 +46,6 @@ Note that this won't replace the existing tab characters. In [Auto Indent](#auto
 
 There are two modes in text editing, Insert and Replace mode. Insert mode is common and most widely used, this is CP Editor and other editor’s default mode. In Replace mode, the cursor replaces the next character with the pressed character. If this option is enabled the cursor for newly opened tab will be in Replace mode. It can be toggled for individual tabs by pressig <kbd>INS</kbd> or <kbd>Insert</kbd> on your keyboard.
 
-
 ### Highlight Current Line
 
 If enabled the current line number is highlighted from the rest of the lines. In Vim mode, current line is never highlighted.
