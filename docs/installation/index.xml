@@ -19,7 +19,7 @@
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or another graphical tools to install &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara and newer versions of these distributions or based on them.&lt;/p>
 &lt;h3 id="macos">macOS&lt;/h3>
 &lt;p>Download the &lt;code>.dmg&lt;/code> file in the assets and install it.&lt;/p>
-&lt;p>You may need to click &amp;ldquo;Yes&amp;rdquo; to access Filesystem several times. Apple may report that this application does not comes from recognised developer and prevent you from launching app. Please add an exception to the Editor from &lt;code>Settings -&amp;gt; Security -&amp;gt; General&lt;/code>, and allow CP Editor to &lt;code>run anyways&lt;/code>&lt;/p></description></item><item><title>Docs: Build from source</title><link>/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/installation/build-from-source/</guid><description>
+&lt;p>You may need to click &amp;ldquo;Yes&amp;rdquo; to access Filesystem several times. Apple may report that this application does not comes from recognised developer and prevent you from launching app. Please add an exception to CP Editor from &lt;code>Settings -&amp;gt; Security -&amp;gt; General&lt;/code>, and allow CP Editor to &lt;code>run anyways&lt;/code>&lt;/p></description></item><item><title>Docs: Build from source</title><link>/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/installation/build-from-source/</guid><description>
 &lt;ol>
 &lt;li>
 &lt;p>Clone this repo and submodules:&lt;/p>

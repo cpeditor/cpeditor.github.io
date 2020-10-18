@@ -107,7 +107,6 @@
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
 &lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: Appearance</title><link>/ru/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/appearance/</guid><description>
 &lt;h2 id="general">General&lt;/h2>
-&lt;p>This section contains general appearance settings such as themes and styles.&lt;/p>
 &lt;h3 id="ui-language">UI Language&lt;/h3>
 &lt;p>The natural language used in the UI.&lt;/p>
 &lt;h3 id="ui-style">UI Style&lt;/h3>
@@ -130,7 +129,6 @@
 &lt;p>Add an extra margin at the bottom of the code editor, so that you can scroll less.&lt;/p>
 &lt;p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by &lt;kbd>Ctrl+Z&lt;/kbd>.&lt;/p>
 &lt;h2 id="font">Font&lt;/h2>
-&lt;p>This section allows you to set fonts for different UI components of the Editor.&lt;/p>
 &lt;h3 id="show-only-monospaced-font">Show only Monospaced Font&lt;/h3>
 &lt;p>When checked the font picker dialog shows only monospaced fonts.&lt;/p>
 &lt;h3 id="editor-font">Editor Font&lt;/h3>
