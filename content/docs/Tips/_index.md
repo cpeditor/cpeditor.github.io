@@ -16,7 +16,7 @@ Besides the shortcuts in the menu, you can use the [Read-only Key Bindings](http
 
 ## Vim Emulation
 
-You can enable vim emulation in code editor. [Most basic vim commands](../general/vim-commands#vim-commands) and some [custom commands](../general/vim-commands#custom-vim-vommands) of CP Editor are supported. Many code editor settings like Tab width, Indentation, Current line highlighting are disabled when using vim mode but you can set them in [Vim configuration](../preferences/code-editing/#vim-configuration).
+You can enable vim emulation in code editor. [Most basic vim commands](../general/vim-commands#vim-commands) and some [custom commands](../general/vim-commands#custom-vim-commands) of CP Editor are supported. Many code editor settings like Tab width, Indentation, Current line highlighting are disabled when using vim mode but you can set them in [Vim configuration](../preferences/code-editing/#vim-configuration).
 
 ## Drag and Drop
 
