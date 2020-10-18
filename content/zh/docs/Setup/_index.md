@@ -32,7 +32,7 @@ description: 完成 CP Editor 的初始化以做好使用准备
 你可以通过安装浏览器扩展的方式来安装 Competitive Companion。
 
 -   [Chrome](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
--   [Firefox](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
+-   [Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/competitive-companion/)
 
 ## 安装 Clang Format
 
