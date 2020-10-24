@@ -2,9 +2,7 @@
   "name": "cpeditor.github.io",
   "description": "The official website of CP Editor",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "fix-md-format": "remark content -o",
-    "check-md-format": "remark content -f"
+    "lint": "remark content -o"
   },
   "repository": {
     "type": "git",

@@ -12,8 +12,7 @@ jobs:
       with:
         node-version: '13.x'
     - run: npm install
-    - name: Run lint
-      run: npm run fix-md-format
+    - run: npm run lint
     - name: Check diff
       run: git diff --exit-code ${{ github.sha }}
     - name: Create Pull Request
