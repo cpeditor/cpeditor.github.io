@@ -1,43 +1,43 @@
 ---
-title: "Code Edit"
+title: "代码编辑"
 weight: 10
 ---
 
-### Tab Width
+### 缩进宽度
 
-The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in [Auto Indent](#auto-indent) and [Replace tabs by spaces](#replace-tabs-by-spaces).
+设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 [自动缩进](#自动缩进) 和 [将制表符替换为空格](#将制表符替换为空格) 产生影响。
 
-### Auto Indent
+### 自动缩进
 
-1.  When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.
-2.  If the old line ends with `{`, an extra indent (a tab character or [Tab Width](#tab-width) spaces, depending on whether [Replace tabs by spaces](#replace-tabs-by-spaces) is enabled) will be inserted at the beginning of the new line.
+1. 当代码另起一行时，该行将和上一行拥有相同的缩进。
+2. 如果上一行以 `{` 结束，该行将会插入一个额外的缩进（一个制表符或 [缩进宽度](#缩进宽度) 个空格，取决于 [将制表符替换为空格](#将制表符替换为空格) 选项是否开启）。
 
-### Wrap Text
+### 文本自动换行
 
-If a line is too long to fit in a single line, the line will be separated into several lines.
+如果某一行的字符数超出了屏幕的宽度，则该行的内容将会折成多行显示。
 
-### Auto Complete Parentheses
+### 自动补全括号
 
-Automatically add the right parenthesis when you type the left one. For example, when you type `(`, `)` will be added.
+在输入左括号时自动插入右括号。例如，当你输入一个 `(` 时，将会自动加入一个 `)`。
 
-When the character next to the cursor is a right parenthesis and you type this parenthesis, instead of typing this parenthesis, the cursor will jump out of the parenthesis.
+如果光标处右边的第一个字符是右括号，而你输入了一个右括号，光标将会自动跳到该右括号后面，而不再输入右括号。
 
-You can choose the parentheses to auto-complete in the [Parentheses](../language#parentheses) settings.
+你可以在各语言的 [括号](../language#括号) 设置中设置各语言自动补全的括号类型。
 
-### Auto Remove Parentheses
+### 自动删除括号
 
-When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.
+在删除一个左括号时，如果其右侧有一个右括号相邻，则该右括号也会被自动删除。
 
-You can choose the parentheses to auto-remove in the [Parentheses](../language#parentheses) settings.
+你可以在各语言的 [括号](../language#括号) 设置中设置各语言自动删除的括号类型。
 
-### Jump out of a parenthesis by pressing Tab
+### 在按下 Tab 键时跳出括号
 
-When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If [Auto Complete Parentheses](#auto-complete-parentheses) is enabled, this is an alternative of typing the right parenthesis.
+如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果 [自动补全括号](#自动补全括号) 选项被启用，这种方式可以作为输入右括号的另一种方式。
 
-You can choose the parentheses to jump out by Tab in the [Parentheses](../language#parentheses) settings.
+你可以在各语言的 [括号](../language#括号) 设置中设置各语言按下 Tab 时自动跳出的括号类型。
 
-### Replace tabs by spaces
+### 将制表符替换为空格
 
-When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the [Tab Width](#tab-width).
+当插入一个缩进时，插入与 [缩进宽度](#缩进宽度) 数目相等的空格来代替制表符。
 
-Note that this won't replace the existing tab characters. In [Auto Indent](#auto-indent), the tab characters in the old line will remain in the new line (however, the new indent inserted after `{` will be spaces).
+该设置不会影响文件中已经存在的空格。在 [自动缩进](#自动缩进) 选项中，如果上一行使用了制表符作为缩进，新的一行仍然会使用制表符缩进。但如果上一行以 `{` 结束，新的一行插入的额外缩进将会使用空格。
