@@ -1,6 +1,7 @@
 # cpeditor.org
 
-![Deploy status](https://github.com/cpeditor/cpeditor.github.io/workflows/Deploy/badge.svg?branch=hugo)
+[![Deploy status](https://github.com/cpeditor/cpeditor.github.io/workflows/Deploy/badge.svg?branch=hugo)](https://github.com/cpeditor/cpeditor.github.io/actions?query=workflow%3ADeploy+branch%3Ahugo)
+[![Website](https://img.shields.io/website?label=cpeditor.org&url=https%3A%2F%2Fcpeditor.org)](https://cpeditor.org)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg)](#all-contributors)
@@ -8,43 +9,9 @@
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
 
-## Build
+## Contributing Guidelines
 
-### Preparation
-
-Make sure [Git](https://git-scm.com/), [Node.js](https://nodejs.org/) and [Hugo](https://gohugo.io/) are installed.
-
-```sh
-git clone --recurse-submodules https://github.com/cpeditor/cpeditor.github.io
-cd cpeditor.github.io
-npm install
-```
-
-### Build the current version
-
-```sh
-hugo
-```
-
-The site will be in the `public` directory.
-
-### Build the current version and preview on local server
-
-```sh
-hugo server
-```
-
-To preview, open [localhost:1313](http://localhost:1313/) (you can see the `1313` in the output of the command, if the output shows another port, use the port in the output) in your browser.
-
-### Build all versions
-
-```sh
-./build.sh
-```
-
-The site will be in the `dist` directory.
-
-Windows users need to use UNIX-like shells. However, if you only want to contribute, you don't need to build all versions.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and it's easy to get started! :rocket:
 
 ## Hall of Fame
 
