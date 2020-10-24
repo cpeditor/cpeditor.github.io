@@ -3,117 +3,117 @@ title: "Language"
 weight: 20
 ---
 
-## General
+## 通用
 
-### Default Language
+### 默认编程语言
 
-The default programming language. It's used when opening a new tab and some other places.
+设置打开新标签时使用的默认编程语言。
 
-## Commands
+## 命令
 
-### C++ Commands
+### C++ 命令
 
-#### C++ Compile Command
+#### C++ 编译命令
 
-The compilation command for C++. For example: `g++ -Wall`.
+设置编译 C++ 源程序时的编译命令，例如 `g++ -Wall`。
 
-The command shouldn't contain the source file and the output file, CP Editor automatically adds them.
+该命令中不应包含源程序和输出文件的名称，CP Editor 将会自动添加它们。
 
-For compilation flags, please refer to the manual of the compiler. For example, you may want to add `-std=c++14` in the compile command to use C++14.
+详细的编译选项请参考编译器的文档。
 
-#### C++ Executable File Path
+#### C++ 可执行文件路径
 
-The path of the executable file, i.e. the argument of the `-o` option of the compiler.
+设置可执行文件的路径，即编译命令中 `-o` 选项后的参数。
 
-If this path is a relative path, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general#temporary-directory)).
+如果使用了相对路径，则可执行文件的位置将和源程序位置有关（如果当前标签是未命名标签，则可执行文件位置将和 [临时文件夹](../general#临时文件夹) 的位置有关）。
 
-You can use some place holders for this setting:
+该设置中，你可以使用如下参数：
 
--   `${filename}`: The complete name of the source file. If it's an untitled tab (i.e. an unsaved file), the complete file name is `sol.cpp`.
--   `${basename}`: `${filename}` without the suffix (i.e. without `.cpp`, etc.).
--   `${tmpdir}` or `${tempdir}`: The path of the [Temporary Directory](../general#temporary-directory).
+-   `${filename}`：源程序的完整文件名。如果当前标签是未命名标签，则完整文件名是 `sol.cpp`。
+-   `${basename}`：将 `${filename}` 去掉扩展名（`.cpp` 等）后的文件名。
+-   `${tmpdir}` 或 `${tempdir}`：[临时文件夹](../general#临时文件夹) 的路径。
 
-For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory in the parent directory of the source file.
+例如，使用 `${tmpdir}/${basename}` 将会把可执行文件存储在临时文件夹下。如果你不想要存储可执行文件的话，可以这样设定路径。而 `executables/${basename}` 将会把可执行文件存储在源程序所在目录的父目录下的 `executables` 文件夹。
 
-#### C++ Run Arguments
+#### C++ 运行参数
 
-The arguments passed to the program when executing it. It's usually not needed in competitive programming.
+设置执行 C++ 程序需要的参数。在算法竞赛中一般留空即可。
 
-#### C++ Compiler Output Codec
+#### C++ 编译器输出编码
 
-The text codec of the compiler output (warnings, errors, etc.), used to display the messages from the compiler in CP Editor.
+设置当编译器输出警告，错误等消息时使用的编码。
 
-It could be useful if you are using locales for your compiler and the compiler messages are not English.
+如果输出的警告和错误信息不是英文时，合理配置该设置可以避免输出信息出现乱码的情况。
 
-### Java Commands
+### Java 命令
 
-#### Java Compile Command
+#### Java 编译命令
 
-The compilation command for Java. For example: `javac`.
+设置编译 Java 源程序的编译命令，例如 `javac`。
 
-The command shouldn't contain the source file and the class path, CP Editor automatically adds them.
+该命令中不应包含源程序和类路径，CP Editor 将会自动添加它们。
 
-#### Java Class Path
+#### Java 类路径
 
-The path to save the class files.
+设置编译后存储 Java 类文件的位置。
 
-Please refer to [C++ Executable File Path](#c-executable-file-path) for the details.
+更多细节详见 [C++ 可执行文件路径](c-可执行文件路径)。
 
-#### Java Class Name
+#### Java 类名称
 
-The name of the main class of your solution.
+设置你的源代码中非 public 主类的名字。
 
-You can use arbitary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.
+源程序的名字不必与主类名相同。当编译时，CP Editor 将会自动将源程序保存在一个与主类名称相同的文件中。
 
-#### Java Run Command
+#### Java 运行命令
 
-The command to run your solution. For example: `java`.
+设置执行 Java 程序时的命令。例如 `java`。
 
-This command shouldn't contain the class path or the class name, CP Editor automatically adds them.
+该命令中不应出现类路径或类名，CP Editor 会自动添加它们。
 
-#### Java Run Arguments
+#### Java 运行参数
 
-The arguments passed to the program when executing it. It's usually not needed in competitive programming.
+设置执行 Java 程序需要的参数。在算法竞赛中一般留空即可。
 
-#### Java Compiler Output Codec
+#### Java 编译器输出源码
 
-Please refer to [C++ Compiler Output Codec](#c-compiler-output-codec).
+详见 [C++ 编译器输出编码](#c-编译器输出编码)。
 
-### Python Commands
+### Python 命令
 
-#### Python Run Command
+#### Python 运行命令
 
-The command to run a python code. It's usually one of `python`/`python2`/`python3`.
+设置运行 Python 源程序的命令。一般为 `python`，`python2` 或 `python3`。
 
-#### Python Run Arguments
+#### Python 运行命令
 
-The arguments passed to the program when executing it. It's usually not needed in competitive programming.
+设置执行 Python 程序需要的参数。在算法竞赛中一般留空即可。
 
-## Template
+## 模板
 
-The code template is a file. When opening a new tab, the content of the template will be the initial content in the code editor.
+如果设置了模板，在创建新标签时，将会用设置的模板自动填充内容。
 
-### Template Path
+### 模板路径
 
-The path to the code template.
+设置模板所在的路径。
 
-### Template Cursor Position
+### 使用模板时的光标初始位置
 
-The initial position of the text cursor when opening the template.
+设置使用模板时光标所在的初始位置。
 
-It contains three parts:
+该设置包含三部分。
 
-1.  [Regex](../general#regular-expression)
-2.  Offset type: start or end.
-3.  Offset characters: a number, could be negative.
+1.  [正则表达式](../general#正则表达式)
+2.  偏移类型：开头或末尾。
+3.  偏移量：一个数字，可以为负值。
 
-It works as below:
+光标位置将会通过如下步骤确定：
 
-1.  Find the first match of the regex in the template. 
-2.  If nothing matches the regex, the cursor will be at the end of the template.
-3.  Otherwise, depending on the offset type, the cursor will be at the start/end of the first match, and then moved to the right by the number of the offset characters.
+1.  找到模板中匹配正则表达式的第一个位置。
+2.  如果模板中不存在匹配正则表达式的位置，光标将会在模板末尾。
+3.  否则，光标将会在第一个匹配位置的开头或末尾（取决于设置的偏移类型），并会在该位置基础上向右移动偏移量个位置（如果是负数，就会向左移动）。
 
-For example, if your template contains the following snippet:
+例如，如果你的模板中包含下列代码片段：
 
 ```cpp
 int main()
@@ -122,36 +122,36 @@ int main()
 }
 ```
 
-Then you can use `int main` as the regex, `end` as the offset type, and `9` as the offset characters. After that, when opening a new tab, the cursor will be at the first line in the `main` function.
+则可以用 `int main` 作为匹配的正则表达式，`end` 作为偏移类型，`9` 作为偏移量，则在打开一个新标签时，光标将会停在 `main` 函数的第一行。
 
-## Snippets
+## 代码片段
 
-### Manage Snippets
+### 管理代码片段
 
-You can add/delete/rename snippets in "Language->XXX->XXX Snippet". You can use <kbd>Ctrl+N</kbd> for "Add", </kbd>Ctrl+W</kbd> for "Del" and </kbd>F2</kbd> for "Rename".
+你可以在 “语言->XXX->XXX 代码片段中” 添加，删除，重命名代码片段。你可以使用 <kbd>Ctrl+N</kbd> 作为添加的快捷键，<kbd>Ctrl+W</kbd> 作为删除的快捷键，<kbd>F2</kbd> 作为重命名的快捷键。
 
-You can also import snippets from files or extract your snippets to files in the "More" menu in the snippet page.
+你也可以在 “更多” 菜单中导入或导出代码片段。
 
-### Use Snippets
+### 使用代码片段
 
-You can insert a snippet into the code editor by either clicking "Actions->Use Snippets" or pressing </kbd>Ctrl+T</kbd>.
+你可以通过 “动作->使用代码片段” 或按下 <kbd>Ctrl+T<kbd> 来使用代码片段。
 
-When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.
+当你在挑选代码片段时，你可以在搜索框中输入代码片段名的前几个字符，以更快找到相应的片段。
 
-## Parentheses
+## 括号
 
-You can set the parentheses settings for each language and each parenthesis.
+你可以为各编程语言设置相应的括号补全选项。
 
-Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Edit](../code-edit) page. Otherwise, it overwrites the settings in the [Code Edit](../code-edit) page.
+每个设置有三种状态：开启，关闭或默认。如果处于默认状态，将应用 [代码编辑](../code-edit) 中的设置，否则将会使用这里的设置。
 
-### Auto Complete
+### 自动补全
 
-See [Code Edit/Auto Complete Parentheses](../code-edit#auto-complete-parentheses).
+详见 [代码编辑/自动补全括号](../code-edit#自动补全括号)。
 
-### Auto Remove
+### 自动删除
 
-See [Code Edit/Auto Remove Parentheses](../code-edit#auto-remove-parentheses).
+详见 [代码编辑/自动删除括号](../code-edit#自动删除括号)。
 
-### Tab Jump Out
+### 按 Tab 键跳出
 
-See [Code Edit/Jump out of a parenthesis by pressing Tab](../code-edit#jump-out-of-a-parenthesis-by-pressing-tab).
+详见 [代码编辑/在按下 Tab 键时跳出括号](../code-edit#在按下 Tab 键时跳出括号)。
