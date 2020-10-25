@@ -24,7 +24,7 @@ jobs:
       - name: Pre-merge
         run: |
           git checkout ${{ github.base_ref }}
-          git merge ${{ github.head_ref }} -m "merge"
+          git merge HEAD@{1} -m "merge"
       - name: Build Site
         run: HUGO_ENV=production ./build.sh
       - name: Check links
