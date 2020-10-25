@@ -1,6 +1,6 @@
 name: "Build Test"
 
-on: [push, pull_request]
+on: pull_request
 
 jobs:
   build:
@@ -21,6 +21,10 @@ jobs:
         with:
           hugo-version: "0.69.2"
           extended: true
+      - name: Pre-merge
+        run: |
+          git checkout ${{ github.base_ref }}
+          git merge ${{ github.head_ref }} -m "merge"
       - name: Build Site
         run: HUGO_ENV=production ./build.sh
       - name: Check links
