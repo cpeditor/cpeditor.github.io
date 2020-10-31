@@ -36,9 +36,15 @@ You can install it from the addon/extension markets:
 
 ## Setup Clang Format
 
-CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C++ code.
+CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C/C++ and Java code.
 
 You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../preferences/extensions#clang-format).
+
+## Setup YAPF Format
+
+CP Editor uses [YAPF Format](https://github.com/google/yapf#installation) to format your Python code.
+
+You need to install it via pip, and set the path to interpreter at [Preferences->Extensions->YAPF Format](../preferences/extensions#path-1) and argument at [Preferences->Extensions->YAPF Arguments](../preferences/extensions#arguments).
 
 ## Setup Language Server
 

@@ -5,7 +5,7 @@ weight: 50
 
 ## Clang Format
 
-Clang Format is used to format the C++ codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
+Clang Format is used to format the C/C++ and Java codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
 
 **See also** [Setup Clang Format](../../setup#setup-clang-format).
 
@@ -18,6 +18,24 @@ The path to the `clang-format` executable, or simply `clang-format` if it's in t
 The Clang Format style. The content here is the same as the content of a `.clang-format` file.
 
 You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
+
+## YAPF Format
+
+YAPF Format is used to format the Python codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
+
+**See also** [Setup YAPF Format](../../setup#setup-yapf-format).
+
+### Path
+
+The path to the python interpreter with `yapf`, or simply `python` if it's in the `PATH` environment variable.
+
+### Arguments
+
+The arguments to python interpreter. This should be `-m yapf` to let interpreter invoke `yapf`. Please do no use `-i` flag.
+
+### Style
+
+The YAPF Format style. The content here is the same as the content of a `.style.yapf` file. You can check all possible configuration by running `yapf --style-help` or search for other materials to learn how to write the styles.
 
 ## Language Server
 
