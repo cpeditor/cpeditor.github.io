@@ -1,6 +1,6 @@
 name: "Build Test"
 
-on: [push, pull_request]
+on: pull_request
 
 jobs:
   build:
@@ -22,11 +22,13 @@ jobs:
           hugo-version: "0.69.2"
           extended: true
       - name: Build Site
-        run: HUGO_ENV=production ./build.sh
+        run: |
+          git config core.quotePath false
+          HUGO_ENV=production hugo --minify
       - name: Check links
         id: check-links
         uses: peter-evans/link-checker@v1
         with:
-          args: -r dist -d dist -x "https?:\/\/"
+          args: -r public -d public -x "https?:\/\/"
       - name: Fail on link errors
         run: exit ${{ steps.check-links.outputs.exit_code }}
