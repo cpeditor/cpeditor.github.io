@@ -1,111 +1,111 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 设置</title><link>/zh/docs/preferences/</link><description>Recent content in 设置 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Edit</title><link>/zh/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/code-edit/</guid><description>
-&lt;h3 id="tab-width">Tab Width&lt;/h3>
-&lt;p>The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in &lt;a href="#auto-indent">Auto Indent&lt;/a> and &lt;a href="#replace-tabs-by-spaces">Replace tabs by spaces&lt;/a>.&lt;/p>
-&lt;h3 id="auto-indent">Auto Indent&lt;/h3>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 设置</title><link>/zh/docs/preferences/</link><description>Recent content in 设置 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 代码编辑</title><link>/zh/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/code-edit/</guid><description>
+&lt;h3 id="缩进宽度">缩进宽度&lt;/h3>
+&lt;p>设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 &lt;a href="#%e8%87%aa%e5%8a%a8%e7%bc%a9%e8%bf%9b">自动缩进&lt;/a> 和 &lt;a href="#%e5%b0%86%e5%88%b6%e8%a1%a8%e7%ac%a6%e6%9b%bf%e6%8d%a2%e4%b8%ba%e7%a9%ba%e6%a0%bc">将制表符替换为空格&lt;/a> 产生影响。&lt;/p>
+&lt;h3 id="自动缩进">自动缩进&lt;/h3>
 &lt;ol>
-&lt;li>When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.&lt;/li>
-&lt;li>If the old line ends with &lt;code>{&lt;/code>, an extra indent (a tab character or &lt;a href="#tab-width">Tab Width&lt;/a> spaces, depending on whether &lt;a href="#replace-tabs-by-spaces">Replace tabs by spaces&lt;/a> is enabled) will be inserted at the beginning of the new line.&lt;/li>
+&lt;li>当代码另起一行时，该行将和上一行拥有相同的缩进。&lt;/li>
+&lt;li>如果上一行以 &lt;code>{&lt;/code> 结束，该行将会插入一个额外的缩进（一个制表符或 &lt;a href="#%e7%bc%a9%e8%bf%9b%e5%ae%bd%e5%ba%a6">缩进宽度&lt;/a> 个空格，取决于 &lt;a href="#%e5%b0%86%e5%88%b6%e8%a1%a8%e7%ac%a6%e6%9b%bf%e6%8d%a2%e4%b8%ba%e7%a9%ba%e6%a0%bc">将制表符替换为空格&lt;/a> 选项是否开启）。&lt;/li>
 &lt;/ol>
-&lt;h3 id="wrap-text">Wrap Text&lt;/h3>
-&lt;p>If a line is too long to fit in a single line, the line will be separated into several lines.&lt;/p>
-&lt;h3 id="auto-complete-parentheses">Auto Complete Parentheses&lt;/h3>
-&lt;p>Automatically add the right parenthesis when you type the left one. For example, when you type &lt;code>(&lt;/code>, &lt;code>)&lt;/code> will be added.&lt;/p>
-&lt;p>When the character next to the cursor is a right parenthesis and you type this parenthesis, instead of typing this parenthesis, the cursor will jump out of the parenthesis.&lt;/p>
-&lt;p>You can choose the parentheses to auto-complete in the &lt;a href="../language#parentheses">Parentheses&lt;/a> settings.&lt;/p>
-&lt;h3 id="auto-remove-parentheses">Auto Remove Parentheses&lt;/h3>
-&lt;p>When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.&lt;/p>
-&lt;p>You can choose the parentheses to auto-remove in the &lt;a href="../language#parentheses">Parentheses&lt;/a> settings.&lt;/p>
-&lt;h3 id="jump-out-of-a-parenthesis-by-pressing-tab">Jump out of a parenthesis by pressing Tab&lt;/h3>
-&lt;p>When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If &lt;a href="#auto-complete-parentheses">Auto Complete Parentheses&lt;/a> is enabled, this is an alternative of typing the right parenthesis.&lt;/p>
-&lt;p>You can choose the parentheses to jump out by Tab in the &lt;a href="../language#parentheses">Parentheses&lt;/a> settings.&lt;/p>
-&lt;h3 id="replace-tabs-by-spaces">Replace tabs by spaces&lt;/h3>
-&lt;p>When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the &lt;a href="#tab-width">Tab Width&lt;/a>.&lt;/p>
-&lt;p>Note that this won&amp;rsquo;t replace the existing tab characters. In &lt;a href="#auto-indent">Auto Indent&lt;/a>, the tab characters in the old line will remain in the new line (however, the new indent inserted after &lt;code>{&lt;/code> will be spaces).&lt;/p></description></item><item><title>Docs: Language</title><link>/zh/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/language/</guid><description>
-&lt;h2 id="general">General&lt;/h2>
-&lt;h3 id="default-language">Default Language&lt;/h3>
-&lt;p>The default programming language. It&amp;rsquo;s used when opening a new tab and some other places.&lt;/p>
-&lt;h2 id="commands">Commands&lt;/h2>
-&lt;h3 id="c-commands">C++ Commands&lt;/h3>
-&lt;h4 id="c-compile-command">C++ Compile Command&lt;/h4>
-&lt;p>The compilation command for C++. For example: &lt;code>g++ -Wall&lt;/code>.&lt;/p>
-&lt;p>The command shouldn&amp;rsquo;t contain the source file and the output file, CP Editor automatically adds them.&lt;/p>
-&lt;p>For compilation flags, please refer to the manual of the compiler. For example, you may want to add &lt;code>-std=c++14&lt;/code> in the compile command to use C++14.&lt;/p>
-&lt;h4 id="c-executable-file-path">C++ Executable File Path&lt;/h4>
-&lt;p>The path of the executable file, i.e. the argument of the &lt;code>-o&lt;/code> option of the compiler.&lt;/p>
-&lt;p>If this path is a relative path, then it&amp;rsquo;s relative to the source file (if it&amp;rsquo;s an untitled tab, then relative to the &lt;a href="../general#temporary-directory">Temporary Directory&lt;/a>).&lt;/p>
-&lt;p>You can use some place holders for this setting:&lt;/p>
+&lt;h3 id="文本自动换行">文本自动换行&lt;/h3>
+&lt;p>如果某一行的字符数超出了屏幕的宽度，则该行的内容将会折成多行显示。&lt;/p>
+&lt;h3 id="自动补全括号">自动补全括号&lt;/h3>
+&lt;p>在输入左括号时自动插入右括号。例如，当你输入一个 &lt;code>(&lt;/code> 时，将会自动加入一个 &lt;code>)&lt;/code>。&lt;/p>
+&lt;p>如果光标处右边的第一个字符是右括号，而你输入了一个右括号，光标将会自动跳到该右括号后面，而不再输入右括号。&lt;/p>
+&lt;p>你可以在各语言的 &lt;a href="../language#%e6%8b%ac%e5%8f%b7">括号&lt;/a> 设置中设置各语言自动补全的括号类型。&lt;/p>
+&lt;h3 id="自动删除括号">自动删除括号&lt;/h3>
+&lt;p>在删除一个左括号时，如果其右侧有一个右括号相邻，则该右括号也会被自动删除。&lt;/p>
+&lt;p>你可以在各语言的 &lt;a href="../language#%e6%8b%ac%e5%8f%b7">括号&lt;/a> 设置中设置各语言自动删除的括号类型。&lt;/p>
+&lt;h3 id="在按下-tab-键时跳出括号">在按下 Tab 键时跳出括号&lt;/h3>
+&lt;p>如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果 &lt;a href="#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7">自动补全括号&lt;/a> 选项被启用，这种方式可以作为输入右括号的另一种方式。&lt;/p>
+&lt;p>你可以在各语言的 &lt;a href="../language#%e6%8b%ac%e5%8f%b7">括号&lt;/a> 设置中设置各语言按下 Tab 时自动跳出的括号类型。&lt;/p>
+&lt;h3 id="将制表符替换为空格">将制表符替换为空格&lt;/h3>
+&lt;p>当插入一个缩进时，插入与 &lt;a href="#%e7%bc%a9%e8%bf%9b%e5%ae%bd%e5%ba%a6">缩进宽度&lt;/a> 数目相等的空格来代替制表符。&lt;/p>
+&lt;p>该设置不会影响文件中已经存在的空格。在 &lt;a href="#%e8%87%aa%e5%8a%a8%e7%bc%a9%e8%bf%9b">自动缩进&lt;/a> 选项中，如果上一行使用了制表符作为缩进，新的一行仍然会使用制表符缩进。但如果上一行以 &lt;code>{&lt;/code> 结束，新的一行插入的额外缩进将会使用空格。&lt;/p></description></item><item><title>Docs: 语言</title><link>/zh/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/language/</guid><description>
+&lt;h2 id="通用">通用&lt;/h2>
+&lt;h3 id="默认编程语言">默认编程语言&lt;/h3>
+&lt;p>设置打开新标签时使用的默认编程语言。&lt;/p>
+&lt;h2 id="命令">命令&lt;/h2>
+&lt;h3 id="c-命令">C++ 命令&lt;/h3>
+&lt;h4 id="c-编译命令">C++ 编译命令&lt;/h4>
+&lt;p>设置编译 C++ 时的编译命令，例如 &lt;code>g++ -Wall&lt;/code>。&lt;/p>
+&lt;p>该命令中不应包含源代码和输出文件的名称，CP Editor 将会自动添加它们。&lt;/p>
+&lt;p>详细的编译选项请参考编译器的文档。&lt;/p>
+&lt;h4 id="c-可执行文件路径">C++ 可执行文件路径&lt;/h4>
+&lt;p>设置可执行文件的路径，即编译命令中 &lt;code>-o&lt;/code> 选项后的参数。&lt;/p>
+&lt;p>如果使用了相对路径，则可执行文件的位置将和源代码位置有关（如果当前标签是未命名标签，则可执行文件位置将和 &lt;a href="../general#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9">临时文件夹&lt;/a> 的位置有关）。&lt;/p>
+&lt;p>该设置中，你可以使用如下参数：&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>${filename}&lt;/code>: The complete name of the source file. If it&amp;rsquo;s an untitled tab (i.e. an unsaved file), the complete file name is &lt;code>sol.cpp&lt;/code>.&lt;/li>
-&lt;li>&lt;code>${basename}&lt;/code>: &lt;code>${filename}&lt;/code> without the suffix (i.e. without &lt;code>.cpp&lt;/code>, etc.).&lt;/li>
-&lt;li>&lt;code>${tmpdir}&lt;/code> or &lt;code>${tempdir}&lt;/code>: The path of the &lt;a href="../general#temporary-directory">Temporary Directory&lt;/a>.&lt;/li>
+&lt;li>&lt;code>${filename}&lt;/code>：源代码的完整文件名。如果当前标签是未命名标签，则完整文件名是 &lt;code>sol.cpp&lt;/code>。&lt;/li>
+&lt;li>&lt;code>${basename}&lt;/code>：将 &lt;code>${filename}&lt;/code> 去掉扩展名（&lt;code>.cpp&lt;/code> 等）后的文件名。&lt;/li>
+&lt;li>&lt;code>${tmpdir}&lt;/code> 或 &lt;code>${tempdir}&lt;/code>：&lt;a href="../general#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9">临时文件夹&lt;/a> 的路径。&lt;/li>
 &lt;/ul>
-&lt;p>For example, you can use &lt;code>${tmpdir}/${basename}&lt;/code> if you don&amp;rsquo;t want to keep the executable files, or &lt;code>executables/${basename}&lt;/code> if you want to keep all executable files in the &lt;code>executables&lt;/code> directory in the parent directory of the source file.&lt;/p>
-&lt;h4 id="c-run-arguments">C++ Run Arguments&lt;/h4>
-&lt;p>The arguments passed to the program when executing it. It&amp;rsquo;s usually not needed in competitive programming.&lt;/p>
-&lt;h4 id="c-compiler-output-codec">C++ Compiler Output Codec&lt;/h4>
-&lt;p>The text codec of the compiler output (warnings, errors, etc.), used to display the messages from the compiler in CP Editor.&lt;/p>
-&lt;p>It could be useful if you are using locales for your compiler and the compiler messages are not English.&lt;/p>
-&lt;h3 id="java-commands">Java Commands&lt;/h3>
-&lt;h4 id="java-compile-command">Java Compile Command&lt;/h4>
-&lt;p>The compilation command for Java. For example: &lt;code>javac&lt;/code>.&lt;/p>
-&lt;p>The command shouldn&amp;rsquo;t contain the source file and the class path, CP Editor automatically adds them.&lt;/p>
-&lt;h4 id="java-class-path">Java Class Path&lt;/h4>
-&lt;p>The path to save the class files.&lt;/p>
-&lt;p>Please refer to &lt;a href="#c-executable-file-path">C++ Executable File Path&lt;/a> for the details.&lt;/p>
-&lt;h4 id="java-class-name">Java Class Name&lt;/h4>
-&lt;p>The name of the main class of your solution.&lt;/p>
-&lt;p>You can use arbitary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.&lt;/p>
-&lt;h4 id="java-run-command">Java Run Command&lt;/h4>
-&lt;p>The command to run your solution. For example: &lt;code>java&lt;/code>.&lt;/p>
-&lt;p>This command shouldn&amp;rsquo;t contain the class path or the class name, CP Editor automatically adds them.&lt;/p>
-&lt;h4 id="java-run-arguments">Java Run Arguments&lt;/h4>
-&lt;p>The arguments passed to the program when executing it. It&amp;rsquo;s usually not needed in competitive programming.&lt;/p>
-&lt;h4 id="java-compiler-output-codec">Java Compiler Output Codec&lt;/h4>
-&lt;p>Please refer to &lt;a href="#c-compiler-output-codec">C++ Compiler Output Codec&lt;/a>.&lt;/p>
-&lt;h3 id="python-commands">Python Commands&lt;/h3>
-&lt;h4 id="python-run-command">Python Run Command&lt;/h4>
-&lt;p>The command to run a python code. It&amp;rsquo;s usually one of &lt;code>python&lt;/code>/&lt;code>python2&lt;/code>/&lt;code>python3&lt;/code>.&lt;/p>
-&lt;h4 id="python-run-arguments">Python Run Arguments&lt;/h4>
-&lt;p>The arguments passed to the program when executing it. It&amp;rsquo;s usually not needed in competitive programming.&lt;/p>
-&lt;h2 id="template">Template&lt;/h2>
-&lt;p>The code template is a file. When opening a new tab, the content of the template will be the initial content in the code editor.&lt;/p>
-&lt;h3 id="template-path">Template Path&lt;/h3>
-&lt;p>The path to the code template.&lt;/p>
-&lt;h3 id="template-cursor-position">Template Cursor Position&lt;/h3>
-&lt;p>The initial position of the text cursor when opening the template.&lt;/p>
-&lt;p>It contains three parts:&lt;/p>
+&lt;p>例如，使用 &lt;code>${tmpdir}/${basename}&lt;/code> 将会把可执行文件存储在临时文件夹下。如果你不想要存储可执行文件的话，可以这样设定路径。而 &lt;code>executables/${basename}&lt;/code> 将会把可执行文件存储在源代码所在目录的下的 &lt;code>executables&lt;/code> 文件夹。&lt;/p>
+&lt;h4 id="c-运行参数">C++ 运行参数&lt;/h4>
+&lt;p>设置执行 C++ 程序需要的参数。在算法竞赛中一般留空即可。&lt;/p>
+&lt;h4 id="c-编译器输出编码">C++ 编译器输出编码&lt;/h4>
+&lt;p>设置当编译器输出警告，错误等消息时使用的编码。&lt;/p>
+&lt;p>如果输出的警告和错误信息不是英文，合理配置该设置可以避免输出信息出现乱码。&lt;/p>
+&lt;h3 id="java-命令">Java 命令&lt;/h3>
+&lt;h4 id="java-编译命令">Java 编译命令&lt;/h4>
+&lt;p>设置编译 Java 源代码的编译命令，例如 &lt;code>javac&lt;/code>。&lt;/p>
+&lt;p>该命令中不应包含源代码和类路径，CP Editor 将会自动添加它们。&lt;/p>
+&lt;h4 id="java-类路径">Java 类路径&lt;/h4>
+&lt;p>设置编译后存储 Java 类文件的位置。&lt;/p>
+&lt;p>更多细节详见 &lt;a href="#c-%e5%8f%af%e6%89%a7%e8%a1%8c%e6%96%87%e4%bb%b6%e8%b7%af%e5%be%84">C++ 可执行文件路径&lt;/a>。&lt;/p>
+&lt;h4 id="java-类名称">Java 类名称&lt;/h4>
+&lt;p>设置你的源代码中主类的名字。&lt;/p>
+&lt;p>源代码的名字不必与主类名相同。当编译时，CP Editor 将会自动将源代码保存在一个与主类名称相同的文件中。&lt;/p>
+&lt;h4 id="java-运行命令">Java 运行命令&lt;/h4>
+&lt;p>设置执行 Java 程序时的命令。例如 &lt;code>java&lt;/code>。&lt;/p>
+&lt;p>该命令中不应出现类路径或类名，CP Editor 会自动添加它们。&lt;/p>
+&lt;h4 id="java-运行参数">Java 运行参数&lt;/h4>
+&lt;p>设置执行 Java 程序需要的参数。在算法竞赛中一般留空即可。&lt;/p>
+&lt;h4 id="java-编译器输出源码">Java 编译器输出源码&lt;/h4>
+&lt;p>详见 &lt;a href="#c-%e7%bc%96%e8%af%91%e5%99%a8%e8%be%93%e5%87%ba%e7%bc%96%e7%a0%81">C++ 编译器输出编码&lt;/a>。&lt;/p>
+&lt;h3 id="python-命令">Python 命令&lt;/h3>
+&lt;h4 id="python-运行命令">Python 运行命令&lt;/h4>
+&lt;p>设置运行 Python 源代码的命令。一般为 &lt;code>python&lt;/code>，&lt;code>python2&lt;/code> 或 &lt;code>python3&lt;/code>。&lt;/p>
+&lt;h4 id="python-运行命令-1">Python 运行命令&lt;/h4>
+&lt;p>设置执行 Python 程序需要的参数。在算法竞赛中一般留空即可。&lt;/p>
+&lt;h2 id="模板">模板&lt;/h2>
+&lt;p>如果设置了模板，在创建新标签时，将会用设置的模板自动填充内容。&lt;/p>
+&lt;h3 id="模板路径">模板路径&lt;/h3>
+&lt;p>设置模板所在的路径。&lt;/p>
+&lt;h3 id="使用模板时的光标初始位置">使用模板时的光标初始位置&lt;/h3>
+&lt;p>设置使用模板时光标所在的初始位置。&lt;/p>
+&lt;p>该设置包含三部分。&lt;/p>
 &lt;ol>
-&lt;li>&lt;a href="../general#regular-expression">Regex&lt;/a>&lt;/li>
-&lt;li>Offset type: start or end.&lt;/li>
-&lt;li>Offset characters: a number, could be negative.&lt;/li>
+&lt;li>&lt;a href="../general#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f">正则表达式&lt;/a>&lt;/li>
+&lt;li>偏移类型：开头或末尾。&lt;/li>
+&lt;li>偏移量：一个数字，可以为负值。&lt;/li>
 &lt;/ol>
-&lt;p>It works as below:&lt;/p>
+&lt;p>光标位置将会通过如下步骤确定：&lt;/p>
 &lt;ol>
-&lt;li>Find the first match of the regex in the template.&lt;/li>
-&lt;li>If nothing matches the regex, the cursor will be at the end of the template.&lt;/li>
-&lt;li>Otherwise, depending on the offset type, the cursor will be at the start/end of the first match, and then moved to the right by the number of the offset characters.&lt;/li>
+&lt;li>找到模板中匹配正则表达式的第一个位置。&lt;/li>
+&lt;li>如果模板中不存在匹配正则表达式的位置，光标将会在模板末尾。&lt;/li>
+&lt;li>否则，光标将会在第一个匹配位置的开头或末尾（取决于设置的偏移类型），并会在该位置基础上向右移动偏移量个位置（如果是负数，就会向左移动）。&lt;/li>
 &lt;/ol>
-&lt;p>For example, if your template contains the following snippet:&lt;/p>
+&lt;p>例如，如果你的模板中包含下列代码片段：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#204a87;font-weight:bold">int&lt;/span> &lt;span style="color:#000">main&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
 &lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then you can use &lt;code>int main&lt;/code> as the regex, &lt;code>end&lt;/code> as the offset type, and &lt;code>9&lt;/code> as the offset characters. After that, when opening a new tab, the cursor will be at the first line in the &lt;code>main&lt;/code> function.&lt;/p>
-&lt;h2 id="snippets">Snippets&lt;/h2>
-&lt;h3 id="manage-snippets">Manage Snippets&lt;/h3>
-&lt;p>You can add/delete/rename snippets in &amp;ldquo;Language-&amp;gt;XXX-&amp;gt;XXX Snippet&amp;rdquo;. You can use &lt;kbd>Ctrl+N&lt;/kbd> for &amp;ldquo;Add&amp;rdquo;, &lt;/kbd>Ctrl+W&lt;/kbd> for &amp;ldquo;Del&amp;rdquo; and &lt;/kbd>F2&lt;/kbd> for &amp;ldquo;Rename&amp;rdquo;.&lt;/p>
-&lt;p>You can also import snippets from files or extract your snippets to files in the &amp;ldquo;More&amp;rdquo; menu in the snippet page.&lt;/p>
-&lt;h3 id="use-snippets">Use Snippets&lt;/h3>
-&lt;p>You can insert a snippet into the code editor by either clicking &amp;ldquo;Actions-&amp;gt;Use Snippets&amp;rdquo; or pressing &lt;/kbd>Ctrl+T&lt;/kbd>.&lt;/p>
-&lt;p>When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.&lt;/p>
-&lt;h2 id="parentheses">Parentheses&lt;/h2>
-&lt;p>You can set the parentheses settings for each language and each parenthesis.&lt;/p>
-&lt;p>Each setting has three states: enable, disable and default. If it&amp;rsquo;s default, it uses the settings in the &lt;a href="../code-edit">Code Edit&lt;/a> page. Otherwise, it overwrites the settings in the &lt;a href="../code-edit">Code Edit&lt;/a> page.&lt;/p>
-&lt;h3 id="auto-complete">Auto Complete&lt;/h3>
-&lt;p>See &lt;a href="../code-edit#auto-complete-parentheses">Code Edit/Auto Complete Parentheses&lt;/a>.&lt;/p>
-&lt;h3 id="auto-remove">Auto Remove&lt;/h3>
-&lt;p>See &lt;a href="../code-edit#auto-remove-parentheses">Code Edit/Auto Remove Parentheses&lt;/a>.&lt;/p>
-&lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
-&lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>则可以用 &lt;code>int main&lt;/code> 作为匹配的正则表达式，&lt;code>end&lt;/code> 作为偏移类型，&lt;code>9&lt;/code> 作为偏移量，则在打开一个新标签时，光标将会停在 &lt;code>main&lt;/code> 函数的第一行。&lt;/p>
+&lt;h2 id="代码片段">代码片段&lt;/h2>
+&lt;h3 id="管理代码片段">管理代码片段&lt;/h3>
+&lt;p>你可以在 “语言-&amp;gt;XXX-&amp;gt;XXX 代码片段中” 添加，删除，重命名代码片段。你可以使用 &lt;kbd>Ctrl+N&lt;/kbd> 作为添加的快捷键，&lt;kbd>Ctrl+W&lt;/kbd> 作为删除的快捷键，&lt;kbd>F2&lt;/kbd> 作为重命名的快捷键。&lt;/p>
+&lt;p>你也可以在 “更多” 菜单中导入或导出代码片段。&lt;/p>
+&lt;h3 id="使用代码片段">使用代码片段&lt;/h3>
+&lt;p>你可以通过 “动作-&amp;gt;使用代码片段” 或按下 &lt;kbd>Ctrl+T&lt;kbd> 来使用代码片段。&lt;/p>
+&lt;p>当你在挑选代码片段时，你可以在搜索框中输入代码片段名的前几个字符，以更快找到相应的片段。&lt;/p>
+&lt;h2 id="括号">括号&lt;/h2>
+&lt;p>你可以为各编程语言设置相应的括号补全选项。&lt;/p>
+&lt;p>每个设置有三种状态：开启，关闭或默认。如果处于默认状态，将应用 &lt;a href="../code-edit">代码编辑&lt;/a> 中的设置，否则将会使用这里的设置。&lt;/p>
+&lt;h3 id="自动补全">自动补全&lt;/h3>
+&lt;p>详见 &lt;a href="../code-edit#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7">代码编辑/自动补全括号&lt;/a>。&lt;/p>
+&lt;h3 id="自动删除">自动删除&lt;/h3>
+&lt;p>详见 &lt;a href="../code-edit#%e8%87%aa%e5%8a%a8%e5%88%a0%e9%99%a4%e6%8b%ac%e5%8f%b7">代码编辑/自动删除括号&lt;/a>。&lt;/p>
+&lt;h3 id="按-tab-键跳出">按 Tab 键跳出&lt;/h3>
+&lt;p>详见 &lt;a href="../code-edit#%e5%9c%a8%e6%8c%89%e4%b8%8b-tab-%e9%94%ae%e6%97%b6%e8%b7%b3%e5%87%ba%e6%8b%ac%e5%8f%b7">代码编辑/在按下 Tab 键时跳出括号&lt;/a>。&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
 &lt;h2 id="通用">通用&lt;/h2>
 &lt;h3 id="界面语言-ui-language">界面语言 (UI Language)&lt;/h3>
 &lt;p>UI 中使用的自然语言。&lt;/p>

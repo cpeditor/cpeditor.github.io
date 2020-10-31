@@ -39,7 +39,7 @@
 &lt;li>&lt;code>${basename}&lt;/code>: &lt;code>${filename}&lt;/code> without the suffix (i.e. without &lt;code>.cpp&lt;/code>, etc.).&lt;/li>
 &lt;li>&lt;code>${tmpdir}&lt;/code> or &lt;code>${tempdir}&lt;/code>: The path of the &lt;a href="../general#temporary-directory">Temporary Directory&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>For example, you can use &lt;code>${tmpdir}/${basename}&lt;/code> if you don&amp;rsquo;t want to keep the executable files, or &lt;code>executables/${basename}&lt;/code> if you want to keep all executable files in the &lt;code>executables&lt;/code> directory in the parent directory of the source file.&lt;/p>
+&lt;p>For example, you can use &lt;code>${tmpdir}/${basename}&lt;/code> if you don&amp;rsquo;t want to keep the executable files, or &lt;code>executables/${basename}&lt;/code> if you want to keep all executable files in the &lt;code>executables&lt;/code> directory under the directory of the source file.&lt;/p>
 &lt;h4 id="c-run-arguments">C++ Run Arguments&lt;/h4>
 &lt;p>The arguments passed to the program when executing it. It&amp;rsquo;s usually not needed in competitive programming.&lt;/p>
 &lt;h4 id="c-compiler-output-codec">C++ Compiler Output Codec&lt;/h4>
