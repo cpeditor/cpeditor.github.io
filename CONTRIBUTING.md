@@ -80,3 +80,5 @@ If you are using [VS Code](https://github.com/microsoft/vscode), you can use the
 For example, the Chinese (zh) version of a page is usually `_index.zh.md` while the English version is `_index.md`.
 
 To add a new language, add it in [config.toml](config.toml) and add `_index.xx.md`s for it.
+
+You can find all pages which need translation in the [need translation list](https://cpeditor.org/zh/need-translation-list).
