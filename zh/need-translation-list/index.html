@@ -7,7 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="/zh/download/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="/zh/need-translation-list/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,14 +21,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>下载 CP Editor | CP Editor</title><meta property="og:title" content="下载 CP Editor" />
+<title>待翻译列表 | CP Editor</title><meta property="og:title" content="待翻译列表" />
 <meta property="og:description" content="专为算法竞赛设计的 IDE" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/zh/download/" />
+<meta property="og:url" content="/zh/need-translation-list/" />
 <meta property="og:site_name" content="CP Editor" />
-<meta itemprop="name" content="下载 CP Editor">
+<meta itemprop="name" content="待翻译列表">
 <meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="下载 CP Editor"/>
+<meta name="twitter:title" content="待翻译列表"/>
 <meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
 
 
@@ -114,7 +114,7 @@ if (!doNotTrack) {
 				
 				
 				
-				<a class="nav-link active" href="/zh/download/" ><span class="active">下载</span></a>
+				<a class="nav-link" href="/zh/download/" ><span>下载</span></a>
 			</li>
 			
 			
@@ -141,9 +141,7 @@ if (!doNotTrack) {
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/download/">English</a>
-	
-	<a class="dropdown-item" href="/ru/download/">Русский</a>
+	<a class="dropdown-item" href="/ru/need-translation-list/">Русский</a>
 	
 </div>
 			</li>
@@ -174,75 +172,292 @@ if (!doNotTrack) {
       <main role="main" class="td-main">
         
 
+<main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+    <ul>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+<a href="/zh/docs/faq/">
+    
+    
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
-<script src="/js/download.js"></script>
 
-<style>
-    [v-cloak] {
-        display: none;
-    }
-</style>
 
-<div id="app" v-cloak>
-    <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
-        <div class="container text-center td-arrow-down">
-            <span class="h4 mb-0">
-                <h1>在你的计算机上获取 CP Editor，然后试一试！</h1>
-                <p v-if="latestStableAssetForUserPlatform" class="pt-3">
-                    你可能想要使用
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
-                        在 {{ userPlatform }} 上的最新稳定版本
-                    </a>。
-                </p>
-            </span>
-        </div>
-    </section>
 
-    <div class="container pt-5">
-        <div class="row">
-            <div class="col-lg-6 text-center py-3">
-                <h2>选择你使用的平台和想要下载的版本</h2>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="../docs/installation">安装说明</a></li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">所有版本</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6 py-3">
-                <h2 v-if="releases.length === 0">加载中...</h2>
-                <h2 v-else-if="!selectedAsset" class="text-warning">找不到可下载的文件</h2>
-                <template v-else>
-                    <div class="form-group">
-                        <label for="platform">平台</label>
-                        <select class="form-control" id="platform" v-model="selectedPlatform">
-                            <option v-for="platformOption in platformOptions">{{ platformOption }}</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="asset">版本</label>
-                        <select class="form-control" id="asset" v-model="selectedAsset">
-                            <template v-for="release in releases" :key="release.tag_name">
-                                <template v-for="asset in release.assets" :key="asset.id">
-                                    <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
-                                        {{ asset.name }}
-                                        <span v-if="release === latestStableRelease">(最新稳定版)</span>
-                                        <span v-else-if="release === releases[0]">(最新预览版)</span>
-                                    </option>
-                                </template>
-                            </template>
-                        </select>
-                    </div>
-                    <a :href="selectedAsset.browser_download_url"
-                        :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block">下载</a>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
 
+
+
+文档
+
+
+/
+FAQ
+
+
+    
+</a>
+ （未翻译）</li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+<a href="/zh/docs/preferences/actions/">
+    
+    
+
+
+
+
+
+
+
+
+
+文档
+
+
+/
+设置
+
+
+/
+Actions
+
+
+    
+</a>
+ （未翻译）</li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+<a href="/zh/docs/preferences/extensions/">
+    
+    
+
+
+
+
+
+
+
+
+
+文档
+
+
+/
+设置
+
+
+/
+Extensions
+
+
+    
+</a>
+ （未翻译）</li>
+        
+        
+        
+        
+        
+        
+        <li>
+<a href="/zh/docs/preferences/file-path/">
+    
+    
+
+
+
+
+
+
+
+
+
+文档
+
+
+/
+设置
+
+
+/
+File Path
+
+
+    
+</a>
+ （未翻译）</li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+<a href="/zh/docs/preferences/key-bindings/">
+    
+    
+
+
+
+
+
+
+
+
+
+文档
+
+
+/
+设置
+
+
+/
+Key Bindings
+
+
+    
+</a>
+ （未翻译）</li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+<a href="/zh/docs/tips/">
+    
+    
+
+
+
+
+
+
+
+文档
+
+
+/
+Tips
+
+
+    
+</a>
+ （未翻译）</li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</main>
 
 
       </main>
