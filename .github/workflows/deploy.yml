@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: hugo
           fetch-depth: 0
       - name: Fetch submodules
         run: git submodule update --init --recursive
@@ -28,6 +27,13 @@ jobs:
           extended: true
       - name: Build Site
         run: HUGO_ENV=production ./build.sh
+      - name: Check links
+        id: check-links
+        uses: peter-evans/link-checker@v1
+        with:
+          args: -r dist -d dist -x "https?:\/\/"
+      - name: Fail on link errors
+        run: exit ${{ steps.check-links.outputs.exit_code }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

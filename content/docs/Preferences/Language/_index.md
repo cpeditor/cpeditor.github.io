@@ -33,7 +33,7 @@ You can use some place holders for this setting:
 -   `${basename}`: `${filename}` without the suffix (i.e. without `.cpp`, etc.).
 -   `${tmpdir}` or `${tempdir}`: The path of the [Temporary Directory](../../general/information#temporary-directory).
 
-For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory in the parent directory of the source file.
+For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory under the directory of the source file.
 
 #### C++ Run Arguments
 
