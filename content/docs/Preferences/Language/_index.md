@@ -142,16 +142,16 @@ When choosing a snippet, you can enter the first few characters of the snippet n
 
 You can set the parentheses settings for each language and each parenthesis.
 
-Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Edit](../code-edit) page. Otherwise, it overwrites the settings in the [Code Edit](../code-edit) page.
+Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Editing](../code-editing) page. Otherwise, it overwrites the settings in the [Code Editing](../code-editing) page.
 
 ### Auto Complete
 
-See [Code Edit/Auto Complete Parentheses](../code-edit#auto-complete-parentheses).
+See [Code Editing/Auto Complete Parentheses](../code-editing#auto-complete-parentheses).
 
 ### Auto Remove
 
-See [Code Edit/Auto Remove Parentheses](../code-edit#auto-remove-parentheses).
+See [Code Editing/Auto Remove Parentheses](../code-editing#auto-remove-parentheses).
 
 ### Tab Jump Out
 
-See [Code Edit/Jump out of a parenthesis by pressing Tab](../code-edit#jump-out-of-a-parenthesis-by-pressing-tab).
+See [Code Editing/Jump out of a parenthesis by pressing Tab](../code-editing#jump-out-of-a-parenthesis-by-pressing-tab).
