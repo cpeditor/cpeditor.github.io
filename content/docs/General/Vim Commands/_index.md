@@ -139,8 +139,8 @@ In this section we present a list of all custom vim commands that are supported 
 |    Command   | Shorthand |                                                        Description                                                        |                         Usage                         |
 | :----------: | :-------: | :-----------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------: |
 |     `new`    |   `new`   |                  Opens a new tab, if no langauge is specified, a tab in default editor langauge will open                 |                   `new cpp` or `new`                  |
-|     `next`   |   `nxt`   |                  Switch to next tab in the editor. Returns to first tab if there is no next tab.                          |                   `next` or `nxt`   |               
-|   `previous` |   `prv`   |                  Switch to last tab in the editor. Returns to last tab if there is no previous tab.                       |                   `previous` or `prv`                  |
+|    `next`    |   `nxt`   |                      Switch to next tab in the editor. Returns to first tab if there is no next tab.                      |                    `next` or `nxt`                    |
+|  `previous`  |   `prv`   |                     Switch to last tab in the editor. Returns to last tab if there is no previous tab.                    |                  `previous` or `prv`                  |
 |    `open`    |   `opn`   |  Opens a new file, Only C++/Java/Python files will be opened. The opened tab will use the language as per file extension. | `open /absolute/path/of/file.cpp` or `opn ~/cf/a.cpp` |
 |   `compile`  |   `cmp`   |                             Compiles the code, It is like clicking "Compile" button in a tab.                             |                   `compile` or `cmp`                  |
 |    `crun`    |   `crn`   |                          Compiles and run, It is like clicking "Compile and Run" button in a tab.                         |                    `crun` or `crn`                    |
