@@ -67,6 +67,12 @@ There are some attributes in the frontmatter of each Markdown file:
 -   `weight`: The weight of this page used when sorting pages. The page with the bigger weight is after the page with the smaller weight.
 -   `description`: The description of this page, displayed in the list of pages and the top of this page.
 
+## Internal links
+
+In Markdown files, please use `[<title>](<relative path to the file>#<fragment>)` to make internal links.
+
+For example: `[Preferences->Languages->C++->C++ Commands](../Preferences/Language/_index.md#c-commands)`.
+
 ## Markdown Formatting
 
 We use [remark-lint](https://github.com/remarkjs/remark-lint) to format Markdown files.
