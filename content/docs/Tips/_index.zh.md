@@ -1,49 +1,53 @@
 ---
-title: "Tips"
+title: "提示"
 weight: 50
-description: Some tips that may help
+description: 一些可能会有用的提示
 ---
 
-## Shortcuts in the Preferences Window
+## 设置页面中的快捷键
 
-You can use <kbd>Ctlr+D</kbd>, <kbd>Ctrl+R</kbd> and <kbd>Ctrl+S</kbd> for "Default", "Reset" and "Apply" respectively.
+在设置页面中，你可以使用 <kbd>Ctlr+D</kbd>，<kbd>Ctrl+R</kbd> 和 <kbd>Ctrl+S</kbd> 作为 “默认”，“重置” 和 “应用” 的快捷键。
 
-You can use <kbd>Ctlr+Tab</kbd> and <kbd>Ctlr+Shift+Tab</kbd> to go through the preferences pages.
+你还可以使用 <kbd>Ctlr+Tab</kbd> 和 <kbd>Ctlr+Shift+Tab</kbd> 以实现各设置页面间的快捷切换。
 
-## Editor Shortcuts
+## 编辑器中的快捷键
 
-Besides the shortcuts in the menu, you can use the [Read-only Key Bindings](https://doc.qt.io/qt-5/qtextedit.html#read-only-key-bindings) and the [Editing Key Bindings](https://doc.qt.io/qt-5/qtextedit.html#editing-key-bindings). There are also some hidden shortcuts: <kbd>Tab</kbd> (when there's a selection) and <kbd>Shift+Tab</kbd> for indent and unindent, <kbd>Ctrl+Enter</kbd> and <kbd>Ctrl+Shift+Enter</kbd> for inserting line after and before, <kbd>Shift+Delete</kbd> for deleting the current line.
+除了菜单中提及的快捷键之外，你还可以使用 Qt 中的 [只读快捷键](https://doc.qt.io/qt-5/qtextedit.html#read-only-key-bindings) 和 [修改快捷键](https://doc.qt.io/qt-5/qtextedit.html#editing-key-bindings)。
 
-## Drag and Drop
+CP Editor 还提供一些隐藏的快捷键：<kbd>Tab</kbd>（当有文本被选中时）和 <kbd>Shift+Tab</kbd> 用于缩进和取消缩进，<kbd>Ctrl+Enter</kbd> 和 <kbd>Ctrl+Shift+Enter</kbd> 分别用于在当前行之前和之后插入空行，<kbd>Shift+Delete</kbd> 用于删除当前行。
 
-You can drag files and drop them into the main editor or the input/expected part of test cases.
+## 拖动文件
 
-## Tabs
+你可以直接将文件拖入编辑器或测试数据框中。
 
-You can use <kbd>Ctrl+Tab</kbd> and <kbd>Ctrl+Shift+Tab</kbd> to switch to the next/previous tab.
+将文件拖入编辑器中会打开该文件，而将文件拖入测试数据框的输入/答案框中，会自动用该文件填充该框。
 
-You can right-click on the tabs to get a useful context menu. The content of the menu is based on whether this tab is untitled or not, has problem URL or not, etc.
+## 标签栏
 
-## Test Cases
+你可以使用 <kbd>Ctrl+Tab</kbd> 和 <kbd>Ctrl+Shift+Tab</kbd> 以切换到下一个/上一个标签。
 
-Testlib checkers are compiled when changing the checker or changing the preferences, so you may have to wait for it after the execution is finished.
+你还可以右键点击标签以调出菜单，菜单的内容与当前标签页是否保存，是否设置题目链接等有关。
 
-You can load test cases from files, edit testcases in bigger windows and save a test case in a file in the right-click menu of the test cases.
+## 测试数据
 
-You can click the verdict to open the diff viewer.
+评测器在重新加载或设置变更时会重新编译，在编译评测器时，运行后未能及时反馈结果是正常现象。
 
-## View mode
+你可以右键单击测试数据框，从而实现从文件中加载测试数据，在更大的窗口中编辑测试点，或是将测试点保存为文件。
 
-The view mode is helpful to focus on your codes, investigate the outputs and errors, or make the editor narrower so that you can split your screen into two parts.
+你可以点击评测状态按钮来打开差异比较器。
 
-You can set a hotkey for switching view modes in Preferences.
+## 编辑器模式
 
-## Launch CP Editor in the command line
+编辑器模式能让你专心编写代码，处理问题。你还可以通过分屏，做到一边阅读题目，一边使用 CP Editor 编写代码。
 
-CP Editor supports some command-line options, run `cpeditor --help` for more information.
+你可以设置一个快捷键来快速切换到编辑器模式。
 
-On Windows, it's better to use UNIX-like shells like git bash.
+## 从命令行启动 CP Editor
 
-In the command line, you can open a non-existing file as a tab by `cpeditor <path>` (and you can save to this path later), open all C++ files in a directory recursively by `cpeditor --cpp <directory>` or temporarily disable [Restore last session at startup](../preferences/actions#restore-last-session-at-startup) by `cpeditor --no-hot-exit`.
+CP Editor 支持在命令行下启动，可以通过执行 `cpeditor --help` 命令获得更多详情。
 
-CP Editor normally closes when receiving SIGINT and SIGHUP, so if you start CP Editor in the command line, you can safely press <kbd>Ctrl+C</kbd> to quit.
+在 Windows 下，更推荐使用类 UNIX 的终端（如 Git Bash）。
+
+在命令行下，你可以通过 `cpeditor <path>` 来在指定的位置创建新文件，或是用 `cpeditor --cpp <directory>` 打开一个目录下的所有 C++ 源代码，还可以通过 `cpeditor --no-hot-exit` 暂时禁用 [在启动时恢复上一次会话](../preferences/actions#restore-last-session-at-startup)。
+
+CP Editor 在接收到 SIGINT 和 SIGHUP 命令时会正常关闭，因此如果你在命令行下启动 CP Editor，你可以通过按下 <kbd>Ctrl+C</kbd> 退出，而不必担心丢失任何工作。
