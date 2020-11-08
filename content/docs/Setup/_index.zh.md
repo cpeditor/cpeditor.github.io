@@ -9,19 +9,19 @@ description: 完成 CP Editor 的初始化以做好使用准备
 
 现在 CP Editor 支持多种语言，包括英文，中文和俄语。
 
-在默认情况下 CP Editor 的界面语言与系统设置一致。如果你需要对界面语言进行更改，可以在设置->外观中进行更改。注意你需要重启 CP Editor 以使更改生效。
+在默认情况下 CP Editor 的界面语言与系统设置一致。如果你需要对界面语言进行更改，可以在 [设置->外观->通用->界面语言](../Preferences/Appearance/_index.zh.md#界面语言-ui-language) 中进行更改。注意你需要重启 CP Editor 以使更改生效。
 
 ## 设置编译与运行命令
 
 根据你使用的编程语言，你需要安装 `g++` / `python` / `java` 等环境。你需要将它们加入 PATH 环境变量以使 CP Editor 能找到它们。
 
-接下来在设置页面设置编译与运行命令。例如，你可以在 [设置->语言->C++->C++ 命令](../preferences/language#c-commands) 中设置 C++ 的相关命令。
+接下来在设置页面设置编译与运行命令。例如，你可以在 [设置->语言->C++->C++ 命令](../Preferences/Language/_index.zh.md#c-命令) 中设置 C++ 的相关命令。
 
 ## 安装 CF Tool
 
 如果你需要在 CP Editor 中提交 Codeforces 题目，你需要安装 [CF Tool](https://github.com/xalanq/cf-tool)。
 
-你可以将其加入 PATH 环境变量，或是在 [设置->扩展->CF Tool](../preferences/extensions#cf-tool) 中设置其路径。
+你可以将其加入 PATH 环境变量，或是在 [设置->扩展->CF Tool](../Preferences/Extensions/_index.zh.md#cf-tool) 中设置其路径。
 
 在使用 CF Tool 之前，你需要在终端运行 `cf config` 命令完成相关配置。
 
@@ -38,13 +38,13 @@ description: 完成 CP Editor 的初始化以做好使用准备
 
 CP Editor 使用 [Clang Format](http://releases.llvm.org/download.html) 来格式化 C++ 代码。
 
-你需要将其加入 PATH 环境变量，或是在 [设置->扩展->Clang Format](../preferences/extensions#clang-format) 中设置其路径。
+你需要将其加入 PATH 环境变量，或是在 [设置->扩展->Clang Format](../Preferences/Extensions/_index.zh.md#clang-format) 中设置其路径。
 
 ## Setup Language Server
 
 You can use [Language Server](https://microsoft.github.io/language-server-protocol/) to lint your codes and get errors, warnings, etc.
 
-You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../preferences/extensions#language-server).
+You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../Preferences/Extensions/_index.zh.md#language-server).
 
 Though you can use any language server program you like, here are some suggestions if you are not sure which to use.
 

@@ -9,7 +9,7 @@ description: Setup CP Editor to prepare for using it
 
 Now CP Editor is available in multiple languages, including English and Chinese.
 
-You can change the UI language in Preferences->Appearance. Note that you need to restart CP Editor to apply the change.
+You can change the UI language in [Preferences->Appearance->General->UI Language](../Preferences/Appearance/_index.md#ui-language). Note that you need to restart CP Editor to apply the change.
 
 ## Set Compile and Run Commands
 
@@ -21,7 +21,7 @@ Then you can set the Compile and Run Commands in the preferences. For example, y
 
 In order to submit Codeforces problems in CP Editor, you need to install [CF Tool](https://github.com/xalanq/cf-tool).
 
-You can add it to your system PATH to use it directly, or you can set the path to it in [Preferences->Extensions->CF Tool](../preferences/extensions#cf-tool).
+You can add it to your system PATH to use it directly, or you can set the path to it in [Preferences->Extensions->CF Tool](../Preferences/Extensions/_index.md#cf-tool).
 
 You need to configure the tool by running the command `cf config` in the command line before using it.
 
@@ -44,7 +44,7 @@ You need to add it to your system PATH, or set the path to it at [Preferences->E
 
 You can use [Language Server](https://microsoft.github.io/language-server-protocol/) to lint your codes and get errors, warnings, etc.
 
-You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../preferences/extensions#language-server).
+You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../Preferences/Extensions/_index.md#language-server).
 
 Though you can use any language server program you like, here are some suggestions if you are not sure which to use.
 
