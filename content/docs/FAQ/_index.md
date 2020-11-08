@@ -14,4 +14,4 @@ description: Frequently asked questions by CP Editor users
 -   When I click the Submit button, I get some message saying template is required?
     -   `cf` tool requires you to configure it before you use it. Please run `cf config` to set the username & password and add a template.
 -   How to enable error linting in the code editor?
-    -   You need to install a [Language Server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set the settings in Preferences -> Extensions -> Language Server. You can learn about more details [here](../setup#setup-language-server).
+    -   You need to install a [Language Server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set the settings in Preferences -> Extensions -> Language Server. You can learn about more details [here](../Setup/_index.md#setup-language-server).
