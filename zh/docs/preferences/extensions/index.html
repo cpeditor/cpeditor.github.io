@@ -163,7 +163,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.17c3f2edc2906174c8f499e8878310f1.json"
+  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -195,7 +195,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.17c3f2edc2906174c8f499e8878310f1.json"
+  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -715,10 +715,10 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#clang-format">Clang Format</a>
+    <li><a href="#code-formatting">Code Formatting</a>
       <ul>
-        <li><a href="#path">Path</a></li>
-        <li><a href="#style">Style</a></li>
+        <li><a href="#clang-format">Clang Format</a></li>
+        <li><a href="#yapf">YAPF</a></li>
       </ul>
     </li>
     <li><a href="#language-server">Language Server</a>
@@ -739,7 +739,7 @@ if (!doNotTrack) {
     </li>
     <li><a href="#cf-tool">CF Tool</a>
       <ul>
-        <li><a href="#path-1">Path</a></li>
+        <li><a href="#path">Path</a></li>
         <li><a href="#show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts</a></li>
       </ul>
     </li>
@@ -814,14 +814,31 @@ if (!doNotTrack) {
 	<h1>Extensions</h1>
         
 	
-	<h2 id="clang-format">Clang Format</h2>
-<p>Clang Format is used to format the C++ codes. You can click Actions-&gt;Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.</p>
-<p><strong>See also</strong> <a href="../../setup#setup-clang-format">Setup Clang Format</a>.</p>
-<h3 id="path">Path</h3>
+	<h2 id="code-formatting">Code Formatting</h2>
+<h3 id="clang-format">Clang Format</h3>
+<p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&gt;Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.</p>
+<p><strong>See also</strong> <a href="../../setup#clang-format">Setup Clang Format</a>.</p>
+<h4 id="program">Program</h4>
 <p>The path to the <code>clang-format</code> executable, or simply <code>clang-format</code> if it&rsquo;s in the <code>PATH</code> environment variable.</p>
-<h3 id="style">Style</h3>
+<h4 id="arguments">Arguments</h4>
+<p>The arguments passed to <code>clang-format</code>. It should NOT contain <code>-i</code> (the in-place modification option).</p>
+<h4 id="style">Style</h4>
 <p>The Clang Format style. The content here is the same as the content of a <code>.clang-format</code> file.</p>
 <p>You can read <a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">Clang-Format Style Options documentation</a> or search for other materials to learn how to write the styles.</p>
+<h3 id="yapf">YAPF</h3>
+<p>YAPF is used to format the Python codes. You can click Actions-&gt;Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.</p>
+<p><strong>See also</strong> <a href="../../setup#yapf">Setup YAPF</a>.</p>
+<h4 id="program-1">Program</h4>
+<p>The program of YAPF. It could be one of:</p>
+<ul>
+<li><code>yapf</code>: You should be able to run <code>yapf</code> in the command line. The arguments can be empty.</li>
+<li>A Python interpreter, i.e. <code>python</code>, <code>python2</code>, etc. or the path to an interpreter. The arguments should be <code>-m yapf</code>.</li>
+</ul>
+<p>Note that <a href="https://github.com/google/yapf#python-versions" target="_blank">you need to use Python 2 to format Python 2, use Python 3 to format Python 3</a>. So you may need to choose the correct Python interpreter.</p>
+<h4 id="arguments-1">Arguments</h4>
+<p>The arguments passed to the YAPF program. This should be <code>-m yapf</code> if the program is a Python interpreter. It should NOT contain <code>-i</code> (the in-place modification option).</p>
+<h4 id="style-1">Style</h4>
+<p>The YAPF Format style. The content here is the same as the content of a <code>.style.yapf</code> file. You can check all possible configuration by running <code>yapf --style-help</code>, read the <a href="https://github.com/google/yapf#formatting-style" target="_blank">documentation</a> or search for other materials to learn how to write the styles.</p>
 <h2 id="language-server">Language Server</h2>
 <p><strong>See also</strong> <a href="../../setup#setup-language-server">Setup Language Server</a>.</p>
 <h3 id="use-linting-with-language-server">Use Linting with Language Server</h3>
@@ -861,7 +878,7 @@ if (!doNotTrack) {
 <p>You can use <a href="https://github.com/xalanq/cf-tool/" target="_blank">CF Tool</a> to submit your solutions to <a href="https://codeforces.com" target="_blank">Codeforces</a>.</p>
 <p>To submit a solution, you have to either parse a problem by <a href="#competitive-companion">Competitive Companion</a> from Codeforces, or manually set the problem URL of a tab in the context menu of it.</p>
 <p><strong>See also</strong> <a href="../../setup#setup-cf-tool">Setup CF Tool</a>.</p>
-<h3 id="path-1">Path</h3>
+<h3 id="path">Path</h3>
 <p>The path to the <code>cf</code> executable file, or simply <code>cf</code> if it&rsquo;s in the <code>PATH</code> environment variable.</p>
 <h3 id="show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts</h3>
 <p>Show a toast message when the verdict of a submission is determined.</p>
@@ -980,7 +997,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 November 10, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/4de22e6633c6ebb0ccbdde5e16693f5536046ed1">feat(YAPF Formatter): add setup and preferences  (#101) (4de22e6)</a>
 </div>
 </div>
 

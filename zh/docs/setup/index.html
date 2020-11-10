@@ -163,7 +163,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.17c3f2edc2906174c8f499e8878310f1.json"
+  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -195,7 +195,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.17c3f2edc2906174c8f499e8878310f1.json"
+  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -719,7 +719,12 @@ if (!doNotTrack) {
     <li><a href="#设置编译与运行命令">设置编译与运行命令</a></li>
     <li><a href="#安装-cf-tool">安装 CF Tool</a></li>
     <li><a href="#安装-competitive-companion">安装 Competitive Companion</a></li>
-    <li><a href="#安装-clang-format">安装 Clang Format</a></li>
+    <li><a href="#安装代码格式化程序">安装代码格式化程序</a>
+      <ul>
+        <li><a href="#安装-clang-format">安装 Clang Format</a></li>
+        <li><a href="#安装-yapf">安装 YAPF</a></li>
+      </ul>
+    </li>
     <li><a href="#setup-language-server">Setup Language Server</a>
       <ul>
         <li><a href="#c-server">C++ Server</a></li>
@@ -800,9 +805,13 @@ if (!doNotTrack) {
 <li><a href="https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl" target="_blank">Chrome</a></li>
 <li><a href="https://addons.mozilla.org/zh-CN/firefox/addon/competitive-companion/" target="_blank">Firefox</a></li>
 </ul>
-<h2 id="安装-clang-format">安装 Clang Format</h2>
-<p>CP Editor 使用 <a href="http://releases.llvm.org/download.html" target="_blank">Clang Format</a> 来格式化 C++ 代码。</p>
+<h2 id="安装代码格式化程序">安装代码格式化程序</h2>
+<h3 id="安装-clang-format">安装 Clang Format</h3>
+<p>CP Editor 使用 <a href="http://releases.llvm.org/download.html" target="_blank">Clang Format</a> 来格式化 C/C++ 以及 Java 代码。</p>
 <p>你需要将其加入 PATH 环境变量，或是在 <a href="../preferences/extensions#clang-format">设置-&gt;扩展-&gt;Clang Format</a> 中设置其路径。</p>
+<h3 id="安装-yapf">安装 YAPF</h3>
+<p>CP Editor 使用 <a href="https://github.com/google/yapf" target="_blank">YAPF</a> 来格式化 Python 代码。</p>
+<p><a href="https://github.com/google/yapf#installation" target="_blank">安装</a> 后应该就可以使用了。如果不能，请在 <a href="../preferences/extensions#yapf">设置-&gt;扩展-&gt;代码格式化-&gt;YAPF</a> 进行设置。</p>
 <h2 id="setup-language-server">Setup Language Server</h2>
 <p>You can use <a href="https://microsoft.github.io/language-server-protocol/" target="_blank">Language Server</a> to lint your codes and get errors, warnings, etc.</p>
 <p>You can install <a href="https://microsoft.github.io/language-server-protocol/implementors/servers/" target="_blank">any language server program</a> and set suitable settings in <a href="../preferences/extensions#language-server">Preferences-&gt;Extensions-&gt;Language Server</a>.</p>
@@ -927,7 +936,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 November 10, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/4de22e6633c6ebb0ccbdde5e16693f5536046ed1">feat(YAPF Formatter): add setup and preferences  (#101) (4de22e6)</a>
 </div>
 </div>
 

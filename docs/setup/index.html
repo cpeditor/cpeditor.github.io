@@ -163,7 +163,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.17c3f2edc2906174c8f499e8878310f1.json"
+  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -195,7 +195,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.17c3f2edc2906174c8f499e8878310f1.json"
+  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -719,7 +719,12 @@ if (!doNotTrack) {
     <li><a href="#set-compile-and-run-commands">Set Compile and Run Commands</a></li>
     <li><a href="#setup-cf-tool">Setup CF Tool</a></li>
     <li><a href="#setup-competitive-companion">Setup Competitive Companion</a></li>
-    <li><a href="#setup-clang-format">Setup Clang Format</a></li>
+    <li><a href="#setup-code-formatter">Setup Code Formatter</a>
+      <ul>
+        <li><a href="#clang-format">Clang Format</a></li>
+        <li><a href="#yapf">YAPF</a></li>
+      </ul>
+    </li>
     <li><a href="#setup-language-server">Setup Language Server</a>
       <ul>
         <li><a href="#c-server">C++ Server</a></li>
@@ -785,9 +790,13 @@ if (!doNotTrack) {
 <li><a href="https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl" target="_blank">Chrome Extension</a></li>
 <li><a href="https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/" target="_blank">Firefox Addon</a></li>
 </ul>
-<h2 id="setup-clang-format">Setup Clang Format</h2>
-<p>CP Editor uses <a href="http://releases.llvm.org/download.html" target="_blank">Clang Format</a> to format your C++ code.</p>
+<h2 id="setup-code-formatter">Setup Code Formatter</h2>
+<h3 id="clang-format">Clang Format</h3>
+<p>CP Editor uses <a href="http://releases.llvm.org/download.html" target="_blank">Clang Format</a> to format your C/C++ and Java code.</p>
 <p>You need to add it to your system PATH, or set the path to it at <a href="../preferences/extensions#clang-format">Preferences-&gt;Extensions-&gt;Clang Format</a>.</p>
+<h3 id="yapf">YAPF</h3>
+<p>CP Editor uses <a href="https://github.com/google/yapf" target="_blank">YAPF</a> to format your Python code.</p>
+<p>It should work after <a href="https://github.com/google/yapf#installation" target="_blank">installation</a>. If not, set the program and arguments in <a href="../preferences/extensions#yapf">Preferences-&gt;Extensions-&gt;Code Formatting-&gt;YAPF</a>.</p>
 <h2 id="setup-language-server">Setup Language Server</h2>
 <p>You can use <a href="https://microsoft.github.io/language-server-protocol/" target="_blank">Language Server</a> to lint your codes and get errors, warnings, etc.</p>
 <p>You can install <a href="https://microsoft.github.io/language-server-protocol/implementors/servers/" target="_blank">any language server program</a> and set suitable settings in <a href="../preferences/extensions#language-server">Preferences-&gt;Extensions-&gt;Language Server</a>.</p>
@@ -912,7 +921,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 10, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/4de22e6633c6ebb0ccbdde5e16693f5536046ed1">feat(YAPF Formatter): add setup and preferences  (#101) (4de22e6)</a>
 </div>
 </div>
 

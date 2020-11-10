@@ -194,14 +194,31 @@
 &lt;p>If the file is changed outside of CP Editor, ask whether to load the change or not.&lt;/p>
 &lt;p>If this setting is disabled, external changes won&amp;rsquo;t be loaded.&lt;/p>
 &lt;p>&lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> overrides this setting. i.e. if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is enabled, external file changes will be loaded without confrimation regardless of &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> ; if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is disabled, the user will be asked whether to load the changes only when &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/ru/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/extensions/</guid><description>
-&lt;h2 id="clang-format">Clang Format&lt;/h2>
-&lt;p>Clang Format is used to format the C++ codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-clang-format">Setup Clang Format&lt;/a>.&lt;/p>
-&lt;h3 id="path">Path&lt;/h3>
+&lt;h2 id="code-formatting">Code Formatting&lt;/h2>
+&lt;h3 id="clang-format">Clang Format&lt;/h3>
+&lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#clang-format">Setup Clang Format&lt;/a>.&lt;/p>
+&lt;h4 id="program">Program&lt;/h4>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
-&lt;h3 id="style">Style&lt;/h3>
+&lt;h4 id="arguments">Arguments&lt;/h4>
+&lt;p>The arguments passed to &lt;code>clang-format&lt;/code>. It should NOT contain &lt;code>-i&lt;/code> (the in-place modification option).&lt;/p>
+&lt;h4 id="style">Style&lt;/h4>
 &lt;p>The Clang Format style. The content here is the same as the content of a &lt;code>.clang-format&lt;/code> file.&lt;/p>
 &lt;p>You can read &lt;a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">Clang-Format Style Options documentation&lt;/a> or search for other materials to learn how to write the styles.&lt;/p>
+&lt;h3 id="yapf">YAPF&lt;/h3>
+&lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#yapf">Setup YAPF&lt;/a>.&lt;/p>
+&lt;h4 id="program-1">Program&lt;/h4>
+&lt;p>The program of YAPF. It could be one of:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>yapf&lt;/code>: You should be able to run &lt;code>yapf&lt;/code> in the command line. The arguments can be empty.&lt;/li>
+&lt;li>A Python interpreter, i.e. &lt;code>python&lt;/code>, &lt;code>python2&lt;/code>, etc. or the path to an interpreter. The arguments should be &lt;code>-m yapf&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;p>Note that &lt;a href="https://github.com/google/yapf#python-versions" target="_blank">you need to use Python 2 to format Python 2, use Python 3 to format Python 3&lt;/a>. So you may need to choose the correct Python interpreter.&lt;/p>
+&lt;h4 id="arguments-1">Arguments&lt;/h4>
+&lt;p>The arguments passed to the YAPF program. This should be &lt;code>-m yapf&lt;/code> if the program is a Python interpreter. It should NOT contain &lt;code>-i&lt;/code> (the in-place modification option).&lt;/p>
+&lt;h4 id="style-1">Style&lt;/h4>
+&lt;p>The YAPF Format style. The content here is the same as the content of a &lt;code>.style.yapf&lt;/code> file. You can check all possible configuration by running &lt;code>yapf --style-help&lt;/code>, read the &lt;a href="https://github.com/google/yapf#formatting-style" target="_blank">documentation&lt;/a> or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h2 id="language-server">Language Server&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-language-server">Setup Language Server&lt;/a>.&lt;/p>
 &lt;h3 id="use-linting-with-language-server">Use Linting with Language Server&lt;/h3>
@@ -241,7 +258,7 @@
 &lt;p>You can use &lt;a href="https://github.com/xalanq/cf-tool/" target="_blank">CF Tool&lt;/a> to submit your solutions to &lt;a href="https://codeforces.com" target="_blank">Codeforces&lt;/a>.&lt;/p>
 &lt;p>To submit a solution, you have to either parse a problem by &lt;a href="#competitive-companion">Competitive Companion&lt;/a> from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-cf-tool">Setup CF Tool&lt;/a>.&lt;/p>
-&lt;h3 id="path-1">Path&lt;/h3>
+&lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>cf&lt;/code> executable file, or simply &lt;code>cf&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
 &lt;h3 id="show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts&lt;/h3>
 &lt;p>Show a toast message when the verdict of a submission is determined.&lt;/p>
