@@ -23,7 +23,7 @@ Save your code when executing it.
 
 Save the test cases on the disk when saving the code.
 
-You can choose where to save the test cases in [File Path/Testcases](../file-path#testcases).
+You can choose where to save the test cases in [File Path/Testcases](../File Path/_index.md#testcases).
 
 ## Auto Save
 
