@@ -25,15 +25,15 @@ For compilation flags, please refer to the manual of the compiler. For example, 
 
 The path of the executable file, i.e. the argument of the `-o` option of the compiler.
 
-If this path is a relative path, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general#temporary-directory)).
+If this path is a relative path, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../General/_index.ru.md#temporary-directory)).
 
 You can use some place holders for this setting:
 
 -   `${filename}`: The complete name of the source file. If it's an untitled tab (i.e. an unsaved file), the complete file name is `sol.cpp`.
 -   `${basename}`: `${filename}` without the suffix (i.e. without `.cpp`, etc.).
--   `${tmpdir}` or `${tempdir}`: The path of the [Temporary Directory](../general#temporary-directory).
+-   `${tmpdir}` or `${tempdir}`: The path of the [Temporary Directory](../General/_index.ru.md#temporary-directory).
 
-For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory in the parent directory of the source file.
+For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory under the directory of the source file.
 
 #### C++ Run Arguments
 
@@ -103,7 +103,7 @@ The initial position of the text cursor when opening the template.
 
 It contains three parts:
 
-1.  [Regex](../general#regular-expression)
+1.  [Regex](../General/_index.ru.md#regular-expression)
 2.  Offset type: start or end.
 3.  Offset characters: a number, could be negative.
 
@@ -142,16 +142,16 @@ When choosing a snippet, you can enter the first few characters of the snippet n
 
 You can set the parentheses settings for each language and each parenthesis.
 
-Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Edit](../code-edit) page. Otherwise, it overwrites the settings in the [Code Edit](../code-edit) page.
+Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Edit](../Code Edit/_index.ru.md) page. Otherwise, it overwrites the settings in the [Code Edit](../Code Edit/_index.ru.md) page.
 
 ### Auto Complete
 
-See [Code Edit/Auto Complete Parentheses](../code-edit#auto-complete-parentheses).
+See [Code Edit/Auto Complete Parentheses](../Code Edit/_index.ru.md#auto-complete-parentheses).
 
 ### Auto Remove
 
-See [Code Edit/Auto Remove Parentheses](../code-edit#auto-remove-parentheses).
+See [Code Edit/Auto Remove Parentheses](../Code Edit/_index.ru.md#auto-remove-parentheses).
 
 ### Tab Jump Out
 
-See [Code Edit/Jump out of a parenthesis by pressing Tab](../code-edit#jump-out-of-a-parenthesis-by-pressing-tab).
+See [Code Edit/Jump out of a parenthesis by pressing Tab](../Code Edit/_index.ru.md#jump-out-of-a-parenthesis-by-pressing-tab).
