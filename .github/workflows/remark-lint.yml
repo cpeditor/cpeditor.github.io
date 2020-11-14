@@ -17,7 +17,7 @@ jobs:
       run: git diff --exit-code ${{ github.sha }}
     - name: Create Pull Request
       if: failure()
-      uses: peter-evans/create-pull-request@v2
+      uses: peter-evans/create-pull-request@v3.4.1
       with:
         commit-message: "style: Format Markdown files"
         title: "Format Markdown files for ${{ github.ref }}"
