@@ -34,11 +34,19 @@ description: 完成 CP Editor 的初始化以做好使用准备
 -   [Chrome](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
 -   [Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/competitive-companion/)
 
-## 安装 Clang Format
+## 安装代码格式化程序
 
-CP Editor 使用 [Clang Format](http://releases.llvm.org/download.html) 来格式化 C++ 代码。
+### 安装 Clang Format
+
+CP Editor 使用 [Clang Format](http://releases.llvm.org/download.html) 来格式化 C/C++ 以及 Java 代码。
 
 你需要将其加入 PATH 环境变量，或是在 [设置->扩展->Clang Format](../Preferences/Extensions/_index.zh.md#clang-format) 中设置其路径。
+
+### 安装 YAPF
+
+CP Editor 使用 [YAPF](https://github.com/google/yapf) 来格式化 Python 代码。
+
+[安装](https://github.com/google/yapf#installation) 后应该就可以使用了。如果不能，请在 [设置->扩展->代码格式化->YAPF](../preferences/extensions#yapf) 进行设置。
 
 ## Setup Language Server
 

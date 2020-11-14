@@ -34,11 +34,19 @@ You can install it from the addon/extension markets:
 -   [Chrome Extension](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
 -   [Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
 
-## Setup Clang Format
+## Setup Code Formatter
 
-CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C++ code.
+### Clang Format
+
+CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C/C++ and Java code.
 
 You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../Preferences/Extensions/_index.ru.md#clang-format).
+
+### YAPF
+
+CP Editor uses [YAPF](https://github.com/google/yapf) to format your Python code.
+
+It should work after [installation](https://github.com/google/yapf#installation). If not, set the program and arguments in [Preferences->Extensions->YAPF](../preferences/extensions#yapf).
 
 ## Setup Language Server
 
