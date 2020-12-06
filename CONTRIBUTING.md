@@ -71,7 +71,7 @@ There are some attributes in the frontmatter of each Markdown file:
 
 In Markdown files, please use `[<title>](<relative path to the file>#<fragment>)` to make internal links.
 
-For example: `[Preferences->Languages->C++->C++ Commands](../Preferences/Language/_index.md#c-commands)`.
+For example: `[Preferences->Languages->C++->C++ Commands](../preferences/language/_index.md#c-commands)`.
 
 ## Markdown Formatting
 
