@@ -23,14 +23,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>FAQ | CP Editor</title><meta property="og:title" content="FAQ" />
-<meta property="og:description" content="Frequently asked questions by CP Editor users" />
+<meta property="og:description" content="CP Editor 用户常问的一些问题" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/zh/docs/faq/" />
 <meta property="og:site_name" content="CP Editor" />
 <meta itemprop="name" content="FAQ">
-<meta itemprop="description" content="Frequently asked questions by CP Editor users"><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="CP Editor 用户常问的一些问题"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="FAQ"/>
-<meta name="twitter:description" content="Frequently asked questions by CP Editor users"/>
+<meta name="twitter:description" content="CP Editor 用户常问的一些问题"/>
 
 
 <script type="application/javascript">
@@ -163,7 +163,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ac167c29580e58a7bf14c019f3140fb8.json"
+  data-offline-search-index-json-src="/offline-search-index.364410aa6b7f64e0082b75bd63581034.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -195,7 +195,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ac167c29580e58a7bf14c019f3140fb8.json"
+  data-offline-search-index-json-src="/offline-search-index.364410aa6b7f64e0082b75bd63581034.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -764,40 +764,42 @@ if (!doNotTrack) {
           
 <div class="td-content">
 	<h1>FAQ</h1>
-        <div class="lead">Frequently asked questions by CP Editor users</div>
+        <div class="lead">CP Editor 用户常问的一些问题</div>
 	
 	<ul>
-<li>How to fetch testcases from the websites?
+<li>如何从网站上抓取测试数据？
 <ul>
-<li>You have to install 
+<li>你需要在浏览器上安装 
 <a href="https://github.com/jmerle/competitive-companion" target="_blank">Competitive Companion</a>
- on your browser, and use it on the website while CP Editor is running. 
-<a href="https://youtu.be/IVx1rSqYz7c" target="_blank">Here is a youtube video</a>
- demonstrating this setup.</li>
+，并在 CP Editor 运行时使用它。
+<a href="https://youtu.be/IVx1rSqYz7c" target="_blank">这个 youtube 视频</a>
+ 演示了安装过程。</li>
 </ul>
 </li>
-<li>How to submit to CF inside CP Editor?
+<li>如何在 CP Editor 里将代码提交到 CF？
 <ul>
-<li>You have to either parse the problem from Competitive Companion, or set the problem URL in the right-click menu of the tabs. Then you&rsquo;ll see the submit button.</li>
+<li>你需要使用 Competitive Companion 获取题目，或是右击标签栏后在右键菜单中设置题目链接。之后你就可以看到提交按钮了。</li>
 </ul>
 </li>
-<li>I am using it on Codeforces but the submit button is not clickable.
+<li>我已经完成了上面的设置，但提交按钮不能点击。
 <ul>
-<li>It&rsquo;s because CP Editor can&rsquo;t run the <code>cf</code> command. Please make sure it&rsquo;s in the PATH or set the path to it in the Preferences.</li>
+<li>这是因为 CP Editor 无法执行 <code>cf</code> 命令。请确保它在 PATH 环境变量中，或是在设置中设置了它的路径。</li>
 </ul>
 </li>
-<li>When I click the Submit button, I get some message saying template is required?
+<li>当我点击提交按钮时，提示需要模板。
 <ul>
-<li><code>cf</code> tool requires you to configure it before you use it. Please run <code>cf config</code> to set the username &amp; password and add a template.</li>
+<li>因为 cf tool 需要在使用前进行配置。请在终端下执行 <code>cf config</code> 以完成用户名和密码设置，并添加模板。</li>
 </ul>
 </li>
-<li>How to enable error linting in the code editor?
+<li>如何在代码编辑框中启用错误提示？
 <ul>
-<li>You need to install a 
-<a href="https://microsoft.github.io/language-server-protocol/implementors/servers/" target="_blank">Language Server program</a>
- and set the settings in Preferences -&gt; Extensions -&gt; Language Server. You can learn about more details 
-<a href="/zh/docs/setup/#setup-language-server">here</a>
-.</li>
+<li>你需要安装 
+<a href="https://microsoft.github.io/language-server-protocol/implementors/servers/" target="_blank">Language Server 程序</a>
+ 并在 
+<a href="/zh/docs/preferences/extensions/#language-server">设置-&gt;扩展-&gt;Language Server</a>
+ 中完成有关配置。更多细节详见 
+<a href="/zh/docs/setup/">初始化</a>
+ 页面。</li>
 </ul>
 </li>
 </ul>
@@ -914,7 +916,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/4b180aee4c63755e04e72d346bb7044b34fca594">feat(faq, source-code): add Chinese translation (#114) (4b180ae)</a>
 </div>
 </div>
 
