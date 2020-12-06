@@ -1,26 +1,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – Preferences</title><link>/ru/docs/preferences/</link><description>Recent content in Preferences on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/ru/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Edit</title><link>/ru/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/code-edit/</guid><description>
 &lt;h3 id="tab-width">Tab Width&lt;/h3>
-&lt;p>The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in &lt;a href="#auto-indent">Auto Indent&lt;/a> and &lt;a href="#replace-tabs-by-spaces">Replace tabs by spaces&lt;/a>.&lt;/p>
+&lt;p>The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in
+&lt;a href="/ru/#auto-indent">Auto Indent&lt;/a>
+and
+&lt;a href="/ru/#replace-tabs-by-spaces">Replace tabs by spaces&lt;/a>
+.&lt;/p>
 &lt;h3 id="auto-indent">Auto Indent&lt;/h3>
 &lt;ol>
 &lt;li>When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.&lt;/li>
-&lt;li>If the old line ends with &lt;code>{&lt;/code>, an extra indent (a tab character or &lt;a href="#tab-width">Tab Width&lt;/a> spaces, depending on whether &lt;a href="#replace-tabs-by-spaces">Replace tabs by spaces&lt;/a> is enabled) will be inserted at the beginning of the new line.&lt;/li>
+&lt;li>If the old line ends with &lt;code>{&lt;/code>, an extra indent (a tab character or
+&lt;a href="/ru/#tab-width">Tab Width&lt;/a>
+spaces, depending on whether
+&lt;a href="/ru/#replace-tabs-by-spaces">Replace tabs by spaces&lt;/a>
+is enabled) will be inserted at the beginning of the new line.&lt;/li>
 &lt;/ol>
 &lt;h3 id="wrap-text">Wrap Text&lt;/h3>
 &lt;p>If a line is too long to fit in a single line, the line will be separated into several lines.&lt;/p>
 &lt;h3 id="auto-complete-parentheses">Auto Complete Parentheses&lt;/h3>
 &lt;p>Automatically add the right parenthesis when you type the left one. For example, when you type &lt;code>(&lt;/code>, &lt;code>)&lt;/code> will be added.&lt;/p>
 &lt;p>When the character next to the cursor is a right parenthesis and you type this parenthesis, instead of typing this parenthesis, the cursor will jump out of the parenthesis.&lt;/p>
-&lt;p>You can choose the parentheses to auto-complete in the &lt;a href="../language#parentheses">Parentheses&lt;/a> settings.&lt;/p>
+&lt;p>You can choose the parentheses to auto-complete in the
+&lt;a href="/ru/docs/preferences/language/#parentheses">Parentheses&lt;/a>
+settings.&lt;/p>
 &lt;h3 id="auto-remove-parentheses">Auto Remove Parentheses&lt;/h3>
 &lt;p>When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.&lt;/p>
-&lt;p>You can choose the parentheses to auto-remove in the &lt;a href="../language#parentheses">Parentheses&lt;/a> settings.&lt;/p>
+&lt;p>You can choose the parentheses to auto-remove in the
+&lt;a href="/ru/docs/preferences/language/#parentheses">Parentheses&lt;/a>
+settings.&lt;/p>
 &lt;h3 id="jump-out-of-a-parenthesis-by-pressing-tab">Jump out of a parenthesis by pressing Tab&lt;/h3>
-&lt;p>When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If &lt;a href="#auto-complete-parentheses">Auto Complete Parentheses&lt;/a> is enabled, this is an alternative of typing the right parenthesis.&lt;/p>
-&lt;p>You can choose the parentheses to jump out by Tab in the &lt;a href="../language#parentheses">Parentheses&lt;/a> settings.&lt;/p>
+&lt;p>When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If
+&lt;a href="/ru/#auto-complete-parentheses">Auto Complete Parentheses&lt;/a>
+is enabled, this is an alternative of typing the right parenthesis.&lt;/p>
+&lt;p>You can choose the parentheses to jump out by Tab in the
+&lt;a href="/ru/docs/preferences/language/#parentheses">Parentheses&lt;/a>
+settings.&lt;/p>
 &lt;h3 id="replace-tabs-by-spaces">Replace tabs by spaces&lt;/h3>
-&lt;p>When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the &lt;a href="#tab-width">Tab Width&lt;/a>.&lt;/p>
-&lt;p>Note that this won&amp;rsquo;t replace the existing tab characters. In &lt;a href="#auto-indent">Auto Indent&lt;/a>, the tab characters in the old line will remain in the new line (however, the new indent inserted after &lt;code>{&lt;/code> will be spaces).&lt;/p></description></item><item><title>Docs: Language</title><link>/ru/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/language/</guid><description>
+&lt;p>When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the
+&lt;a href="/ru/#tab-width">Tab Width&lt;/a>
+.&lt;/p>
+&lt;p>Note that this won&amp;rsquo;t replace the existing tab characters. In
+&lt;a href="/ru/#auto-indent">Auto Indent&lt;/a>
+, the tab characters in the old line will remain in the new line (however, the new indent inserted after &lt;code>{&lt;/code> will be spaces).&lt;/p></description></item><item><title>Docs: Language</title><link>/ru/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/language/</guid><description>
 &lt;h2 id="general">General&lt;/h2>
 &lt;h3 id="default-language">Default Language&lt;/h3>
 &lt;p>The default programming language. It&amp;rsquo;s used when opening a new tab and some other places.&lt;/p>
@@ -32,14 +52,18 @@
 &lt;p>For compilation flags, please refer to the manual of the compiler. For example, you may want to add &lt;code>-std=c++14&lt;/code> in the compile command to use C++14.&lt;/p>
 &lt;h4 id="c-executable-file-path">C++ Executable File Path&lt;/h4>
 &lt;p>The path of the executable file, i.e. the argument of the &lt;code>-o&lt;/code> option of the compiler.&lt;/p>
-&lt;p>If this path is a relative path, then it&amp;rsquo;s relative to the source file (if it&amp;rsquo;s an untitled tab, then relative to the &lt;a href="../general#temporary-directory">Temporary Directory&lt;/a>).&lt;/p>
+&lt;p>If this path is a relative path, then it&amp;rsquo;s relative to the source file (if it&amp;rsquo;s an untitled tab, then relative to the
+&lt;a href="/ru/docs/preferences/general/#temporary-directory">Temporary Directory&lt;/a>
+).&lt;/p>
 &lt;p>You can use some place holders for this setting:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${filename}&lt;/code>: The complete name of the source file. If it&amp;rsquo;s an untitled tab (i.e. an unsaved file), the complete file name is &lt;code>sol.cpp&lt;/code>.&lt;/li>
 &lt;li>&lt;code>${basename}&lt;/code>: &lt;code>${filename}&lt;/code> without the suffix (i.e. without &lt;code>.cpp&lt;/code>, etc.).&lt;/li>
-&lt;li>&lt;code>${tmpdir}&lt;/code> or &lt;code>${tempdir}&lt;/code>: The path of the &lt;a href="../general#temporary-directory">Temporary Directory&lt;/a>.&lt;/li>
+&lt;li>&lt;code>${tmpdir}&lt;/code> or &lt;code>${tempdir}&lt;/code>: The path of the
+&lt;a href="/ru/docs/preferences/general/#temporary-directory">Temporary Directory&lt;/a>
+.&lt;/li>
 &lt;/ul>
-&lt;p>For example, you can use &lt;code>${tmpdir}/${basename}&lt;/code> if you don&amp;rsquo;t want to keep the executable files, or &lt;code>executables/${basename}&lt;/code> if you want to keep all executable files in the &lt;code>executables&lt;/code> directory in the parent directory of the source file.&lt;/p>
+&lt;p>For example, you can use &lt;code>${tmpdir}/${basename}&lt;/code> if you don&amp;rsquo;t want to keep the executable files, or &lt;code>executables/${basename}&lt;/code> if you want to keep all executable files in the &lt;code>executables&lt;/code> directory under the directory of the source file.&lt;/p>
 &lt;h4 id="c-run-arguments">C++ Run Arguments&lt;/h4>
 &lt;p>The arguments passed to the program when executing it. It&amp;rsquo;s usually not needed in competitive programming.&lt;/p>
 &lt;h4 id="c-compiler-output-codec">C++ Compiler Output Codec&lt;/h4>
@@ -51,7 +75,9 @@
 &lt;p>The command shouldn&amp;rsquo;t contain the source file and the class path, CP Editor automatically adds them.&lt;/p>
 &lt;h4 id="java-class-path">Java Class Path&lt;/h4>
 &lt;p>The path to save the class files.&lt;/p>
-&lt;p>Please refer to &lt;a href="#c-executable-file-path">C++ Executable File Path&lt;/a> for the details.&lt;/p>
+&lt;p>Please refer to
+&lt;a href="/ru/#c-executable-file-path">C++ Executable File Path&lt;/a>
+for the details.&lt;/p>
 &lt;h4 id="java-class-name">Java Class Name&lt;/h4>
 &lt;p>The name of the main class of your solution.&lt;/p>
 &lt;p>You can use arbitary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.&lt;/p>
@@ -61,7 +87,9 @@
 &lt;h4 id="java-run-arguments">Java Run Arguments&lt;/h4>
 &lt;p>The arguments passed to the program when executing it. It&amp;rsquo;s usually not needed in competitive programming.&lt;/p>
 &lt;h4 id="java-compiler-output-codec">Java Compiler Output Codec&lt;/h4>
-&lt;p>Please refer to &lt;a href="#c-compiler-output-codec">C++ Compiler Output Codec&lt;/a>.&lt;/p>
+&lt;p>Please refer to
+&lt;a href="/ru/#c-compiler-output-codec">C++ Compiler Output Codec&lt;/a>
+.&lt;/p>
 &lt;h3 id="python-commands">Python Commands&lt;/h3>
 &lt;h4 id="python-run-command">Python Run Command&lt;/h4>
 &lt;p>The command to run a python code. It&amp;rsquo;s usually one of &lt;code>python&lt;/code>/&lt;code>python2&lt;/code>/&lt;code>python3&lt;/code>.&lt;/p>
@@ -75,7 +103,9 @@
 &lt;p>The initial position of the text cursor when opening the template.&lt;/p>
 &lt;p>It contains three parts:&lt;/p>
 &lt;ol>
-&lt;li>&lt;a href="../general#regular-expression">Regex&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/ru/docs/preferences/general/#regular-expression">Regex&lt;/a>
+&lt;/li>
 &lt;li>Offset type: start or end.&lt;/li>
 &lt;li>Offset characters: a number, could be negative.&lt;/li>
 &lt;/ol>
@@ -99,13 +129,23 @@
 &lt;p>When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.&lt;/p>
 &lt;h2 id="parentheses">Parentheses&lt;/h2>
 &lt;p>You can set the parentheses settings for each language and each parenthesis.&lt;/p>
-&lt;p>Each setting has three states: enable, disable and default. If it&amp;rsquo;s default, it uses the settings in the &lt;a href="../code-edit">Code Edit&lt;/a> page. Otherwise, it overwrites the settings in the &lt;a href="../code-edit">Code Edit&lt;/a> page.&lt;/p>
+&lt;p>Each setting has three states: enable, disable and default. If it&amp;rsquo;s default, it uses the settings in the
+&lt;a href="/ru/docs/preferences/code-edit/">Code Edit&lt;/a>
+page. Otherwise, it overwrites the settings in the
+&lt;a href="/ru/docs/preferences/code-edit/">Code Edit&lt;/a>
+page.&lt;/p>
 &lt;h3 id="auto-complete">Auto Complete&lt;/h3>
-&lt;p>See &lt;a href="../code-edit#auto-complete-parentheses">Code Edit/Auto Complete Parentheses&lt;/a>.&lt;/p>
+&lt;p>See
+&lt;a href="/ru/docs/preferences/code-edit/#auto-complete-parentheses">Code Edit/Auto Complete Parentheses&lt;/a>
+.&lt;/p>
 &lt;h3 id="auto-remove">Auto Remove&lt;/h3>
-&lt;p>See &lt;a href="../code-edit#auto-remove-parentheses">Code Edit/Auto Remove Parentheses&lt;/a>.&lt;/p>
+&lt;p>See
+&lt;a href="/ru/docs/preferences/code-edit/#auto-remove-parentheses">Code Edit/Auto Remove Parentheses&lt;/a>
+.&lt;/p>
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
-&lt;p>See &lt;a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>.&lt;/p></description></item><item><title>Docs: Appearance</title><link>/ru/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/appearance/</guid><description>
+&lt;p>See
+&lt;a href="/ru/docs/preferences/code-edit/#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>
+.&lt;/p></description></item><item><title>Docs: Appearance</title><link>/ru/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/appearance/</guid><description>
 &lt;h2 id="general">General&lt;/h2>
 &lt;h3 id="ui-language">UI Language&lt;/h3>
 &lt;p>The natural language used in the UI.&lt;/p>
@@ -141,7 +181,11 @@
 &lt;p>Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.&lt;/p></description></item><item><title>Docs: Actions</title><link>/ru/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>
 &lt;h3 id="save-files-faster">Save Files Faster&lt;/h3>
-&lt;p>Use &lt;a href="https://doc.qt.io/qt-5/qfile.html" target="_blank">&lt;code>QFile&lt;/code>&lt;/a> instead of &lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank">&lt;code>QSaveFile&lt;/code>&lt;/a> to save files.&lt;/p>
+&lt;p>Use
+&lt;a href="https://doc.qt.io/qt-5/qfile.html" target="_blank">&lt;code>QFile&lt;/code>&lt;/a>
+instead of
+&lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank">&lt;code>QSaveFile&lt;/code>&lt;/a>
+to save files.&lt;/p>
 &lt;p>This is slightly unsafer but notably faster.&lt;/p>
 &lt;h3 id="save-file-on-compilation">Save File On Compilation&lt;/h3>
 &lt;p>Save your code when compiling it.&lt;/p>
@@ -149,7 +193,9 @@
 &lt;p>Save your code when executing it.&lt;/p>
 &lt;h3 id="save-testcases-on-save">Save Testcases on Save&lt;/h3>
 &lt;p>Save the test cases on the disk when saving the code.&lt;/p>
-&lt;p>You can choose where to save the test cases in &lt;a href="../file-path#testcases">File Path/Testcases&lt;/a>.&lt;/p>
+&lt;p>You can choose where to save the test cases in
+&lt;a href="/ru/docs/preferences/file-path/#testcases">File Path/Testcases&lt;/a>
+.&lt;/p>
 &lt;h2 id="auto-save">Auto Save&lt;/h2>
 &lt;h3 id="auto-save-interval-type">Auto Save Interval Type&lt;/h3>
 &lt;p>It is easier to describe if we explain a little bit about the internal implementation: There is a countdown timer. When we &amp;ldquo;reset&amp;rdquo; it, it will be &amp;ldquo;running&amp;rdquo; in the next &lt;em>Auto Save Interval&lt;/em> milliseconds, and after &lt;em>Auto Save Interval&lt;/em> milliseconds, the timer will &amp;ldquo;timeout&amp;rdquo; and the code is auto-saved.&lt;/p>
@@ -193,34 +239,56 @@
 &lt;h3 id="ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/h3>
 &lt;p>If the file is changed outside of CP Editor, ask whether to load the change or not.&lt;/p>
 &lt;p>If this setting is disabled, external changes won&amp;rsquo;t be loaded.&lt;/p>
-&lt;p>&lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> overrides this setting. i.e. if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is enabled, external file changes will be loaded without confrimation regardless of &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> ; if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is disabled, the user will be asked whether to load the changes only when &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/ru/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/extensions/</guid><description>
+&lt;p>
+&lt;a href="/ru/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
+overrides this setting. i.e. if
+&lt;a href="/ru/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
+is enabled, external file changes will be loaded without confrimation regardless of
+&lt;a href="/ru/#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a>
+; if
+&lt;a href="/ru/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
+is disabled, the user will be asked whether to load the changes only when
+&lt;a href="/ru/#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a>
+is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/ru/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/extensions/</guid><description>
 &lt;h2 id="code-formatting">Code Formatting&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#clang-format">Setup Clang Format&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/ru/docs/setup/#setup-clang-format">Setup Clang Format&lt;/a>
+.&lt;/p>
 &lt;h4 id="program">Program&lt;/h4>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
 &lt;h4 id="arguments">Arguments&lt;/h4>
 &lt;p>The arguments passed to &lt;code>clang-format&lt;/code>. It should NOT contain &lt;code>-i&lt;/code> (the in-place modification option).&lt;/p>
 &lt;h4 id="style">Style&lt;/h4>
 &lt;p>The Clang Format style. The content here is the same as the content of a &lt;code>.clang-format&lt;/code> file.&lt;/p>
-&lt;p>You can read &lt;a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">Clang-Format Style Options documentation&lt;/a> or search for other materials to learn how to write the styles.&lt;/p>
+&lt;p>You can read
+&lt;a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">Clang-Format Style Options documentation&lt;/a>
+or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h3 id="yapf">YAPF&lt;/h3>
 &lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#yapf">Setup YAPF&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/ru/docs/setup/#yapf">Setup YAPF&lt;/a>
+.&lt;/p>
 &lt;h4 id="program-1">Program&lt;/h4>
 &lt;p>The program of YAPF. It could be one of:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>yapf&lt;/code>: You should be able to run &lt;code>yapf&lt;/code> in the command line. The arguments can be empty.&lt;/li>
 &lt;li>A Python interpreter, i.e. &lt;code>python&lt;/code>, &lt;code>python2&lt;/code>, etc. or the path to an interpreter. The arguments should be &lt;code>-m yapf&lt;/code>.&lt;/li>
 &lt;/ul>
-&lt;p>Note that &lt;a href="https://github.com/google/yapf#python-versions" target="_blank">you need to use Python 2 to format Python 2, use Python 3 to format Python 3&lt;/a>. So you may need to choose the correct Python interpreter.&lt;/p>
+&lt;p>Note that
+&lt;a href="https://github.com/google/yapf#python-versions" target="_blank">you need to use Python 2 to format Python 2, use Python 3 to format Python 3&lt;/a>
+. So you may need to choose the correct Python interpreter.&lt;/p>
 &lt;h4 id="arguments-1">Arguments&lt;/h4>
 &lt;p>The arguments passed to the YAPF program. This should be &lt;code>-m yapf&lt;/code> if the program is a Python interpreter. It should NOT contain &lt;code>-i&lt;/code> (the in-place modification option).&lt;/p>
 &lt;h4 id="style-1">Style&lt;/h4>
-&lt;p>The YAPF Format style. The content here is the same as the content of a &lt;code>.style.yapf&lt;/code> file. You can check all possible configuration by running &lt;code>yapf --style-help&lt;/code>, read the &lt;a href="https://github.com/google/yapf#formatting-style" target="_blank">documentation&lt;/a> or search for other materials to learn how to write the styles.&lt;/p>
+&lt;p>The YAPF Format style. The content here is the same as the content of a &lt;code>.style.yapf&lt;/code> file. You can check all possible configuration by running &lt;code>yapf --style-help&lt;/code>, read the
+&lt;a href="https://github.com/google/yapf#formatting-style" target="_blank">documentation&lt;/a>
+or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h2 id="language-server">Language Server&lt;/h2>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-language-server">Setup Language Server&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/ru/docs/setup/#setup-language-server">Setup Language Server&lt;/a>
+.&lt;/p>
 &lt;h3 id="use-linting-with-language-server">Use Linting with Language Server&lt;/h3>
 &lt;p>Use language server to lint errors, warnings, hints, etc.&lt;/p>
 &lt;p>You can hover over the squiggles to see the tooltips for the explaination of the errors/warnings.&lt;/p>
@@ -232,7 +300,9 @@
 &lt;p>Additional arguments for the language server program. See the documentation of the language server program you are using for more information.&lt;/p>
 &lt;p>For example, if you are using &lt;code>pyls&lt;/code> for Python, you probably want to use &lt;code>python&lt;/code> as the language server program, and use &lt;code>-m pyls&lt;/code> as the arguments.&lt;/p>
 &lt;h2 id="competitive-companion">Competitive Companion&lt;/h2>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-competitive-companion">Setup Competitive Companion&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/ru/docs/setup/#setup-competitive-companion">Setup Competitive Companion&lt;/a>
+.&lt;/p>
 &lt;h3 id="open-new-tabs">Open New Tabs&lt;/h3>
 &lt;p>Open a new tab when a problem is parsed.&lt;/p>
 &lt;p>If this is disabled, when parsing a problem, the test cases in the current tab will be replaced by the new test cases.&lt;/p>
@@ -245,19 +315,35 @@
 &lt;h4 id="content">Content&lt;/h4>
 &lt;p>The content of the head comments. You can use the following place holders:&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>${time}&lt;/code>: The time when the problem was parsed. The time format can be set in &lt;a href="#time-format">Time format for the head comments&lt;/a>.&lt;/li>
-&lt;li>&lt;code>${json.X.Y}&lt;/code>: An attribute of the data provided by Competitive Companion. You can read more about the attributes in &lt;a href="https://github.com/jmerle/competitive-companion#explanation" target="_blank">the documentation of Competitive Companion&lt;/a>. For example, &lt;code>${json.name}&lt;/code> is the name of the problem.&lt;/li>
+&lt;li>&lt;code>${time}&lt;/code>: The time when the problem was parsed. The time format can be set in
+&lt;a href="/ru/#time-format">Time format for the head comments&lt;/a>
+.&lt;/li>
+&lt;li>&lt;code>${json.X.Y}&lt;/code>: An attribute of the data provided by Competitive Companion. You can read more about the attributes in
+&lt;a href="https://github.com/jmerle/competitive-companion#explanation" target="_blank">the documentation of Competitive Companion&lt;/a>
+. For example, &lt;code>${json.name}&lt;/code> is the name of the problem.&lt;/li>
 &lt;/ul>
 &lt;h4 id="time-format">Time Format&lt;/h4>
 &lt;p>The format of the &lt;code>${time}&lt;/code> place holder in the head comments. You can read the Qt documentation for available expressions:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://doc.qt.io/qt-5/qdate.html#toString" target="_blank">Date Format&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://doc.qt.io/qt-5/qtime.html#toString" target="_blank">Time Format&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://doc.qt.io/qt-5/qdate.html#toString" target="_blank">Date Format&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://doc.qt.io/qt-5/qtime.html#toString" target="_blank">Time Format&lt;/a>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="cf-tool">CF Tool&lt;/h2>
-&lt;p>You can use &lt;a href="https://github.com/xalanq/cf-tool/" target="_blank">CF Tool&lt;/a> to submit your solutions to &lt;a href="https://codeforces.com" target="_blank">Codeforces&lt;/a>.&lt;/p>
-&lt;p>To submit a solution, you have to either parse a problem by &lt;a href="#competitive-companion">Competitive Companion&lt;/a> from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-cf-tool">Setup CF Tool&lt;/a>.&lt;/p>
+&lt;p>You can use
+&lt;a href="https://github.com/xalanq/cf-tool/" target="_blank">CF Tool&lt;/a>
+to submit your solutions to
+&lt;a href="https://codeforces.com" target="_blank">Codeforces&lt;/a>
+.&lt;/p>
+&lt;p>To submit a solution, you have to either parse a problem by
+&lt;a href="/ru/#competitive-companion">Competitive Companion&lt;/a>
+from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/ru/docs/setup/#setup-cf-tool">Setup CF Tool&lt;/a>
+.&lt;/p>
 &lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>cf&lt;/code> executable file, or simply &lt;code>cf&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
 &lt;h3 id="show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts&lt;/h3>
@@ -266,7 +352,9 @@
 &lt;p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.&lt;/p></description></item><item><title>Docs: File Path</title><link>/ru/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/file-path/</guid><description>
 &lt;h2 id="testcases">Testcases&lt;/h2>
 &lt;h3 id="input-file-save-path--answer-file-save-path">Input File Save Path &amp;amp; Answer File Save Path&lt;/h3>
-&lt;p>The path where the test cases are &lt;a href="../actions#save-testcases-on-save">saved&lt;/a>. If it is a relative path, it is relative to the source file.&lt;/p>
+&lt;p>The path where the test cases are
+&lt;a href="/ru/docs/preferences/actions/#save-testcases-on-save">saved&lt;/a>
+. If it is a relative path, it is relative to the source file.&lt;/p>
 &lt;p>You can use the following place holders:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${filename}&lt;/code>: the complete file name&lt;/li>
@@ -284,13 +372,17 @@
 &lt;p>If the path is &lt;code>testcases/${basename}-${1-index}.in&lt;/code>, the input of this test case will be saved in &lt;code>/a/b/testcases/c-3.in&lt;/code>.&lt;/p>
 &lt;h3 id="testcases-matching-rules">Testcases Matching Rules&lt;/h3>
 &lt;p>The rules used to match test cases when loading pairs of test cases.&lt;/p>
-&lt;p>Each rule is a pair of &lt;a href="../general#regular-expression">regular expression patterns&lt;/a>. The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.&lt;/p>
+&lt;p>Each rule is a pair of
+&lt;a href="/ru/docs/preferences/general/#regular-expression">regular expression patterns&lt;/a>
+. The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.&lt;/p>
 &lt;p>For example, you can use &lt;code>(.+)\.in&lt;/code> and &lt;code>\1.out&lt;/code> to match &lt;code>test-1.in&lt;/code> and &lt;code>test-1.out&lt;/code>, or use &lt;code>(.+)\.in\.(\d+)&lt;/code> and &lt;code>\1.ans.\2&lt;/code> to match &lt;code>test.in.3&lt;/code> and &lt;code>test.ans.3&lt;/code>.&lt;/p>
 &lt;p>When loading pairs of test cases, each rule which matches an input file will be used to try to find the corresponding answer file to the input file.&lt;/p>
 &lt;h2 id="problem-url">Problem URL&lt;/h2>
 &lt;h3 id="default-file-path-for-problem-urls">Default File Path For Problem URLs&lt;/h3>
 &lt;p>The default path when choosing where to save an untitled tab with problem URL.&lt;/p>
-&lt;p>Each rule is a pair of &lt;a href="../general#regular-expression">regular expression patterns&lt;/a>. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.&lt;/p>
+&lt;p>Each rule is a pair of
+&lt;a href="/ru/docs/preferences/general/#regular-expression">regular expression patterns&lt;/a>
+. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.&lt;/p>
 &lt;p>When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.&lt;/p>
 &lt;p>Here&amp;rsquo;s an example of a rule:&lt;/p>
 &lt;p>The problem URL regex: &lt;code>codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)&lt;/code>&lt;/p>
@@ -347,6 +439,8 @@
 &lt;p>You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.&lt;/p>
 &lt;p>On Linux, it&amp;rsquo;s &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>. On Windows, it&amp;rsquo;s &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>.&lt;/p>
 &lt;h3 id="regular-expression">Regular Expression&lt;/h3>
-&lt;p>The &lt;a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expression&lt;/a> is used to match patterns in a string and find and replace substrings.&lt;/p>
+&lt;p>The
+&lt;a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expression&lt;/a>
+is used to match patterns in a string and find and replace substrings.&lt;/p>
 &lt;p>You can find many online regex cources, for example: &lt;a href="https://regexone.com/">https://regexone.com/&lt;/a>.&lt;/p>
 &lt;p>In CP Editor, you can use &lt;code>\1&lt;/code>, &lt;code>\2&lt;/code>, etc. for the content of the first/second capture group in the replacement patterns.&lt;/p></description></item></channel></rss>

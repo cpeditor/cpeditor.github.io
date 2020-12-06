@@ -163,7 +163,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
+  data-offline-search-index-json-src="/offline-search-index.ac167c29580e58a7bf14c019f3140fb8.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -195,7 +195,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
+  data-offline-search-index-json-src="/offline-search-index.ac167c29580e58a7bf14c019f3140fb8.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -700,7 +700,7 @@ if (!doNotTrack) {
 
 
 
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/Preferences/File%20Path/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/preferences/file-path/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=File%20Path" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 
@@ -780,7 +780,9 @@ if (!doNotTrack) {
 	
 	<h2 id="testcases">Testcases</h2>
 <h3 id="input-file-save-path--answer-file-save-path">Input File Save Path &amp; Answer File Save Path</h3>
-<p>The path where the test cases are <a href="../actions#save-testcases-on-save">saved</a>. If it is a relative path, it is relative to the source file.</p>
+<p>The path where the test cases are 
+<a href="/docs/preferences/actions/#save-testcases-on-save">saved</a>
+. If it is a relative path, it is relative to the source file.</p>
 <p>You can use the following place holders:</p>
 <ul>
 <li><code>${filename}</code>: the complete file name</li>
@@ -798,13 +800,17 @@ if (!doNotTrack) {
 <p>If the path is <code>testcases/${basename}-${1-index}.in</code>, the input of this test case will be saved in <code>/a/b/testcases/c-3.in</code>.</p>
 <h3 id="testcases-matching-rules">Testcases Matching Rules</h3>
 <p>The rules used to match test cases when loading pairs of test cases.</p>
-<p>Each rule is a pair of <a href="../general#regular-expression">regular expression patterns</a>. The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.</p>
+<p>Each rule is a pair of 
+<a href="/docs/preferences/general/#regular-expression">regular expression patterns</a>
+. The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.</p>
 <p>For example, you can use <code>(.+)\.in</code> and <code>\1.out</code> to match <code>test-1.in</code> and <code>test-1.out</code>, or use <code>(.+)\.in\.(\d+)</code> and <code>\1.ans.\2</code> to match <code>test.in.3</code> and <code>test.ans.3</code>.</p>
 <p>When loading pairs of test cases, each rule which matches an input file will be used to try to find the corresponding answer file to the input file.</p>
 <h2 id="problem-url">Problem URL</h2>
 <h3 id="default-file-path-for-problem-urls">Default File Path For Problem URLs</h3>
 <p>The default path when choosing where to save an untitled tab with problem URL.</p>
-<p>Each rule is a pair of <a href="../general#regular-expression">regular expression patterns</a>. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.</p>
+<p>Each rule is a pair of 
+<a href="/docs/preferences/general/#regular-expression">regular expression patterns</a>
+. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.</p>
 <p>When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.</p>
 <p>Here&rsquo;s an example of a rule:</p>
 <p>The problem URL regex: <code>codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)</code></p>
@@ -938,7 +944,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5)</a>
 </div>
 </div>
 

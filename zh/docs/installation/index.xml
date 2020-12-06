@@ -1,5 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 安装</title><link>/zh/docs/installation/</link><description>Recent content in 安装 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 安装可执行文件</title><link>/zh/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/install-from-binaries/</guid><description>
-&lt;p>在 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">Release&lt;/a> 页面选择你需要的版本，下载相应的可执行文件。&lt;/p>
+&lt;p>在
+&lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">Release&lt;/a>
+页面选择你需要的版本，下载相应的可执行文件。&lt;/p>
 &lt;h3 id="windows">Windows&lt;/h3>
 &lt;h4 id="使用安装包安装">使用安装包安装&lt;/h4>
 &lt;blockquote>
@@ -27,10 +29,18 @@
 &lt;span style="color:#204a87">cd&lt;/span> cpeditor
 &lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
-&lt;p>安装 &lt;a href="https://www.qt.io/download" target="_blank">Qt&lt;/a>（5.15 或更高版本）, &lt;a href="https://cmake.org/download/" target="_blank">CMake&lt;/a>（3.12 或更高版本）以及 &lt;a href="https://www.python.org/downloads/" target="_blank">Python3&lt;/a>。&lt;/p>
+&lt;p>安装
+&lt;a href="https://www.qt.io/download" target="_blank">Qt&lt;/a>
+（5.15 或更高版本）,
+&lt;a href="https://cmake.org/download/" target="_blank">CMake&lt;/a>
+（3.12 或更高版本）以及
+&lt;a href="https://www.python.org/downloads/" target="_blank">Python3&lt;/a>
+。&lt;/p>
 &lt;ul>
 &lt;li>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 &lt;code>sudo pacman -S qt5-base&lt;/code>，在 macOS 上可以使用 &lt;code>brew install qt5&lt;/code>。&lt;/li>
-&lt;li>你还可以使用 &lt;a href="https://github.com/miurahr/aqtinstall" target="_blank">aqtinstall&lt;/a> 来下载并安装。&lt;/li>
+&lt;li>你还可以使用
+&lt;a href="https://github.com/miurahr/aqtinstall" target="_blank">aqtinstall&lt;/a>
+来下载并安装。&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -59,11 +69,25 @@ cmake --build . --config Release
 &lt;p>在 Linux 上，你会得到 &lt;code>build/cpeditor&lt;/code>。&lt;/p>
 &lt;p>在 macOS 上，你会得到 &lt;code>build/cpeditor.app&lt;/code>。&lt;/p>
 &lt;p>在 Windows 上，你会得到 &lt;code>build/cpeditor.exe&lt;/code> 或 &lt;code>build/Release/cpeditor.exe&lt;/code>。如果打开时提示 DLL 缺失，你可以将 &lt;code>%QtPath%\%QtVersion%\%Compiler%\bin&lt;/code>（例如：&lt;code>D:\Qt\5.15.1\msvc2019_64\bin&lt;/code>）加入 PATH 环境变量。&lt;/p></description></item><item><title>Docs: 使用 Artifacts</title><link>/zh/docs/installation/use-artifacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/use-artifacts/</guid><description>
-&lt;p>如果你想要使用最新版本（比 beta 还要新），但是不想从源代码构建，你可以从 &lt;a href="https://github.com/cpeditor/cpeditor/actions" target="_blank">GitHub Actions&lt;/a> 下载 Artifacts。&lt;/p>
+&lt;p>如果你想要使用最新版本（比 beta 还要新），但是不想从源代码构建，你可以从
+&lt;a href="https://github.com/cpeditor/cpeditor/actions" target="_blank">GitHub Actions&lt;/a>
+下载 Artifacts。&lt;/p>
 &lt;p>然而，我们不建议你使用 Artifacts，因为它们比 beta 版本更加不稳定，可能正在开发中。在使用 Artifacts 之前，你应该阅读 commit 日志甚至源代码。&lt;/p>
-&lt;p>为了在 Windows/macOS 上运行它，你应该首先从 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">Releases&lt;/a> 安装（通常任何版本都可以，除非出现了 DLL 丢失等问题）。在 Windows 上，将安装文件夹中的 &lt;code>cpeditor.exe&lt;/code> 替换为 Artifact 版本的。在 macOS 上，运行 &lt;code>cp path/to/Artifact cpeditor.app/Contents/MacOs&lt;/code>，其中 &lt;code>cpeditor.app&lt;/code> 是你的计算机上已安装的那个。&lt;/p>
+&lt;p>为了在 Windows/macOS 上运行它，你应该首先从
+&lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">Releases&lt;/a>
+安装（通常任何版本都可以，除非出现了 DLL 丢失等问题）。在 Windows 上，将安装文件夹中的 &lt;code>cpeditor.exe&lt;/code> 替换为 Artifact 版本的。在 macOS 上，运行 &lt;code>cp path/to/Artifact cpeditor.app/Contents/MacOs&lt;/code>，其中 &lt;code>cpeditor.app&lt;/code> 是你的计算机上已安装的那个。&lt;/p>
 &lt;p>为了在 Ubuntu 18.04 上运行它，你需要安装 Qt。其他 Linux 发行版可能不支持在 Ubuntu 18.04 上编译的二进制文件。&lt;/p></description></item><item><title>Docs: 从 AUR 构建</title><link>/zh/docs/installation/build-from-aur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-aur/</guid><description>
 &lt;p>这个方法只适用于 Arch Linux（或基于 Arch Linux 的 Linux 发行版，如 Manjaro）。&lt;/p>
-&lt;p>CP Editor 在 AUR 上有两个包：稳定版 &lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank">cpeditor&lt;/a> 和 alpha 版 &lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank">cpeditor-git&lt;/a>。&lt;/p>
-&lt;p>如果你安装了 &lt;code>yay&lt;/code>，你可以运行 &lt;code>yay -S cpeditor&lt;/code> 来安装。如果你没有安装 &lt;code>yay&lt;/code> 并且你不知道如何从 AUR 安装，你可以阅读 &lt;a href="https://github.com/Jguer/yay#installation" target="_blank">如何安装 yay&lt;/a> 或者 &lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%e7%ae%80%e4%bd%93%e4%b8%ad%e6%96%87%29#%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e5%8c%85" target="_blank">Arch Wiki&lt;/a>，或者从 &lt;a href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/" target="_blank">archlinuxcn&lt;/a> 安装 &lt;code>yay&lt;/code>。&lt;/p>
+&lt;p>CP Editor 在 AUR 上有两个包：稳定版
+&lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank">cpeditor&lt;/a>
+和 alpha 版
+&lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank">cpeditor-git&lt;/a>
+。&lt;/p>
+&lt;p>如果你安装了 &lt;code>yay&lt;/code>，你可以运行 &lt;code>yay -S cpeditor&lt;/code> 来安装。如果你没有安装 &lt;code>yay&lt;/code> 并且你不知道如何从 AUR 安装，你可以阅读
+&lt;a href="https://github.com/Jguer/yay#installation" target="_blank">如何安装 yay&lt;/a>
+或者
+&lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%e7%ae%80%e4%bd%93%e4%b8%ad%e6%96%87%29#%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e5%8c%85" target="_blank">Arch Wiki&lt;/a>
+，或者从
+&lt;a href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/" target="_blank">archlinuxcn&lt;/a>
+安装 &lt;code>yay&lt;/code>。&lt;/p>
 &lt;p>安装完成后，你就可以在终端中运行 &lt;code>cpeditor&lt;/code> 或在开始菜单中运行 CP Editor 了。&lt;/p></description></item></channel></rss>

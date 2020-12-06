@@ -1,26 +1,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 设置</title><link>/zh/docs/preferences/</link><description>Recent content in 设置 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 代码编辑</title><link>/zh/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/code-edit/</guid><description>
 &lt;h3 id="缩进宽度">缩进宽度&lt;/h3>
-&lt;p>设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 &lt;a href="#%e8%87%aa%e5%8a%a8%e7%bc%a9%e8%bf%9b">自动缩进&lt;/a> 和 &lt;a href="#%e5%b0%86%e5%88%b6%e8%a1%a8%e7%ac%a6%e6%9b%bf%e6%8d%a2%e4%b8%ba%e7%a9%ba%e6%a0%bc">将制表符替换为空格&lt;/a> 产生影响。&lt;/p>
+&lt;p>设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对
+&lt;a href="/zh/#%e8%87%aa%e5%8a%a8%e7%bc%a9%e8%bf%9b">自动缩进&lt;/a>
+和
+&lt;a href="/zh/#%e5%b0%86%e5%88%b6%e8%a1%a8%e7%ac%a6%e6%9b%bf%e6%8d%a2%e4%b8%ba%e7%a9%ba%e6%a0%bc">将制表符替换为空格&lt;/a>
+产生影响。&lt;/p>
 &lt;h3 id="自动缩进">自动缩进&lt;/h3>
 &lt;ol>
 &lt;li>当代码另起一行时，该行将和上一行拥有相同的缩进。&lt;/li>
-&lt;li>如果上一行以 &lt;code>{&lt;/code> 结束，该行将会插入一个额外的缩进（一个制表符或 &lt;a href="#%e7%bc%a9%e8%bf%9b%e5%ae%bd%e5%ba%a6">缩进宽度&lt;/a> 个空格，取决于 &lt;a href="#%e5%b0%86%e5%88%b6%e8%a1%a8%e7%ac%a6%e6%9b%bf%e6%8d%a2%e4%b8%ba%e7%a9%ba%e6%a0%bc">将制表符替换为空格&lt;/a> 选项是否开启）。&lt;/li>
+&lt;li>如果上一行以 &lt;code>{&lt;/code> 结束，该行将会插入一个额外的缩进（一个制表符或
+&lt;a href="/zh/#%e7%bc%a9%e8%bf%9b%e5%ae%bd%e5%ba%a6">缩进宽度&lt;/a>
+个空格，取决于
+&lt;a href="/zh/#%e5%b0%86%e5%88%b6%e8%a1%a8%e7%ac%a6%e6%9b%bf%e6%8d%a2%e4%b8%ba%e7%a9%ba%e6%a0%bc">将制表符替换为空格&lt;/a>
+选项是否开启）。&lt;/li>
 &lt;/ol>
 &lt;h3 id="文本自动换行">文本自动换行&lt;/h3>
 &lt;p>如果某一行的字符数超出了屏幕的宽度，则该行的内容将会折成多行显示。&lt;/p>
 &lt;h3 id="自动补全括号">自动补全括号&lt;/h3>
 &lt;p>在输入左括号时自动插入右括号。例如，当你输入一个 &lt;code>(&lt;/code> 时，将会自动加入一个 &lt;code>)&lt;/code>。&lt;/p>
 &lt;p>如果光标处右边的第一个字符是右括号，而你输入了一个右括号，光标将会自动跳到该右括号后面，而不再输入右括号。&lt;/p>
-&lt;p>你可以在各语言的 &lt;a href="../language#%e6%8b%ac%e5%8f%b7">括号&lt;/a> 设置中设置各语言自动补全的括号类型。&lt;/p>
+&lt;p>你可以在各语言的
+&lt;a href="/zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7">括号&lt;/a>
+设置中设置各语言自动补全的括号类型。&lt;/p>
 &lt;h3 id="自动删除括号">自动删除括号&lt;/h3>
 &lt;p>在删除一个左括号时，如果其右侧有一个右括号相邻，则该右括号也会被自动删除。&lt;/p>
-&lt;p>你可以在各语言的 &lt;a href="../language#%e6%8b%ac%e5%8f%b7">括号&lt;/a> 设置中设置各语言自动删除的括号类型。&lt;/p>
+&lt;p>你可以在各语言的
+&lt;a href="/zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7">括号&lt;/a>
+设置中设置各语言自动删除的括号类型。&lt;/p>
 &lt;h3 id="在按下-tab-键时跳出括号">在按下 Tab 键时跳出括号&lt;/h3>
-&lt;p>如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果 &lt;a href="#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7">自动补全括号&lt;/a> 选项被启用，这种方式可以作为输入右括号的另一种方式。&lt;/p>
-&lt;p>你可以在各语言的 &lt;a href="../language#%e6%8b%ac%e5%8f%b7">括号&lt;/a> 设置中设置各语言按下 Tab 时自动跳出的括号类型。&lt;/p>
+&lt;p>如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果
+&lt;a href="/zh/#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7">自动补全括号&lt;/a>
+选项被启用，这种方式可以作为输入右括号的另一种方式。&lt;/p>
+&lt;p>你可以在各语言的
+&lt;a href="/zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7">括号&lt;/a>
+设置中设置各语言按下 Tab 时自动跳出的括号类型。&lt;/p>
 &lt;h3 id="将制表符替换为空格">将制表符替换为空格&lt;/h3>
-&lt;p>当插入一个缩进时，插入与 &lt;a href="#%e7%bc%a9%e8%bf%9b%e5%ae%bd%e5%ba%a6">缩进宽度&lt;/a> 数目相等的空格来代替制表符。&lt;/p>
-&lt;p>该设置不会影响文件中已经存在的空格。在 &lt;a href="#%e8%87%aa%e5%8a%a8%e7%bc%a9%e8%bf%9b">自动缩进&lt;/a> 选项中，如果上一行使用了制表符作为缩进，新的一行仍然会使用制表符缩进。但如果上一行以 &lt;code>{&lt;/code> 结束，新的一行插入的额外缩进将会使用空格。&lt;/p></description></item><item><title>Docs: 语言</title><link>/zh/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/language/</guid><description>
+&lt;p>当插入一个缩进时，插入与
+&lt;a href="/zh/#%e7%bc%a9%e8%bf%9b%e5%ae%bd%e5%ba%a6">缩进宽度&lt;/a>
+数目相等的空格来代替制表符。&lt;/p>
+&lt;p>该设置不会影响文件中已经存在的空格。在
+&lt;a href="/zh/#%e8%87%aa%e5%8a%a8%e7%bc%a9%e8%bf%9b">自动缩进&lt;/a>
+选项中，如果上一行使用了制表符作为缩进，新的一行仍然会使用制表符缩进。但如果上一行以 &lt;code>{&lt;/code> 结束，新的一行插入的额外缩进将会使用空格。&lt;/p></description></item><item><title>Docs: 语言</title><link>/zh/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/language/</guid><description>
 &lt;h2 id="通用">通用&lt;/h2>
 &lt;h3 id="默认编程语言">默认编程语言&lt;/h3>
 &lt;p>设置打开新标签时使用的默认编程语言。&lt;/p>
@@ -32,12 +52,16 @@
 &lt;p>详细的编译选项请参考编译器的文档。&lt;/p>
 &lt;h4 id="c-可执行文件路径">C++ 可执行文件路径&lt;/h4>
 &lt;p>设置可执行文件的路径，即编译命令中 &lt;code>-o&lt;/code> 选项后的参数。&lt;/p>
-&lt;p>如果使用了相对路径，则可执行文件的位置将和源代码位置有关（如果当前标签是未命名标签，则可执行文件位置将和 &lt;a href="../general#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9">临时文件夹&lt;/a> 的位置有关）。&lt;/p>
+&lt;p>如果使用了相对路径，则可执行文件的位置将和源代码位置有关（如果当前标签是未命名标签，则可执行文件位置将和
+&lt;a href="/zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9">临时文件夹&lt;/a>
+的位置有关）。&lt;/p>
 &lt;p>该设置中，你可以使用如下参数：&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${filename}&lt;/code>：源代码的完整文件名。如果当前标签是未命名标签，则完整文件名是 &lt;code>sol.cpp&lt;/code>。&lt;/li>
 &lt;li>&lt;code>${basename}&lt;/code>：将 &lt;code>${filename}&lt;/code> 去掉扩展名（&lt;code>.cpp&lt;/code> 等）后的文件名。&lt;/li>
-&lt;li>&lt;code>${tmpdir}&lt;/code> 或 &lt;code>${tempdir}&lt;/code>：&lt;a href="../general#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9">临时文件夹&lt;/a> 的路径。&lt;/li>
+&lt;li>&lt;code>${tmpdir}&lt;/code> 或 &lt;code>${tempdir}&lt;/code>：
+&lt;a href="/zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9">临时文件夹&lt;/a>
+的路径。&lt;/li>
 &lt;/ul>
 &lt;p>例如，使用 &lt;code>${tmpdir}/${basename}&lt;/code> 将会把可执行文件存储在临时文件夹下。如果你不想要存储可执行文件的话，可以这样设定路径。而 &lt;code>executables/${basename}&lt;/code> 将会把可执行文件存储在源代码所在目录的下的 &lt;code>executables&lt;/code> 文件夹。&lt;/p>
 &lt;h4 id="c-运行参数">C++ 运行参数&lt;/h4>
@@ -51,7 +75,9 @@
 &lt;p>该命令中不应包含源代码和类路径，CP Editor 将会自动添加它们。&lt;/p>
 &lt;h4 id="java-类路径">Java 类路径&lt;/h4>
 &lt;p>设置编译后存储 Java 类文件的位置。&lt;/p>
-&lt;p>更多细节详见 &lt;a href="#c-%e5%8f%af%e6%89%a7%e8%a1%8c%e6%96%87%e4%bb%b6%e8%b7%af%e5%be%84">C++ 可执行文件路径&lt;/a>。&lt;/p>
+&lt;p>更多细节详见
+&lt;a href="/zh/#c-%e5%8f%af%e6%89%a7%e8%a1%8c%e6%96%87%e4%bb%b6%e8%b7%af%e5%be%84">C++ 可执行文件路径&lt;/a>
+。&lt;/p>
 &lt;h4 id="java-类名称">Java 类名称&lt;/h4>
 &lt;p>设置你的源代码中主类的名字。&lt;/p>
 &lt;p>源代码的名字不必与主类名相同。当编译时，CP Editor 将会自动将源代码保存在一个与主类名称相同的文件中。&lt;/p>
@@ -61,7 +87,9 @@
 &lt;h4 id="java-运行参数">Java 运行参数&lt;/h4>
 &lt;p>设置执行 Java 程序需要的参数。在算法竞赛中一般留空即可。&lt;/p>
 &lt;h4 id="java-编译器输出源码">Java 编译器输出源码&lt;/h4>
-&lt;p>详见 &lt;a href="#c-%e7%bc%96%e8%af%91%e5%99%a8%e8%be%93%e5%87%ba%e7%bc%96%e7%a0%81">C++ 编译器输出编码&lt;/a>。&lt;/p>
+&lt;p>详见
+&lt;a href="/zh/#c-%e7%bc%96%e8%af%91%e5%99%a8%e8%be%93%e5%87%ba%e7%bc%96%e7%a0%81">C++ 编译器输出编码&lt;/a>
+。&lt;/p>
 &lt;h3 id="python-命令">Python 命令&lt;/h3>
 &lt;h4 id="python-运行命令">Python 运行命令&lt;/h4>
 &lt;p>设置运行 Python 源代码的命令。一般为 &lt;code>python&lt;/code>，&lt;code>python2&lt;/code> 或 &lt;code>python3&lt;/code>。&lt;/p>
@@ -75,7 +103,9 @@
 &lt;p>设置使用模板时光标所在的初始位置。&lt;/p>
 &lt;p>该设置包含三部分。&lt;/p>
 &lt;ol>
-&lt;li>&lt;a href="../general#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f">正则表达式&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="/zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f">正则表达式&lt;/a>
+&lt;/li>
 &lt;li>偏移类型：开头或末尾。&lt;/li>
 &lt;li>偏移量：一个数字，可以为负值。&lt;/li>
 &lt;/ol>
@@ -99,13 +129,21 @@
 &lt;p>当你在挑选代码片段时，你可以在搜索框中输入代码片段名的前几个字符，以更快找到相应的片段。&lt;/p>
 &lt;h2 id="括号">括号&lt;/h2>
 &lt;p>你可以为各编程语言设置相应的括号补全选项。&lt;/p>
-&lt;p>每个设置有三种状态：开启，关闭或默认。如果处于默认状态，将应用 &lt;a href="../code-edit">代码编辑&lt;/a> 中的设置，否则将会使用这里的设置。&lt;/p>
+&lt;p>每个设置有三种状态：开启，关闭或默认。如果处于默认状态，将应用
+&lt;a href="/zh/docs/preferences/code-edit/">代码编辑&lt;/a>
+中的设置，否则将会使用这里的设置。&lt;/p>
 &lt;h3 id="自动补全">自动补全&lt;/h3>
-&lt;p>详见 &lt;a href="../code-edit#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7">代码编辑/自动补全括号&lt;/a>。&lt;/p>
+&lt;p>详见
+&lt;a href="/zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7">代码编辑/自动补全括号&lt;/a>
+。&lt;/p>
 &lt;h3 id="自动删除">自动删除&lt;/h3>
-&lt;p>详见 &lt;a href="../code-edit#%e8%87%aa%e5%8a%a8%e5%88%a0%e9%99%a4%e6%8b%ac%e5%8f%b7">代码编辑/自动删除括号&lt;/a>。&lt;/p>
+&lt;p>详见
+&lt;a href="/zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e5%88%a0%e9%99%a4%e6%8b%ac%e5%8f%b7">代码编辑/自动删除括号&lt;/a>
+。&lt;/p>
 &lt;h3 id="按-tab-键跳出">按 Tab 键跳出&lt;/h3>
-&lt;p>详见 &lt;a href="../code-edit#%e5%9c%a8%e6%8c%89%e4%b8%8b-tab-%e9%94%ae%e6%97%b6%e8%b7%b3%e5%87%ba%e6%8b%ac%e5%8f%b7">代码编辑/在按下 Tab 键时跳出括号&lt;/a>。&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
+&lt;p>详见
+&lt;a href="/zh/docs/preferences/code-edit/#%e5%9c%a8%e6%8c%89%e4%b8%8b-tab-%e9%94%ae%e6%97%b6%e8%b7%b3%e5%87%ba%e6%8b%ac%e5%8f%b7">代码编辑/在按下 Tab 键时跳出括号&lt;/a>
+。&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
 &lt;h2 id="通用">通用&lt;/h2>
 &lt;h3 id="界面语言-ui-language">界面语言 (UI Language)&lt;/h3>
 &lt;p>UI 中使用的自然语言。&lt;/p>
@@ -141,7 +179,11 @@
 &lt;p>对 UI 用自定义字体（代码编辑器，测试用例，消息等除外）来替代系统字体。&lt;/p></description></item><item><title>Docs: Actions</title><link>/zh/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>
 &lt;h3 id="save-files-faster">Save Files Faster&lt;/h3>
-&lt;p>Use &lt;a href="https://doc.qt.io/qt-5/qfile.html" target="_blank">&lt;code>QFile&lt;/code>&lt;/a> instead of &lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank">&lt;code>QSaveFile&lt;/code>&lt;/a> to save files.&lt;/p>
+&lt;p>Use
+&lt;a href="https://doc.qt.io/qt-5/qfile.html" target="_blank">&lt;code>QFile&lt;/code>&lt;/a>
+instead of
+&lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank">&lt;code>QSaveFile&lt;/code>&lt;/a>
+to save files.&lt;/p>
 &lt;p>This is slightly unsafer but notably faster.&lt;/p>
 &lt;h3 id="save-file-on-compilation">Save File On Compilation&lt;/h3>
 &lt;p>Save your code when compiling it.&lt;/p>
@@ -149,7 +191,9 @@
 &lt;p>Save your code when executing it.&lt;/p>
 &lt;h3 id="save-testcases-on-save">Save Testcases on Save&lt;/h3>
 &lt;p>Save the test cases on the disk when saving the code.&lt;/p>
-&lt;p>You can choose where to save the test cases in &lt;a href="../file-path#testcases">File Path/Testcases&lt;/a>.&lt;/p>
+&lt;p>You can choose where to save the test cases in
+&lt;a href="/zh/docs/preferences/file-path/#testcases">File Path/Testcases&lt;/a>
+.&lt;/p>
 &lt;h2 id="auto-save">Auto Save&lt;/h2>
 &lt;h3 id="auto-save-interval-type">Auto Save Interval Type&lt;/h3>
 &lt;p>It is easier to describe if we explain a little bit about the internal implementation: There is a countdown timer. When we &amp;ldquo;reset&amp;rdquo; it, it will be &amp;ldquo;running&amp;rdquo; in the next &lt;em>Auto Save Interval&lt;/em> milliseconds, and after &lt;em>Auto Save Interval&lt;/em> milliseconds, the timer will &amp;ldquo;timeout&amp;rdquo; and the code is auto-saved.&lt;/p>
@@ -193,34 +237,56 @@
 &lt;h3 id="ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/h3>
 &lt;p>If the file is changed outside of CP Editor, ask whether to load the change or not.&lt;/p>
 &lt;p>If this setting is disabled, external changes won&amp;rsquo;t be loaded.&lt;/p>
-&lt;p>&lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> overrides this setting. i.e. if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is enabled, external file changes will be loaded without confrimation regardless of &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> ; if &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a> is disabled, the user will be asked whether to load the changes only when &lt;a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a> is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/zh/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/extensions/</guid><description>
+&lt;p>
+&lt;a href="/zh/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
+overrides this setting. i.e. if
+&lt;a href="/zh/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
+is enabled, external file changes will be loaded without confrimation regardless of
+&lt;a href="/zh/#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a>
+; if
+&lt;a href="/zh/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
+is disabled, the user will be asked whether to load the changes only when
+&lt;a href="/zh/#ask-whether-to-load-external-file-changes">Ask whether to load external file changes&lt;/a>
+is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/zh/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/extensions/</guid><description>
 &lt;h2 id="code-formatting">Code Formatting&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#clang-format">Setup Clang Format&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/zh/docs/setup/#setup-clang-format">Setup Clang Format&lt;/a>
+.&lt;/p>
 &lt;h4 id="program">Program&lt;/h4>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
 &lt;h4 id="arguments">Arguments&lt;/h4>
 &lt;p>The arguments passed to &lt;code>clang-format&lt;/code>. It should NOT contain &lt;code>-i&lt;/code> (the in-place modification option).&lt;/p>
 &lt;h4 id="style">Style&lt;/h4>
 &lt;p>The Clang Format style. The content here is the same as the content of a &lt;code>.clang-format&lt;/code> file.&lt;/p>
-&lt;p>You can read &lt;a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">Clang-Format Style Options documentation&lt;/a> or search for other materials to learn how to write the styles.&lt;/p>
+&lt;p>You can read
+&lt;a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">Clang-Format Style Options documentation&lt;/a>
+or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h3 id="yapf">YAPF&lt;/h3>
 &lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#yapf">Setup YAPF&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/zh/docs/setup/#yapf">Setup YAPF&lt;/a>
+.&lt;/p>
 &lt;h4 id="program-1">Program&lt;/h4>
 &lt;p>The program of YAPF. It could be one of:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>yapf&lt;/code>: You should be able to run &lt;code>yapf&lt;/code> in the command line. The arguments can be empty.&lt;/li>
 &lt;li>A Python interpreter, i.e. &lt;code>python&lt;/code>, &lt;code>python2&lt;/code>, etc. or the path to an interpreter. The arguments should be &lt;code>-m yapf&lt;/code>.&lt;/li>
 &lt;/ul>
-&lt;p>Note that &lt;a href="https://github.com/google/yapf#python-versions" target="_blank">you need to use Python 2 to format Python 2, use Python 3 to format Python 3&lt;/a>. So you may need to choose the correct Python interpreter.&lt;/p>
+&lt;p>Note that
+&lt;a href="https://github.com/google/yapf#python-versions" target="_blank">you need to use Python 2 to format Python 2, use Python 3 to format Python 3&lt;/a>
+. So you may need to choose the correct Python interpreter.&lt;/p>
 &lt;h4 id="arguments-1">Arguments&lt;/h4>
 &lt;p>The arguments passed to the YAPF program. This should be &lt;code>-m yapf&lt;/code> if the program is a Python interpreter. It should NOT contain &lt;code>-i&lt;/code> (the in-place modification option).&lt;/p>
 &lt;h4 id="style-1">Style&lt;/h4>
-&lt;p>The YAPF Format style. The content here is the same as the content of a &lt;code>.style.yapf&lt;/code> file. You can check all possible configuration by running &lt;code>yapf --style-help&lt;/code>, read the &lt;a href="https://github.com/google/yapf#formatting-style" target="_blank">documentation&lt;/a> or search for other materials to learn how to write the styles.&lt;/p>
+&lt;p>The YAPF Format style. The content here is the same as the content of a &lt;code>.style.yapf&lt;/code> file. You can check all possible configuration by running &lt;code>yapf --style-help&lt;/code>, read the
+&lt;a href="https://github.com/google/yapf#formatting-style" target="_blank">documentation&lt;/a>
+or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h2 id="language-server">Language Server&lt;/h2>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-language-server">Setup Language Server&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/zh/docs/setup/#setup-language-server">Setup Language Server&lt;/a>
+.&lt;/p>
 &lt;h3 id="use-linting-with-language-server">Use Linting with Language Server&lt;/h3>
 &lt;p>Use language server to lint errors, warnings, hints, etc.&lt;/p>
 &lt;p>You can hover over the squiggles to see the tooltips for the explaination of the errors/warnings.&lt;/p>
@@ -232,7 +298,9 @@
 &lt;p>Additional arguments for the language server program. See the documentation of the language server program you are using for more information.&lt;/p>
 &lt;p>For example, if you are using &lt;code>pyls&lt;/code> for Python, you probably want to use &lt;code>python&lt;/code> as the language server program, and use &lt;code>-m pyls&lt;/code> as the arguments.&lt;/p>
 &lt;h2 id="competitive-companion">Competitive Companion&lt;/h2>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-competitive-companion">Setup Competitive Companion&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/zh/docs/setup/#setup-competitive-companion">Setup Competitive Companion&lt;/a>
+.&lt;/p>
 &lt;h3 id="open-new-tabs">Open New Tabs&lt;/h3>
 &lt;p>Open a new tab when a problem is parsed.&lt;/p>
 &lt;p>If this is disabled, when parsing a problem, the test cases in the current tab will be replaced by the new test cases.&lt;/p>
@@ -245,19 +313,35 @@
 &lt;h4 id="content">Content&lt;/h4>
 &lt;p>The content of the head comments. You can use the following place holders:&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>${time}&lt;/code>: The time when the problem was parsed. The time format can be set in &lt;a href="#time-format">Time format for the head comments&lt;/a>.&lt;/li>
-&lt;li>&lt;code>${json.X.Y}&lt;/code>: An attribute of the data provided by Competitive Companion. You can read more about the attributes in &lt;a href="https://github.com/jmerle/competitive-companion#explanation" target="_blank">the documentation of Competitive Companion&lt;/a>. For example, &lt;code>${json.name}&lt;/code> is the name of the problem.&lt;/li>
+&lt;li>&lt;code>${time}&lt;/code>: The time when the problem was parsed. The time format can be set in
+&lt;a href="/zh/#time-format">Time format for the head comments&lt;/a>
+.&lt;/li>
+&lt;li>&lt;code>${json.X.Y}&lt;/code>: An attribute of the data provided by Competitive Companion. You can read more about the attributes in
+&lt;a href="https://github.com/jmerle/competitive-companion#explanation" target="_blank">the documentation of Competitive Companion&lt;/a>
+. For example, &lt;code>${json.name}&lt;/code> is the name of the problem.&lt;/li>
 &lt;/ul>
 &lt;h4 id="time-format">Time Format&lt;/h4>
 &lt;p>The format of the &lt;code>${time}&lt;/code> place holder in the head comments. You can read the Qt documentation for available expressions:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://doc.qt.io/qt-5/qdate.html#toString" target="_blank">Date Format&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://doc.qt.io/qt-5/qtime.html#toString" target="_blank">Time Format&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://doc.qt.io/qt-5/qdate.html#toString" target="_blank">Date Format&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://doc.qt.io/qt-5/qtime.html#toString" target="_blank">Time Format&lt;/a>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="cf-tool">CF Tool&lt;/h2>
-&lt;p>You can use &lt;a href="https://github.com/xalanq/cf-tool/" target="_blank">CF Tool&lt;/a> to submit your solutions to &lt;a href="https://codeforces.com" target="_blank">Codeforces&lt;/a>.&lt;/p>
-&lt;p>To submit a solution, you have to either parse a problem by &lt;a href="#competitive-companion">Competitive Companion&lt;/a> from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
-&lt;p>&lt;strong>See also&lt;/strong> &lt;a href="../../setup#setup-cf-tool">Setup CF Tool&lt;/a>.&lt;/p>
+&lt;p>You can use
+&lt;a href="https://github.com/xalanq/cf-tool/" target="_blank">CF Tool&lt;/a>
+to submit your solutions to
+&lt;a href="https://codeforces.com" target="_blank">Codeforces&lt;/a>
+.&lt;/p>
+&lt;p>To submit a solution, you have to either parse a problem by
+&lt;a href="/zh/#competitive-companion">Competitive Companion&lt;/a>
+from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="/zh/docs/setup/#setup-cf-tool">Setup CF Tool&lt;/a>
+.&lt;/p>
 &lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>cf&lt;/code> executable file, or simply &lt;code>cf&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
 &lt;h3 id="show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts&lt;/h3>
@@ -266,7 +350,9 @@
 &lt;p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.&lt;/p></description></item><item><title>Docs: File Path</title><link>/zh/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/file-path/</guid><description>
 &lt;h2 id="testcases">Testcases&lt;/h2>
 &lt;h3 id="input-file-save-path--answer-file-save-path">Input File Save Path &amp;amp; Answer File Save Path&lt;/h3>
-&lt;p>The path where the test cases are &lt;a href="../actions#save-testcases-on-save">saved&lt;/a>. If it is a relative path, it is relative to the source file.&lt;/p>
+&lt;p>The path where the test cases are
+&lt;a href="/zh/docs/preferences/actions/#save-testcases-on-save">saved&lt;/a>
+. If it is a relative path, it is relative to the source file.&lt;/p>
 &lt;p>You can use the following place holders:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${filename}&lt;/code>: the complete file name&lt;/li>
@@ -284,13 +370,17 @@
 &lt;p>If the path is &lt;code>testcases/${basename}-${1-index}.in&lt;/code>, the input of this test case will be saved in &lt;code>/a/b/testcases/c-3.in&lt;/code>.&lt;/p>
 &lt;h3 id="testcases-matching-rules">Testcases Matching Rules&lt;/h3>
 &lt;p>The rules used to match test cases when loading pairs of test cases.&lt;/p>
-&lt;p>Each rule is a pair of &lt;a href="../general#regular-expression">regular expression patterns&lt;/a>. The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.&lt;/p>
+&lt;p>Each rule is a pair of
+&lt;a href="/zh/docs/preferences/general/#regular-expression">regular expression patterns&lt;/a>
+. The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.&lt;/p>
 &lt;p>For example, you can use &lt;code>(.+)\.in&lt;/code> and &lt;code>\1.out&lt;/code> to match &lt;code>test-1.in&lt;/code> and &lt;code>test-1.out&lt;/code>, or use &lt;code>(.+)\.in\.(\d+)&lt;/code> and &lt;code>\1.ans.\2&lt;/code> to match &lt;code>test.in.3&lt;/code> and &lt;code>test.ans.3&lt;/code>.&lt;/p>
 &lt;p>When loading pairs of test cases, each rule which matches an input file will be used to try to find the corresponding answer file to the input file.&lt;/p>
 &lt;h2 id="problem-url">Problem URL&lt;/h2>
 &lt;h3 id="default-file-path-for-problem-urls">Default File Path For Problem URLs&lt;/h3>
 &lt;p>The default path when choosing where to save an untitled tab with problem URL.&lt;/p>
-&lt;p>Each rule is a pair of &lt;a href="../general#regular-expression">regular expression patterns&lt;/a>. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.&lt;/p>
+&lt;p>Each rule is a pair of
+&lt;a href="/zh/docs/preferences/general/#regular-expression">regular expression patterns&lt;/a>
+. The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.&lt;/p>
 &lt;p>When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.&lt;/p>
 &lt;p>Here&amp;rsquo;s an example of a rule:&lt;/p>
 &lt;p>The problem URL regex: &lt;code>codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)&lt;/code>&lt;/p>
@@ -347,6 +437,10 @@
 &lt;p>你可以将其视为一个能够安全地为每个标签页（即每个文件）保存内容而不影响磁盘上其他文件的地方，并且在关闭标签页时它会被自动删除。&lt;/p>
 &lt;p>在 Linux 上，它位于 &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>。在 Windows 上，它位于 &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>。&lt;/p>
 &lt;h3 id="正则表达式">正则表达式&lt;/h3>
-&lt;p>&lt;a href="https://baike.baidu.com/item/%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" target="_blank">正则表达式&lt;/a> 用于匹配字符串中的模式以及查找和替换子字符串。&lt;/p>
-&lt;p>你可以找到许多在线正则表达式课程，例如：&lt;a href="https://deerchao.cn/tutorials/regex/regex.htm" target="_blank">正则表达式30分钟入门教程&lt;/a>。.&lt;/p>
+&lt;p>
+&lt;a href="https://baike.baidu.com/item/%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" target="_blank">正则表达式&lt;/a>
+用于匹配字符串中的模式以及查找和替换子字符串。&lt;/p>
+&lt;p>你可以找到许多在线正则表达式课程，例如：
+&lt;a href="https://deerchao.cn/tutorials/regex/regex.htm" target="_blank">正则表达式30分钟入门教程&lt;/a>
+。.&lt;/p>
 &lt;p>在 CP Editor 中，你可以使用 &lt;code>\1&lt;/code>, &lt;code>\2&lt;/code> 等用于替换模式中的第一个/第二个捕获组的内容。&lt;/p></description></item></channel></rss>

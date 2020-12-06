@@ -163,7 +163,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
+  data-offline-search-index-json-src="/offline-search-index.ac167c29580e58a7bf14c019f3140fb8.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -195,7 +195,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.727e0c0755c140346eba95c50753510c.json"
+  data-offline-search-index-json-src="/offline-search-index.ac167c29580e58a7bf14c019f3140fb8.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -700,7 +700,7 @@ if (!doNotTrack) {
 
 
 
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/Preferences/Language/_index.ru.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Отредактировать страницу</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/preferences/language/_index.ru.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Отредактировать страницу</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Language" target="_blank"><i class="fab fa-github fa-fw"></i> Предложить изменения документации</a>
 
 
@@ -771,11 +771,6 @@ if (!doNotTrack) {
 
 
 
-<div class="pageinfo pageinfo-primary">
-    The <a href='/docs/preferences/language/'>English version</a> of this page <a href='https://github.com/cpeditor/cpeditor.github.io/commits/hugo/content/docs/Preferences/Language/_index.md'>has changed</a>. This page may be outdated.
-    You can help us <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/Preferences/Language/_index.ru.md'>translate this page</a>.
-</div>
-
 
 
           <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
@@ -828,14 +823,18 @@ if (!doNotTrack) {
 <p>For compilation flags, please refer to the manual of the compiler. For example, you may want to add <code>-std=c++14</code> in the compile command to use C++14.</p>
 <h4 id="c-executable-file-path">C++ Executable File Path</h4>
 <p>The path of the executable file, i.e. the argument of the <code>-o</code> option of the compiler.</p>
-<p>If this path is a relative path, then it&rsquo;s relative to the source file (if it&rsquo;s an untitled tab, then relative to the <a href="../general#temporary-directory">Temporary Directory</a>).</p>
+<p>If this path is a relative path, then it&rsquo;s relative to the source file (if it&rsquo;s an untitled tab, then relative to the 
+<a href="/ru/docs/preferences/general/#temporary-directory">Temporary Directory</a>
+).</p>
 <p>You can use some place holders for this setting:</p>
 <ul>
 <li><code>${filename}</code>: The complete name of the source file. If it&rsquo;s an untitled tab (i.e. an unsaved file), the complete file name is <code>sol.cpp</code>.</li>
 <li><code>${basename}</code>: <code>${filename}</code> without the suffix (i.e. without <code>.cpp</code>, etc.).</li>
-<li><code>${tmpdir}</code> or <code>${tempdir}</code>: The path of the <a href="../general#temporary-directory">Temporary Directory</a>.</li>
+<li><code>${tmpdir}</code> or <code>${tempdir}</code>: The path of the 
+<a href="/ru/docs/preferences/general/#temporary-directory">Temporary Directory</a>
+.</li>
 </ul>
-<p>For example, you can use <code>${tmpdir}/${basename}</code> if you don&rsquo;t want to keep the executable files, or <code>executables/${basename}</code> if you want to keep all executable files in the <code>executables</code> directory in the parent directory of the source file.</p>
+<p>For example, you can use <code>${tmpdir}/${basename}</code> if you don&rsquo;t want to keep the executable files, or <code>executables/${basename}</code> if you want to keep all executable files in the <code>executables</code> directory under the directory of the source file.</p>
 <h4 id="c-run-arguments">C++ Run Arguments</h4>
 <p>The arguments passed to the program when executing it. It&rsquo;s usually not needed in competitive programming.</p>
 <h4 id="c-compiler-output-codec">C++ Compiler Output Codec</h4>
@@ -847,7 +846,9 @@ if (!doNotTrack) {
 <p>The command shouldn&rsquo;t contain the source file and the class path, CP Editor automatically adds them.</p>
 <h4 id="java-class-path">Java Class Path</h4>
 <p>The path to save the class files.</p>
-<p>Please refer to <a href="#c-executable-file-path">C++ Executable File Path</a> for the details.</p>
+<p>Please refer to 
+<a href="/ru/#c-executable-file-path">C++ Executable File Path</a>
+ for the details.</p>
 <h4 id="java-class-name">Java Class Name</h4>
 <p>The name of the main class of your solution.</p>
 <p>You can use arbitary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.</p>
@@ -857,7 +858,9 @@ if (!doNotTrack) {
 <h4 id="java-run-arguments">Java Run Arguments</h4>
 <p>The arguments passed to the program when executing it. It&rsquo;s usually not needed in competitive programming.</p>
 <h4 id="java-compiler-output-codec">Java Compiler Output Codec</h4>
-<p>Please refer to <a href="#c-compiler-output-codec">C++ Compiler Output Codec</a>.</p>
+<p>Please refer to 
+<a href="/ru/#c-compiler-output-codec">C++ Compiler Output Codec</a>
+.</p>
 <h3 id="python-commands">Python Commands</h3>
 <h4 id="python-run-command">Python Run Command</h4>
 <p>The command to run a python code. It&rsquo;s usually one of <code>python</code>/<code>python2</code>/<code>python3</code>.</p>
@@ -871,7 +874,9 @@ if (!doNotTrack) {
 <p>The initial position of the text cursor when opening the template.</p>
 <p>It contains three parts:</p>
 <ol>
-<li><a href="../general#regular-expression">Regex</a></li>
+<li>
+<a href="/ru/docs/preferences/general/#regular-expression">Regex</a>
+</li>
 <li>Offset type: start or end.</li>
 <li>Offset characters: a number, could be negative.</li>
 </ol>
@@ -896,13 +901,23 @@ if (!doNotTrack) {
 <p>When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.</p>
 <h2 id="parentheses">Parentheses</h2>
 <p>You can set the parentheses settings for each language and each parenthesis.</p>
-<p>Each setting has three states: enable, disable and default. If it&rsquo;s default, it uses the settings in the <a href="../code-edit">Code Edit</a> page. Otherwise, it overwrites the settings in the <a href="../code-edit">Code Edit</a> page.</p>
+<p>Each setting has three states: enable, disable and default. If it&rsquo;s default, it uses the settings in the 
+<a href="/ru/docs/preferences/code-edit/">Code Edit</a>
+ page. Otherwise, it overwrites the settings in the 
+<a href="/ru/docs/preferences/code-edit/">Code Edit</a>
+ page.</p>
 <h3 id="auto-complete">Auto Complete</h3>
-<p>See <a href="../code-edit#auto-complete-parentheses">Code Edit/Auto Complete Parentheses</a>.</p>
+<p>See 
+<a href="/ru/docs/preferences/code-edit/#auto-complete-parentheses">Code Edit/Auto Complete Parentheses</a>
+.</p>
 <h3 id="auto-remove">Auto Remove</h3>
-<p>See <a href="../code-edit#auto-remove-parentheses">Code Edit/Auto Remove Parentheses</a>.</p>
+<p>See 
+<a href="/ru/docs/preferences/code-edit/#auto-remove-parentheses">Code Edit/Auto Remove Parentheses</a>
+.</p>
 <h3 id="tab-jump-out">Tab Jump Out</h3>
-<p>See <a href="../code-edit#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab</a>.</p>
+<p>See 
+<a href="/ru/docs/preferences/code-edit/#jump-out-of-a-parenthesis-by-pressing-tab">Code Edit/Jump out of a parenthesis by pressing Tab</a>
+.</p>
 
         <div class="section-index">
     
@@ -1016,7 +1031,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Изменено October 18, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8a41ef162826a97d858e37406c06d5ab28c542cc">refactor: use translation by file name (#88) (8a41ef1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Изменено December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5)</a>
 </div>
 </div>
 
