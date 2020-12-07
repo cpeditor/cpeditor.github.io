@@ -142,7 +142,7 @@ When choosing a snippet, you can enter the first few characters of the snippet n
 
 You can set the parentheses settings for each language and each parenthesis.
 
-Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Editing](../code-editing/_index.ru.md) page. Otherwise, it overwrites the settings in the [Code Editing](../code-edit/_index.ru.md) page.
+Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Editing](../code-editing/_index.ru.md) page. Otherwise, it overwrites the settings in the [Code Editing](../code-editing/_index.ru.md) page.
 
 ### Auto Complete
 
