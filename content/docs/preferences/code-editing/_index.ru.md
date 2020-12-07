@@ -1,5 +1,5 @@
 ---
-title: "Code Edit"
+title: "Code Editing"
 weight: 10
 ---
 

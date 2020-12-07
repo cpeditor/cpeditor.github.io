@@ -1,5 +1,5 @@
 ---
-title: "Code Edit"
+title: "Code Editing"
 weight: 10
 ---
 
@@ -41,3 +41,15 @@ You can choose the parentheses to jump out by Tab in the [Parentheses](../langua
 When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the [Tab Width](#tab-width).
 
 Note that this won't replace the existing tab characters. In [Auto Indent](#auto-indent), the tab characters in the old line will remain in the new line (however, the new indent inserted after `{` will be spaces).
+
+### Highlight Current line
+
+If enabled, the current line number will be highlighted from the rest of the lines. In vim mode current line is never highlighted.
+
+### Enable Vim emulation
+
+If enabled, code editor will emulate vim behaviour. In vim emulation, Control Key such as <kbd>Ctrl+N</kbd> will not be intercepted by CP Editor but by Code Editor. We provide some custom commands that can perform various tasks like opening new tab, running testcases etc. [Here](../general/_index.md#custom-vim-commands) is a list of all supported custom vim commands.
+
+### Vim configuration
+
+The configuration to use in vim mode. The list of all supported vim commands are listed [here](../general/_index.md#vim-commands)
