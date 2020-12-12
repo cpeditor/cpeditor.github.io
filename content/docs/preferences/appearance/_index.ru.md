@@ -35,7 +35,7 @@ The maximum height of a test case before the scrollbar occurs.
 
 Hide the compile only and run only buttons.
 
-It is useful if you don't care about the time used on compilation, or you are using Python which doesn't need to be compiled.
+It can be useful if you don't care about the time used on compilation.
 
 ### Display EOLN in Diff
 
