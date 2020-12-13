@@ -162,7 +162,7 @@ page.&lt;/p>
 &lt;p>The maximum height of a test case before the scrollbar occurs.&lt;/p>
 &lt;h3 id="show-compile-and-run-only">Show Compile And Run Only&lt;/h3>
 &lt;p>Hide the compile only and run only buttons.&lt;/p>
-&lt;p>It is useful if you don&amp;rsquo;t care about the time used on compilation, or you are using Python which doesn&amp;rsquo;t need to be compiled.&lt;/p>
+&lt;p>It can be useful if you don&amp;rsquo;t care about the time used on compilation.&lt;/p>
 &lt;h3 id="display-eoln-in-diff">Display EOLN in Diff&lt;/h3>
 &lt;p>Use &amp;ldquo;¶&amp;rdquo; to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).&lt;/p>
 &lt;h3 id="add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor&lt;/h3>
