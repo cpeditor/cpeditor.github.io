@@ -157,7 +157,7 @@ enable = false
 name = "Telegram"
 url = "https://t.me/cpeditor"
 icon = "fab fa-telegram"
-desc = "Get help on Telegram"
+desc = "Chat & discuss on Telegram"
 [[params.links.user]]
 name = "QQ Group"
 url = "https://jq.qq.com/?_wv=1027&k=50eq8yF"
@@ -165,12 +165,7 @@ icon = "fab fa-qq"
 desc = "QQ group for Chinese users"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
-name = "GitHub"
-url = "https://github.com/cpeditor/cpeditor"
+name = "GitHub Discussions"
+url = "https://github.com/cpeditor/cpeditor/discussions"
 icon = "fab fa-github"
-desc = "Development takes place here!"
-[[params.links.developer]]
-name = "Slack"
-url = "https://join.slack.com/t/cpeditor/shared_invite/zt-ekfy0zb5-SrOi8SIox8oq61oRonBynw"
-icon = "fab fa-slack"
-desc = "Chat with other project developers"
+desc = "Feel free to ask any questions here, or discuss with the developers."
