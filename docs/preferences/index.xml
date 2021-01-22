@@ -326,7 +326,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>The format of the &lt;code>${time}&lt;/code> place holder in the head comments. You can read the Qt documentation for available expressions:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://doc.qt.io/qt-5/qdate.html#toString" target="_blank">Date Format&lt;/a>
+&lt;a href="https://doc.qt.io/qt-5/qdate.html#toString-3" target="_blank">Date Format&lt;/a>
 &lt;/li>
 &lt;li>
 &lt;a href="https://doc.qt.io/qt-5/qtime.html#toString" target="_blank">Time Format&lt;/a>
