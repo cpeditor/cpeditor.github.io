@@ -105,7 +105,7 @@ The content of the head comments. You can use the following place holders:
 
 The format of the `${time}` place holder in the head comments. You can read the Qt documentation for available expressions:
 
--   [Date Format](https://doc.qt.io/qt-5/qdate.html#toString)
+-   [Date Format](https://doc.qt.io/qt-5/qdate.html#toString-3)
 -   [Time Format](https://doc.qt.io/qt-5/qtime.html#toString)
 
 ## CF Tool
