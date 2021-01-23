@@ -5,7 +5,9 @@ weight: 60
 
 ## Testcases
 
-### Input File Save Path & Answer File Save Path
+### Input File Save Path
+
+### Answer File Save Path
 
 The path where the test cases are [saved](../actions/_index.md#save-testcases-on-save). If it is a relative path, it is relative to the source file.
 
