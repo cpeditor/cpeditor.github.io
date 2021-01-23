@@ -94,14 +94,14 @@ Use the time limit parsed by Competitive Companion as the time limit of the corr
 
 The head comments are added at the head of the code when parsing a problem.
 
-#### Content
+#### Content of the head comments
 
 The content of the head comments. You can use the following place holders:
 
 -   `${time}`: The time when the problem was parsed. The time format can be set in [Time format for the head comments](#time-format).
 -   `${json.X.Y}`: An attribute of the data provided by Competitive Companion. You can read more about the attributes in [the documentation of Competitive Companion](https://github.com/jmerle/competitive-companion#explanation). For example, `${json.name}` is the name of the problem.
 
-#### Time Format
+#### Time format for the head comments
 
 The format of the `${time}` place holder in the head comments. You can read the Qt documentation for available expressions:
 

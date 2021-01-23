@@ -51,7 +51,8 @@ This mode is suitable for saving test cases, etc. In the other modes, the test c
 
 ## Detached Execution
 
-### Terminal Program & Terminal Arguments
+### Terminal Program
+### Terminal Arguments
 
 This setting is only available on Linux.
 
