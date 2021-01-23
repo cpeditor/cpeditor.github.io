@@ -207,7 +207,8 @@ to save files.&lt;/p>
 &lt;p>The timer is reset every time when it timeouts. i.e. Your codes will be saved every &lt;em>Auto Save Interval&lt;/em> milliseconds, no matter you have modified it or not.&lt;/p>
 &lt;p>This mode is suitable for saving test cases, etc. In the other modes, the test cases are not auto-saved if you don&amp;rsquo;t modify the codes.&lt;/p>
 &lt;h2 id="detached-execution">Detached Execution&lt;/h2>
-&lt;h3 id="terminal-program--terminal-arguments">Terminal Program &amp;amp; Terminal Arguments&lt;/h3>
+&lt;h3 id="terminal-program">Terminal Program&lt;/h3>
+&lt;h3 id="terminal-arguments">Terminal Arguments&lt;/h3>
 &lt;p>This setting is only available on Linux.&lt;/p>
 &lt;p>The terminal program is the name/path of the terminal emulator you want to use.&lt;/p>
 &lt;p>The arguments are used to execute a given command. i.e. &lt;code>&amp;lt;Terminal Program&amp;gt; &amp;lt;Terminal Arguments&amp;gt; &amp;lt;command&amp;gt;&lt;/code> can be used to execute &lt;code>&amp;lt;command&amp;gt;&lt;/code> in the terminal emulator.&lt;/p>
@@ -310,7 +311,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>Use the time limit parsed by Competitive Companion as the time limit of the corresponding tab.&lt;/p>
 &lt;h3 id="head-comments">Head Comments&lt;/h3>
 &lt;p>The head comments are added at the head of the code when parsing a problem.&lt;/p>
-&lt;h4 id="content">Content&lt;/h4>
+&lt;h4 id="content-of-the-head-comments">Content of the head comments&lt;/h4>
 &lt;p>The content of the head comments. You can use the following place holders:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${time}&lt;/code>: The time when the problem was parsed. The time format can be set in
@@ -320,7 +321,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;a href="https://github.com/jmerle/competitive-companion#explanation" target="_blank">the documentation of Competitive Companion&lt;/a>
 . For example, &lt;code>${json.name}&lt;/code> is the name of the problem.&lt;/li>
 &lt;/ul>
-&lt;h4 id="time-format">Time Format&lt;/h4>
+&lt;h4 id="time-format-for-the-head-comments">Time format for the head comments&lt;/h4>
 &lt;p>The format of the &lt;code>${time}&lt;/code> place holder in the head comments. You can read the Qt documentation for available expressions:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -349,7 +350,8 @@ from Codeforces, or manually set the problem URL of a tab in the context menu of
 &lt;p>A toast message is a &amp;ldquo;system notification&amp;rdquo;, which is visible outside of CP Editor.&lt;/p>
 &lt;p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.&lt;/p></description></item><item><title>Docs: File Path</title><link>/zh/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/file-path/</guid><description>
 &lt;h2 id="testcases">Testcases&lt;/h2>
-&lt;h3 id="input-file-save-path--answer-file-save-path">Input File Save Path &amp;amp; Answer File Save Path&lt;/h3>
+&lt;h3 id="input-file-save-path">Input File Save Path&lt;/h3>
+&lt;h3 id="answer-file-save-path">Answer File Save Path&lt;/h3>
 &lt;p>The path where the test cases are
 &lt;a href="/zh/docs/preferences/actions/#save-testcases-on-save">saved&lt;/a>
 . If it is a relative path, it is relative to the source file.&lt;/p>
