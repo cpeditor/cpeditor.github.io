@@ -2,6 +2,7 @@
 title: "FAQ"
 linkTitle: "FAQ"
 weight: 70
+translated: true
 description: CP Editor 用户常问的一些问题
 ---
 
