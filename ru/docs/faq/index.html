@@ -160,7 +160,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1355b60d02f339b2879e15cb327fd2ef.json"
+  data-offline-search-index-json-src="/offline-search-index.5d4319f6c7a8ee4de95971c6f09192d4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -192,7 +192,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1355b60d02f339b2879e15cb327fd2ef.json"
+  data-offline-search-index-json-src="/offline-search-index.5d4319f6c7a8ee4de95971c6f09192d4.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -728,6 +728,21 @@ if (!doNotTrack) {
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#how-to-fetch-testcases-from-the-websites">How to fetch testcases from the websites?</a></li>
+        <li><a href="#how-to-submit-to-cf-inside-cp-editor">How to submit to CF inside CP Editor?</a></li>
+        <li><a href="#i-am-using-it-on-codeforces-but-the-submit-button-is-not-clickable">I am using it on Codeforces but the submit button is not clickable.</a></li>
+        <li><a href="#when-i-click-the-submit-button-i-get-some-message-saying-template-is-required">When I click the Submit button, I get some message saying template is required?</a></li>
+        <li><a href="#how-to-enable-error-linting-in-the-code-editor">How to enable error linting in the code editor?</a></li>
+        <li><a href="#my-code-gets-tle-on-every-first-execution-after-compilation">My code gets TLE on every first execution after compilation.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
 
         </div>
@@ -785,41 +800,28 @@ if (!doNotTrack) {
 	<h1>FAQ</h1>
         <div class="lead">Frequently asked questions by CP Editor users</div>
 	
-	<ul>
-<li>How to fetch testcases from the websites?
-<ul>
-<li>You have to install 
+	<h3 id="how-to-fetch-testcases-from-the-websites">How to fetch testcases from the websites?</h3>
+<p>You have to install 
 <a href="https://github.com/jmerle/competitive-companion" target="_blank">Competitive Companion</a>
  on your browser, and use it on the website while CP Editor is running. 
 <a href="https://youtu.be/IVx1rSqYz7c" target="_blank">Here is a youtube video</a>
- demonstrating this setup.</li>
-</ul>
-</li>
-<li>How to submit to CF inside CP Editor?
-<ul>
-<li>You have to either parse the problem from Competitive Companion, or set the problem URL in the right-click menu of the tabs. Then you&rsquo;ll see the submit button.</li>
-</ul>
-</li>
-<li>I am using it on Codeforces but the submit button is not clickable.
-<ul>
-<li>It&rsquo;s because CP Editor can&rsquo;t run the <code>cf</code> command. Please make sure it&rsquo;s in the PATH or set the path to it in the Preferences.</li>
-</ul>
-</li>
-<li>When I click the Submit button, I get some message saying template is required?
-<ul>
-<li><code>cf</code> tool requires you to configure it before you use it. Please run <code>cf config</code> to set the username &amp; password and add a template.</li>
-</ul>
-</li>
-<li>How to enable error linting in the code editor?
-<ul>
-<li>You need to install a 
+ demonstrating this setup.</p>
+<h3 id="how-to-submit-to-cf-inside-cp-editor">How to submit to CF inside CP Editor?</h3>
+<p>You have to either parse the problem from Competitive Companion, or set the problem URL in the right-click menu of the tabs. Then you&rsquo;ll see the submit button.</p>
+<h3 id="i-am-using-it-on-codeforces-but-the-submit-button-is-not-clickable">I am using it on Codeforces but the submit button is not clickable.</h3>
+<p>It&rsquo;s because CP Editor can&rsquo;t run the <code>cf</code> command. Please make sure it&rsquo;s in the PATH or set the path to it in the Preferences.</p>
+<h3 id="when-i-click-the-submit-button-i-get-some-message-saying-template-is-required">When I click the Submit button, I get some message saying template is required?</h3>
+<p>CF-Tool requires you to configure it before you use it. Please run <code>cf config</code> in the terminal to set the username &amp; password and add a template.</p>
+<h3 id="how-to-enable-error-linting-in-the-code-editor">How to enable error linting in the code editor?</h3>
+<p>You need to install a 
 <a href="https://microsoft.github.io/language-server-protocol/implementors/servers/" target="_blank">Language Server program</a>
  and set the settings in Preferences -&gt; Extensions -&gt; Language Server. You can learn about more details 
 <a href="/ru/docs/setup/#setup-language-server">here</a>
-.</li>
-</ul>
-</li>
-</ul>
+.</p>
+<h3 id="my-code-gets-tle-on-every-first-execution-after-compilation">My code gets TLE on every first execution after compilation.</h3>
+<p>It&rsquo;s probably because your anti-virus software is scanning your program. A possible solution is to 
+<a href="/ru/docs/preferences/language/#c-executable-file-path">set the output directory of the executable files</a>
+ (for example, you can set it to <code>D:/cpeditor-executables/${basename}</code>), and add that directory (<code>D:/cpeditor-executables</code> in the example) in the whitelist of your anti-virus software.</p>
 
         <div class="section-index">
     
@@ -934,7 +936,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Изменено December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Изменено January 24, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/2c185c88ca79dbe8337635bae79753763f8e6dff">feat(faq): restructure and add TLE due to anti-virus (#126) (2c185c8)</a>
 </div>
 </div>
 
