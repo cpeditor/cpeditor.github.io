@@ -160,7 +160,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5d4319f6c7a8ee4de95971c6f09192d4.json"
+  data-offline-search-index-json-src="/offline-search-index.47be504d7a65e3d53656bafd44bd2543.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -192,7 +192,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5d4319f6c7a8ee4de95971c6f09192d4.json"
+  data-offline-search-index-json-src="/offline-search-index.47be504d7a65e3d53656bafd44bd2543.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -730,12 +730,17 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#shortcuts-in-the-preferences-window">Shortcuts in the Preferences Window</a></li>
-    <li><a href="#editor-shortcuts">Editor Shortcuts</a></li>
-    <li><a href="#drag-and-drop">Drag and Drop</a></li>
-    <li><a href="#tabs">Tabs</a></li>
-    <li><a href="#test-cases">Test Cases</a></li>
-    <li><a href="#view-mode">View mode</a></li>
+    <li><a href="#use-stderr-to-debug">Use stderr to debug</a></li>
+    <li><a href="#run-on-only-selected-test-cases">Run on only selected test cases</a></li>
+    <li><a href="#copy-output-to-expected-for-problems-with-multiple-correct-answers">Copy output to expected for problems with multiple correct answers</a></li>
+    <li><a href="#load-edit-and-save-test-cases">Load, edit and save test cases</a></li>
+    <li><a href="#testlib-checkers-are-compiled-at-runtime">Testlib checkers are compiled at runtime</a></li>
+    <li><a href="#drag-and-drop-files">Drag and drop files</a></li>
+    <li><a href="#shortcuts-in-the-code-editor">Shortcuts in the code editor</a></li>
+    <li><a href="#switching-between-tabs">Switching between tabs</a></li>
+    <li><a href="#the-right-click-menu-of-the-tabs">The right-click menu of the tabs</a></li>
+    <li><a href="#shortcuts-in-the-preferences-window">Shortcuts in the preferences window</a></li>
+    <li><a href="#change-the-view-mode">Change the view mode</a></li>
     <li><a href="#launch-cp-editor-in-the-command-line">Launch CP Editor in the command line</a></li>
   </ul>
 </nav>
@@ -778,27 +783,52 @@ if (!doNotTrack) {
 	<h1>Tips</h1>
         <div class="lead">Some tips that may help</div>
 	
-	<h2 id="shortcuts-in-the-preferences-window">Shortcuts in the Preferences Window</h2>
-<p>You can use <kbd>Ctlr+D</kbd>, <kbd>Ctrl+R</kbd> and <kbd>Ctrl+S</kbd> for &ldquo;Default&rdquo;, &ldquo;Reset&rdquo; and &ldquo;Apply&rdquo; respectively.</p>
-<p>You can use <kbd>Ctlr+Tab</kbd> and <kbd>Ctlr+Shift+Tab</kbd> to go through the preferences pages.</p>
-<h2 id="editor-shortcuts">Editor Shortcuts</h2>
+	<h2 id="use-stderr-to-debug">Use stderr to debug</h2>
+<p>Currently, CP Editor doesn&rsquo;t have a built-in GUI debugger, but this doesn&rsquo;t mean it&rsquo;s hard to debug codes using CP Editor.</p>
+<p>Besides single-stepping, the most used debugging approach is to output some variables. Do you remember the times you tried hard to distinguish the debugged variables from the normal outputs? You don&rsquo;t have to do this in CP Editor.</p>
+<p>The key is: Use stderr to output debug information. In C++, this means to use <code>cerr</code> instead of <code>cout</code> to output. CP Editor will show the stderr of your program in the Messages section.</p>
+<h2 id="run-on-only-selected-test-cases">Run on only selected test cases</h2>
+<p>In CP Editor, you don&rsquo;t have to always run on all test cases.</p>
+<p>To tell CP Editor not to run on a certain test case, just uncheck the checkbox of that test case. You can also use the &ldquo;More&rdquo; menu to manage the checks: you can Check All, Uncheck All, Uncheck Accepted (very useful when you passed most test cases and want to debug on the unaccepted ones) and Invert.</p>
+<p>If you want to run on a single test case, you can simply click the &ldquo;Run&rdquo; button of that test case.</p>
+<h2 id="copy-output-to-expected-for-problems-with-multiple-correct-answers">Copy output to expected for problems with multiple correct answers</h2>
+<p>Sometimes you are solving a problem that has more than one correct answer. The online judge has a checker, but you don&rsquo;t, and you don&rsquo;t have the time to write one. Leaving them in the &ldquo;WA&rdquo; verdict could be annoying, or even inconvenient because you have to manually check again after modifying your codes.</p>
+<p>CP Editor provides a solution: Copy Output to Expected. This could be done in either the right-click menu of the Expected section for a single test case or in the &ldquo;More&rdquo; menu for all selected test cases. With this function, you can easily copy the accepted outputs to expected, and they will be in the AC verdict as long as their outputs are not changed.</p>
+<h2 id="load-edit-and-save-test-cases">Load, edit and save test cases</h2>
+<p>You can load test cases from files, edit test cases in bigger windows and save a test case in a file in the right-click menu of the test cases.</p>
+<h2 id="testlib-checkers-are-compiled-at-runtime">Testlib checkers are compiled at runtime</h2>
+<p>Testlib checkers are compiled when changing the checker or changing the preferences, so you may have to wait for it after the execution is finished.</p>
+<h2 id="drag-and-drop-files">Drag and drop files</h2>
+<p>You can drag files and drop them into the main editor or the input/expected part of test cases.</p>
+<h2 id="shortcuts-in-the-code-editor">Shortcuts in the code editor</h2>
 <p>Besides the shortcuts in the menu, you can use the 
 <a href="https://doc.qt.io/qt-5/qtextedit.html#read-only-key-bindings" target="_blank">Read-only Key Bindings</a>
  and the 
 <a href="https://doc.qt.io/qt-5/qtextedit.html#editing-key-bindings" target="_blank">Editing Key Bindings</a>
 . There are also some hidden shortcuts: <kbd>Tab</kbd> (when there&rsquo;s a selection) and <kbd>Shift+Tab</kbd> for indent and unindent, <kbd>Ctrl+Enter</kbd> and <kbd>Ctrl+Shift+Enter</kbd> for inserting line after and before, <kbd>Shift+Delete</kbd> for deleting the current line.</p>
-<h2 id="drag-and-drop">Drag and Drop</h2>
-<p>You can drag files and drop them into the main editor or the input/expected part of test cases.</p>
-<h2 id="tabs">Tabs</h2>
+<h2 id="switching-between-tabs">Switching between tabs</h2>
 <p>You can use <kbd>Ctrl+Tab</kbd> and <kbd>Ctrl+Shift+Tab</kbd> to switch to the next/previous tab.</p>
-<p>You can right-click on the tabs to get a useful context menu. The content of the menu is based on whether this tab is untitled or not, has problem URL or not, etc.</p>
-<h2 id="test-cases">Test Cases</h2>
-<p>Testlib checkers are compiled when changing the checker or changing the preferences, so you may have to wait for it after the execution is finished.</p>
-<p>You can load test cases from files, edit testcases in bigger windows and save a test case in a file in the right-click menu of the test cases.</p>
-<p>You can click the verdict to open the diff viewer.</p>
-<h2 id="view-mode">View mode</h2>
-<p>The view mode is helpful to focus on your codes, investigate the outputs and errors, or make the editor narrower so that you can split your screen into two parts.</p>
-<p>You can set a hotkey for switching view modes in Preferences.</p>
+<h2 id="the-right-click-menu-of-the-tabs">The right-click menu of the tabs</h2>
+<p>You can right-click on the tabs to get a useful context menu, including:</p>
+<ul>
+<li>Manage tabs: Close Others, Close to the Right, etc.</li>
+<li>Duplicate tab. Very useful when you want to make experimental changes with the original code untouched or use different approaches to solve a problem without parsing it twice.</li>
+<li>Set compile command/time limit for a single tab. If you are solving a special problem.</li>
+<li>Reveal source/executable file. To easily find your code and the executable file.</li>
+<li>Manage the problem URL: Open Problem in Browser, Set Codeforces URL, etc.</li>
+</ul>
+<h2 id="shortcuts-in-the-preferences-window">Shortcuts in the preferences window</h2>
+<p>You can use <kbd>Ctlr+D</kbd>, <kbd>Ctrl+R</kbd> and <kbd>Ctrl+S</kbd> for &ldquo;Default&rdquo;, &ldquo;Reset&rdquo; and &ldquo;Apply&rdquo; respectively.</p>
+<p>You can use <kbd>Ctlr+Tab</kbd> and <kbd>Ctlr+Shift+Tab</kbd> to go through the preferences pages.</p>
+<h2 id="change-the-view-mode">Change the view mode</h2>
+<ul>
+<li>Editor mode: You can focus on your codes.</li>
+<li>IO mode: You can investigate the outputs and errors.</li>
+<li>Split mode: You can see both the codes and the test cases.</li>
+</ul>
+<p>You can set a hotkey for switching view modes in 
+<a href="/docs/preferences/key-bindings/">Preferences</a>
+.</p>
 <h2 id="launch-cp-editor-in-the-command-line">Launch CP Editor in the command line</h2>
 <p>CP Editor supports some command-line options, run <code>cpeditor --help</code> for more information.</p>
 <p>On Windows, it&rsquo;s better to use UNIX-like shells like git bash.</p>
@@ -920,7 +950,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 26, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/a7f6b5035fb0efff6c0c94837d3379bbebcbf826">feat(tips): add contents and restructure (#128) (a7f6b50)</a>
 </div>
 </div>
 

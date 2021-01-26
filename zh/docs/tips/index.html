@@ -160,7 +160,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5d4319f6c7a8ee4de95971c6f09192d4.json"
+  data-offline-search-index-json-src="/offline-search-index.47be504d7a65e3d53656bafd44bd2543.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -192,7 +192,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5d4319f6c7a8ee4de95971c6f09192d4.json"
+  data-offline-search-index-json-src="/offline-search-index.47be504d7a65e3d53656bafd44bd2543.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -730,12 +730,17 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#使用-stderr-进行调试">使用 stderr 进行调试</a></li>
+    <li><a href="#只在选中的测试点上运行">只在选中的测试点上运行</a></li>
+    <li><a href="#解决有多解的题目时将输出复制到答案">解决有多解的题目时，将输出复制到答案</a></li>
+    <li><a href="#加载编辑以及保存测试点">加载，编辑以及保存测试点</a></li>
+    <li><a href="#testlib-评测器在运行时编译">testlib 评测器在运行时编译</a></li>
+    <li><a href="#将文件拖入">将文件拖入</a></li>
+    <li><a href="#代码编辑器中的快捷键">代码编辑器中的快捷键</a></li>
+    <li><a href="#切换标签页">切换标签页</a></li>
+    <li><a href="#标签栏的右键菜单">标签栏的右键菜单</a></li>
     <li><a href="#设置页面中的快捷键">设置页面中的快捷键</a></li>
-    <li><a href="#编辑器中的快捷键">编辑器中的快捷键</a></li>
-    <li><a href="#拖动文件">拖动文件</a></li>
-    <li><a href="#标签栏">标签栏</a></li>
-    <li><a href="#测试数据">测试数据</a></li>
-    <li><a href="#编辑器模式">编辑器模式</a></li>
+    <li><a href="#切换视图模式">切换视图模式</a></li>
     <li><a href="#从命令行启动-cp-editor">从命令行启动 CP Editor</a></li>
   </ul>
 </nav>
@@ -792,29 +797,54 @@ if (!doNotTrack) {
 	<h1>提示</h1>
         <div class="lead">一些可能会有用的提示</div>
 	
-	<h2 id="设置页面中的快捷键">设置页面中的快捷键</h2>
-<p>在设置页面中，你可以使用 <kbd>Ctlr+D</kbd>，<kbd>Ctrl+R</kbd> 和 <kbd>Ctrl+S</kbd> 作为 “默认”，“重置” 和 “应用” 的快捷键。</p>
-<p>你还可以使用 <kbd>Ctlr+Tab</kbd> 和 <kbd>Ctlr+Shift+Tab</kbd> 以实现各设置页面间的快捷切换。</p>
-<h2 id="编辑器中的快捷键">编辑器中的快捷键</h2>
+	<h2 id="使用-stderr-进行调试">使用 stderr 进行调试</h2>
+<p>当前，CP Editor 并没有一个内置的 GUI 调试器，但这不意味着使用 CP Editor 就难以调试了。</p>
+<p>除了单步调试，最常用的调试方法就是输出一些变量。你还记得你试图分辨调试输出和正常输出的那些日子吗？使用 CP Editor 时你不需要这样做。</p>
+<p>关键在于：使用 stderr 来输出调试信息。在 C++ 中，这意味着在输出时使用 <code>cerr</code> 而不是 <code>cout</code>。CP Editor 会将你的程序的 stderr 展示在“消息”区域。</p>
+<h2 id="只在选中的测试点上运行">只在选中的测试点上运行</h2>
+<p>在 CP Editor 中，你不需要总是在所有测试点上运行。</p>
+<p>为了告诉 CP Editor 你不想在某个测试点上运行，你只需要取消选中这个测试点。你还可以使用“更多”菜单来管理勾选情况：你可以全选，取消全选，取消选择已通过的（当你通过了大多数测试点而只想在少数未通过的测试点上调试时非常有用）以及反选。</p>
+<p>如果你想在单个测试点上运行，你还可以点击位于测试点的“运行”按钮。</p>
+<h2 id="解决有多解的题目时将输出复制到答案">解决有多解的题目时，将输出复制到答案</h2>
+<p>有时你会解决一些有多个正确答案的题目。OJ 有 Special Judge，但你没有，你也没有时间自己写一个。让这些测试点保持 WA 状态可能让人看着不爽，甚至带来不便，因为你在修改代码后需要再次检查它们是否正确。</p>
+<p>CP Editor 提供了一个解决方法：将输出复制到答案。这可以在答案编辑框的右键菜单中为单个测试点进行，也可以在“更多”菜单中为所有选中的测试点进行。有了这个功能，你就能够轻松地将已通过的输出复制到答案，这样只要它们不改变就一直会是 AC 状态。</p>
+<h2 id="加载编辑以及保存测试点">加载，编辑以及保存测试点</h2>
+<p>你可以右键单击测试数据框，从而实现从文件中加载测试数据，在更大的窗口中编辑测试点，或者将测试点保存为文件。</p>
+<h2 id="testlib-评测器在运行时编译">testlib 评测器在运行时编译</h2>
+<p>testlib 评测器在切换评测器或设置变更时会重新编译，所以使用 testlib 评测器时运行后未能及时反馈结果是正常现象。</p>
+<h2 id="将文件拖入">将文件拖入</h2>
+<p>你可以直接将文件拖入编辑器或测试数据框中。</p>
+<p>将文件拖入编辑器中会打开该文件，而将文件拖入测试数据框的输入/答案框中，会自动用该文件填充该框。</p>
+<h2 id="代码编辑器中的快捷键">代码编辑器中的快捷键</h2>
 <p>除了菜单中提及的快捷键之外，你还可以使用 Qt 中的 
 <a href="https://doc.qt.io/qt-5/qtextedit.html#read-only-key-bindings" target="_blank">只读快捷键</a>
  和 
 <a href="https://doc.qt.io/qt-5/qtextedit.html#editing-key-bindings" target="_blank">修改快捷键</a>
 。</p>
 <p>CP Editor 还提供一些隐藏的快捷键：<kbd>Tab</kbd>（当有文本被选中时）和 <kbd>Shift+Tab</kbd> 用于缩进和取消缩进，<kbd>Ctrl+Enter</kbd> 和 <kbd>Ctrl+Shift+Enter</kbd> 分别用于在当前行之前和之后插入空行，<kbd>Shift+Delete</kbd> 用于删除当前行。</p>
-<h2 id="拖动文件">拖动文件</h2>
-<p>你可以直接将文件拖入编辑器或测试数据框中。</p>
-<p>将文件拖入编辑器中会打开该文件，而将文件拖入测试数据框的输入/答案框中，会自动用该文件填充该框。</p>
-<h2 id="标签栏">标签栏</h2>
+<h2 id="切换标签页">切换标签页</h2>
 <p>你可以使用 <kbd>Ctrl+Tab</kbd> 和 <kbd>Ctrl+Shift+Tab</kbd> 以切换到下一个/上一个标签。</p>
-<p>你还可以右键点击标签以调出菜单，菜单的内容与当前标签页是否保存，是否设置题目链接等有关。</p>
-<h2 id="测试数据">测试数据</h2>
-<p>评测器在重新加载或设置变更时会重新编译，在编译评测器时，运行后未能及时反馈结果是正常现象。</p>
-<p>你可以右键单击测试数据框，从而实现从文件中加载测试数据，在更大的窗口中编辑测试点，或是将测试点保存为文件。</p>
-<p>你可以点击评测状态按钮来打开差异比较器。</p>
-<h2 id="编辑器模式">编辑器模式</h2>
-<p>编辑器模式能让你专心编写代码，处理问题。你还可以通过分屏，做到一边阅读题目，一边使用 CP Editor 编写代码。</p>
-<p>你可以设置一个快捷键来快速切换到编辑器模式。</p>
+<h2 id="标签栏的右键菜单">标签栏的右键菜单</h2>
+<p>你可以通过右键点击标签调出一个菜单，包括：</p>
+<ul>
+<li>管理标签页：关闭其它标签页，关闭右侧标签页，等等。</li>
+<li>复制标签页。当你想要在不影响当前代码的同时做一些实验性的改动，或者用不同的方法解决一道题目而不想重新获取样例时，这非常有用。</li>
+<li>为单个标签页设置编译命令/时间限制。如果你在解决一道奇特的题目。</li>
+<li>在文件管理器中查看源文件/可执行文件。轻松地找到你的代码和可执行文件。</li>
+<li>管理题目链接：在浏览器中打开题目，设置 Codeforces 链接，等等。</li>
+</ul>
+<h2 id="设置页面中的快捷键">设置页面中的快捷键</h2>
+<p>在设置页面中，你可以使用 <kbd>Ctlr+D</kbd>，<kbd>Ctrl+R</kbd> 和 <kbd>Ctrl+S</kbd> 作为 “默认”，“重置” 和 “应用” 的快捷键。</p>
+<p>你还可以使用 <kbd>Ctlr+Tab</kbd> 和 <kbd>Ctlr+Shift+Tab</kbd> 以实现各设置页面间的快捷切换。</p>
+<h2 id="切换视图模式">切换视图模式</h2>
+<ul>
+<li>编辑器模式：你可以专注于你的代码。</li>
+<li>IO 模式：你可以仔细检查输出和错误。</li>
+<li>分屏模式：你可以同时看到代码和测试用例。</li>
+</ul>
+<p>你可以在
+<a href="/zh/docs/preferences/key-bindings/">设置</a>
+中设置一个快捷键来快速切换到编辑器模式。</p>
 <h2 id="从命令行启动-cp-editor">从命令行启动 CP Editor</h2>
 <p>CP Editor 支持在命令行下启动，可以通过执行 <code>cpeditor --help</code> 命令获得更多详情。</p>
 <p>在 Windows 下，更推荐使用类 UNIX 的终端（如 Git Bash）。</p>
@@ -936,7 +966,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 January 26, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/a7f6b5035fb0efff6c0c94837d3379bbebcbf826">feat(tips): add contents and restructure (#128) (a7f6b50)</a>
 </div>
 </div>
 
