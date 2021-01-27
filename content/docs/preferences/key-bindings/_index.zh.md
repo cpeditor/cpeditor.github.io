@@ -1,6 +1,6 @@
 ---
-title: "Key Bindings"
+title: "热键"
 weight: 70
 ---
 
-You can set custom key bindings for many actions. You can change the key by clicking the edit and press the key you want. You can delete a custom key binding by clicking the button on the right.
+你可以设置不同操作的自定义热键。你可以通过点击某个热键的编辑框，并按下你想要设置的热键，来设置某个操作的热键。你还可以按下相应热键右侧的删除按钮来清除自定义热键。
