@@ -13,17 +13,6 @@ This is the [official website](https://cpeditor.org) of [CP Editor](https://gith
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) and it's easy to get started! :rocket:
 
-## Hall of Fame
-
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/0)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/0)
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/1)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/1)
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/2)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/2)
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/3)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/3)
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/4)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/4)
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/5)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/5)
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/6)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/6)
-[![](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/images/7)](https://sourcerer.io/fame/ouuan/cpeditor/cpeditor.github.io/links/7)
-
 ## All Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
