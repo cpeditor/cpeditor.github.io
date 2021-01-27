@@ -47,8 +47,8 @@ weight: 60
 
 下面是一个例子：
 
-- 题目链接: `codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)`。
-- 相应的文件路径: `/home/username/Codeforces/\1/\2`。
+-   题目链接: `codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)`。
+-   相应的文件路径: `/home/username/Codeforces/\1/\2`。
 
 ## 默认路径
 
