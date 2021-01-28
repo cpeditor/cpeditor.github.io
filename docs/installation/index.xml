@@ -38,11 +38,6 @@
 .&lt;/p>
 &lt;ul>
 &lt;li>On some Linux distributions and macOS, you can install from your package manager. For example, &lt;code>sudo pacman -S qt5&lt;/code> on Arch Linux, &lt;code>brew install qt5&lt;/code> on macOS.&lt;/li>
-&lt;li>You can also download the
-&lt;a href="https://www.qt.io/offline-installers" target="_blank">offline installer&lt;/a>
-, or download from the
-&lt;a href="https://download.qt.io/static/mirrorlist/" target="_blank">mirrors&lt;/a>
-. The path from the root of the mirror should be like &lt;code>/qt/official_releases/qt/5.15/5.15.1/qt-opensource-&amp;lt;platform&amp;gt;-5.15.1.&amp;lt;suffix&amp;gt;&lt;/code> (or other versions).&lt;/li>
 &lt;li>You can also use
 &lt;a href="https://github.com/miurahr/aqtinstall" target="_blank">aqtinstall&lt;/a>
 to install Qt.&lt;/li>
