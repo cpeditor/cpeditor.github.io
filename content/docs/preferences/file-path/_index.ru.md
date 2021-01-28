@@ -41,7 +41,7 @@ When loading pairs of test cases, each rule which matches an input file will be 
 
 The default path when choosing where to save an untitled tab with problem URL.
 
-Each rule is a pair of [regular expression patterns](../general/_index.ru.md#reggrammarular-expression). The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.
+Each rule is a pair of [regular expression patterns](../general/_index.ru.md#regular-expression). The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.
 
 When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.
 
