@@ -1,33 +1,33 @@
 ---
-title: "Actions"
+title: "动作"
 weight: 40
 ---
 
-## Save
+## 保存
 
-### Save Files Faster
+### 更快地保存文件
 
-Use [`QFile`](https://doc.qt.io/qt-5/qfile.html) instead of [`QSaveFile`](https://doc.qt.io/qt-5/qsavefile.html) to save files.
+使用 [`QFile`](https://doc.qt.io/qt-5/qfile.html) 而非 [`QSaveFile`](https://doc.qt.io/qt-5/qsavefile.html) 来保存文件。
 
-This is slightly unsafer but notably faster.
+启用该选项可能有较小的风险，但会提升保存的速度。
 
-### Save File On Compilation
+### 编译时保存文件
 
-Save your code when compiling it.
+在编译前保存你的代码。
 
-### Save File On Execution
+### 执行时保存文件
 
-Save your code when executing it.
+在运行前保存你的代码。
 
-### Save Testcases on Save
+### 保存文件前保存测试用例
 
-Save the test cases on the disk when saving the code.
+在保存代码前将测试用例一并保存。
 
-You can choose where to save the test cases in [File Path/Testcases](../file-path/_index.zh.md#testcases).
+你可以在 [文件路径/测试点](../file-path/_index.zh.md#测试点) 中设置测试用例保存的位置。
 
-## Auto Save
+## 自动保存
 
-### Auto Save Interval Type
+### 自动保存间隔类型
 
 It is easier to describe if we explain a little bit about the internal implementation: There is a countdown timer. When we "reset" it, it will be "running" in the next _Auto Save Interval_ milliseconds, and after _Auto Save Interval_ milliseconds, the timer will "timeout" and the code is auto-saved.
 
