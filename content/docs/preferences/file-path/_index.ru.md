@@ -5,9 +5,7 @@ weight: 60
 
 ## Testcases
 
-### Input File Save Path
-
-### Answer File Save Path
+### Input File / Answer File Save Path
 
 The path where the test cases are [saved](../actions/_index.ru.md#save-testcases-on-save). If it is a relative path, it is relative to the source file.
 
@@ -29,7 +27,7 @@ If the path is `testcases/${basename}-${1-index}.in`, the input of this test cas
 
 ### Testcases Matching Rules
 
-The rules used to match test cases when loading pairs of test cases.
+The rules is used to match test cases when loading pairs of test cases.
 
 Each rule is a pair of [regular expression patterns](../general/_index.ru.md#regular-expression). The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.
 
@@ -43,7 +41,7 @@ When loading pairs of test cases, each rule which matches an input file will be 
 
 The default path when choosing where to save an untitled tab with problem URL.
 
-Each rule is a pair of [regular expression patterns](../general/_index.ru.md#regular-expression). The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.
+Each rule is a pair of [regular expression patterns](../general/_index.ru.md#reggrammarular-expression). The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.
 
 When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.
 
@@ -67,8 +65,8 @@ For example:
 -   The default path for the action "Load Single Test Case" is `${testcase}`, and "Load Single Test Case" only changes `testcase`.
 -   At the beginning, `file` is `/a/b` and `testcase` is `/a/c`.
 
-1.  You are asked to choose the path for "Load Single Test Case", the default path is `/a/c`, and you choose `/a/d` as the path. Now `file` is still `/a/b`, but `testcase` is changed to `/a/d`.
-2.  You are asked to choose the path for "Save File", the default path is `/a/b`, and you choose `/a/e` as the path. Now both `file` and `testcase` are `/a/e`.
-3.  You are asked to choose the path for "Load Single Test Case", the default path is `/a/e`, because `testcase` was modified by choosing `/a/e` for "Save File".
+1.  You are asked to choose the path for "Load Single Test Case". The default path is `/a/c`, and you choose `/a/d` as the path. Now `file` is still `/a/b`, but `testcase` is changed to `/a/d`.
+2.  You are asked to choose the path for "Save File". The default path is `/a/b`, and you choose `/a/e` as the path. Now both `file` and `testcase` are `/a/e`.
+3.  You are asked to choose the path for "Load Single Test Case". The default path is `/a/e`, because `testcase` was modified by choosing `/a/e` for "Save File".
 
 In the preferences window, the default paths changed by an action is a comma-separated list.
