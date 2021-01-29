@@ -29,88 +29,86 @@ weight: 40
 
 ### 自动保存间隔类型
 
-It is easier to describe if we explain a little bit about the internal implementation: There is a countdown timer. When we "reset" it, it will be "running" in the next _Auto Save Interval_ milliseconds, and after _Auto Save Interval_ milliseconds, the timer will "timeout" and the code is auto-saved.
+自动保存机制以如下的方式运作：有一个计时器，每当它被重置，它就会运作 *自动保存时间间隔* 毫秒，当计时器的时间达到了 *自动保存时间间隔* 毫秒时，当前代码就会被自动保存。
 
 #### After the last modification
 
-The timer is reset every time when you modify the code. i.e. Your codes will be saved if you haven't modified it for _Auto Save Interval_ milliseconds.
+计时器在每次修改代码后会被自动重置。即，如果你在 *自动保存时间间隔* 毫秒内没有修改你的代码，你的代码将会被自动保存。
 
-This mode is suitable for a small _Auto Save Interval_, so that your codes will be auto-saved every time you take a short break from typing. If the interval is too long, it's likely that your codes will never be auto-saved.
+该模式适合使用较短的 ×自动保存时间间隔×，以使代码能在你两次输入的间歇间被自动保存。如果设置的间隔时间过长，则难以让代码被自动保存。
 
 #### After the first modification
 
-The timer is reset when you modify the code if the timer is not running. i.e. Your codes will be saved if you modified it _Auto Save Interval_ milliseconds ago.
+在计时器未运行时，若你修改了代码，则计时器将会启动。即，你的代码将在第一次修改后 *自动保存时间间隔* 毫秒被自动保存。
 
-This mode is suitable for a long _Auto Save Interval_, otherwise it's likely that the save happens when you are typing, which could affect your typing experience.
+该模式适合使用较长的 ×自动保存时间间隔×。如果设置的时间过短，代码会在你输入的时候被自动保存，这可能会影响你的输入体验。
 
 #### Without modification
 
-The timer is reset every time when it timeouts. i.e. Your codes will be saved every _Auto Save Interval_ milliseconds, no matter you have modified it or not.
+每当计时器超时时，计时器会自动重置。即，无论你是否修改了你的代码，你的代码都会以恒定的 *自动保存时间间隔* 被自动保存。
 
-This mode is suitable for saving test cases, etc. In the other modes, the test cases are not auto-saved if you don't modify the codes.
+该模式适合保存测试用例。在其他模式下，如果你不修改你的代码，测试用例不会被自动保存。
 
-## Detached Execution
+## 终端中运行
 
-### Terminal Program
+### 终端程序
 
-### Terminal Arguments
+### 终端参数
 
-This setting is only available on Linux.
+本设置仅在 Linux 系统中可用。
 
-The terminal program is the name/path of the terminal emulator you want to use.
+终端程序是你想要使用的终端模拟器的名称或路径。
 
-The arguments are used to execute a given command. i.e. `<Terminal Program> <Terminal Arguments> <command>` can be used to execute `<command>` in the terminal emulator.
+终端参数是终端模拟器中用于运行给定命令的参数。即，命令 `<终端程序> <终端参数> <命令>` 可在指定的终端模拟器中运行 `<命令>`。
 
-In most terminal emulators including `konsole`, `xterm` and `xfce-terminal`, the argument is `-e`.
+在大多数终端模拟器，如 `konsole`, `xterm` 和 `xfce-terminal`，终端参数为 `-e`，在 `gnome-terminal` 中，该参数为 `--`。
 
-In `gnome-terminal`, it is `--`.
+你可以阅读你使用的终端模拟器的手册，以获取关于终端参数的相关信息。
 
-You can read the manual of your terminal emulator to get the suitable arguments.
+## 保存会话
 
-## Save Session
+### 在启动时恢复上一次会话
 
-### Restore last session at startup
+在退出 CP Editor 时保存当前状态，并在启动时恢复上一次会话。
 
-Save the status of the editor, and restore most status from the last session when you start CP Editor.
+在终端下，你可以使用 `--no-hot-exit` 命令以暂时禁用该选项。如果上一次会话过大导致 CP Editor 卡死时，该命令将会解决这一问题。
 
-You can use the `--no-hot-exit` command line option to temporarily disable this, in case that the last session is too big and the application hangs.
+### 定期自动保存当前会话
 
-### Auto-save the current session periodically
+每隔一段时间就保存当前会话，而不是仅在退出时保存会话。
 
-Save the current session periodically instead of only when exiting the application.
+启用该选项会避免因为非正常退出（如断电，强行终止 CP Editor 等）导致代码丢失的情况发生。然而，如果代码和测试用例过大，每次自动保存时 CP Editor 会卡顿较长时间。
 
-This is useful if you don't want to lose your codes after abnormal terminations, such as power outage, forced shutdown, killing CP Editor, etc. However, if the files and test cases are too large, the editor hangs each time the auto-save happens.
+## 关联文件和题目
 
-## Bind file and problem
+### 打开文件时加载对应题目
 
-### Restore the problem URL when opening a file
+如果一个文件已经设置了题目链接，当该文件被再次打开时，将会使用原来的题目链接。
 
-If a problem URL was set for a file, when you open that file again, the problem URL will be restored.
+### 加载以前的题目时打开以前的文件
 
-### Open the old file when parsing an old problem URL
+如果一个文件已经设置了题目链接，当使用 Competitive Companion 解析同样的题目时，将会直接打开以前的文件。
 
-If a problem URL was set for a file, when parsing that problem from Competitive Companion again, the old file will be opened.
+## 空测试点
 
-## Empty Test Cases
+### 在空测试点上运行你的代码
 
-### Run your codes on empty test cases
+在所有未被隐藏的测试点上运行你的代码，即使输入为空。
 
-Run your code on all non-hidden test cases even if the input is empty.
+### 在输出为空的测试点上检查输出的正确性
 
-### Check your answer on test cases with empty output
+即使程序输出或答案为空，也检查该测试点输出的正确性。
 
-Check your answer even if your output or the expected output is empty.
+## 加载外部文件修改
 
-## Load External File Changes
+### 若没有未保存的修改，自动加载外部文件修改
 
-### Auto-load external file changes if there's no unsaved modification
+若硬盘上的文件和 CP Editor 中的文件相同，该文件在 CP Editor 外部被修改，无需确认，自动加载外部文件修改。
 
-If the file on the disk and the code in CP Editor was the same, and then the file is changed outside of CP Editor, load the external change without confirmation.
+### 询问是否加载外部文件修改
 
-### Ask whether to load external file changes
+若文件在 CP Editor 外部被修改，询问是否加载这些修改。
 
-If the file is changed outside of CP Editor, ask whether to load the change or not.
+如果该选项被禁用，外部文件修改不会被加载。
 
-If this setting is disabled, external changes won't be loaded.
-
-[Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) overrides this setting. i.e. if [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) is enabled, external file changes will be loaded without confrimation regardless of [Ask whether to load external file changes](#ask-whether-to-load-external-file-changes) ; if [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) is disabled, the user will be asked whether to load the changes only when [Ask whether to load external file changes](#ask-whether-to-load-external-file-changes) is enabled, otherwise the changes won't be loaded.
+[若没有未保存的修改，自动加载外部文件修改](#若没有未保存的修改，自动加载外部文件修改) 会覆盖该选项的设置。即，若选项 [若没有未保存的修改，自动加载外部文件修改](#若没有未保存的修改，自动加载外部文件修改) 被启用，外部文件修改将会在无确认的情况下被自动加载，无论 [询问是否加载外部文件修改](#询问是否加载外部文件修改) 是否启用。若选项 [若没有未保存的修改，自动加载外部文件修改](#若没有未保存的修改，自动加载外部文件修改) 被禁用，且 [询问是否加载外部文件修改](#询问是否加载外部文件修改) 被启用，CP Editor 将会询问用户是否加载这些修改。而在两个选项都被禁用的情况下，外部文件修改将不会被加载。
