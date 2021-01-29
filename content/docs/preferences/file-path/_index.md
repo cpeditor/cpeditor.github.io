@@ -5,7 +5,9 @@ weight: 60
 
 ## Testcases
 
-### Input File / Answer File Save Path
+### Input File Save Path
+
+### Answer File Save Path
 
 The path where the test cases are [saved](../actions/_index.md#save-testcases-on-save). If it is a relative path, it is relative to the source file.
 
@@ -27,7 +29,7 @@ If the path is `testcases/${basename}-${1-index}.in`, the input of this test cas
 
 ### Testcases Matching Rules
 
-The rules is used to match test cases when loading pairs of test cases.
+The rules used to match test cases when loading pairs of test cases.
 
 Each rule is a pair of [regular expression patterns](../general/_index.md#regular-expression). The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.
 
