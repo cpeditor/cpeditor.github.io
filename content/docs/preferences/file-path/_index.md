@@ -67,8 +67,8 @@ For example:
 -   The default path for the action "Load Single Test Case" is `${testcase}`, and "Load Single Test Case" only changes `testcase`.
 -   At the beginning, `file` is `/a/b` and `testcase` is `/a/c`.
 
-1.  You are asked to choose the path for "Load Single Test Case", the default path is `/a/c`, and you choose `/a/d` as the path. Now `file` is still `/a/b`, but `testcase` is changed to `/a/d`.
-2.  You are asked to choose the path for "Save File", the default path is `/a/b`, and you choose `/a/e` as the path. Now both `file` and `testcase` are `/a/e`.
-3.  You are asked to choose the path for "Load Single Test Case", the default path is `/a/e`, because `testcase` was modified by choosing `/a/e` for "Save File".
+1.  You are asked to choose the path for "Load Single Test Case". The default path is `/a/c`, and you choose `/a/d` as the path. Now `file` is still `/a/b`, but `testcase` is changed to `/a/d`.
+2.  You are asked to choose the path for "Save File". The default path is `/a/b`, and you choose `/a/e` as the path. Now both `file` and `testcase` are `/a/e`.
+3.  You are asked to choose the path for "Load Single Test Case". The default path is `/a/e`, because `testcase` was modified by choosing `/a/e` for "Save File".
 
 In the preferences window, the default paths changed by an action is a comma-separated list.

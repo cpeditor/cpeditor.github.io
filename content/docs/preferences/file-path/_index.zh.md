@@ -1,74 +1,69 @@
 ---
-title: "File Path"
+title: "文件路径"
 weight: 60
 ---
 
-## Testcases
+## 测试点
 
-### Input File Save Path
+### 输入文件/答案文件保存路径
 
-### Answer File Save Path
+设置测试数据 [保存](../actions/_index.zh.md#保存文件前保存测试用例) 的位置。如果设置的路径是相对路径，则实际路径将基于源代码所在路径。
 
-The path where the test cases are [saved](../actions/_index.zh.md#save-testcases-on-save). If it is a relative path, it is relative to the source file.
+你可以使用如下占位符：
 
-You can use the following place holders:
+-   `${filename}`：完整的文件名。
+-   `${basename}`：将 `${filename}` 去掉扩展名后的文件名。
+-   `${0-index}`：从 0 开始的测试点编号。
+-   `${1-index}`：从 1 开始的测试点编号。
 
--   `${filename}`: the complete file name
--   `${basename}`: the base file name without the suffix
--   `${0-index}`: the index of the test case started from 0
--   `${1-index}`: the index of the test case started from 1
-
-For example, a test case is the 3-rd test case of the source file `/a/b/c.cpp`, the place holders are:
+例如，某个输入文件是源代码 `/a/b/c.cpp` 的第三个测试点的输入文件，此时各占位符将会以如下方式被替换：
 
 -   `${filename}`: `c.cpp`
 -   `${basename}`: `c`
 -   `${0-index}`: `2`
 -   `${1-index}`: `3`
 
-If the path is `testcases/${basename}-${1-index}.in`, the input of this test case will be saved in `/a/b/testcases/c-3.in`.
+如果输入文件的保存路径被设定为 `testcases/${basename}-${1-index}.in`，则该测试数据的输入文件将会被保存在 `/a/b/testcases/c-3.in` 下。
 
-### Testcases Matching Rules
+### 测试数据匹配规则
 
-The rules used to match test cases when loading pairs of test cases.
+在加载成对的测试点时，输入文件和答案文件的匹配规则。
 
-Each rule is a pair of [regular expression patterns](../general/_index.zh.md#regular-expression). The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.
+每条规则是一对 [正则表达式](../general/_index.zh.md#正则表达式)。其中第一个正则表达式用于匹配完整输入文件名，第二个正则表达式用于匹配相应的答案文件名。
 
-For example, you can use `(.+)\.in` and `\1.out` to match `test-1.in` and `test-1.out`, or use `(.+)\.in\.(\d+)` and `\1.ans.\2` to match `test.in.3` and `test.ans.3`.
+例如，你可以使用 `(.+)\.in` 和 `\1.out` 匹配 `test-1.in` 和 `test-1.out`，或者使用 `(.+)\.in\.(\d+)` 和 `\1.ans.\2` 匹配 `test.in.3` 和 `test.ans.3`。
 
-When loading pairs of test cases, each rule which matches an input file will be used to try to find the corresponding answer file to the input file.
+在加载成对的测试点时，每一条与输入文件匹配的规则都会被用于尝试寻找相应的答案文件。
 
-## Problem URL
+## 题目链接
 
-### Default File Path For Problem URLs
+### 针对题目链接的默认保存路径
 
-The default path when choosing where to save an untitled tab with problem URL.
+保存一个有题目链接的新文件时，使用的默认保存路径。
 
-Each rule is a pair of [regular expression patterns](../general/_index.zh.md#regular-expression). The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.
+每条规则是一对 [正则表达式](../general/_index.zh.md#正则表达式)。其中第一个正则表达式用于匹配题目链接的一部分，第二个正则表达式用于设置相应的保存路径。
 
-When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.
+当保存一个有题目链接的新文件时，如果题目链接与至少一个规则匹配，将使用第一个匹配的规则对应的保存路径。
 
-Here's an example of a rule:
+下面是一个例子：
 
-The problem URL regex: `codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)`
+-   题目链接: `codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)`。
+-   相应的文件路径: `/home/username/Codeforces/\1/\2`。
 
-The file path: `/home/username/Codeforces/\1/\2`
+## 默认路径
 
-## Default Paths
+在各种需要用户选择文件路径的情况下，默认的文件路径。对于不同的操作，可以设置不同的默认路径。
 
-The default path used when the user is asked for a file path.
+用户可以设置多种默认路径，每条默认路径都有一个名称。设置的默认路径名称可以作为占位符在其他默认路径中使用。当用户为某个操作设定新的路径，其他路径的值也可能会发生变化。
 
-There are several actions, different actions can use different default paths.
+例如：
 
-The user can set multiple default paths, each default path has a name. A default path can be used as a place holder in the default path of an action. When the user chooses a path for an action, serveral default paths can be set to this path.
+-   操作“保存文件”的默认路径是 `${file}`，而“保存文件”会修改 `file` 和 `testcase`。
+-   操作“加载单个测试用例”的默认路径是 `${testcase}`，而“加载单个测试用例”会修改 `testcase`。
+-   刚开始时，`file` 是 `/a/b`，`testcase` 是 `/a/c`。
 
-For example:
+1.  在执行“加载单个测试用例”操作时，默认路径为 `/a/c`，而你操作时将路径设置为 `/a/d`。现在 `file` 代表的路径仍然是 `/a/b`，而 `testcase` 代表的路径变成了 `/a/d`。
+2.  在执行“保存文件”操作时，默认路径为 `/a/b`，而你操作时将路径设置为 `/a/e`。现在 `file` 和 `testcase` 代表的路径都变成了 `/a/e`。
+3.  在执行“加载单个测试用例”操作时，默认路径已经变成了 `/a/e`，因为在执行“保存文件”操作时，`testcase` 代表的路径被修改了。
 
--   The default path for the action "Save File" is `${file}`, and "Save File" changes `file` and `testcase`.
--   The default path for the action "Load Single Test Case" is `${testcase}`, and "Load Single Test Case" only changes `testcase`.
--   At the beginning, `file` is `/a/b` and `testcase` is `/a/c`.
-
-1.  You are asked to choose the path for "Load Single Test Case", the default path is `/a/c`, and you choose `/a/d` as the path. Now `file` is still `/a/b`, but `testcase` is changed to `/a/d`.
-2.  You are asked to choose the path for "Save File", the default path is `/a/b`, and you choose `/a/e` as the path. Now both `file` and `testcase` are `/a/e`.
-3.  You are asked to choose the path for "Load Single Test Case", the default path is `/a/e`, because `testcase` was modified by choosing `/a/e` for "Save File".
-
-In the preferences window, the default paths changed by an action is a comma-separated list.
+在设置中，可以设置执行每个操作后，被改变的路径的列表，列表中相邻两项之间用逗号隔开。
