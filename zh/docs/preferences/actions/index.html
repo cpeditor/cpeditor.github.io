@@ -19,14 +19,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Actions | CP Editor</title><meta property="og:title" content="Actions" />
+<title>动作 | CP Editor</title><meta property="og:title" content="动作" />
 <meta property="og:description" content="专为算法竞赛设计的 IDE" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/zh/docs/preferences/actions/" />
 <meta property="og:site_name" content="CP Editor" />
-<meta itemprop="name" content="Actions">
+<meta itemprop="name" content="动作">
 <meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Actions"/>
+<meta name="twitter:title" content="动作"/>
 <meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
 
 
@@ -160,7 +160,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.27e6f397ba1429c20714e413ee31a0d6.json"
+  data-offline-search-index-json-src="/offline-search-index.a1a2d52ec01ad27168530358fa759969.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -192,7 +192,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.27e6f397ba1429c20714e413ee31a0d6.json"
+  data-offline-search-index-json-src="/offline-search-index.a1a2d52ec01ad27168530358fa759969.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -490,7 +490,7 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/zh/docs/preferences/actions/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Actions</a>
+    <a  href="/zh/docs/preferences/actions/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">动作</a>
   </li>
   <ul>
     <li class="collapse show" id="zhdocspreferencesactions">
@@ -540,7 +540,7 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/zh/docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">File Path</a>
+    <a  href="/zh/docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">文件路径</a>
   </li>
   <ul>
     <li class="collapse " id="zhdocspreferencesfile-path">
@@ -565,7 +565,7 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/zh/docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Key Bindings</a>
+    <a  href="/zh/docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">热键</a>
   </li>
   <ul>
     <li class="collapse " id="zhdocspreferenceskey-bindings">
@@ -712,7 +712,7 @@ if (!doNotTrack) {
 
 
 <a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/preferences/actions/_index.zh.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
-<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Actions" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=%e5%8a%a8%e4%bd%9c" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
 
 
 <a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> 提交项目问题</a>
@@ -730,47 +730,47 @@ if (!doNotTrack) {
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#save">Save</a>
+    <li><a href="#保存">保存</a>
       <ul>
-        <li><a href="#save-files-faster">Save Files Faster</a></li>
-        <li><a href="#save-file-on-compilation">Save File On Compilation</a></li>
-        <li><a href="#save-file-on-execution">Save File On Execution</a></li>
-        <li><a href="#save-testcases-on-save">Save Testcases on Save</a></li>
+        <li><a href="#更快地保存文件">更快地保存文件</a></li>
+        <li><a href="#编译时保存文件">编译时保存文件</a></li>
+        <li><a href="#执行时保存文件">执行时保存文件</a></li>
+        <li><a href="#保存文件前保存测试用例">保存文件前保存测试用例</a></li>
       </ul>
     </li>
-    <li><a href="#auto-save">Auto Save</a>
+    <li><a href="#自动保存">自动保存</a>
       <ul>
-        <li><a href="#auto-save-interval-type">Auto Save Interval Type</a></li>
+        <li><a href="#自动保存间隔类型">自动保存间隔类型</a></li>
       </ul>
     </li>
-    <li><a href="#detached-execution">Detached Execution</a>
+    <li><a href="#终端中运行">终端中运行</a>
       <ul>
-        <li><a href="#terminal-program">Terminal Program</a></li>
-        <li><a href="#terminal-arguments">Terminal Arguments</a></li>
+        <li><a href="#终端程序">终端程序</a></li>
+        <li><a href="#终端参数">终端参数</a></li>
       </ul>
     </li>
-    <li><a href="#save-session">Save Session</a>
+    <li><a href="#保存会话">保存会话</a>
       <ul>
-        <li><a href="#restore-last-session-at-startup">Restore last session at startup</a></li>
-        <li><a href="#auto-save-the-current-session-periodically">Auto-save the current session periodically</a></li>
+        <li><a href="#在启动时恢复上一次会话">在启动时恢复上一次会话</a></li>
+        <li><a href="#定期自动保存当前会话">定期自动保存当前会话</a></li>
       </ul>
     </li>
-    <li><a href="#bind-file-and-problem">Bind file and problem</a>
+    <li><a href="#关联文件和题目">关联文件和题目</a>
       <ul>
-        <li><a href="#restore-the-problem-url-when-opening-a-file">Restore the problem URL when opening a file</a></li>
-        <li><a href="#open-the-old-file-when-parsing-an-old-problem-url">Open the old file when parsing an old problem URL</a></li>
+        <li><a href="#打开文件时加载对应题目">打开文件时加载对应题目</a></li>
+        <li><a href="#加载以前的题目时打开以前的文件">加载以前的题目时打开以前的文件</a></li>
       </ul>
     </li>
-    <li><a href="#empty-test-cases">Empty Test Cases</a>
+    <li><a href="#空测试点">空测试点</a>
       <ul>
-        <li><a href="#run-your-codes-on-empty-test-cases">Run your codes on empty test cases</a></li>
-        <li><a href="#check-your-answer-on-test-cases-with-empty-output">Check your answer on test cases with empty output</a></li>
+        <li><a href="#在空测试点上运行你的代码">在空测试点上运行你的代码</a></li>
+        <li><a href="#在输出为空的测试点上检查输出的正确性">在输出为空的测试点上检查输出的正确性</a></li>
       </ul>
     </li>
-    <li><a href="#load-external-file-changes">Load External File Changes</a>
+    <li><a href="#加载外部文件修改">加载外部文件修改</a>
       <ul>
-        <li><a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&rsquo;s no unsaved modification</a></li>
-        <li><a href="#ask-whether-to-load-external-file-changes">Ask whether to load external file changes</a></li>
+        <li><a href="#若没有未保存的修改自动加载外部文件修改">若没有未保存的修改，自动加载外部文件修改</a></li>
+        <li><a href="#询问是否加载外部文件修改">询问是否加载外部文件修改</a></li>
       </ul>
     </li>
   </ul>
@@ -796,11 +796,6 @@ if (!doNotTrack) {
 
 
 
-
-<div class="pageinfo pageinfo-primary">
-    这个页面还没有被翻译。
-    你可以帮助我们 <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/preferences/actions/_index.zh.md'>翻译本页</a>。
-</div>
 
 
 
@@ -832,7 +827,7 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/zh/docs/preferences/actions/">Actions</a>
+	<a href="/zh/docs/preferences/actions/">动作</a>
 </li>
 
 	</ol>
@@ -840,81 +835,154 @@ if (!doNotTrack) {
 
           
 <div class="td-content">
-	<h1>Actions</h1>
+	<h1>动作</h1>
         
 	
-	<h2 id="save">Save</h2>
-<h3 id="save-files-faster">Save Files Faster</h3>
-<p>Use 
-<a href="https://doc.qt.io/qt-5/qfile.html" target="_blank"><code>QFile</code></a>
- instead of 
-<a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank"><code>QSaveFile</code></a>
- to save files.</p>
-<p>This is slightly unsafer but notably faster.</p>
-<h3 id="save-file-on-compilation">Save File On Compilation</h3>
-<p>Save your code when compiling it.</p>
-<h3 id="save-file-on-execution">Save File On Execution</h3>
-<p>Save your code when executing it.</p>
-<h3 id="save-testcases-on-save">Save Testcases on Save</h3>
-<p>Save the test cases on the disk when saving the code.</p>
-<p>You can choose where to save the test cases in 
-<a href="/zh/docs/preferences/file-path/#testcases">File Path/Testcases</a>
-.</p>
-<h2 id="auto-save">Auto Save</h2>
-<h3 id="auto-save-interval-type">Auto Save Interval Type</h3>
-<p>It is easier to describe if we explain a little bit about the internal implementation: There is a countdown timer. When we &ldquo;reset&rdquo; it, it will be &ldquo;running&rdquo; in the next <em>Auto Save Interval</em> milliseconds, and after <em>Auto Save Interval</em> milliseconds, the timer will &ldquo;timeout&rdquo; and the code is auto-saved.</p>
+	<h2 id="保存">保存</h2>
+<h3 id="更快地保存文件">更快地保存文件</h3>
+<p>使用 
+
+
+
+
+
+
+
+
+
+<a href="https://doc.qt.io/qt-5/qfile.html"   target="_blank" ><code>QFile</code></a>
+ 而非 
+
+
+
+
+
+
+
+
+
+<a href="https://doc.qt.io/qt-5/qsavefile.html"   target="_blank" ><code>QSaveFile</code></a>
+ 来保存文件。</p>
+<p>启用该选项会有可忽略不计的丢失文件风险，但会显著提高保存文件的速度。</p>
+<h3 id="编译时保存文件">编译时保存文件</h3>
+<p>在编译前保存你的代码。</p>
+<h3 id="执行时保存文件">执行时保存文件</h3>
+<p>在运行前保存你的代码。</p>
+<h3 id="保存文件前保存测试用例">保存文件前保存测试用例</h3>
+<p>在保存代码前将测试用例一并保存。</p>
+<p>你可以在 
+
+
+
+
+
+
+
+
+
+
+
+<a href="/zh/docs/preferences/file-path/#%e6%b5%8b%e8%af%95%e7%82%b9"  >文件路径/测试点</a>
+ 中设置测试用例保存的位置。</p>
+<h2 id="自动保存">自动保存</h2>
+<h3 id="自动保存间隔类型">自动保存间隔类型</h3>
+<p>自动保存机制以如下的方式运作：有一个计时器，每当它被“重置”，它就会“运行” <em>自动保存时间间隔</em> 毫秒，当计时器“运行”了 <em>自动保存时间间隔</em> 毫秒后，当前代码就会被自动保存。</p>
 <h4 id="after-the-last-modification">After the last modification</h4>
-<p>The timer is reset every time when you modify the code. i.e. Your codes will be saved if you haven&rsquo;t modified it for <em>Auto Save Interval</em> milliseconds.</p>
-<p>This mode is suitable for a small <em>Auto Save Interval</em>, so that your codes will be auto-saved every time you take a short break from typing. If the interval is too long, it&rsquo;s likely that your codes will never be auto-saved.</p>
+<p>计时器在每次修改代码后被重置。即，如果你在 <em>自动保存时间间隔</em> 毫秒内没有修改你的代码，则计时器完成了倒计时，同时你的代码会被自动保存。</p>
+<p>该模式适合使用较短的 <em>自动保存时间间隔</em>，以使代码能在你两次输入的间歇间被自动保存。如果设置的间隔时间过长，则难以让代码被自动保存。</p>
 <h4 id="after-the-first-modification">After the first modification</h4>
-<p>The timer is reset when you modify the code if the timer is not running. i.e. Your codes will be saved if you modified it <em>Auto Save Interval</em> milliseconds ago.</p>
-<p>This mode is suitable for a long <em>Auto Save Interval</em>, otherwise it&rsquo;s likely that the save happens when you are typing, which could affect your typing experience.</p>
+<p>在计时器未运行时，若你修改了代码，则计时器将被重置。即，你的代码将在第一次修改后 <em>自动保存时间间隔</em> 毫秒被自动保存。</p>
+<p>该模式适合使用较长的 <em>自动保存时间间隔</em>。如果设置的时间过短，代码会在你输入的时候被自动保存，这可能会影响你的输入体验。</p>
 <h4 id="without-modification">Without modification</h4>
-<p>The timer is reset every time when it timeouts. i.e. Your codes will be saved every <em>Auto Save Interval</em> milliseconds, no matter you have modified it or not.</p>
-<p>This mode is suitable for saving test cases, etc. In the other modes, the test cases are not auto-saved if you don&rsquo;t modify the codes.</p>
-<h2 id="detached-execution">Detached Execution</h2>
-<h3 id="terminal-program">Terminal Program</h3>
-<h3 id="terminal-arguments">Terminal Arguments</h3>
-<p>This setting is only available on Linux.</p>
-<p>The terminal program is the name/path of the terminal emulator you want to use.</p>
-<p>The arguments are used to execute a given command. i.e. <code>&lt;Terminal Program&gt; &lt;Terminal Arguments&gt; &lt;command&gt;</code> can be used to execute <code>&lt;command&gt;</code> in the terminal emulator.</p>
-<p>In most terminal emulators including <code>konsole</code>, <code>xterm</code> and <code>xfce-terminal</code>, the argument is <code>-e</code>.</p>
-<p>In <code>gnome-terminal</code>, it is <code>--</code>.</p>
-<p>You can read the manual of your terminal emulator to get the suitable arguments.</p>
-<h2 id="save-session">Save Session</h2>
-<h3 id="restore-last-session-at-startup">Restore last session at startup</h3>
-<p>Save the status of the editor, and restore most status from the last session when you start CP Editor.</p>
-<p>You can use the <code>--no-hot-exit</code> command line option to temporarily disable this, in case that the last session is too big and the application hangs.</p>
-<h3 id="auto-save-the-current-session-periodically">Auto-save the current session periodically</h3>
-<p>Save the current session periodically instead of only when exiting the application.</p>
-<p>This is useful if you don&rsquo;t want to lose your codes after abnormal terminations, such as power outage, forced shutdown, killing CP Editor, etc. However, if the files and test cases are too large, the editor hangs each time the auto-save happens.</p>
-<h2 id="bind-file-and-problem">Bind file and problem</h2>
-<h3 id="restore-the-problem-url-when-opening-a-file">Restore the problem URL when opening a file</h3>
-<p>If a problem URL was set for a file, when you open that file again, the problem URL will be restored.</p>
-<h3 id="open-the-old-file-when-parsing-an-old-problem-url">Open the old file when parsing an old problem URL</h3>
-<p>If a problem URL was set for a file, when parsing that problem from Competitive Companion again, the old file will be opened.</p>
-<h2 id="empty-test-cases">Empty Test Cases</h2>
-<h3 id="run-your-codes-on-empty-test-cases">Run your codes on empty test cases</h3>
-<p>Run your code on all non-hidden test cases even if the input is empty.</p>
-<h3 id="check-your-answer-on-test-cases-with-empty-output">Check your answer on test cases with empty output</h3>
-<p>Check your answer even if your output or the expected output is empty.</p>
-<h2 id="load-external-file-changes">Load External File Changes</h2>
-<h3 id="auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&rsquo;s no unsaved modification</h3>
-<p>If the file on the disk and the code in CP Editor was the same, and then the file is changed outside of CP Editor, load the external change without confirmation.</p>
-<h3 id="ask-whether-to-load-external-file-changes">Ask whether to load external file changes</h3>
-<p>If the file is changed outside of CP Editor, ask whether to load the change or not.</p>
-<p>If this setting is disabled, external changes won&rsquo;t be loaded.</p>
+<p>每当计时器完成倒计时，计时器会被重置。即，无论你是否修改了你的代码，你的代码都会以恒定的 <em>自动保存时间间隔</em> 被自动保存。</p>
+<p>该模式适合保存测试用例。在其他模式下，如果你不修改你的代码，测试用例不会被自动保存。</p>
+<h2 id="终端中运行">终端中运行</h2>
+<h3 id="终端程序">终端程序</h3>
+<h3 id="终端参数">终端参数</h3>
+<p>本设置仅在 Linux 系统中可用。</p>
+<p>终端程序是你想要使用的终端模拟器的名称或路径。</p>
+<p>终端参数是终端模拟器中用于运行给定命令的参数。即，命令 <code>&lt;终端程序&gt; &lt;终端参数&gt; &lt;命令&gt;</code> 可在指定的终端模拟器中运行 <code>&lt;命令&gt;</code>。</p>
+<p>在大多数终端模拟器，如 <code>konsole</code>, <code>xterm</code> 和 <code>xfce-terminal</code>，终端参数为 <code>-e</code>，在 <code>gnome-terminal</code> 中，该参数为 <code>--</code>。</p>
+<p>你可以阅读你使用的终端模拟器的手册，以获取关于终端参数的相关信息。</p>
+<h2 id="保存会话">保存会话</h2>
+<h3 id="在启动时恢复上一次会话">在启动时恢复上一次会话</h3>
+<p>在退出 CP Editor 时保存当前状态，并在启动时恢复上一次会话。</p>
+<p>在终端下，你可以使用 <code>--no-hot-exit</code> 命令以暂时禁用该选项。如果上一次会话过大导致 CP Editor 卡死，该命令将会解决这一问题。</p>
+<h3 id="定期自动保存当前会话">定期自动保存当前会话</h3>
+<p>每隔一段时间就保存当前会话，而不是仅在退出时保存会话。</p>
+<p>启用该选项会避免因为非正常退出（如断电，强行终止 CP Editor 等）导致代码丢失的情况发生。然而，如果代码和测试用例过大，每次自动保存时 CP Editor 会卡顿较长时间。</p>
+<h2 id="关联文件和题目">关联文件和题目</h2>
+<h3 id="打开文件时加载对应题目">打开文件时加载对应题目</h3>
+<p>如果一个文件已经设置了题目链接，当该文件被再次打开时，将会使用原来的题目链接。</p>
+<h3 id="加载以前的题目时打开以前的文件">加载以前的题目时打开以前的文件</h3>
+<p>如果一个文件已经设置了题目链接，当使用 Competitive Companion 解析同样的题目时，将会直接打开以前的文件。</p>
+<h2 id="空测试点">空测试点</h2>
+<h3 id="在空测试点上运行你的代码">在空测试点上运行你的代码</h3>
+<p>在所有未被隐藏的测试点上运行你的代码，即使输入为空。</p>
+<h3 id="在输出为空的测试点上检查输出的正确性">在输出为空的测试点上检查输出的正确性</h3>
+<p>即使程序输出或答案为空，也检查该测试点输出的正确性。</p>
+<h2 id="加载外部文件修改">加载外部文件修改</h2>
+<h3 id="若没有未保存的修改自动加载外部文件修改">若没有未保存的修改，自动加载外部文件修改</h3>
+<p>若硬盘上的文件和 CP Editor 中的文件相同，该文件在 CP Editor 外部被修改，无需确认，自动加载外部文件修改。</p>
+<h3 id="询问是否加载外部文件修改">询问是否加载外部文件修改</h3>
+<p>若文件在 CP Editor 外部被修改，询问是否加载这些修改。</p>
+<p>如果该选项被禁用，外部文件修改不会被加载。</p>
 <p>
-<a href="/zh/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&rsquo;s no unsaved modification</a>
- overrides this setting. i.e. if 
-<a href="/zh/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&rsquo;s no unsaved modification</a>
- is enabled, external file changes will be loaded without confrimation regardless of 
-<a href="/zh/#ask-whether-to-load-external-file-changes">Ask whether to load external file changes</a>
- ; if 
-<a href="/zh/#auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&rsquo;s no unsaved modification</a>
- is disabled, the user will be asked whether to load the changes only when 
-<a href="/zh/#ask-whether-to-load-external-file-changes">Ask whether to load external file changes</a>
- is enabled, otherwise the changes won&rsquo;t be loaded.</p>
+
+
+
+
+
+
+
+
+
+<a href="#%e8%8b%a5%e6%b2%a1%e6%9c%89%e6%9c%aa%e4%bf%9d%e5%ad%98%e7%9a%84%e4%bf%ae%e6%94%b9%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >若没有未保存的修改，自动加载外部文件修改</a>
+ 会覆盖该选项的设置。即，若选项 
+
+
+
+
+
+
+
+
+
+<a href="#%e8%8b%a5%e6%b2%a1%e6%9c%89%e6%9c%aa%e4%bf%9d%e5%ad%98%e7%9a%84%e4%bf%ae%e6%94%b9%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >若没有未保存的修改，自动加载外部文件修改</a>
+ 被启用，无论 
+
+
+
+
+
+
+
+
+
+<a href="#%e8%af%a2%e9%97%ae%e6%98%af%e5%90%a6%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >询问是否加载外部文件修改</a>
+ 是否启用，外部文件修改将会在无确认的情况下被自动加载。若选项 
+
+
+
+
+
+
+
+
+
+<a href="#%e8%8b%a5%e6%b2%a1%e6%9c%89%e6%9c%aa%e4%bf%9d%e5%ad%98%e7%9a%84%e4%bf%ae%e6%94%b9%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >若没有未保存的修改，自动加载外部文件修改</a>
+ 被禁用，且 
+
+
+
+
+
+
+
+
+
+<a href="#%e8%af%a2%e9%97%ae%e6%98%af%e5%90%a6%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >询问是否加载外部文件修改</a>
+ 被启用，CP Editor 将会询问用户是否加载这些修改。而在两个选项都被禁用的情况下，外部文件修改将不会被加载。</p>
 
         <div class="section-index">
     
@@ -1029,7 +1097,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 January 24, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/eb060caf7028c896e7b478ffbdad6483a0e17c9c">feat(Prefernces): make the headings the same as the preferences window (#124) (eb060ca)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 January 30, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/e49c16476d462ee505b845d3f35ab9771994c240">feat(file-path, key-bindings, actions): add Chinese translation (#130) (e49c164)</a>
 </div>
 </div>
 
