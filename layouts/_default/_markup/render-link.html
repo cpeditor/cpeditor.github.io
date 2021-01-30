@@ -1,4 +1,7 @@
-{{ $fragment := print "#" (urls.Parse .Destination).Fragment }}
+{{ $fragment := (urls.Parse .Destination).Fragment }}
+{{ if ne $fragment "" }}
+{{ $fragment = print "#" $fragment }}
+{{ end }}
 
 {{ $href := "" }}
 {{ if eq $fragment .Destination }}
