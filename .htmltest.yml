@@ -1,0 +1,4 @@
+DirectoryPath: public
+IgnoreAltMissing: true
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreInternalEmptyHash: true

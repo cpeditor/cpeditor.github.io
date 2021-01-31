@@ -27,8 +27,6 @@ jobs:
           HUGO_ENV=production hugo --minify
       - name: Check links
         id: check-links
-        uses: peter-evans/link-checker@v1
+        uses: wjdp/htmltest-action@11acebff5338acdc9363f2a5e4fc0a84f96da64e
         with:
-          args: -r public -d public -x "https?:\/\/"
-      - name: Fail on link errors
-        run: exit ${{ steps.check-links.outputs.exit_code }}
+          skip_external: true
