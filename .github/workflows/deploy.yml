@@ -28,7 +28,6 @@ jobs:
       - name: Build Site
         run: HUGO_ENV=production ./build.sh
       - name: Check links
-        id: check-links
         uses: wjdp/htmltest-action@11acebff5338acdc9363f2a5e4fc0a84f96da64e
         with:
           path: dist

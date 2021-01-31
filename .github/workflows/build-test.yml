@@ -26,7 +26,6 @@ jobs:
           git config core.quotePath false
           HUGO_ENV=production hugo --minify
       - name: Check links
-        id: check-links
         uses: wjdp/htmltest-action@11acebff5338acdc9363f2a5e4fc0a84f96da64e
         with:
           skip_external: true
