@@ -31,7 +31,9 @@ jobs:
         id: check-links
         uses: wjdp/htmltest-action@11acebff5338acdc9363f2a5e4fc0a84f96da64e
         with:
+          path: dist
           skip_external: true
+          config: .htmltest.yml
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
