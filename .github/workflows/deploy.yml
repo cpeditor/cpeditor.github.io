@@ -12,18 +12,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: hugo
           fetch-depth: 0
-      - name: Fetch submodules
-        run: git submodule update --init --recursive
+          submodules: recursive
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "13.x"
+          node-version: "14.x"
       - run: npm install
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.69.2"
+          hugo-version: "0.80.0"
           extended: true
       - name: Build Site
         run: HUGO_ENV=production ./build.sh
