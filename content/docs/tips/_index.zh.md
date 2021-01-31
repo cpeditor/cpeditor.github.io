@@ -80,6 +80,6 @@ CP Editor 支持在命令行下启动，可以通过执行 `cpeditor --help` 命
 
 在 Windows 下，更推荐使用类 UNIX 的终端（如 Git Bash）。
 
-在命令行下，你可以通过 `cpeditor <path>` 来在指定的位置创建新文件，或是用 `cpeditor --cpp <directory>` 打开一个目录下的所有 C++ 源代码，还可以通过 `cpeditor --no-hot-exit` 暂时禁用 [在启动时恢复上一次会话](../preferences/actions/_index.zh.md#restore-last-session-at-startup)。
+在命令行下，你可以通过 `cpeditor <path>` 来在指定的位置创建新文件，或是用 `cpeditor --cpp <directory>` 打开一个目录下的所有 C++ 源代码，还可以通过 `cpeditor --no-hot-exit` 暂时禁用 [在启动时恢复上一次会话](../preferences/actions/_index.zh.md#在启动时恢复上一次会话)。
 
 CP Editor 在接收到 SIGINT 和 SIGHUP 命令时会正常关闭，因此如果你在命令行下启动 CP Editor，你可以通过按下 <kbd>Ctrl+C</kbd> 退出，而不必担心丢失任何工作。

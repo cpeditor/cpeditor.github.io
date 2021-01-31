@@ -98,7 +98,7 @@ The head comments are added at the head of the code when parsing a problem.
 
 The content of the head comments. You can use the following place holders:
 
--   `${time}`: The time when the problem was parsed. The time format can be set in [Time format for the head comments](#time-format).
+-   `${time}`: The time when the problem was parsed. The time format can be set in [Time format for the head comments](#time-format-for-the-head-comments).
 -   `${json.X.Y}`: An attribute of the data provided by Competitive Companion. You can read more about the attributes in [the documentation of Competitive Companion](https://github.com/jmerle/competitive-companion#explanation). For example, `${json.name}` is the name of the problem.
 
 #### Time format for the head comments
