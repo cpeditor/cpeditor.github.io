@@ -29,7 +29,7 @@ You can read [Clang-Format Style Options documentation](https://clang.llvm.org/d
 
 YAPF is used to format the Python codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.
 
-**See also** [Setup YAPF](../../setup/_index.ru.md#yapf).
+**See also** [Setup YAPF](../../setup/_index.ru.md#setup-yapf).
 
 #### Program
 
