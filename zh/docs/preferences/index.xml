@@ -20,19 +20,19 @@
 &lt;p>在输入左括号时自动插入右括号。例如，当你输入一个 &lt;code>(&lt;/code> 时，将会自动加入一个 &lt;code>)&lt;/code>。&lt;/p>
 &lt;p>如果光标处右边的第一个字符是右括号，而你输入了一个右括号，光标将会自动跳到该右括号后面，而不再输入右括号。&lt;/p>
 &lt;p>你可以在各语言的
-&lt;a href="/zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7" >括号&lt;/a>
+&lt;a href="../../../zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7" >括号&lt;/a>
 设置中设置各语言自动补全的括号类型。&lt;/p>
 &lt;h3 id="自动删除括号">自动删除括号&lt;/h3>
 &lt;p>在删除一个左括号时，如果其右侧有一个右括号相邻，则该右括号也会被自动删除。&lt;/p>
 &lt;p>你可以在各语言的
-&lt;a href="/zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7" >括号&lt;/a>
+&lt;a href="../../../zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7" >括号&lt;/a>
 设置中设置各语言自动删除的括号类型。&lt;/p>
 &lt;h3 id="在按下-tab-键时跳出括号">在按下 Tab 键时跳出括号&lt;/h3>
 &lt;p>如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果
 &lt;a href="#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7" >自动补全括号&lt;/a>
 选项被启用，这种方式可以作为输入右括号的另一种方式。&lt;/p>
 &lt;p>你可以在各语言的
-&lt;a href="/zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7" >括号&lt;/a>
+&lt;a href="../../../zh/docs/preferences/language/#%e6%8b%ac%e5%8f%b7" >括号&lt;/a>
 设置中设置各语言按下 Tab 时自动跳出的括号类型。&lt;/p>
 &lt;h3 id="将制表符替换为空格">将制表符替换为空格&lt;/h3>
 &lt;p>当插入一个缩进时，插入与
@@ -53,14 +53,14 @@
 &lt;h4 id="c-可执行文件路径">C++ 可执行文件路径&lt;/h4>
 &lt;p>设置可执行文件的路径，即编译命令中 &lt;code>-o&lt;/code> 选项后的参数。&lt;/p>
 &lt;p>如果使用了相对路径，则可执行文件的位置将和源代码位置有关（如果当前标签是未命名标签，则可执行文件位置将和
-&lt;a href="/zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9" >临时文件夹&lt;/a>
+&lt;a href="../../../zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9" >临时文件夹&lt;/a>
 的位置有关）。&lt;/p>
 &lt;p>该设置中，你可以使用如下参数：&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${filename}&lt;/code>：源代码的完整文件名。如果当前标签是未命名标签，则完整文件名是 &lt;code>sol.cpp&lt;/code>。&lt;/li>
 &lt;li>&lt;code>${basename}&lt;/code>：将 &lt;code>${filename}&lt;/code> 去掉扩展名（&lt;code>.cpp&lt;/code> 等）后的文件名。&lt;/li>
 &lt;li>&lt;code>${tmpdir}&lt;/code> 或 &lt;code>${tempdir}&lt;/code>：
-&lt;a href="/zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9" >临时文件夹&lt;/a>
+&lt;a href="../../../zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9" >临时文件夹&lt;/a>
 的路径。&lt;/li>
 &lt;/ul>
 &lt;p>例如，使用 &lt;code>${tmpdir}/${basename}&lt;/code> 将会把可执行文件存储在临时文件夹下。如果你不想要存储可执行文件的话，可以这样设定路径。而 &lt;code>executables/${basename}&lt;/code> 将会把可执行文件存储在源代码所在目录的下的 &lt;code>executables&lt;/code> 文件夹。&lt;/p>
@@ -104,7 +104,7 @@
 &lt;p>该设置包含三部分。&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;a href="/zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" >正则表达式&lt;/a>
+&lt;a href="../../../zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" >正则表达式&lt;/a>
 &lt;/li>
 &lt;li>偏移类型：开头或末尾。&lt;/li>
 &lt;li>偏移量：一个数字，可以为负值。&lt;/li>
@@ -130,19 +130,19 @@
 &lt;h2 id="括号">括号&lt;/h2>
 &lt;p>你可以为各编程语言设置相应的括号补全选项。&lt;/p>
 &lt;p>每个设置有三种状态：开启，关闭或默认。如果处于默认状态，将应用
-&lt;a href="/zh/docs/preferences/code-edit/" >代码编辑&lt;/a>
+&lt;a href="../../../zh/docs/preferences/code-edit/" >代码编辑&lt;/a>
 中的设置，否则将会使用这里的设置。&lt;/p>
 &lt;h3 id="自动补全">自动补全&lt;/h3>
 &lt;p>详见
-&lt;a href="/zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7" >代码编辑/自动补全括号&lt;/a>
+&lt;a href="../../../zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7" >代码编辑/自动补全括号&lt;/a>
 。&lt;/p>
 &lt;h3 id="自动删除">自动删除&lt;/h3>
 &lt;p>详见
-&lt;a href="/zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e5%88%a0%e9%99%a4%e6%8b%ac%e5%8f%b7" >代码编辑/自动删除括号&lt;/a>
+&lt;a href="../../../zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e5%88%a0%e9%99%a4%e6%8b%ac%e5%8f%b7" >代码编辑/自动删除括号&lt;/a>
 。&lt;/p>
 &lt;h3 id="按-tab-键跳出">按 Tab 键跳出&lt;/h3>
 &lt;p>详见
-&lt;a href="/zh/docs/preferences/code-edit/#%e5%9c%a8%e6%8c%89%e4%b8%8b-tab-%e9%94%ae%e6%97%b6%e8%b7%b3%e5%87%ba%e6%8b%ac%e5%8f%b7" >代码编辑/在按下 Tab 键时跳出括号&lt;/a>
+&lt;a href="../../../zh/docs/preferences/code-edit/#%e5%9c%a8%e6%8c%89%e4%b8%8b-tab-%e9%94%ae%e6%97%b6%e8%b7%b3%e5%87%ba%e6%8b%ac%e5%8f%b7" >代码编辑/在按下 Tab 键时跳出括号&lt;/a>
 。&lt;/p></description></item><item><title>Docs: 外观</title><link>/zh/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/appearance/</guid><description>
 &lt;h2 id="通用">通用&lt;/h2>
 &lt;h3 id="界面语言-ui-language">界面语言 (UI Language)&lt;/h3>
@@ -192,7 +192,7 @@
 &lt;h3 id="保存文件前保存测试用例">保存文件前保存测试用例&lt;/h3>
 &lt;p>在保存代码前将测试用例一并保存。&lt;/p>
 &lt;p>你可以在
-&lt;a href="/zh/docs/preferences/file-path/#%e6%b5%8b%e8%af%95%e7%82%b9" >文件路径/测试点&lt;/a>
+&lt;a href="../../../zh/docs/preferences/file-path/#%e6%b5%8b%e8%af%95%e7%82%b9" >文件路径/测试点&lt;/a>
 中设置测试用例保存的位置。&lt;/p>
 &lt;h2 id="自动保存">自动保存&lt;/h2>
 &lt;h3 id="自动保存间隔类型">自动保存间隔类型&lt;/h3>
@@ -252,7 +252,7 @@
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/zh/docs/setup/#setup-clang-format" >Setup Clang Format&lt;/a>
+&lt;a href="../../../zh/docs/setup/#setup-clang-format" >Setup Clang Format&lt;/a>
 .&lt;/p>
 &lt;h4 id="program">Program&lt;/h4>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
@@ -266,7 +266,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h3 id="yapf">YAPF&lt;/h3>
 &lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/zh/docs/setup/#yapf" >Setup YAPF&lt;/a>
+&lt;a href="../../../zh/docs/setup/#yapf" >Setup YAPF&lt;/a>
 .&lt;/p>
 &lt;h4 id="program-1">Program&lt;/h4>
 &lt;p>The program of YAPF. It could be one of:&lt;/p>
@@ -285,7 +285,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h2 id="language-server">Language Server&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/zh/docs/setup/#setup-language-server" >Setup Language Server&lt;/a>
+&lt;a href="../../../zh/docs/setup/#setup-language-server" >Setup Language Server&lt;/a>
 .&lt;/p>
 &lt;h3 id="use-linting-with-language-server">Use Linting with Language Server&lt;/h3>
 &lt;p>Use language server to lint errors, warnings, hints, etc.&lt;/p>
@@ -299,7 +299,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>For example, if you are using &lt;code>pyls&lt;/code> for Python, you probably want to use &lt;code>python&lt;/code> as the language server program, and use &lt;code>-m pyls&lt;/code> as the arguments.&lt;/p>
 &lt;h2 id="competitive-companion">Competitive Companion&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/zh/docs/setup/#setup-competitive-companion" >Setup Competitive Companion&lt;/a>
+&lt;a href="../../../zh/docs/setup/#setup-competitive-companion" >Setup Competitive Companion&lt;/a>
 .&lt;/p>
 &lt;h3 id="open-new-tabs">Open New Tabs&lt;/h3>
 &lt;p>Open a new tab when a problem is parsed.&lt;/p>
@@ -340,7 +340,7 @@ to submit your solutions to
 &lt;a href="#competitive-companion" >Competitive Companion&lt;/a>
 from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/zh/docs/setup/#setup-cf-tool" >Setup CF Tool&lt;/a>
+&lt;a href="../../../zh/docs/setup/#setup-cf-tool" >Setup CF Tool&lt;/a>
 .&lt;/p>
 &lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>cf&lt;/code> executable file, or simply &lt;code>cf&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
@@ -351,7 +351,7 @@ from Codeforces, or manually set the problem URL of a tab in the context menu of
 &lt;h2 id="测试点">测试点&lt;/h2>
 &lt;h3 id="输入文件答案文件保存路径">输入文件/答案文件保存路径&lt;/h3>
 &lt;p>设置测试数据
-&lt;a href="/zh/docs/preferences/actions/#%e4%bf%9d%e5%ad%98%e6%96%87%e4%bb%b6%e5%89%8d%e4%bf%9d%e5%ad%98%e6%b5%8b%e8%af%95%e7%94%a8%e4%be%8b" >保存&lt;/a>
+&lt;a href="../../../zh/docs/preferences/actions/#%e4%bf%9d%e5%ad%98%e6%96%87%e4%bb%b6%e5%89%8d%e4%bf%9d%e5%ad%98%e6%b5%8b%e8%af%95%e7%94%a8%e4%be%8b" >保存&lt;/a>
 的位置。如果设置的路径是相对路径，则实际路径将基于源代码所在路径。&lt;/p>
 &lt;p>你可以使用如下占位符：&lt;/p>
 &lt;ul>
@@ -371,7 +371,7 @@ from Codeforces, or manually set the problem URL of a tab in the context menu of
 &lt;h3 id="测试数据匹配规则">测试数据匹配规则&lt;/h3>
 &lt;p>在加载成对的测试点时，输入文件和答案文件的匹配规则。&lt;/p>
 &lt;p>每条规则是一对
-&lt;a href="/zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" >正则表达式&lt;/a>
+&lt;a href="../../../zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" >正则表达式&lt;/a>
 。其中第一个正则表达式用于匹配完整输入文件名，第二个正则表达式用于匹配相应的答案文件名。&lt;/p>
 &lt;p>例如，你可以使用 &lt;code>(.+)\.in&lt;/code> 和 &lt;code>\1.out&lt;/code> 匹配 &lt;code>test-1.in&lt;/code> 和 &lt;code>test-1.out&lt;/code>，或者使用 &lt;code>(.+)\.in\.(\d+)&lt;/code> 和 &lt;code>\1.ans.\2&lt;/code> 匹配 &lt;code>test.in.3&lt;/code> 和 &lt;code>test.ans.3&lt;/code>。&lt;/p>
 &lt;p>在加载成对的测试点时，每一条与输入文件匹配的规则都会被用于尝试寻找相应的答案文件。&lt;/p>
@@ -379,7 +379,7 @@ from Codeforces, or manually set the problem URL of a tab in the context menu of
 &lt;h3 id="针对题目链接的默认保存路径">针对题目链接的默认保存路径&lt;/h3>
 &lt;p>保存一个有题目链接的新文件时，使用的默认保存路径。&lt;/p>
 &lt;p>每条规则是一对
-&lt;a href="/zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" >正则表达式&lt;/a>
+&lt;a href="../../../zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" >正则表达式&lt;/a>
 。其中第一个正则表达式用于匹配题目链接的一部分，第二个正则表达式用于设置相应的保存路径。&lt;/p>
 &lt;p>当保存一个有题目链接的新文件时，如果题目链接与至少一个规则匹配，将使用第一个匹配的规则对应的保存路径。&lt;/p>
 &lt;p>下面是一个例子：&lt;/p>

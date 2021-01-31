@@ -20,19 +20,19 @@ is enabled) will be inserted at the beginning of the new line.&lt;/li>
 &lt;p>Automatically add the right parenthesis when you type the left one. For example, when you type &lt;code>(&lt;/code>, &lt;code>)&lt;/code> will be added.&lt;/p>
 &lt;p>When the character next to the cursor is a right parenthesis and you type this parenthesis, instead of typing this parenthesis, the cursor will jump out of the parenthesis.&lt;/p>
 &lt;p>You can choose the parentheses to auto-complete in the
-&lt;a href="/ru/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
+&lt;a href="../../../ru/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
 settings.&lt;/p>
 &lt;h3 id="auto-remove-parentheses">Auto Remove Parentheses&lt;/h3>
 &lt;p>When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.&lt;/p>
 &lt;p>You can choose the parentheses to auto-remove in the
-&lt;a href="/ru/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
+&lt;a href="../../../ru/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
 settings.&lt;/p>
 &lt;h3 id="jump-out-of-a-parenthesis-by-pressing-tab">Jump out of a parenthesis by pressing Tab&lt;/h3>
 &lt;p>When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If
 &lt;a href="#auto-complete-parentheses" >Auto Complete Parentheses&lt;/a>
 is enabled, this is an alternative of typing the right parenthesis.&lt;/p>
 &lt;p>You can choose the parentheses to jump out by Tab in the
-&lt;a href="/ru/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
+&lt;a href="../../../ru/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
 settings.&lt;/p>
 &lt;h3 id="replace-tabs-by-spaces">Replace tabs by spaces&lt;/h3>
 &lt;p>When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the
@@ -53,14 +53,14 @@ settings.&lt;/p>
 &lt;h4 id="c-executable-file-path">C++ Executable File Path&lt;/h4>
 &lt;p>The path of the executable file, i.e. the argument of the &lt;code>-o&lt;/code> option of the compiler.&lt;/p>
 &lt;p>If this path is a relative path, then it&amp;rsquo;s relative to the source file (if it&amp;rsquo;s an untitled tab, then relative to the
-&lt;a href="/ru/docs/preferences/general/#temporary-directory" >Temporary Directory&lt;/a>
+&lt;a href="../../../ru/docs/preferences/general/#temporary-directory" >Temporary Directory&lt;/a>
 ).&lt;/p>
 &lt;p>You can use some place holders for this setting:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${filename}&lt;/code>: The complete name of the source file. If it&amp;rsquo;s an untitled tab (i.e. an unsaved file), the complete file name is &lt;code>sol.cpp&lt;/code>.&lt;/li>
 &lt;li>&lt;code>${basename}&lt;/code>: &lt;code>${filename}&lt;/code> without the suffix (i.e. without &lt;code>.cpp&lt;/code>, etc.).&lt;/li>
 &lt;li>&lt;code>${tmpdir}&lt;/code> or &lt;code>${tempdir}&lt;/code>: The path of the
-&lt;a href="/ru/docs/preferences/general/#temporary-directory" >Temporary Directory&lt;/a>
+&lt;a href="../../../ru/docs/preferences/general/#temporary-directory" >Temporary Directory&lt;/a>
 .&lt;/li>
 &lt;/ul>
 &lt;p>For example, you can use &lt;code>${tmpdir}/${basename}&lt;/code> if you don&amp;rsquo;t want to keep the executable files, or &lt;code>executables/${basename}&lt;/code> if you want to keep all executable files in the &lt;code>executables&lt;/code> directory under the directory of the source file.&lt;/p>
@@ -104,7 +104,7 @@ for the details.&lt;/p>
 &lt;p>It contains three parts:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;a href="/ru/docs/preferences/general/#regular-expression" >Regex&lt;/a>
+&lt;a href="../../../ru/docs/preferences/general/#regular-expression" >Regex&lt;/a>
 &lt;/li>
 &lt;li>Offset type: start or end.&lt;/li>
 &lt;li>Offset characters: a number, could be negative.&lt;/li>
@@ -130,21 +130,21 @@ for the details.&lt;/p>
 &lt;h2 id="parentheses">Parentheses&lt;/h2>
 &lt;p>You can set the parentheses settings for each language and each parenthesis.&lt;/p>
 &lt;p>Each setting has three states: enable, disable and default. If it&amp;rsquo;s default, it uses the settings in the
-&lt;a href="/ru/docs/preferences/code-edit/" >Code Edit&lt;/a>
+&lt;a href="../../../ru/docs/preferences/code-edit/" >Code Edit&lt;/a>
 page. Otherwise, it overwrites the settings in the
-&lt;a href="/ru/docs/preferences/code-edit/" >Code Edit&lt;/a>
+&lt;a href="../../../ru/docs/preferences/code-edit/" >Code Edit&lt;/a>
 page.&lt;/p>
 &lt;h3 id="auto-complete">Auto Complete&lt;/h3>
 &lt;p>See
-&lt;a href="/ru/docs/preferences/code-edit/#auto-complete-parentheses" >Code Edit/Auto Complete Parentheses&lt;/a>
+&lt;a href="../../../ru/docs/preferences/code-edit/#auto-complete-parentheses" >Code Edit/Auto Complete Parentheses&lt;/a>
 .&lt;/p>
 &lt;h3 id="auto-remove">Auto Remove&lt;/h3>
 &lt;p>See
-&lt;a href="/ru/docs/preferences/code-edit/#auto-remove-parentheses" >Code Edit/Auto Remove Parentheses&lt;/a>
+&lt;a href="../../../ru/docs/preferences/code-edit/#auto-remove-parentheses" >Code Edit/Auto Remove Parentheses&lt;/a>
 .&lt;/p>
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
 &lt;p>See
-&lt;a href="/ru/docs/preferences/code-edit/#jump-out-of-a-parenthesis-by-pressing-tab" >Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>
+&lt;a href="../../../ru/docs/preferences/code-edit/#jump-out-of-a-parenthesis-by-pressing-tab" >Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>
 .&lt;/p></description></item><item><title>Docs: Appearance</title><link>/ru/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/appearance/</guid><description>
 &lt;h2 id="general">General&lt;/h2>
 &lt;h3 id="ui-language">UI Language&lt;/h3>
@@ -194,7 +194,7 @@ to save files.&lt;/p>
 &lt;h3 id="save-testcases-on-save">Save Testcases on Save&lt;/h3>
 &lt;p>Save the test cases on the disk when saving the code.&lt;/p>
 &lt;p>You can choose where to save the test cases in
-&lt;a href="/ru/docs/preferences/file-path/#testcases" >File Path/Testcases&lt;/a>
+&lt;a href="../../../ru/docs/preferences/file-path/#testcases" >File Path/Testcases&lt;/a>
 .&lt;/p>
 &lt;h2 id="auto-save">Auto Save&lt;/h2>
 &lt;h3 id="auto-save-interval-type">Auto Save Interval Type&lt;/h3>
@@ -255,7 +255,7 @@ is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/ru/docs/setup/#setup-clang-format" >Setup Clang Format&lt;/a>
+&lt;a href="../../../ru/docs/setup/#setup-clang-format" >Setup Clang Format&lt;/a>
 .&lt;/p>
 &lt;h4 id="program">Program&lt;/h4>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
@@ -269,7 +269,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h3 id="yapf">YAPF&lt;/h3>
 &lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/ru/docs/setup/#yapf" >Setup YAPF&lt;/a>
+&lt;a href="../../../ru/docs/setup/#yapf" >Setup YAPF&lt;/a>
 .&lt;/p>
 &lt;h4 id="program-1">Program&lt;/h4>
 &lt;p>The program of YAPF. It could be one of:&lt;/p>
@@ -288,7 +288,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h2 id="language-server">Language Server&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/ru/docs/setup/#setup-language-server" >Setup Language Server&lt;/a>
+&lt;a href="../../../ru/docs/setup/#setup-language-server" >Setup Language Server&lt;/a>
 .&lt;/p>
 &lt;h3 id="use-linting-with-language-server">Use Linting with Language Server&lt;/h3>
 &lt;p>Use language server to lint errors, warnings, hints, etc.&lt;/p>
@@ -302,7 +302,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>For example, if you are using &lt;code>pyls&lt;/code> for Python, you probably want to use &lt;code>python&lt;/code> as the language server program, and use &lt;code>-m pyls&lt;/code> as the arguments.&lt;/p>
 &lt;h2 id="competitive-companion">Competitive Companion&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/ru/docs/setup/#setup-competitive-companion" >Setup Competitive Companion&lt;/a>
+&lt;a href="../../../ru/docs/setup/#setup-competitive-companion" >Setup Competitive Companion&lt;/a>
 .&lt;/p>
 &lt;h3 id="open-new-tabs">Open New Tabs&lt;/h3>
 &lt;p>Open a new tab when a problem is parsed.&lt;/p>
@@ -343,7 +343,7 @@ to submit your solutions to
 &lt;a href="#competitive-companion" >Competitive Companion&lt;/a>
 from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="/ru/docs/setup/#setup-cf-tool" >Setup CF Tool&lt;/a>
+&lt;a href="../../../ru/docs/setup/#setup-cf-tool" >Setup CF Tool&lt;/a>
 .&lt;/p>
 &lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>cf&lt;/code> executable file, or simply &lt;code>cf&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
@@ -355,7 +355,7 @@ from Codeforces, or manually set the problem URL of a tab in the context menu of
 &lt;h3 id="input-file-save-path">Input File Save Path&lt;/h3>
 &lt;h3 id="answer-file-save-path">Answer File Save Path&lt;/h3>
 &lt;p>The path where the test cases are
-&lt;a href="/ru/docs/preferences/actions/#save-testcases-on-save" >saved&lt;/a>
+&lt;a href="../../../ru/docs/preferences/actions/#save-testcases-on-save" >saved&lt;/a>
 . If it is a relative path, it is relative to the source file.&lt;/p>
 &lt;p>You can use the following place holders:&lt;/p>
 &lt;ul>
@@ -375,7 +375,7 @@ from Codeforces, or manually set the problem URL of a tab in the context menu of
 &lt;h3 id="testcases-matching-rules">Testcases Matching Rules&lt;/h3>
 &lt;p>The rules used to match test cases when loading pairs of test cases.&lt;/p>
 &lt;p>Each rule is a pair of
-&lt;a href="/ru/docs/preferences/general/#regular-expression" >regular expression patterns&lt;/a>
+&lt;a href="../../../ru/docs/preferences/general/#regular-expression" >regular expression patterns&lt;/a>
 . The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.&lt;/p>
 &lt;p>For example, you can use &lt;code>(.+)\.in&lt;/code> and &lt;code>\1.out&lt;/code> to match &lt;code>test-1.in&lt;/code> and &lt;code>test-1.out&lt;/code>, or use &lt;code>(.+)\.in\.(\d+)&lt;/code> and &lt;code>\1.ans.\2&lt;/code> to match &lt;code>test.in.3&lt;/code> and &lt;code>test.ans.3&lt;/code>.&lt;/p>
 &lt;p>When loading pairs of test cases, each rule which matches an input file will be used to try to find the corresponding answer file to the input file.&lt;/p>
@@ -383,7 +383,7 @@ from Codeforces, or manually set the problem URL of a tab in the context menu of
 &lt;h3 id="default-file-path-for-problem-urls">Default File Path For Problem URLs&lt;/h3>
 &lt;p>The default path when choosing where to save an untitled tab with problem URL.&lt;/p>
 &lt;p>Each rule is a pair of
-&lt;a href="/ru/docs/preferences/general/#regular-expression" >regular expression patterns&lt;/a>
+&lt;a href="../../../ru/docs/preferences/general/#regular-expression" >regular expression patterns&lt;/a>
 . The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.&lt;/p>
 &lt;p>When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.&lt;/p>
 &lt;p>Here&amp;rsquo;s an example of a rule:&lt;/p>
