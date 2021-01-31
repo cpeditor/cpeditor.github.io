@@ -7,8 +7,6 @@ git config core.quotePath false
 version_branches="$(git for-each-ref --format='%(refname:lstrip=3)' refs/remotes/*/v*.* | sort -u)"
 
 function build() {
-    sed -i "s/baseURL = \"\/\"/baseURL = \"\/$1\"/" config.toml
-
     if [[ "$1" != "" ]]; then
         sed -i "s/^version = \".*\"/version = \"$1\"/" config.toml
         sed -i "s/^github_branch = \".*\"/github_branch = \"$1\"/" config.toml
@@ -16,12 +14,12 @@ function build() {
 
     echo "[[params.versions]]
     version = \"alpha\"
-    url = \"/\"" >> config.toml
+    url = \"https://cpeditor.org/\"" >> config.toml
 
     for version in $version_branches; do
         echo "[[params.versions]]
         version = \"$version\"
-        url = \"/$version\"" >> config.toml
+        url = \"https://cpeditor.org/$version\"" >> config.toml
     done
 
     hugo --minify
@@ -39,7 +37,10 @@ rm -rf dist; mv public dist
 
 for branch in $version_branches; do
     git checkout "$branch"
-    git submodule update
+    git submodule update --init --recursive
     build "$branch"
     mv public "dist/$branch"
 done
+
+git checkout hugo
+git submodule update --init --recursive
