@@ -15,6 +15,6 @@ On Linux, it's `/tmp/CP Editor-XXXXXX`. On Windows, it's `C:\Users\<username>\Ap
 
 The [regular expression](https://en.wikipedia.org/wiki/Regular_expression) is used to match patterns in a string and find and replace substrings.
 
-You can find many online regex cources, for example: <https://regexone.com/>.
+You can find many online regex courses, for example <https://regexone.com/>.
 
 In CP Editor, you can use `\1`, `\2`, etc. for the content of the first/second capture group in the replacement patterns.

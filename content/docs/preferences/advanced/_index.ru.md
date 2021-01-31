@@ -21,7 +21,7 @@ When checking for updates, check for beta versions. The beta versions usually ha
 
 The default time limit when executing programs.
 
-The program will be killed if it doesn't terminate in the time limit.
+The program will be killed if it doesn't terminate within the time limit.
 
 ### Output Length Limit
 

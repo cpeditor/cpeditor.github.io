@@ -5,7 +5,7 @@ weight: 70
 description: Frequently asked questions by CP Editor users
 ---
 
-### How to fetch testcases from the websites?
+### How to fetch test cases from the websites?
 
 You have to install [Competitive Companion](https://github.com/jmerle/competitive-companion) on your browser, and use it on the website while CP Editor is running. [Here is a youtube video](https://youtu.be/IVx1rSqYz7c) demonstrating this setup.
 

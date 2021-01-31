@@ -19,7 +19,7 @@ Then you can set the Compile and Run Commands in the preferences. For example, y
 
 ## Setup CF Tool
 
-In order to submit Codeforces problems in CP Editor, you need to install [CF Tool](https://github.com/xalanq/cf-tool).
+To submit Codeforces problems in CP Editor, you need to install [CF Tool](https://github.com/xalanq/cf-tool).
 
 You can add it to your system PATH to use it directly, or you can set the path to it in [Preferences->Extensions->CF Tool](../preferences/extensions/_index.ru.md#cf-tool).
 
@@ -27,7 +27,7 @@ You need to configure the tool by running the command `cf config` in the command
 
 ## Setup Competitive Companion
 
-[Competitive Companion](https://github.com/jmerle/competitive-companion) is used to parse problems/contests from online judges. After you install it, you can parse sample test cases by a single click, instead of copying them manually.
+[Competitive Companion](https://github.com/jmerle/competitive-companion) is used to parse problems/contests from online judges. After you install it, you can parse sample test cases with a single click, instead of copying them manually.
 
 You can install it from the addon/extension markets:
 

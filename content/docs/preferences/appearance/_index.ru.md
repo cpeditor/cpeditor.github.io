@@ -13,7 +13,7 @@ The natural language used in the UI.
 
 The style used for the UI. The available options are different on different platforms.
 
-The "default" style is either the most appropriate style on your platform, or the style specified by the `--style` command line option.
+The "default" style is either the most appropriate style on your platform or the style specified by the `--style` command-line option.
 
 On Windows, there's an extra option "Auto Fusion". "Auto Fusion" is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).
 
