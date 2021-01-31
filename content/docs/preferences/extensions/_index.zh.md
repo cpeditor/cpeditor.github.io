@@ -9,7 +9,7 @@ weight: 50
 
 Clang Format is used to format the C/C++ and Java codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
 
-**See also** [Setup Clang Format](../../setup/_index.zh.md#setup-clang-format).
+**See also** [Setup Clang Format](../../setup/_index.zh.md#安装-clang-format).
 
 #### Program
 
@@ -29,7 +29,7 @@ You can read [Clang-Format Style Options documentation](https://clang.llvm.org/d
 
 YAPF is used to format the Python codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.
 
-**See also** [Setup YAPF](../../setup/_index.zh.md#yapf).
+**See also** [Setup YAPF](../../setup/_index.zh.md#安装-yapf).
 
 #### Program
 

@@ -36,13 +36,13 @@ You can install it from the addon/extension markets:
 
 ## Setup Code Formatter
 
-### Clang Format
+### Setup Clang Format
 
 CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C/C++ and Java code.
 
 You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../preferences/extensions/_index.ru.md#clang-format).
 
-### YAPF
+### Setup YAPF
 
 CP Editor uses [YAPF](https://github.com/google/yapf) to format your Python code.
 
