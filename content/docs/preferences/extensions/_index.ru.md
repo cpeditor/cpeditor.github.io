@@ -46,7 +46,7 @@ The arguments passed to the YAPF program. This should be `-m yapf` if the progra
 
 #### Style
 
-The YAPF Format style. The content here is the same as the content of a `.style.yapf` file. You can check all possible configuration by running `yapf --style-help`, read the [documentation](https://github.com/google/yapf#formatting-style) or search for other materials to learn how to write the styles.
+The YAPF Format style. The content here is the same as the content of a `.style.yapf` file. You can check all possible configurations by running `yapf --style-help`, read the [documentation](https://github.com/google/yapf#formatting-style) or search for other materials to learn how to write the styles.
 
 ## Language Server
 
@@ -56,7 +56,7 @@ The YAPF Format style. The content here is the same as the content of a `.style.
 
 Use language server to lint errors, warnings, hints, etc.
 
-You can hover over the squiggles to see the tooltips for the explaination of the errors/warnings.
+You can hover over the squiggles to see the tooltips for the explanation of the errors/warnings.
 
 ### Delay in Linting
 
@@ -112,7 +112,7 @@ The format of the `${time}` place holder in the head comments. You can read the 
 
 You can use [CF Tool](https://github.com/xalanq/cf-tool/) to submit your solutions to [Codeforces](https://codeforces.com).
 
-To submit a solution, you have to either parse a problem by [Competitive Companion](#competitive-companion) from Codeforces, or manually set the problem URL of a tab in the context menu of it.
+To submit a solution, you have to either parse a problem by [Competitive Companion](#competitive-companion) from Codeforces or manually set the problem URL of a tab in the context menu of it.
 
 **See also** [Setup CF Tool](../../setup/_index.ru.md#setup-cf-tool).
 

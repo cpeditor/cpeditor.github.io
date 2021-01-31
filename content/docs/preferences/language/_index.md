@@ -25,7 +25,7 @@ For compilation flags, please refer to the manual of the compiler. For example, 
 
 The path of the executable file, i.e. the argument of the `-o` option of the compiler.
 
-If this path is a relative path, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general/_index.md#temporary-directory)).
+If this path is relative, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general/_index.md#temporary-directory)).
 
 You can use some place holders for this setting:
 
@@ -63,11 +63,11 @@ Please refer to [C++ Executable File Path](#c-executable-file-path) for the deta
 
 The name of the main class of your solution.
 
-You can use arbitary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.
+You can use an arbitrary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.
 
 #### Java Run Command
 
-The command to run your solution. For example: `java`.
+The command to run your solution. For example `java`.
 
 This command shouldn't contain the class path or the class name, CP Editor automatically adds them.
 
@@ -109,7 +109,7 @@ It contains three parts:
 
 It works as below:
 
-1.  Find the first match of the regex in the template. 
+1.  Find the first match of the regex in the template.
 2.  If nothing matches the regex, the cursor will be at the end of the template.
 3.  Otherwise, depending on the offset type, the cursor will be at the start/end of the first match, and then moved to the right by the number of the offset characters.
 
@@ -130,7 +130,7 @@ Then you can use `int main` as the regex, `end` as the offset type, and `9` as t
 
 You can add/delete/rename snippets in "Language->XXX->XXX Snippet". You can use <kbd>Ctrl+N</kbd> for "Add", </kbd>Ctrl+W</kbd> for "Del" and </kbd>F2</kbd> for "Rename".
 
-You can also import snippets from files or extract your snippets to files in the "More" menu in the snippet page.
+You can also import snippets from files or extract your snippets to files in the "More" menu on the snippet page.
 
 ### Use Snippets
 
