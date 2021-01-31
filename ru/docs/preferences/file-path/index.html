@@ -160,7 +160,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.c5c9ddac2dfda1131cf0576823ea503c.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.83be9e6216b49a1bec5f741e897273b2.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -192,7 +192,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.c5c9ddac2dfda1131cf0576823ea503c.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.83be9e6216b49a1bec5f741e897273b2.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -832,7 +832,7 @@ if (!doNotTrack) {
 . If it is a relative path, it is relative to the source file.</p>
 <p>You can use the following place holders:</p>
 <ul>
-<li><code>${filename}</code>: the complete file name</li>
+<li><code>${filename}</code>: the complete filename</li>
 <li><code>${basename}</code>: the base file name without the suffix</li>
 <li><code>${0-index}</code>: the index of the test case started from 0</li>
 <li><code>${1-index}</code>: the index of the test case started from 1</li>
@@ -880,14 +880,14 @@ if (!doNotTrack) {
 
 <a href="../../../../ru/docs/preferences/general/#regular-expression"  >regular expression patterns</a>
 . The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.</p>
-<p>When saving a file with problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.</p>
+<p>When saving a file with a problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.</p>
 <p>Here&rsquo;s an example of a rule:</p>
 <p>The problem URL regex: <code>codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)</code></p>
 <p>The file path: <code>/home/username/Codeforces/\1/\2</code></p>
 <h2 id="default-paths">Default Paths</h2>
 <p>The default path used when the user is asked for a file path.</p>
 <p>There are several actions, different actions can use different default paths.</p>
-<p>The user can set multiple default paths, each default path has a name. A default path can be used as a place holder in the default path of an action. When the user chooses a path for an action, serveral default paths can be set to this path.</p>
+<p>The user can set multiple default paths, each default path has a name. A default path can be used as a place holder in the default path of an action. When the user chooses a path for an action, several default paths can be set to this path.</p>
 <p>For example:</p>
 <ul>
 <li>The default path for the action &ldquo;Save File&rdquo; is <code>${file}</code>, and &ldquo;Save File&rdquo; changes <code>file</code> and <code>testcase</code>.</li>
@@ -897,7 +897,7 @@ if (!doNotTrack) {
 <ol>
 <li>You are asked to choose the path for &ldquo;Load Single Test Case&rdquo;. The default path is <code>/a/c</code>, and you choose <code>/a/d</code> as the path. Now <code>file</code> is still <code>/a/b</code>, but <code>testcase</code> is changed to <code>/a/d</code>.</li>
 <li>You are asked to choose the path for &ldquo;Save File&rdquo;. The default path is <code>/a/b</code>, and you choose <code>/a/e</code> as the path. Now both <code>file</code> and <code>testcase</code> are <code>/a/e</code>.</li>
-<li>You are asked to choose the path for &ldquo;Load Single Test Case&rdquo;. The default path is <code>/a/e</code>, because <code>testcase</code> was modified by choosing <code>/a/e</code> for &ldquo;Save File&rdquo;.</li>
+<li>You are asked to choose the path for &ldquo;Load Single Test Case&rdquo;. The default path is <code>/a/e</code> because <code>testcase</code> was modified by choosing <code>/a/e</code> for &ldquo;Save File&rdquo;.</li>
 </ol>
 <p>In the preferences window, the default paths changed by an action is a comma-separated list.</p>
 
@@ -1014,7 +1014,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Изменено January 30, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/e49c16476d462ee505b845d3f35ab9771994c240">feat(file-path, key-bindings, actions): add Chinese translation (#130) (e49c164)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Изменено January 31, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/09659f70c313f250c3309476a525cf6366ecc3d5">fix: fix grammar errors (#134) (09659f7)</a>
 </div>
 </div>
 

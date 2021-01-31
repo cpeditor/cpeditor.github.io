@@ -280,7 +280,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h4 id="arguments-1">Arguments&lt;/h4>
 &lt;p>The arguments passed to the YAPF program. This should be &lt;code>-m yapf&lt;/code> if the program is a Python interpreter. It should NOT contain &lt;code>-i&lt;/code> (the in-place modification option).&lt;/p>
 &lt;h4 id="style-1">Style&lt;/h4>
-&lt;p>The YAPF Format style. The content here is the same as the content of a &lt;code>.style.yapf&lt;/code> file. You can check all possible configuration by running &lt;code>yapf --style-help&lt;/code>, read the
+&lt;p>The YAPF Format style. The content here is the same as the content of a &lt;code>.style.yapf&lt;/code> file. You can check all possible configurations by running &lt;code>yapf --style-help&lt;/code>, read the
 &lt;a href="https://github.com/google/yapf#formatting-style" target="_blank" >documentation&lt;/a>
 or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h2 id="language-server">Language Server&lt;/h2>
@@ -289,7 +289,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 .&lt;/p>
 &lt;h3 id="use-linting-with-language-server">Use Linting with Language Server&lt;/h3>
 &lt;p>Use language server to lint errors, warnings, hints, etc.&lt;/p>
-&lt;p>You can hover over the squiggles to see the tooltips for the explaination of the errors/warnings.&lt;/p>
+&lt;p>You can hover over the squiggles to see the tooltips for the explanation of the errors/warnings.&lt;/p>
 &lt;h3 id="delay-in-linting">Delay in Linting&lt;/h3>
 &lt;p>Update linting if you haven&amp;rsquo;t been typing for &lt;em>delay&lt;/em> milliseconds.&lt;/p>
 &lt;h3 id="path-to-lsp-executable">Path to LSP executable&lt;/h3>
@@ -338,7 +338,7 @@ to submit your solutions to
 .&lt;/p>
 &lt;p>To submit a solution, you have to either parse a problem by
 &lt;a href="#competitive-companion" >Competitive Companion&lt;/a>
-from Codeforces, or manually set the problem URL of a tab in the context menu of it.&lt;/p>
+from Codeforces or manually set the problem URL of a tab in the context menu of it.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
 &lt;a href="../../../zh/docs/setup/#setup-cf-tool" >Setup CF Tool&lt;/a>
 .&lt;/p>

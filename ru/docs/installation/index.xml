@@ -16,12 +16,12 @@
 &lt;h3 id="most-linux-distros">Most Linux Distros&lt;/h3>
 &lt;p>Download the &lt;code>AppImage&lt;/code> in the assets, add execute permission to it (&lt;code>chmod +x &amp;lt;AppImagePath&amp;gt;&lt;/code>), then run it.&lt;/p>
 &lt;h3 id="debian-based-linux-distros">Debian-based Linux Distros&lt;/h3>
-&lt;p>On Debian-based Linux distributions (Ubuntu, Linux Mint, etc.) you can download &lt;code>.deb&lt;/code> package in the assets and run the command in terminal:&lt;/p>
+&lt;p>On Debian-based Linux distributions (Ubuntu, Linux Mint, etc.) you can download the &lt;code>.deb&lt;/code> package in the assets and run the command in the terminal:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">sudo apt install &amp;lt;path to .deb package&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or another graphical tools to install &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara and newer versions of these distributions or based on them.&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or other graphical tools to install the &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara, and newer versions of these distributions or the ones based on them.&lt;/p>
 &lt;h3 id="macos">macOS&lt;/h3>
 &lt;p>Download the &lt;code>.dmg&lt;/code> file in the assets and install it.&lt;/p>
-&lt;p>You may need to click &amp;ldquo;Yes&amp;rdquo; to access Filesystem several times. Apple may report that this application does not comes from recognised developer and prevent you from launching app. Please add an exception to CP Editor from &lt;code>Settings -&amp;gt; Security -&amp;gt; General&lt;/code>, and allow CP Editor to &lt;code>run anyways&lt;/code>&lt;/p></description></item><item><title>Docs: Build from source</title><link>/ru/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/installation/build-from-source/</guid><description>
+&lt;p>You may need to click &amp;ldquo;Yes&amp;rdquo; to access Filesystem several times. Apple may report that this application does not come from a recognized developer and prevent you from launching the app. Please add an exception to CP Editor from &lt;code>Settings -&amp;gt; Security -&amp;gt; General&lt;/code>, and allow CP Editor to &lt;code>run anyways&lt;/code>&lt;/p></description></item><item><title>Docs: Build from source</title><link>/ru/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/installation/build-from-source/</guid><description>
 &lt;ol>
 &lt;li>
 &lt;p>Clone this repo and submodules:&lt;/p>
@@ -44,7 +44,7 @@ to install Qt.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>If CMake can&amp;rsquo;t find the Qt installation path, you should set environment variable: &lt;code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake&lt;/code>. For example, on macOS, you can run something like &lt;code>export CMAKE_PREFIX_PATH=&amp;quot;/usr/local/Cellar/qt/5.15.1&amp;quot;&lt;/code>.&lt;/p>
+&lt;p>If CMake can&amp;rsquo;t find the Qt installation path, you should set the environment variable: &lt;code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake&lt;/code>. For example, on macOS, you can run something like &lt;code>export CMAKE_PREFIX_PATH=&amp;quot;/usr/local/Cellar/qt/5.15.1&amp;quot;&lt;/code>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Run the following commands:&lt;/p>
@@ -68,15 +68,15 @@ cmake --build . --config Release
 &lt;/ol>
 &lt;p>On Linux, you will get &lt;code>build/cpeditor&lt;/code>.&lt;/p>
 &lt;p>On macOS, you will get &lt;code>build/cpeditor.app&lt;/code>.&lt;/p>
-&lt;p>On Windows, you will get &lt;code>build\cpeditor.exe&lt;/code>, or &lt;code>build\Release\cpeditor.exe&lt;/code>. If there are DLLs missing, you can add &lt;code>%QtPath%\%QtVersion%\%Compiler%\bin&lt;/code> (for example, &lt;code>D:\Qt\5.15.1\msvc2019_64\bin&lt;/code>) to the PATH environmental variable.&lt;/p></description></item><item><title>Docs: Use Artifacts</title><link>/ru/docs/installation/use-artifacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/installation/use-artifacts/</guid><description>
+&lt;p>On Windows, you will get &lt;code>build\cpeditor.exe&lt;/code>, or &lt;code>build\Release\cpeditor.exe&lt;/code>. If DLLs are missing, you can add &lt;code>%QtPath%\%QtVersion%\%Compiler%\bin&lt;/code> (for example, &lt;code>D:\Qt\5.15.1\msvc2019_64\bin&lt;/code>) to the PATH environmental variable.&lt;/p></description></item><item><title>Docs: Use Artifacts</title><link>/ru/docs/installation/use-artifacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/installation/use-artifacts/</guid><description>
 &lt;p>If you want to use the latest version (even later than the beta release), but don&amp;rsquo;t want to build from source, you can download Artifacts from
 &lt;a href="https://github.com/cpeditor/cpeditor/actions" target="_blank" >GitHub Actions&lt;/a>
 .&lt;/p>
-&lt;p>However, it&amp;rsquo;s not recommended to use Artifacts, they are more unstable than beta releases, and may be a work in progress. You should read the commit logs and even the source codes before using Artifacts.&lt;/p>
-&lt;p>In order to run it on Windows/macOS, you should install from
+&lt;p>However, it&amp;rsquo;s not recommended to use Artifacts, they are more unstable than beta releases, and could be a work in progress. You should read the commit logs and even the source codes before using Artifacts.&lt;/p>
+&lt;p>To run it on Windows/macOS, you should install from
 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Releases&lt;/a>
-first (usually any version is OK, unless something like DLL missing happens). On Windows, replace &lt;code>cpeditor.exe&lt;/code> in your install folder with the Artifact. On macOS, run &lt;code>cp path/to/Artifact cpeditor.app/Contents/MacOs&lt;/code>, where &lt;code>cpeditor.app&lt;/code> is the one already installed on your machine.&lt;/p>
-&lt;p>In order to run it on Ubuntu 18.04, you need to install Qt. Other Linux distributions may not support binaries compiled on Ubuntu 18.04.&lt;/p></description></item><item><title>Docs: Build from AUR</title><link>/ru/docs/installation/build-from-aur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/installation/build-from-aur/</guid><description>
+first (usually any version is OK unless something like DLL missing happens). On Windows, replace &lt;code>cpeditor.exe&lt;/code> in your install folder with the Artifact. On macOS, run &lt;code>cp path/to/Artifact cpeditor.app/Contents/MacOs&lt;/code>, where &lt;code>cpeditor.app&lt;/code> is the one already installed on your machine.&lt;/p>
+&lt;p>To run it on Ubuntu 18.04, you need to install Qt. Other Linux distributions may not support binaries compiled on Ubuntu 18.04.&lt;/p></description></item><item><title>Docs: Build from AUR</title><link>/ru/docs/installation/build-from-aur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/installation/build-from-aur/</guid><description>
 &lt;p>This method is only for Arch Linux (or other distros based on Arch Linux, including Manjaro) users.&lt;/p>
 &lt;p>There are two AUR packages for CP Editor:
 &lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank" >cpeditor&lt;/a>
