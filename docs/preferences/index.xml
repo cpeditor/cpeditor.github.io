@@ -269,7 +269,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h3 id="yapf">YAPF&lt;/h3>
 &lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../docs/setup/#yapf" >Setup YAPF&lt;/a>
+&lt;a href="../../docs/setup/#setup-yapf" >Setup YAPF&lt;/a>
 .&lt;/p>
 &lt;h4 id="program-1">Program&lt;/h4>
 &lt;p>The program of YAPF. It could be one of:&lt;/p>
@@ -317,7 +317,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>The content of the head comments. You can use the following place holders:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${time}&lt;/code>: The time when the problem was parsed. The time format can be set in
-&lt;a href="#time-format" >Time format for the head comments&lt;/a>
+&lt;a href="#time-format-for-the-head-comments" >Time format for the head comments&lt;/a>
 .&lt;/li>
 &lt;li>&lt;code>${json.X.Y}&lt;/code>: An attribute of the data provided by Competitive Companion. You can read more about the attributes in
 &lt;a href="https://github.com/jmerle/competitive-companion#explanation" target="_blank" >the documentation of Competitive Companion&lt;/a>

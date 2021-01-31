@@ -252,7 +252,7 @@
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh/docs/setup/#setup-clang-format" >Setup Clang Format&lt;/a>
+&lt;a href="../../../zh/docs/setup/#%e5%ae%89%e8%a3%85-clang-format" >Setup Clang Format&lt;/a>
 .&lt;/p>
 &lt;h4 id="program">Program&lt;/h4>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
@@ -266,7 +266,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h3 id="yapf">YAPF&lt;/h3>
 &lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh/docs/setup/#yapf" >Setup YAPF&lt;/a>
+&lt;a href="../../../zh/docs/setup/#%e5%ae%89%e8%a3%85-yapf" >Setup YAPF&lt;/a>
 .&lt;/p>
 &lt;h4 id="program-1">Program&lt;/h4>
 &lt;p>The program of YAPF. It could be one of:&lt;/p>
@@ -299,7 +299,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>For example, if you are using &lt;code>pyls&lt;/code> for Python, you probably want to use &lt;code>python&lt;/code> as the language server program, and use &lt;code>-m pyls&lt;/code> as the arguments.&lt;/p>
 &lt;h2 id="competitive-companion">Competitive Companion&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh/docs/setup/#setup-competitive-companion" >Setup Competitive Companion&lt;/a>
+&lt;a href="../../../zh/docs/setup/#%e5%ae%89%e8%a3%85-competitive-companion" >Setup Competitive Companion&lt;/a>
 .&lt;/p>
 &lt;h3 id="open-new-tabs">Open New Tabs&lt;/h3>
 &lt;p>Open a new tab when a problem is parsed.&lt;/p>
@@ -314,7 +314,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>The content of the head comments. You can use the following place holders:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${time}&lt;/code>: The time when the problem was parsed. The time format can be set in
-&lt;a href="#time-format" >Time format for the head comments&lt;/a>
+&lt;a href="#time-format-for-the-head-comments" >Time format for the head comments&lt;/a>
 .&lt;/li>
 &lt;li>&lt;code>${json.X.Y}&lt;/code>: An attribute of the data provided by Competitive Companion. You can read more about the attributes in
 &lt;a href="https://github.com/jmerle/competitive-companion#explanation" target="_blank" >the documentation of Competitive Companion&lt;/a>
@@ -340,7 +340,7 @@ to submit your solutions to
 &lt;a href="#competitive-companion" >Competitive Companion&lt;/a>
 from Codeforces or manually set the problem URL of a tab in the context menu of it.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh/docs/setup/#setup-cf-tool" >Setup CF Tool&lt;/a>
+&lt;a href="../../../zh/docs/setup/#%e5%ae%89%e8%a3%85-cf-tool" >Setup CF Tool&lt;/a>
 .&lt;/p>
 &lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>cf&lt;/code> executable file, or simply &lt;code>cf&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
