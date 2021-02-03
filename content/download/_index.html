@@ -6,7 +6,7 @@ menu:
     weight: 50
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
 <script src="/js/download.js"></script>
 
 <style>
@@ -52,16 +52,24 @@ menu:
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="asset">Version</label>
-                        <select class="form-control" id="asset" v-model="selectedAsset">
+                        <label for="release">Version</label>
+                        <select class="form-control" id="release" v-model="selectedRelease">
                             <template v-for="release in releases" :key="release.tag_name">
-                                <template v-for="asset in release.assets" :key="asset.id">
-                                    <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
-                                        {{ asset.name }}
-                                        <span v-if="release === latestStableRelease">(Latest Stable)</span>
-                                        <span v-else-if="release === releases[0]">(Latest Beta)</span>
-                                    </option>
-                                </template>
+                                <option :value="release">
+                                    v{{ release.tag_name }}
+                                    <span v-if="release === latestStableRelease">(Latest Stable)</span>
+                                    <span v-else-if="release === releases[0]">(Latest Beta)</span>
+                                </option>
+                            </template>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="asset">Asset</label>
+                        <select class="form-control" id="asset" v-model="selectedAsset">
+                            <template v-for="asset in selectedRelease.assets" :key="asset.id">
+                                <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
+                                    {{ asset.name }}
+                                </option>
                             </template>
                         </select>
                     </div>

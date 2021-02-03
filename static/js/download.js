@@ -44,7 +44,7 @@ function getOS() {
   const iosPlatforms = ["iPhone", "iPad", "iPod"];
 
   if (macosPlatforms.indexOf(platform) !== -1) {
-    return "Mac OS";
+    return "macOS";
   } else if (iosPlatforms.indexOf(platform) !== -1) {
     return "iOS";
   } else if (windowsPlatforms.indexOf(platform) !== -1) {
@@ -65,8 +65,9 @@ $(document).ready(() => {
       userPlatform: "Unknown",
       selectedPlatform: "",
       releases: [],
-      selectedAsset: "",
-      platformOptions: ["Windows", "Linux", "Mac OS"],
+      selectedAsset: null,
+      selectedRelease: null,
+      platformOptions: ["Windows", "Linux", "macOS"],
     },
     methods: {
       isAssetSuitableForPlatform(asset, platform = this.userPlatform) {
@@ -76,7 +77,7 @@ $(document).ready(() => {
             return name.includes("windows") || name.endsWith("exe");
           case "Linux":
             return name.includes("linux") || name.endsWith("AppImage");
-          case "Mac OS":
+          case "macOS":
             return name.includes("macos") || name.endsWith("dmg");
           default:
             return false;
@@ -107,6 +108,14 @@ $(document).ready(() => {
           }
         }
       },
+      chooseBestAsset() {
+        if (this.selectedRelease) {
+          this.selectedAsset = this.bestAssetForPlatform(
+            this.selectedRelease.assets,
+            this.selectedPlatform
+          );
+        }
+      },
     },
     computed: {
       latestStableRelease() {
@@ -124,13 +133,11 @@ $(document).ready(() => {
       },
     },
     watch: {
-      selectedPlatform(platform) {
-        if (this.latestStableRelease) {
-          this.selectedAsset = this.bestAssetForPlatform(
-            this.latestStableRelease.assets,
-            platform
-          );
-        }
+      selectedPlatform() {
+        this.chooseBestAsset();
+      },
+      selectedRelease() {
+        this.chooseBestAsset();
       },
     },
     created() {
@@ -148,10 +155,8 @@ $(document).ready(() => {
           this.releases
             .sort((x, y) => versionCompare(x.tag_name, y.tag_name))
             .reverse();
-          this.selectedAsset = this.bestAssetForPlatform(
-            this.latestStableRelease.assets,
-            this.selectedPlatform
-          );
+          this.selectedRelease = this.latestStableRelease;
+          this.chooseBestAsset();
         }
       });
     },
