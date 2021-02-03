@@ -32,9 +32,9 @@ menu:
 
     <div class="container pt-5">
         <div class="row">
-            <div class="col-lg-6 text-center py-3">
+            <div class="col-lg-6 text-center">
                 <h2>选择你使用的平台和想要下载的版本</h2>
-                <ul class="list-group">
+                <ul class="list-group pt-2">
                     <li class="list-group-item"><a href="../docs/installation">安装说明</a></li>
                     <li class="list-group-item">
                         <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">所有版本</a>
@@ -44,7 +44,7 @@ menu:
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6 py-3">
+            <div class="col-lg-6">
                 <h2 v-if="releases.length === 0">加载中...</h2>
                 <h2 v-else-if="!selectedAsset" class="text-warning">找不到可下载的文件</h2>
                 <template v-else>
@@ -78,7 +78,7 @@ menu:
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block">下载</a>
+                        class="btn btn-primary btn-block my-4">下载</a>
                 </template>
             </div>
         </div>
