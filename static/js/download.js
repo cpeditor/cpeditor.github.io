@@ -93,7 +93,9 @@ $(document).ready(() => {
         } else {
           switch (platform) {
             case "Windows":
-              return suitableAssets.find((asset) => asset.name.endsWith("exe"));
+              return suitableAssets.find((asset) =>
+                asset.name.endsWith("x64-setup.exe")
+              );
             case "Linux":
               return suitableAssets.find((asset) =>
                 asset.name.endsWith("AppImage")
