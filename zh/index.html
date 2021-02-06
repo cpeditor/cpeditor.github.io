@@ -159,7 +159,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../offline-search-index.6a64c4347f88f8f2b3ca51fd0cf77545.json"
+  data-offline-search-index-json-src="../offline-search-index.6e903d9f08902ffb415aab45ffc716eb.json"
   data-offline-search-base-href="../"
   data-offline-search-max-results="10"
 >
@@ -180,14 +180,7 @@ if (!doNotTrack) {
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/responsive.css">
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
-<style>
-    [v-cloak] {
-        display: none;
-    }
-</style>
-
-<div id="app" style="margin: -15px;" v-cloak>
+<div style="margin: -15px;">
 
 <!--================Home Banner Area =================-->
 <div class="home_banner_area">
@@ -199,10 +192,7 @@ if (!doNotTrack) {
 						<h2>算法竞赛选手们<br />所需要的 IDE</h2>
 						<p>CP Editor 专为算法竞赛设计，不像其它 IDE 主要是为了开发设计的。它可以帮助你自动化编译、运行、测试，从而让你专注于算法设计。它甚至可以从各种算法竞赛网站上获取样例，将代码提交到 Codeforces 上！</p>
 						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">在 GitHub 上查看</a>
-						<a class="banner_btn2" :href="downloadURL">
-							<template v-if="assetAvailable">为 {{ os }} 下载</template>
-							<template v-else>下载</template>
-						</a>
+						<a class="banner_btn2" href="download">下载</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -241,7 +231,7 @@ if (!doNotTrack) {
 			<div class="col-lg-4">
 				<div class="work_item">
 					<i class="lnr lnr-clock"></i>
-					<a href="#"><h4>获取评测结果</h4></a>
+					<a><h4>获取评测结果</h4></a>
 					<p>你可以通过内置检查器或来自 testlib 的检查器一键获取样例的评测结果。你也可以添加自己的 SPJ。</p>
 				</div>
 			</div>
@@ -276,7 +266,7 @@ if (!doNotTrack) {
 								<h3>在任何时候<br />运行任何代码</h3>
 								<h6>我们知道你想要无需临时文件就能进行测试</h6>
 								<p>你可以一键运行代码而无需保存，热退出功能使你可以轻松地从上一个会话中还原代码。</p>
-								<a class="main_btn" href="#">即刻开始</a>
+								<a class="main_btn" href="download">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -293,7 +283,7 @@ if (!doNotTrack) {
 								<h3>想要暗色模式？<br />我们提供了</h3>
 								<h6>我们的生活是丰富多彩的，难道代码编辑器就不吗？</h6>
 								<p>我们提供了五个不同的主题供你选择：Light, Drakula, Monkai, Solarized Light 以及 Solarized Dark。如果你不满意，请告诉我们，我们将为你提供更多。</p>
-								<a class="main_btn" href="#">即刻开始</a>
+								<a class="main_btn" href="download">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -310,7 +300,7 @@ if (!doNotTrack) {
 								<h3>错误和警告？<br />我们会在你打字的过程中指出</h3>
 								<h6>用代码检查节省宝贵的比赛时间 </h6>
 								<p>就像 VS Code 和 Atom 中的 Intellisense 那样，使用 Language Server，我们可以为代码中的错误和警告提供实时更新。你可以在警告下方看到波浪线，并将鼠标悬停在它们上方以获取提示。</p>
-								<a class="main_btn" href="#">即刻开始</a>
+								<a class="main_btn" href="download">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -327,7 +317,7 @@ if (!doNotTrack) {
 								<h3>我们可以将你的代码<br/>提交到 Codeforces</h3>
 								<h6>多亏了算法竞赛编程社区</h6>
 								<p>我们收集了算法竞赛编程中最好的工具，并将它们合并为一个 IDE。其中一种这样的工具称为 CF Tool。我们已经添加了它，因此，你可以在 CP Editor 中提交并获取评测结果。</p>
-								<a class="main_btn" href="#">即刻开始</a>
+								<a class="main_btn" href="download">即刻开始</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -444,7 +434,7 @@ if (!doNotTrack) {
 						<h3>全面支持<br />C/C++, Java 和 Python</h3>
 						<h6>使用你喜欢的语言</h6>
 						<p>我们支持三种编程语言。你可以设置自己的编译命令，并将运行时参数传递给代码。令人兴奋的是，你有机会在带有一键式选项的不同选项卡中使用不同的语言。</p>
-						<a class="main_btn" href="#">即刻开始</a>
+						<a class="main_btn" href="download">即刻开始</a>
 					</div>
 				</div>
 			</div>
@@ -459,10 +449,7 @@ if (!doNotTrack) {
 		<div class="impress_inner">
 			<h2>被 CP Editor 的强大功能所吸引了？</h2>
 			<p>很高兴你选择尝试 CP Editor。<br>我们希望 CP Editor 能够满足你在算法竞赛编程中的所有需求。<br>CP Editor 由算法竞赛选手创建，给算法竞赛选手使用，为算法竞赛选手着想。</p>
-			<a class="banner_btn2" :href="downloadURL">
-				<template v-if="assetAvailable">在 {{ os }} 上试试</template>
-				<template v-else>现在就试试</template>
-			</a>
+			<a class="banner_btn2" href="download">现在就试试</a>
 		</div>
 	</div>
 </div>

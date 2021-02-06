@@ -159,7 +159,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="./offline-search-index.6a64c4347f88f8f2b3ca51fd0cf77545.json"
+  data-offline-search-index-json-src="./offline-search-index.6e903d9f08902ffb415aab45ffc716eb.json"
   data-offline-search-base-href="./"
   data-offline-search-max-results="10"
 >
@@ -180,14 +180,7 @@ if (!doNotTrack) {
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/responsive.css">
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
-<style>
-    [v-cloak] {
-        display: none;
-    }
-</style>
-
-<div id="app" style="margin: -15px;" v-cloak>
+<div style="margin: -15px;">
 
 <!--================Home Banner Area =================-->
 <div class="home_banner_area">
@@ -199,10 +192,7 @@ if (!doNotTrack) {
 						<h2>The Missing Editor <br />for Competitive Programmers</h2>
 						<p>CP Editor is specially designed for competitive programming. It helps you focus on your algorithms and automates compilation, execution and testing of your code. It even fetches test cases for you from different platforms and submits solutions to Codeforces!</p>
 						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">View on GitHub</a>
-						<a class="banner_btn2" :href="downloadURL">
-							<template v-if="assetAvailable">Get for {{ os }}</template>
-							<template v-else>Download</template>
-						</a>
+						<a class="banner_btn2" href="download">Download</a>
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -227,7 +217,7 @@ if (!doNotTrack) {
 			<div class="col-lg-4">
 				<div class="work_item">
 					<i class="lnr lnr-screen"></i>
-					<a><h4>Fetch testcases</h4></a>
+					<a><h4>Fetch test cases</h4></a>
 					<p>CP Editor can fetch testcases automatically from almost all competitive programming sites. Say bye to error-prone copy-pasting.</p>
 				</div>
 			</div>
@@ -241,7 +231,7 @@ if (!doNotTrack) {
 			<div class="col-lg-4">
 				<div class="work_item">
 					<i class="lnr lnr-clock"></i>
-					<a href="#"><h4>Get verdicts</h4></a>
+					<a><h4>Get verdicts</h4></a>
 					<p>You can get verdicts for your sample testcases in one click by built-in checkers or checkers from testlib. You can also add your own checkers.</p>
 				</div>
 			</div>
@@ -276,7 +266,7 @@ if (!doNotTrack) {
 								<h3>Run any code<br />At any time</h3>
 								<h6>We know that you want to test something without a temp file</h6>
 								<p>You can run your code in one click without saving and the hot exit feature makes it easy to restore your code from the last session.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<a class="main_btn" href="download">Get Started Now</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -293,7 +283,7 @@ if (!doNotTrack) {
 								<h3>Dark themes? <br />We've got you covered</h3>
 								<h6>Our lives are colorful, why not our coding editor</h6>
 								<p>We have added five different themes for you to choose from: Light, Drakula, Monkai, Solarized Light and Solarized Dark. If that does not satisfy you, ask us on our community pages and we will provide you more.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<a class="main_btn" href="download">Get Started Now</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -310,7 +300,7 @@ if (!doNotTrack) {
 								<h3>Errors and Warnings?<br />We lint them while you are coding</h3>
 								<h6>Save your precious contest time with code linting</h6>
 								<p>Using Language Servers, we provide real-time linting for errors and warnings in your code, just like Intellisense in VSCode and Atom. You can see squiggles under the warnings and hover over them to get tooltips.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<a class="main_btn" href="download">Get Started Now</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -327,7 +317,7 @@ if (!doNotTrack) {
 								<h3>We can submit your <br/>Solutions to Codeforces</h3>
 								<h6>All thanks to Competitive Programming Community</h6>
 								<p>We have gathered the best tools in competitive programming and merged them into one editor. One such tool is called CF Tool. We have added it so you can submit and get verdicts in the editor.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
+								<a class="main_btn" href="download">Get Started Now</a>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -444,7 +434,7 @@ if (!doNotTrack) {
 						<h3>Full support for<br />C/C++, Java and Python</h3>
 						<h6>Use the language you like</h6>
 						<p>We officially support three languages in the editor. You can set your own compilation commands and pass runtime arguments to your code. It really gets exciting when you have the opportunity to use different languages in different tabs with one-click options.</p>
-						<a class="main_btn" href="#">Get Started Now</a>
+						<a class="main_btn" href="download">Get Started Now</a>
 					</div>
 				</div>
 			</div>
@@ -459,10 +449,7 @@ if (!doNotTrack) {
 		<div class="impress_inner">
 			<h2>Impressed by our features?</h2>
 			<p>We are excited that you have chosen to try out this editor. <br>We hope that our Editor will fulfill all your needs in Competitive Programming. <br>CP Editor is, "by competitive programmers, to competitive programmers, for competitive programmers".</p>
-			<a class="banner_btn2" :href="downloadURL">
-				<template v-if="assetAvailable">Try it on {{ os }}</template>
-				<template v-else>Try it now</template>
-			</a>
+			<a class="banner_btn2" href="download">Try it now</a>
 		</div>
 	</div>
 </div>
