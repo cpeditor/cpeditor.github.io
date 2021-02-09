@@ -201,7 +201,8 @@ if (!doNotTrack) {
                 <h1>在你的计算机上获取 CP Editor，然后试一试！</h1>
                 <p v-if="latestStableAssetForUserPlatform" class="pt-3">
                     你可能想要使用
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url"
+                       v-on:click="latestStableEvent">
                         在 {{ userPlatform }} 上的最新稳定版本
                     </a>。
                 </p>
@@ -257,7 +258,8 @@ if (!doNotTrack) {
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block my-4">下载</a>
+                        class="btn btn-primary btn-block my-4"
+                        v-on:click="downloadEvent">下载</a>
                 </template>
             </div>
         </div>

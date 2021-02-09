@@ -201,7 +201,8 @@ if (!doNotTrack) {
                 <h1>Get CP Editor on your machine and have a try!</h1>
                 <p v-if="latestStableAssetForUserPlatform" class="pt-3">
                     You probably want to use
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url"
+                       v-on:click="latestStableEvent">
                         the latest stable version on {{ userPlatform }}
                     </a>.
                 </p>
@@ -254,7 +255,8 @@ if (!doNotTrack) {
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block my-4">Download</a>
+                        class="btn btn-primary btn-block my-4"
+                        v-on:click="downloadEvent">Download</a>
                 </template>
             </div>
         </div>
