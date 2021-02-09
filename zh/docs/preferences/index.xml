@@ -189,8 +189,8 @@
 &lt;p>在编译前保存你的代码。&lt;/p>
 &lt;h3 id="执行时保存文件">执行时保存文件&lt;/h3>
 &lt;p>在运行前保存你的代码。&lt;/p>
-&lt;h3 id="保存文件前保存测试用例">保存文件前保存测试用例&lt;/h3>
-&lt;p>在保存代码前将测试用例一并保存。&lt;/p>
+&lt;h3 id="保存文件时保存测试用例">保存文件时保存测试用例&lt;/h3>
+&lt;p>在保存代码时将测试用例一并保存。&lt;/p>
 &lt;p>你可以在
 &lt;a href="../../../zh/docs/preferences/file-path/#%e6%b5%8b%e8%af%95%e7%82%b9" >文件路径/测试点&lt;/a>
 中设置测试用例保存的位置。&lt;/p>
@@ -351,7 +351,7 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;h2 id="测试点">测试点&lt;/h2>
 &lt;h3 id="输入文件答案文件保存路径">输入文件/答案文件保存路径&lt;/h3>
 &lt;p>设置测试数据
-&lt;a href="../../../zh/docs/preferences/actions/#%e4%bf%9d%e5%ad%98%e6%96%87%e4%bb%b6%e5%89%8d%e4%bf%9d%e5%ad%98%e6%b5%8b%e8%af%95%e7%94%a8%e4%be%8b" >保存&lt;/a>
+&lt;a href="../../../zh/docs/preferences/actions/#%e4%bf%9d%e5%ad%98%e6%96%87%e4%bb%b6%e6%97%b6%e4%bf%9d%e5%ad%98%e6%b5%8b%e8%af%95%e7%94%a8%e4%be%8b" >保存&lt;/a>
 的位置。如果设置的路径是相对路径，则实际路径将基于源代码所在路径。&lt;/p>
 &lt;p>你可以使用如下占位符：&lt;/p>
 &lt;ul>
