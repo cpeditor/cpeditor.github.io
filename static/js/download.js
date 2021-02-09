@@ -55,6 +55,16 @@ function getOS() {
     return "Linux";
   }
 
+  if (typeof ga === "function") {
+    ga(
+      "send",
+      "event",
+      "Unknown Platform",
+      window.navigator.platform,
+      window.navigator.userAgent
+    );
+  }
+
   return null;
 }
 
@@ -117,24 +127,27 @@ $(document).ready(() => {
         }
       },
       latestStableEvent() {
-        if (typeof ga !== "function") return;
-        ga(
-          "send",
-          "event",
-          "Download",
+        this.sendGAEvent(
           "latest-stable-link",
-          this.latestStableAssetForUserPlatform.name
+          this.latestStableAssetForUserPlatform
         );
       },
       downloadEvent() {
         if (typeof ga !== "function") return;
-        ga(
-          "send",
-          "event",
-          "Download",
-          "download-button",
-          this.selectedAsset.name
-        );
+        this.sendGAEvent("download-button", this.selectedAsset);
+        if (this.selectedPlatform !== this.userPlatform) {
+          ga(
+            "send",
+            "event",
+            "Download for another platform",
+            `download-for-${this.selectedPlatform}-on-${this.userPlatform}`,
+            `userAgent: ${window.navigator.userAgent}; platform: ${window.navigator.platform}; asset: ${this.selectedAsset.name}`
+          );
+        }
+      },
+      sendGAEvent(action, asset) {
+        if (typeof ga !== "function") return;
+        ga("send", "event", "Download", action, asset.name);
       },
     },
     computed: {
