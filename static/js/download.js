@@ -116,6 +116,26 @@ $(document).ready(() => {
           );
         }
       },
+      latestStableEvent() {
+        if (typeof ga !== "function") return;
+        ga(
+          "send",
+          "event",
+          "Download",
+          "latest-stable-link",
+          this.latestStableAssetForUserPlatform.name
+        );
+      },
+      downloadEvent() {
+        if (typeof ga !== "function") return;
+        ga(
+          "send",
+          "event",
+          "Download",
+          "download-button",
+          this.selectedAsset.name
+        );
+      },
     },
     computed: {
       latestStableRelease() {
