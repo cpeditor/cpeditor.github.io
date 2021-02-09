@@ -54,7 +54,10 @@ id = "UA-96337051-5"
 
 [privacy]
 [privacy.googleAnalytics]
+disabled = false
+respectDoNotTrack = true
 anonymizeIP = true
+useSessionStorage = true
 
 # Language configuration
 
