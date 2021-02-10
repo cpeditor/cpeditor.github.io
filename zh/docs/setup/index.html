@@ -173,7 +173,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.17bfe912fbfc037915ec3bbbe2847f89.json"
+  data-offline-search-index-json-src="../../../offline-search-index.97cee326bb294771a8a18e397fef6283.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -205,7 +205,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.17bfe912fbfc037915ec3bbbe2847f89.json"
+  data-offline-search-index-json-src="../../../offline-search-index.97cee326bb294771a8a18e397fef6283.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -528,7 +528,7 @@ if (!doNotTrack) {
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="../../../zh/docs/preferences/extensions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Extensions</a>
+    <a  href="../../../zh/docs/preferences/extensions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">扩展</a>
   </li>
   <ul>
     <li class="collapse " id="zhdocspreferencesextensions">
@@ -753,7 +753,7 @@ if (!doNotTrack) {
         <li><a href="#安装-yapf">安装 YAPF</a></li>
       </ul>
     </li>
-    <li><a href="#setup-language-server">Setup Language Server</a>
+    <li><a href="#安装-language-server">安装 Language Server</a>
       <ul>
         <li><a href="#c-server">C++ Server</a></li>
         <li><a href="#java-server">Java Server</a></li>
@@ -783,11 +783,6 @@ if (!doNotTrack) {
 
 
 
-
-<div class="pageinfo pageinfo-primary">
-    这个页面的 <a href='../../../docs/setup/'>英文版本</a> <a href='https://github.com/cpeditor/cpeditor.github.io/commits/hugo/content/docs/setup/_index.md'>有所改动</a>，翻译可能不是最新的。
-    你可以帮助我们 <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/setup/_index.zh.md'>翻译本页</a>。
-</div>
 
 
 
@@ -837,7 +832,7 @@ if (!doNotTrack) {
 <a href="../../../zh/docs/preferences/appearance/#%e7%95%8c%e9%9d%a2%e8%af%ad%e8%a8%80-ui-language"  >设置-&gt;外观-&gt;通用-&gt;界面语言</a>
  中进行更改。注意你需要重启 CP Editor 以使更改生效。</p>
 <h2 id="设置编译与运行命令">设置编译与运行命令</h2>
-<p>根据你使用的编程语言，你需要安装 <code>g++</code> / <code>python</code> / <code>java</code> 等环境。你需要将它们加入 PATH 环境变量以使 CP Editor 能找到它们。</p>
+<p>根据你使用的编程语言，你需要安装 <code>g++</code> / <code>python</code> / <code>java</code> 等环境。你需要将它们加入 <code>PATH</code> 环境变量以使 CP Editor 能找到它们。</p>
 <p>接下来在设置页面设置编译与运行命令。例如，你可以在 
 
 
@@ -865,7 +860,7 @@ if (!doNotTrack) {
 
 <a href="https://github.com/xalanq/cf-tool"   target="_blank" >CF Tool</a>
 。</p>
-<p>你可以将其加入 PATH 环境变量，或是在 
+<p>你可以将其加入 <code>PATH</code> 环境变量，或是在 
 
 
 
@@ -934,7 +929,7 @@ if (!doNotTrack) {
 
 <a href="http://releases.llvm.org/download.html"   target="_blank" >Clang Format</a>
  来格式化 C/C++ 以及 Java 代码。</p>
-<p>你需要将其加入 PATH 环境变量，或是在 
+<p>你需要将其加入 <code>PATH</code> 环境变量，或是在 
 
 
 
@@ -988,8 +983,8 @@ if (!doNotTrack) {
 
 <a href="../../../zh/docs/preferences/extensions/#yapf"  >设置-&gt;扩展-&gt;代码格式化-&gt;YAPF</a>
  进行设置。</p>
-<h2 id="setup-language-server">Setup Language Server</h2>
-<p>You can use 
+<h2 id="安装-language-server">安装 Language Server</h2>
+<p>你可以使用 
 
 
 
@@ -1000,8 +995,8 @@ if (!doNotTrack) {
 
 
 <a href="https://microsoft.github.io/language-server-protocol/"   target="_blank" >Language Server</a>
- to lint your codes and get errors, warnings, etc.</p>
-<p>You can install 
+ 来获得你代码中的错误或警告信息。</p>
+<p>要使用 Language Server，你需要安装 
 
 
 
@@ -1011,8 +1006,8 @@ if (!doNotTrack) {
 
 
 
-<a href="https://microsoft.github.io/language-server-protocol/implementors/servers/"   target="_blank" >any language server program</a>
- and set suitable settings in 
+<a href="https://microsoft.github.io/language-server-protocol/implementors/servers/"   target="_blank" >Language Server 程序</a>
+ 并在 
 
 
 
@@ -1024,11 +1019,11 @@ if (!doNotTrack) {
 
 
 
-<a href="../../../zh/docs/preferences/extensions/#language-server"  >Preferences-&gt;Extensions-&gt;Language Server</a>
-.</p>
-<p>Though you can use any language server program you like, here are some suggestions if you are not sure which to use.</p>
+<a href="../../../zh/docs/preferences/extensions/#language-server"  >设置-&gt;扩展-&gt;Language Server</a>
+ 中完成相关设置。</p>
+<p>如果你不熟悉 Language Server 的话，下面是一些可能有用的建议。</p>
 <h3 id="c-server">C++ Server</h3>
-<p>If you have installed LLVM, you already have <code>clangd</code>, because it comes with the clang compiler. If you haven&rsquo;t, please install 
+<p>
 
 
 
@@ -1039,9 +1034,9 @@ if (!doNotTrack) {
 
 
 <a href="https://releases.llvm.org/download.html"   target="_blank" >LLVM</a>
- prebuild binaries for Windows. On Linux and macOS you can install it from your package manager. You need to set the start command of <code>clangd</code> in Preferences -&gt; Extensions -&gt; Language Server -&gt; C++ Server -&gt; Path, where the command can be the path to the executable file or just <code>clangd</code> if it&rsquo;s in the PATH.</p>
+ 提供了 <code>clangd</code> 程序。在 Windows 下，你需要下载 LLVM 的二进制安装包；而在 Linux 和 macOS 下，你可以通过包管理器进行安装。你需要在 设置-&gt;扩展-&gt;Language Server-&gt;C++ Server 中设置 <code>clangd</code> 路径，该路径应被设置为可执行文件的路径。如果它已经在 <code>PATH</code> 中，直接设置为 <code>clangd</code> 即可。</p>
 <h3 id="java-server">Java Server</h3>
-<p>You need to have <code>java</code> installed and added to <code>PATH</code>. Download 
+<p>你需要安装 <code>java</code> 并将其加入 <code>PATH</code> 环境变量中。接下来下载 
 
 
 
@@ -1052,10 +1047,10 @@ if (!doNotTrack) {
 
 
 <a href="http://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz"   target="_blank" >Eclipse.JDT.ls</a>
-, extract it to any location (in a new directory), We call the path to that directory <code>&lt;INSTALL_PATH&gt;</code> (Something like <code>C://Users/Myname/Desktop/EclipseJDT.ls/</code>). In CP Editor, go to Preferences -&gt; Extensions -&gt; Language Server -&gt; Java Server. Set &ldquo;Path&rdquo; to <code>java</code> and set &ldquo;Arguments&rdquo; to something like <code>-jar $INSTALL_PATH/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar -configuration &lt;INSTALL_PATH&gt;/config_(linux|win|mac)</code>. For example, on Windows, the arguments should be something like <code>-configuration C://Users/Myname/Desktop/Eclipse.JDT.ls/config_win</code>.</p>
-<p>The full name of the jar file above, <code>org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar</code>, may change incrementally as the project version of JDT changes. If java complains about &ldquo;jar not found&rdquo;, then look for the latest version of the <code>org.eclipse.equinox.launcher_*</code> jar in <code>&lt;INSTALL_PATH&gt;/plugins</code> and replace it in the command after <code>-jar</code>.</p>
+，将其解压至你想要解压的位置（需要在一个新目录下），我们下面称该目录为 <code>&lt;INSTALL_PATH&gt;</code>。接下来在 设置-&gt;扩展-&gt;Language Server-&gt;Java Server 中，将路径设置为 <code>java</code>，将参数设置为 <code>-jar $INSTALL_PATH/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar -configuration &lt;INSTALL_PATH&gt;/config_(linux|win|mac)</code>。例如，在 Windows 下，参数可以这样设置：<code>-configuration C://Users/Myname/Desktop/Eclipse.JDT.ls/config_win</code>。</p>
+<p>上述 jar 文件的完整文件名，<code>org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar</code>，可能会随 JDT 的版本改变而改变。如果 Java 提示 “jar 未找到”，请在 <code>&lt;INSTALL_PATH&gt;/plugins</code> 下找到 <code>org.eclipse.equinox.launcher_*</code> jar 文件的最新版本，并用相应的文件名替换 <code>-jar</code> 后面的命令参数。</p>
 <h3 id="python-server">Python Server</h3>
-<p>You need to have <code>python</code> and <code>pip</code> installed and added to <code>PATH</code>. Install <code>python-language-server</code> pip module by running <code>pip install 'python-language-server[all]'</code>. After the installation is done, open CP Editor settings, go to Preferences -&gt; Extensions -&gt; Language Server -&gt; Python Server. Set &ldquo;Path&rdquo; to <code>python</code> and set &ldquo;Arguments&rdquo; to <code>-m pyls</code>. Save the changes and you will have linting for Python.</p>
+<p>你需要安装 <code>python</code> 和 <code>pip</code> 并将其加入 <code>PATH</code> 中。执行命令 <code>pip install 'python-language-server[all]</code> 安装 <code>python-language-server</code>。在安装完成后，打开 CP Editor，在 设置-&gt;扩展-&gt;Language Server-&gt;Python Server 中，将路径设置为 <code>python</code>，将参数设置为 <code>-m pyls</code>，即可完成 Python 下 Language Server 程序的配置。</p>
 
         <div class="section-index">
     
@@ -1170,7 +1165,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 February 10, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/2fb9fccac91a93c13e2c85a6fe06def5ded23f60">feat(setup,extensions): add Chinese translation (#147) (2fb9fcc)</a>
 </div>
 </div>
 
