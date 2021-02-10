@@ -35,8 +35,8 @@ YAPF 是格式化 Python 代码的工具。你可以点击 动作->格式化代�
 
 YAPF 的程序，它可以是如下两项之一：
 
-- `yapf`：需要能在命令行下执行 `yapf` 命令。参数可以为空。
-- Python 解释器的程序名，如 `python`，`python2` 等。参数应该为 `-m yapf`。
+-   `yapf`：需要能在命令行下执行 `yapf` 命令。参数可以为空。
+-   Python 解释器的程序名，如 `python`，`python2` 等。参数应该为 `-m yapf`。
 
 注意，你需要 [使用 Python 2 来格式化 Python 2 代码，使用 Python 3 来格式化 Python 3 代码](https://github.com/google/yapf#python-versions)。因此你需要选择正确的 Python 解释器程序。
 
