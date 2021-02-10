@@ -1,129 +1,129 @@
 ---
-title: "Extensions"
+title: "扩展"
 weight: 50
 ---
 
-## Code Formatting
+## 代码格式化
 
 ### Clang Format
 
-Clang Format is used to format the C/C++ and Java codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
+Clang Format 是格式化 C/C++ 和 Java 代码的工具。你可以点击 动作->格式化代码 或按快捷键 <kbd>Ctrl+Shift+I</kbd> 来格式化代码。如果你选择了代码的一部分，只有被选择的部分（以及必要的相邻部分）会被格式化。
 
-**See also** [Setup Clang Format](../../setup/_index.zh.md#安装-clang-format).
+**参见** [安装 Clang Format](../../setup/_index.zh.md#安装-clang-format)。
 
-#### Program
+#### 程序
 
-The path to the `clang-format` executable, or simply `clang-format` if it's in the `PATH` environment variable.
+`clang-format` 可执行文件的路径。如果它已经在 `PATH` 环境变量中，只需填写 `clang-format` 即可。
 
-#### Arguments
+#### 参数
 
-The arguments passed to `clang-format`. It should NOT contain `-i` (the in-place modification option).
+向 `clang-format` 传递的参数。它不应包含 `-i`（就地修改选项）。
 
-#### Style
+#### 风格
 
-The Clang Format style. The content here is the same as the content of a `.clang-format` file.
+Clang Format 格式化代码的风格。这里的内容和 `.clang-format` 的内容一致。
 
-You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
+你可以查看 [Clang-Format Style Options](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) 或其他资料以获取关于代码格式化风格的相关信息。
 
 ### YAPF
 
-YAPF is used to format the Python codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.
+YAPF 是格式化 Python 代码的工具。你可以点击 动作->格式化代码 或按快捷键 <kbd>Ctrl+Shift+I</kbd> 来格式化代码。如果你选择了代码的一部分，只有被选择的行会被格式化。
 
-**See also** [Setup YAPF](../../setup/_index.zh.md#安装-yapf).
+**参见** [安装 YAPF](../../setup/_index.zh.md#安装-yapf)。
 
-#### Program
+#### 程序
 
-The program of YAPF. It could be one of:
+YAPF 的程序，它可以是如下两项之一：
 
--   `yapf`: You should be able to run `yapf` in the command line. The arguments can be empty.
--   A Python interpreter, i.e. `python`, `python2`, etc. or the path to an interpreter. The arguments should be `-m yapf`.
+-   `yapf`：需要能在命令行下执行 `yapf` 命令。参数可以为空。
+-   Python 解释器的程序名，如 `python`，`python2` 等。参数应该为 `-m yapf`。
 
-Note that [you need to use Python 2 to format Python 2, use Python 3 to format Python 3](https://github.com/google/yapf#python-versions). So you may need to choose the correct Python interpreter.
+注意，你需要 [使用 Python 2 来格式化 Python 2 代码，使用 Python 3 来格式化 Python 3 代码](https://github.com/google/yapf#python-versions)。因此你需要选择正确的 Python 解释器程序。
 
-#### Arguments
+#### 参数
 
-The arguments passed to the YAPF program. This should be `-m yapf` if the program is a Python interpreter. It should NOT contain `-i` (the in-place modification option).
+传递给 YAPF 程序的参数。如果在程序一栏里填写的是 Python 解释器，这里的参数应该是 `-m yapf`。参数中不应包含 `-i`（就地修改选项）。
 
-#### Style
+#### 风格
 
-The YAPF Format style. The content here is the same as the content of a `.style.yapf` file. You can check all possible configurations by running `yapf --style-help`, read the [documentation](https://github.com/google/yapf#formatting-style) or search for other materials to learn how to write the styles.
+YAPF 格式化代码的风格，这里的内容和 `.style.yapf` 的内容一致。你可以运行 `yapf --style-help`，查看 [文档](https://github.com/google/yapf#formatting-style) 或其他资料以获取关于代码格式化风格的相关信息。
 
 ## Language Server
 
-**See also** [Setup Language Server](../../setup/_index.zh.md#setup-language-server).
+**参见** [安装 Language Server](../../setup/_index.zh.md#安装-language-server).
 
-### Use Linting with Language Server
+### 利用 Language Server 获取提示信息
 
-Use language server to lint errors, warnings, hints, etc.
+使用 Language Server 以获取错误，警告，提示等信息。
 
-You can hover over the squiggles to see the tooltips for the explanation of the errors/warnings.
+你可以将鼠标移动到提示错误的下划线上以获取错误或警告的相关信息。
 
-### Delay in Linting
+### 提示延迟
 
-Update linting if you haven't been typing for _delay_ milliseconds.
+若距离最近一次修改的时间达到了 _延迟_ 毫秒，更新提示信息。
 
-### Path to LSP executable
+### Language Server 可执行文件路径
 
-The path to the language server program, or the name if it's in the `PATH` environment variable.
+Language Server 可执行文件的路径。如果它已经在 `PATH` 环境变量中，只需填写相应的可执行文件的文件名即可。
 
-### Arguments for Language Server
+### Language Server 参数
 
-Additional arguments for the language server program. See the documentation of the language server program you are using for more information.
+为 Language Server 程序传递的额外参数。你可以阅读相应的 Language Server 程序的文档以了解更多信息。
 
-For example, if you are using `pyls` for Python, you probably want to use `python` as the language server program, and use `-m pyls` as the arguments.
+例如，如果你使用 `pyls` 作为 Python 的 Language Server 程序，你可以填写 `python` 作为 Language Server 程序，`-m pyls` 作为参数。
 
 ## Competitive Companion
 
-**See also** [Setup Competitive Companion](../../setup/_index.zh.md#安装-competitive-companion).
+**参见** [安装 Competitive Companion](../../setup/_index.zh.md#安装-competitive-companion).
 
-### Open New Tabs
+### 打开新标签页
 
-Open a new tab when a problem is parsed.
+当一个问题被解析时，打开一个新标签页。
 
-If this is disabled, when parsing a problem, the test cases in the current tab will be replaced by the new test cases.
+如果该选项被禁用，当一个问题被解析时，当前页面的测试用例将会被新的测试用例覆盖。
 
-### Connection Port
+### 连接端口
 
-Usually, you don't have to modify this setting. The default port `10045` is supported by Competitive Companion, so if you are using the default port, you don't have to add custom ports in Competitive Companion. However, in case of port conflicts, etc., you can change the port and add custom ports in Competitive Companion.
+从 Competitive Companion 接收数据使用的端口。
 
-### Use the time limit from Competitive Companion
+默认情况下该端口为 10045，在大多数情况下不用更改。在遇到端口冲突等情况时，你可以在 Competitive Companion 里设置自定义端口，并在这里更改数据接收端口。
 
-Use the time limit parsed by Competitive Companion as the time limit of the corresponding tab.
+### 使用从 Competitive Companion 处获取的时间限制
 
-### Head Comments
+在解析一道题目后，为对应的标签页使用从 Competitive Companion 获取的时间限制。
 
-The head comments are added at the head of the code when parsing a problem.
+### 头部注释
 
-#### Content of the head comments
+在获取一道题目后在代码开头添加的注释。
 
-The content of the head comments. You can use the following place holders:
+#### 头部注释的内容
 
--   `${time}`: The time when the problem was parsed. The time format can be set in [Time format for the head comments](#time-format-for-the-head-comments).
--   `${json.X.Y}`: An attribute of the data provided by Competitive Companion. You can read more about the attributes in [the documentation of Competitive Companion](https://github.com/jmerle/competitive-companion#explanation). For example, `${json.name}` is the name of the problem.
+你可以在头部注释中使用如下占位符：
 
-#### Time format for the head comments
+-   `${time}`：题目被解析的时间，相应的时间格式可以在 [头部注释的时间格式](#头部注释的时间格式) 中设置。
+-   `${json.X.Y}`：由 Competitive Companion 提供的数据的一个属性。你可以在 [Competitive Companion 的文档](https://github.com/jmerle/competitive-companion#explanation) 中获得更多信息。例如，`${json.name}` 代表题目名。
 
-The format of the `${time}` place holder in the head comments. You can read the Qt documentation for available expressions:
+#### 头部注释的时间格式
+
+`${time}` 占位符对应的时间的格式。你可以阅读如下 Qt 文档以获得更多信息：
 
 -   [Date Format](https://doc.qt.io/qt-5/qdate.html#toString-3)
 -   [Time Format](https://doc.qt.io/qt-5/qtime.html#toString)
 
 ## CF Tool
 
-You can use [CF Tool](https://github.com/xalanq/cf-tool/) to submit your solutions to [Codeforces](https://codeforces.com).
+你可以使用 [CF Tool](https://github.com/xalanq/cf-tool/) 向 [Codeforces](https://codeforces.com) 提交你的代码。
 
-To submit a solution, you have to either parse a problem by [Competitive Companion](#competitive-companion) from Codeforces or manually set the problem URL of a tab in the context menu of it.
+为了提交你的代码，你需要使用 [Competitive Companion](#competitive-companion) 解析题目，或是手动设置标签页的题目链接。
 
-**See also** [Setup CF Tool](../../setup/_index.zh.md#安装-cf-tool).
+**参见** [安装 CF Tool](../../setup/_index.zh.md#安装-cf-tool).
 
-### Path
+### 路径
 
-The path to the `cf` executable file, or simply `cf` if it's in the `PATH` environment variable.
+CF Tool 可执行文件的路径。如果它已经在 `PATH` 环境变量中，只需填写 `cf` 即可。
 
-### Show toast messages for submission verdicts
+### 为评测结果显示气泡信息
 
-Show a toast message when the verdict of a submission is determined.
+在收到一次提交的结果后，显示一条气泡信息。
 
-A toast message is a "system notification", which is visible outside of CP Editor.
-
-This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.
+气泡信息是系统通知，在 CP Editor 外仍然可见。在你忙于解决下一个问题时，气泡信息可以让你得知前一个问题的解决情况。
