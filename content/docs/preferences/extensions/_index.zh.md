@@ -56,7 +56,7 @@ YAPF 格式化代码的风格，这里的内容和 `.style.yapf` 的内容一致
 
 使用 Language Server 以获取错误，警告，提示等信息。
 
-你可以将光标移动到代码框左侧的彩色矩形上以获取错误或警告的相关信息。
+你可以将鼠标移动到提示错误的下划线上以获取错误或警告的相关信息。
 
 ### 提示延迟
 
@@ -90,7 +90,7 @@ Language Server 可执行文件的路径。如果它已经在 `PATH` 环境变�
 
 ### 使用从 Competitive Companion 处获取的时间限制
 
-在解析一道题目后，为对应的标签页使用 Competitive Companion 处获取的时间限制。
+在解析一道题目后，为对应的标签页使用从 Competitive Companion 获取的时间限制。
 
 ### 头部注释
 
