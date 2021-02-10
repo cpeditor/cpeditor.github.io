@@ -50,7 +50,7 @@ YAPF 格式化代码的风格，这里的内容和 `.style.yapf` 的内容一致
 
 ## Language Server
 
-**参见** [设置 Language Server](../../setup/_index.zh.md#设置-language-server).
+**参见** [安装 Language Server](../../setup/_index.zh.md#安装-language-server).
 
 ### 利用 Language Server 获取提示信息
 
