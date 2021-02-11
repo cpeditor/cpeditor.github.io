@@ -56,7 +56,7 @@ This builds all versions of the website. The static files will be in the `dist` 
 
 ## Modify the contents
 
-We use [Markdown](https://en.wikipedia.org/wiki/Markdown) to write contents. You can find many resources about Markdown online.
+We use [Markdown](https://en.wikipedia.org/wiki/Markdown) to write [documentation](content/docs), while other pages are HTML files. You can find many resources about Markdown online.
 
 You can find all contents of the website in the [content](content) directory. Please note that the source files are in the `hugo` branch and the static files are in the `master` branch.
 
@@ -87,4 +87,4 @@ For example, the Chinese (zh) version of a page is usually `_index.zh.md` while 
 
 To add a new language, add it in [config.toml](config.toml) and add `_index.xx.md`s for it.
 
-You can find all pages which need translation in the [need translation list](https://cpeditor.org/zh/need-translation-list).
+You can find all pages that need translation in the [need translation list](https://cpeditor.org/ru/need-translation-list). In this list, if a page has the same title as the English version, it's considered translated.
