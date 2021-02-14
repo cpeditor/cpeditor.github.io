@@ -4,7 +4,7 @@
 [![Website](https://img.shields.io/website?label=cpeditor.org&url=https%3A%2F%2Fcpeditor.org)](https://cpeditor.org)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg)](#all-contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg)](#all-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
@@ -54,11 +54,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center">
       <a href="https://github.com/ChungZH"><img src="https://avatars0.githubusercontent.com/u/42088872?v=4" width="100px;" alt=""/></a><br /><a href="https://chungzh.cc/"><sub><b>Flex Zhong</b></sub></a><br /><a href="#translation-ChungZH" title="Translation">🌍</a>
     </td>
+    <td align="center">
+      <a href="https://github.com/DanMax03"><img src="https://avatars.githubusercontent.com/u/55328040?v=4" width="100px;" alt=""/></a><br /><a href="https://github.com/DanMax03"><sub><b>DanMax03</b></sub></a><br /><a href="#translation-DanMax03" title="Translation">🌍</a>
+    </td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
