@@ -2,6 +2,11 @@
 &lt;p>在
 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Release&lt;/a>
 页面选择你需要的版本，下载相应的可执行文件。&lt;/p>
+&lt;p>如果你访问 GitHub 的速度较慢，你还可以尝试
+&lt;a href="https://gitee.com/ouuan/cpeditor/releases" target="_blank" >Gitee 镜像&lt;/a>
+和
+&lt;a href="https://hub.fastgit.org/cpeditor/cpeditor/releases" target="_blank" >FastGit 镜像&lt;/a>
+。&lt;/p>
 &lt;h3 id="windows">Windows&lt;/h3>
 &lt;h4 id="使用安装包安装">使用安装包安装&lt;/h4>
 &lt;blockquote>
