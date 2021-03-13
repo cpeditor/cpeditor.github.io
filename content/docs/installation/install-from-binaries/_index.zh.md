@@ -7,6 +7,8 @@ description: 这是安装 CP Editor 最简单的方式，推荐大多数用户�
 
 在 [Release](https://github.com/cpeditor/cpeditor/releases) 页面选择你需要的版本，下载相应的可执行文件。
 
+如果你访问 GitHub 的速度较慢，你还可以尝试 [Gitee 镜像](https://gitee.com/ouuan/cpeditor/releases) 和 [FastGit 镜像](https://hub.fastgit.org/cpeditor/cpeditor/releases)。
+
 ### Windows
 
 #### 使用安装包安装
