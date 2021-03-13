@@ -53,6 +53,12 @@ This mode is suitable for saving test cases, etc. In the other modes, the test c
 
 ### Terminal Program
 
+The terminal emulator to use when running in detached mode.
+
+This is usually the name or the path of the terminal emulator.
+
+Some possible values are `konsole`, `gnome-terminal`, `xfce-terminal`, `xterm` or any other terminal emulator program.
+
 ### Terminal Arguments
 
 This setting is only available on Linux.
