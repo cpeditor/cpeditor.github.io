@@ -91,7 +91,7 @@ If a problem URL was set for a file, when you open that file again, the problem 
 
 If a problem URL was set for a file, when parsing that problem from Competitive Companion again, the old file will be opened.
 
-## Empty Test Cases
+## Test Cases
 
 ### Run your codes on empty test cases
 
@@ -100,6 +100,10 @@ Run your code on all non-hidden test cases even if the input is empty.
 ### Check your answer on test cases with empty output
 
 Check your answer even if your output or the expected output is empty.
+
+### Auto uncheck accepted testcases
+
+Uncheck testcase when it is accepted. Unchecked testcases are not ran and do not appear collapsed in testcases section.
 
 ## Load External File Changes
 
