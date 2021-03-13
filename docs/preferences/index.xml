@@ -5,6 +5,8 @@
 and
 &lt;a href="#replace-tabs-by-spaces" >Replace tabs by spaces&lt;/a>
 .&lt;/p>
+&lt;h3 id="cursor-width">Cursor Width&lt;/h3>
+&lt;p>The width of the text cursor in pixels. The default value is 1.&lt;/p>
 &lt;h3 id="auto-indent">Auto Indent&lt;/h3>
 &lt;ol>
 &lt;li>When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.&lt;/li>
