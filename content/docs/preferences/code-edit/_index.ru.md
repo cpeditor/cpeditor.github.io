@@ -7,6 +7,10 @@ weight: 10
 
 The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in [Auto Indent](#auto-indent) and [Replace tabs by spaces](#replace-tabs-by-spaces).
 
+### Cursor Width
+
+The width of the text cursor in pixels. The default value is 1.
+
 ### Auto Indent
 
 1.  When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.

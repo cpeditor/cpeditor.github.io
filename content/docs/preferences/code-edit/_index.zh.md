@@ -7,6 +7,10 @@ weight: 10
 
 设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 [自动缩进](#自动缩进) 和 [将制表符替换为空格](#将制表符替换为空格) 产生影响。
 
+### Cursor Width
+
+The width of the text cursor in pixels. The default value is 1.
+
 ### 自动缩进
 
 1.  当代码另起一行时，该行将和上一行拥有相同的缩进。
