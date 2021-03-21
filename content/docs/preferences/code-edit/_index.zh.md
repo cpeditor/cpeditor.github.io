@@ -7,9 +7,9 @@ weight: 10
 
 设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 [自动缩进](#自动缩进) 和 [将制表符替换为空格](#将制表符替换为空格) 产生影响。
 
-### Cursor Width
+### 光标宽度
 
-The width of the text cursor in pixels. The default value is 1.
+光标的宽度是以像素来计算的。它的默认值是1。
 
 ### 自动缩进
 
