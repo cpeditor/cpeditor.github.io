@@ -5,8 +5,8 @@
 和
 &lt;a href="#%e5%b0%86%e5%88%b6%e8%a1%a8%e7%ac%a6%e6%9b%bf%e6%8d%a2%e4%b8%ba%e7%a9%ba%e6%a0%bc" >将制表符替换为空格&lt;/a>
 产生影响。&lt;/p>
-&lt;h3 id="cursor-width">Cursor Width&lt;/h3>
-&lt;p>The width of the text cursor in pixels. The default value is 1.&lt;/p>
+&lt;h3 id="光标宽度">光标宽度&lt;/h3>
+&lt;p>以像素计算的光标宽度。&lt;/p>
 &lt;h3 id="自动缩进">自动缩进&lt;/h3>
 &lt;ol>
 &lt;li>当代码另起一行时，该行将和上一行拥有相同的缩进。&lt;/li>
