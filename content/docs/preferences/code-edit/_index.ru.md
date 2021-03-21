@@ -9,7 +9,7 @@ The width (number of characters) of an indent. It is used when displaying the ta
 
 ### Cursor Width
 
-The width of the text cursor in pixels. The default value is 1.
+The width of the text cursor in pixels.
 
 ### Auto Indent
 
