@@ -173,7 +173,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.20eaed9dba70f57b31bd3017bf7df560.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.77528742e0bc63da66c30a8433ea921f.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -205,7 +205,7 @@ if (!doNotTrack) {
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.20eaed9dba70f57b31bd3017bf7df560.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.77528742e0bc63da66c30a8433ea921f.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -774,10 +774,11 @@ if (!doNotTrack) {
         <li><a href="#加载以前的题目时打开以前的文件">加载以前的题目时打开以前的文件</a></li>
       </ul>
     </li>
-    <li><a href="#空测试点">空测试点</a>
+    <li><a href="#测试点">测试点</a>
       <ul>
         <li><a href="#在空测试点上运行你的代码">在空测试点上运行你的代码</a></li>
         <li><a href="#在输出为空的测试点上检查输出的正确性">在输出为空的测试点上检查输出的正确性</a></li>
+        <li><a href="#自动取消选中已通过的测试点">自动取消选中已通过的测试点</a></li>
       </ul>
     </li>
     <li><a href="#加载外部文件修改">加载外部文件修改</a>
@@ -929,11 +930,13 @@ if (!doNotTrack) {
 <p>如果一个文件已经设置了题目链接，当该文件被再次打开时，将会使用原来的题目链接。</p>
 <h3 id="加载以前的题目时打开以前的文件">加载以前的题目时打开以前的文件</h3>
 <p>如果一个文件已经设置了题目链接，当使用 Competitive Companion 解析同样的题目时，将会直接打开以前的文件。</p>
-<h2 id="空测试点">空测试点</h2>
+<h2 id="测试点">测试点</h2>
 <h3 id="在空测试点上运行你的代码">在空测试点上运行你的代码</h3>
 <p>在所有未被隐藏的测试点上运行你的代码，即使输入为空。</p>
 <h3 id="在输出为空的测试点上检查输出的正确性">在输出为空的测试点上检查输出的正确性</h3>
 <p>即使程序输出或答案为空，也检查该测试点输出的正确性。</p>
+<h3 id="自动取消选中已通过的测试点">自动取消选中已通过的测试点</h3>
+<p>在运行代码后，自动将通过了的测试点取消选中。当测试点未被选中时，它们会被折叠，并且在你运行代码时不会在这些测试点上进行测试。</p>
 <h2 id="加载外部文件修改">加载外部文件修改</h2>
 <h3 id="若没有未保存的修改自动加载外部文件修改">若没有未保存的修改，自动加载外部文件修改</h3>
 <p>若硬盘上的文件和 CP Editor 中的文件相同，该文件在 CP Editor 外部被修改，无需确认，自动加载外部文件修改。</p>
@@ -1110,7 +1113,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 February 9, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c74be27b4e2d915861a47552ca0a9165e1395792">fix(zh/docs/preferences/actions): correct the name of the setting (#143) (c74be27)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 April 4, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/610765e161c6044c200d12658ca82effa2708475">Add uncheck on AC testcases (#152) (610765e)</a>
 </div>
 </div>
 

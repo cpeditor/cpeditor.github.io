@@ -231,11 +231,13 @@ to save files.&lt;/p>
 &lt;p>If a problem URL was set for a file, when you open that file again, the problem URL will be restored.&lt;/p>
 &lt;h3 id="open-the-old-file-when-parsing-an-old-problem-url">Open the old file when parsing an old problem URL&lt;/h3>
 &lt;p>If a problem URL was set for a file, when parsing that problem from Competitive Companion again, the old file will be opened.&lt;/p>
-&lt;h2 id="empty-test-cases">Empty Test Cases&lt;/h2>
+&lt;h2 id="test-cases">Test Cases&lt;/h2>
 &lt;h3 id="run-your-codes-on-empty-test-cases">Run your codes on empty test cases&lt;/h3>
 &lt;p>Run your code on all non-hidden test cases even if the input is empty.&lt;/p>
 &lt;h3 id="check-your-answer-on-test-cases-with-empty-output">Check your answer on test cases with empty output&lt;/h3>
 &lt;p>Check your answer even if your output or the expected output is empty.&lt;/p>
+&lt;h3 id="auto-uncheck-accepted-testcases">Auto Uncheck Accepted Testcases&lt;/h3>
+&lt;p>After the code is executed, the accepted test cases will be automatically unchecked. When test cases are unchecked, they are collapsed and won&amp;rsquo;t be tested on when you execute your code.&lt;/p>
 &lt;h2 id="load-external-file-changes">Load External File Changes&lt;/h2>
 &lt;h3 id="auto-load-external-file-changes-if-theres-no-unsaved-modification">Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/h3>
 &lt;p>If the file on the disk and the code in CP Editor was the same, and then the file is changed outside of CP Editor, load the external change without confirmation.&lt;/p>
