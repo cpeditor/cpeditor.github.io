@@ -101,9 +101,9 @@ Run your code on all non-hidden test cases even if the input is empty.
 
 Check your answer even if your output or the expected output is empty.
 
-### Auto uncheck accepted testcases
+### Auto Uncheck Accepted Testcases
 
-Uncheck testcase when it is accepted. Unchecked testcases are not ran and do not appear collapsed in testcases section.
+Uncheck test cases when they get accepted. When test cases are unchecked, they are collapsed and won't be tested on when you execute your code.
 
 ## Load External File Changes
 
