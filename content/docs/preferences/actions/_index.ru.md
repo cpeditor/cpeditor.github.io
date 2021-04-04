@@ -103,7 +103,7 @@ Check your answer even if your output or the expected output is empty.
 
 ### Auto Uncheck Accepted Testcases
 
-Uncheck test cases when they get accepted. When test cases are unchecked, they are collapsed and won't be tested on when you execute your code.
+After the code is executed, the accepted test cases will be automatically unchecked. When test cases are unchecked, they are collapsed and won't be tested on when you execute your code.
 
 ## Load External File Changes
 
