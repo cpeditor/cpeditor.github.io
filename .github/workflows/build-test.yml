@@ -12,7 +12,7 @@ jobs:
       - name: Fetch submodules
         run: git submodule update --init --recursive
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: "14.x"
       - run: npm install
