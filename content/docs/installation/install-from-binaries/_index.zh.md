@@ -33,7 +33,16 @@ description: 这是安装 CP Editor 最简单的方式，推荐大多数用户�
 
 #### Snap package
 
-`sudo snap install cpeditor --classic` to install latest stable or bleeding edge alpha version can be installed with `sudo snap install cpeditor --classic --channel=latest/edge`.
+To install latest stable version run the command in the terminal:
+```sh
+sudo snap install cpeditor --classic
+```
+
+Bleeding edge alpha version can be installed with 
+
+```sh
+sudo snap install cpeditor --classic --channel=latest/edge
+```
 
 ### Debian 系 Linux 发行版
 
