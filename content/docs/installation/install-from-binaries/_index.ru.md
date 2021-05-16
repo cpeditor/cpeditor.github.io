@@ -23,7 +23,13 @@ Download the `portable.zip` in the assets and unzip it to any directory you like
 
 ### Most Linux Distros
 
+#### AppImage
+
 Download the `AppImage` in the assets, add execute permission to it (`chmod +x <AppImagePath>`), then run it.
+
+#### Snap package
+
+`sudo snap install cpeditor --classic` to install latest stable or bleeding edge alpha version can be installed with `sudo snap install cpeditor --classic --channel=latest/edge`.
 
 ### Debian-based Linux Distros
 
