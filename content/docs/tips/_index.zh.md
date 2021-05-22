@@ -72,7 +72,7 @@ CP Editor 还提供一些隐藏的快捷键：<kbd>Tab</kbd>（当有文本被�
 -   IO 模式：你可以仔细检查输出和错误。
 -   分屏模式：你可以同时看到代码和测试用例。
 
-你可以在[设置](../preferences/key-bindings/_index.zh.md)中设置一个快捷键来快速切换到编辑器模式。
+你可以在[设置](../preferences/key-bindings/\_index.zh.md)中设置一个快捷键来快速切换到编辑器模式。
 
 ## 从命令行启动 CP Editor
 
@@ -80,6 +80,6 @@ CP Editor 支持在命令行下启动，可以通过执行 `cpeditor --help` 命
 
 在 Windows 下，更推荐使用类 UNIX 的终端（如 Git Bash）。
 
-在命令行下，你可以通过 `cpeditor <path>` 来在指定的位置创建新文件，或是用 `cpeditor --cpp <directory>` 打开一个目录下的所有 C++ 源代码，还可以通过 `cpeditor --no-hot-exit` 暂时禁用 [在启动时恢复上一次会话](../preferences/actions/_index.zh.md#在启动时恢复上一次会话)。
+在命令行下，你可以通过 `cpeditor <path>` 来在指定的位置创建新文件，或是用 `cpeditor --cpp <directory>` 打开一个目录下的所有 C++ 源代码，还可以通过 `cpeditor --no-hot-exit` 暂时禁用 [在启动时恢复上一次会话](../preferences/actions/\_index.zh.md#在启动时恢复上一次会话)。
 
 CP Editor 在接收到 SIGINT 和 SIGHUP 命令时会正常关闭，因此如果你在命令行下启动 CP Editor，你可以通过按下 <kbd>Ctrl+C</kbd> 退出，而不必担心丢失任何工作。

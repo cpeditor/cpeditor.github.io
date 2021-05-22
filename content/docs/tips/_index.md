@@ -68,7 +68,7 @@ You can use <kbd>Ctlr+Tab</kbd> and <kbd>Ctlr+Shift+Tab</kbd> to go through the 
 -   IO mode: You can investigate the outputs and errors.
 -   Split mode: You can see both the codes and the test cases.
 
-You can set a hotkey for switching view modes in [Preferences](../preferences/key-bindings/_index.md).
+You can set a hotkey for switching view modes in [Preferences](../preferences/key-bindings/\_index.md).
 
 ## Launch CP Editor in the command line
 
@@ -76,6 +76,6 @@ CP Editor supports some command-line options, run `cpeditor --help` for more inf
 
 On Windows, it's better to use UNIX-like shells like git bash.
 
-In the command line, you can open a non-existing file as a tab by `cpeditor <path>` (and you can save to this path later), open all C++ files in a directory recursively by `cpeditor --cpp <directory>` or temporarily disable [Restore last session at startup](../preferences/actions/_index.md#restore-last-session-at-startup) by `cpeditor --no-hot-exit`.
+In the command line, you can open a non-existing file as a tab by `cpeditor <path>` (and you can save to this path later), open all C++ files in a directory recursively by `cpeditor --cpp <directory>` or temporarily disable [Restore last session at startup](../preferences/actions/\_index.md#restore-last-session-at-startup) by `cpeditor --no-hot-exit`.
 
 CP Editor normally closes when receiving SIGINT and SIGHUP, so if you start CP Editor in the command line, you can safely press <kbd>Ctrl+C</kbd> to quit.

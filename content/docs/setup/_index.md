@@ -9,19 +9,19 @@ description: Setup CP Editor to prepare for using it
 
 Now CP Editor is available in multiple languages, including English and Chinese.
 
-You can change the UI language in [Preferences->Appearance->General->UI Language](../preferences/appearance/_index.md#ui-language). Note that you need to restart CP Editor to apply the change.
+You can change the UI language in [Preferences->Appearance->General->UI Language](../preferences/appearance/\_index.md#ui-language). Note that you need to restart CP Editor to apply the change.
 
 ## Set Compile and Run Commands
 
 You need to install `g++` / `python` / `java` depending on which language you are using. You need to add them to system PATH to have them found by CP Editor.
 
-Then you can set the Compile and Run Commands in the preferences. For example, you can set C++ Commands in [Preferences->Languages->C++->C++ Commands](../preferences/language/_index.md#c-commands).
+Then you can set the Compile and Run Commands in the preferences. For example, you can set C++ Commands in [Preferences->Languages->C++->C++ Commands](../preferences/language/\_index.md#c-commands).
 
 ## Setup CF Tool
 
 To submit Codeforces problems in CP Editor, you need to install [CF Tool](https://github.com/xalanq/cf-tool).
 
-You can add it to your system PATH to use it directly, or you can set the path to it in [Preferences->Extensions->CF Tool](../preferences/extensions/_index.md#cf-tool).
+You can add it to your system PATH to use it directly, or you can set the path to it in [Preferences->Extensions->CF Tool](../preferences/extensions/\_index.md#cf-tool).
 
 You need to configure the tool by running the command `cf config` in the command line before using it.
 
@@ -40,19 +40,19 @@ You can install it from the addon/extension markets:
 
 CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C/C++ and Java code.
 
-You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../preferences/extensions/_index.md#clang-format).
+You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../preferences/extensions/\_index.md#clang-format).
 
 ### Setup YAPF
 
 CP Editor uses [YAPF](https://github.com/google/yapf) to format your Python code.
 
-It should work after [installation](https://github.com/google/yapf#installation). If not, set the program and arguments in [Preferences->Extensions->Code Formatting->YAPF](../preferences/extensions/_index.md#yapf).
+It should work after [installation](https://github.com/google/yapf#installation). If not, set the program and arguments in [Preferences->Extensions->Code Formatting->YAPF](../preferences/extensions/\_index.md#yapf).
 
 ## Setup Language Server
 
 You can use [Language Server](https://microsoft.github.io/language-server-protocol/) to lint your codes and get errors, warnings, etc.
 
-You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../preferences/extensions/_index.md#language-server).
+You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../preferences/extensions/\_index.md#language-server).
 
 Though you can use any language server program you like, here are some suggestions if you are not sure which to use.
 

@@ -23,29 +23,29 @@ Save your code when executing it.
 
 Save the test cases on the disk when saving the code.
 
-You can choose where to save the test cases in [File Path/Testcases](../file-path/_index.md#testcases).
+You can choose where to save the test cases in [File Path/Testcases](../file-path/\_index.md#testcases).
 
 ## Auto Save
 
 ### Auto Save Interval Type
 
-It is easier to describe if we explain a little bit about the internal implementation: There is a countdown timer. When we "reset" it, it will be "running" in the next _Auto Save Interval_ milliseconds, and after _Auto Save Interval_ milliseconds, the timer will "timeout" and the code is auto-saved.
+It is easier to describe if we explain a little bit about the internal implementation: There is a countdown timer. When we "reset" it, it will be "running" in the next *Auto Save Interval* milliseconds, and after *Auto Save Interval* milliseconds, the timer will "timeout" and the code is auto-saved.
 
 #### After the last modification
 
-The timer is reset whenever you modify the code. i.e. Your codes will be saved if you haven't modified it for _Auto Save Interval_ milliseconds.
+The timer is reset whenever you modify the code. i.e. Your codes will be saved if you haven't modified it for *Auto Save Interval* milliseconds.
 
-This mode is suitable for a small _Auto Save Interval_ so that your codes will be auto-saved every time you take a short break from typing. If the interval is too long, likely, your codes will never be auto-saved.
+This mode is suitable for a small *Auto Save Interval* so that your codes will be auto-saved every time you take a short break from typing. If the interval is too long, likely, your codes will never be auto-saved.
 
 #### After the first modification
 
-The timer is reset when you modify the code if the timer is not running. i.e. Your codes will be saved if you modified it _Auto Save Interval_ milliseconds ago.
+The timer is reset when you modify the code if the timer is not running. i.e. Your codes will be saved if you modified it *Auto Save Interval* milliseconds ago.
 
-This mode is suitable for a long _Auto Save Interval_, otherwise, it's likely that the save happens when you are typing, which could affect your typing experience.
+This mode is suitable for a long *Auto Save Interval*, otherwise, it's likely that the save happens when you are typing, which could affect your typing experience.
 
 #### Without modification
 
-The timer is reset when it timeouts. i.e. Your codes will be saved every _Auto Save Interval_ milliseconds, no matter you have modified it or not.
+The timer is reset when it timeouts. i.e. Your codes will be saved every *Auto Save Interval* milliseconds, no matter you have modified it or not.
 
 This mode is suitable for saving test cases, etc. In the other modes, the test cases are not auto-saved if you don't modify the codes.
 

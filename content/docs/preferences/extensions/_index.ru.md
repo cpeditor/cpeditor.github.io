@@ -9,7 +9,7 @@ weight: 50
 
 Clang Format is used to format the C/C++ and Java codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
 
-**See also** [Setup Clang Format](../../setup/_index.ru.md#setup-clang-format).
+**See also** [Setup Clang Format](../../setup/\_index.ru.md#setup-clang-format).
 
 #### Program
 
@@ -29,7 +29,7 @@ You can read [Clang-Format Style Options documentation](https://clang.llvm.org/d
 
 YAPF is used to format the Python codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.
 
-**See also** [Setup YAPF](../../setup/_index.ru.md#setup-yapf).
+**See also** [Setup YAPF](../../setup/\_index.ru.md#setup-yapf).
 
 #### Program
 
@@ -50,7 +50,7 @@ The YAPF Format style. The content here is the same as the content of a `.style.
 
 ## Language Server
 
-**See also** [Setup Language Server](../../setup/_index.ru.md#setup-language-server).
+**See also** [Setup Language Server](../../setup/\_index.ru.md#setup-language-server).
 
 ### Use Linting with Language Server
 
@@ -60,7 +60,7 @@ You can hover over the squiggles to see the tooltips for the explanation of the 
 
 ### Delay in Linting
 
-Update linting if you haven't been typing for _delay_ milliseconds.
+Update linting if you haven't been typing for *delay* milliseconds.
 
 ### Path to LSP executable
 
@@ -74,7 +74,7 @@ For example, if you are using `pyls` for Python, you probably want to use `pytho
 
 ## Competitive Companion
 
-**See also** [Setup Competitive Companion](../../setup/_index.ru.md#setup-competitive-companion).
+**See also** [Setup Competitive Companion](../../setup/\_index.ru.md#setup-competitive-companion).
 
 ### Open New Tabs
 
@@ -114,7 +114,7 @@ You can use [CF Tool](https://github.com/xalanq/cf-tool/) to submit your solutio
 
 To submit a solution, you have to either parse a problem by [Competitive Companion](#competitive-companion) from Codeforces or manually set the problem URL of a tab in the context menu of it.
 
-**See also** [Setup CF Tool](../../setup/_index.ru.md#setup-cf-tool).
+**See also** [Setup CF Tool](../../setup/\_index.ru.md#setup-cf-tool).
 
 ### Path
 

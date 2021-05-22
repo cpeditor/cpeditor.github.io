@@ -79,9 +79,7 @@ languageName = "Русский"
 weight = 3
 
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
+defaultMarkdownHandler = "blackfriday"
 
 # Everything below this are Site Params
 

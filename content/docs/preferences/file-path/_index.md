@@ -9,7 +9,7 @@ weight: 60
 
 ### Answer File Save Path
 
-The path where the test cases are [saved](../actions/_index.md#save-testcases-on-save). If it is a relative path, it is relative to the source file.
+The path where the test cases are [saved](../actions/\_index.md#save-testcases-on-save). If it is a relative path, it is relative to the source file.
 
 You can use the following place holders:
 
@@ -31,7 +31,7 @@ If the path is `testcases/${basename}-${1-index}.in`, the input of this test cas
 
 The rules used to match test cases when loading pairs of test cases.
 
-Each rule is a pair of [regular expression patterns](../general/_index.md#regular-expression). The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.
+Each rule is a pair of [regular expression patterns](../general/\_index.md#regular-expression). The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.
 
 For example, you can use `(.+)\.in` and `\1.out` to match `test-1.in` and `test-1.out`, or use `(.+)\.in\.(\d+)` and `\1.ans.\2` to match `test.in.3` and `test.ans.3`.
 
@@ -43,7 +43,7 @@ When loading pairs of test cases, each rule which matches an input file will be 
 
 The default path when choosing where to save an untitled tab with problem URL.
 
-Each rule is a pair of [regular expression patterns](../general/_index.md#regular-expression). The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.
+Each rule is a pair of [regular expression patterns](../general/\_index.md#regular-expression). The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.
 
 When saving a file with a problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.
 
