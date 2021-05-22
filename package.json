@@ -13,7 +13,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.8.5",
-    "postcss-cli": "^7.1.1",
+    "postcss-cli": "^7.1.2",
     "remark-cli": "^8.0.1",
     "remark-frontmatter": "^2.0.0",
     "remark-lint": "^7.0.1",
