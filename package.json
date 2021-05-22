@@ -16,7 +16,7 @@
     "postcss-cli": "^7.1.2",
     "remark-cli": "^8.0.1",
     "remark-frontmatter": "^2.0.0",
-    "remark-lint": "^7.0.1",
+    "remark-lint": "^8.0.0",
     "remark-preset-lint-recommended": "^5.0.0"
   },
   "remarkConfig": {
