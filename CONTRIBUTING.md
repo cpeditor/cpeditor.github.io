@@ -21,7 +21,7 @@ Make sure [Git](https://git-scm.com/), [Node.js](https://nodejs.org/) and [Hugo]
 ```sh
 git clone --recurse-submodules https://github.com/cpeditor/cpeditor.github.io
 cd cpeditor.github.io
-npm install
+yarn
 ```
 
 If you have cloned the repository but haven't cloned the submodules:
@@ -77,7 +77,7 @@ For example: `[Preferences->Languages->C++->C++ Commands](../preferences/languag
 
 We use [remark-lint](https://github.com/remarkjs/remark-lint) to format Markdown files.
 
-If you have run `npm install`, you can simply run `npm run lint` to format all Markdown files.
+If you have run `yarn`, you can simply run `yarn lint` to format all Markdown files.
 
 If you are using [VS Code](https://github.com/microsoft/vscode), you can use the [vscode-remark](https://github.com/remarkjs/vscode-remark) extension to help you.
 
