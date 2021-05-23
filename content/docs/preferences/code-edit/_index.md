@@ -26,19 +26,19 @@ Automatically add the right parenthesis when you type the left one. For example,
 
 When the character next to the cursor is a right parenthesis and you type this parenthesis, instead of typing this parenthesis, the cursor will jump out of the parenthesis.
 
-You can choose the parentheses to auto-complete in the [Parentheses](../language/_index.md#parentheses) settings.
+You can choose the parentheses to auto-complete in the [Parentheses](../language/\_index.md#parentheses) settings.
 
 ### Auto Remove Parentheses
 
 When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.
 
-You can choose the parentheses to auto-remove in the [Parentheses](../language/_index.md#parentheses) settings.
+You can choose the parentheses to auto-remove in the [Parentheses](../language/\_index.md#parentheses) settings.
 
 ### Jump out of a parenthesis by pressing Tab
 
 When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If [Auto Complete Parentheses](#auto-complete-parentheses) is enabled, this is an alternative of typing the right parenthesis.
 
-You can choose the parentheses to jump out by Tab in the [Parentheses](../language/_index.md#parentheses) settings.
+You can choose the parentheses to jump out by Tab in the [Parentheses](../language/\_index.md#parentheses) settings.
 
 ### Replace tabs by spaces
 

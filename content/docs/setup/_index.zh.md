@@ -9,19 +9,19 @@ description: 完成 CP Editor 的初始化以做好使用准备
 
 现在 CP Editor 支持多种语言，包括英文，中文和俄语。
 
-在默认情况下 CP Editor 的界面语言与系统设置一致。如果你需要对界面语言进行更改，可以在 [设置->外观->通用->界面语言](../preferences/appearance/_index.zh.md#界面语言-ui-language) 中进行更改。注意你需要重启 CP Editor 以使更改生效。
+在默认情况下 CP Editor 的界面语言与系统设置一致。如果你需要对界面语言进行更改，可以在 [设置->外观->通用->界面语言](../preferences/appearance/\_index.zh.md#界面语言-ui-language) 中进行更改。注意你需要重启 CP Editor 以使更改生效。
 
 ## 设置编译与运行命令
 
 根据你使用的编程语言，你需要安装 `g++` / `python` / `java` 等环境。你需要将它们加入 `PATH` 环境变量以使 CP Editor 能找到它们。
 
-接下来在设置页面设置编译与运行命令。例如，你可以在 [设置->语言->C++->C++ 命令](../preferences/language/_index.zh.md#c-命令) 中设置 C++ 的相关命令。
+接下来在设置页面设置编译与运行命令。例如，你可以在 [设置->语言->C++->C++ 命令](../preferences/language/\_index.zh.md#c-命令) 中设置 C++ 的相关命令。
 
 ## 安装 CF Tool
 
 如果你需要在 CP Editor 中提交 Codeforces 题目，你需要安装 [CF Tool](https://github.com/xalanq/cf-tool)。
 
-你可以将其加入 `PATH` 环境变量，或是在 [设置->扩展->CF Tool](../preferences/extensions/_index.zh.md#cf-tool) 中设置其路径。
+你可以将其加入 `PATH` 环境变量，或是在 [设置->扩展->CF Tool](../preferences/extensions/\_index.zh.md#cf-tool) 中设置其路径。
 
 在使用 CF Tool 之前，你需要在终端运行 `cf config` 命令完成相关配置。
 
@@ -40,19 +40,19 @@ description: 完成 CP Editor 的初始化以做好使用准备
 
 CP Editor 使用 [Clang Format](http://releases.llvm.org/download.html) 来格式化 C/C++ 以及 Java 代码。
 
-你需要将其加入 `PATH` 环境变量，或是在 [设置->扩展->Clang Format](../preferences/extensions/_index.zh.md#clang-format) 中设置其路径。
+你需要将其加入 `PATH` 环境变量，或是在 [设置->扩展->Clang Format](../preferences/extensions/\_index.zh.md#clang-format) 中设置其路径。
 
 ### 安装 YAPF
 
 CP Editor 使用 [YAPF](https://github.com/google/yapf) 来格式化 Python 代码。
 
-[安装](https://github.com/google/yapf#installation) 后应该就可以使用了。如果不能，请在 [设置->扩展->代码格式化->YAPF](../preferences/extensions/_index.zh.md#yapf) 进行设置。
+[安装](https://github.com/google/yapf#installation) 后应该就可以使用了。如果不能，请在 [设置->扩展->代码格式化->YAPF](../preferences/extensions/\_index.zh.md#yapf) 进行设置。
 
 ## 安装 Language Server
 
 你可以使用 [Language Server](https://microsoft.github.io/language-server-protocol/) 来获得你代码中的错误或警告信息。
 
-要使用 Language Server，你需要安装 [Language Server 程序](https://microsoft.github.io/language-server-protocol/implementors/servers/) 并在 [设置->扩展->Language Server](../preferences/extensions/_index.zh.md#language-server) 中完成相关设置。
+要使用 Language Server，你需要安装 [Language Server 程序](https://microsoft.github.io/language-server-protocol/implementors/servers/) 并在 [设置->扩展->Language Server](../preferences/extensions/\_index.zh.md#language-server) 中完成相关设置。
 
 如果你不熟悉 Language Server 的话，下面是一些可能有用的建议。
 

@@ -1,17 +1,19 @@
-{{ $fragment := (urls.Parse .Destination).Fragment }}
+{{ $destination := .Destination | replaceRE "\\\\(.)" "$1" }}
+
+{{ $fragment := (urls.Parse $destination).Fragment }}
 {{ if ne $fragment "" }}
 {{ $fragment = print "#" $fragment }}
 {{ end }}
 
 {{ $href := "" }}
-{{ if eq $fragment .Destination }}
+{{ if eq $fragment $destination }}
 {{ $href = $fragment }}
 {{ else }}
-{{ with .Page.GetPage (strings.TrimSuffix $fragment .Destination) }}
+{{ with .Page.GetPage (strings.TrimSuffix $fragment $destination) }}
 {{ $href = print .RelPermalink $fragment }}
 {{ else }}
-{{ $href = .Destination | safeURL }}
+{{ $href = $destination | safeURL }}
 {{ end }}
 {{ end }}
 
-<a href="{{ $href }}" {{ with .Title }} title="{{ . }}" {{ end }} {{ if strings.HasPrefix .Destination "http" }} target="_blank" {{ end }}>{{ safeHTML .Text }}</a>
+<a href="{{ $href }}" {{ with .Title }} title="{{ . }}" {{ end }} {{ if strings.HasPrefix $destination "http" }} target="_blank" {{ end }}>{{ safeHTML .Text }}</a>

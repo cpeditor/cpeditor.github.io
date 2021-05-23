@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "bullet": "-"
+  },
+  "plugins": [
+    "remark-preset-lint-recommended",
+    "remark-frontmatter"
+  ]
+}
