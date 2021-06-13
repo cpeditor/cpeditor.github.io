@@ -58,7 +58,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <a href="https://github.com/DanMax03"><img src="https://avatars.githubusercontent.com/u/55328040?v=4" width="100px;" alt=""/></a><br /><a href="https://github.com/DanMax03"><sub><b>DanMax03</b></sub></a><br /><a href="#translation-DanMax03" title="Translation">🌍</a>
     </td>
     <td align="center">
-      <a href="https://github.com/qinyihao"><img src="https://avatars.githubusercontent.com/u/40647091?v=4" width="100px;" alt=""/></a><br /><a href="https://qyh1206.cn/"><sub><b>qinyihao</b></sub></a><br /><a href="#translation-qinyihao" title="Translation">🌍</a>
+      <a href="https://github.com/qinyihao"><img src="https://avatars.githubusercontent.com/u/40647091?v=4" width="100px;" alt=""/></a><br /><a href="https://qyh1206.cn/"><sub><b>qinyihao</b></sub></a><br /><a href="#translation-qinyihao" title="Translation">🌍</a> <a href="https://github.com/cpeditor/cpeditor.github.io/issues?q=author%3Aqinyihao" title="Bug reports">🐛</a>
     </td>
   </tr>
 </table>
