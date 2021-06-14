@@ -49,7 +49,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <a href="https://github.com/TFKls"><img src="https://avatars3.githubusercontent.com/u/43710501?v=4" width="100px;" alt=""/></a><br /><a href="http://tfkls.dev"><sub><b>TFKls</b></sub></a><br /><a href="#content-TFKls" title="Content">🖋</a>
     </td>
     <td align="center">
-      <a href="https://github.com/IZOBRETATEL777"><img src="https://avatars0.githubusercontent.com/u/32099652?v=4" width="100px;" alt=""/></a><br /><a href="https://github.com/IZOBRETATEL777"><sub><b>IZOBRETATEL777</b></sub></a><br /><a href="#content-IZOBRETATEL777" title="Content">🖋</a>
+      <a href="https://github.com/IZOBRETATEL777"><img src="https://avatars0.githubusercontent.com/u/32099652?v=4" width="100px;" alt=""/></a><br /><a href="https://github.com/IZOBRETATEL777"><sub><b>IZOBRETATEL777</b></sub></a><br /><a href="#content-IZOBRETATEL777" title="Content">🖋</a> <a href="https://github.com/cpeditor/cpeditor.github.io/pulls?q=is%3Apr+reviewed-by%3AIZOBRETATEL777" title="Reviewed Pull Requests">👀</a>
     </td>
     <td align="center">
       <a href="https://github.com/ChungZH"><img src="https://avatars0.githubusercontent.com/u/42088872?v=4" width="100px;" alt=""/></a><br /><a href="https://chungzh.cc/"><sub><b>Flex Zhong</b></sub></a><br /><a href="#translation-ChungZH" title="Translation">🌍</a>
