@@ -129,6 +129,15 @@
         "translation",
         "bug"
       ]
+    },
+    {
+      "login": "Sadykhzadeh",
+      "name": "Azer Sadykhzadeh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51178055?v=4",
+      "profile": "http://sadykhzadeh.ml/",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
