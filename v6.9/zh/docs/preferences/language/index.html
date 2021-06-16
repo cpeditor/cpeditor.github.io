@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/language/index.xml">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="../../../../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../../../../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../../../../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../../../../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../../../../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../../../../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../../../../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../../../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../../../../favicons/android-192x192.png" sizes="192x192">
+
+<title>语言 | CP Editor</title><meta property="og:title" content="语言" />
+<meta property="og:description" content="专为算法竞赛设计的 IDE" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/zh/docs/preferences/language/" /><meta property="og:site_name" content="CP Editor" />
+
+<meta itemprop="name" content="语言">
+<meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="语言"/>
+<meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-96337051-5', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="../../../../scss/main.min.ac06a61bad73b18ac94cdae89cd21fa40f31e4bf69ffacfc9603f6b85e8a2f93.css" as="style">
+<link href="../../../../scss/main.min.ac06a61bad73b18ac94cdae89cd21fa40f31e4bf69ffacfc9603f6b85e8a2f93.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body class="td-section">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../../../../zh/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../../zh/about/" ><span>关于</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="../../../../zh/docs/" ><span class="active">文档</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../../zh/community/" ><span>社区</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../../zh/download/" ><span>下载</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://cpeditor.org/">alpha</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.9">v6.9</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	中文
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../../docs/preferences/language/">English</a>
+	
+	<a class="dropdown-item" href="../../../../ru/docs/preferences/language/">Русский</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; 站内搜索…"
+  aria-label="站内搜索…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../../offline-search-index.1fa970e1ef9ff1b47c2660d82a1b9c64.json"
+  data-offline-search-base-href="../../../../"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; 站内搜索…"
+  aria-label="站内搜索…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../../offline-search-index.1fa970e1ef9ff1b47c2660d82a1b9c64.json"
+  data-offline-search-base-href="../../../../"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	中文
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../../docs/preferences/language/">English</a>
+	
+	<a class="dropdown-item" href="../../../../ru/docs/preferences/language/">Русский</a>
+	
+</div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">文档</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="zhdocs">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">安装</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallation">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/install-from-binaries/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">安装可执行文件</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationinstall-from-binaries">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/build-from-source/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">从源代码构建</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">使用 Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/build-from-aur/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">从 AUR 构建</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationbuild-from-aur">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/setup/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">初始化</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">设置</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="zhdocspreferences">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/code-edit/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">代码编辑</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencescode-edit">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/language/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">语言</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="zhdocspreferenceslanguage">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/appearance/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">外观</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesappearance">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/actions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">动作</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesactions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/extensions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">扩展</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesextensions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">文件路径</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesfile-path">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">热键</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferenceskey-bindings">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">高级</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesadvanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">通用</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesgeneral">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">提示</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.9/content/docs/preferences/language/_index.zh.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=%e8%af%ad%e8%a8%80" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> 提交项目问题</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#通用">通用</a>
+      <ul>
+        <li><a href="#默认编程语言">默认编程语言</a></li>
+      </ul>
+    </li>
+    <li><a href="#命令">命令</a>
+      <ul>
+        <li><a href="#c-命令">C++ 命令</a></li>
+        <li><a href="#java-命令">Java 命令</a></li>
+        <li><a href="#python-命令">Python 命令</a></li>
+      </ul>
+    </li>
+    <li><a href="#模板">模板</a>
+      <ul>
+        <li><a href="#模板路径">模板路径</a></li>
+        <li><a href="#使用模板时的光标初始位置">使用模板时的光标初始位置</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码片段">代码片段</a>
+      <ul>
+        <li><a href="#管理代码片段">管理代码片段</a></li>
+        <li><a href="#使用代码片段">使用代码片段</a></li>
+      </ul>
+    </li>
+    <li><a href="#括号">括号</a>
+      <ul>
+        <li><a href="#自动补全">自动补全</a></li>
+        <li><a href="#自动删除">自动删除</a></li>
+        <li><a href="#按-tab-键跳出">按 Tab 键跳出</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../../zh/docs/">文档</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../../zh/docs/preferences/">设置</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="../../../../zh/docs/preferences/language/">语言</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>语言</h1>
+        
+	
+	<h2 id="通用">通用</h2>
+<h3 id="默认编程语言">默认编程语言</h3>
+<p>设置打开新标签时使用的默认编程语言。</p>
+<h2 id="命令">命令</h2>
+<h3 id="c-命令">C++ 命令</h3>
+<h4 id="c-编译命令">C++ 编译命令</h4>
+<p>设置编译 C++ 时的编译命令，例如 <code>g++ -Wall</code>。</p>
+<p>该命令中不应包含源代码和输出文件的名称，CP Editor 将会自动添加它们。</p>
+<p>详细的编译选项请参考编译器的文档。</p>
+<h4 id="c-可执行文件路径">C++ 可执行文件路径</h4>
+<p>设置可执行文件的路径，即编译命令中 <code>-o</code> 选项后的参数。</p>
+<p>如果使用了相对路径，则可执行文件的位置将和源代码位置有关（如果当前标签是未命名标签，则可执行文件位置将和 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9"  >临时文件夹</a>
+ 的位置有关）。</p>
+<p>该设置中，你可以使用如下参数：</p>
+<ul>
+<li><code>${filename}</code>：源代码的完整文件名。如果当前标签是未命名标签，则完整文件名是 <code>sol.cpp</code>。</li>
+<li><code>${basename}</code>：将 <code>${filename}</code> 去掉扩展名（<code>.cpp</code> 等）后的文件名。</li>
+<li><code>${tmpdir}</code> 或 <code>${tempdir}</code>：
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/general/#%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6%e5%a4%b9"  >临时文件夹</a>
+ 的路径。</li>
+</ul>
+<p>例如，使用 <code>${tmpdir}/${basename}</code> 将会把可执行文件存储在临时文件夹下。如果你不想要存储可执行文件的话，可以这样设定路径。而 <code>executables/${basename}</code> 将会把可执行文件存储在源代码所在目录的下的 <code>executables</code> 文件夹。</p>
+<h4 id="c-运行参数">C++ 运行参数</h4>
+<p>设置执行 C++ 程序需要的参数。在算法竞赛中一般留空即可。</p>
+<h4 id="c-编译器输出编码">C++ 编译器输出编码</h4>
+<p>设置当编译器输出警告，错误等消息时使用的编码。</p>
+<p>如果输出的警告和错误信息不是英文，合理配置该设置可以避免输出信息出现乱码。</p>
+<h3 id="java-命令">Java 命令</h3>
+<h4 id="java-编译命令">Java 编译命令</h4>
+<p>设置编译 Java 源代码的编译命令，例如 <code>javac</code>。</p>
+<p>该命令中不应包含源代码和类路径，CP Editor 将会自动添加它们。</p>
+<h4 id="java-类路径">Java 类路径</h4>
+<p>设置编译后存储 Java 类文件的位置。</p>
+<p>更多细节详见 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#c-%e5%8f%af%e6%89%a7%e8%a1%8c%e6%96%87%e4%bb%b6%e8%b7%af%e5%be%84"  >C++ 可执行文件路径</a>
+。</p>
+<h4 id="java-类名称">Java 类名称</h4>
+<p>设置你的源代码中主类的名字。</p>
+<p>源代码的名字不必与主类名相同。当编译时，CP Editor 将会自动将源代码保存在一个与主类名称相同的文件中。</p>
+<h4 id="java-运行命令">Java 运行命令</h4>
+<p>设置执行 Java 程序时的命令。例如 <code>java</code>。</p>
+<p>该命令中不应出现类路径或类名，CP Editor 会自动添加它们。</p>
+<h4 id="java-运行参数">Java 运行参数</h4>
+<p>设置执行 Java 程序需要的参数。在算法竞赛中一般留空即可。</p>
+<h4 id="java-编译器输出源码">Java 编译器输出源码</h4>
+<p>详见 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#c-%e7%bc%96%e8%af%91%e5%99%a8%e8%be%93%e5%87%ba%e7%bc%96%e7%a0%81"  >C++ 编译器输出编码</a>
+。</p>
+<h3 id="python-命令">Python 命令</h3>
+<h4 id="python-运行命令">Python 运行命令</h4>
+<p>设置运行 Python 源代码的命令。一般为 <code>python</code>，<code>python2</code> 或 <code>python3</code>。</p>
+<h4 id="python-运行命令-1">Python 运行命令</h4>
+<p>设置执行 Python 程序需要的参数。在算法竞赛中一般留空即可。</p>
+<h2 id="模板">模板</h2>
+<p>如果设置了模板，在创建新标签时，将会用设置的模板自动填充内容。</p>
+<h3 id="模板路径">模板路径</h3>
+<p>设置模板所在的路径。</p>
+<h3 id="使用模板时的光标初始位置">使用模板时的光标初始位置</h3>
+<p>设置使用模板时光标所在的初始位置。</p>
+<p>该设置包含三部分。</p>
+<ol>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/general/#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f"  >正则表达式</a>
+</li>
+<li>偏移类型：开头或末尾。</li>
+<li>偏移量：一个数字，可以为负值。</li>
+</ol>
+<p>光标位置将会通过如下步骤确定：</p>
+<ol>
+<li>找到模板中匹配正则表达式的第一个位置。</li>
+<li>如果模板中不存在匹配正则表达式的位置，光标将会在模板末尾。</li>
+<li>否则，光标将会在第一个匹配位置的开头或末尾（取决于设置的偏移类型），并会在该位置基础上向右移动偏移量个位置（如果是负数，就会向左移动）。</li>
+</ol>
+<p>例如，如果你的模板中包含下列代码片段：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">{</span>
+    
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>则可以用 <code>int main</code> 作为匹配的正则表达式，<code>end</code> 作为偏移类型，<code>9</code> 作为偏移量，则在打开一个新标签时，光标将会停在 <code>main</code> 函数的第一行。</p>
+<h2 id="代码片段">代码片段</h2>
+<h3 id="管理代码片段">管理代码片段</h3>
+<p>你可以在 “语言-&gt;XXX-&gt;XXX 代码片段中” 添加，删除，重命名代码片段。你可以使用 <kbd>Ctrl+N</kbd> 作为添加的快捷键，<kbd>Ctrl+W</kbd> 作为删除的快捷键，<kbd>F2</kbd> 作为重命名的快捷键。</p>
+<p>你也可以在 “更多” 菜单中导入或导出代码片段。</p>
+<h3 id="使用代码片段">使用代码片段</h3>
+<p>你可以通过 “动作-&gt;使用代码片段” 或按下 <kbd>Ctrl+T<kbd> 来使用代码片段。</p>
+<p>当你在挑选代码片段时，你可以在搜索框中输入代码片段名的前几个字符，以更快找到相应的片段。</p>
+<h2 id="括号">括号</h2>
+<p>你可以为各编程语言设置相应的括号补全选项。</p>
+<p>每个设置有三种状态：开启，关闭或默认。如果处于默认状态，将应用 
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/code-edit/"  >代码编辑</a>
+ 中的设置，否则将会使用这里的设置。</p>
+<h3 id="自动补全">自动补全</h3>
+<p>详见 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%8b%ac%e5%8f%b7"  >代码编辑/自动补全括号</a>
+。</p>
+<h3 id="自动删除">自动删除</h3>
+<p>详见 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/code-edit/#%e8%87%aa%e5%8a%a8%e5%88%a0%e9%99%a4%e6%8b%ac%e5%8f%b7"  >代码编辑/自动删除括号</a>
+。</p>
+<h3 id="按-tab-键跳出">按 Tab 键跳出</h3>
+<p>详见 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/code-edit/#%e5%9c%a8%e6%8c%89%e4%b8%8b-tab-%e9%94%ae%e6%97%b6%e8%b7%b3%e5%87%ba%e6%8b%ac%e5%8f%b7"  >代码编辑/在按下 Tab 键时跳出括号</a>
+。</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<div class="d-print-none">
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! You can <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+</div>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 May 23, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/9024448c93fc0370616fb1d1954c7c8edb6e8f4a">chore: use yarn and upgrade to Remark 9 (#173) (9024448)</a>
+</div>
+</div>
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor/discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="../../../../zh/about/">关于 CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

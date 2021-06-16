@@ -1,0 +1,1260 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../../docs/preferences/language/index.xml">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="../../../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../../../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../../../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../../../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../../../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../../../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../../../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../../../favicons/android-192x192.png" sizes="192x192">
+
+<title>Language | CP Editor</title><meta property="og:title" content="Language" />
+<meta property="og:description" content="The IDE for competitive programming" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/preferences/language/" /><meta property="og:site_name" content="CP Editor" />
+
+<meta itemprop="name" content="Language">
+<meta itemprop="description" content="The IDE for competitive programming"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Language"/>
+<meta name="twitter:description" content="The IDE for competitive programming"/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-96337051-5', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="../../../scss/main.min.ac06a61bad73b18ac94cdae89cd21fa40f31e4bf69ffacfc9603f6b85e8a2f93.css" as="style">
+<link href="../../../scss/main.min.ac06a61bad73b18ac94cdae89cd21fa40f31e4bf69ffacfc9603f6b85e8a2f93.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body class="td-section">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../../../">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="../../../docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../download/" ><span>Download</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://cpeditor.org/">alpha</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.9">v6.9</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../zh/docs/preferences/language/">中文</a>
+	
+	<a class="dropdown-item" href="../../../ru/docs/preferences/language/">Русский</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../offline-search-index.1fa970e1ef9ff1b47c2660d82a1b9c64.json"
+  data-offline-search-base-href="../../../"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../offline-search-index.1fa970e1ef9ff1b47c2660d82a1b9c64.json"
+  data-offline-search-base-href="../../../"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../zh/docs/preferences/language/">中文</a>
+	
+	<a class="dropdown-item" href="../../../ru/docs/preferences/language/">Русский</a>
+	
+</div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Installation</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallation">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/install-from-binaries/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Install from binaries</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationinstall-from-binaries">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/build-from-source/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from source</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/build-from-aur/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from AUR</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationbuild-from-aur">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/setup/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Setup</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Preferences</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docspreferences">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/code-edit/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Code Edit</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencescode-edit">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/language/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Language</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docspreferenceslanguage">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/appearance/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Appearance</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesappearance">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/actions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Actions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesactions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/extensions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Extensions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesextensions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">File Path</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesfile-path">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Key Bindings</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferenceskey-bindings">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesadvanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">General</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesgeneral">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.9/content/docs/preferences/language/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Language" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#general">General</a>
+      <ul>
+        <li><a href="#default-language">Default Language</a></li>
+      </ul>
+    </li>
+    <li><a href="#commands">Commands</a>
+      <ul>
+        <li><a href="#c-commands">C++ Commands</a></li>
+        <li><a href="#java-commands">Java Commands</a></li>
+        <li><a href="#python-commands">Python Commands</a></li>
+      </ul>
+    </li>
+    <li><a href="#template">Template</a>
+      <ul>
+        <li><a href="#template-path">Template Path</a></li>
+        <li><a href="#template-cursor-position">Template Cursor Position</a></li>
+      </ul>
+    </li>
+    <li><a href="#snippets">Snippets</a>
+      <ul>
+        <li><a href="#manage-snippets">Manage Snippets</a></li>
+        <li><a href="#use-snippets">Use Snippets</a></li>
+      </ul>
+    </li>
+    <li><a href="#parentheses">Parentheses</a>
+      <ul>
+        <li><a href="#auto-complete">Auto Complete</a></li>
+        <li><a href="#auto-remove">Auto Remove</a></li>
+        <li><a href="#tab-jump-out">Tab Jump Out</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../docs/preferences/">Preferences</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="../../../docs/preferences/language/">Language</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>Language</h1>
+        
+	
+	<h2 id="general">General</h2>
+<h3 id="default-language">Default Language</h3>
+<p>The default programming language. It&rsquo;s used when opening a new tab and some other places.</p>
+<h2 id="commands">Commands</h2>
+<h3 id="c-commands">C++ Commands</h3>
+<h4 id="c-compile-command">C++ Compile Command</h4>
+<p>The compilation command for C++. For example: <code>g++ -Wall</code>.</p>
+<p>The command shouldn&rsquo;t contain the source file and the output file, CP Editor automatically adds them.</p>
+<p>For compilation flags, please refer to the manual of the compiler. For example, you may want to add <code>-std=c++14</code> in the compile command to use C++14.</p>
+<h4 id="c-executable-file-path">C++ Executable File Path</h4>
+<p>The path of the executable file, i.e. the argument of the <code>-o</code> option of the compiler.</p>
+<p>If this path is relative, then it&rsquo;s relative to the source file (if it&rsquo;s an untitled tab, then relative to the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/general/#temporary-directory"  >Temporary Directory</a>
+).</p>
+<p>You can use some place holders for this setting:</p>
+<ul>
+<li><code>${filename}</code>: The complete name of the source file. If it&rsquo;s an untitled tab (i.e. an unsaved file), the complete file name is <code>sol.cpp</code>.</li>
+<li><code>${basename}</code>: <code>${filename}</code> without the suffix (i.e. without <code>.cpp</code>, etc.).</li>
+<li><code>${tmpdir}</code> or <code>${tempdir}</code>: The path of the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/general/#temporary-directory"  >Temporary Directory</a>
+.</li>
+</ul>
+<p>For example, you can use <code>${tmpdir}/${basename}</code> if you don&rsquo;t want to keep the executable files, or <code>executables/${basename}</code> if you want to keep all executable files in the <code>executables</code> directory under the directory of the source file.</p>
+<h4 id="c-run-arguments">C++ Run Arguments</h4>
+<p>The arguments passed to the program when executing it. It&rsquo;s usually not needed in competitive programming.</p>
+<h4 id="c-compiler-output-codec">C++ Compiler Output Codec</h4>
+<p>The text codec of the compiler output (warnings, errors, etc.), used to display the messages from the compiler in CP Editor.</p>
+<p>It could be useful if you are using locales for your compiler and the compiler messages are not English.</p>
+<h3 id="java-commands">Java Commands</h3>
+<h4 id="java-compile-command">Java Compile Command</h4>
+<p>The compilation command for Java. For example: <code>javac</code>.</p>
+<p>The command shouldn&rsquo;t contain the source file and the class path, CP Editor automatically adds them.</p>
+<h4 id="java-class-path">Java Class Path</h4>
+<p>The path to save the class files.</p>
+<p>Please refer to 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#c-executable-file-path"  >C++ Executable File Path</a>
+ for the details.</p>
+<h4 id="java-class-name">Java Class Name</h4>
+<p>The name of the main class of your solution.</p>
+<p>You can use an arbitrary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.</p>
+<h4 id="java-run-command">Java Run Command</h4>
+<p>The command to run your solution. For example <code>java</code>.</p>
+<p>This command shouldn&rsquo;t contain the class path or the class name, CP Editor automatically adds them.</p>
+<h4 id="java-run-arguments">Java Run Arguments</h4>
+<p>The arguments passed to the program when executing it. It&rsquo;s usually not needed in competitive programming.</p>
+<h4 id="java-compiler-output-codec">Java Compiler Output Codec</h4>
+<p>Please refer to 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#c-compiler-output-codec"  >C++ Compiler Output Codec</a>
+.</p>
+<h3 id="python-commands">Python Commands</h3>
+<h4 id="python-run-command">Python Run Command</h4>
+<p>The command to run a python code. It&rsquo;s usually one of <code>python</code>/<code>python2</code>/<code>python3</code>.</p>
+<h4 id="python-run-arguments">Python Run Arguments</h4>
+<p>The arguments passed to the program when executing it. It&rsquo;s usually not needed in competitive programming.</p>
+<h2 id="template">Template</h2>
+<p>The code template is a file. When opening a new tab, the content of the template will be the initial content in the code editor.</p>
+<h3 id="template-path">Template Path</h3>
+<p>The path to the code template.</p>
+<h3 id="template-cursor-position">Template Cursor Position</h3>
+<p>The initial position of the text cursor when opening the template.</p>
+<p>It contains three parts:</p>
+<ol>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/general/#regular-expression"  >Regex</a>
+</li>
+<li>Offset type: start or end.</li>
+<li>Offset characters: a number, could be negative.</li>
+</ol>
+<p>It works as below:</p>
+<ol>
+<li>Find the first match of the regex in the template.</li>
+<li>If nothing matches the regex, the cursor will be at the end of the template.</li>
+<li>Otherwise, depending on the offset type, the cursor will be at the start/end of the first match, and then moved to the right by the number of the offset characters.</li>
+</ol>
+<p>For example, if your template contains the following snippet:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">{</span>
+    
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>Then you can use <code>int main</code> as the regex, <code>end</code> as the offset type, and <code>9</code> as the offset characters. After that, when opening a new tab, the cursor will be at the first line in the <code>main</code> function.</p>
+<h2 id="snippets">Snippets</h2>
+<h3 id="manage-snippets">Manage Snippets</h3>
+<p>You can add/delete/rename snippets in &ldquo;Language-&gt;XXX-&gt;XXX Snippet&rdquo;. You can use <kbd>Ctrl+N</kbd> for &ldquo;Add&rdquo;, </kbd>Ctrl+W</kbd> for &ldquo;Del&rdquo; and </kbd>F2</kbd> for &ldquo;Rename&rdquo;.</p>
+<p>You can also import snippets from files or extract your snippets to files in the &ldquo;More&rdquo; menu on the snippet page.</p>
+<h3 id="use-snippets">Use Snippets</h3>
+<p>You can insert a snippet into the code editor by either clicking &ldquo;Actions-&gt;Use Snippets&rdquo; or pressing </kbd>Ctrl+T</kbd>.</p>
+<p>When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.</p>
+<h2 id="parentheses">Parentheses</h2>
+<p>You can set the parentheses settings for each language and each parenthesis.</p>
+<p>Each setting has three states: enable, disable and default. If it&rsquo;s default, it uses the settings in the 
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/code-edit/"  >Code Edit</a>
+ page. Otherwise, it overwrites the settings in the 
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/code-edit/"  >Code Edit</a>
+ page.</p>
+<h3 id="auto-complete">Auto Complete</h3>
+<p>See 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/code-edit/#auto-complete-parentheses"  >Code Edit/Auto Complete Parentheses</a>
+.</p>
+<h3 id="auto-remove">Auto Remove</h3>
+<p>See 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/code-edit/#auto-remove-parentheses"  >Code Edit/Auto Remove Parentheses</a>
+.</p>
+<h3 id="tab-jump-out">Tab Jump Out</h3>
+<p>See 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/code-edit/#jump-out-of-a-parenthesis-by-pressing-tab"  >Code Edit/Jump out of a parenthesis by pressing Tab</a>
+.</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<div class="d-print-none">
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! You can <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+</div>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 23, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/9024448c93fc0370616fb1d1954c7c8edb6e8f4a">chore: use yarn and upgrade to Remark 9 (#173) (9024448)</a>
+</div>
+</div>
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor/discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="../../../about/">About CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
