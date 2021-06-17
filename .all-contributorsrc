@@ -139,6 +139,16 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "jackhallam",
+      "name": "Jack Hallam",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5289178?v=4",
+      "profile": "https://jackhallam.com",
+      "contributions": [
+        "bug",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 6,
