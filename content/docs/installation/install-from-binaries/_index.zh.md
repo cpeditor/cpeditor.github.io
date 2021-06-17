@@ -41,4 +41,4 @@ sudo apt install <path to .deb package>
 
 ### macOS
 
-下载 `.dmg` 文件然后安装。如果出现“未识别的开发者”等提示消息，请依然允许 CP Editor 运行。可以在 `Settings -> Security -> General` 中将 CP Editor 添加到白名单里。
+下载 `.dmg` 文件然后安装。如果出现“未识别的开发者”等提示消息，请依然允许 CP Editor 运行。可以在 `System Preferences -> Security & Privacy -> General` 中将 CP Editor 添加到白名单里。
