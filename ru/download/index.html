@@ -172,7 +172,7 @@ if (!doNotTrack) {
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../offline-search-index.cc31f04e7bace75cf6f4de52f8f9ca1c.json"
+  data-offline-search-index-json-src="../../offline-search-index.c4008a29947211f8f3f0fdef74c762ae.json"
   data-offline-search-base-href="../../"
   data-offline-search-max-results="10"
 >
@@ -187,6 +187,7 @@ if (!doNotTrack) {
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/filesize@6"></script>
 <script src="../../js/download.js"></script>
 
 <style>
@@ -249,7 +250,7 @@ if (!doNotTrack) {
                         <select class="form-control" id="asset" v-model="selectedAsset">
                             <template v-for="asset in selectedRelease.assets" :key="asset.id">
                                 <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
-                                    {{ asset.name }}
+                                    {{ asset.name }} ({{ filesize(asset.size) }})
                                 </option>
                             </template>
                         </select>
