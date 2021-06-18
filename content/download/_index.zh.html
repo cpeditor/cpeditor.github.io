@@ -7,6 +7,7 @@ menu:
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/filesize@6"></script>
 <script src="/js/download.js"></script>
 
 <style>
@@ -75,7 +76,7 @@ menu:
                         <select class="form-control" id="asset" v-model="selectedAsset">
                             <template v-for="asset in selectedRelease.assets" :key="asset.id">
                                 <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
-                                    {{ asset.name }}
+                                    {{ asset.name }} ({{ filesize(asset.size) }})
                                 </option>
                             </template>
                         </select>
