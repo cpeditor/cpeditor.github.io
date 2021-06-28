@@ -118,3 +118,7 @@ If the file is changed outside of CP Editor, ask whether to load the change or n
 If this setting is disabled, external changes won't be loaded.
 
 [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) overrides this setting. i.e. if [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) is enabled, external file changes will be loaded without confirmation regardless of [Ask whether to load external file changes](#ask-whether-to-load-external-file-changes); if [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) is disabled, the user will be asked whether to load the changes only when [Ask whether to load external file changes](#ask-whether-to-load-external-file-changes) is enabled, otherwise the changes won't be loaded.
+
+### Ask whether to recompile current checker when it changed
+
+When the current checker changed on disk, CP Editor will ask you whether to recompile it.
