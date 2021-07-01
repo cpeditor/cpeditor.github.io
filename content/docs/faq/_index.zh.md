@@ -28,4 +28,4 @@ CF Tool 需要在使用前进行配置。请在终端中执行 `cf config` 以�
 
 ### 我的代码每次首次运行时都超时。
 
-这很可能是因为你的杀毒软件在扫描你的程序。一个可能的解决方法是，[设置可执行文件的输出目录](../preferences/language/\_index.zh.md#c-可执行文件路径)（例如，你可以将其设置为 `D:/cpeditor-executables/${basename}`），然后将这个目录（在上面的例子中，即 `D:/cpeditor-executables`）加到杀毒软件的白名单中。
+这很可能是因为你的杀毒软件在扫描你的程序。一个可能的解决方法是，[设置可执行文件的输出目录](../preferences/language/\_index.zh.md#可执行文件路径)（例如，你可以将其设置为 `D:/cpeditor-executables/${basename}`），然后将这个目录（在上面的例子中，即 `D:/cpeditor-executables`）加到杀毒软件的白名单中。

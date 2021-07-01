@@ -5,14 +5,6 @@ weight: 50
 
 ## Code Formatting
 
-#### Format Code on Manual Save
-
-Format the code when saving it manually.
-
-#### Format Code on Auto Save
-
-Format the code when auto-saving it.
-
 ### Clang Format
 
 Clang Format is used to format the C/C++ and Java codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
@@ -42,15 +34,13 @@ YAPF is used to format the Python codes. You can click Actions->Format Code or p
 
 #### Arguments
 
-The arguments passed to the formatter.
-
-It should NOT contain `-i` (the in-place modification option).
+The arguments passed to the formatter. It should NOT contain `-i` (the in-place modification option).
 
 -   YAPF: This should be `-m yapf` if the program is a Python interpreter.
 
 #### Style
 
-The style. The content here is the same as the content of a `.clang-format` file(Clang Format) or a `.style.yapf` file(YAPF).
+The content here is the same as the content of a `.clang-format` file(Clang Format) or a `.style.yapf` file(YAPF).
 
 -   Clang Format: You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
 

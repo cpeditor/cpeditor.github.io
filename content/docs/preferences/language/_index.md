@@ -9,7 +9,7 @@ The default programming language. It's used when opening a new tab and some othe
 
 ## Command
 
-#### Compile Command
+### Compile Command
 
 For C++ and Java.
 
@@ -25,15 +25,15 @@ For compilation flags, please refer to the manual of the compiler. For example:
 
 -   C++: You may want to add `-std=c++14` in the compile command to use C++14.
 
-#### Compiler Output Codec
+### Compiler Output Codec
+
+For C++ and Java.
 
 The text codec of the compiler output (warnings, errors, etc.), used to display the messages from the compiler in CP Editor.
 
 It could be useful if you are using locales for your compiler and the compiler messages are not English.
 
-#### Executable File Path
-
-For C++ and Java.
+### Executable File Path
 
 -   C++: The path of the executable file, i.e. the argument of the `-o` option of the compiler.
 
@@ -49,7 +49,7 @@ You can use some place holders for this setting:
 
 For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory under the directory of the source file.
 
-#### Class Name
+### Class Name
 
 For Java.
 
@@ -57,7 +57,7 @@ The name of the main class of your solution.
 
 You can use an arbitrary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.
 
-#### Run Command
+### Run Command
 
 For Java and Python.
 
@@ -69,7 +69,7 @@ The command to run your code. For example:
 
 This command shouldn't contain the class path(Java) or the class name(Java), CP Editor automatically adds them.
 
-#### Run Arguments
+### Run Arguments
 
 The arguments passed to the program when executing it. It's usually not needed in competitive programming.
 
