@@ -5,25 +5,19 @@ weight: 50
 
 ## Code Formatting
 
+#### Format Code on Manual Save
+
+Format the code when saving it manually.
+
+#### Format Code on Auto Save
+
+Format the code when auto-saving it.
+
 ### Clang Format
 
 Clang Format is used to format the C/C++ and Java codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
 
 **See also** [Setup Clang Format](../../setup/\_index.md#setup-clang-format).
-
-#### Program
-
-The path to the `clang-format` executable, or simply `clang-format` if it's in the `PATH` environment variable.
-
-#### Arguments
-
-The arguments passed to `clang-format`. It should NOT contain `-i` (the in-place modification option).
-
-#### Style
-
-The Clang Format style. The content here is the same as the content of a `.clang-format` file.
-
-You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
 
 ### YAPF
 
@@ -33,20 +27,34 @@ YAPF is used to format the Python codes. You can click Actions->Format Code or p
 
 #### Program
 
-The program of YAPF. It could be one of:
+* Clang Format:
+    
+    The path to the `clang-format` executable, or simply `clang-format` if it's in the `PATH` environment variable.
 
--   `yapf`: You should be able to run `yapf` in the command line. The arguments can be empty.
--   A Python interpreter, i.e. `python`, `python2`, etc. or the path to an interpreter. The arguments should be `-m yapf`.
+* YAPF:
+    
+    The program of YAPF. It could be one of:
 
-Note that [you need to use Python 2 to format Python 2, use Python 3 to format Python 3](https://github.com/google/yapf#python-versions). So you may need to choose the correct Python interpreter.
+    -   `yapf`: You should be able to run `yapf` in the command line. The arguments can be empty.
+    -   A Python interpreter, i.e. `python`, `python2`, etc. or the path to an interpreter. The arguments should be `-m yapf`.
+
+    Note that [you need to use Python 2 to format Python 2, use Python 3 to format Python 3](https://github.com/google/yapf#python-versions). So you may need to choose the correct Python interpreter.
 
 #### Arguments
 
-The arguments passed to the YAPF program. This should be `-m yapf` if the program is a Python interpreter. It should NOT contain `-i` (the in-place modification option).
+The arguments passed to the formatter. 
+
+It should NOT contain `-i` (the in-place modification option).
+
+* YAPF: This should be `-m yapf` if the program is a Python interpreter. 
 
 #### Style
 
-The YAPF Format style. The content here is the same as the content of a `.style.yapf` file. You can check all possible configurations by running `yapf --style-help`, read the [documentation](https://github.com/google/yapf#formatting-style) or search for other materials to learn how to write the styles.
+The style. The content here is the same as the content of a `.clang-format` file(Clang Format) or a `.style.yapf` file(YAPF).
+
+* Clang Format: You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
+
+* YAPF: You can check all possible configurations by running `yapf --style-help`, read the [documentation](https://github.com/google/yapf#formatting-style) or search for other materials to learn how to write the styles.
 
 ## Language Server
 
