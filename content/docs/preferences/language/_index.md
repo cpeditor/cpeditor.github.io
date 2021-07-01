@@ -15,15 +15,15 @@ For C++ and Java.
 
 The compilation command. For example:
 
-* C++: `g++ -Wall`.
+-   C++: `g++ -Wall`.
 
-* Java: `javac`.
+-   Java: `javac`.
 
 The command shouldn't contain the source file, the output file(C++) or the class path(Java), CP Editor automatically adds them.
 
 For compilation flags, please refer to the manual of the compiler. For example:
 
-* C++: You may want to add `-std=c++14` in the compile command to use C++14.
+-   C++: You may want to add `-std=c++14` in the compile command to use C++14.
 
 #### Compiler Output Codec
 
@@ -35,10 +35,9 @@ It could be useful if you are using locales for your compiler and the compiler m
 
 For C++ and Java.
 
-* C++: The path of the executable file, i.e. the argument of the `-o` option of the compiler.
+-   C++: The path of the executable file, i.e. the argument of the `-o` option of the compiler.
 
-* Java: The path to save the class files.
-
+-   Java: The path to save the class files.
 
 If this path is relative, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general/\_index.md#temporary-directory)).
 
@@ -64,9 +63,9 @@ For Java and Python.
 
 The command to run your code. For example:
 
-* Java: `java`.
+-   Java: `java`.
 
-* Python: `python`/`python2`/`python3`.
+-   Python: `python`/`python2`/`python3`.
 
 This command shouldn't contain the class path(Java) or the class name(Java), CP Editor automatically adds them.
 

@@ -27,12 +27,12 @@ YAPF is used to format the Python codes. You can click Actions->Format Code or p
 
 #### Program
 
-* Clang Format:
-    
+-   Clang Format:
+
     The path to the `clang-format` executable, or simply `clang-format` if it's in the `PATH` environment variable.
 
-* YAPF:
-    
+-   YAPF:
+
     The program of YAPF. It could be one of:
 
     -   `yapf`: You should be able to run `yapf` in the command line. The arguments can be empty.
@@ -42,19 +42,19 @@ YAPF is used to format the Python codes. You can click Actions->Format Code or p
 
 #### Arguments
 
-The arguments passed to the formatter. 
+The arguments passed to the formatter.
 
 It should NOT contain `-i` (the in-place modification option).
 
-* YAPF: This should be `-m yapf` if the program is a Python interpreter. 
+-   YAPF: This should be `-m yapf` if the program is a Python interpreter.
 
 #### Style
 
 The style. The content here is the same as the content of a `.clang-format` file(Clang Format) or a `.style.yapf` file(YAPF).
 
-* Clang Format: You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
+-   Clang Format: You can read [Clang-Format Style Options documentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) or search for other materials to learn how to write the styles.
 
-* YAPF: You can check all possible configurations by running `yapf --style-help`, read the [documentation](https://github.com/google/yapf#formatting-style) or search for other materials to learn how to write the styles.
+-   YAPF: You can check all possible configurations by running `yapf --style-help`, read the [documentation](https://github.com/google/yapf#formatting-style) or search for other materials to learn how to write the styles.
 
 ## Language Server
 
