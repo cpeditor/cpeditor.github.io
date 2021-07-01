@@ -3,89 +3,73 @@ title: "Language"
 weight: 20
 ---
 
-## General
-
 ### Default Language
 
 The default programming language. It's used when opening a new tab and some other places.
 
 ## Commands
 
-### C++ Commands
+### Compile Command
 
-#### C++ Compile Command
+For C++ and Java.
 
-The compilation command for C++. For example: `g++ -Wall`.
+The compilation command. For example:
 
-The command shouldn't contain the source file and the output file, CP Editor automatically adds them.
+-   C++: `g++ -Wall`.
 
-For compilation flags, please refer to the manual of the compiler. For example, you may want to add `-std=c++14` in the compile command to use C++14.
+-   Java: `javac`.
 
-#### C++ Executable File Path
+The command shouldn't contain the source file, the output file(C++) or the class path(Java), CP Editor automatically adds them.
 
-The path of the executable file, i.e. the argument of the `-o` option of the compiler.
+For compilation flags, please refer to the manual of the compiler. For example:
 
-If this path is relative, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general/\_index.ru.md#temporary-directory)).
+-   C++: You may want to add `-std=c++14` in the compile command to use C++14.
 
-You can use some place holders for this setting:
+### Compiler Output Codec
 
--   `${filename}`: The complete name of the source file. If it's an untitled tab (i.e. an unsaved file), the complete file name is `sol.cpp`.
--   `${basename}`: `${filename}` without the suffix (i.e. without `.cpp`, etc.).
--   `${tmpdir}` or `${tempdir}`: The path of the [Temporary Directory](../general/\_index.ru.md#temporary-directory).
-
-For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory under the directory of the source file.
-
-#### C++ Run Arguments
-
-The arguments passed to the program when executing it. It's usually not needed in competitive programming.
-
-#### C++ Compiler Output Codec
+For C++ and Java.
 
 The text codec of the compiler output (warnings, errors, etc.), used to display the messages from the compiler in CP Editor.
 
 It could be useful if you are using locales for your compiler and the compiler messages are not English.
 
-### Java Commands
+### Executable File Path
 
-#### Java Compile Command
+-   C++: The path of the executable file, i.e. the argument of the `-o` option of the compiler.
 
-The compilation command for Java. For example: `javac`.
+-   Java: The path to save the class files.
 
-The command shouldn't contain the source file and the class path, CP Editor automatically adds them.
+If this path is relative, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general/\_index.md#temporary-directory)).
 
-#### Java Class Path
+You can use some place holders for this setting:
 
-The path to save the class files.
+-   `${filename}`: The complete name of the source file. If it's an untitled tab (i.e. an unsaved file), the complete file name is `sol.cpp`.
+-   `${basename}`: `${filename}` without the suffix (i.e. without `.cpp`, etc.).
+-   `${tmpdir}` or `${tempdir}`: The path of the [Temporary Directory](../general/\_index.md#temporary-directory).
 
-Please refer to [C++ Executable File Path](#c-executable-file-path) for the details.
+For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory under the directory of the source file.
 
-#### Java Class Name
+### Class Name
+
+For Java.
 
 The name of the main class of your solution.
 
 You can use an arbitrary name for your source file. When compiling, CP Editor automatically saves your code to a file with the class name.
 
-#### Java Run Command
+### Run Command
 
-The command to run your solution. For example `java`.
+For Java and Python.
 
-This command shouldn't contain the class path or the class name, CP Editor automatically adds them.
+The command to run your code. For example:
 
-#### Java Run Arguments
+-   Java: `java`.
 
-The arguments passed to the program when executing it. It's usually not needed in competitive programming.
+-   Python: `python`/`python2`/`python3`.
 
-#### Java Compiler Output Codec
+This command shouldn't contain the class path(Java) or the class name(Java), CP Editor automatically adds them.
 
-Please refer to [C++ Compiler Output Codec](#c-compiler-output-codec).
-
-### Python Commands
-
-#### Python Run Command
-
-The command to run a python code. It's usually one of `python`/`python2`/`python3`.
-
-#### Python Run Arguments
+### Run Arguments
 
 The arguments passed to the program when executing it. It's usually not needed in competitive programming.
 
@@ -103,7 +87,7 @@ The initial position of the text cursor when opening the template.
 
 It contains three parts:
 
-1.  [Regex](../general/\_index.ru.md#regular-expression)
+1.  [Regex](../general/\_index.md#regular-expression)
 2.  Offset type: start or end.
 3.  Offset characters: a number, could be negative.
 
@@ -128,13 +112,13 @@ Then you can use `int main` as the regex, `end` as the offset type, and `9` as t
 
 ### Manage Snippets
 
-You can add/delete/rename snippets in "Language->XXX->XXX Snippet". You can use <kbd>Ctrl+N</kbd> for "Add", </kbd>Ctrl+W</kbd> for "Del" and </kbd>F2</kbd> for "Rename".
+You can add/delete/rename snippets in "Language->Language Config->XXX->Snippet". You can use <kbd>Ctrl+N</kbd> for "Add", <kbd>Ctrl+W</kbd> for "Del" and <kbd>F2</kbd> for "Rename".
 
 You can also import snippets from files or extract your snippets to files in the "More" menu on the snippet page.
 
 ### Use Snippets
 
-You can insert a snippet into the code editor by either clicking "Actions->Use Snippets" or pressing </kbd>Ctrl+T</kbd>.
+You can insert a snippet into the code editor by either clicking "Actions->Use Snippets" or pressing <kbd>Ctrl+T</kbd>.
 
 When choosing a snippet, you can enter the first few characters of the snippet name, and it will be auto-completed.
 
@@ -142,16 +126,16 @@ When choosing a snippet, you can enter the first few characters of the snippet n
 
 You can set the parentheses settings for each language and each parenthesis.
 
-Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Edit](../code-edit/\_index.ru.md) page. Otherwise, it overwrites the settings in the [Code Edit](../code-edit/\_index.ru.md) page.
+Each setting has three states: enable, disable and default. If it's default, it uses the settings in the [Code Edit](../code-edit/\_index.md) page. Otherwise, it overwrites the settings in the [Code Edit](../code-edit/\_index.md) page.
 
 ### Auto Complete
 
-See [Code Edit/Auto Complete Parentheses](../code-edit/\_index.ru.md#auto-complete-parentheses).
+See [Code Edit/Auto Complete Parentheses](../code-edit/\_index.md#auto-complete-parentheses).
 
 ### Auto Remove
 
-See [Code Edit/Auto Remove Parentheses](../code-edit/\_index.ru.md#auto-remove-parentheses).
+See [Code Edit/Auto Remove Parentheses](../code-edit/\_index.md#auto-remove-parentheses).
 
 ### Tab Jump Out
 
-See [Code Edit/Jump out of a parenthesis by pressing Tab](../code-edit/\_index.ru.md#jump-out-of-a-parenthesis-by-pressing-tab).
+See [Code Edit/Jump out of a parenthesis by pressing Tab](../code-edit/\_index.md#jump-out-of-a-parenthesis-by-pressing-tab).

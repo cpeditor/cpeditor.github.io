@@ -7,7 +7,7 @@ weight: 20
 
 The default programming language. It's used when opening a new tab and some other places.
 
-## Command
+## Commands
 
 ### Compile Command
 
