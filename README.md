@@ -4,7 +4,7 @@
 [![Website](https://img.shields.io/website?label=cpeditor.org&url=https%3A%2F%2Fcpeditor.org)](https://cpeditor.org)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg)](#all-contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg)](#all-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
@@ -64,6 +64,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center">
       <a href="https://github.com/Sadykhzadeh"><img src="https://avatars.githubusercontent.com/u/51178055?v=4" width="100px;" alt=""/></a><br /><a href="http://sadykhzadeh.ml/"><sub><b>Azer Sadykhzadeh</b></sub></a><br /><a href="https://github.com/cpeditor/cpeditor.github.io/pulls?q=is%3Apr+reviewed-by%3ASadykhzadeh" title="Reviewed Pull Requests">👀</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/jackhallam"><img src="https://avatars.githubusercontent.com/u/5289178?v=4" width="100px;" alt=""/></a><br /><a href="https://jackhallam.com"><sub><b>Jack Hallam</b></sub></a><br /><a href="https://github.com/cpeditor/cpeditor.github.io/issues?q=author%3Ajackhallam" title="Bug reports">🐛</a> <a href="#content-jackhallam" title="Content">🖋</a>
     </td>
   </tr>
 </table>
