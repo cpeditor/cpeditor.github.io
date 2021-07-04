@@ -27,6 +27,6 @@ menu:
 ### 和其它用户聊天
 
 -   [<i class="fab fa-telegram"></i> Telegram 群组（英文）](https://t.me/cpeditor)
--   [<i class="fab fa-qq"></i> QQ 群](https://jq.qq.com/?_wv=1027&amp;k=50eq8yF) (1081647997)
+-   [<i class="fab fa-qq"></i> QQ 群](https://jq.qq.com/?\_wv=1027\&k=50eq8yF) (1081647997)
 
 </div>
