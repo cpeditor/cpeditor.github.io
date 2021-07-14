@@ -30,6 +30,7 @@ Download the `AppImage` in the assets, add execute permission to it (`chmod +x <
 #### Snap package
 
 To install latest stable version run the command in the terminal:
+
 ```sh
 sudo snap install cpeditor --classic
 ```

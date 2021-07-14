@@ -34,6 +34,7 @@ description: 这是安装 CP Editor 最简单的方式，推荐大多数用户�
 #### Snap package
 
 To install latest stable version run the command in the terminal:
+
 ```sh
 sudo snap install cpeditor --classic
 ```
