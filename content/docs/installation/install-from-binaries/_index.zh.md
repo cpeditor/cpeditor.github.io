@@ -39,7 +39,7 @@ To install latest stable version run the command in the terminal:
 sudo snap install cpeditor --classic
 ```
 
-Bleeding edge alpha version can be installed with 
+Bleeding edge alpha version can be installed with
 
 ```sh
 sudo snap install cpeditor --classic --channel=latest/edge
