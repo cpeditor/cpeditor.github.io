@@ -83,7 +83,7 @@ If you are using [VS Code](https://github.com/microsoft/vscode), you can use the
 
 ## Translations
 
-For example, the Chinese (zh) version of a page is usually `_index.zh.md` while the English version is `_index.md`.
+For example, the Simplified Chinese (zh) version of a page is usually `_index.zh.md` while the English version is `_index.md`.
 
 To add a new language, add it in [config.toml](config.toml) and add `_index.xx.md`s for it.
 

@@ -67,16 +67,21 @@ title = "CP Editor"
 description = "The IDE for competitive programming"
 languageName = "English"
 weight = 1
-[languages.zh]
-title = "CP Editor"
-description = "专为算法竞赛设计的 IDE"
-languageName = "中文"
-weight = 2
 [languages.ru]
 title = "CP Editor"
 description = "редактор, созданный для спортивного программирования"
 languageName = "Русский"
+weight = 2
+[languages.zh]
+title = "CP Editor"
+description = "专为算法竞赛设计的 IDE"
+languageName = "简体中文"
 weight = 3
+[languages.zh_tw]
+title = "CP Editor"
+description = "專為演算法競賽設計的 IDE"
+languageName = "正體中文"
+weight = 4
 
 [markup]
 [markup.goldmark]
