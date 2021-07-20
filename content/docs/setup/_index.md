@@ -15,7 +15,7 @@ You can change the UI language in [Preferences->Appearance->General->UI Language
 
 You need to install `g++` / `python` / `java` depending on which language you are using. You need to add them to system PATH to have them found by CP Editor.
 
-Then you can set the Compile and Run Commands in the preferences. For example, you can set C++ Commands in [Preferences->Languages->C++->C++ Commands](../preferences/language/\_index.md#c-commands).
+Then you can set the Compile and Run Commands in the preferences. For example, you can set C++ Commands in [Preferences->Languages](../preferences/language/\_index.md#commands).
 
 ## Setup CF Tool
 
@@ -40,13 +40,13 @@ You can install it from the addon/extension markets:
 
 CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C/C++ and Java code.
 
-You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../preferences/extensions/\_index.md#clang-format).
+You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Code Formatting](../preferences/extensions/\_index.md#clang-format).
 
 ### Setup YAPF
 
 CP Editor uses [YAPF](https://github.com/google/yapf) to format your Python code.
 
-It should work after [installation](https://github.com/google/yapf#installation). If not, set the program and arguments in [Preferences->Extensions->Code Formatting->YAPF](../preferences/extensions/\_index.md#yapf).
+It should work after [installation](https://github.com/google/yapf#installation). If not, set the program and arguments in [Preferences->Extensions->Code Formatting](../preferences/extensions/\_index.md#yapf).
 
 ## Setup Language Server
 

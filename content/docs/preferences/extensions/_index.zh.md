@@ -11,20 +11,6 @@ Clang Format 是格式化 C/C++ 和 Java 代码的工具。你可以点击 动�
 
 **参见** [安装 Clang Format](../../setup/\_index.zh.md#安装-clang-format)。
 
-#### 程序
-
-`clang-format` 可执行文件的路径。如果它已经在 `PATH` 环境变量中，只需填写 `clang-format` 即可。
-
-#### 参数
-
-向 `clang-format` 传递的参数。它不应包含 `-i`（就地修改选项）。
-
-#### 风格
-
-Clang Format 格式化代码的风格。这里的内容和 `.clang-format` 的内容一致。
-
-你可以查看 [Clang-Format Style Options](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) 或其他资料以获取关于代码格式化风格的相关信息。
-
 ### YAPF
 
 YAPF 是格式化 Python 代码的工具。你可以点击 动作->格式化代码 或按快捷键 <kbd>Ctrl+Shift+I</kbd> 来格式化代码。如果你选择了代码的一部分，只有被选择的行会被格式化。
@@ -33,20 +19,32 @@ YAPF 是格式化 Python 代码的工具。你可以点击 动作->格式化代�
 
 #### 程序
 
-YAPF 的程序，它可以是如下两项之一：
+-   Clang Format
 
--   `yapf`：需要能在命令行下执行 `yapf` 命令。参数可以为空。
--   Python 解释器的程序名，如 `python`，`python2` 等。参数应该为 `-m yapf`。
+    `clang-format` 可执行文件的路径。如果它已经在 `PATH` 环境变量中，只需填写 `clang-format` 即可。
 
-注意，你需要 [使用 Python 2 来格式化 Python 2 代码，使用 Python 3 来格式化 Python 3 代码](https://github.com/google/yapf#python-versions)。因此你需要选择正确的 Python 解释器程序。
+-   YAPF:
+
+    YAPF 的程序，它可以是如下两项之一：
+
+    -   `yapf`：需要能在命令行下执行 `yapf` 命令。参数可以为空。
+    -   Python 解释器的程序名，如 `python`，`python2` 等。参数应该为 `-m yapf`。
+
+    注意，你需要 [使用 Python 2 来格式化 Python 2 代码，使用 Python 3 来格式化 Python 3 代码](https://github.com/google/yapf#python-versions)。因此你需要选择正确的 Python 解释器程序。
 
 #### 参数
 
-传递给 YAPF 程序的参数。如果在程序一栏里填写的是 Python 解释器，这里的参数应该是 `-m yapf`。参数中不应包含 `-i`（就地修改选项）。
+向格式化程序传递的参数。它不应包含 `-i`（就地修改选项）。
+
+-   YAPF: 如果在程序一栏里填写的是 Python 解释器，这里的参数应该是 `-m yapf`。
 
 #### 风格
 
-YAPF 格式化代码的风格，这里的内容和 `.style.yapf` 的内容一致。你可以运行 `yapf --style-help`，查看 [文档](https://github.com/google/yapf#formatting-style) 或其他资料以获取关于代码格式化风格的相关信息。
+这里的内容和 `.clang-format`(Clang Format) 或 `.style.yapf`(YAPF) 的内容一致。
+
+-   Clang Format: 你可以查看 [Clang-Format Style Options](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) 或其他资料以获取关于代码格式化风格的相关信息。
+
+-   YAPF: 你可以运行 `yapf --style-help`，查看 [文档](https://github.com/google/yapf#formatting-style) 或其他资料以获取关于代码格式化风格的相关信息。
 
 ## Language Server
 
