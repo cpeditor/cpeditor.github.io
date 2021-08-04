@@ -34,7 +34,6 @@ You can install it from the addon/extension markets:
 -   [Chrome Extension](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
 -   [Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
 
-
 ## Setup WakaTime
 
 You can install WakaTime by `pip install -I wakatime==13.1.0`.
