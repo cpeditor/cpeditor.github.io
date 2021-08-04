@@ -34,6 +34,10 @@ description: 完成 CP Editor 的初始化以做好使用准备
 -   [Chrome](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
 -   [Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/competitive-companion/)
 
+## 安装 WakaTime
+
+你可以通过运行 `pip install -I wakatime==13.1.0` 安装 WakaTime。
+
 ## 安装代码格式化程序
 
 ### 安装 Clang Format
