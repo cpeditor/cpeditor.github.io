@@ -27,4 +27,4 @@ You need to install a [Language Server program](https://microsoft.github.io/lang
 
 ### My code gets TLE on every first execution after compilation.
 
-It's probably because your anti-virus software is scanning your program. A possible solution is to [set the output directory of the executable files](../preferences/language/\_index.md#c-executable-file-path) (for example, you can set it to `D:/cpeditor-executables/${basename}`), and add that directory (`D:/cpeditor-executables` in the example) in the whitelist of your anti-virus software.
+It's probably because your anti-virus software is scanning your program. A possible solution is to [set the output directory of the executable files](../preferences/language/\_index.md#executable-file-path) (for example, you can set it to `D:/cpeditor-executables/${basename}`), and add that directory (`D:/cpeditor-executables` in the example) in the whitelist of your anti-virus software.

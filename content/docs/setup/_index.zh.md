@@ -15,7 +15,7 @@ description: 完成 CP Editor 的初始化以做好使用准备
 
 根据你使用的编程语言，你需要安装 `g++` / `python` / `java` 等环境。你需要将它们加入 `PATH` 环境变量以使 CP Editor 能找到它们。
 
-接下来在设置页面设置编译与运行命令。例如，你可以在 [设置->语言->C++->C++ 命令](../preferences/language/\_index.zh.md#c-命令) 中设置 C++ 的相关命令。
+接下来在设置页面设置编译与运行命令。例如，你可以在 [设置->语言](../preferences/language/\_index.zh.md#命令) 中设置 C++ 的相关命令。
 
 ## 安装 CF Tool
 
@@ -40,13 +40,13 @@ description: 完成 CP Editor 的初始化以做好使用准备
 
 CP Editor 使用 [Clang Format](http://releases.llvm.org/download.html) 来格式化 C/C++ 以及 Java 代码。
 
-你需要将其加入 `PATH` 环境变量，或是在 [设置->扩展->Clang Format](../preferences/extensions/\_index.zh.md#clang-format) 中设置其路径。
+你需要将其加入 `PATH` 环境变量，或是在 [设置->扩展->代码格式化](../preferences/extensions/\_index.zh.md#clang-format) 中设置其路径。
 
 ### 安装 YAPF
 
 CP Editor 使用 [YAPF](https://github.com/google/yapf) 来格式化 Python 代码。
 
-[安装](https://github.com/google/yapf#installation) 后应该就可以使用了。如果不能，请在 [设置->扩展->代码格式化->YAPF](../preferences/extensions/\_index.zh.md#yapf) 进行设置。
+[安装](https://github.com/google/yapf#installation) 后应该就可以使用了。如果不能，请在 [设置->扩展->代码格式化](../preferences/extensions/\_index.zh.md#yapf) 进行设置。
 
 ## 安装 Language Server
 
