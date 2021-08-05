@@ -150,4 +150,4 @@ It can be empty if you have the global wakatime config file `~/.wakatime.cfg`.
 
 ### Use Proxy
 
-Use [Advanced>Network Proxy](../advanced/\_index.md#network-proxy) to send data to WakaTime.
+Use [Network Proxy](../advanced/\_index.md#network-proxy) to send data to WakaTime.
