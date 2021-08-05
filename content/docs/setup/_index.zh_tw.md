@@ -36,6 +36,8 @@ You can install it from the addon/extension markets:
 
 ## Setup WakaTime
 
+You can use [WakaTime](https://wakatime.com) to track your time usage.
+
 If you are a Linux/macOS user and your distro provides the WakaTime CLI, it's recommended to use it.
 
 Otherwise, there are two options:
