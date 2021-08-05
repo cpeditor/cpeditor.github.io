@@ -145,8 +145,9 @@ WakaTime 可执行文件的路径。如果它已经在 `PATH` 环境变量中，
 ### Api 密钥
 
 可以在 [WakaTime 设置](https://wakatime.com/settings/account) 查看。
+
 如果有 WakaTime 的全局配置文件 `~/.wakatime.cfg` 则可以留空。
 
 ### 使用代理
 
-使用 [高级>网络代理](../advanced/\_index.zh.md#网络代理) 将数据发送给 WakaTime。
+使用 [网络代理](../advanced/\_index.zh.md#网络代理) 将数据发送给 WakaTime。

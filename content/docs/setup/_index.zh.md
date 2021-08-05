@@ -36,7 +36,12 @@ description: 完成 CP Editor 的初始化以做好使用准备
 
 ## 安装 WakaTime
 
-你可以通过运行 `pip install -I wakatime==13.1.0` 安装 WakaTime。
+如果你正在使用 Linux/macOS 提供 WakaTime CLI 的发行版，我们建议直接通过你的操作系统的软件包管理器安装。
+
+否则，有两种方式安装 WakaTime：
+
+-   已被弃用的 Python 版本。 可以通过 `pip install wakatime` 安装。
+-   Go 版本。 可在 <https://github.com/wakatime/wakatime-cli/releases> 下载。
 
 ## 安装代码格式化程序
 
