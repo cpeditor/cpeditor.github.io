@@ -145,6 +145,7 @@ The path to the `wakatime` executable file, or simply `wakatime` if it's in the 
 ### Api Key
 
 Can be found at [WakaTime Settings](https://wakatime.com/settings/account).
+
 It can be empty if you have the global wakatime config file `~/.wakatime.cfg`.
 
 ### Use Proxy
