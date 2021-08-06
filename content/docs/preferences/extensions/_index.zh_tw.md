@@ -1,9 +1,9 @@
 ---
-title: "Extensions"
+title: "擴充功能"
 weight: 50
 ---
 
-## Code Formatting
+## 程式碼排版
 
 ### Clang Format
 

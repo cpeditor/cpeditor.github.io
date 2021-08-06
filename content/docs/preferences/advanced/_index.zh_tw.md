@@ -1,5 +1,5 @@
 ---
-title: "Advanced"
+title: "進階"
 weight: 80
 ---
 

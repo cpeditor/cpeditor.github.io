@@ -1,5 +1,5 @@
 ---
-title: "Key Bindings"
+title: "快捷鍵"
 weight: 70
 ---
 

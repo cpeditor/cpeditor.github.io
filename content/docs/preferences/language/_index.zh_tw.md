@@ -1,5 +1,5 @@
 ---
-title: "Language"
+title: "程式語言"
 weight: 20
 ---
 

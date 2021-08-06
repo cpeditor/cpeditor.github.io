@@ -1,22 +1,22 @@
 ---
-title: "Code Edit"
+title: "編輯程式碼"
 weight: 10
 ---
 
-### Tab Width
+### Tab 寬度
 
 The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in [Auto Indent](#auto-indent) and [Replace tabs by spaces](#replace-tabs-by-spaces).
 
-### Cursor Width
+### 游標寬度
 
 The width of the text cursor in pixels.
 
-### Auto Indent
+### 自動縮排
 
 1.  When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.
 2.  If the old line ends with `{`, an extra indent (a tab character or [Tab Width](#tab-width) spaces, depending on whether [Replace tabs by spaces](#replace-tabs-by-spaces) is enabled) will be inserted at the beginning of the new line.
 
-### Wrap Text
+### 自動換行
 
 If a line is too long to fit in a single line, the line will be separated into several lines.
 
@@ -40,7 +40,7 @@ When the cursor is next to a right parenthesis, you can use the Tab key to jump 
 
 You can choose the parentheses to jump out by Tab in the [Parentheses](../language/\_index.zh_tw.md#parentheses) settings.
 
-### Replace tabs by spaces
+### 以空白代替 Tab
 
 When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the [Tab Width](#tab-width).
 

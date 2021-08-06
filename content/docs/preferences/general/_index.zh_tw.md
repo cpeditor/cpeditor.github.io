@@ -1,5 +1,5 @@
 ---
-title: "General"
+title: "一般"
 weight: 1000
 ---
 

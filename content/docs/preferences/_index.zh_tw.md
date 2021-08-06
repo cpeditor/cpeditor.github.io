@@ -1,6 +1,6 @@
 ---
-title: "Preferences"
-linkTitle: "Preferences"
+title: "偏好設定"
+linkTitle: "偏好設定"
 weight: 40
 description: What do the preferences mean and how to set them
 ---

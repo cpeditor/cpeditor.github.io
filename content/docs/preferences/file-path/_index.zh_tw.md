@@ -1,5 +1,5 @@
 ---
-title: "File Path"
+title: "檔案路徑"
 weight: 60
 ---
 
