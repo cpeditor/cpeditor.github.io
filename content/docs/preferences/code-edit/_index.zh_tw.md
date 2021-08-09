@@ -1,5 +1,5 @@
 ---
-title: "編輯程式碼"
+title: "Code Edit"
 weight: 10
 ---
 
@@ -9,7 +9,7 @@ The width (number of characters) of an indent. It is used when displaying the ta
 
 ### 游標寬度
 
-The width of the text cursor in pixels.
+游標的像素寬度。
 
 ### 自動縮排
 
@@ -18,9 +18,9 @@ The width of the text cursor in pixels.
 
 ### 自動換行
 
-If a line is too long to fit in a single line, the line will be separated into several lines.
+一行文字過長時，將其換行顯示。
 
-### Auto Complete Parentheses
+### 自動完成括號
 
 Automatically add the right parenthesis when you type the left one. For example, when you type `(`, `)` will be added.
 
@@ -28,13 +28,13 @@ When the character next to the cursor is a right parenthesis and you type this p
 
 You can choose the parentheses to auto-complete in the [Parentheses](../language/\_index.zh_tw.md#parentheses) settings.
 
-### Auto Remove Parentheses
+### 自動刪除括號
 
 When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.
 
 You can choose the parentheses to auto-remove in the [Parentheses](../language/\_index.zh_tw.md#parentheses) settings.
 
-### Jump out of a parenthesis by pressing Tab
+### 按下 Tab 時從一對括號跳出
 
 When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If [Auto Complete Parentheses](#auto-complete-parentheses) is enabled, this is an alternative of typing the right parenthesis.
 
@@ -42,6 +42,6 @@ You can choose the parentheses to jump out by Tab in the [Parentheses](../langua
 
 ### 以空白代替 Tab
 
-When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the [Tab Width](#tab-width).
+縮排時使用空白字元（`' '`）代替 Tab 字元（`'\t'`）。啟用時，縮排的寬度同為[Tab 寬度](#tab-width)。
 
-Note that this won't replace the existing tab characters. In [Auto Indent](#auto-indent), the tab characters in the old line will remain in the new line (however, the new indent inserted after `{` will be spaces).
+請注意，開啟此選項並不會替換已有的 Tab 字元。此設定對於[自動縮排](#auto-indent)需換行後才會生效。

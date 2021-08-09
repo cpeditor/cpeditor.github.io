@@ -1,5 +1,5 @@
 ---
-title: "擴充功能"
+title: "Extensions"
 weight: 50
 ---
 

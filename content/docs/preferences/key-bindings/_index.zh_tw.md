@@ -3,4 +3,4 @@ title: "快捷鍵"
 weight: 70
 ---
 
-You can set custom key bindings for many actions. You can change the key by clicking the edit and press the key you want. You can delete a custom key binding by clicking the button on the right.
+您可以針對許多動作自訂快捷鍵。點一下「編輯」會開始紀錄鍵盤按鍵，也可以按下「刪除」來清除自訂的快捷鍵組合。

@@ -1,5 +1,5 @@
 ---
-title: "動作"
+title: "Actions"
 weight: 40
 ---
 
