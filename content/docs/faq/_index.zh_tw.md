@@ -23,7 +23,7 @@ CF-Tool requires you to configure it before you use it. Please run `cf config` i
 
 ### How to enable error linting in the code editor?
 
-You need to install a [Language Server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set the settings in Preferences -> Extensions -> Language Server. You can learn about more details [here](../setup/\_index.zh_tw.md#setup-language-server).
+You need to install a [Language Server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set the settings in Preferences -> Extensions -> Language Server. You can learn about more details [here](../setup/\_index.zh_tw.md#設定-language-server).
 
 ### My code gets TLE on every first execution after compilation.
 

@@ -9,7 +9,7 @@ description: 調整 CP Editor 並準備使用
 
 CP Editor 支援多種語言，包括英文及俄文。
 
-您可以在 [偏好設定->介面->一般->UI 語言](../preferences/appearance/\_index.zh_tw.md#ui-language) 調整介面的顯示語言。需要重開 CP Editor 以生效。
+您可以在 [偏好設定->介面->一般->UI 語言](../preferences/appearance/\_index.zh_tw.md#介面語言) 調整介面的顯示語言。需要重開 CP Editor 以生效。
 
 ## 設定編譯及執行指令
 
@@ -17,7 +17,7 @@ CP Editor 支援多種語言，包括英文及俄文。
 
 接下來可以在偏好設定畫面中設定輸入編譯及執行的指令。例如在[偏好設定->程式語言->C++->C++ 指令](../preferences/language/\_index.zh_tw.md#c-commands)設定 C++ 指令。
 
-## 安裝 CF Tool
+## 設定 CF Tool
 
 需要安裝[CF Tool](https://github.com/xalanq/cf-tool)才能在 CP Editor 裡繳交答案至 Codeforces。
 
@@ -25,7 +25,7 @@ CP Editor 支援多種語言，包括英文及俄文。
 
 此外在使用之前，還需要在命令列中輸入 `cf config` 以調整其組態。
 
-## 安裝 Competitive Companion
+## 設定 Competitive Companion
 
 [Competitive Companion](https://github.com/jmerle/competitive-companion) 是用來剖析線上評測系統（Online Judge）的題目。安裝了它，您就可以單鍵取得範例測資，跟手動複製貼上說掰掰。
 
@@ -36,19 +36,19 @@ CP Editor 支援多種語言，包括英文及俄文。
 
 ## 安裝程式碼排版工具
 
-### 安裝 Clang Format
+### 設定 Clang Format
 
 CP Editor 使用[Clang Format](http://releases.llvm.org/download.html)排版 C/C++、Java 程式碼。
 
 您需要將 Clang Format 加入系統 PATH 環境變數，或者在[偏好設定->擴充功能->Clang Format](../preferences/extensions/\_index.zh_tw.md#clang-format)設定其路徑。
 
-### 安裝 YAPF
+### 設定 YAPF
 
 CP Editor 使用[YAPF](https://github.com/google/yapf)排版 Python 程式碼。
 
 請依照[安裝指示](https://github.com/google/yapf#installation)操作，在完成之後應該就能運作。若沒有，請在[偏好設定->擴充功能->程式碼排版->YAPF](../preferences/extensions/\_index.zh_tw.md#yapf)中設定其路徑及引數。
 
-## 安裝 Language Server
+## 設定 Language Server
 
 [Language Server](https://microsoft.github.io/language-server-protocol/) 可以來梳理（Lint）程式碼，並顯示錯誤、警告訊息。
 

@@ -5,7 +5,7 @@ weight: 10
 
 ### Tab 寬度
 
-The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in [Auto Indent](#auto-indent) and [Replace tabs by spaces](#replace-tabs-by-spaces).
+The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in [自動縮排](#自動縮排) and [以空白代替 Tab](#以空白代替-tab).
 
 ### 游標寬度
 
@@ -14,7 +14,7 @@ The width (number of characters) of an indent. It is used when displaying the ta
 ### 自動縮排
 
 1.  When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.
-2.  If the old line ends with `{`, an extra indent (a tab character or [Tab Width](#tab-width) spaces, depending on whether [Replace tabs by spaces](#replace-tabs-by-spaces) is enabled) will be inserted at the beginning of the new line.
+2.  If the old line ends with `{`, an extra indent (a tab character or [Tab 寬度](#tab-寬度) spaces, depending on whether [以空白代替 Tab](#以空白代替-tab) is enabled) will be inserted at the beginning of the new line.
 
 ### 自動換行
 
@@ -36,7 +36,7 @@ You can choose the parentheses to auto-remove in the [Parentheses](../language/\
 
 ### 按下 Tab 時從一對括號跳出
 
-When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If [Auto Complete Parentheses](#auto-complete-parentheses) is enabled, this is an alternative of typing the right parenthesis.
+When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If [自動完成括號](#自動完成括號) is enabled, this is an alternative of typing the right parenthesis.
 
 You can choose the parentheses to jump out by Tab in the [Parentheses](../language/\_index.zh_tw.md#parentheses) settings.
 
