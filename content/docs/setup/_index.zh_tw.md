@@ -62,12 +62,13 @@ CP Editor 使用[YAPF](https://github.com/google/yapf)排版 Python 程式碼。
 
 根據不同作業系統，安裝方法如下：
 
-- Windows：到[LLVM 的網站](https://releases.llvm.org/download.html) 下載並安裝編譯好的檔案
-- Linux/macOS：使用套件管理系統安裝
+-   Windows：到[LLVM 的網站](https://releases.llvm.org/download.html) 下載並安裝編譯好的檔案
+-   Linux/macOS：使用套件管理系統安裝
 
 接著必須讓 CP Editor 找到 Language Server 程式，在 **偏好設定->擴充功能->Language Server->C++ Server->路徑** 中設定 `clangd` 的命令，視情況為：
-- `clangd` 已在 PATH 環境變數中時，值為 `clangd`
-- `clangd` 的可執行檔路徑
+
+-   `clangd` 已在 PATH 環境變數中時，值為 `clangd`
+-   `clangd` 的可執行檔路徑
 
 ### Java Server
 

@@ -10,8 +10,9 @@ CP Editor 中，每個檔案都位於各自的臨時目錄，用來存放可執�
 您可以將其看做每個分頁（每個檔案）都有一個安全存放資料的地方，以避免影響硬碟上的其他檔案。暫存目錄會在分頁關閉時被自動刪除。
 
 暫存目錄的位置因不同系統而異：
-- Linux：`/tmp/CP Editor-XXXXXX`
-- Windows：`C:\Users\<您的使用者名稱>\AppData\Local\Temp\CP Editor-XXXXXX`
+
+-   Linux：`/tmp/CP Editor-XXXXXX`
+-   Windows：`C:\Users\<您的使用者名稱>\AppData\Local\Temp\CP Editor-XXXXXX`
 
 ### 正規表達式
 
