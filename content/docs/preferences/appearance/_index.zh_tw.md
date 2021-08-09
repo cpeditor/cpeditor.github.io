@@ -3,68 +3,68 @@ title: "介面"
 weight: 30
 ---
 
-## General
+## 一般
 
-### UI Language
+### UI 語言
 
-The natural language used in the UI.
+用於顯示使用者介面的語言。
 
-### UI Style
+### UI 樣式
 
-The style used for the UI. The available options are different on different platforms.
+依據不同的平台，可用的選項也不同。
 
-The "default" style is either the most appropriate style on your platform or the style specified by the `--style` command-line option.
+「預設」樣式會套用適合目前平台的樣式，或者您在命令列中以 `--style` 指定的樣式。
 
-On Windows, there's an extra option "Auto Fusion". "Auto Fusion" is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).
+在 Windows 上，還有一個「Auto Fusion」選項。這個選項會跟隨系統設定使用淺色、深色佈景。
 
-If there's anything wrong after you change the UI style, you can try restarting CP Editor.
+若變更 UI 樣式後有什麼問題，可以試著重開 CP Editor。
 
-### Editor Theme
+### 編輯器色彩佈景主題
 
-The syntax highlighting theme for the code editor.
+程式碼編輯器中語法標示的色彩佈景主題。
 
-### Opacity
+### 不透明度
 
-The opacity of the main window.
+控制主視窗的不透明度。
 
-### Test Case Maximum Height
+### 測資顯示最大高度
 
-The maximum height of a test case before the scrollbar occurs.
+在捲軸不出現的情況下，可允許顯示的最大高度。
 
-### Show Compile And Run Only
+### 僅顯示「編譯並執行」按鈕
 
-Hide the compile only and run only buttons.
+隱藏「編譯」及「執行」按鈕。
 
-It can be useful if you don't care about the time used on compilation.
+這是個好用的功能，只要您不在意編譯的時間。
 
-### Display EOLN in Diff
+### 在 Diff 中顯示 EOLN
 
-Use "¶" to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).
+在 Diff 檢視器中將 EOF 顯示為「¶」。這功能在需要檢查 EOL 的差異時（比如看看是否多了換行）尤為有用。
 
-### Add extra margin at the bottom of the code editor
+### 在程式碼編輯器的底部加上額外邊距
 
-Add an extra margin at the bottom of the code editor, so that you can scroll less.
+在程式碼編輯器的底部加上額外邊距，這可以改善來回滾動的困擾。
 
-Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by <kbd>Ctrl+Z</kbd>.
+由於技術原因，這會稍微影響操作的紀錄，比如您可以按 <kbd>Ctrl+Z</kbd> 來復原邊距設定。
 
-## Font
+## 字型
 
-### Show only Monospaced Font
+### 只顯示等寬字型
 
-When checked the font picker dialog shows only monospaced fonts.
+在選取字型的對話窗中，僅列出等寬字型。
 
-### Editor Font
+### 編輯器字型
 
-The font for the code editor.
+在程式碼編輯器中使用的字型。
 
-### Test Cases Font
+### 測資字型
 
-The font for the test cases.
+在測資區塊中使用的字型。
 
-### Message Logger Font
+### 訊息字型
 
-The font for the messages.
+在訊息區塊中使用的字型。
 
-### Custom Application Font
+### 自訂全域字型
 
-Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.
+在呈現使用者介面時，不使用系統的預設字型。生效的範圍排除了程式碼編輯器、測資、訊息等處……。

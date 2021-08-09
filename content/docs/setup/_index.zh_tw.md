@@ -1,71 +1,90 @@
 ---
-title: "Setup"
-linkTitle: "Setup"
+title: "首次設定"
+linkTitle: "首次設定"
 weight: 30
-description: Setup CP Editor to prepare for using it
+description: 調整 CP Editor 並準備使用
 ---
 
-## Change UI Language
+## 調整 UI 語言
 
-Now CP Editor is available in multiple languages, including English and Chinese.
+CP Editor 支援多種語言，包括英文及俄文。
 
-You can change the UI language in [Preferences->Appearance->General->UI Language](../preferences/appearance/\_index.zh_tw.md#ui-language). Note that you need to restart CP Editor to apply the change.
+您可以在 [偏好設定->介面->一般->UI 語言](../preferences/appearance/\_index.zh_tw.md#ui-language) 調整介面的顯示語言。需要重開 CP Editor 以生效。
 
-## Set Compile and Run Commands
+## 設定編譯及執行指令
 
-You need to install `g++` / `python` / `java` depending on which language you are using. You need to add them to system PATH to have them found by CP Editor.
+依據您使用的程式語言，需要安裝 `g++`、`python`、`java` 等軟體。為了讓 CP Editor 可以順利找到它們，可能需要將其加到系統的 PATH 環境變數。
 
-Then you can set the Compile and Run Commands in the preferences. For example, you can set C++ Commands in [Preferences->Languages->C++->C++ Commands](../preferences/language/\_index.zh_tw.md#c-commands).
+接下來可以在偏好設定畫面中設定輸入編譯及執行的指令。例如在[偏好設定->程式語言->C++->C++ 指令](../preferences/language/\_index.zh_tw.md#c-commands)設定 C++ 指令。
 
-## Setup CF Tool
+## 安裝 CF Tool
 
-To submit Codeforces problems in CP Editor, you need to install [CF Tool](https://github.com/xalanq/cf-tool).
+需要安裝[CF Tool](https://github.com/xalanq/cf-tool)才能在 CP Editor 裡繳交答案至 Codeforces。
 
-You can add it to your system PATH to use it directly, or you can set the path to it in [Preferences->Extensions->CF Tool](../preferences/extensions/\_index.zh_tw.md#cf-tool).
+接著將 CF Tool 加入系統 PATH 環境變數，或者在[偏好設定->擴充功能->CF Tool](../preferences/extensions/\_index.zh_tw.md#cf-tool)設定其路徑。
 
-You need to configure the tool by running the command `cf config` in the command line before using it.
+此外在使用之前，還需要在命令列中輸入 `cf config` 以調整其組態。
 
-## Setup Competitive Companion
+## 安裝 Competitive Companion
 
-[Competitive Companion](https://github.com/jmerle/competitive-companion) is used to parse problems/contests from online judges. After you install it, you can parse sample test cases with a single click, instead of copying them manually.
+[Competitive Companion](https://github.com/jmerle/competitive-companion) 是用來剖析線上評測系統（Online Judge）的題目。安裝了它，您就可以單鍵取得範例測資，跟手動複製貼上說掰掰。
 
-You can install it from the addon/extension markets:
+您可以在這些瀏覽器外掛元件商店安裝：
 
--   [Chrome Extension](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
--   [Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
+-   [Firefox 附加元件](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
+-   [Chrome 擴充功能](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
 
-## Setup Code Formatter
+## 安裝程式碼排版工具
 
-### Setup Clang Format
+### 安裝 Clang Format
 
-CP Editor uses [Clang Format](http://releases.llvm.org/download.html) to format your C/C++ and Java code.
+CP Editor 使用[Clang Format](http://releases.llvm.org/download.html)排版 C/C++、Java 程式碼。
 
-You need to add it to your system PATH, or set the path to it at [Preferences->Extensions->Clang Format](../preferences/extensions/\_index.zh_tw.md#clang-format).
+您需要將 Clang Format 加入系統 PATH 環境變數，或者在[偏好設定->擴充功能->Clang Format](../preferences/extensions/\_index.zh_tw.md#clang-format)設定其路徑。
 
-### Setup YAPF
+### 安裝 YAPF
 
-CP Editor uses [YAPF](https://github.com/google/yapf) to format your Python code.
+CP Editor 使用[YAPF](https://github.com/google/yapf)排版 Python 程式碼。
 
-It should work after [installation](https://github.com/google/yapf#installation). If not, set the program and arguments in [Preferences->Extensions->Code Formatting->YAPF](../preferences/extensions/\_index.zh_tw.md#yapf).
+請依照[安裝指示](https://github.com/google/yapf#installation)操作，在完成之後應該就能運作。若沒有，請在[偏好設定->擴充功能->程式碼排版->YAPF](../preferences/extensions/\_index.zh_tw.md#yapf)中設定其路徑及引數。
 
-## Setup Language Server
+## 安裝 Language Server
 
-You can use [Language Server](https://microsoft.github.io/language-server-protocol/) to lint your codes and get errors, warnings, etc.
+[Language Server](https://microsoft.github.io/language-server-protocol/) 可以來梳理（Lint）程式碼，並顯示錯誤、警告訊息。
 
-You can install [any language server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set suitable settings in [Preferences->Extensions->Language Server](../preferences/extensions/\_index.zh_tw.md#language-server).
+您可以安裝[Language Server 程式](https://microsoft.github.io/language-server-protocol/implementors/servers/)並在[偏好設定->擴充功能->Language Server](../preferences/extensions/\_index.zh_tw.md#language-server)調整設定值。
 
-Though you can use any language server program you like, here are some suggestions if you are not sure which to use.
+若您不知道該安裝哪個，以下是一些建議。
 
 ### C++ Server
 
-If you have installed LLVM, you already have `clangd`, because it comes with the clang compiler. If you haven't, please install [LLVM](https://releases.llvm.org/download.html) prebuild binaries for Windows. On Linux and macOS you can install it from your package manager. You need to set the start command of `clangd` in Preferences -> Extensions -> Language Server -> C++ Server -> Path, where the command can be the path to the executable file or just `clangd` if it's in the PATH.
+如果您已經安裝了 LLVM，那麼 `clangd` 就會與 `clang` 編譯器一同安裝。
+
+根據不同作業系統，安裝方法如下：
+
+- Windows：到[LLVM 的網站](https://releases.llvm.org/download.html) 下載並安裝編譯好的檔案
+- Linux/macOS：使用套件管理系統安裝
+
+接著必須讓 CP Editor 找到 Language Server 程式，在 **偏好設定->擴充功能->Language Server->C++ Server->路徑** 中設定 `clangd` 的命令，視情況為：
+- `clangd` 已在 PATH 環境變數中時，值為 `clangd`
+- `clangd` 的可執行檔路徑
 
 ### Java Server
 
-You need to have `java` installed and added to `PATH`. Download [Eclipse.JDT.ls](http://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz), extract it to any location (in a new directory), We call the path to that directory `<INSTALL_PATH>` (Something like `C://Users/Myname/Desktop/EclipseJDT.ls/`). In CP Editor, go to Preferences -> Extensions -> Language Server -> Java Server. Set "Path" to `java` and set "Arguments" to something like `-jar $INSTALL_PATH/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar -configuration <INSTALL_PATH>/config_(linux|win|mac)`. For example, on Windows, the arguments should be something like `-configuration C://Users/Myname/Desktop/Eclipse.JDT.ls/config_win`.
+首先，您的電腦需要安裝 `java` 並將其加入 `PATH` 環境變數。接著下載[Eclipse.JDT.ls](http://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz)並將其解壓縮到您喜歡的位置，此小節將以 `<INSTALL_PATH>` 來稱呼該位置。在 Windows 上 `<INSTALL_PATH>` 可能會長這樣：`C://Users/Myname/Desktop/EclipseJDT.ls/`）。
 
-The full name of the jar file above, `org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar`, may change incrementally as the project version of JDT changes. If java complains about "jar not found", then look for the latest version of the `org.eclipse.equinox.launcher_*` jar in `<INSTALL_PATH>/plugins` and replace it in the command after `-jar`.
+接著進到 CP Editor，在 **偏好設定->擴充功能->Language Server->Java Server** 將「路徑」的值填入 `java` 並在「引數」填入像這樣的值：
+
+`-jar $INSTALL_PATH/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar -configuration <INSTALL_PATH>/config_(linux|win|mac)`。
+
+以 Windows 而言，引數的值類似：
+
+`-configuration C://Users/Myname/Desktop/Eclipse.JDT.ls/config_win`。
+
+請注意，您的 `jar` 檔案名稱可能不會與此處的例子相同，會隨著 JDT 版本更迭而變。若 java 出現「jar not found」的錯誤，請在 `<INSTALL_PATH>/plugins` 中找到 `org.eclipse.equinox.launcher_*` jar 檔案的最新版本，並將該檔名替代引數中 `-jar` 後面的內容。
 
 ### Python Server
 
-You need to have `python` and `pip` installed and added to `PATH`. Install `python-language-server` pip module by running `pip install 'python-language-server[all]'`. After the installation is done, open CP Editor settings, go to Preferences -> Extensions -> Language Server -> Python Server. Set "Path" to `python` and set "Arguments" to `-m pyls`. Save the changes and you will have linting for Python.
+首先，您的系統需有 `python` 及 `pip`，且將其加入 `PATH` 環境變數。接著以 `pip install 'python-language-server[all]'` 命令安裝 `python-language-server` pip 模組，在安裝完成後開啟 CP Editor 進到 **偏好設定->擴充功能->Language Server->Python Server**。
+
+在「路徑」填入 `python`，並將「引數」設為`-m pyls`。儲存設定後，您就可以使用 Python 的 Linting 功能了。
