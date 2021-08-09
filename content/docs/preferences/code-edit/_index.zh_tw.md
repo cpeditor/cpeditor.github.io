@@ -42,6 +42,6 @@ You can choose the parentheses to jump out by Tab in the [Parentheses](../langua
 
 ### 以空白代替 Tab
 
-縮排時使用空白字元（`' '`）代替 Tab 字元（`'\t'`）。啟用時，縮排的寬度同為[Tab 寬度](#tab-width)。
+縮排時使用空白字元（`' '`）代替 Tab 字元（`'\t'`）。啟用時，縮排的寬度同為[Tab 寬度](#tab-寬度)。
 
-請注意，開啟此選項並不會替換已有的 Tab 字元。此設定對於[自動縮排](#auto-indent)需換行後才會生效。
+請注意，開啟此選項並不會替換已有的 Tab 字元。此設定對於[自動縮排](#自動縮排)需換行後才會生效。
