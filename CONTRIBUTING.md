@@ -87,4 +87,4 @@ For example, the Simplified Chinese (zh) version of a page is usually `_index.zh
 
 To add a new language, add it in [config.toml](config.toml) and add `_index.xx.md`s for it.
 
-You can find all pages that need translation in the [need translation list](https://cpeditor.org/ru/need-translation-list). In this list, if a page has the same title as the English version, it's considered translated.
+You can find all pages that need translation in the [need translation list](https://cpeditor.org/ru/need-translation-list). In this list, if a page has the same title as the English version, it's considered translated. When the page title can't be translated, the `translated` page attribute should be set. The [zh home page](content/_index.zh.html) is an example.
