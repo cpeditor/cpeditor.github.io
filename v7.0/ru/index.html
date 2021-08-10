@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../ru/index.xml">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../favicons/android-192x192.png" sizes="192x192">
+
+<title>CP Editor</title><meta property="og:title" content="CP Editor" />
+<meta property="og:description" content="редактор, созданный для спортивного программирования" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/ru/" /><meta property="og:site_name" content="CP Editor" />
+
+<meta itemprop="name" content="CP Editor">
+<meta itemprop="description" content="редактор, созданный для спортивного программирования"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CP Editor"/>
+<meta name="twitter:description" content="редактор, созданный для спортивного программирования"/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-96337051-5', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="../scss/main.min.ac06a61bad73b18ac94cdae89cd21fa40f31e4bf69ffacfc9603f6b85e8a2f93.css" as="style">
+<link href="../scss/main.min.ac06a61bad73b18ac94cdae89cd21fa40f31e4bf69ffacfc9603f6b85e8a2f93.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+  </head>
+  <body class="td-home">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../ru/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../ru/about/" ><span>Подробнее</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../ru/docs/" ><span>Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../ru/community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../ru/download/" ><span>Скачать</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://cpeditor.org/">alpha</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v7.0">v7.0</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.9">v6.9</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Русский
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../">English</a>
+	
+	<a class="dropdown-item" href="../zh/">简体中文</a>
+	
+	<a class="dropdown-item" href="../zh_tw/">正體中文</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Поиск по сайту…"
+  aria-label="Поиск по сайту…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../offline-search-index.846c266627006219d3d3d4ee02e2c654.json"
+  data-offline-search-base-href="../"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../vendors/linericon/style.css">
+<link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+<!-- main css -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+
+<div style="margin: -15px;">
+
+<!--================Home Banner Area =================-->
+<div class="home_banner_area">
+	<div class="banner_inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="banner_content">
+						<h2>Редактор, которого не хватало <br />спортивным программистам</h2>
+						<p>CP Editor специально разработан для спортивного программирования. Он помогает вам сконцентрироваться на алгоритмах и автоматизирует компиляцию, выполнение и тестирование кода, а также умеет отображать тесты с различных платформ и может отправлять решения на Codeforces!</p>
+						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">Смотреть на GitHub</a>
+						<a class="banner_btn2" href="download">Скачать</a>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="home_left_img">
+						<img class="img-fluid" src="../img/banner/home-left-white.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--================End Home Banner Area =================-->
+
+<!--================Work Area =================-->
+<div class="work_area p_120">
+	<div class="container">
+		<div class="main_title">
+			<h2>Как это работает?</h2>
+			<p>CP Editor избавляет вас от написания рутинного кода пока идёт соревнование. Он автоматизирует большинство процессов, позволяя сосредоточиться на решении задачи.</p>
+		</div>
+		<div class="work_inner row">
+			<div class="col-lg-4">
+				<div class="work_item">
+					<i class="lnr lnr-screen"></i>
+					<a><h4>Захват тестов</h4></a>
+					<p>CP Editor способен получать примеры автоматически почти с любого сайта соревнований. Можете попрощаться с ошибками при копировании тестов.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="work_item">
+					<i class="lnr lnr-code"></i>
+					<a><h4>Быстрая печать</h4></a>
+					<p>Пишите быстрее, используя крутые возможности шаблонов. Буквально за две секунды вы можете вставить целый DFS в свой код.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="work_item">
+					<i class="lnr lnr-clock"></i>
+					<a><h4>Получение вердикта</h4></a>
+					<p>Вы можете получить ответ на ваши примеры в один клик при помощи встроенной проверки или же из testlib. Если они вам не подходят, то добавьте свои варианты.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--================End Work Area =================-->
+
+<!--================Made Life Area =================-->
+<div class="made_life_area p_120">
+	<div class="container">
+		<div class="made_life_inner">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#withoutSaving" role="tab" aria-controls="home" aria-selected="true">Запуск без сохранения</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#themes" role="tab" aria-controls="profile" aria-selected="false">Множество тем</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#linting" role="tab" aria-controls="contact" aria-selected="false">Проверка кода</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" id="edge-tab" data-toggle="tab" href="#codeforces" role="tab" aria-controls="edge" aria-selected="false">Отправка на Codeforces</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="withoutSaving" role="tabpanel" aria-labelledby="home-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Запускайте свой код<br />В любое время</h3>
+								<h6>Мы знаем, что вы хотите протестировать свой код без временного файла</h6>
+								<p>Вы можете запустить свой код в один клик без сохранения, а особенность быстрого выхода сделает возможным восстановить ваш код с прошлой сессии.</p>
+								<a class="main_btn" href="download">Присоединяйтесь сейчас</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="../img/simple.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="themes" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Темная тема? <br />Пожалуйста</h3>
+								<h6>Наши жизни полны красок, что мешает сделать таким же редактор?</h6>
+								<p>Мы добавили пять различных тем: Light, Drakula, Monkai, Solarized Light и Solarized Dark. Если этого вам недостаточно, попросите нас на странице сообщества и мы добавим больше.</p>
+								<a class="main_btn" href="download">Присоединяйтесь сейчас</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="../img/themes.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="linting" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Ошибки и предупреждения?<br />Мы отмечаем их пока вы пишите</h3>
+								<h6>Сохраните своё драгоценное время на контесте при помощи проверки кода</h6>
+								<p>Используя Языковые Сервера, мы предоставляем проверку вашему коду в реальном времени, прямо как Intellisense в VSCode и Atom. Вы можете увидеть стрелку у предупреждения и навести курсор, чтобы получить подсказку.</p>
+								<a class="main_btn" href="download">Присоединяйтесь сейчас</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="../img/linting.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="codeforces" role="tabpanel" aria-labelledby="edge-tab">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Мы можем отправить ваши <br/>Решения на Codeforces</h3>
+								<h6>Благодарность Сообществу Спортивного Программирования</h6>
+								<p>Мы собрали лучшие инструменты из спортивного программирования и объединили их в единое целое. Одним из таких средств является CF Tool. Мы добавили его, чтобы вы могли отправлять задачу и получать ответ сразу в редакторе.</p>
+								<a class="main_btn" href="download">Присоединяйтесь сейчас</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="../img/codeforces.jfif" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--================End Made Life Area =================-->
+
+<!--================Screen Area =================-->
+<div class="screen_area text-center p_120">
+	<div class="container">
+		<div class="main_title">
+			<h2>Разделяй и влавствуй</h2>
+			<p> Мы сделали простой, но мощный UI, который не будет мешать в процессе решения контеста <br> Все, что вам нужно, всегда перед вашими глазами</p>
+		</div>
+		<img class="img-fluid" src="../img/banner/home-center-2.jpg" alt="">
+	</div>
+</div>
+<!--================End Screen Area =================-->
+
+<!--================Testimonials Area =================-->
+<div class="testimonials_area p_120">
+	<div class="container">
+		<div class="main_title">
+			<h2>Отзывы от Сообщества</h2>
+			<p>Наше Сообщество помогает нам и поддерживает нас. Мы будем рады узнать и ваше мнение тоже!<br>Смотрите, что другие спортивные программисты говорят о нашем редакторе:</p>
+		</div>
+		<div class="testi_slider owl-carousel">
+			<div class="item">
+				<div class="testi_item">
+					<div class="media">
+						<div class="d-flex">
+							<img src="../img/testimonials/simran.jpeg" class="img-circular">
+						</div>
+						<div class="media-body">
+							<p>Я определенно могу сказать, что это именно то, что мне было нужно как спортивному программисту. Легкий, простой в использовании, и самое лучшее заключается в том, что он очень быстро компилирует код. Это сильно помогает в соревнованиях.</p>
+							<h4>Simran Gujrati</h4>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="testi_item">
+					<div class="media">
+						<div class="d-flex">
+							<!-- Yatharth should add a round png of his image -->
+							<img src="../img/testimonials/yatharth.png" alt="yatharth" class="img-circular">
+						</div>
+						<div class="media-body">
+							<p>Простой в использовании и маловесящий. Очень быстро компилирует код, а также позволяет перенести тесты с сайтов соревнований. Это лучший редактор, который я когда-либо использовал.</p>
+							<h4>Yatharth Varma</h4>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="testi_item">
+					<div class="media">
+						<div class="d-flex">
+							<img src="../img/testimonials/nitish.png" alt="Nitish Kumar Singh" class="img-circular">
+						</div>
+						<div class="media-body">
+							<p>Это именно то, что я искал. Редактор, который делает за меня всю простую работу и помогает мне сфокусироваться на алгоритме задачи. Попробуйте, вам понравится.</p>
+							<h4>Nitish Kumar Singh</h4>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--================End Testimonials Area =================-->
+
+<!--================Made Life Area =================-->
+<div class="made_life_area made_white p_120">
+	<div class="container">
+		<div class="made_life_inner">
+			<div class="row made_life_text">
+				<div class="col-lg-6">
+					<div class="chart_img">
+						<img class="img-fluid" src="../img/banner/home-left-black.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="left_side_text">
+						<h3>Полная поддержка<br />C/C++, Java и Python</h3>
+						<h6>Используйте тот язык, который вам нравится</h6>
+						<p>Официально мы поддерживаем три языка программирования в редакторе. Для них вы можете установить свои собственные команды компиляции и передавать аргументы в свой код. Это правда удивляет, когда у вас есть возможность использовать разные языки программирования, просто переключаясь между вкладками.</p>
+						<a class="main_btn" href="download">Попробуйте сейчас</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--================End Made Life Area =================-->
+
+<!--================Impress Area =================-->
+<div class="impress_area p_120">
+	<div class="container">
+		<div class="impress_inner">
+			<h2>Впечатлены нашими возможностями?</h2>
+			<p>Мы рады, что вы выбрали наш редактор. <br>Надеемся, он сможет покрыть все ваши потребности в Спортивном Программировании. <br>CP Editor - это "от спортивных программистов, для спортивных программистов".</p>
+			<a class="banner_btn2" href="download">Попробуйте сейчас</a>
+		</div>
+	</div>
+</div>
+<!--================End Impress Area =================-->
+
+<script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="../js/index.js"></script>
+
+</div>
+
+
+
+      </main>
+      
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor/discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="../ru/about/">Подробнее о CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
