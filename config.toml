@@ -79,7 +79,7 @@ languageName = "简体中文"
 weight = 3
 [languages.zh_tw]
 title = "CP Editor"
-description = "專為演算法競賽設計的 IDE"
+description = "專為競程設計的 IDE"
 languageName = "正體中文"
 weight = 4
 
