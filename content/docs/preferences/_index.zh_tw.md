@@ -1,10 +1,10 @@
 ---
-title: "Preferences"
-linkTitle: "Preferences"
+title: "偏好設定"
+linkTitle: "偏好設定"
 weight: 40
-description: What do the preferences mean and how to set them
+description: 了解如何使用偏好設定，以及它們的意義
 ---
 
-You can set the preferences by either clicking Options->Preferences or pressing <kbd>Ctrl+P</kbd>.
+用滑鼠點按 **選項->偏好設定** 或按下 <kbd>Ctrl+P</kbd> 打開偏好設定視窗。
 
-You can hover over the settings to see the tooltips. Usually, the tooltips are clear enough, but if you want a more detailed explanation, you can read the documentation.
+滑鼠暫留於設定值時，會顯示其描述。通常描述已清晰易懂，但如果需要更詳細的解釋，請閱讀我們的說明文件。
