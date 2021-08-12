@@ -4,7 +4,7 @@
 [![Website](https://img.shields.io/website?label=cpeditor.org&url=https%3A%2F%2Fcpeditor.org)](https://cpeditor.org)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg)](#all-contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg)](#all-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the [official website](https://cpeditor.org) of [CP Editor](https://github.com/cpeditor/cpeditor).
@@ -67,6 +67,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </td>
     <td align="center">
       <a href="https://github.com/jackhallam"><img src="https://avatars.githubusercontent.com/u/5289178?v=4" width="100px;" alt=""/></a><br /><a href="https://jackhallam.com"><sub><b>Jack Hallam</b></sub></a><br /><a href="https://github.com/cpeditor/cpeditor.github.io/issues?q=author%3Ajackhallam" title="Bug reports">🐛</a> <a href="#content-jackhallam" title="Content">🖋</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/toto6038"><img src="https://avatars.githubusercontent.com/u/50100922?v=4" width="100px;" alt=""/></a><br /><a href="https://github.com/toto6038"><sub><b>toto6038</b></sub></a><br /><a href="#translation-toto6038" title="Translation">🌍</a>
     </td>
   </tr>
 </table>
