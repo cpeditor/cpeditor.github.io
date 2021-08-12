@@ -1,48 +1,48 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – Preferences</title><link>/zh_tw/docs/preferences/</link><description>Recent content in Preferences on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh_tw/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Edit</title><link>/zh_tw/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/code-edit/</guid><description>
-&lt;h3 id="tab-width">Tab Width&lt;/h3>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 偏好設定</title><link>/zh_tw/docs/preferences/</link><description>Recent content in 偏好設定 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh_tw/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Code Edit</title><link>/zh_tw/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/code-edit/</guid><description>
+&lt;h3 id="tab-寬度">Tab 寬度&lt;/h3>
 &lt;p>The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in
-&lt;a href="#auto-indent" >Auto Indent&lt;/a>
+&lt;a href="#%e8%87%aa%e5%8b%95%e7%b8%ae%e6%8e%92" >自動縮排&lt;/a>
 and
-&lt;a href="#replace-tabs-by-spaces" >Replace tabs by spaces&lt;/a>
+&lt;a href="#%e4%bb%a5%e7%a9%ba%e7%99%bd%e4%bb%a3%e6%9b%bf-tab" >以空白代替 Tab&lt;/a>
 .&lt;/p>
-&lt;h3 id="cursor-width">Cursor Width&lt;/h3>
-&lt;p>The width of the text cursor in pixels.&lt;/p>
-&lt;h3 id="auto-indent">Auto Indent&lt;/h3>
+&lt;h3 id="游標寬度">游標寬度&lt;/h3>
+&lt;p>游標的像素寬度。&lt;/p>
+&lt;h3 id="自動縮排">自動縮排&lt;/h3>
 &lt;ol>
 &lt;li>When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.&lt;/li>
 &lt;li>If the old line ends with &lt;code>{&lt;/code>, an extra indent (a tab character or
-&lt;a href="#tab-width" >Tab Width&lt;/a>
+&lt;a href="#tab-%e5%af%ac%e5%ba%a6" >Tab 寬度&lt;/a>
 spaces, depending on whether
-&lt;a href="#replace-tabs-by-spaces" >Replace tabs by spaces&lt;/a>
+&lt;a href="#%e4%bb%a5%e7%a9%ba%e7%99%bd%e4%bb%a3%e6%9b%bf-tab" >以空白代替 Tab&lt;/a>
 is enabled) will be inserted at the beginning of the new line.&lt;/li>
 &lt;/ol>
-&lt;h3 id="wrap-text">Wrap Text&lt;/h3>
-&lt;p>If a line is too long to fit in a single line, the line will be separated into several lines.&lt;/p>
-&lt;h3 id="auto-complete-parentheses">Auto Complete Parentheses&lt;/h3>
+&lt;h3 id="自動換行">自動換行&lt;/h3>
+&lt;p>一行文字過長時，將其換行顯示。&lt;/p>
+&lt;h3 id="自動完成括號">自動完成括號&lt;/h3>
 &lt;p>Automatically add the right parenthesis when you type the left one. For example, when you type &lt;code>(&lt;/code>, &lt;code>)&lt;/code> will be added.&lt;/p>
 &lt;p>When the character next to the cursor is a right parenthesis and you type this parenthesis, instead of typing this parenthesis, the cursor will jump out of the parenthesis.&lt;/p>
 &lt;p>You can choose the parentheses to auto-complete in the
 &lt;a href="../../../zh_tw/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
 settings.&lt;/p>
-&lt;h3 id="auto-remove-parentheses">Auto Remove Parentheses&lt;/h3>
+&lt;h3 id="自動刪除括號">自動刪除括號&lt;/h3>
 &lt;p>When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.&lt;/p>
 &lt;p>You can choose the parentheses to auto-remove in the
 &lt;a href="../../../zh_tw/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
 settings.&lt;/p>
-&lt;h3 id="jump-out-of-a-parenthesis-by-pressing-tab">Jump out of a parenthesis by pressing Tab&lt;/h3>
+&lt;h3 id="按下-tab-時從一對括號跳出">按下 Tab 時從一對括號跳出&lt;/h3>
 &lt;p>When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If
-&lt;a href="#auto-complete-parentheses" >Auto Complete Parentheses&lt;/a>
+&lt;a href="#%e8%87%aa%e5%8b%95%e5%ae%8c%e6%88%90%e6%8b%ac%e8%99%9f" >自動完成括號&lt;/a>
 is enabled, this is an alternative of typing the right parenthesis.&lt;/p>
 &lt;p>You can choose the parentheses to jump out by Tab in the
 &lt;a href="../../../zh_tw/docs/preferences/language/#parentheses" >Parentheses&lt;/a>
 settings.&lt;/p>
-&lt;h3 id="replace-tabs-by-spaces">Replace tabs by spaces&lt;/h3>
-&lt;p>When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the
-&lt;a href="#tab-width" >Tab Width&lt;/a>
-.&lt;/p>
-&lt;p>Note that this won&amp;rsquo;t replace the existing tab characters. In
-&lt;a href="#auto-indent" >Auto Indent&lt;/a>
-, the tab characters in the old line will remain in the new line (however, the new indent inserted after &lt;code>{&lt;/code> will be spaces).&lt;/p></description></item><item><title>Docs: Language</title><link>/zh_tw/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/language/</guid><description>
+&lt;h3 id="以空白代替-tab">以空白代替 Tab&lt;/h3>
+&lt;p>縮排時使用空白字元（&lt;code>' '&lt;/code>）代替 Tab 字元（&lt;code>'\t'&lt;/code>）。啟用時，縮排的寬度同為
+&lt;a href="#tab-%e5%af%ac%e5%ba%a6" >Tab 寬度&lt;/a>
+。&lt;/p>
+&lt;p>請注意，開啟此選項並不會替換已有的 Tab 字元。此設定對於
+&lt;a href="#%e8%87%aa%e5%8b%95%e7%b8%ae%e6%8e%92" >自動縮排&lt;/a>
+需換行後才會生效。&lt;/p></description></item><item><title>Docs: Language</title><link>/zh_tw/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/language/</guid><description>
 &lt;h2 id="general">General&lt;/h2>
 &lt;h3 id="default-language">Default Language&lt;/h3>
 &lt;p>The default programming language. It&amp;rsquo;s used when opening a new tab and some other places.&lt;/p>
@@ -55,14 +55,14 @@ settings.&lt;/p>
 &lt;h4 id="c-executable-file-path">C++ Executable File Path&lt;/h4>
 &lt;p>The path of the executable file, i.e. the argument of the &lt;code>-o&lt;/code> option of the compiler.&lt;/p>
 &lt;p>If this path is relative, then it&amp;rsquo;s relative to the source file (if it&amp;rsquo;s an untitled tab, then relative to the
-&lt;a href="../../../zh_tw/docs/preferences/general/#temporary-directory" >Temporary Directory&lt;/a>
+&lt;a href="../../../zh_tw/docs/preferences/general/#%e6%9a%ab%e5%ad%98%e7%9b%ae%e9%8c%84" >暫存目錄&lt;/a>
 ).&lt;/p>
 &lt;p>You can use some place holders for this setting:&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>${filename}&lt;/code>: The complete name of the source file. If it&amp;rsquo;s an untitled tab (i.e. an unsaved file), the complete file name is &lt;code>sol.cpp&lt;/code>.&lt;/li>
 &lt;li>&lt;code>${basename}&lt;/code>: &lt;code>${filename}&lt;/code> without the suffix (i.e. without &lt;code>.cpp&lt;/code>, etc.).&lt;/li>
 &lt;li>&lt;code>${tmpdir}&lt;/code> or &lt;code>${tempdir}&lt;/code>: The path of the
-&lt;a href="../../../zh_tw/docs/preferences/general/#temporary-directory" >Temporary Directory&lt;/a>
+&lt;a href="../../../zh_tw/docs/preferences/general/#%e6%9a%ab%e5%ad%98%e7%9b%ae%e9%8c%84" >暫存目錄&lt;/a>
 .&lt;/li>
 &lt;/ul>
 &lt;p>For example, you can use &lt;code>${tmpdir}/${basename}&lt;/code> if you don&amp;rsquo;t want to keep the executable files, or &lt;code>executables/${basename}&lt;/code> if you want to keep all executable files in the &lt;code>executables&lt;/code> directory under the directory of the source file.&lt;/p>
@@ -106,7 +106,7 @@ for the details.&lt;/p>
 &lt;p>It contains three parts:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;a href="../../../zh_tw/docs/preferences/general/#regular-expression" >Regex&lt;/a>
+&lt;a href="../../../zh_tw/docs/preferences/general/#%e6%ad%a3%e8%a6%8f%e8%a1%a8%e9%81%94%e5%bc%8f" >Regex&lt;/a>
 &lt;/li>
 &lt;li>Offset type: start or end.&lt;/li>
 &lt;li>Offset characters: a number, could be negative.&lt;/li>
@@ -138,49 +138,49 @@ page. Otherwise, it overwrites the settings in the
 page.&lt;/p>
 &lt;h3 id="auto-complete">Auto Complete&lt;/h3>
 &lt;p>See
-&lt;a href="../../../zh_tw/docs/preferences/code-edit/#auto-complete-parentheses" >Code Edit/Auto Complete Parentheses&lt;/a>
+&lt;a href="../../../zh_tw/docs/preferences/code-edit/#%e8%87%aa%e5%8b%95%e5%ae%8c%e6%88%90%e6%8b%ac%e8%99%9f" >Code Edit/Auto Complete Parentheses&lt;/a>
 .&lt;/p>
 &lt;h3 id="auto-remove">Auto Remove&lt;/h3>
 &lt;p>See
-&lt;a href="../../../zh_tw/docs/preferences/code-edit/#auto-remove-parentheses" >Code Edit/Auto Remove Parentheses&lt;/a>
+&lt;a href="../../../zh_tw/docs/preferences/code-edit/#%e8%87%aa%e5%8b%95%e5%88%aa%e9%99%a4%e6%8b%ac%e8%99%9f" >Code Edit/Auto Remove Parentheses&lt;/a>
 .&lt;/p>
 &lt;h3 id="tab-jump-out">Tab Jump Out&lt;/h3>
 &lt;p>See
-&lt;a href="../../../zh_tw/docs/preferences/code-edit/#jump-out-of-a-parenthesis-by-pressing-tab" >Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>
-.&lt;/p></description></item><item><title>Docs: Appearance</title><link>/zh_tw/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/appearance/</guid><description>
-&lt;h2 id="general">General&lt;/h2>
-&lt;h3 id="ui-language">UI Language&lt;/h3>
-&lt;p>The natural language used in the UI.&lt;/p>
-&lt;h3 id="ui-style">UI Style&lt;/h3>
-&lt;p>The style used for the UI. The available options are different on different platforms.&lt;/p>
-&lt;p>The &amp;ldquo;default&amp;rdquo; style is either the most appropriate style on your platform or the style specified by the &lt;code>--style&lt;/code> command-line option.&lt;/p>
-&lt;p>On Windows, there&amp;rsquo;s an extra option &amp;ldquo;Auto Fusion&amp;rdquo;. &amp;ldquo;Auto Fusion&amp;rdquo; is either dark or light depending on the system theme (i.e. whether the Windows application theme is dark or light).&lt;/p>
-&lt;p>If there&amp;rsquo;s anything wrong after you change the UI style, you can try restarting CP Editor.&lt;/p>
-&lt;h3 id="editor-theme">Editor Theme&lt;/h3>
-&lt;p>The syntax highlighting theme for the code editor.&lt;/p>
-&lt;h3 id="opacity">Opacity&lt;/h3>
-&lt;p>The opacity of the main window.&lt;/p>
-&lt;h3 id="test-case-maximum-height">Test Case Maximum Height&lt;/h3>
-&lt;p>The maximum height of a test case before the scrollbar occurs.&lt;/p>
-&lt;h3 id="show-compile-and-run-only">Show Compile And Run Only&lt;/h3>
-&lt;p>Hide the compile only and run only buttons.&lt;/p>
-&lt;p>It can be useful if you don&amp;rsquo;t care about the time used on compilation.&lt;/p>
-&lt;h3 id="display-eoln-in-diff">Display EOLN in Diff&lt;/h3>
-&lt;p>Use &amp;ldquo;¶&amp;rdquo; to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).&lt;/p>
-&lt;h3 id="add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor&lt;/h3>
-&lt;p>Add an extra margin at the bottom of the code editor, so that you can scroll less.&lt;/p>
-&lt;p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by &lt;kbd>Ctrl+Z&lt;/kbd>.&lt;/p>
-&lt;h2 id="font">Font&lt;/h2>
-&lt;h3 id="show-only-monospaced-font">Show only Monospaced Font&lt;/h3>
-&lt;p>When checked the font picker dialog shows only monospaced fonts.&lt;/p>
-&lt;h3 id="editor-font">Editor Font&lt;/h3>
-&lt;p>The font for the code editor.&lt;/p>
-&lt;h3 id="test-cases-font">Test Cases Font&lt;/h3>
-&lt;p>The font for the test cases.&lt;/p>
-&lt;h3 id="message-logger-font">Message Logger Font&lt;/h3>
-&lt;p>The font for the messages.&lt;/p>
-&lt;h3 id="custom-application-font">Custom Application Font&lt;/h3>
-&lt;p>Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.&lt;/p></description></item><item><title>Docs: Actions</title><link>/zh_tw/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/actions/</guid><description>
+&lt;a href="../../../zh_tw/docs/preferences/code-edit/#%e6%8c%89%e4%b8%8b-tab-%e6%99%82%e5%be%9e%e4%b8%80%e5%b0%8d%e6%8b%ac%e8%99%9f%e8%b7%b3%e5%87%ba" >Code Edit/Jump out of a parenthesis by pressing Tab&lt;/a>
+.&lt;/p></description></item><item><title>Docs: 介面</title><link>/zh_tw/docs/preferences/appearance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/appearance/</guid><description>
+&lt;h2 id="一般">一般&lt;/h2>
+&lt;h3 id="介面語言">介面語言&lt;/h3>
+&lt;p>用於顯示使用者介面的語言。&lt;/p>
+&lt;h3 id="介面樣式">介面樣式&lt;/h3>
+&lt;p>依據不同的平台，可用的選項也不同。&lt;/p>
+&lt;p>「預設」樣式會套用適合目前平台的樣式，或者您在命令列中以 &lt;code>--style&lt;/code> 指定的樣式。&lt;/p>
+&lt;p>在 Windows 上，還有一個「Auto Fusion」選項。這個選項會跟隨系統設定使用淺色、深色佈景。&lt;/p>
+&lt;p>若變更 UI 樣式後有什麼問題，可以試著重開 CP Editor。&lt;/p>
+&lt;h3 id="編輯器色彩佈景主題">編輯器色彩佈景主題&lt;/h3>
+&lt;p>程式碼編輯器中語法標示的色彩佈景主題。&lt;/p>
+&lt;h3 id="不透明度">不透明度&lt;/h3>
+&lt;p>控制主視窗的不透明度。&lt;/p>
+&lt;h3 id="測資顯示最大高度">測資顯示最大高度&lt;/h3>
+&lt;p>在捲軸不出現的情況下，可允許顯示的最大高度。&lt;/p>
+&lt;h3 id="僅顯示編譯並執行按鈕">僅顯示「編譯並執行」按鈕&lt;/h3>
+&lt;p>隱藏「編譯」及「執行」按鈕。&lt;/p>
+&lt;p>這是個好用的功能，只要您不在意編譯的時間。&lt;/p>
+&lt;h3 id="在-diff-中顯示-eoln">在 Diff 中顯示 EOLN&lt;/h3>
+&lt;p>在 Diff 檢視器中將 EOF 顯示為「¶」。這功能在需要檢查 EOL 的差異時（比如看看是否多了換行）尤為有用。&lt;/p>
+&lt;h3 id="在程式碼編輯器的底部加上額外邊距">在程式碼編輯器的底部加上額外邊距&lt;/h3>
+&lt;p>在程式碼編輯器的底部加上額外邊距，這可以改善來回滾動的困擾。&lt;/p>
+&lt;p>由於技術原因，這會稍微影響操作的紀錄，比如您可以按 &lt;kbd>Ctrl+Z&lt;/kbd> 來復原邊距設定。&lt;/p>
+&lt;h2 id="字型">字型&lt;/h2>
+&lt;h3 id="只顯示等寬字型">只顯示等寬字型&lt;/h3>
+&lt;p>在選取字型的對話窗中，僅列出等寬字型。&lt;/p>
+&lt;h3 id="編輯器字型">編輯器字型&lt;/h3>
+&lt;p>在程式碼編輯器中使用的字型。&lt;/p>
+&lt;h3 id="測資字型">測資字型&lt;/h3>
+&lt;p>在測資區塊中使用的字型。&lt;/p>
+&lt;h3 id="訊息字型">訊息字型&lt;/h3>
+&lt;p>在訊息區塊中使用的字型。&lt;/p>
+&lt;h3 id="自訂全域字型">自訂全域字型&lt;/h3>
+&lt;p>在呈現使用者介面時，不使用系統的預設字型。生效的範圍排除了程式碼編輯器、測資、訊息等處……。&lt;/p></description></item><item><title>Docs: Actions</title><link>/zh_tw/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>
 &lt;h3 id="save-files-faster">Save Files Faster&lt;/h3>
 &lt;p>Use
@@ -255,11 +255,11 @@ is enabled, external file changes will be loaded without confirmation regardless
 is disabled, the user will be asked whether to load the changes only when
 &lt;a href="#ask-whether-to-load-external-file-changes" >Ask whether to load external file changes&lt;/a>
 is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/zh_tw/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/extensions/</guid><description>
-&lt;h2 id="code-formatting">Code Formatting&lt;/h2>
+&lt;h2 id="程式碼排版">程式碼排版&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh_tw/docs/setup/#setup-clang-format" >Setup Clang Format&lt;/a>
+&lt;a href="../../../zh_tw/docs/setup/#%e8%a8%ad%e5%ae%9a-clang-format" >設定 Clang Format&lt;/a>
 .&lt;/p>
 &lt;h4 id="program">Program&lt;/h4>
 &lt;p>The path to the &lt;code>clang-format&lt;/code> executable, or simply &lt;code>clang-format&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
@@ -273,7 +273,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h3 id="yapf">YAPF&lt;/h3>
 &lt;p>YAPF is used to format the Python codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh_tw/docs/setup/#setup-yapf" >Setup YAPF&lt;/a>
+&lt;a href="../../../zh_tw/docs/setup/#%e8%a8%ad%e5%ae%9a-yapf" >設定 YAPF&lt;/a>
 .&lt;/p>
 &lt;h4 id="program-1">Program&lt;/h4>
 &lt;p>The program of YAPF. It could be one of:&lt;/p>
@@ -292,7 +292,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 or search for other materials to learn how to write the styles.&lt;/p>
 &lt;h2 id="language-server">Language Server&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh_tw/docs/setup/#setup-language-server" >Setup Language Server&lt;/a>
+&lt;a href="../../../zh_tw/docs/setup/#%e8%a8%ad%e5%ae%9a-language-server" >設定 Language Server&lt;/a>
 .&lt;/p>
 &lt;h3 id="use-linting-with-language-server">Use Linting with Language Server&lt;/h3>
 &lt;p>Use language server to lint errors, warnings, hints, etc.&lt;/p>
@@ -306,7 +306,7 @@ or search for other materials to learn how to write the styles.&lt;/p>
 &lt;p>For example, if you are using &lt;code>pyls&lt;/code> for Python, you probably want to use &lt;code>python&lt;/code> as the language server program, and use &lt;code>-m pyls&lt;/code> as the arguments.&lt;/p>
 &lt;h2 id="competitive-companion">Competitive Companion&lt;/h2>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh_tw/docs/setup/#setup-competitive-companion" >Setup Competitive Companion&lt;/a>
+&lt;a href="../../../zh_tw/docs/setup/#%e8%a8%ad%e5%ae%9a-competitive-companion" >設定 Competitive Companion&lt;/a>
 .&lt;/p>
 &lt;h3 id="open-new-tabs">Open New Tabs&lt;/h3>
 &lt;p>Open a new tab when a problem is parsed.&lt;/p>
@@ -347,7 +347,7 @@ to submit your solutions to
 &lt;a href="#competitive-companion" >Competitive Companion&lt;/a>
 from Codeforces or manually set the problem URL of a tab in the context menu of it.&lt;/p>
 &lt;p>&lt;strong>See also&lt;/strong>
-&lt;a href="../../../zh_tw/docs/setup/#setup-cf-tool" >Setup CF Tool&lt;/a>
+&lt;a href="../../../zh_tw/docs/setup/#%e8%a8%ad%e5%ae%9a-cf-tool" >設定 CF Tool&lt;/a>
 .&lt;/p>
 &lt;h3 id="path">Path&lt;/h3>
 &lt;p>The path to the &lt;code>cf&lt;/code> executable file, or simply &lt;code>cf&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
@@ -379,7 +379,7 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;h3 id="testcases-matching-rules">Testcases Matching Rules&lt;/h3>
 &lt;p>The rules used to match test cases when loading pairs of test cases.&lt;/p>
 &lt;p>Each rule is a pair of
-&lt;a href="../../../zh_tw/docs/preferences/general/#regular-expression" >regular expression patterns&lt;/a>
+&lt;a href="../../../zh_tw/docs/preferences/general/#%e6%ad%a3%e8%a6%8f%e8%a1%a8%e9%81%94%e5%bc%8f" >regular expression patterns&lt;/a>
 . The first regex matches the whole input file name, and the second pattern is a replacement pattern which is the name of the answer file.&lt;/p>
 &lt;p>For example, you can use &lt;code>(.+)\.in&lt;/code> and &lt;code>\1.out&lt;/code> to match &lt;code>test-1.in&lt;/code> and &lt;code>test-1.out&lt;/code>, or use &lt;code>(.+)\.in\.(\d+)&lt;/code> and &lt;code>\1.ans.\2&lt;/code> to match &lt;code>test.in.3&lt;/code> and &lt;code>test.ans.3&lt;/code>.&lt;/p>
 &lt;p>When loading pairs of test cases, each rule which matches an input file will be used to try to find the corresponding answer file to the input file.&lt;/p>
@@ -387,7 +387,7 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;h3 id="default-file-path-for-problem-urls">Default File Path For Problem URLs&lt;/h3>
 &lt;p>The default path when choosing where to save an untitled tab with problem URL.&lt;/p>
 &lt;p>Each rule is a pair of
-&lt;a href="../../../zh_tw/docs/preferences/general/#regular-expression" >regular expression patterns&lt;/a>
+&lt;a href="../../../zh_tw/docs/preferences/general/#%e6%ad%a3%e8%a6%8f%e8%a1%a8%e9%81%94%e5%bc%8f" >regular expression patterns&lt;/a>
 . The first regex matches a part of the problem URL, and the second pattern is a replacement pattern which is the default save path.&lt;/p>
 &lt;p>When saving a file with a problem URL, if the problem URL matches at least one regex in the rules, the default save path will be the replacement of the first matching regex.&lt;/p>
 &lt;p>Here&amp;rsquo;s an example of a rule:&lt;/p>
@@ -408,8 +408,8 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;li>You are asked to choose the path for &amp;ldquo;Save File&amp;rdquo;. The default path is &lt;code>/a/b&lt;/code>, and you choose &lt;code>/a/e&lt;/code> as the path. Now both &lt;code>file&lt;/code> and &lt;code>testcase&lt;/code> are &lt;code>/a/e&lt;/code>.&lt;/li>
 &lt;li>You are asked to choose the path for &amp;ldquo;Load Single Test Case&amp;rdquo;. The default path is &lt;code>/a/e&lt;/code> because &lt;code>testcase&lt;/code> was modified by choosing &lt;code>/a/e&lt;/code> for &amp;ldquo;Save File&amp;rdquo;.&lt;/li>
 &lt;/ol>
-&lt;p>In the preferences window, the default paths changed by an action is a comma-separated list.&lt;/p></description></item><item><title>Docs: Key Bindings</title><link>/zh_tw/docs/preferences/key-bindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/key-bindings/</guid><description>
-&lt;p>You can set custom key bindings for many actions. You can change the key by clicking the edit and press the key you want. You can delete a custom key binding by clicking the button on the right.&lt;/p></description></item><item><title>Docs: Advanced</title><link>/zh_tw/docs/preferences/advanced/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/advanced/</guid><description>
+&lt;p>In the preferences window, the default paths changed by an action is a comma-separated list.&lt;/p></description></item><item><title>Docs: 快捷鍵</title><link>/zh_tw/docs/preferences/key-bindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/key-bindings/</guid><description>
+&lt;p>您可以針對許多動作自訂快捷鍵。點一下「編輯」會開始紀錄鍵盤按鍵，也可以按下「刪除」來清除自訂的快捷鍵組合。&lt;/p></description></item><item><title>Docs: Advanced</title><link>/zh_tw/docs/preferences/advanced/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/advanced/</guid><description>
 &lt;h2 id="update">Update&lt;/h2>
 &lt;h3 id="check-for-updates-on-startup">Check for updates on startup&lt;/h3>
 &lt;p>When CP Editor starts, checks whether there are new versions of CP Editor.&lt;/p>
@@ -439,14 +439,18 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;p>The maximum number of characters in a test case to be displayed.&lt;/p>
 &lt;p>A test case will be elided and read-only if it&amp;rsquo;s too long.&lt;/p>
 &lt;h2 id="network-proxy">Network Proxy&lt;/h2>
-&lt;p>The proxy server used to check for updates.&lt;/p></description></item><item><title>Docs: General</title><link>/zh_tw/docs/preferences/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/general/</guid><description>
-&lt;h3 id="temporary-directory">Temporary Directory&lt;/h3>
-&lt;p>In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.&lt;/p>
-&lt;p>You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.&lt;/p>
-&lt;p>On Linux, it&amp;rsquo;s &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>. On Windows, it&amp;rsquo;s &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>.&lt;/p>
-&lt;h3 id="regular-expression">Regular Expression&lt;/h3>
-&lt;p>The
-&lt;a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank" >regular expression&lt;/a>
-is used to match patterns in a string and find and replace substrings.&lt;/p>
-&lt;p>You can find many online regex courses, for example &lt;a href="https://regexone.com/">https://regexone.com/&lt;/a>.&lt;/p>
-&lt;p>In CP Editor, you can use &lt;code>\1&lt;/code>, &lt;code>\2&lt;/code>, etc. for the content of the first/second capture group in the replacement patterns.&lt;/p></description></item></channel></rss>
+&lt;p>The proxy server used to check for updates.&lt;/p></description></item><item><title>Docs: 一般</title><link>/zh_tw/docs/preferences/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/general/</guid><description>
+&lt;h3 id="暫存目錄">暫存目錄&lt;/h3>
+&lt;p>CP Editor 中，每個檔案都位於各自的臨時目錄，用來存放可執行檔及其它檔案。&lt;/p>
+&lt;p>您可以將其看做每個分頁（每個檔案）都有一個安全存放資料的地方，以避免影響硬碟上的其他檔案。暫存目錄會在分頁關閉時被自動刪除。&lt;/p>
+&lt;p>暫存目錄的位置因不同系統而異：&lt;/p>
+&lt;ul>
+&lt;li>Linux：&lt;code>/tmp/CP Editor-XXXXXX&lt;/code>&lt;/li>
+&lt;li>Windows：&lt;code>C:\Users\&amp;lt;您的使用者名稱&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="正規表達式">正規表達式&lt;/h3>
+&lt;p>
+&lt;a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank" >正規表達式&lt;/a>
+可以用來比對字串中符合給定規則的內容，並用來尋找及取代它們。&lt;/p>
+&lt;p>您可以在網路上找到許多關於正規表達式的課程，例如 &lt;a href="https://regexone.com/">https://regexone.com/&lt;/a>。&lt;/p>
+&lt;p>在 CP Editor 中，您可以使用 &lt;code>\&amp;lt;數字&amp;gt;&lt;/code> 來表示符合取代規則的第幾個組別。例如：&lt;code>\1&lt;/code>、&lt;code>\2&lt;/code> 表示符合取代規則的第一、第二個組別。&lt;/p></description></item></channel></rss>
