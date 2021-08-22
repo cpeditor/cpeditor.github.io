@@ -1,7 +1,7 @@
 ---
-linkTitle: Community
-title: Join the CP Editor community
-description: CP Editor is an open source project that everyone can use, provide suggestions and contribute to. Here are a few ways to ask for help and share ideas with us.
+linkTitle: Сообщество
+title: Вступай в сообщество CP Editor
+description: CP Editor является проектом с открытым исходным кодом. Любой человек может использовать его, предлагать и делать улучшения. Здесь перечислены несколько способов как можно высказать своё мнение или обратиться за поддержкой
 menu:
   main:
     weight: 40
@@ -11,19 +11,19 @@ menu:
 
 <div class="col-md-4 col-sm-8 ">
 
-### Ask for help / Share ideas
+### Попросить помощь / Поделиться идеями
 
 -   [<i class="fab fa-github"></i> GitHub Discussions](https://github.com/cpeditor/cpeditor/discussions)
 
-### Say thanks
+### Поблагодарить
 
 -   [<i class="fab fa-github"></i> Say thanks to CP Editor!](https://github.com/cpeditor/cpeditor/discussions/755)
 
-### Make complaints
+### Пожаловаться
 
 -   [<i class="fab fa-github"></i> CP Editor sucks](https://github.com/cpeditor/cpeditor/discussions/760)
 
-### Chat with other users
+### Чат с остальными пользователями
 
 -   [<i class="fab fa-telegram"></i> Telegram Group](https://t.me/cpeditor)
 
