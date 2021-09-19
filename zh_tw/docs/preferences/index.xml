@@ -354,7 +354,27 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;h3 id="show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts&lt;/h3>
 &lt;p>Show a toast message when the verdict of a submission is determined.&lt;/p>
 &lt;p>A toast message is a &amp;ldquo;system notification&amp;rdquo;, which is visible outside of CP Editor.&lt;/p>
-&lt;p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.&lt;/p></description></item><item><title>Docs: File Path</title><link>/zh_tw/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/file-path/</guid><description>
+&lt;p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.&lt;/p>
+&lt;h2 id="wakatime">WakaTime&lt;/h2>
+&lt;p>
+&lt;a href="https://wakatime.com/" target="_blank" >WakaTime&lt;/a>
+can help you to track your time usage.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="../../../zh_tw/docs/setup/#setup-wakatime" >Setup WakaTime&lt;/a>
+.&lt;/p>
+&lt;h3 id="enable-wakatime">Enable WakaTime&lt;/h3>
+&lt;p>Use WakaTime to track your time usage.&lt;/p>
+&lt;h3 id="path-1">Path&lt;/h3>
+&lt;p>The path to the &lt;code>wakatime&lt;/code> executable file, or simply &lt;code>wakatime&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
+&lt;h3 id="api-key">Api Key&lt;/h3>
+&lt;p>Can be found at
+&lt;a href="https://wakatime.com/settings/account" target="_blank" >WakaTime Settings&lt;/a>
+.&lt;/p>
+&lt;p>It can be empty if you have the global wakatime config file &lt;code>~/.wakatime.cfg&lt;/code>.&lt;/p>
+&lt;h3 id="use-proxy">Use Proxy&lt;/h3>
+&lt;p>Use
+&lt;a href="../../../zh_tw/docs/preferences/advanced/#network-proxy" >Network Proxy&lt;/a>
+to send data to WakaTime.&lt;/p></description></item><item><title>Docs: File Path</title><link>/zh_tw/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/file-path/</guid><description>
 &lt;h2 id="testcases">Testcases&lt;/h2>
 &lt;h3 id="input-file-save-path">Input File Save Path&lt;/h3>
 &lt;h3 id="answer-file-save-path">Answer File Save Path&lt;/h3>

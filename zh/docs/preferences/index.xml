@@ -351,7 +351,27 @@
 &lt;p>CF Tool 可执行文件的路径。如果它已经在 &lt;code>PATH&lt;/code> 环境变量中，只需填写 &lt;code>cf&lt;/code> 即可。&lt;/p>
 &lt;h3 id="为评测结果显示气泡信息">为评测结果显示气泡信息&lt;/h3>
 &lt;p>在收到一次提交的结果后，显示一条气泡信息。&lt;/p>
-&lt;p>气泡信息是系统通知，在 CP Editor 外仍然可见。在你忙于解决下一个问题时，气泡信息可以让你得知前一个问题的解决情况。&lt;/p></description></item><item><title>Docs: 文件路径</title><link>/zh/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/file-path/</guid><description>
+&lt;p>气泡信息是系统通知，在 CP Editor 外仍然可见。在你忙于解决下一个问题时，气泡信息可以让你得知前一个问题的解决情况。&lt;/p>
+&lt;h2 id="wakatime">WakaTime&lt;/h2>
+&lt;p>
+&lt;a href="https://wakatime.com/" target="_blank" >WakaTime&lt;/a>
+可以帮助你进行工作量的统计。&lt;/p>
+&lt;p>&lt;strong>参见&lt;/strong>
+&lt;a href="../../../zh/docs/setup/#%e5%ae%89%e8%a3%85-wakatime" >安装 WakaTime&lt;/a>
+。&lt;/p>
+&lt;h3 id="启用-wakatime">启用 WakaTime&lt;/h3>
+&lt;p>是否启用 WakaTime。&lt;/p>
+&lt;h3 id="路径-1">路径&lt;/h3>
+&lt;p>WakaTime 可执行文件的路径。如果它已经在 &lt;code>PATH&lt;/code> 环境变量中，只需填写 &lt;code>wakatime&lt;/code> 即可。&lt;/p>
+&lt;h3 id="api-密钥">Api 密钥&lt;/h3>
+&lt;p>可以在
+&lt;a href="https://wakatime.com/settings/account" target="_blank" >WakaTime 设置&lt;/a>
+查看。&lt;/p>
+&lt;p>如果有 WakaTime 的全局配置文件 &lt;code>~/.wakatime.cfg&lt;/code> 则可以留空。&lt;/p>
+&lt;h3 id="使用代理">使用代理&lt;/h3>
+&lt;p>使用
+&lt;a href="../../../zh/docs/preferences/advanced/#%e7%bd%91%e7%bb%9c%e4%bb%a3%e7%90%86" >网络代理&lt;/a>
+将数据发送给 WakaTime。&lt;/p></description></item><item><title>Docs: 文件路径</title><link>/zh/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/file-path/</guid><description>
 &lt;h2 id="测试点">测试点&lt;/h2>
 &lt;h3 id="输入文件答案文件保存路径">输入文件/答案文件保存路径&lt;/h3>
 &lt;p>设置测试数据
