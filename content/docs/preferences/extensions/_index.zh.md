@@ -127,3 +127,27 @@ CF Tool 可执行文件的路径。如果它已经在 `PATH` 环境变量中，�
 在收到一次提交的结果后，显示一条气泡信息。
 
 气泡信息是系统通知，在 CP Editor 外仍然可见。在你忙于解决下一个问题时，气泡信息可以让你得知前一个问题的解决情况。
+
+## WakaTime
+
+[WakaTime](https://wakatime.com/) 可以帮助你进行工作量的统计。
+
+**参见** [安装 WakaTime](../../setup/\_index.zh.md#安装-wakatime)。
+
+### 启用 WakaTime
+
+是否启用 WakaTime。
+
+### 路径
+
+WakaTime 可执行文件的路径。如果它已经在 `PATH` 环境变量中，只需填写 `wakatime` 即可。
+
+### Api 密钥
+
+可以在 [WakaTime 设置](https://wakatime.com/settings/account) 查看。
+
+如果有 WakaTime 的全局配置文件 `~/.wakatime.cfg` 则可以留空。
+
+### 使用代理
+
+使用 [网络代理](../advanced/\_index.zh.md#网络代理) 将数据发送给 WakaTime。

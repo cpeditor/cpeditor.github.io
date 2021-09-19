@@ -34,6 +34,17 @@ You can install it from the addon/extension markets:
 -   [Chrome Extension](https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl)
 -   [Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/)
 
+## Setup WakaTime
+
+You can use [WakaTime](https://wakatime.com) to track your time usage.
+
+If you are a Linux/macOS user and your distro provides the WakaTime CLI, it's recommended to use it.
+
+Otherwise, there are two options:
+
+-   The deprecated Python version. You can install it via `pip install wakatime`.
+-   The new Go version. You can download it at <https://github.com/wakatime/wakatime-cli/releases>.
+
 ## Setup Code Formatter
 
 ### Setup Clang Format

@@ -127,3 +127,27 @@ Show a toast message when the verdict of a submission is determined.
 A toast message is a "system notification", which is visible outside of CP Editor.
 
 This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.
+
+## WakaTime
+
+[WakaTime](https://wakatime.com/) can help you to track your time usage.
+
+**See also** [Setup WakaTime](../../setup/\_index.md#setup-wakatime).
+
+### Enable WakaTime
+
+Use WakaTime to track your time usage.
+
+### Path
+
+The path to the `wakatime` executable file, or simply `wakatime` if it's in the `PATH` environment variable.
+
+### Api Key
+
+Can be found at [WakaTime Settings](https://wakatime.com/settings/account).
+
+It can be empty if you have the global wakatime config file `~/.wakatime.cfg`.
+
+### Use Proxy
+
+Use [Network Proxy](../advanced/\_index.md#network-proxy) to send data to WakaTime.
