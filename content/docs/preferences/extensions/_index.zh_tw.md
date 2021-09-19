@@ -3,13 +3,13 @@ title: "Extensions"
 weight: 50
 ---
 
-## Code Formatting
+## 程式碼排版
 
 ### Clang Format
 
 Clang Format is used to format the C/C++ and Java codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.
 
-**See also** [Setup Clang Format](../../setup/\_index.zh_tw.md#setup-clang-format).
+**See also** [設定 Clang Format](../../setup/\_index.zh_tw.md#設定-clang-format).
 
 #### Program
 
@@ -29,7 +29,7 @@ You can read [Clang-Format Style Options documentation](https://clang.llvm.org/d
 
 YAPF is used to format the Python codes. You can click Actions->Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.
 
-**See also** [Setup YAPF](../../setup/\_index.zh_tw.md#setup-yapf).
+**See also** [設定 YAPF](../../setup/\_index.zh_tw.md#設定-yapf).
 
 #### Program
 
@@ -50,7 +50,7 @@ The YAPF Format style. The content here is the same as the content of a `.style.
 
 ## Language Server
 
-**See also** [Setup Language Server](../../setup/\_index.zh_tw.md#setup-language-server).
+**See also** [設定 Language Server](../../setup/\_index.zh_tw.md#設定-language-server).
 
 ### Use Linting with Language Server
 
@@ -74,7 +74,7 @@ For example, if you are using `pyls` for Python, you probably want to use `pytho
 
 ## Competitive Companion
 
-**See also** [Setup Competitive Companion](../../setup/\_index.zh_tw.md#setup-competitive-companion).
+**See also** [設定 Competitive Companion](../../setup/\_index.zh_tw.md#設定-competitive-companion).
 
 ### Open New Tabs
 
@@ -114,7 +114,7 @@ You can use [CF Tool](https://github.com/xalanq/cf-tool/) to submit your solutio
 
 To submit a solution, you have to either parse a problem by [Competitive Companion](#competitive-companion) from Codeforces or manually set the problem URL of a tab in the context menu of it.
 
-**See also** [Setup CF Tool](../../setup/\_index.zh_tw.md#setup-cf-tool).
+**See also** [設定 CF Tool](../../setup/\_index.zh_tw.md#設定-cf-tool).
 
 ### Path
 

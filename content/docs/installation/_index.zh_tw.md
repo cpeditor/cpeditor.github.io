@@ -1,6 +1,6 @@
 ---
-title: "Installation"
-linkTitle: "Installation"
+title: "安裝"
+linkTitle: "安裝"
 weight: 10
-description: Different ways to install CP Editor on your machine
+description: 各種安裝 CP Editor 的方法
 ---

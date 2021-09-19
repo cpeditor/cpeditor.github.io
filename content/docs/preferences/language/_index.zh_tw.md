@@ -25,13 +25,13 @@ For compilation flags, please refer to the manual of the compiler. For example, 
 
 The path of the executable file, i.e. the argument of the `-o` option of the compiler.
 
-If this path is relative, then it's relative to the source file (if it's an untitled tab, then relative to the [Temporary Directory](../general/\_index.zh_tw.md#temporary-directory)).
+If this path is relative, then it's relative to the source file (if it's an untitled tab, then relative to the [暫存目錄](../general/\_index.zh_tw.md#暫存目錄)).
 
 You can use some place holders for this setting:
 
 -   `${filename}`: The complete name of the source file. If it's an untitled tab (i.e. an unsaved file), the complete file name is `sol.cpp`.
 -   `${basename}`: `${filename}` without the suffix (i.e. without `.cpp`, etc.).
--   `${tmpdir}` or `${tempdir}`: The path of the [Temporary Directory](../general/\_index.zh_tw.md#temporary-directory).
+-   `${tmpdir}` or `${tempdir}`: The path of the [暫存目錄](../general/\_index.zh_tw.md#暫存目錄).
 
 For example, you can use `${tmpdir}/${basename}` if you don't want to keep the executable files, or `executables/${basename}` if you want to keep all executable files in the `executables` directory under the directory of the source file.
 
@@ -103,7 +103,7 @@ The initial position of the text cursor when opening the template.
 
 It contains three parts:
 
-1.  [Regex](../general/\_index.zh_tw.md#regular-expression)
+1.  [Regex](../general/\_index.zh_tw.md#正規表達式)
 2.  Offset type: start or end.
 3.  Offset characters: a number, could be negative.
 
@@ -146,12 +146,12 @@ Each setting has three states: enable, disable and default. If it's default, it 
 
 ### Auto Complete
 
-See [Code Edit/Auto Complete Parentheses](../code-edit/\_index.zh_tw.md#auto-complete-parentheses).
+See [Code Edit/Auto Complete Parentheses](../code-edit/\_index.zh_tw.md#自動完成括號).
 
 ### Auto Remove
 
-See [Code Edit/Auto Remove Parentheses](../code-edit/\_index.zh_tw.md#auto-remove-parentheses).
+See [Code Edit/Auto Remove Parentheses](../code-edit/\_index.zh_tw.md#自動刪除括號).
 
 ### Tab Jump Out
 
-See [Code Edit/Jump out of a parenthesis by pressing Tab](../code-edit/\_index.zh_tw.md#jump-out-of-a-parenthesis-by-pressing-tab).
+See [Code Edit/Jump out of a parenthesis by pressing Tab](../code-edit/\_index.zh_tw.md#按下-tab-時從一對括號跳出).
