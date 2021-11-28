@@ -254,7 +254,16 @@ is enabled, external file changes will be loaded without confirmation regardless
 &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification" >Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
 is disabled, the user will be asked whether to load the changes only when
 &lt;a href="#ask-whether-to-load-external-file-changes" >Ask whether to load external file changes&lt;/a>
-is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/zh_tw/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/extensions/</guid><description>
+is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p>
+&lt;h2 id="stopwatch">Stopwatch&lt;/h2>
+&lt;h3 id="display-stopwatch">Display Stopwatch&lt;/h3>
+&lt;p>Show a stopwatch in the UI. You can use it to track your time spent on solving a problem.&lt;/p>
+&lt;h3 id="startstop-stopwatch-on-tab-switch">Start/Stop stopwatch on tab switch&lt;/h3>
+&lt;p>When switching to a different tab, automatically start the stopwatch on the current tab and pause the stopwatch on the previous tab.&lt;/p>
+&lt;p>If you switch to the correct tab when solving a problem, with this setting enabled, you won&amp;rsquo;t need to manually start/stop the stopwatch.&lt;/p>
+&lt;h3 id="show-stopwatch-result-only-when-the-button-is-pressed">Show stopwatch result only when the button is pressed&lt;/h3>
+&lt;p>Hide the time of the stopwatch and only show the time when the &amp;ldquo;Show&amp;rdquo; button is pressed.&lt;/p>
+&lt;p>This may reduce distractions caused by stopwatch updates.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/zh_tw/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/extensions/</guid><description>
 &lt;h2 id="程式碼排版">程式碼排版&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
