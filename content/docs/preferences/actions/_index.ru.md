@@ -118,3 +118,21 @@ If the file is changed outside of CP Editor, ask whether to load the change or n
 If this setting is disabled, external changes won't be loaded.
 
 [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) overrides this setting. i.e. if [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) is enabled, external file changes will be loaded without confirmation regardless of [Ask whether to load external file changes](#ask-whether-to-load-external-file-changes); if [Auto-load external file changes if there's no unsaved modification](#auto-load-external-file-changes-if-theres-no-unsaved-modification) is disabled, the user will be asked whether to load the changes only when [Ask whether to load external file changes](#ask-whether-to-load-external-file-changes) is enabled, otherwise the changes won't be loaded.
+
+## Stopwatch
+
+### Display Stopwatch
+
+Show a stopwatch in the UI. You can use it to track your time spent on solving a problem.
+
+### Start/Stop stopwatch on tab switch
+
+When switching to a different tab, automatically start the stopwatch on the current tab and pause the stopwatch on the previous tab.
+
+If you switch to the correct tab when solving a problem, with this setting enabled, you won't need to manually start/stop the stopwatch.
+
+### Show stopwatch result only when the button is pressed
+
+Hide the time of the stopwatch and only show the time when the "Show" button is pressed.
+
+This may reduce distractions caused by stopwatch updates.
