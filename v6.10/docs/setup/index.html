@@ -1,0 +1,1308 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../docs/setup/index.xml">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="../../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../../favicons/android-192x192.png" sizes="192x192">
+
+<title>Setup | CP Editor</title><meta property="og:title" content="Setup" />
+<meta property="og:description" content="Setup CP Editor to prepare for using it" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/setup/" /><meta property="og:site_name" content="CP Editor" />
+
+<meta itemprop="name" content="Setup">
+<meta itemprop="description" content="Setup CP Editor to prepare for using it"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup"/>
+<meta name="twitter:description" content="Setup CP Editor to prepare for using it"/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-96337051-5', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="../../scss/main.min.07b330eaed7822e87d5259ea5b3a7e4eb47d0f9c2b9b3f3d5bb7aefe277702cf.css" as="style">
+<link href="../../scss/main.min.07b330eaed7822e87d5259ea5b3a7e4eb47d0f9c2b9b3f3d5bb7aefe277702cf.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body class="td-section">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../../">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="../../docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../download/" ><span>Download</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://cpeditor.org/">alpha</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v7.0">v7.0</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.10">v6.10</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.9">v6.9</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../ru/docs/setup/">Русский</a>
+	
+	<a class="dropdown-item" href="../../zh/docs/setup/">简体中文</a>
+	
+	<a class="dropdown-item" href="../../zh_tw/docs/setup/">正體中文</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../offline-search-index.e8b097f0f540081b34780c6f945e4e81.json"
+  data-offline-search-base-href="../../"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../offline-search-index.e8b097f0f540081b34780c6f945e4e81.json"
+  data-offline-search-base-href="../../"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../ru/docs/setup/">Русский</a>
+	
+	<a class="dropdown-item" href="../../zh/docs/setup/">简体中文</a>
+	
+	<a class="dropdown-item" href="../../zh_tw/docs/setup/">正體中文</a>
+	
+</div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Installation</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallation">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/installation/install-from-binaries/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Install from binaries</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationinstall-from-binaries">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/installation/build-from-source/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from source</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/installation/build-from-aur/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from AUR</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationbuild-from-aur">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/setup/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Setup</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Preferences</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferences">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/code-edit/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Code Edit</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencescode-edit">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/language/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Language</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferenceslanguage">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/appearance/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Appearance</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesappearance">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/actions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Actions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesactions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/extensions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Extensions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesextensions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">File Path</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesfile-path">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Key Bindings</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferenceskey-bindings">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesadvanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/preferences/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">General</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesgeneral">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.10/content/docs/setup/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Setup" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#change-ui-language">Change UI Language</a></li>
+    <li><a href="#set-compile-and-run-commands">Set Compile and Run Commands</a></li>
+    <li><a href="#setup-cf-tool">Setup CF Tool</a></li>
+    <li><a href="#setup-competitive-companion">Setup Competitive Companion</a></li>
+    <li><a href="#setup-wakatime">Setup WakaTime</a></li>
+    <li><a href="#setup-code-formatter">Setup Code Formatter</a>
+      <ul>
+        <li><a href="#setup-clang-format">Setup Clang Format</a></li>
+        <li><a href="#setup-yapf">Setup YAPF</a></li>
+      </ul>
+    </li>
+    <li><a href="#setup-language-server">Setup Language Server</a>
+      <ul>
+        <li><a href="#c-server">C++ Server</a></li>
+        <li><a href="#java-server">Java Server</a></li>
+        <li><a href="#python-server">Python Server</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="../../docs/setup/">Setup</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>Setup</h1>
+        <div class="lead">Setup CP Editor to prepare for using it</div>
+	
+	<h2 id="change-ui-language">Change UI Language</h2>
+<p>Now CP Editor is available in multiple languages, including English and Chinese.</p>
+<p>You can change the UI language in 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../docs/preferences/appearance/#ui-language"  >Preferences-&gt;Appearance-&gt;General-&gt;UI Language</a>
+. Note that you need to restart CP Editor to apply the change.</p>
+<h2 id="set-compile-and-run-commands">Set Compile and Run Commands</h2>
+<p>You need to install <code>g++</code> / <code>python</code> / <code>java</code> depending on which language you are using. You need to add them to system PATH to have them found by CP Editor.</p>
+<p>Then you can set the Compile and Run Commands in the preferences. For example, you can set C++ Commands in 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../docs/preferences/language/#c-commands"  >Preferences-&gt;Languages-&gt;C++-&gt;C++ Commands</a>
+.</p>
+<h2 id="setup-cf-tool">Setup CF Tool</h2>
+<p>To submit Codeforces problems in CP Editor, you need to install 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/xalanq/cf-tool"   target="_blank" >CF Tool</a>
+.</p>
+<p>You can add it to your system PATH to use it directly, or you can set the path to it in 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../docs/preferences/extensions/#cf-tool"  >Preferences-&gt;Extensions-&gt;CF Tool</a>
+.</p>
+<p>You need to configure the tool by running the command <code>cf config</code> in the command line before using it.</p>
+<h2 id="setup-competitive-companion">Setup Competitive Companion</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/jmerle/competitive-companion"   target="_blank" >Competitive Companion</a>
+ is used to parse problems/contests from online judges. After you install it, you can parse sample test cases with a single click, instead of copying them manually.</p>
+<p>You can install it from the addon/extension markets:</p>
+<ul>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl"   target="_blank" >Chrome Extension</a>
+</li>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/"   target="_blank" >Firefox Addon</a>
+</li>
+</ul>
+<h2 id="setup-wakatime">Setup WakaTime</h2>
+<p>You can use 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wakatime.com"   target="_blank" >WakaTime</a>
+ to track your time usage.</p>
+<p>If you are a Linux/macOS user and your distro provides the WakaTime CLI, it&rsquo;s recommended to use it.</p>
+<p>Otherwise, there are two options:</p>
+<ul>
+<li>The deprecated Python version. You can install it via <code>pip install wakatime</code>.</li>
+<li>The new Go version. You can download it at <a href="https://github.com/wakatime/wakatime-cli/releases">https://github.com/wakatime/wakatime-cli/releases</a>.</li>
+</ul>
+<h2 id="setup-code-formatter">Setup Code Formatter</h2>
+<h3 id="setup-clang-format">Setup Clang Format</h3>
+<p>CP Editor uses 
+
+
+
+
+
+
+
+
+
+
+
+<a href="http://releases.llvm.org/download.html"   target="_blank" >Clang Format</a>
+ to format your C/C++ and Java code.</p>
+<p>You need to add it to your system PATH, or set the path to it at 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../docs/preferences/extensions/#clang-format"  >Preferences-&gt;Extensions-&gt;Clang Format</a>
+.</p>
+<h3 id="setup-yapf">Setup YAPF</h3>
+<p>CP Editor uses 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/google/yapf"   target="_blank" >YAPF</a>
+ to format your Python code.</p>
+<p>It should work after 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/google/yapf#installation"   target="_blank" >installation</a>
+. If not, set the program and arguments in 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../docs/preferences/extensions/#yapf"  >Preferences-&gt;Extensions-&gt;Code Formatting-&gt;YAPF</a>
+.</p>
+<h2 id="setup-language-server">Setup Language Server</h2>
+<p>You can use 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://microsoft.github.io/language-server-protocol/"   target="_blank" >Language Server</a>
+ to lint your codes and get errors, warnings, etc.</p>
+<p>You can install 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://microsoft.github.io/language-server-protocol/implementors/servers/"   target="_blank" >any language server program</a>
+ and set suitable settings in 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../docs/preferences/extensions/#language-server"  >Preferences-&gt;Extensions-&gt;Language Server</a>
+.</p>
+<p>Though you can use any language server program you like, here are some suggestions if you are not sure which to use.</p>
+<h3 id="c-server">C++ Server</h3>
+<p>If you have installed LLVM, you already have <code>clangd</code>, because it comes with the clang compiler. If you haven&rsquo;t, please install 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://releases.llvm.org/download.html"   target="_blank" >LLVM</a>
+ prebuild binaries for Windows. On Linux and macOS you can install it from your package manager. You need to set the start command of <code>clangd</code> in Preferences -&gt; Extensions -&gt; Language Server -&gt; C++ Server -&gt; Path, where the command can be the path to the executable file or just <code>clangd</code> if it&rsquo;s in the PATH.</p>
+<h3 id="java-server">Java Server</h3>
+<p>You need to have <code>java</code> installed and added to <code>PATH</code>. Download 
+
+
+
+
+
+
+
+
+
+
+
+<a href="http://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz"   target="_blank" >Eclipse.JDT.ls</a>
+, extract it to any location (in a new directory), We call the path to that directory <code>&lt;INSTALL_PATH&gt;</code> (Something like <code>C://Users/Myname/Desktop/EclipseJDT.ls/</code>). In CP Editor, go to Preferences -&gt; Extensions -&gt; Language Server -&gt; Java Server. Set &ldquo;Path&rdquo; to <code>java</code> and set &ldquo;Arguments&rdquo; to something like <code>-jar $INSTALL_PATH/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar -configuration &lt;INSTALL_PATH&gt;/config_(linux|win|mac)</code>. For example, on Windows, the arguments should be something like <code>-configuration C://Users/Myname/Desktop/Eclipse.JDT.ls/config_win</code>.</p>
+<p>The full name of the jar file above, <code>org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar</code>, may change incrementally as the project version of JDT changes. If java complains about &ldquo;jar not found&rdquo;, then look for the latest version of the <code>org.eclipse.equinox.launcher_*</code> jar in <code>&lt;INSTALL_PATH&gt;/plugins</code> and replace it in the command after <code>-jar</code>.</p>
+<h3 id="python-server">Python Server</h3>
+<p>You need to have <code>python</code> and <code>pip</code> installed and added to <code>PATH</code>. Install <code>python-language-server</code> pip module by running <code>pip install 'python-language-server[all]'</code>. After the installation is done, open CP Editor settings, go to Preferences -&gt; Extensions -&gt; Language Server -&gt; Python Server. Set &ldquo;Path&rdquo; to <code>python</code> and set &ldquo;Arguments&rdquo; to <code>-m pyls</code>. Save the changes and you will have linting for Python.</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<div class="d-print-none">
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! You can <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
+</p>
+</div>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 19, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/b63c72f7f71290c4573b6619d72cf7a81c6ab9c3">feat: add wakatime extension (#204) (b63c72f7)</a>
+</div>
+</div>
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor/discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="../../about/">About CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
