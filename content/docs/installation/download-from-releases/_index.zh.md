@@ -1,27 +1,26 @@
 ---
-title: "安装可执行文件"
-linkTitle: "安装可执行文件"
+title: "在 Releases 中下载"
 weight: 10
 description: 这是安装 CP Editor 最简单的方式，推荐大多数用户使用。
 ---
 
-在 [Release](https://github.com/cpeditor/cpeditor/releases) 页面选择你需要的版本，下载相应的可执行文件。
+你需要在 [Releases](https://github.com/cpeditor/cpeditor/releases) 页面找到你需要的版本，然后根据你的操作系统选择相应的文件并下载安装。
 
-如果你访问 GitHub 的速度较慢，你还可以尝试 [Gitee 镜像](https://gitee.com/ouuan/cpeditor/releases) 和 [FastGit 镜像](https://hub.fastgit.org/cpeditor/cpeditor/releases)。
+如果你访问 GitHub 的速度较慢，你还可以尝试 [Gitee 镜像](https://gitee.com/ouuan/cpeditor/releases) 或者 [FastGit 镜像](https://hub.fastgit.org/cpeditor/cpeditor/releases)。
 
 ### Windows
 
 #### 使用安装包安装
 
-> 使用安装包在你的电脑上进行安装。配置文件将会存储在你的系统的配置目录下，CP Editor 将会出现在你的系统的已安装程序列表中。
+使用安装包在你的电脑上进行安装。配置文件将会存储在你的系统的配置目录下，CP Editor 将会出现在你的系统的已安装程序列表中。
 
 下载 `setup.exe` 以进行安装。
 
 #### 便携式版本
 
-> 使用便携式版本，无需安装即可使用 CP Editor。这意味着你可以将 CP Editor 存储在 U 盘等可移动介质中。
->
-> 配置文件将存储在可执行文件所在的文件夹，CP Editor 将不会出现在你的系统的已安装程序列表中。
+使用便携式版本，无需安装即可使用 CP Editor。这意味着你可以将 CP Editor 存储在 U 盘等可移动介质中。
+
+配置文件将存储在可执行文件所在的文件夹，CP Editor 将不会出现在你的系统的已安装程序列表中。
 
 下载 `portable.zip`，将其解压到任意一个你想要存放的位置。
 
