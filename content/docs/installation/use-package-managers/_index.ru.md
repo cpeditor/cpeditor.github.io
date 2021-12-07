@@ -1,6 +1,6 @@
 ---
 title: "Use package managers"
-weight: 40
+weight: 15
 description: You can use the package manager provided by your OS or other package managers to install CP Editor.
 ---
 
@@ -13,6 +13,18 @@ Some of the packages are officially maintained while most of them are maintained
 However, at present, CP Editor is not available in many package repositories. Package maintainers can contact us if any help is needed. For example, we may add some scripts in our CI/CD workflow.
 
 Here are a few guidelines to install the packages.
+
+### Snapcraft
+
+You can use [Snapcraft](https://snapcraft.io) to install [cpeditor](https://snapcraft.io/cpeditor), which is available on most Linux distros.
+
+There are two channels available: `latest/stable` and `latest/edge`.
+
+Due to technical reasons, it was published using classic confinement, so you'll need the `--classic` option to install it.
+
+To install the latest stable version: `sudo snap install cpeditor --classic`
+
+To install the latest alpha version: `sudo snap install cpeditor --classic --channel=latest/edge`
 
 ### AUR
 
