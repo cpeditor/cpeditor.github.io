@@ -1,23 +1,19 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 安装</title><link>/zh/docs/installation/</link><description>Recent content in 安装 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 安装可执行文件</title><link>/zh/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/install-from-binaries/</guid><description>
-&lt;p>在
-&lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Release&lt;/a>
-页面选择你需要的版本，下载相应的可执行文件。&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 安装</title><link>/zh/docs/installation/</link><description>Recent content in 安装 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 在 Releases 中下载</title><link>/zh/docs/installation/download-from-releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/download-from-releases/</guid><description>
+&lt;p>你需要在
+&lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Releases&lt;/a>
+页面找到你需要的版本，然后根据你的操作系统选择相应的文件并下载安装。&lt;/p>
 &lt;p>如果你访问 GitHub 的速度较慢，你还可以尝试
 &lt;a href="https://gitee.com/ouuan/cpeditor/releases" target="_blank" >Gitee 镜像&lt;/a>
-和
+或者
 &lt;a href="https://hub.fastgit.org/cpeditor/cpeditor/releases" target="_blank" >FastGit 镜像&lt;/a>
 。&lt;/p>
 &lt;h3 id="windows">Windows&lt;/h3>
 &lt;h4 id="使用安装包安装">使用安装包安装&lt;/h4>
-&lt;blockquote>
 &lt;p>使用安装包在你的电脑上进行安装。配置文件将会存储在你的系统的配置目录下，CP Editor 将会出现在你的系统的已安装程序列表中。&lt;/p>
-&lt;/blockquote>
 &lt;p>下载 &lt;code>setup.exe&lt;/code> 以进行安装。&lt;/p>
 &lt;h4 id="便携式版本">便携式版本&lt;/h4>
-&lt;blockquote>
 &lt;p>使用便携式版本，无需安装即可使用 CP Editor。这意味着你可以将 CP Editor 存储在 U 盘等可移动介质中。&lt;/p>
 &lt;p>配置文件将存储在可执行文件所在的文件夹，CP Editor 将不会出现在你的系统的已安装程序列表中。&lt;/p>
-&lt;/blockquote>
 &lt;p>下载 &lt;code>portable.zip&lt;/code>，将其解压到任意一个你想要存放的位置。&lt;/p>
 &lt;h3 id="绝大部分-linux-发行版">绝大部分 Linux 发行版&lt;/h3>
 &lt;p>下载 &lt;code>AppImage&lt;/code>，执行 &lt;code>chmod +x &amp;lt;AppImagePath&amp;gt;&lt;/code> 给其添加执行权限，随后运行该文件。&lt;/p>
@@ -26,7 +22,40 @@
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">sudo apt install &amp;lt;path to .deb package&amp;gt;
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>接下来输入密码，确认安装。你也可以使用 &lt;code>Gdebi&lt;/code> 等图形化工具安装 &lt;code>deb&lt;/code> 包，要求系统版本不低于 Debian 10 Buster，Ubuntu 18.04 Bionic Beaver，Linux Mint 19 Tara 或其他基于前述发行版的系统的相应版本。&lt;/p>
 &lt;h3 id="macos">macOS&lt;/h3>
-&lt;p>下载 &lt;code>.dmg&lt;/code> 文件然后安装。如果出现“未识别的开发者”等提示消息，请依然允许 CP Editor 运行。可以在 &lt;code>System Preferences -&amp;gt; Security &amp;amp; Privacy -&amp;gt; General&lt;/code> 中将 CP Editor 添加到白名单里。&lt;/p></description></item><item><title>Docs: 从源代码构建</title><link>/zh/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-source/</guid><description>
+&lt;p>下载 &lt;code>.dmg&lt;/code> 文件然后安装。如果出现“未识别的开发者”等提示消息，请依然允许 CP Editor 运行。可以在 &lt;code>System Preferences -&amp;gt; Security &amp;amp; Privacy -&amp;gt; General&lt;/code> 中将 CP Editor 添加到白名单里。&lt;/p></description></item><item><title>Docs: 使用包管理器</title><link>/zh/docs/installation/use-package-managers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/use-package-managers/</guid><description>
+&lt;h3 id="打包情况">打包情况&lt;/h3>
+&lt;p>
+&lt;a href="https://repology.org/project/cpeditor/versions" target="_blank" >&lt;img src="https://repology.org/badge/vertical-allrepos/cpeditor.svg" alt="Packaging status">&lt;/a>
+&lt;/p>
+&lt;p>其中有的包是官方维护的，而大多数的包是由社区维护的。&lt;/p>
+&lt;p>然而，目前很多软件包仓库都没有包含 CP Editor。如果需要帮助，软件包维护者可以联系我们。例如，我们可以在我们的 CI/CD 工作流中加入一些脚本。&lt;/p>
+&lt;p>下面是一些安装软件包的指导。&lt;/p>
+&lt;h3 id="snapcraft">Snapcraft&lt;/h3>
+&lt;p>你可以使用
+&lt;a href="https://snapcraft.io" target="_blank" >Snapcraft&lt;/a>
+来安装
+&lt;a href="https://snapcraft.io/cpeditor" target="_blank" >cpeditor&lt;/a>
+，它在大多数 Linux 发行版上都可用。&lt;/p>
+&lt;p>有两个 channel 可供选择：&lt;code>latest/stable&lt;/code> 和 &lt;code>latest/edge&lt;/code>。&lt;/p>
+&lt;p>由于技术原因，它以 classic confinement 发布，所以你需要 &lt;code>--classic&lt;/code> 选项来安装它。&lt;/p>
+&lt;p>安装最新的稳定版本：&lt;code>sudo snap install cpeditor --classic&lt;/code>&lt;/p>
+&lt;p>安装最新的测试（alpha）版本： &lt;code>sudo snap install cpeditor --classic --channel=latest/edge&lt;/code>&lt;/p>
+&lt;h3 id="aur">AUR&lt;/h3>
+&lt;p>CP Editor 在
+&lt;a href="https://aur.archlinux.org/" target="_blank" >AUR&lt;/a>
+上有两个包：稳定版
+&lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank" >cpeditor&lt;/a>
+和 alpha 版
+&lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank" >cpeditor-git&lt;/a>
+。&lt;/p>
+&lt;p>如果你安装了 &lt;code>yay&lt;/code>，你可以运行 &lt;code>yay -S cpeditor&lt;/code> 来安装。如果你没有安装 &lt;code>yay&lt;/code> 并且你不知道如何从 AUR 安装，你可以阅读
+&lt;a href="https://github.com/Jguer/yay#installation" target="_blank" >如何安装 yay&lt;/a>
+或者
+&lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%e7%ae%80%e4%bd%93%e4%b8%ad%e6%96%87%29#%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e5%8c%85" target="_blank" >Arch Wiki&lt;/a>
+，或者从
+&lt;a href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/" target="_blank" >archlinuxcn&lt;/a>
+安装 &lt;code>yay&lt;/code>。&lt;/p>
+&lt;p>安装完成后，你就可以在终端中运行 &lt;code>cpeditor&lt;/code> 或在开始菜单中运行 CP Editor 了。&lt;/p></description></item><item><title>Docs: 从源代码构建</title><link>/zh/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-source/</guid><description>
 &lt;ol>
 &lt;li>
 &lt;p>克隆源代码仓库以及子组件：&lt;/p>
@@ -81,18 +110,4 @@ cmake --build . --config Release
 &lt;p>为了在 Windows/macOS 上运行它，你应该首先从
 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Releases&lt;/a>
 安装（通常任何版本都可以，除非出现了 DLL 丢失等问题）。在 Windows 上，将安装文件夹中的 &lt;code>cpeditor.exe&lt;/code> 替换为 Artifact 版本的。在 macOS 上，运行 &lt;code>cp path/to/Artifact cpeditor.app/Contents/MacOs&lt;/code>，其中 &lt;code>cpeditor.app&lt;/code> 是你的计算机上已安装的那个。&lt;/p>
-&lt;p>为了在 Ubuntu 18.04 上运行它，你需要安装 Qt。其他 Linux 发行版可能不支持在 Ubuntu 18.04 上编译的二进制文件。&lt;/p></description></item><item><title>Docs: 从 AUR 构建</title><link>/zh/docs/installation/build-from-aur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-aur/</guid><description>
-&lt;p>这个方法只适用于 Arch Linux（或基于 Arch Linux 的 Linux 发行版，如 Manjaro）。&lt;/p>
-&lt;p>CP Editor 在 AUR 上有两个包：稳定版
-&lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank" >cpeditor&lt;/a>
-和 alpha 版
-&lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank" >cpeditor-git&lt;/a>
-。&lt;/p>
-&lt;p>如果你安装了 &lt;code>yay&lt;/code>，你可以运行 &lt;code>yay -S cpeditor&lt;/code> 来安装。如果你没有安装 &lt;code>yay&lt;/code> 并且你不知道如何从 AUR 安装，你可以阅读
-&lt;a href="https://github.com/Jguer/yay#installation" target="_blank" >如何安装 yay&lt;/a>
-或者
-&lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository_%28%e7%ae%80%e4%bd%93%e4%b8%ad%e6%96%87%29#%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e5%8c%85" target="_blank" >Arch Wiki&lt;/a>
-，或者从
-&lt;a href="https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/" target="_blank" >archlinuxcn&lt;/a>
-安装 &lt;code>yay&lt;/code>。&lt;/p>
-&lt;p>安装完成后，你就可以在终端中运行 &lt;code>cpeditor&lt;/code> 或在开始菜单中运行 CP Editor 了。&lt;/p></description></item></channel></rss>
+&lt;p>为了在 Ubuntu 18.04 上运行它，你需要安装 Qt。其他 Linux 发行版可能不支持在 Ubuntu 18.04 上编译的二进制文件。&lt;/p></description></item></channel></rss>

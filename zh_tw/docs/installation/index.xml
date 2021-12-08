@@ -1,17 +1,13 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 安裝</title><link>/zh_tw/docs/installation/</link><description>Recent content in 安裝 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh_tw/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 安裝程式</title><link>/zh_tw/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/installation/install-from-binaries/</guid><description>
-&lt;p>從
-&lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >檔案列表&lt;/a>
-中選擇版本，並下載程式。&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 安裝</title><link>/zh_tw/docs/installation/</link><description>Recent content in 安裝 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh_tw/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 在 Releases 中下載</title><link>/zh_tw/docs/installation/download-from-releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/installation/download-from-releases/</guid><description>
+&lt;p>你需要在
+&lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Releases&lt;/a>
+頁面找到你需要的版本，然後根據你的作業系統選擇相應的檔案並下載安裝。&lt;/p>
 &lt;h3 id="windows">Windows&lt;/h3>
 &lt;h4 id="安裝版">安裝版&lt;/h4>
-&lt;blockquote>
-&lt;p>The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.&lt;/p>
-&lt;/blockquote>
+&lt;p>安裝版需要將本軟體安裝在您的電腦。設定組態將儲存於系統的設定目錄中，且 CP Editor 會出現在系統的已安裝程式清單上。&lt;/p>
 &lt;p>下載檔案列表中的 &lt;code>setup.exe&lt;/code> 並安裝它。&lt;/p>
 &lt;h4 id="免安裝版">免安裝版&lt;/h4>
-&lt;blockquote>
-&lt;p>The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won&amp;rsquo;t see it in the list of installed programs on your system.&lt;/p>
-&lt;/blockquote>
+&lt;p>免安裝版無需安裝即可執行。其設定組態將與 CP Editor 的可執行檔置於同一目錄，CP Editor 不會出現在系統的已安裝程式清單上。&lt;/p>
 &lt;p>下載檔案列表中的 &lt;code>portable.zip&lt;/code> 並解壓縮到您喜歡的地方。&lt;/p>
 &lt;h3 id="大多數-linux-發行版">大多數 Linux 發行版&lt;/h3>
 &lt;p>下載檔案列表中的 &lt;code>AppImage&lt;/code>，並賦予其執行權限（&lt;code>chmod +x &amp;lt;AppImagePath&amp;gt;&lt;/code>），再執行它。&lt;/p>
@@ -24,7 +20,38 @@
 &lt;p>下載檔案列表中的 &lt;code>.dmg&lt;/code> 檔案並安裝它。&lt;/p>
 &lt;p>在安裝過程中，您可能需要按幾次「好」以存取檔案系統。Apple 可能會警告您這個應用程式是來自未識別開發者的 Mac App。參考
 &lt;a href="https://support.apple.com/zh-tw/guide/mac-help/mh40616/mac" target="_blank" >Apple 的 macOS 使用手冊&lt;/a>
-將 CP Editor 授予例外。&lt;/p></description></item><item><title>Docs: 編譯原始碼</title><link>/zh_tw/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/installation/build-from-source/</guid><description>
+將 CP Editor 授予例外。&lt;/p></description></item><item><title>Docs: Use package managers</title><link>/zh_tw/docs/installation/use-package-managers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/installation/use-package-managers/</guid><description>
+&lt;h3 id="packaging-status">Packaging status&lt;/h3>
+&lt;p>
+&lt;a href="https://repology.org/project/cpeditor/versions" target="_blank" >&lt;img src="https://repology.org/badge/vertical-allrepos/cpeditor.svg" alt="Packaging status">&lt;/a>
+&lt;/p>
+&lt;p>Some of the packages are officially maintained while most of them are maintained by the community.&lt;/p>
+&lt;p>However, at present, CP Editor is not available in many package repositories. Package maintainers can contact us if any help is needed. For example, we may add some scripts in our CI/CD workflow.&lt;/p>
+&lt;p>Here are a few guidelines to install the packages.&lt;/p>
+&lt;h3 id="snapcraft">Snapcraft&lt;/h3>
+&lt;p>You can use
+&lt;a href="https://snapcraft.io" target="_blank" >Snapcraft&lt;/a>
+to install
+&lt;a href="https://snapcraft.io/cpeditor" target="_blank" >cpeditor&lt;/a>
+, which is available on most Linux distros.&lt;/p>
+&lt;p>There are two channels available: &lt;code>latest/stable&lt;/code> and &lt;code>latest/edge&lt;/code>.&lt;/p>
+&lt;p>Due to technical reasons, it was published using classic confinement, so you&amp;rsquo;ll need the &lt;code>--classic&lt;/code> option to install it.&lt;/p>
+&lt;p>To install the latest stable version: &lt;code>sudo snap install cpeditor --classic&lt;/code>&lt;/p>
+&lt;p>To install the latest alpha version: &lt;code>sudo snap install cpeditor --classic --channel=latest/edge&lt;/code>&lt;/p>
+&lt;h3 id="aur">AUR&lt;/h3>
+&lt;p>There are two
+&lt;a href="https://aur.archlinux.org/" target="_blank" >AUR&lt;/a>
+packages for CP Editor:
+&lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank" >cpeditor&lt;/a>
+for the stable version and
+&lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank" >cpeditor-git&lt;/a>
+for the alpha version.&lt;/p>
+&lt;p>If you have &lt;code>yay&lt;/code> installed, you can run &lt;code>yay -S cpeditor&lt;/code> to install. If you don&amp;rsquo;t have &lt;code>yay&lt;/code> and don&amp;rsquo;t know how to install from AUR, you can read
+&lt;a href="https://github.com/Jguer/yay#installation" target="_blank" >how to install yay&lt;/a>
+or
+&lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages" target="_blank" >the Arch Wiki&lt;/a>
+.&lt;/p>
+&lt;p>After the installation, you&amp;rsquo;ll be able to run CP Editor by &lt;code>cpeditor&lt;/code> in your terminal or launch from the start menu like other apps.&lt;/p></description></item><item><title>Docs: 編譯原始碼</title><link>/zh_tw/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/installation/build-from-source/</guid><description>
 &lt;ol>
 &lt;li>
 &lt;p>Clone 儲存庫及 submodules：&lt;/p>
@@ -81,16 +108,4 @@ cmake --build . --config Release
 &lt;p>To run it on Windows/macOS, you should install from
 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Releases&lt;/a>
 first (usually any version is OK unless something like DLL missing happens). On Windows, replace &lt;code>cpeditor.exe&lt;/code> in your install folder with the Artifact. On macOS, run &lt;code>cp path/to/Artifact cpeditor.app/Contents/MacOs&lt;/code>, where &lt;code>cpeditor.app&lt;/code> is the one already installed on your machine.&lt;/p>
-&lt;p>To run it on Ubuntu 18.04, you need to install Qt. Other Linux distributions may not support binaries compiled on Ubuntu 18.04.&lt;/p></description></item><item><title>Docs: Build from AUR</title><link>/zh_tw/docs/installation/build-from-aur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/installation/build-from-aur/</guid><description>
-&lt;p>This method is only for Arch Linux (or other distros based on Arch Linux, including Manjaro) users.&lt;/p>
-&lt;p>There are two AUR packages for CP Editor:
-&lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank" >cpeditor&lt;/a>
-for the stable version and
-&lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank" >cpeditor-git&lt;/a>
-for the alpha version.&lt;/p>
-&lt;p>If you have &lt;code>yay&lt;/code> installed, you can run &lt;code>yay -S cpeditor&lt;/code> to install. If you don&amp;rsquo;t have &lt;code>yay&lt;/code> and don&amp;rsquo;t know how to install from AUR, you can read
-&lt;a href="https://github.com/Jguer/yay#installation" target="_blank" >how to install yay&lt;/a>
-or
-&lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages" target="_blank" >the Arch Wiki&lt;/a>
-.&lt;/p>
-&lt;p>After the installation, you&amp;rsquo;ll be able to run CP Editor by &lt;code>cpeditor&lt;/code> in your terminal or launch from the start menu like other apps.&lt;/p></description></item></channel></rss>
+&lt;p>To run it on Ubuntu 18.04, you need to install Qt. Other Linux distributions may not support binaries compiled on Ubuntu 18.04.&lt;/p></description></item></channel></rss>
