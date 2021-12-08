@@ -1,23 +1,22 @@
 ---
-title: "安裝程式"
-linkTitle: "安裝程式"
+title: "在 Releases 中下載"
 weight: 10
 description: 安裝 CP Editor 最簡易的方法，適合大多數使用者。
 ---
 
-從[檔案列表](https://github.com/cpeditor/cpeditor/releases)中選擇版本，並下載程式。
+你需要在 [Releases](https://github.com/cpeditor/cpeditor/releases) 頁面找到你需要的版本，然後根據你的作業系統選擇相應的檔案並下載安裝。
 
 ### Windows
 
 #### 安裝版
 
-> The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.
+安裝版需要將本軟體安裝在您的電腦。設定組態將儲存於系統的設定目錄中，且 CP Editor 會出現在系統的已安裝程式清單上。
 
 下載檔案列表中的 `setup.exe` 並安裝它。
 
 #### 免安裝版
 
-> The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won't see it in the list of installed programs on your system.
+免安裝版無需安裝即可執行。其設定組態將與 CP Editor 的可執行檔置於同一目錄，CP Editor 不會出現在系統的已安裝程式清單上。
 
 下載檔案列表中的 `portable.zip` 並解壓縮到您喜歡的地方。
 

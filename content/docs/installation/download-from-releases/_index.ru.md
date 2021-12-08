@@ -1,23 +1,22 @@
 ---
-title: "Install from binaries"
-linkTitle: "Install from binaries"
+title: "Download from Releases"
 weight: 10
 description: This is the easiest way to install CP Editor, and is recommended for most users.
 ---
 
-Choose a version in the [Releases](https://github.com/cpeditor/cpeditor/releases), then download your binary.
+You need to choose a version in the [Releases](https://github.com/cpeditor/cpeditor/releases), then download an asset according to your OS and install it.
 
 ### Windows
 
 #### Setup Version
 
-> The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.
+The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.
 
 Download the `setup.exe` in the assets and install it.
 
 #### Portable Version
 
-> The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won't see it in the list of installed programs on your system.
+The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won't see it in the list of installed programs on your system.
 
 Download the `portable.zip` in the assets and unzip it to any directory you like.
 
