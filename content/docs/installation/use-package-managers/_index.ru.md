@@ -28,10 +28,10 @@ To install the latest alpha version: `sudo snap install cpeditor --classic --cha
 
 ### AUR
 
-If you are using [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux_(Русский)), it's recommended to install CP Editor via [AUR](https://wiki.archlinux.org/title/Arch_User_Repository_(Русский)). AUR usually also works on Arch-based distros like Manjaro, but it sometimes fails due to reasons like different main repositories.
+If you are using [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux_\(Русский\)), it's recommended to install CP Editor via [AUR](https://wiki.archlinux.org/title/Arch_User_Repository_\(Русский\)). AUR usually also works on Arch-based distros like Manjaro, but it sometimes fails due to reasons like different main repositories.
 
 There are two AUR packages for CP Editor: [cpeditor](https://aur.archlinux.org/packages/cpeditor/) for the stable version and [cpeditor-git](https://aur.archlinux.org/packages/cpeditor-git/) for the alpha version.
 
-If you are unfamiliar with AUR, it's recommended to install [paru](https://github.com/Morganamilo/paru) and use `paru -S cpeditor` to install. You can also read the wiki on [how to manually install an AUR package](https://wiki.archlinux.org/title/Arch_User_Repository_(Русский)#Установка_и_обновление_пакетов) or [AUR helpers](https://wiki.archlinux.org/title/AUR_helpers).
+If you are unfamiliar with AUR, it's recommended to install [paru](https://github.com/Morganamilo/paru) and use `paru -S cpeditor` to install. You can also read the wiki on [how to manually install an AUR package](https://wiki.archlinux.org/title/Arch_User_Repository_\(Русский\)#Установка\_и\_обновление\_пакетов) or [AUR helpers](https://wiki.archlinux.org/title/AUR_helpers).
 
 After the installation, you'll be able to run CP Editor by `cpeditor` in your terminal or launch from the start menu like other apps.
