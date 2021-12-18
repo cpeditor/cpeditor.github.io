@@ -12,7 +12,7 @@
   "homepage": "https://cpeditor.github.io/",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.4",
+    "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
     "remark-cli": "^10.0.1",
     "remark-frontmatter": "^4.0.1",
