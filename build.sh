@@ -7,6 +7,8 @@ git config core.quotePath false
 version_branches="$(git for-each-ref --format='%(refname:lstrip=3)' refs/remotes/*/v*.* | sort -Vur)"
 
 function build() {
+    sed -i 's/^id = "UA-/# id = "UA-/' config.toml # disable GA
+
     if [[ "$1" != "" ]]; then
         sed -i "s/^version = \".*\"/version = \"$1\"/" config.toml
         sed -i "s/^github_branch = \".*\"/github_branch = \"$1\"/" config.toml
