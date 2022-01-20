@@ -29,27 +29,6 @@
 <meta name="twitter:description" content="The IDE for competitive programming"/>
 
 
-<script type="application/javascript">
-var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-var doNotTrack = (dnt == "1" || dnt == "yes");
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	if (window.sessionStorage) {
-		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
-		ga('create', 'UA-96337051-5', {
-	    'storage': 'none',
-	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
-	   });
-	   ga(function(tracker) {
-	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
-	   });
-   }
-	ga('set', 'anonymizeIp', true);
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 
 
 
@@ -209,8 +188,7 @@ if (!doNotTrack) {
                 <h1>Get CP Editor on your machine and have a try!</h1>
                 <p v-if="latestStableAssetForUserPlatform" class="pt-3">
                     You probably want to use
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url"
-                       v-on:click="latestStableEvent">
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
                         the latest stable version on {{ userPlatform }}
                     </a>.
                 </p>
@@ -264,7 +242,7 @@ if (!doNotTrack) {
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
                         class="btn btn-primary btn-block my-4"
-                        v-on:click="downloadEvent">Download</a>
+                    >Download</a>
                 </template>
             </div>
         </div>
@@ -319,7 +297,7 @@ if (!doNotTrack) {
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 The CP Editor team</small>
+        <small class="text-white">&copy; 2022 The CP Editor team</small>
         
         <br>
         <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>.</small>

@@ -30,27 +30,6 @@
 <meta name="twitter:description" content="專為演算法競賽設計的 IDE"/>
 
 
-<script type="application/javascript">
-var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-var doNotTrack = (dnt == "1" || dnt == "yes");
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	if (window.sessionStorage) {
-		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
-		ga('create', 'UA-96337051-5', {
-	    'storage': 'none',
-	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
-	   });
-	   ga(function(tracker) {
-	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
-	   });
-   }
-	ga('set', 'anonymizeIp', true);
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 
 
 
@@ -900,68 +879,6 @@ if (!doNotTrack) {
 </div>
 
 	
-		<style>
-  .feedback--answer {
-    display: inline-block;
-  }
-  .feedback--answer-no {
-    margin-left: 1em;
-  }
-  .feedback--response {
-    display: none;
-    margin-top: 1em;
-  }
-  .feedback--response__visible {
-    display: block;
-  }
-</style>
-<div class="d-print-none">
-<h2 class="feedback--title">Feedback</h2>
-<p class="feedback--question">Was this page helpful?</p>
-<button class="feedback--answer feedback--answer-yes">Yes</button>
-<button class="feedback--answer feedback--answer-no">No</button>
-<p class="feedback--response feedback--response-yes">
-  Glad to hear it! You can <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
-</p>
-<p class="feedback--response feedback--response-no">
-  Sorry to hear that. Please <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new">tell us how we can improve</a>.
-</p>
-</div>
-<script>
-  const yesButton = document.querySelector('.feedback--answer-yes');
-  const noButton = document.querySelector('.feedback--answer-no');
-  const yesResponse = document.querySelector('.feedback--response-yes');
-  const noResponse = document.querySelector('.feedback--response-no');
-  const disableButtons = () => {
-    yesButton.disabled = true;
-    noButton.disabled = true;
-  };
-  const sendFeedback = (value) => {
-    if (typeof ga !== 'function') return;
-    const args = {
-      command: 'send',
-      hitType: 'event',
-      category: 'Helpful',
-      action: 'click',
-      label: window.location.pathname,
-      value: value
-    };
-    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
-  };
-  yesButton.addEventListener('click', () => {
-    yesResponse.classList.add('feedback--response__visible');
-    disableButtons();
-    sendFeedback(1);
-  });
-  noButton.addEventListener('click', () => {
-    noResponse.classList.add('feedback--response__visible');
-    disableButtons();
-    sendFeedback(0);
-  });
-</script>
-
-		<br />
-	
 	
 	<div class="text-muted mt-5 pt-3 border-top">Last modified July 20, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/89a303d8f5c6d8c766b07e58bef27c463cdd9b0d">feat: add structure for zh_tw (#198) (89a303d8)</a>
 </div>
@@ -1015,7 +932,7 @@ if (!doNotTrack) {
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 The CP Editor team</small>
+        <small class="text-white">&copy; 2022 The CP Editor team</small>
         
         <br>
         <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh_tw" target="_blank">CC BY-SA 4.0</a>.</small>
