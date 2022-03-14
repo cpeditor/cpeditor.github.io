@@ -187,9 +187,8 @@
             <span class="h4 mb-0">
                 <h1>Установи и попробуй CP Editor!</h1>
                 <p v-if="latestStableAssetForUserPlatform" class="pt-3">
-                   Скорее всего вам нужна 
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url"
-                       v-on:click="latestStableEvent">
+                    Скорее всего вам нужна
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
                         последняя стабильная версия для {{ userPlatform }}
                     </a>.
                 </p>
@@ -242,8 +241,7 @@
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block my-4"
-                        v-on:click="downloadEvent">Скачать</a>
+                        class="btn btn-primary btn-block my-4">Скачать</a>
                 </template>
             </div>
         </div>
