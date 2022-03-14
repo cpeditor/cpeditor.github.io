@@ -23,8 +23,7 @@ menu:
                 <h1>立即安裝並體驗 CP Editor</h1>
                 <p v-if="latestStableAssetForUserPlatform" class="pt-3">
                     您可能想找適用於
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url"
-                       v-on:click="latestStableEvent">
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
                          {{ userPlatform }} 系統的最新穩定版
                     </a>。
                 </p>
@@ -77,8 +76,7 @@ menu:
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block my-4"
-                        v-on:click="downloadEvent">下載</a>
+                        class="btn btn-primary btn-block my-4">下載</a>
                 </template>
             </div>
         </div>
