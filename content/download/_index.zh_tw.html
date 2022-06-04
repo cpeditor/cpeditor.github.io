@@ -16,12 +16,12 @@ menu:
     }
 </style>
 
-<div id="app" v-cloak>
+<div id="app">
     <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
         <div class="container text-center td-arrow-down">
             <span class="h4 mb-0">
                 <h1>立即安裝並體驗 CP Editor</h1>
-                <p v-if="latestStableAssetForUserPlatform" class="pt-3">
+                <p v-cloak v-if="latestStableAssetForUserPlatform" class="pt-3">
                     您可能想找適用於
                     <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
                          {{ userPlatform }} 系統的最新穩定版
@@ -34,7 +34,7 @@ menu:
     <div class="container pt-5">
         <div class="row">
             <div class="col-lg-6 text-center">
-                <h2>選擇您的作業系統及想要下載的版本</h2>
+                <h2 v-cloak>選擇您的作業系統及想要下載的版本</h2>
                 <ul class="list-group pt-2">
                     <li class="list-group-item"><a href="../docs/installation">安裝說明</a></li>
                     <li class="list-group-item">
@@ -42,7 +42,7 @@ menu:
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6">
+            <div v-cloak class="col-lg-6">
                 <h2 v-if="releases.length === 0">載入中...</h2>
                 <h2 v-else-if="!selectedAsset" class="text-warning">未取得可用的檔案清單</h2>
                 <template v-else>
