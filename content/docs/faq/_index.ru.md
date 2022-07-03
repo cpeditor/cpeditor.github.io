@@ -2,29 +2,29 @@
 title: "FAQ"
 linkTitle: "FAQ"
 weight: 70
-description: Frequently asked questions by CP Editor users
+description: Вопросы, которые часто задают пользователи CP Editor
 ---
 
-### How to fetch test cases from the websites?
+### Как получить тестовые примеры с веб-сайта?
 
-You have to install [Competitive Companion](https://github.com/jmerle/competitive-companion) on your browser, and use it on the website while CP Editor is running. [Here is a youtube video](https://youtu.be/IVx1rSqYz7c) demonstrating this setup.
+Вам следует установить [Competitive Companion](https://github.com/jmerle/competitive-companion) в ваш браузер и использовать его при запущенном CP Editor. [Видео на ютуб](https://youtu.be/IVx1rSqYz7c), демонстрирующее эту настройку.
 
-### How to submit to CF inside CP Editor?
+### Как отправлять решения на проверку в CF прямо из CP Editor?
 
-You have to either parse the problem from Competitive Companion, or set the problem URL in the right-click menu of the tabs. Then you'll see the submit button.
+Вы должны либо скопировать проблему из Competitive Companion, либо задать URL-адрес проблемы в контекстном меню вкладок. Затем вы увидите кнопку отправки.
 
-### I am using it on Codeforces but the submit button is not clickable.
+### Я использую CP Editor на Codeforces, но кнопка отправки недоступна для нажатия.
 
-It's because CP Editor can't run the `cf` command. Please make sure it's in the PATH or set the path to it in the Preferences.
+Это происходит потому, что CP Editor не может выполнить команду `cf`. Пожалуйста, убедитесь, что команда указана в PATH, или укажите путь к ней в настройках.
 
-### When I click the Submit button, I get some message saying template is required?
+### Когда я нажимаю кнопку отправки, я получаю сообщение о том, что требуется шаблон.
 
-CF-Tool requires you to configure it before you use it. Please run `cf config` in the terminal to set the username & password and add a template.
+CF-Tool требует, чтобы вы настроили его перед использованием. Пожалуйста, запустите `cf config` в терминале, чтобы установить имя пользователя и пароль и добавить шаблон.
 
-### How to enable error linting in the code editor?
+### Как включить подсветку ошибок в редакторе кода?
 
-You need to install a [Language Server program](https://microsoft.github.io/language-server-protocol/implementors/servers/) and set the settings in Preferences -> Extensions -> Language Server. You can learn about more details [here](../setup/\_index.ru.md#setup-language-server).
+Вам необходимо установить [протокол языкового сервера](https://microsoft.github.io/language-server-protocol/implementors/servers/) и добавить его в Настройки -> Расширения -> Language Server. Более подробную информацию вы можете узнать [здесь](../setup/\_index.ru.md#setup-language-server).
 
-### My code gets TLE on every first execution after compilation.
+### Мой код получает TLE (превышение лимита времени) при каждом выполнении после компиляции.
 
-It's probably because your anti-virus software is scanning your program. A possible solution is to [set the output directory of the executable files](../preferences/language/\_index.ru.md#c-executable-file-path) (for example, you can set it to `D:/cpeditor-executables/${basename}`), and add that directory (`D:/cpeditor-executables` in the example) in the whitelist of your anti-virus software.
+Вероятно, это связано с тем, что ваш антивирус сканирует вашу программу. Возможным решением является [установка выходной директории для исполняемых файлов](../preferences/language/\_index.ru.md#c-executable-file-path) (например, вы можете установить его на `D:/cpeditor-executables/${имя_файла}`), и добавить эту директорию (`D:/cpeditor-executables` в примере) в белый список вашего антивируса.
