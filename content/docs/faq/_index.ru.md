@@ -7,7 +7,7 @@ description: Вопросы, которые часто задают пользо
 
 ### Как получить тестовые примеры с веб-сайта?
 
-Вам следует установить [Competitive Companion](https://github.com/jmerle/competitive-companion) в ваш браузер и использовать его при запущенном CP Editor. [Видео на ютуб](https://youtu.be/IVx1rSqYz7c), демонстрирующее эту настройку.
+Вам следует установить [Competitive Companion](https://github.com/jmerle/competitive-companion) в ваш браузер и использовать его при запущенном CP Editor. [Видео на YouTube](https://youtu.be/IVx1rSqYz7c), демонстрирующее эту настройку.
 
 ### Как отправлять решения на проверку в CF прямо из CP Editor?
 
