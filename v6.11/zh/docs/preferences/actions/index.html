@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/actions/index.xml">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="../../../../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../../../../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../../../../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../../../../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../../../../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../../../../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../../../../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../../../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../../../../favicons/android-192x192.png" sizes="192x192">
+
+<title>动作 | CP Editor</title><meta property="og:title" content="动作" />
+<meta property="og:description" content="专为算法竞赛设计的 IDE" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/zh/docs/preferences/actions/" /><meta property="og:site_name" content="CP Editor" />
+
+<meta itemprop="name" content="动作">
+<meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="动作"/>
+<meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
+
+
+
+
+
+
+
+<link rel="preload" href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" as="style">
+<link href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body class="td-section">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../../../../zh/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../../zh/about/" ><span>关于</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="../../../../zh/docs/" ><span class="active">文档</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../../zh/community/" ><span>社区</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../../zh/download/" ><span>下载</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://cpeditor.org/">alpha</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v7.0">v7.0</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.11">v6.11</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.10">v6.10</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.9">v6.9</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	简体中文
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../../docs/preferences/actions/">English</a>
+	
+	<a class="dropdown-item" href="../../../../ru/docs/preferences/actions/">Русский</a>
+	
+	<a class="dropdown-item" href="../../../../zh_tw/docs/preferences/actions/">正體中文</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; 站内搜索…"
+  aria-label="站内搜索…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../../offline-search-index.ec394923e1cb362af00bb59bbb3877c3.json"
+  data-offline-search-base-href="../../../../"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; 站内搜索…"
+  aria-label="站内搜索…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../../offline-search-index.ec394923e1cb362af00bb59bbb3877c3.json"
+  data-offline-search-base-href="../../../../"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	简体中文
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../../docs/preferences/actions/">English</a>
+	
+	<a class="dropdown-item" href="../../../../ru/docs/preferences/actions/">Русский</a>
+	
+	<a class="dropdown-item" href="../../../../zh_tw/docs/preferences/actions/">正體中文</a>
+	
+</div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">文档</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="zhdocs">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">安装</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallation">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/download-from-releases/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">在 Releases 中下载</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationdownload-from-releases">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/use-package-managers/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">使用包管理器</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationuse-package-managers">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/build-from-source/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">从源代码构建</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">使用 Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/setup/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">初始化</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">设置</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="zhdocspreferences">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/code-edit/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">代码编辑</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencescode-edit">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/language/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">语言</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferenceslanguage">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/appearance/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">外观</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesappearance">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/actions/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">动作</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="zhdocspreferencesactions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/extensions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">扩展</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesextensions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">文件路径</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesfile-path">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">热键</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferenceskey-bindings">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">高级</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesadvanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/preferences/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">通用</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocspreferencesgeneral">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">提示</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.11/content/docs/preferences/actions/_index.zh.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=%e5%8a%a8%e4%bd%9c" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> 提交项目问题</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#保存">保存</a>
+      <ul>
+        <li><a href="#更快地保存文件">更快地保存文件</a></li>
+        <li><a href="#编译时保存文件">编译时保存文件</a></li>
+        <li><a href="#执行时保存文件">执行时保存文件</a></li>
+        <li><a href="#保存文件时保存测试用例">保存文件时保存测试用例</a></li>
+      </ul>
+    </li>
+    <li><a href="#自动保存">自动保存</a>
+      <ul>
+        <li><a href="#自动保存间隔类型">自动保存间隔类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#终端中运行">终端中运行</a>
+      <ul>
+        <li><a href="#终端程序">终端程序</a></li>
+        <li><a href="#终端参数">终端参数</a></li>
+      </ul>
+    </li>
+    <li><a href="#保存会话">保存会话</a>
+      <ul>
+        <li><a href="#在启动时恢复上一次会话">在启动时恢复上一次会话</a></li>
+        <li><a href="#定期自动保存当前会话">定期自动保存当前会话</a></li>
+      </ul>
+    </li>
+    <li><a href="#关联文件和题目">关联文件和题目</a>
+      <ul>
+        <li><a href="#打开文件时加载对应题目">打开文件时加载对应题目</a></li>
+        <li><a href="#加载以前的题目时打开以前的文件">加载以前的题目时打开以前的文件</a></li>
+      </ul>
+    </li>
+    <li><a href="#测试点">测试点</a>
+      <ul>
+        <li><a href="#在空测试点上运行你的代码">在空测试点上运行你的代码</a></li>
+        <li><a href="#在输出为空的测试点上检查输出的正确性">在输出为空的测试点上检查输出的正确性</a></li>
+        <li><a href="#自动取消选中已通过的测试点">自动取消选中已通过的测试点</a></li>
+      </ul>
+    </li>
+    <li><a href="#加载外部文件修改">加载外部文件修改</a>
+      <ul>
+        <li><a href="#若没有未保存的修改自动加载外部文件修改">若没有未保存的修改，自动加载外部文件修改</a></li>
+        <li><a href="#询问是否加载外部文件修改">询问是否加载外部文件修改</a></li>
+      </ul>
+    </li>
+    <li><a href="#计时器">计时器</a>
+      <ul>
+        <li><a href="#显示计时器">显示计时器</a></li>
+        <li><a href="#切换标签页时启动暂停计时器">切换标签页时启动/暂停计时器</a></li>
+        <li><a href="#只在按钮按下时显示计时结果">只在按钮按下时显示计时结果</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../../zh/docs/">文档</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../../zh/docs/preferences/">设置</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="../../../../zh/docs/preferences/actions/">动作</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>动作</h1>
+        
+	
+	<h2 id="保存">保存</h2>
+<h3 id="更快地保存文件">更快地保存文件</h3>
+<p>使用 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://doc.qt.io/qt-5/qfile.html"   target="_blank" ><code>QFile</code></a>
+ 而非 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://doc.qt.io/qt-5/qsavefile.html"   target="_blank" ><code>QSaveFile</code></a>
+ 来保存文件。</p>
+<p>启用该选项会有可忽略不计的丢失文件风险，但会显著提高保存文件的速度。</p>
+<h3 id="编译时保存文件">编译时保存文件</h3>
+<p>在编译前保存你的代码。</p>
+<h3 id="执行时保存文件">执行时保存文件</h3>
+<p>在运行前保存你的代码。</p>
+<h3 id="保存文件时保存测试用例">保存文件时保存测试用例</h3>
+<p>在保存代码时将测试用例一并保存。</p>
+<p>你可以在 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../../zh/docs/preferences/file-path/#%e6%b5%8b%e8%af%95%e7%82%b9"  >文件路径/测试点</a>
+ 中设置测试用例保存的位置。</p>
+<h2 id="自动保存">自动保存</h2>
+<h3 id="自动保存间隔类型">自动保存间隔类型</h3>
+<p>自动保存机制以如下的方式运作：有一个计时器，每当它被“重置”，它就会“运行” <em>自动保存时间间隔</em> 毫秒，当计时器“运行”了 <em>自动保存时间间隔</em> 毫秒后，当前代码就会被自动保存。</p>
+<h4 id="after-the-last-modification">After the last modification</h4>
+<p>计时器在每次修改代码后被重置。即，如果你在 <em>自动保存时间间隔</em> 毫秒内没有修改你的代码，则计时器完成了倒计时，同时你的代码会被自动保存。</p>
+<p>该模式适合使用较短的 <em>自动保存时间间隔</em>，以使代码能在你两次输入的间歇间被自动保存。如果设置的间隔时间过长，则难以让代码被自动保存。</p>
+<h4 id="after-the-first-modification">After the first modification</h4>
+<p>在计时器未运行时，若你修改了代码，则计时器将被重置。即，你的代码将在第一次修改后 <em>自动保存时间间隔</em> 毫秒被自动保存。</p>
+<p>该模式适合使用较长的 <em>自动保存时间间隔</em>。如果设置的时间过短，代码会在你输入的时候被自动保存，这可能会影响你的输入体验。</p>
+<h4 id="without-modification">Without modification</h4>
+<p>每当计时器完成倒计时，计时器会被重置。即，无论你是否修改了你的代码，你的代码都会以恒定的 <em>自动保存时间间隔</em> 被自动保存。</p>
+<p>该模式适合保存测试用例。在其他模式下，如果你不修改你的代码，测试用例不会被自动保存。</p>
+<h2 id="终端中运行">终端中运行</h2>
+<h3 id="终端程序">终端程序</h3>
+<h3 id="终端参数">终端参数</h3>
+<p>本设置仅在 Linux 系统中可用。</p>
+<p>终端程序是你想要使用的终端模拟器的名称或路径。</p>
+<p>终端参数是终端模拟器中用于运行给定命令的参数。即，命令 <code>&lt;终端程序&gt; &lt;终端参数&gt; &lt;命令&gt;</code> 可在指定的终端模拟器中运行 <code>&lt;命令&gt;</code>。</p>
+<p>在大多数终端模拟器，如 <code>konsole</code>, <code>xterm</code> 和 <code>xfce-terminal</code>，终端参数为 <code>-e</code>，在 <code>gnome-terminal</code> 中，该参数为 <code>--</code>。</p>
+<p>你可以阅读你使用的终端模拟器的手册，以获取关于终端参数的相关信息。</p>
+<h2 id="保存会话">保存会话</h2>
+<h3 id="在启动时恢复上一次会话">在启动时恢复上一次会话</h3>
+<p>在退出 CP Editor 时保存当前状态，并在启动时恢复上一次会话。</p>
+<p>在终端下，你可以使用 <code>--no-hot-exit</code> 命令以暂时禁用该选项。如果上一次会话过大导致 CP Editor 卡死，该命令将会解决这一问题。</p>
+<h3 id="定期自动保存当前会话">定期自动保存当前会话</h3>
+<p>每隔一段时间就保存当前会话，而不是仅在退出时保存会话。</p>
+<p>启用该选项会避免因为非正常退出（如断电，强行终止 CP Editor 等）导致代码丢失的情况发生。然而，如果代码和测试用例过大，每次自动保存时 CP Editor 会卡顿较长时间。</p>
+<h2 id="关联文件和题目">关联文件和题目</h2>
+<h3 id="打开文件时加载对应题目">打开文件时加载对应题目</h3>
+<p>如果一个文件已经设置了题目链接，当该文件被再次打开时，将会使用原来的题目链接。</p>
+<h3 id="加载以前的题目时打开以前的文件">加载以前的题目时打开以前的文件</h3>
+<p>如果一个文件已经设置了题目链接，当使用 Competitive Companion 解析同样的题目时，将会直接打开以前的文件。</p>
+<h2 id="测试点">测试点</h2>
+<h3 id="在空测试点上运行你的代码">在空测试点上运行你的代码</h3>
+<p>在所有未被隐藏的测试点上运行你的代码，即使输入为空。</p>
+<h3 id="在输出为空的测试点上检查输出的正确性">在输出为空的测试点上检查输出的正确性</h3>
+<p>即使程序输出或答案为空，也检查该测试点输出的正确性。</p>
+<h3 id="自动取消选中已通过的测试点">自动取消选中已通过的测试点</h3>
+<p>在运行代码后，自动将通过了的测试点取消选中。当测试点未被选中时，它们会被折叠，并且在你运行代码时不会在这些测试点上进行测试。</p>
+<h2 id="加载外部文件修改">加载外部文件修改</h2>
+<h3 id="若没有未保存的修改自动加载外部文件修改">若没有未保存的修改，自动加载外部文件修改</h3>
+<p>若硬盘上的文件和 CP Editor 中的文件相同，该文件在 CP Editor 外部被修改，无需确认，自动加载外部文件修改。</p>
+<h3 id="询问是否加载外部文件修改">询问是否加载外部文件修改</h3>
+<p>若文件在 CP Editor 外部被修改，询问是否加载这些修改。</p>
+<p>如果该选项被禁用，外部文件修改不会被加载。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<a href="#%e8%8b%a5%e6%b2%a1%e6%9c%89%e6%9c%aa%e4%bf%9d%e5%ad%98%e7%9a%84%e4%bf%ae%e6%94%b9%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >若没有未保存的修改，自动加载外部文件修改</a>
+ 会覆盖该选项的设置。即，若选项 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#%e8%8b%a5%e6%b2%a1%e6%9c%89%e6%9c%aa%e4%bf%9d%e5%ad%98%e7%9a%84%e4%bf%ae%e6%94%b9%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >若没有未保存的修改，自动加载外部文件修改</a>
+ 被启用，无论 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#%e8%af%a2%e9%97%ae%e6%98%af%e5%90%a6%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >询问是否加载外部文件修改</a>
+ 是否启用，外部文件修改将会在无确认的情况下被自动加载。若选项 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#%e8%8b%a5%e6%b2%a1%e6%9c%89%e6%9c%aa%e4%bf%9d%e5%ad%98%e7%9a%84%e4%bf%ae%e6%94%b9%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >若没有未保存的修改，自动加载外部文件修改</a>
+ 被禁用，且 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#%e8%af%a2%e9%97%ae%e6%98%af%e5%90%a6%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9"  >询问是否加载外部文件修改</a>
+ 被启用，CP Editor 将会询问用户是否加载这些修改。而在两个选项都被禁用的情况下，外部文件修改将不会被加载。</p>
+<h2 id="计时器">计时器</h2>
+<h3 id="显示计时器">显示计时器</h3>
+<p>在 UI 中显示计时器。你可以用它来记录做题用时。</p>
+<h3 id="切换标签页时启动暂停计时器">切换标签页时启动/暂停计时器</h3>
+<p>切换标签页后，暂停原来那个标签页的计时器并启动当前标签页的计时器。</p>
+<p>启用了这个设置，如果你在做一道题时切换到正确的标签页，你就不需要手动启动/停止计时器了。</p>
+<h3 id="只在按钮按下时显示计时结果">只在按钮按下时显示计时结果</h3>
+<p>隐藏计时结果，只在“显示”按钮按下时显示。</p>
+<p>这或许可以避免计时结果更新使人分心。</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 November 28, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/e65f7323bd718c5eecbbab4bb349ccc41c0e0340">feat(preferences/actions): add stopwatch (#241) (e65f7323)</a>
+</div>
+</div>
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor/discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2022 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="../../../../zh/about/">关于 CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

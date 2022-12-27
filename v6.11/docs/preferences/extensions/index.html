@@ -1,0 +1,1317 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../../docs/preferences/extensions/index.xml">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="../../../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../../../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../../../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../../../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../../../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../../../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../../../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../../../favicons/android-192x192.png" sizes="192x192">
+
+<title>Extensions | CP Editor</title><meta property="og:title" content="Extensions" />
+<meta property="og:description" content="The IDE for competitive programming" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/preferences/extensions/" /><meta property="og:site_name" content="CP Editor" />
+
+<meta itemprop="name" content="Extensions">
+<meta itemprop="description" content="The IDE for competitive programming"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Extensions"/>
+<meta name="twitter:description" content="The IDE for competitive programming"/>
+
+
+
+
+
+
+
+<link rel="preload" href="../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" as="style">
+<link href="../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body class="td-section">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../../../">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="../../../docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../download/" ><span>Download</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://cpeditor.org/">alpha</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v7.0">v7.0</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.11">v6.11</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.10">v6.10</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.9">v6.9</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../ru/docs/preferences/extensions/">Русский</a>
+	
+	<a class="dropdown-item" href="../../../zh/docs/preferences/extensions/">简体中文</a>
+	
+	<a class="dropdown-item" href="../../../zh_tw/docs/preferences/extensions/">正體中文</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../offline-search-index.ec394923e1cb362af00bb59bbb3877c3.json"
+  data-offline-search-base-href="../../../"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../offline-search-index.ec394923e1cb362af00bb59bbb3877c3.json"
+  data-offline-search-base-href="../../../"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../ru/docs/preferences/extensions/">Русский</a>
+	
+	<a class="dropdown-item" href="../../../zh/docs/preferences/extensions/">简体中文</a>
+	
+	<a class="dropdown-item" href="../../../zh_tw/docs/preferences/extensions/">正體中文</a>
+	
+</div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Installation</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallation">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/download-from-releases/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Download from Releases</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationdownload-from-releases">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/use-package-managers/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use package managers</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationuse-package-managers">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/build-from-source/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from source</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/setup/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Setup</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Preferences</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docspreferences">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/code-edit/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Code Edit</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencescode-edit">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/language/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Language</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferenceslanguage">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/appearance/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Appearance</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesappearance">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/actions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Actions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesactions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/extensions/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Extensions</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docspreferencesextensions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">File Path</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesfile-path">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Key Bindings</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferenceskey-bindings">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesadvanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">General</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesgeneral">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.11/content/docs/preferences/extensions/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Extensions" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#code-formatting">Code Formatting</a>
+      <ul>
+        <li><a href="#clang-format">Clang Format</a></li>
+        <li><a href="#yapf">YAPF</a></li>
+      </ul>
+    </li>
+    <li><a href="#language-server">Language Server</a>
+      <ul>
+        <li><a href="#use-linting-with-language-server">Use Linting with Language Server</a></li>
+        <li><a href="#delay-in-linting">Delay in Linting</a></li>
+        <li><a href="#path-to-lsp-executable">Path to LSP executable</a></li>
+        <li><a href="#arguments-for-language-server">Arguments for Language Server</a></li>
+      </ul>
+    </li>
+    <li><a href="#competitive-companion">Competitive Companion</a>
+      <ul>
+        <li><a href="#open-new-tabs">Open New Tabs</a></li>
+        <li><a href="#connection-port">Connection Port</a></li>
+        <li><a href="#use-the-time-limit-from-competitive-companion">Use the time limit from Competitive Companion</a></li>
+        <li><a href="#head-comments">Head Comments</a></li>
+      </ul>
+    </li>
+    <li><a href="#cf-tool">CF Tool</a>
+      <ul>
+        <li><a href="#path">Path</a></li>
+        <li><a href="#show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts</a></li>
+      </ul>
+    </li>
+    <li><a href="#wakatime">WakaTime</a>
+      <ul>
+        <li><a href="#enable-wakatime">Enable WakaTime</a></li>
+        <li><a href="#path-1">Path</a></li>
+        <li><a href="#api-key">Api Key</a></li>
+        <li><a href="#use-proxy">Use Proxy</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../docs/preferences/">Preferences</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="../../../docs/preferences/extensions/">Extensions</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>Extensions</h1>
+        
+	
+	<h2 id="code-formatting">Code Formatting</h2>
+<h3 id="clang-format">Clang Format</h3>
+<p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&gt;Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.</p>
+<p><strong>See also</strong> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/setup/#setup-clang-format"  >Setup Clang Format</a>
+.</p>
+<h4 id="program">Program</h4>
+<p>The path to the <code>clang-format</code> executable, or simply <code>clang-format</code> if it&rsquo;s in the <code>PATH</code> environment variable.</p>
+<h4 id="arguments">Arguments</h4>
+<p>The arguments passed to <code>clang-format</code>. It should NOT contain <code>-i</code> (the in-place modification option).</p>
+<h4 id="style">Style</h4>
+<p>The Clang Format style. The content here is the same as the content of a <code>.clang-format</code> file.</p>
+<p>You can read 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html"   target="_blank" >Clang-Format Style Options documentation</a>
+ or search for other materials to learn how to write the styles.</p>
+<h3 id="yapf">YAPF</h3>
+<p>YAPF is used to format the Python codes. You can click Actions-&gt;Format Code or press the shortcut <kbd>Ctrl+Shift+I</kbd> to format the codes. If you have selected a part of the code, only these lines will be formatted.</p>
+<p><strong>See also</strong> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/setup/#setup-yapf"  >Setup YAPF</a>
+.</p>
+<h4 id="program-1">Program</h4>
+<p>The program of YAPF. It could be one of:</p>
+<ul>
+<li><code>yapf</code>: You should be able to run <code>yapf</code> in the command line. The arguments can be empty.</li>
+<li>A Python interpreter, i.e. <code>python</code>, <code>python2</code>, etc. or the path to an interpreter. The arguments should be <code>-m yapf</code>.</li>
+</ul>
+<p>Note that 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/google/yapf#python-versions"   target="_blank" >you need to use Python 2 to format Python 2, use Python 3 to format Python 3</a>
+. So you may need to choose the correct Python interpreter.</p>
+<h4 id="arguments-1">Arguments</h4>
+<p>The arguments passed to the YAPF program. This should be <code>-m yapf</code> if the program is a Python interpreter. It should NOT contain <code>-i</code> (the in-place modification option).</p>
+<h4 id="style-1">Style</h4>
+<p>The YAPF Format style. The content here is the same as the content of a <code>.style.yapf</code> file. You can check all possible configurations by running <code>yapf --style-help</code>, read the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/google/yapf#formatting-style"   target="_blank" >documentation</a>
+ or search for other materials to learn how to write the styles.</p>
+<h2 id="language-server">Language Server</h2>
+<p><strong>See also</strong> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/setup/#setup-language-server"  >Setup Language Server</a>
+.</p>
+<h3 id="use-linting-with-language-server">Use Linting with Language Server</h3>
+<p>Use language server to lint errors, warnings, hints, etc.</p>
+<p>You can hover over the squiggles to see the tooltips for the explanation of the errors/warnings.</p>
+<h3 id="delay-in-linting">Delay in Linting</h3>
+<p>Update linting if you haven&rsquo;t been typing for <em>delay</em> milliseconds.</p>
+<h3 id="path-to-lsp-executable">Path to LSP executable</h3>
+<p>The path to the language server program, or the name if it&rsquo;s in the <code>PATH</code> environment variable.</p>
+<h3 id="arguments-for-language-server">Arguments for Language Server</h3>
+<p>Additional arguments for the language server program. See the documentation of the language server program you are using for more information.</p>
+<p>For example, if you are using <code>pyls</code> for Python, you probably want to use <code>python</code> as the language server program, and use <code>-m pyls</code> as the arguments.</p>
+<h2 id="competitive-companion">Competitive Companion</h2>
+<p><strong>See also</strong> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/setup/#setup-competitive-companion"  >Setup Competitive Companion</a>
+.</p>
+<h3 id="open-new-tabs">Open New Tabs</h3>
+<p>Open a new tab when a problem is parsed.</p>
+<p>If this is disabled, when parsing a problem, the test cases in the current tab will be replaced by the new test cases.</p>
+<h3 id="connection-port">Connection Port</h3>
+<p>Usually, you don&rsquo;t have to modify this setting. The default port <code>10045</code> is supported by Competitive Companion, so if you are using the default port, you don&rsquo;t have to add custom ports in Competitive Companion. However, in case of port conflicts, etc., you can change the port and add custom ports in Competitive Companion.</p>
+<h3 id="use-the-time-limit-from-competitive-companion">Use the time limit from Competitive Companion</h3>
+<p>Use the time limit parsed by Competitive Companion as the time limit of the corresponding tab.</p>
+<h3 id="head-comments">Head Comments</h3>
+<p>The head comments are added at the head of the code when parsing a problem.</p>
+<h4 id="content-of-the-head-comments">Content of the head comments</h4>
+<p>The content of the head comments. You can use the following place holders:</p>
+<ul>
+<li><code>${time}</code>: The time when the problem was parsed. The time format can be set in 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#time-format-for-the-head-comments"  >Time format for the head comments</a>
+.</li>
+<li><code>${json.X.Y}</code>: An attribute of the data provided by Competitive Companion. You can read more about the attributes in 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/jmerle/competitive-companion#explanation"   target="_blank" >the documentation of Competitive Companion</a>
+. For example, <code>${json.name}</code> is the name of the problem.</li>
+</ul>
+<h4 id="time-format-for-the-head-comments">Time format for the head comments</h4>
+<p>The format of the <code>${time}</code> place holder in the head comments. You can read the Qt documentation for available expressions:</p>
+<ul>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://doc.qt.io/qt-5/qdate.html#toString-3"   target="_blank" >Date Format</a>
+</li>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://doc.qt.io/qt-5/qtime.html#toString"   target="_blank" >Time Format</a>
+</li>
+</ul>
+<h2 id="cf-tool">CF Tool</h2>
+<p>You can use 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/xalanq/cf-tool/"   target="_blank" >CF Tool</a>
+ to submit your solutions to 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://codeforces.com"   target="_blank" >Codeforces</a>
+.</p>
+<p>To submit a solution, you have to either parse a problem by 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#competitive-companion"  >Competitive Companion</a>
+ from Codeforces or manually set the problem URL of a tab in the context menu of it.</p>
+<p><strong>See also</strong> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/setup/#setup-cf-tool"  >Setup CF Tool</a>
+.</p>
+<h3 id="path">Path</h3>
+<p>The path to the <code>cf</code> executable file, or simply <code>cf</code> if it&rsquo;s in the <code>PATH</code> environment variable.</p>
+<h3 id="show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts</h3>
+<p>Show a toast message when the verdict of a submission is determined.</p>
+<p>A toast message is a &ldquo;system notification&rdquo;, which is visible outside of CP Editor.</p>
+<p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.</p>
+<h2 id="wakatime">WakaTime</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wakatime.com/"   target="_blank" >WakaTime</a>
+ can help you to track your time usage.</p>
+<p><strong>See also</strong> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/setup/#setup-wakatime"  >Setup WakaTime</a>
+.</p>
+<h3 id="enable-wakatime">Enable WakaTime</h3>
+<p>Use WakaTime to track your time usage.</p>
+<h3 id="path-1">Path</h3>
+<p>The path to the <code>wakatime</code> executable file, or simply <code>wakatime</code> if it&rsquo;s in the <code>PATH</code> environment variable.</p>
+<h3 id="api-key">Api Key</h3>
+<p>Can be found at 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wakatime.com/settings/account"   target="_blank" >WakaTime Settings</a>
+.</p>
+<p>It can be empty if you have the global wakatime config file <code>~/.wakatime.cfg</code>.</p>
+<h3 id="use-proxy">Use Proxy</h3>
+<p>Use 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/advanced/#network-proxy"  >Network Proxy</a>
+ to send data to WakaTime.</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 19, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/b63c72f7f71290c4573b6619d72cf7a81c6ab9c3">feat: add wakatime extension (#204) (b63c72f7)</a>
+</div>
+</div>
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor/discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2022 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="../../../about/">About CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
