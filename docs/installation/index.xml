@@ -36,17 +36,22 @@ to install
 &lt;p>To install the latest stable version: &lt;code>sudo snap install cpeditor --classic&lt;/code>&lt;/p>
 &lt;p>To install the latest alpha version: &lt;code>sudo snap install cpeditor --classic --channel=latest/edge&lt;/code>&lt;/p>
 &lt;h3 id="aur">AUR&lt;/h3>
-&lt;p>There are two
-&lt;a href="https://aur.archlinux.org/" target="_blank" >AUR&lt;/a>
-packages for CP Editor:
+&lt;p>If you are using
+&lt;a href="https://wiki.archlinux.org/title/Arch_Linux" target="_blank" >Arch Linux&lt;/a>
+, it&amp;rsquo;s recommended to install CP Editor via
+&lt;a href="https://wiki.archlinux.org/title/Arch_User_Repository" target="_blank" >AUR&lt;/a>
+. AUR usually also works on Arch-based distros like Manjaro, but it sometimes fails due to reasons like different main repositories.&lt;/p>
+&lt;p>There are two AUR packages for CP Editor:
 &lt;a href="https://aur.archlinux.org/packages/cpeditor/" target="_blank" >cpeditor&lt;/a>
 for the stable version and
 &lt;a href="https://aur.archlinux.org/packages/cpeditor-git/" target="_blank" >cpeditor-git&lt;/a>
 for the alpha version.&lt;/p>
-&lt;p>If you have &lt;code>yay&lt;/code> installed, you can run &lt;code>yay -S cpeditor&lt;/code> to install. If you don&amp;rsquo;t have &lt;code>yay&lt;/code> and don&amp;rsquo;t know how to install from AUR, you can read
-&lt;a href="https://github.com/Jguer/yay#installation" target="_blank" >how to install yay&lt;/a>
+&lt;p>If you are unfamiliar with AUR, it&amp;rsquo;s recommended to install
+&lt;a href="https://github.com/Morganamilo/paru" target="_blank" >paru&lt;/a>
+and use &lt;code>paru -S cpeditor&lt;/code> to install. You can also read the wiki on
+&lt;a href="https://wiki.archlinux.org/title/Arch_User_Repository#Installing_and_upgrading_packages" target="_blank" >how to manually install an AUR package&lt;/a>
 or
-&lt;a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages" target="_blank" >the Arch Wiki&lt;/a>
+&lt;a href="https://wiki.archlinux.org/title/AUR_helpers" target="_blank" >AUR helpers&lt;/a>
 .&lt;/p>
 &lt;p>After the installation, you&amp;rsquo;ll be able to run CP Editor by &lt;code>cpeditor&lt;/code> in your terminal or launch from the start menu like other apps.&lt;/p></description></item><item><title>Docs: Build from source</title><link>/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/installation/build-from-source/</guid><description>
 &lt;ol>
