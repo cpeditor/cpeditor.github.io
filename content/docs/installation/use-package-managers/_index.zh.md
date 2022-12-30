@@ -28,8 +28,10 @@ description: 你可以使用你的发行版的包管理器或其他包管理器�
 
 ### AUR
 
-CP Editor 在 [AUR](https://aur.archlinux.org/) 上有两个包：稳定版 [cpeditor](https://aur.archlinux.org/packages/cpeditor/) 和 alpha 版 [cpeditor-git](https://aur.archlinux.org/packages/cpeditor-git/)。
+如果你使用的是 [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux_\(简体中文\))，你可以从 [AUR](https://wiki.archlinux.org/title/Arch_User_Repository_\(简体中文\)) 安装 CP Editor。AUR 通常情况下也在 Manjaro 等基于 Arch 的发行版可用，但偶尔会因为主仓库不同等原因而出错。
 
-如果你安装了 `yay`，你可以运行 `yay -S cpeditor` 来安装。如果你没有安装 `yay` 并且你不知道如何从 AUR 安装，你可以阅读 [如何安装 yay](https://github.com/Jguer/yay#installation) 或者 [Arch Wiki](https://wiki.archlinux.org/index.php/Arch_User_Repository_\(简体中文\)#安装软件包)，或者从 [archlinuxcn](https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/) 安装 `yay`。
+CP Editor 在 AUR 上有两个包：稳定版 [cpeditor](https://aur.archlinux.org/packages/cpeditor/) 和 alpha 版 [cpeditor-git](https://aur.archlinux.org/packages/cpeditor-git/)。
+
+如果你对 AUR 不熟悉，你可以安装 [paru](https://github.com/Morganamilo/paru) 并使用 `paru -S cpeditor` 来安装。你也可以阅读关于 [手动安装 AUR 包](https://wiki.archlinux.org/title/Arch_User_Repository_\(简体中文\)#安装软件包) 或者 [AUR 工具](https://wiki.archlinux.org/title/AUR_helpers_\(简体中文\)) 的 wiki。
 
 安装完成后，你就可以在终端中运行 `cpeditor` 或在开始菜单中运行 CP Editor 了。
