@@ -33,7 +33,7 @@ description: 这是安装 CP Editor 最简单的方式，推荐大多数用户�
 如果你使用的是 Debian 系的 Linux 发行版（Ubuntu，Linux Mint 等），可以下载 `.deb` 包，并在终端中执行如下命令：
 
 ```sh
-sudo apt install <path to .deb package>
+sudo dpkg -i <path to .deb package>
 ```
 
 接下来输入密码，确认安装。你也可以使用 `Gdebi` 等图形化工具安装 `deb` 包，要求系统版本不低于 Debian 10 Buster，Ubuntu 18.04 Bionic Beaver，Linux Mint 19 Tara 或其他基于前述发行版的系统的相应版本。
