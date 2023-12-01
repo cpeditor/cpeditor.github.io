@@ -27,6 +27,10 @@ The syntax highlighting theme for the code editor.
 
 The opacity of the main window.
 
+### Message Color
+
+The text color of the displayed warning messages and error messages.
+
 ### Test Case Maximum Height
 
 The maximum height of a test case before the scrollbar occurs.
