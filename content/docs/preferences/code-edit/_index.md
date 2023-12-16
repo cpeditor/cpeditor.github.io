@@ -52,7 +52,7 @@ If enabled, code editor will emulate vim behaviour. In vim emulation, Control Ke
 
 ### Vim configuration
 
-The configuration to use in vim mode. The list of all supported vim commands are listed [here](../general/\_index.md#vim-commands)
+The configuration to use in vim mode. The list of all supported vim commands are listed [here](#vim-commands)
 
 ### Vim Commands
 

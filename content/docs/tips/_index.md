@@ -72,7 +72,7 @@ You can set a hotkey for switching view modes in [Preferences](../preferences/ke
 
 ## Vim Emulation
 
-You can enable vim emulation in code editor. Most [basic vim commands](../preferences/code-edit/\_index.md#vim-commands) and some [custom vim commands](../preferences/code-edit/\_index.md#custom-vim-commands) to perform various actions are supported. Many code editor settings like Tab width, Indentation, Current Line Highlight etc are disabled when using vim mode, you have to customize them from [Vim Configuration](../preferences/code-editing/\_index.md#vim-configuration).
+You can enable vim emulation in code editor. Most [basic vim commands](../preferences/code-edit/\_index.md#vim-commands) and some [custom vim commands](../preferences/code-edit/\_index.md#custom-vim-commands) to perform various actions are supported. Many code editor settings like Tab width, Indentation, Current Line Highlight etc are disabled when using vim mode, you have to customize them from [Vim Configuration](../preferences/code-edit/\_index.md#vim-configuration).
 
 You can switch to next or previous tab using `tabn` and `tabp` respectively.
 
