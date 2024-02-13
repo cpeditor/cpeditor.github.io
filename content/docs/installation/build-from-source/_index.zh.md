@@ -23,16 +23,19 @@ description: 通过这种方式，你可以使用最新的还未发布的特性�
 
 3.  如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：`CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`。例如，在 macOS 上，你可以运行 `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.15.2"`。
 
-4.  安装 KDE (kf5) Extra CMake Modules 以及 Syntax Highlighting.
+4.  安装 KDE (kf5) Extra CMake Modules。
 
-    -   在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装它们。例如，在 Arch Linux 上可以使用 `sudo pacman -S extra-cmake-modules syntax-highlighting5`，在 macOS 上可以使用 [Homebrew KDE](https://github.com/KDE/homebrew-kde) 然后 `brew install extra-cmake-modules kde-mac/kde/kf5-syntax-highlighting`。
+    -   在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装它们。例如，在 Arch Linux 上可以使用 `sudo pacman -S syntax-highlighting5`，在 macOS 上可以使用 [Homebrew KDE](https://github.com/KDE/homebrew-kde) 然后 `brew install kde-mac/kde/kf5-syntax-highlighting`。
 
-    -   否则，你需要使用 CMake 构建并安装它们：
+    -   否则，你需要使用 CMake 先构建并安装 Extra CMake Modules 然后再是 KSH：
 
         ```sh
-        cd third_party/extra-cmake-modules # cd third_party/syntax-highlighting
+        cd third_party/extra-cmake-modules
         cmake -B build -S . -DBUILD_HTML_DOCS=OFF -DBUILD_MAN_DOCS=OFF -DBUILD_QTHELP_DOCS=OFF -DBUILD_TESTING=OFF
         cmake --build build --config Release --target install # 可能需要 sudo
+        cd ../syntax-highlighting
+        cmake -B build -S . -DBUILD_HTML_DOCS=OFF -DBUILD_MAN_DOCS=OFF -DBUILD_QTHELP_DOCS=OFF -DBUILD_TESTING=OFF
+        cmake --build build --config Release --target install
         ```
 
 ### 构建
