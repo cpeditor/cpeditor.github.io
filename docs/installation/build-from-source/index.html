@@ -161,7 +161,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.fac04f90db846d764c8eb5b048bc7c09.json"
+  data-offline-search-index-json-src="../../../offline-search-index.1a71f9c0dc59adf77a3d85383f77d0ca.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -193,7 +193,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.fac04f90db846d764c8eb5b048bc7c09.json"
+  data-offline-search-index-json-src="../../../offline-search-index.1a71f9c0dc59adf77a3d85383f77d0ca.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -779,10 +779,14 @@
 	<h1>Build from source</h1>
         <div class="lead">In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps but is the only choice if your OS is not officially supported.</div>
 	
-	<ol>
+	<h3 id="preparation">Preparation</h3>
+<ol>
 <li>
 <p>Clone this repo and submodules:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+<span style="color:#8f5902;font-style:italic"># or alternatively in two separate commands</span>
+<span style="color:#8f5902;font-style:italic"># git clone https://github.com/cpeditor/cpeditor.git</span>
+<span style="color:#8f5902;font-style:italic"># git submodule update --init --recursive</span>
 <span style="color:#204a87">cd</span> cpeditor
 </code></pre></div></li>
 <li>
@@ -799,7 +803,7 @@
 
 
 <a href="https://www.qt.io/download"   target="_blank" >Qt</a>
- (5.15 or higher), 
+ (5.15), 
 
 
 
@@ -827,7 +831,7 @@
 <a href="https://www.python.org/downloads/"   target="_blank" >Python3</a>
 .</p>
 <ul>
-<li>On some Linux distributions and macOS, you can install from your package manager. For example, <code>sudo pacman -S qt5</code> on Arch Linux, <code>brew install qt5</code> on macOS.</li>
+<li>On some Linux distributions and macOS, you can install from your package manager. For example, <code>sudo pacman -S qt5-base</code> on Arch Linux, <code>brew install qt@5</code> on macOS.</li>
 <li>You can also use 
 
 
@@ -845,31 +849,55 @@
 </ul>
 </li>
 <li>
-<p>If CMake can&rsquo;t find the Qt installation path, you should set the environment variable: <code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>. For example, on macOS, you can run something like <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.15.1&quot;</code>.</p>
+<p>If CMake can&rsquo;t find the Qt installation path, you should set the environment variable: <code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>. For example, on macOS, you can run something like <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.15.2&quot;</code>.</p>
 </li>
 <li>
-<p>Run the following commands:</p>
+<p>Install KDE (kf5) Syntax Highlighting.</p>
 <ul>
 <li>
-<p>Linux/macOS:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir build
-<span style="color:#204a87">cd</span> build
-cmake .. -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
-cmake --build .
-</code></pre></div></li>
+<p>On some Linux distributions and macOS, you can install from your package manager. For example, <code>sudo pacman -S syntax-highlighting5</code> on Arch Linux, 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/KDE/homebrew-kde"   target="_blank" >Homebrew KDE</a>
+ and then <code>brew install kde-mac/kde/kf5-syntax-highlighting</code> on macOS.</p>
+</li>
 <li>
-<p>Windows:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat"> <span style="color:#204a87;font-weight:bold">mkdir</span> build
- <span style="color:#204a87;font-weight:bold">cd</span> build
- cmake ..
- cmake --build . --config Release
+<p>Otherwise, you can use CMake to build and install Extra CMake Modules first and then KSH:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#204a87">cd</span> third_party/extra-cmake-modules
+cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
+cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># may require sudo</span>
+<span style="color:#204a87">cd</span> ../syntax-highlighting
+cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
+cmake --build build --config Release --target install
 </code></pre></div></li>
 </ul>
 </li>
 </ol>
+<h3 id="build">Build</h3>
+<ul>
+<li>
+<p>Linux/macOS:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cmake -S . -B build -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
+cmake --build build
+</code></pre></div></li>
+<li>
+<p>Windows:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat">cmake -S . -B build
+cmake --build build --config Release
+</code></pre></div></li>
+</ul>
 <p>On Linux, you will get <code>build/cpeditor</code>.</p>
 <p>On macOS, you will get <code>build/cpeditor.app</code>.</p>
-<p>On Windows, you will get <code>build\cpeditor.exe</code>, or <code>build\Release\cpeditor.exe</code>. If DLLs are missing, you can add <code>%QtPath%\%QtVersion%\%Compiler%\bin</code> (for example, <code>D:\Qt\5.15.1\msvc2019_64\bin</code>) to the PATH environmental variable.</p>
+<p>On Windows, you will get <code>build\cpeditor.exe</code>, or <code>build\Release\cpeditor.exe</code>. If DLLs are missing, you can add <code>%QtPath%\%QtVersion%\%Compiler%\bin</code> (for example, <code>D:\Qt\5.15.2\msvc2019_64\bin</code>) to the PATH environmental variable.</p>
 
         <div class="section-index">
     
@@ -922,7 +950,7 @@ cmake --build .
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 31, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/09659f70c313f250c3309476a525cf6366ecc3d5">fix: fix grammar errors (#134) (09659f70)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified February 13, 2024: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/4577cad10327f2100856f4294bd669f726e461f3">feat(installation/build-from-source): add ECM and KSH, update commands (#333) (4577cad1)</a>
 </div>
 </div>
 

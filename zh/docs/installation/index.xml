@@ -59,53 +59,70 @@
 &lt;a href="https://wiki.archlinux.org/title/AUR_helpers_%28%e7%ae%80%e4%bd%93%e4%b8%ad%e6%96%87%29" target="_blank" >AUR 工具&lt;/a>
 的 wiki。&lt;/p>
 &lt;p>安装完成后，你就可以在终端中运行 &lt;code>cpeditor&lt;/code> 或在开始菜单中运行 CP Editor 了。&lt;/p></description></item><item><title>Docs: 从源代码构建</title><link>/zh/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-source/</guid><description>
+&lt;h3 id="准备工作">准备工作&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>克隆源代码仓库以及子组件：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+&lt;span style="color:#8f5902;font-style:italic"># 或者分成两条命令&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic"># git clone https://github.com/cpeditor/cpeditor.git&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic"># git submodule update --init --recursive&lt;/span>
 &lt;span style="color:#204a87">cd&lt;/span> cpeditor
 &lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>安装
 &lt;a href="https://www.qt.io/download" target="_blank" >Qt&lt;/a>
-（5.15 或更高版本）,
+（5.15）,
 &lt;a href="https://cmake.org/download/" target="_blank" >CMake&lt;/a>
 （3.12 或更高版本）以及
 &lt;a href="https://www.python.org/downloads/" target="_blank" >Python3&lt;/a>
 。&lt;/p>
 &lt;ul>
-&lt;li>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 &lt;code>sudo pacman -S qt5-base&lt;/code>，在 macOS 上可以使用 &lt;code>brew install qt5&lt;/code>。&lt;/li>
+&lt;li>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 &lt;code>sudo pacman -S qt5-base&lt;/code>，在 macOS 上可以使用 &lt;code>brew install qt@5&lt;/code>。&lt;/li>
 &lt;li>你还可以使用
 &lt;a href="https://github.com/miurahr/aqtinstall" target="_blank" >aqtinstall&lt;/a>
 来下载并安装。&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：&lt;code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake&lt;/code>。例如，在 macOS 上，你可以运行 &lt;code>export CMAKE_PREFIX_PATH=&amp;quot;/usr/local/Cellar/qt/5.15.1&amp;quot;&lt;/code>。&lt;/p>
+&lt;p>如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：&lt;code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake&lt;/code>。例如，在 macOS 上，你可以运行 &lt;code>export CMAKE_PREFIX_PATH=&amp;quot;/usr/local/Cellar/qt/5.15.2&amp;quot;&lt;/code>。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>执行如下命令完成构建过程。&lt;/p>
+&lt;p>安装 KDE (kf5) Extra CMake Modules。&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Linux/macOS:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">mkdir build
-&lt;span style="color:#204a87">cd&lt;/span> build
-cmake .. -DCMAKE_BUILD_TYPE&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>Release
-cmake --build .
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;p>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装它们。例如，在 Arch Linux 上可以使用 &lt;code>sudo pacman -S syntax-highlighting5&lt;/code>，在 macOS 上可以使用
+&lt;a href="https://github.com/KDE/homebrew-kde" target="_blank" >Homebrew KDE&lt;/a>
+然后 &lt;code>brew install kde-mac/kde/kf5-syntax-highlighting&lt;/code>。&lt;/p>
+&lt;/li>
 &lt;li>
-&lt;p>Windows:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bat" data-lang="bat"> &lt;span style="color:#204a87;font-weight:bold">mkdir&lt;/span> build
-&lt;span style="color:#204a87;font-weight:bold">cd&lt;/span> build
-cmake ..
-cmake --build . --config Release
+&lt;p>否则，你需要使用 CMake 先构建并安装 Extra CMake Modules 然后再是 KSH：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">&lt;span style="color:#204a87">cd&lt;/span> third_party/extra-cmake-modules
+cmake -B build -S . -DBUILD_HTML_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_MAN_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_QTHELP_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_TESTING&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF
+cmake --build build --config Release --target install &lt;span style="color:#8f5902;font-style:italic"># 可能需要 sudo&lt;/span>
+&lt;span style="color:#204a87">cd&lt;/span> ../syntax-highlighting
+cmake -B build -S . -DBUILD_HTML_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_MAN_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_QTHELP_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_TESTING&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF
+cmake --build build --config Release --target install
 &lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
+&lt;h3 id="构建">构建&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Linux/macOS:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">cmake -S . -B build -DCMAKE_BUILD_TYPE&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>Release
+cmake --build build
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Windows:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bat" data-lang="bat">cmake -S . -B build
+cmake --build build --config Release
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
 &lt;p>在 Linux 上，你会得到 &lt;code>build/cpeditor&lt;/code>。&lt;/p>
 &lt;p>在 macOS 上，你会得到 &lt;code>build/cpeditor.app&lt;/code>。&lt;/p>
-&lt;p>在 Windows 上，你会得到 &lt;code>build/cpeditor.exe&lt;/code> 或 &lt;code>build/Release/cpeditor.exe&lt;/code>。如果打开时提示 DLL 缺失，你可以将 &lt;code>%QtPath%\%QtVersion%\%Compiler%\bin&lt;/code>（例如：&lt;code>D:\Qt\5.15.1\msvc2019_64\bin&lt;/code>）加入 PATH 环境变量。&lt;/p></description></item><item><title>Docs: 使用 Artifacts</title><link>/zh/docs/installation/use-artifacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/use-artifacts/</guid><description>
+&lt;p>在 Windows 上，你会得到 &lt;code>build/cpeditor.exe&lt;/code> 或 &lt;code>build/Release/cpeditor.exe&lt;/code>。如果打开时提示 DLL 缺失，你可以将 &lt;code>%QtPath%\%QtVersion%\%Compiler%\bin&lt;/code>（例如：&lt;code>D:\Qt\5.15.2\msvc2019_64\bin&lt;/code>）加入 PATH 环境变量。&lt;/p></description></item><item><title>Docs: 使用 Artifacts</title><link>/zh/docs/installation/use-artifacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/use-artifacts/</guid><description>
 &lt;p>如果你想要使用最新版本（比 beta 还要新），但是不想从源代码构建，你可以从
 &lt;a href="https://github.com/cpeditor/cpeditor/actions" target="_blank" >GitHub Actions&lt;/a>
 下载 Artifacts。&lt;/p>
