@@ -474,8 +474,8 @@ to send data to WakaTime.&lt;/p></description></item><item><title>Docs: File Pat
 &lt;p>您可以將其看做每個分頁（每個檔案）都有一個安全存放資料的地方，以避免影響硬碟上的其他檔案。暫存目錄會在分頁關閉時被自動刪除。&lt;/p>
 &lt;p>暫存目錄的位置因不同系統而異：&lt;/p>
 &lt;ul>
-&lt;li>Linux：&lt;code>/tmp/CP Editor-XXXXXX&lt;/code>&lt;/li>
-&lt;li>Windows：&lt;code>C:\Users\&amp;lt;您的使用者名稱&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>&lt;/li>
+&lt;li>Linux：&lt;code>/tmp/cpeditor-XXXXXX&lt;/code>&lt;/li>
+&lt;li>Windows：&lt;code>C:\Users\&amp;lt;您的使用者名稱&amp;gt;\AppData\Local\Temp\cpeditor-XXXXXX&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h3 id="正規表達式">正規表達式&lt;/h3>
 &lt;p>

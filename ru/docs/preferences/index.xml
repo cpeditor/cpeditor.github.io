@@ -472,7 +472,7 @@ to send data to WakaTime.&lt;/p></description></item><item><title>Docs: File Pat
 &lt;h3 id="temporary-directory">Temporary Directory&lt;/h3>
 &lt;p>In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.&lt;/p>
 &lt;p>You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.&lt;/p>
-&lt;p>On Linux, it&amp;rsquo;s &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>. On Windows, it&amp;rsquo;s &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>.&lt;/p>
+&lt;p>On Linux, it&amp;rsquo;s &lt;code>/tmp/cpeditor-XXXXXX&lt;/code>. On Windows, it&amp;rsquo;s &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\cpeditor-XXXXXX&lt;/code>.&lt;/p>
 &lt;h3 id="regular-expression">Regular Expression&lt;/h3>
 &lt;p>The
 &lt;a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank" >regular expression&lt;/a>

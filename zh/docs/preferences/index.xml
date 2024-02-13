@@ -469,7 +469,7 @@
 &lt;h3 id="临时文件夹">临时文件夹&lt;/h3>
 &lt;p>在 CP Editor 中，每个文件都有一个临时目录，可用于保存可执行文件等等。&lt;/p>
 &lt;p>你可以将其视为一个能够安全地为每个标签页（即每个文件）保存内容而不影响磁盘上其他文件的地方，并且在关闭标签页时它会被自动删除。&lt;/p>
-&lt;p>在 Linux 上，它位于 &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>。在 Windows 上，它位于 &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>。&lt;/p>
+&lt;p>在 Linux 上，它位于 &lt;code>/tmp/cpeditor-XXXXXX&lt;/code>。在 Windows 上，它位于 &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\cpeditor-XXXXXX&lt;/code>。&lt;/p>
 &lt;h3 id="正则表达式">正则表达式&lt;/h3>
 &lt;p>
 &lt;a href="https://baike.baidu.com/item/%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" target="_blank" >正则表达式&lt;/a>
