@@ -11,14 +11,6 @@ Use [`QFile`](https://doc.qt.io/qt-5/qfile.html) instead of [`QSaveFile`](https:
 
 This is slightly unsafer but notably faster.
 
-### Save File On Compilation
-
-Save your code when compiling it.
-
-### Save File On Execution
-
-Save your code when executing it.
-
 ### Save Testcases on Save
 
 Save the test cases on the disk when saving the code.

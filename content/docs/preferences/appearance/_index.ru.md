@@ -51,18 +51,6 @@ Add an extra margin at the bottom of the code editor, so that you can scroll les
 
 When checked the font picker dialog shows only monospaced fonts.
 
-### Editor Font
-
-The font for the code editor.
-
-### Test Cases Font
-
-The font for the test cases.
-
-### Message Logger Font
-
-The font for the messages.
-
 ### Custom Application Font
 
 Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.
