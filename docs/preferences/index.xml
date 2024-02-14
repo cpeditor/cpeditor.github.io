@@ -169,7 +169,6 @@ page.&lt;/p>
 &lt;p>Use &amp;ldquo;¶&amp;rdquo; to visualize the end-of-line in the diff viewer. It is useful if you want to see differences of the end-of-line (i.e. extra empty lines at the end).&lt;/p>
 &lt;h3 id="add-extra-margin-at-the-bottom-of-the-code-editor">Add extra margin at the bottom of the code editor&lt;/h3>
 &lt;p>Add an extra margin at the bottom of the code editor, so that you can scroll less.&lt;/p>
-&lt;p>Due to technical reasons, it could slightly affect the operation history, i.e. you might be able undo the margin change by &lt;kbd>Ctrl+Z&lt;/kbd>.&lt;/p>
 &lt;h2 id="font">Font&lt;/h2>
 &lt;h3 id="show-only-monospaced-font">Show only Monospaced Font&lt;/h3>
 &lt;p>When checked the font picker dialog shows only monospaced fonts.&lt;/p>
