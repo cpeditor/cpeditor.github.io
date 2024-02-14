@@ -254,7 +254,16 @@ is enabled, external file changes will be loaded without confirmation regardless
 &lt;a href="#auto-load-external-file-changes-if-theres-no-unsaved-modification" >Auto-load external file changes if there&amp;rsquo;s no unsaved modification&lt;/a>
 is disabled, the user will be asked whether to load the changes only when
 &lt;a href="#ask-whether-to-load-external-file-changes" >Ask whether to load external file changes&lt;/a>
-is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/ru/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/extensions/</guid><description>
+is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p>
+&lt;h2 id="stopwatch">Stopwatch&lt;/h2>
+&lt;h3 id="display-stopwatch">Display Stopwatch&lt;/h3>
+&lt;p>Show a stopwatch in the UI. You can use it to track your time spent on solving a problem.&lt;/p>
+&lt;h3 id="startstop-stopwatch-on-tab-switch">Start/Stop stopwatch on tab switch&lt;/h3>
+&lt;p>When switching to a different tab, automatically start the stopwatch on the current tab and pause the stopwatch on the previous tab.&lt;/p>
+&lt;p>If you switch to the correct tab when solving a problem, with this setting enabled, you won&amp;rsquo;t need to manually start/stop the stopwatch.&lt;/p>
+&lt;h3 id="show-stopwatch-result-only-when-the-button-is-pressed">Show stopwatch result only when the button is pressed&lt;/h3>
+&lt;p>Hide the time of the stopwatch and only show the time when the &amp;ldquo;Show&amp;rdquo; button is pressed.&lt;/p>
+&lt;p>This may reduce distractions caused by stopwatch updates.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/ru/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/extensions/</guid><description>
 &lt;h2 id="code-formatting">Code Formatting&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>
@@ -354,7 +363,27 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;h3 id="show-toast-messages-for-submission-verdicts">Show toast messages for submission verdicts&lt;/h3>
 &lt;p>Show a toast message when the verdict of a submission is determined.&lt;/p>
 &lt;p>A toast message is a &amp;ldquo;system notification&amp;rdquo;, which is visible outside of CP Editor.&lt;/p>
-&lt;p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.&lt;/p></description></item><item><title>Docs: File Path</title><link>/ru/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/file-path/</guid><description>
+&lt;p>This is useful if you want to get the verdict of the previous problem when reading/solving the next problem.&lt;/p>
+&lt;h2 id="wakatime">WakaTime&lt;/h2>
+&lt;p>
+&lt;a href="https://wakatime.com/" target="_blank" >WakaTime&lt;/a>
+can help you to track your time usage.&lt;/p>
+&lt;p>&lt;strong>See also&lt;/strong>
+&lt;a href="../../../ru/docs/setup/#setup-wakatime" >Setup WakaTime&lt;/a>
+.&lt;/p>
+&lt;h3 id="enable-wakatime">Enable WakaTime&lt;/h3>
+&lt;p>Use WakaTime to track your time usage.&lt;/p>
+&lt;h3 id="path-1">Path&lt;/h3>
+&lt;p>The path to the &lt;code>wakatime&lt;/code> executable file, or simply &lt;code>wakatime&lt;/code> if it&amp;rsquo;s in the &lt;code>PATH&lt;/code> environment variable.&lt;/p>
+&lt;h3 id="api-key">Api Key&lt;/h3>
+&lt;p>Can be found at
+&lt;a href="https://wakatime.com/settings/account" target="_blank" >WakaTime Settings&lt;/a>
+.&lt;/p>
+&lt;p>It can be empty if you have the global wakatime config file &lt;code>~/.wakatime.cfg&lt;/code>.&lt;/p>
+&lt;h3 id="use-proxy">Use Proxy&lt;/h3>
+&lt;p>Use
+&lt;a href="../../../ru/docs/preferences/advanced/#network-proxy" >Network Proxy&lt;/a>
+to send data to WakaTime.&lt;/p></description></item><item><title>Docs: File Path</title><link>/ru/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/file-path/</guid><description>
 &lt;h2 id="testcases">Testcases&lt;/h2>
 &lt;h3 id="input-file-save-path">Input File Save Path&lt;/h3>
 &lt;h3 id="answer-file-save-path">Answer File Save Path&lt;/h3>
@@ -443,7 +472,7 @@ from Codeforces or manually set the problem URL of a tab in the context menu of 
 &lt;h3 id="temporary-directory">Temporary Directory&lt;/h3>
 &lt;p>In CP Editor, each file has a temporary directory, it can be used to save the executable files, etc.&lt;/p>
 &lt;p>You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.&lt;/p>
-&lt;p>On Linux, it&amp;rsquo;s &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>. On Windows, it&amp;rsquo;s &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>.&lt;/p>
+&lt;p>On Linux, it&amp;rsquo;s &lt;code>/tmp/cpeditor-XXXXXX&lt;/code>. On Windows, it&amp;rsquo;s &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\cpeditor-XXXXXX&lt;/code>.&lt;/p>
 &lt;h3 id="regular-expression">Regular Expression&lt;/h3>
 &lt;p>The
 &lt;a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank" >regular expression&lt;/a>

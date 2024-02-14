@@ -159,7 +159,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../offline-search-index.846c266627006219d3d3d4ee02e2c654.json"
+  data-offline-search-index-json-src="../../offline-search-index.2cbf8c87eb4c14c5398ee09e63f4ae72.json"
   data-offline-search-base-href="../../"
   data-offline-search-max-results="10"
 >
@@ -173,8 +173,8 @@
         
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/filesize@6.4"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/filesize/6.4.0/filesize.min.js"></script>
 <script src="../../js/download.js"></script>
 
 <style>
@@ -183,15 +183,14 @@
     }
 </style>
 
-<div id="app" v-cloak>
+<div id="app">
     <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
         <div class="container text-center td-arrow-down">
             <span class="h4 mb-0">
                 <h1>在你的计算机上获取 CP Editor，然后试一试！</h1>
-                <p v-if="latestStableAssetForUserPlatform" class="pt-3">
+                <p v-cloak v-if="latestStableAssetForUserPlatform" class="pt-3">
                     你可能想要使用
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url"
-                       v-on:click="latestStableEvent">
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
                         在 {{ userPlatform }} 上的最新稳定版本
                     </a>。
                 </p>
@@ -202,7 +201,7 @@
     <div class="container pt-5">
         <div class="row">
             <div class="col-lg-6 text-center">
-                <h2>选择你使用的平台和想要下载的版本</h2>
+                <h2 v-cloak>选择你使用的平台和想要下载的版本</h2>
                 <ul class="list-group pt-2">
                     <li class="list-group-item"><a href="../docs/installation">安装说明</a></li>
                     <li class="list-group-item">
@@ -212,11 +211,11 @@
                         <a href="https://gitee.com/ouuan/cpeditor/releases" target="_blank">Gitee 镜像</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="https://hub.fastgit.org/cpeditor/cpeditor/releases" target="_blank">FastGit 镜像</a>
+                        <a href="https://hub.fastgit.xyz/cpeditor/cpeditor/releases" target="_blank">FastGit 镜像</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6">
+            <div v-cloak class="col-lg-6">
                 <h2 v-if="releases.length === 0">加载中...</h2>
                 <h2 v-else-if="!selectedAsset" class="text-warning">找不到可下载的文件</h2>
                 <template v-else>
@@ -250,8 +249,7 @@
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block my-4"
-                        v-on:click="downloadEvent">下载</a>
+                        class="btn btn-primary btn-block my-4">下载</a>
                 </template>
             </div>
         </div>

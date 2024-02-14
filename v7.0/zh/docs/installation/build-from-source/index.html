@@ -161,7 +161,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.846c266627006219d3d3d4ee02e2c654.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.2cbf8c87eb4c14c5398ee09e63f4ae72.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -193,7 +193,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.846c266627006219d3d3d4ee02e2c654.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.2cbf8c87eb4c14c5398ee09e63f4ae72.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -268,10 +268,35 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="../../../../zh/docs/installation/install-from-binaries/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">安装可执行文件</a>
+    <a  href="../../../../zh/docs/installation/download-from-releases/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">在 Releases 中下载</a>
   </li>
   <ul>
-    <li class="collapse " id="zhdocsinstallationinstall-from-binaries">
+    <li class="collapse " id="zhdocsinstallationdownload-from-releases">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../../zh/docs/installation/use-package-managers/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">使用包管理器</a>
+  </li>
+  <ul>
+    <li class="collapse " id="zhdocsinstallationuse-package-managers">
       
       
       
@@ -322,31 +347,6 @@
   </li>
   <ul>
     <li class="collapse " id="zhdocsinstallationuse-artifacts">
-      
-      
-      
-    </li>
-  </ul>
-</ul>
-
-        
-      
-      
-      
-        
-          
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="../../../../zh/docs/installation/build-from-aur/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">从 AUR 构建</a>
-  </li>
-  <ul>
-    <li class="collapse " id="zhdocsinstallationbuild-from-aur">
       
       
       
@@ -752,11 +752,6 @@
 
 
 
-<div class="pageinfo pageinfo-primary">
-    这个页面的 <a href='../../../../docs/installation/build-from-source/'>英文版本</a> <a href='https://github.com/cpeditor/cpeditor.github.io/commits/v7.0/content/docs/installation/build-from-source/_index.md'>有所改动</a>，翻译可能不是最新的。
-    你可以帮助我们 <a href='https://github.com/cpeditor/cpeditor.github.io/edit/v7.0/content/docs/installation/build-from-source/_index.zh.md'>翻译本页</a>。
-</div>
-
 
 
           <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
@@ -798,10 +793,14 @@
 	<h1>从源代码构建</h1>
         <div class="lead">通过这种方式，你可以使用最新的还未发布的特性，同时为参与开发做好准备。这需要更多的步骤，也是在你的操作系统不被支持时的唯一方案。</div>
 	
-	<ol>
+	<h3 id="准备工作">准备工作</h3>
+<ol>
 <li>
 <p>克隆源代码仓库以及子组件：</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+<span style="color:#8f5902;font-style:italic"># 或者分成两条命令</span>
+<span style="color:#8f5902;font-style:italic"># git clone https://github.com/cpeditor/cpeditor.git</span>
+<span style="color:#8f5902;font-style:italic"># git submodule update --init --recursive</span>
 <span style="color:#204a87">cd</span> cpeditor
 </code></pre></div></li>
 <li>
@@ -818,7 +817,7 @@
 
 
 <a href="https://www.qt.io/download"   target="_blank" >Qt</a>
-（5.15 或更高版本）, 
+（5.15）, 
 
 
 
@@ -846,7 +845,7 @@
 <a href="https://www.python.org/downloads/"   target="_blank" >Python3</a>
 。</p>
 <ul>
-<li>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 <code>sudo pacman -S qt5-base</code>，在 macOS 上可以使用 <code>brew install qt5</code>。</li>
+<li>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 <code>sudo pacman -S qt5-base</code>，在 macOS 上可以使用 <code>brew install qt@5</code>。</li>
 <li>你还可以使用 
 
 
@@ -864,31 +863,55 @@
 </ul>
 </li>
 <li>
-<p>如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：<code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>。例如，在 macOS 上，你可以运行 <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.15.1&quot;</code>。</p>
+<p>如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：<code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>。例如，在 macOS 上，你可以运行 <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.15.2&quot;</code>。</p>
 </li>
 <li>
-<p>执行如下命令完成构建过程。</p>
+<p>安装 KDE (kf5) Extra CMake Modules。</p>
 <ul>
 <li>
-<p>Linux/macOS:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir build
-<span style="color:#204a87">cd</span> build
-cmake .. -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
-cmake --build .
-</code></pre></div></li>
+<p>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装它们。例如，在 Arch Linux 上可以使用 <code>sudo pacman -S syntax-highlighting5</code>，在 macOS 上可以使用 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/KDE/homebrew-kde"   target="_blank" >Homebrew KDE</a>
+ 然后 <code>brew install kde-mac/kde/kf5-syntax-highlighting</code>。</p>
+</li>
 <li>
-<p>Windows:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat"> <span style="color:#204a87;font-weight:bold">mkdir</span> build
- <span style="color:#204a87;font-weight:bold">cd</span> build
- cmake ..
- cmake --build . --config Release
+<p>否则，你需要使用 CMake 先构建并安装 Extra CMake Modules 然后再是 KSH：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#204a87">cd</span> third_party/extra-cmake-modules
+cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
+cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># 可能需要 sudo</span>
+<span style="color:#204a87">cd</span> ../syntax-highlighting
+cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
+cmake --build build --config Release --target install
 </code></pre></div></li>
 </ul>
 </li>
 </ol>
+<h3 id="构建">构建</h3>
+<ul>
+<li>
+<p>Linux/macOS:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cmake -S . -B build -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
+cmake --build build
+</code></pre></div></li>
+<li>
+<p>Windows:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat">cmake -S . -B build
+cmake --build build --config Release
+</code></pre></div></li>
+</ul>
 <p>在 Linux 上，你会得到 <code>build/cpeditor</code>。</p>
 <p>在 macOS 上，你会得到 <code>build/cpeditor.app</code>。</p>
-<p>在 Windows 上，你会得到 <code>build/cpeditor.exe</code> 或 <code>build/Release/cpeditor.exe</code>。如果打开时提示 DLL 缺失，你可以将 <code>%QtPath%\%QtVersion%\%Compiler%\bin</code>（例如：<code>D:\Qt\5.15.1\msvc2019_64\bin</code>）加入 PATH 环境变量。</p>
+<p>在 Windows 上，你会得到 <code>build/cpeditor.exe</code> 或 <code>build/Release/cpeditor.exe</code>。如果打开时提示 DLL 缺失，你可以将 <code>%QtPath%\%QtVersion%\%Compiler%\bin</code>（例如：<code>D:\Qt\5.15.2\msvc2019_64\bin</code>）加入 PATH 环境变量。</p>
 
         <div class="section-index">
     
@@ -941,7 +964,7 @@ cmake --build .
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 December 6, 2020: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/c9245d5d3180c4025a0d293d10bcfafb91fd8755">refactor: use md in links (#105) (c9245d5d)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 February 13, 2024: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/4577cad10327f2100856f4294bd669f726e461f3">feat(installation/build-from-source): add ECM and KSH, update commands (#333) (4577cad1)</a>
 </div>
 </div>
 

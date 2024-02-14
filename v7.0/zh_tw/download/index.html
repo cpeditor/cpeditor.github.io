@@ -18,15 +18,15 @@
 <link rel="icon" type="image/png" href="../../favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="../../favicons/android-192x192.png" sizes="192x192">
 
-<title>Download CP Editor | CP Editor</title><meta property="og:title" content="Download CP Editor" />
-<meta property="og:description" content="專為演算法競賽設計的 IDE" />
+<title>下載 CP Editor | CP Editor</title><meta property="og:title" content="下載 CP Editor" />
+<meta property="og:description" content="專為競程設計的 IDE" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/zh_tw/download/" /><meta property="og:site_name" content="CP Editor" />
 
-<meta itemprop="name" content="Download CP Editor">
-<meta itemprop="description" content="專為演算法競賽設計的 IDE"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Download CP Editor"/>
-<meta name="twitter:description" content="專為演算法競賽設計的 IDE"/>
+<meta itemprop="name" content="下載 CP Editor">
+<meta itemprop="description" content="專為競程設計的 IDE"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="下載 CP Editor"/>
+<meta name="twitter:description" content="專為競程設計的 IDE"/>
 
 
 
@@ -70,7 +70,7 @@
 				
 				
 				
-				<a  class="nav-link" href="../../zh_tw/about/" ><span>About</span></a>
+				<a  class="nav-link" href="../../zh_tw/about/" ><span>關於</span></a>
 			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -80,7 +80,7 @@
 				
 				
 				
-				<a  class="nav-link" href="../../zh_tw/docs/" ><span>Documentation</span></a>
+				<a  class="nav-link" href="../../zh_tw/docs/" ><span>說明文件</span></a>
 			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -90,7 +90,7 @@
 				
 				
 				
-				<a  class="nav-link" href="../../zh_tw/community/" ><span>Community</span></a>
+				<a  class="nav-link" href="../../zh_tw/community/" ><span>社群</span></a>
 			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -100,7 +100,7 @@
 				
 				
 				
-				<a  class="nav-link active" href="../../zh_tw/download/" ><span class="active">Download</span></a>
+				<a  class="nav-link active" href="../../zh_tw/download/" ><span class="active">下載軟體</span></a>
 			</li>
 			
 			
@@ -159,7 +159,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../offline-search-index.846c266627006219d3d3d4ee02e2c654.json"
+  data-offline-search-index-json-src="../../offline-search-index.2cbf8c87eb4c14c5398ee09e63f4ae72.json"
   data-offline-search-base-href="../../"
   data-offline-search-max-results="10"
 >
@@ -183,17 +183,16 @@
     }
 </style>
 
-<div id="app" v-cloak>
+<div id="app">
     <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
         <div class="container text-center td-arrow-down">
             <span class="h4 mb-0">
-                <h1>Get CP Editor on your machine and have a try!</h1>
-                <p v-if="latestStableAssetForUserPlatform" class="pt-3">
-                    You probably want to use
-                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url"
-                       v-on:click="latestStableEvent">
-                        the latest stable version on {{ userPlatform }}
-                    </a>.
+                <h1>立即安裝並體驗 CP Editor</h1>
+                <p v-cloak v-if="latestStableAssetForUserPlatform" class="pt-3">
+                    您可能想找適用於
+                    <a class="text-light" :href="latestStableAssetForUserPlatform.browser_download_url">
+                         {{ userPlatform }} 系統的最新穩定版
+                    </a>。
                 </p>
             </span>
         </div>
@@ -202,38 +201,38 @@
     <div class="container pt-5">
         <div class="row">
             <div class="col-lg-6 text-center">
-                <h2>Choose your platform and the version you want to download</h2>
+                <h2 v-cloak>選擇您的作業系統及想要下載的版本</h2>
                 <ul class="list-group pt-2">
-                    <li class="list-group-item"><a href="../docs/installation">Installation instructions</a></li>
+                    <li class="list-group-item"><a href="../docs/installation">安裝說明</a></li>
                     <li class="list-group-item">
-                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">All versions</a>
+                        <a href="https://github.com/cpeditor/cpeditor/releases" target="_blank">所有版本</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6">
-                <h2 v-if="releases.length === 0">Loading...</h2>
-                <h2 v-else-if="!selectedAsset" class="text-warning">No available asset found</h2>
+            <div v-cloak class="col-lg-6">
+                <h2 v-if="releases.length === 0">載入中...</h2>
+                <h2 v-else-if="!selectedAsset" class="text-warning">未取得可用的檔案清單</h2>
                 <template v-else>
                     <div class="form-group">
-                        <label for="platform">Platform</label>
+                        <label for="platform">作業系統</label>
                         <select class="form-control" id="platform" v-model="selectedPlatform">
                             <option v-for="platformOption in platformOptions">{{ platformOption }}</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="release">Version</label>
+                        <label for="release">版本</label>
                         <select class="form-control" id="release" v-model="selectedRelease">
                             <template v-for="release in releases" :key="release.tag_name">
                                 <option :value="release">
                                     v{{ release.tag_name }}
-                                    <span v-if="release === latestStableRelease">(Latest Stable)</span>
-                                    <span v-else-if="release === releases[0]">(Latest Beta)</span>
+                                    <span v-if="release === latestStableRelease">（最新穩定版）</span>
+                                    <span v-else-if="release === releases[0]">（最新 Beta 版）</span>
                                 </option>
                             </template>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="asset">Asset</label>
+                        <label for="asset">檔案</label>
                         <select class="form-control" id="asset" v-model="selectedAsset">
                             <template v-for="asset in selectedRelease.assets" :key="asset.id">
                                 <option v-if="isAssetSuitableForPlatform(asset, selectedPlatform)" :value="asset">
@@ -244,8 +243,7 @@
                     </div>
                     <a :href="selectedAsset.browser_download_url"
                         :disabled="selectedAsset.browser_download_url === undefined"
-                        class="btn btn-primary btn-block my-4"
-                        v-on:click="downloadEvent">Download</a>
+                        class="btn btn-primary btn-block my-4">下載</a>
                 </template>
             </div>
         </div>
@@ -305,7 +303,7 @@
         <br>
         <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh_tw" target="_blank">CC BY-SA 4.0</a>.</small>
 	
-		<p class="mt-2 mb-0"><a href="../../zh_tw/about/">About CP Editor</a></p>
+		<p class="mt-2 mb-0"><a href="../../zh_tw/about/">關於 CP Editor</a></p>
 	
       </div>
     </div>

@@ -251,7 +251,16 @@
 &lt;a href="#%e8%8b%a5%e6%b2%a1%e6%9c%89%e6%9c%aa%e4%bf%9d%e5%ad%98%e7%9a%84%e4%bf%ae%e6%94%b9%e8%87%aa%e5%8a%a8%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9" >若没有未保存的修改，自动加载外部文件修改&lt;/a>
 被禁用，且
 &lt;a href="#%e8%af%a2%e9%97%ae%e6%98%af%e5%90%a6%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8%e6%96%87%e4%bb%b6%e4%bf%ae%e6%94%b9" >询问是否加载外部文件修改&lt;/a>
-被启用，CP Editor 将会询问用户是否加载这些修改。而在两个选项都被禁用的情况下，外部文件修改将不会被加载。&lt;/p></description></item><item><title>Docs: 扩展</title><link>/zh/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/extensions/</guid><description>
+被启用，CP Editor 将会询问用户是否加载这些修改。而在两个选项都被禁用的情况下，外部文件修改将不会被加载。&lt;/p>
+&lt;h2 id="计时器">计时器&lt;/h2>
+&lt;h3 id="显示计时器">显示计时器&lt;/h3>
+&lt;p>在 UI 中显示计时器。你可以用它来记录做题用时。&lt;/p>
+&lt;h3 id="切换标签页时启动暂停计时器">切换标签页时启动/暂停计时器&lt;/h3>
+&lt;p>切换标签页后，暂停原来那个标签页的计时器并启动当前标签页的计时器。&lt;/p>
+&lt;p>启用了这个设置，如果你在做一道题时切换到正确的标签页，你就不需要手动启动/停止计时器了。&lt;/p>
+&lt;h3 id="只在按钮按下时显示计时结果">只在按钮按下时显示计时结果&lt;/h3>
+&lt;p>隐藏计时结果，只在“显示”按钮按下时显示。&lt;/p>
+&lt;p>这或许可以避免计时结果更新使人分心。&lt;/p></description></item><item><title>Docs: 扩展</title><link>/zh/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/extensions/</guid><description>
 &lt;h2 id="代码格式化">代码格式化&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format 是格式化 C/C++ 和 Java 代码的工具。你可以点击 动作-&amp;gt;格式化代码 或按快捷键 &lt;kbd>Ctrl+Shift+I&lt;/kbd> 来格式化代码。如果你选择了代码的一部分，只有被选择的部分（以及必要的相邻部分）会被格式化。&lt;/p>
@@ -351,7 +360,27 @@
 &lt;p>CF Tool 可执行文件的路径。如果它已经在 &lt;code>PATH&lt;/code> 环境变量中，只需填写 &lt;code>cf&lt;/code> 即可。&lt;/p>
 &lt;h3 id="为评测结果显示气泡信息">为评测结果显示气泡信息&lt;/h3>
 &lt;p>在收到一次提交的结果后，显示一条气泡信息。&lt;/p>
-&lt;p>气泡信息是系统通知，在 CP Editor 外仍然可见。在你忙于解决下一个问题时，气泡信息可以让你得知前一个问题的解决情况。&lt;/p></description></item><item><title>Docs: 文件路径</title><link>/zh/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/file-path/</guid><description>
+&lt;p>气泡信息是系统通知，在 CP Editor 外仍然可见。在你忙于解决下一个问题时，气泡信息可以让你得知前一个问题的解决情况。&lt;/p>
+&lt;h2 id="wakatime">WakaTime&lt;/h2>
+&lt;p>
+&lt;a href="https://wakatime.com/" target="_blank" >WakaTime&lt;/a>
+可以帮助你进行工作量的统计。&lt;/p>
+&lt;p>&lt;strong>参见&lt;/strong>
+&lt;a href="../../../zh/docs/setup/#%e5%ae%89%e8%a3%85-wakatime" >安装 WakaTime&lt;/a>
+。&lt;/p>
+&lt;h3 id="启用-wakatime">启用 WakaTime&lt;/h3>
+&lt;p>是否启用 WakaTime。&lt;/p>
+&lt;h3 id="路径-1">路径&lt;/h3>
+&lt;p>WakaTime 可执行文件的路径。如果它已经在 &lt;code>PATH&lt;/code> 环境变量中，只需填写 &lt;code>wakatime&lt;/code> 即可。&lt;/p>
+&lt;h3 id="api-密钥">Api 密钥&lt;/h3>
+&lt;p>可以在
+&lt;a href="https://wakatime.com/settings/account" target="_blank" >WakaTime 设置&lt;/a>
+查看。&lt;/p>
+&lt;p>如果有 WakaTime 的全局配置文件 &lt;code>~/.wakatime.cfg&lt;/code> 则可以留空。&lt;/p>
+&lt;h3 id="使用代理">使用代理&lt;/h3>
+&lt;p>使用
+&lt;a href="../../../zh/docs/preferences/advanced/#%e7%bd%91%e7%bb%9c%e4%bb%a3%e7%90%86" >网络代理&lt;/a>
+将数据发送给 WakaTime。&lt;/p></description></item><item><title>Docs: 文件路径</title><link>/zh/docs/preferences/file-path/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/file-path/</guid><description>
 &lt;h2 id="测试点">测试点&lt;/h2>
 &lt;h3 id="输入文件答案文件保存路径">输入文件/答案文件保存路径&lt;/h3>
 &lt;p>设置测试数据
@@ -440,7 +469,7 @@
 &lt;h3 id="临时文件夹">临时文件夹&lt;/h3>
 &lt;p>在 CP Editor 中，每个文件都有一个临时目录，可用于保存可执行文件等等。&lt;/p>
 &lt;p>你可以将其视为一个能够安全地为每个标签页（即每个文件）保存内容而不影响磁盘上其他文件的地方，并且在关闭标签页时它会被自动删除。&lt;/p>
-&lt;p>在 Linux 上，它位于 &lt;code>/tmp/CP Editor-XXXXXX&lt;/code>。在 Windows 上，它位于 &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\CP Editor-XXXXXX&lt;/code>。&lt;/p>
+&lt;p>在 Linux 上，它位于 &lt;code>/tmp/cpeditor-XXXXXX&lt;/code>。在 Windows 上，它位于 &lt;code>C:\Users\&amp;lt;username&amp;gt;\AppData\Local\Temp\cpeditor-XXXXXX&lt;/code>。&lt;/p>
 &lt;h3 id="正则表达式">正则表达式&lt;/h3>
 &lt;p>
 &lt;a href="https://baike.baidu.com/item/%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" target="_blank" >正则表达式&lt;/a>

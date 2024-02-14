@@ -222,7 +222,7 @@ to save files.&lt;/p>
 &lt;h2 id="save-session">Save Session&lt;/h2>
 &lt;h3 id="restore-last-session-at-startup">Restore last session at startup&lt;/h3>
 &lt;p>Save the status of the editor, and restore most status from the last session when you start CP Editor.&lt;/p>
-&lt;p>You can use the &lt;code>--no-hot-exit&lt;/code> command-line option to temporarily disable this, in case that the last session is too big and the application hangs.&lt;/p>
+&lt;p>You can use the &lt;code>--no-restore-session&lt;/code> command-line option to temporarily disable this, in case that the last session is too big and the application hangs.&lt;/p>
 &lt;h3 id="auto-save-the-current-session-periodically">Auto-save the current session periodically&lt;/h3>
 &lt;p>Save the current session periodically instead of only when exiting the application.&lt;/p>
 &lt;p>This is useful if you don&amp;rsquo;t want to lose your codes after abnormal terminations, such as power outage, forced shutdown, killing CP Editor, etc. However, if the files and test cases are too large, the editor hangs each time the auto-save happens.&lt;/p>
