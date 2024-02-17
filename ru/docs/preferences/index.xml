@@ -172,12 +172,6 @@ page.&lt;/p>
 &lt;h2 id="font">Font&lt;/h2>
 &lt;h3 id="show-only-monospaced-font">Show only Monospaced Font&lt;/h3>
 &lt;p>When checked the font picker dialog shows only monospaced fonts.&lt;/p>
-&lt;h3 id="editor-font">Editor Font&lt;/h3>
-&lt;p>The font for the code editor.&lt;/p>
-&lt;h3 id="test-cases-font">Test Cases Font&lt;/h3>
-&lt;p>The font for the test cases.&lt;/p>
-&lt;h3 id="message-logger-font">Message Logger Font&lt;/h3>
-&lt;p>The font for the messages.&lt;/p>
 &lt;h3 id="custom-application-font">Custom Application Font&lt;/h3>
 &lt;p>Use a custom font for the UI (except for code editor, test cases, messages, etc.), instead of the system font.&lt;/p></description></item><item><title>Docs: Actions</title><link>/ru/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ru/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>
@@ -188,10 +182,6 @@ instead of
 &lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank" >&lt;code>QSaveFile&lt;/code>&lt;/a>
 to save files.&lt;/p>
 &lt;p>This is slightly unsafer but notably faster.&lt;/p>
-&lt;h3 id="save-file-on-compilation">Save File On Compilation&lt;/h3>
-&lt;p>Save your code when compiling it.&lt;/p>
-&lt;h3 id="save-file-on-execution">Save File On Execution&lt;/h3>
-&lt;p>Save your code when executing it.&lt;/p>
 &lt;h3 id="save-testcases-on-save">Save Testcases on Save&lt;/h3>
 &lt;p>Save the test cases on the disk when saving the code.&lt;/p>
 &lt;p>You can choose where to save the test cases in
