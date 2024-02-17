@@ -167,16 +167,9 @@
 &lt;p>使用字符 &amp;ldquo;¶&amp;rdquo; 在差异查看器中可视化行尾。如果你要查看行尾的差异（即末尾多余的空行），这将很有用。&lt;/p>
 &lt;h3 id="在代码编辑器底部添加额外的边距">在代码编辑器底部添加额外的边距&lt;/h3>
 &lt;p>在代码编辑器的底部添加一个额外的边距，让你可以更少地滚动。&lt;/p>
-&lt;p>由于技术原因，它可能会稍微影响操作历史记录，所以你可以通过 &lt;kbd>Ctrl+Z&lt;/kbd> 撤消页边距更改。&lt;/p>
 &lt;h2 id="字体">字体&lt;/h2>
 &lt;h3 id="仅显示等宽字体">仅显示等宽字体&lt;/h3>
 &lt;p>在为下面的设置选择字体时只显示等宽字体。&lt;/p>
-&lt;h3 id="编辑器字体">编辑器字体&lt;/h3>
-&lt;p>代码编辑器的字体。&lt;/p>
-&lt;h3 id="测试用例字体">测试用例字体&lt;/h3>
-&lt;p>测试用例的字体。&lt;/p>
-&lt;h3 id="消息字体">消息字体&lt;/h3>
-&lt;p>消息的字体。&lt;/p>
 &lt;h3 id="使用自定义的全局字体">使用自定义的全局字体&lt;/h3>
 &lt;p>对 UI 用自定义字体（代码编辑器，测试用例，消息等除外）来替代系统字体。&lt;/p></description></item><item><title>Docs: 动作</title><link>/zh/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/actions/</guid><description>
 &lt;h2 id="保存">保存&lt;/h2>
@@ -187,10 +180,6 @@
 &lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank" >&lt;code>QSaveFile&lt;/code>&lt;/a>
 来保存文件。&lt;/p>
 &lt;p>启用该选项会有可忽略不计的丢失文件风险，但会显著提高保存文件的速度。&lt;/p>
-&lt;h3 id="编译时保存文件">编译时保存文件&lt;/h3>
-&lt;p>在编译前保存你的代码。&lt;/p>
-&lt;h3 id="执行时保存文件">执行时保存文件&lt;/h3>
-&lt;p>在运行前保存你的代码。&lt;/p>
 &lt;h3 id="保存文件时保存测试用例">保存文件时保存测试用例&lt;/h3>
 &lt;p>在保存代码时将测试用例一并保存。&lt;/p>
 &lt;p>你可以在

@@ -169,16 +169,9 @@ page.&lt;/p>
 &lt;p>在 Diff 檢視器中將 EOF 顯示為「¶」。這功能在需要檢查 EOL 的差異時（比如看看是否多了換行）尤為有用。&lt;/p>
 &lt;h3 id="在程式碼編輯器的底部加上額外邊距">在程式碼編輯器的底部加上額外邊距&lt;/h3>
 &lt;p>在程式碼編輯器的底部加上額外邊距，這可以改善來回滾動的困擾。&lt;/p>
-&lt;p>由於技術原因，這會稍微影響操作的紀錄，比如您可以按 &lt;kbd>Ctrl+Z&lt;/kbd> 來復原邊距設定。&lt;/p>
 &lt;h2 id="字型">字型&lt;/h2>
 &lt;h3 id="只顯示等寬字型">只顯示等寬字型&lt;/h3>
 &lt;p>在選取字型的對話窗中，僅列出等寬字型。&lt;/p>
-&lt;h3 id="編輯器字型">編輯器字型&lt;/h3>
-&lt;p>在程式碼編輯器中使用的字型。&lt;/p>
-&lt;h3 id="測資字型">測資字型&lt;/h3>
-&lt;p>在測資區塊中使用的字型。&lt;/p>
-&lt;h3 id="訊息字型">訊息字型&lt;/h3>
-&lt;p>在訊息區塊中使用的字型。&lt;/p>
 &lt;h3 id="自訂全域字型">自訂全域字型&lt;/h3>
 &lt;p>在呈現使用者介面時，不使用系統的預設字型。生效的範圍排除了程式碼編輯器、測資、訊息等處……。&lt;/p></description></item><item><title>Docs: Actions</title><link>/zh_tw/docs/preferences/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh_tw/docs/preferences/actions/</guid><description>
 &lt;h2 id="save">Save&lt;/h2>
@@ -189,10 +182,6 @@ instead of
 &lt;a href="https://doc.qt.io/qt-5/qsavefile.html" target="_blank" >&lt;code>QSaveFile&lt;/code>&lt;/a>
 to save files.&lt;/p>
 &lt;p>This is slightly unsafer but notably faster.&lt;/p>
-&lt;h3 id="save-file-on-compilation">Save File On Compilation&lt;/h3>
-&lt;p>Save your code when compiling it.&lt;/p>
-&lt;h3 id="save-file-on-execution">Save File On Execution&lt;/h3>
-&lt;p>Save your code when executing it.&lt;/p>
 &lt;h3 id="save-testcases-on-save">Save Testcases on Save&lt;/h3>
 &lt;p>Save the test cases on the disk when saving the code.&lt;/p>
 &lt;p>You can choose where to save the test cases in
