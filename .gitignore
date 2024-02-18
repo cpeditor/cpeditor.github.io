@@ -6,3 +6,4 @@ tech-doc-hugo
 dist/
 tmp/
 *.lock
+.DS_Store
