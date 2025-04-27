@@ -23,8 +23,4 @@ menu:
 
 -   [<i class="fab fa-github"></i> CP Editor sucks](https://github.com/cpeditor/cpeditor/discussions/760)
 
-### Chat with other users
-
--   [<i class="fab fa-telegram"></i> Telegram Group](https://t.me/cpeditor)
-
 </div>
