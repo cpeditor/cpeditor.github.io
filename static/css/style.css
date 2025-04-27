@@ -41,7 +41,7 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .list {
@@ -61,16 +61,24 @@ a {
 html {
   scroll-behavior: smooth;
 }
+body {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+}
+
 .td-main {
   line-height: 24px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   color: #777777; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Heebo", sans-serif;
-  font-weight: bold; }
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
 
 button:focus {
   outline: none;
@@ -111,16 +119,16 @@ button:focus {
   text-align: center;
   margin-bottom: 75px; }
   .main_title h2 {
-    font-family: "Heebo", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 36px;
     color: #222222;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 15px;
     text-transform: uppercase; }
   .main_title p {
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
     color: #777777;
     margin-bottom: 0px;
     max-width: 570px;
@@ -153,13 +161,14 @@ button:focus {
       .home_banner_area .banner_inner .banner_content h2 {
         margin-top: 0px;
         font-size: 48px;
-        font-weight: bold;
-        font-family: "Heebo", sans-serif;
-        line-height: 54px;
+        font-weight: 700;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        line-height: 1.2;
         margin-bottom: 20px; }
       .home_banner_area .banner_inner .banner_content p {
         color: #fff;
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
         margin-bottom: 35px; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
@@ -2291,7 +2300,7 @@ h6 {
   background-size: 200% auto;
   padding: 0px 35px;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 50px;
@@ -2310,7 +2319,7 @@ h6 {
   background: #3bacf0;
   padding: 0px 32px;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 38px;
@@ -2369,7 +2378,7 @@ h6 {
   display: inline-block;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 134px;
   font-size: 14px;
   font-weight: 500;
@@ -2390,7 +2399,7 @@ h6 {
   display: inline-block;
   background: white;
   color: #222222;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 134px;
   font-size: 14px;
   font-weight: 500;
@@ -2485,11 +2494,15 @@ h6 {
     margin-bottom: 30px; }
   .work_item h4 {
     color: #222222;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
     font-size: 20px;
     margin-bottom: 15px; }
   .work_item p {
     max-width: 310px;
-    margin: auto; }
+    margin: auto;
+    font-family: "Inter", sans-serif;
+  }
   .work_item:hover i {
     background-image: -moz-linear-gradient(0deg, #4dabff 0%, #62ddff 100%);
     background-image: -webkit-linear-gradient(0deg, #4dabff 0%, #62ddff 100%);
