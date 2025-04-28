@@ -19,7 +19,7 @@ Basically, you have to fork this repository, modify contents in your fork, open 
 Make sure [Git](https://git-scm.com/), [Node.js](https://nodejs.org/) and [Hugo](https://gohugo.io/) are installed.
 
 ```sh
-git clone --recurse-submodule https://github.com/cpeditor/cpeditor.github.io
+git clone --recurse-submodules https://github.com/cpeditor/cpeditor.github.io
 cd cpeditor.github.io
 yarn
 ```
@@ -27,7 +27,7 @@ yarn
 If you have cloned the repository but haven't cloned the submodules:
 
 ```sh
-git submodules update --init --recursive
+git submodule update --init --recursive
 ```
 
 ### Build static files
