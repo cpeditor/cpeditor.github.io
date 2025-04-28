@@ -32,8 +32,6 @@ git submodules update --init --recursive
 
 ### Build static files
 
-> We use hugo extended [release v0.83.1](https://github.com/gohugoio/hugo/releases?q=0.83.1&expanded=true). Latest binaries may not work.
-
 ```sh
 hugo
 ```
