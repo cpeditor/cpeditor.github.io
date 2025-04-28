@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/code-edit/index.xml">
+<meta name="generator" content="Hugo 0.147.0"><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/code-edit/index.xml">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
@@ -19,24 +19,59 @@
 <link rel="icon" type="image/png" href="../../../../favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="../../../../favicons/android-192x192.png" sizes="192x192">
 
-<title>代码编辑 | CP Editor</title><meta property="og:title" content="代码编辑" />
-<meta property="og:description" content="专为算法竞赛设计的 IDE" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/zh/docs/preferences/code-edit/" /><meta property="og:site_name" content="CP Editor" />
+<title>代码编辑 | CP Editor</title><meta property="og:url" content="/zh/docs/preferences/code-edit/">
+  <meta property="og:site_name" content="CP Editor">
+  <meta property="og:title" content="代码编辑">
+  <meta property="og:description" content="缩进宽度 设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 自动缩进 和 将制表符替换为空格 产生影响。
+光标宽度 以像素计算的光标宽度。
+自动缩进 当代码另起一行时，该行将和上一行拥有相同的缩进。 如果上一行以 { 结束，该行将会插入一个额外的缩进（一个制表符或 缩进宽度 个空格，取决于 将制表符替换为空格 选项是否开启）。 文本自动换行 如果某一行的字符数超出了屏幕的宽度，则该行的内容将会折成多行显示。
+自动补全括号 在输入左括号时自动插入右括号。例如，当你输入一个 ( 时，将会自动加入一个 )。
+如果光标处右边的第一个字符是右括号，而你输入了一个右括号，光标将会自动跳到该右括号后面，而不再输入右括号。
+你可以在各语言的 括号 设置中设置各语言自动补全的括号类型。
+自动删除括号 在删除一个左括号时，如果其右侧有一个右括号相邻，则该右括号也会被自动删除。
+你可以在各语言的 括号 设置中设置各语言自动删除的括号类型。
+在按下 Tab 键时跳出括号 如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果 自动补全括号 选项被启用，这种方式可以作为输入右括号的另一种方式。
+你可以在各语言的 括号 设置中设置各语言按下 Tab 时自动跳出的括号类型。
+将制表符替换为空格 当插入一个缩进时，插入与 缩进宽度 数目相等的空格来代替制表符。
+该设置不会影响文件中已经存在的空格。在 自动缩进 选项中，如果上一行使用了制表符作为缩进，新的一行仍然会使用制表符缩进。但如果上一行以 { 结束，新的一行插入的额外缩进将会使用空格。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="website">
 
-<meta itemprop="name" content="代码编辑">
-<meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="代码编辑"/>
-<meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
+  <meta itemprop="name" content="代码编辑">
+  <meta itemprop="description" content="缩进宽度 设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 自动缩进 和 将制表符替换为空格 产生影响。
+光标宽度 以像素计算的光标宽度。
+自动缩进 当代码另起一行时，该行将和上一行拥有相同的缩进。 如果上一行以 { 结束，该行将会插入一个额外的缩进（一个制表符或 缩进宽度 个空格，取决于 将制表符替换为空格 选项是否开启）。 文本自动换行 如果某一行的字符数超出了屏幕的宽度，则该行的内容将会折成多行显示。
+自动补全括号 在输入左括号时自动插入右括号。例如，当你输入一个 ( 时，将会自动加入一个 )。
+如果光标处右边的第一个字符是右括号，而你输入了一个右括号，光标将会自动跳到该右括号后面，而不再输入右括号。
+你可以在各语言的 括号 设置中设置各语言自动补全的括号类型。
+自动删除括号 在删除一个左括号时，如果其右侧有一个右括号相邻，则该右括号也会被自动删除。
+你可以在各语言的 括号 设置中设置各语言自动删除的括号类型。
+在按下 Tab 键时跳出括号 如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果 自动补全括号 选项被启用，这种方式可以作为输入右括号的另一种方式。
+你可以在各语言的 括号 设置中设置各语言按下 Tab 时自动跳出的括号类型。
+将制表符替换为空格 当插入一个缩进时，插入与 缩进宽度 数目相等的空格来代替制表符。
+该设置不会影响文件中已经存在的空格。在 自动缩进 选项中，如果上一行使用了制表符作为缩进，新的一行仍然会使用制表符缩进。但如果上一行以 { 结束，新的一行插入的额外缩进将会使用空格。">
+  <meta itemprop="dateModified" content="2021-05-23T22:19:00+08:00">
+  <meta itemprop="wordCount" content="55">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="代码编辑">
+  <meta name="twitter:description" content="缩进宽度 设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对 自动缩进 和 将制表符替换为空格 产生影响。
+光标宽度 以像素计算的光标宽度。
+自动缩进 当代码另起一行时，该行将和上一行拥有相同的缩进。 如果上一行以 { 结束，该行将会插入一个额外的缩进（一个制表符或 缩进宽度 个空格，取决于 将制表符替换为空格 选项是否开启）。 文本自动换行 如果某一行的字符数超出了屏幕的宽度，则该行的内容将会折成多行显示。
+自动补全括号 在输入左括号时自动插入右括号。例如，当你输入一个 ( 时，将会自动加入一个 )。
+如果光标处右边的第一个字符是右括号，而你输入了一个右括号，光标将会自动跳到该右括号后面，而不再输入右括号。
+你可以在各语言的 括号 设置中设置各语言自动补全的括号类型。
+自动删除括号 在删除一个左括号时，如果其右侧有一个右括号相邻，则该右括号也会被自动删除。
+你可以在各语言的 括号 设置中设置各语言自动删除的括号类型。
+在按下 Tab 键时跳出括号 如果光标处右边的第一个字符时右括号，你可以通过按下 Tab 键来自动跳出这对括号。如果 自动补全括号 选项被启用，这种方式可以作为输入右括号的另一种方式。
+你可以在各语言的 括号 设置中设置各语言按下 Tab 时自动跳出的括号类型。
+将制表符替换为空格 当插入一个缩进时，插入与 缩进宽度 数目相等的空格来代替制表符。
+该设置不会影响文件中已经存在的空格。在 自动缩进 选项中，如果上一行使用了制表符作为缩进，新的一行仍然会使用制表符缩进。但如果上一行以 { 结束，新的一行插入的额外缩进将会使用空格。">
 
 
 
 
-
-
-
-<link rel="preload" href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" as="style">
-<link href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../../../scss/main.min.422a0cd78605e2e5b4a71d6c81bd8827bce582d71c4325d6deae67f9a4bc0035.css" as="style">
+<link href="../../../../scss/main.min.422a0cd78605e2e5b4a71d6c81bd8827bce582d71c4325d6deae67f9a4bc0035.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -124,8 +159,6 @@
 	
 	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
 	
-	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
-	
 </div>
 
 			</li>
@@ -159,7 +192,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.1fa970e1ef9ff1b47c2660d82a1b9c64.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.3d563e316b1742d14af3d4b51f375a09.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -191,7 +224,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.1fa970e1ef9ff1b47c2660d82a1b9c64.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.3d563e316b1742d14af3d4b51f375a09.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -414,10 +447,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="../../../../zh/docs/preferences/code-edit/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">代码编辑</a>
+    <a  href="../../../../zh/docs/preferences/code-edit/" class="align-left pl-0 pr-2 collapsed active td-sidebar-link td-sidebar-link__section">代码编辑</a>
   </li>
   <ul>
-    <li class="collapse show" id="zhdocspreferencescode-edit">
+    <li class="collapse " id="zhdocspreferencescode-edit">
       
       
       
@@ -710,7 +743,7 @@
 
 
 
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.9/content/docs/preferences/code-edit/_index.zh.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.9/content//docs/preferences/code-edit" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=%e4%bb%a3%e7%a0%81%e7%bc%96%e8%be%91" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
 
 
@@ -752,6 +785,7 @@
   
 
           
+
 
 
 
@@ -1016,8 +1050,6 @@
     
 </div>
 
-	
-	
 	<div class="text-muted mt-5 pt-3 border-top">最后修改 May 23, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/9024448c93fc0370616fb1d1954c7c8edb6e8f4a">chore: use yarn and upgrade to Remark 9 (#173) (9024448c)</a>
 </div>
 </div>
@@ -1100,7 +1132,7 @@
 
 
 
-<script src="../../../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+<script src="../../../../js/main.min.27af2a485b4359ac7a0cd4cb4a2d165c56770c59ef3a9330e8f38fbe3bdc2f97.js" integrity="sha256-J68qSFtDWax6DNTLSi0WXFZ3DFnvOpMw6POPvjvcL5c=" crossorigin="anonymous"></script>
 
 
 

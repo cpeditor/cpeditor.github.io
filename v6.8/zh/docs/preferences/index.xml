@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 设置</title><link>/zh/docs/preferences/</link><description>Recent content in 设置 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 代码编辑</title><link>/zh/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/code-edit/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 设置</title><link>/zh/docs/preferences/</link><description>Recent content in 设置 on CP Editor</description><generator>Hugo -- gohugo.io</generator><language>zh</language><atom:link href="/zh/docs/preferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 代码编辑</title><link>/zh/docs/preferences/code-edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/code-edit/</guid><description>
 &lt;h3 id="缩进宽度">缩进宽度&lt;/h3>
 &lt;p>设置制表符的宽度或缩进的空格个数。该选项设置的值将同时对
 &lt;a href="#%e8%87%aa%e5%8a%a8%e7%bc%a9%e8%bf%9b" >自动缩进&lt;/a>
@@ -116,10 +116,11 @@
 &lt;li>否则，光标将会在第一个匹配位置的开头或末尾（取决于设置的偏移类型），并会在该位置基础上向右移动偏移量个位置（如果是负数，就会向左移动）。&lt;/li>
 &lt;/ol>
 &lt;p>例如，如果你的模板中包含下列代码片段：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#204a87;font-weight:bold">int&lt;/span> &lt;span style="color:#000">main&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
-&lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>则可以用 &lt;code>int main&lt;/code> 作为匹配的正则表达式，&lt;code>end&lt;/code> 作为偏移类型，&lt;code>9&lt;/code> 作为偏移量，则在打开一个新标签时，光标将会停在 &lt;code>main&lt;/code> 函数的第一行。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">int&lt;/span> &lt;span style="color:#000">main&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>则可以用 &lt;code>int main&lt;/code> 作为匹配的正则表达式，&lt;code>end&lt;/code> 作为偏移类型，&lt;code>9&lt;/code> 作为偏移量，则在打开一个新标签时，光标将会停在 &lt;code>main&lt;/code> 函数的第一行。&lt;/p>
 &lt;h2 id="代码片段">代码片段&lt;/h2>
 &lt;h3 id="管理代码片段">管理代码片段&lt;/h3>
 &lt;p>你可以在 “语言-&amp;gt;XXX-&amp;gt;XXX 代码片段中” 添加，删除，重命名代码片段。你可以使用 &lt;kbd>Ctrl+N&lt;/kbd> 作为添加的快捷键，&lt;kbd>Ctrl+W&lt;/kbd> 作为删除的快捷键，&lt;kbd>F2&lt;/kbd> 作为重命名的快捷键。&lt;/p>

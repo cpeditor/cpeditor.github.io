@@ -1,33 +1,31 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – Installation</title><link>/docs/installation/</link><description>Recent content in Installation on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Install from binaries</title><link>/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/installation/install-from-binaries/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – Installation</title><link>/docs/installation/</link><description>Recent content in Installation on CP Editor</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Install from binaries</title><link>/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/installation/install-from-binaries/</guid><description>
 &lt;p>Choose a version in the
 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Releases&lt;/a>
 , then download your binary.&lt;/p>
 &lt;h3 id="windows">Windows&lt;/h3>
 &lt;h4 id="setup-version">Setup Version&lt;/h4>
 &lt;blockquote>
-&lt;p>The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.&lt;/p>
-&lt;/blockquote>
+&lt;p>The setup version needs to be installed on your machine. The setting files will be stored in the config directory on your system, and it will be visible in the list of installed programs on your system.&lt;/p>&lt;/blockquote>
 &lt;p>Download the &lt;code>setup.exe&lt;/code> in the assets and install it.&lt;/p>
 &lt;h4 id="portable-version">Portable Version&lt;/h4>
 &lt;blockquote>
-&lt;p>The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won&amp;rsquo;t see it in the list of installed programs on your system.&lt;/p>
-&lt;/blockquote>
+&lt;p>The portable version can be executed without installation. The setting files will be stored in the same directory as the executable file, and you won&amp;rsquo;t see it in the list of installed programs on your system.&lt;/p>&lt;/blockquote>
 &lt;p>Download the &lt;code>portable.zip&lt;/code> in the assets and unzip it to any directory you like.&lt;/p>
 &lt;h3 id="most-linux-distros">Most Linux Distros&lt;/h3>
 &lt;p>Download the &lt;code>AppImage&lt;/code> in the assets, add execute permission to it (&lt;code>chmod +x &amp;lt;AppImagePath&amp;gt;&lt;/code>), then run it.&lt;/p>
 &lt;h3 id="debian-based-linux-distros">Debian-based Linux Distros&lt;/h3>
 &lt;p>On Debian-based Linux distributions (Ubuntu, Linux Mint, etc.) you can download the &lt;code>.deb&lt;/code> package in the assets and run the command in the terminal:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">sudo apt install &amp;lt;path to .deb package&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or other graphical tools to install the &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara, and newer versions of these distributions or the ones based on them.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sudo apt install &amp;lt;path to .deb package&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then type your root password and agree with the installation. You can also use &lt;code>Gdebi&lt;/code> or other graphical tools to install the &lt;code>deb&lt;/code> package. Supported: Debian 10 Buster, Ubuntu 18.04 Bionic Beaver, Linux Mint 19 Tara, and newer versions of these distributions or the ones based on them.&lt;/p>
 &lt;h3 id="macos">macOS&lt;/h3>
 &lt;p>Download the &lt;code>.dmg&lt;/code> file in the assets and install it.&lt;/p>
 &lt;p>You may need to click &amp;ldquo;Yes&amp;rdquo; to access Filesystem several times. Apple may report that this application does not come from a recognized developer and prevent you from launching the app. Please add an exception to CP Editor from &lt;code>System Preferences -&amp;gt; Security &amp;amp; Privacy -&amp;gt; General&lt;/code>, and allow CP Editor to &lt;code>run anyways&lt;/code>&lt;/p></description></item><item><title>Docs: Build from source</title><link>/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/installation/build-from-source/</guid><description>
 &lt;ol>
 &lt;li>
 &lt;p>Clone this repo and submodules:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
-&lt;span style="color:#204a87">cd&lt;/span> cpeditor
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> cpeditor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Install
 &lt;a href="https://www.qt.io/download" target="_blank" >Qt&lt;/a>
@@ -51,18 +49,18 @@ to install Qt.&lt;/li>
 &lt;ul>
 &lt;li>
 &lt;p>Linux/macOS:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">mkdir build
-&lt;span style="color:#204a87">cd&lt;/span> build
-cmake .. -DCMAKE_BUILD_TYPE&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>Release
-cmake --build .
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mkdir build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake .. -DCMAKE_BUILD_TYPE&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>Release
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake --build .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Windows:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bat" data-lang="bat"> &lt;span style="color:#204a87;font-weight:bold">mkdir&lt;/span> build
-&lt;span style="color:#204a87;font-weight:bold">cd&lt;/span> build
-cmake ..
-cmake --build . --config Release
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bat" data-lang="bat">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">mkdir&lt;/span> build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">cd&lt;/span> build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cmake ..
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cmake --build . --config Release
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>

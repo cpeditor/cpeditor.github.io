@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/file-path/index.xml">
+<meta name="generator" content="Hugo 0.147.0"><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/file-path/index.xml">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
@@ -19,24 +19,71 @@
 <link rel="icon" type="image/png" href="../../../../favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="../../../../favicons/android-192x192.png" sizes="192x192">
 
-<title>文件路径 | CP Editor</title><meta property="og:title" content="文件路径" />
-<meta property="og:description" content="专为算法竞赛设计的 IDE" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/zh/docs/preferences/file-path/" /><meta property="og:site_name" content="CP Editor" />
+<title>文件路径 | CP Editor</title><meta property="og:url" content="/zh/docs/preferences/file-path/">
+  <meta property="og:site_name" content="CP Editor">
+  <meta property="og:title" content="文件路径">
+  <meta property="og:description" content="测试点 输入文件/答案文件保存路径 设置测试数据 保存 的位置。如果设置的路径是相对路径，则实际路径将基于源代码所在路径。
+你可以使用如下占位符：
+${filename}：完整的文件名。 ${basename}：将 ${filename} 去掉扩展名后的文件名。 ${0-index}：从 0 开始的测试点编号。 ${1-index}：从 1 开始的测试点编号。 例如，某个输入文件是源代码 /a/b/c.cpp 的第三个测试点的输入文件，此时各占位符将会以如下方式被替换：
+${filename}: c.cpp ${basename}: c ${0-index}: 2 ${1-index}: 3 如果输入文件的保存路径被设定为 testcases/${basename}-${1-index}.in，则该测试数据的输入文件将会被保存在 /a/b/testcases/c-3.in 下。
+测试数据匹配规则 在加载成对的测试点时，输入文件和答案文件的匹配规则。
+每条规则是一对 正则表达式 。其中第一个正则表达式用于匹配完整输入文件名，第二个正则表达式用于匹配相应的答案文件名。
+例如，你可以使用 (.&#43;)\.in 和 \1.out 匹配 test-1.in 和 test-1.out，或者使用 (.&#43;)\.in\.(\d&#43;) 和 \1.ans.\2 匹配 test.in.3 和 test.ans.3。
+在加载成对的测试点时，每一条与输入文件匹配的规则都会被用于尝试寻找相应的答案文件。
+题目链接 针对题目链接的默认保存路径 保存一个有题目链接的新文件时，使用的默认保存路径。
+每条规则是一对 正则表达式 。其中第一个正则表达式用于匹配题目链接的一部分，第二个正则表达式用于设置相应的保存路径。
+当保存一个有题目链接的新文件时，如果题目链接与至少一个规则匹配，将使用第一个匹配的规则对应的保存路径。
+下面是一个例子：
+题目链接: codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)。 相应的文件路径: /home/username/Codeforces/\1/\2。 默认路径 在各种需要用户选择文件路径的情况下，默认的文件路径。对于不同的操作，可以设置不同的默认路径。
+用户可以设置多种默认路径，每条默认路径都有一个名称。设置的默认路径名称可以作为占位符在其他默认路径中使用。当用户为某个操作设定新的路径，其他路径的值也可能会发生变化。
+例如：
+操作“保存文件”的默认路径是 ${file}，而“保存文件”会修改 file 和 testcase。 操作“加载单个测试用例”的默认路径是 ${testcase}，而“加载单个测试用例”会修改 testcase。 刚开始时，file 是 /a/b，testcase 是 /a/c。 在执行“加载单个测试用例”操作时，默认路径为 /a/c，而你操作时将路径设置为 /a/d。现在 file 代表的路径仍然是 /a/b，而 testcase 代表的路径变成了 /a/d。 在执行“保存文件”操作时，默认路径为 /a/b，而你操作时将路径设置为 /a/e。现在 file 和 testcase 代表的路径都变成了 /a/e。 在执行“加载单个测试用例”操作时，默认路径已经变成了 /a/e，因为在执行“保存文件”操作时，testcase 代表的路径被修改了。 在设置中，可以设置执行每个操作后，被改变的路径的列表，列表中相邻两项之间用逗号隔开。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="website">
 
-<meta itemprop="name" content="文件路径">
-<meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="文件路径"/>
-<meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
+  <meta itemprop="name" content="文件路径">
+  <meta itemprop="description" content="测试点 输入文件/答案文件保存路径 设置测试数据 保存 的位置。如果设置的路径是相对路径，则实际路径将基于源代码所在路径。
+你可以使用如下占位符：
+${filename}：完整的文件名。 ${basename}：将 ${filename} 去掉扩展名后的文件名。 ${0-index}：从 0 开始的测试点编号。 ${1-index}：从 1 开始的测试点编号。 例如，某个输入文件是源代码 /a/b/c.cpp 的第三个测试点的输入文件，此时各占位符将会以如下方式被替换：
+${filename}: c.cpp ${basename}: c ${0-index}: 2 ${1-index}: 3 如果输入文件的保存路径被设定为 testcases/${basename}-${1-index}.in，则该测试数据的输入文件将会被保存在 /a/b/testcases/c-3.in 下。
+测试数据匹配规则 在加载成对的测试点时，输入文件和答案文件的匹配规则。
+每条规则是一对 正则表达式 。其中第一个正则表达式用于匹配完整输入文件名，第二个正则表达式用于匹配相应的答案文件名。
+例如，你可以使用 (.&#43;)\.in 和 \1.out 匹配 test-1.in 和 test-1.out，或者使用 (.&#43;)\.in\.(\d&#43;) 和 \1.ans.\2 匹配 test.in.3 和 test.ans.3。
+在加载成对的测试点时，每一条与输入文件匹配的规则都会被用于尝试寻找相应的答案文件。
+题目链接 针对题目链接的默认保存路径 保存一个有题目链接的新文件时，使用的默认保存路径。
+每条规则是一对 正则表达式 。其中第一个正则表达式用于匹配题目链接的一部分，第二个正则表达式用于设置相应的保存路径。
+当保存一个有题目链接的新文件时，如果题目链接与至少一个规则匹配，将使用第一个匹配的规则对应的保存路径。
+下面是一个例子：
+题目链接: codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)。 相应的文件路径: /home/username/Codeforces/\1/\2。 默认路径 在各种需要用户选择文件路径的情况下，默认的文件路径。对于不同的操作，可以设置不同的默认路径。
+用户可以设置多种默认路径，每条默认路径都有一个名称。设置的默认路径名称可以作为占位符在其他默认路径中使用。当用户为某个操作设定新的路径，其他路径的值也可能会发生变化。
+例如：
+操作“保存文件”的默认路径是 ${file}，而“保存文件”会修改 file 和 testcase。 操作“加载单个测试用例”的默认路径是 ${testcase}，而“加载单个测试用例”会修改 testcase。 刚开始时，file 是 /a/b，testcase 是 /a/c。 在执行“加载单个测试用例”操作时，默认路径为 /a/c，而你操作时将路径设置为 /a/d。现在 file 代表的路径仍然是 /a/b，而 testcase 代表的路径变成了 /a/d。 在执行“保存文件”操作时，默认路径为 /a/b，而你操作时将路径设置为 /a/e。现在 file 和 testcase 代表的路径都变成了 /a/e。 在执行“加载单个测试用例”操作时，默认路径已经变成了 /a/e，因为在执行“保存文件”操作时，testcase 代表的路径被修改了。 在设置中，可以设置执行每个操作后，被改变的路径的列表，列表中相邻两项之间用逗号隔开。">
+  <meta itemprop="dateModified" content="2021-05-23T22:19:00+08:00">
+  <meta itemprop="wordCount" content="102">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="文件路径">
+  <meta name="twitter:description" content="测试点 输入文件/答案文件保存路径 设置测试数据 保存 的位置。如果设置的路径是相对路径，则实际路径将基于源代码所在路径。
+你可以使用如下占位符：
+${filename}：完整的文件名。 ${basename}：将 ${filename} 去掉扩展名后的文件名。 ${0-index}：从 0 开始的测试点编号。 ${1-index}：从 1 开始的测试点编号。 例如，某个输入文件是源代码 /a/b/c.cpp 的第三个测试点的输入文件，此时各占位符将会以如下方式被替换：
+${filename}: c.cpp ${basename}: c ${0-index}: 2 ${1-index}: 3 如果输入文件的保存路径被设定为 testcases/${basename}-${1-index}.in，则该测试数据的输入文件将会被保存在 /a/b/testcases/c-3.in 下。
+测试数据匹配规则 在加载成对的测试点时，输入文件和答案文件的匹配规则。
+每条规则是一对 正则表达式 。其中第一个正则表达式用于匹配完整输入文件名，第二个正则表达式用于匹配相应的答案文件名。
+例如，你可以使用 (.&#43;)\.in 和 \1.out 匹配 test-1.in 和 test-1.out，或者使用 (.&#43;)\.in\.(\d&#43;) 和 \1.ans.\2 匹配 test.in.3 和 test.ans.3。
+在加载成对的测试点时，每一条与输入文件匹配的规则都会被用于尝试寻找相应的答案文件。
+题目链接 针对题目链接的默认保存路径 保存一个有题目链接的新文件时，使用的默认保存路径。
+每条规则是一对 正则表达式 。其中第一个正则表达式用于匹配题目链接的一部分，第二个正则表达式用于设置相应的保存路径。
+当保存一个有题目链接的新文件时，如果题目链接与至少一个规则匹配，将使用第一个匹配的规则对应的保存路径。
+下面是一个例子：
+题目链接: codeforces.com/contest/([1-9]\d*)/problem/([A-Z][1-9]?)。 相应的文件路径: /home/username/Codeforces/\1/\2。 默认路径 在各种需要用户选择文件路径的情况下，默认的文件路径。对于不同的操作，可以设置不同的默认路径。
+用户可以设置多种默认路径，每条默认路径都有一个名称。设置的默认路径名称可以作为占位符在其他默认路径中使用。当用户为某个操作设定新的路径，其他路径的值也可能会发生变化。
+例如：
+操作“保存文件”的默认路径是 ${file}，而“保存文件”会修改 file 和 testcase。 操作“加载单个测试用例”的默认路径是 ${testcase}，而“加载单个测试用例”会修改 testcase。 刚开始时，file 是 /a/b，testcase 是 /a/c。 在执行“加载单个测试用例”操作时，默认路径为 /a/c，而你操作时将路径设置为 /a/d。现在 file 代表的路径仍然是 /a/b，而 testcase 代表的路径变成了 /a/d。 在执行“保存文件”操作时，默认路径为 /a/b，而你操作时将路径设置为 /a/e。现在 file 和 testcase 代表的路径都变成了 /a/e。 在执行“加载单个测试用例”操作时，默认路径已经变成了 /a/e，因为在执行“保存文件”操作时，testcase 代表的路径被修改了。 在设置中，可以设置执行每个操作后，被改变的路径的列表，列表中相邻两项之间用逗号隔开。">
 
 
 
 
-
-
-
-<link rel="preload" href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" as="style">
-<link href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../../../scss/main.min.422a0cd78605e2e5b4a71d6c81bd8827bce582d71c4325d6deae67f9a4bc0035.css" as="style">
+<link href="../../../../scss/main.min.422a0cd78605e2e5b4a71d6c81bd8827bce582d71c4325d6deae67f9a4bc0035.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -124,8 +171,6 @@
 	
 	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
 	
-	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
-	
 </div>
 
 			</li>
@@ -161,7 +206,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.ec394923e1cb362af00bb59bbb3877c3.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.e7716d28bc7ab392638ed09cc5755b1f.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -193,7 +238,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.ec394923e1cb362af00bb59bbb3877c3.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.e7716d28bc7ab392638ed09cc5755b1f.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -543,10 +588,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="../../../../zh/docs/preferences/file-path/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">文件路径</a>
+    <a  href="../../../../zh/docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed active td-sidebar-link td-sidebar-link__section">文件路径</a>
   </li>
   <ul>
-    <li class="collapse show" id="zhdocspreferencesfile-path">
+    <li class="collapse " id="zhdocspreferencesfile-path">
       
       
       
@@ -714,7 +759,7 @@
 
 
 
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.11/content/docs/preferences/file-path/_index.zh.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v6.11/content//docs/preferences/file-path" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=%e6%96%87%e4%bb%b6%e8%b7%af%e5%be%84" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
 
 
@@ -756,6 +801,7 @@
   
 
           
+
 
 
 
@@ -953,8 +999,6 @@
     
 </div>
 
-	
-	
 	<div class="text-muted mt-5 pt-3 border-top">最后修改 May 23, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/9024448c93fc0370616fb1d1954c7c8edb6e8f4a">chore: use yarn and upgrade to Remark 9 (#173) (9024448c)</a>
 </div>
 </div>
@@ -1037,7 +1081,7 @@
 
 
 
-<script src="../../../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+<script src="../../../../js/main.min.27af2a485b4359ac7a0cd4cb4a2d165c56770c59ef3a9330e8f38fbe3bdc2f97.js" integrity="sha256-J68qSFtDWax6DNTLSi0WXFZ3DFnvOpMw6POPvjvcL5c=" crossorigin="anonymous"></script>
 
 
 

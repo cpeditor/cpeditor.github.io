@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 安装</title><link>/zh/docs/installation/</link><description>Recent content in 安装 on CP Editor</description><generator>Hugo -- gohugo.io</generator><atom:link href="/zh/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 安装可执行文件</title><link>/zh/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/install-from-binaries/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CP Editor – 安装</title><link>/zh/docs/installation/</link><description>Recent content in 安装 on CP Editor</description><generator>Hugo -- gohugo.io</generator><language>zh</language><atom:link href="/zh/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 安装可执行文件</title><link>/zh/docs/installation/install-from-binaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/install-from-binaries/</guid><description>
 &lt;p>在
 &lt;a href="https://github.com/cpeditor/cpeditor/releases" target="_blank" >Release&lt;/a>
 页面选择你需要的版本，下载相应的可执行文件。&lt;/p>
@@ -10,29 +10,27 @@
 &lt;h3 id="windows">Windows&lt;/h3>
 &lt;h4 id="使用安装包安装">使用安装包安装&lt;/h4>
 &lt;blockquote>
-&lt;p>使用安装包在你的电脑上进行安装。配置文件将会存储在你的系统的配置目录下，CP Editor 将会出现在你的系统的已安装程序列表中。&lt;/p>
-&lt;/blockquote>
+&lt;p>使用安装包在你的电脑上进行安装。配置文件将会存储在你的系统的配置目录下，CP Editor 将会出现在你的系统的已安装程序列表中。&lt;/p>&lt;/blockquote>
 &lt;p>下载 &lt;code>setup.exe&lt;/code> 以进行安装。&lt;/p>
 &lt;h4 id="便携式版本">便携式版本&lt;/h4>
 &lt;blockquote>
 &lt;p>使用便携式版本，无需安装即可使用 CP Editor。这意味着你可以将 CP Editor 存储在 U 盘等可移动介质中。&lt;/p>
-&lt;p>配置文件将存储在可执行文件所在的文件夹，CP Editor 将不会出现在你的系统的已安装程序列表中。&lt;/p>
-&lt;/blockquote>
+&lt;p>配置文件将存储在可执行文件所在的文件夹，CP Editor 将不会出现在你的系统的已安装程序列表中。&lt;/p>&lt;/blockquote>
 &lt;p>下载 &lt;code>portable.zip&lt;/code>，将其解压到任意一个你想要存放的位置。&lt;/p>
 &lt;h3 id="绝大部分-linux-发行版">绝大部分 Linux 发行版&lt;/h3>
 &lt;p>下载 &lt;code>AppImage&lt;/code>，执行 &lt;code>chmod +x &amp;lt;AppImagePath&amp;gt;&lt;/code> 给其添加执行权限，随后运行该文件。&lt;/p>
 &lt;h3 id="debian-系-linux-发行版">Debian 系 Linux 发行版&lt;/h3>
 &lt;p>如果你使用的是 Debian 系的 Linux 发行版（Ubuntu，Linux Mint 等），可以下载 &lt;code>.deb&lt;/code> 包，并在终端中执行如下命令：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">sudo apt install &amp;lt;path to .deb package&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>接下来输入密码，确认安装。你也可以使用 &lt;code>Gdebi&lt;/code> 等图形化工具安装 &lt;code>deb&lt;/code> 包，要求系统版本不低于 Debian 10 Buster，Ubuntu 18.04 Bionic Beaver，Linux Mint 19 Tara 或其他基于前述发行版的系统的相应版本。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sudo apt install &amp;lt;path to .deb package&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>接下来输入密码，确认安装。你也可以使用 &lt;code>Gdebi&lt;/code> 等图形化工具安装 &lt;code>deb&lt;/code> 包，要求系统版本不低于 Debian 10 Buster，Ubuntu 18.04 Bionic Beaver，Linux Mint 19 Tara 或其他基于前述发行版的系统的相应版本。&lt;/p>
 &lt;h3 id="macos">macOS&lt;/h3>
 &lt;p>下载 &lt;code>.dmg&lt;/code> 文件然后安装。如果出现“未识别的开发者”等提示消息，请依然允许 CP Editor 运行。可以在 &lt;code>Settings -&amp;gt; Security -&amp;gt; General&lt;/code> 中将 CP Editor 添加到白名单里。&lt;/p></description></item><item><title>Docs: 从源代码构建</title><link>/zh/docs/installation/build-from-source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/installation/build-from-source/</guid><description>
 &lt;ol>
 &lt;li>
 &lt;p>克隆源代码仓库以及子组件：&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
-&lt;span style="color:#204a87">cd&lt;/span> cpeditor
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> cpeditor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>安装
 &lt;a href="https://www.qt.io/download" target="_blank" >Qt&lt;/a>
@@ -56,18 +54,18 @@
 &lt;ul>
 &lt;li>
 &lt;p>Linux/macOS:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">mkdir build
-&lt;span style="color:#204a87">cd&lt;/span> build
-cmake .. -DCMAKE_BUILD_TYPE&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>Release
-cmake --build .
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>mkdir build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake .. -DCMAKE_BUILD_TYPE&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>Release
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake --build .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Windows:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bat" data-lang="bat"> &lt;span style="color:#204a87;font-weight:bold">mkdir&lt;/span> build
-&lt;span style="color:#204a87;font-weight:bold">cd&lt;/span> build
-cmake ..
-cmake --build . --config Release
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bat" data-lang="bat">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">mkdir&lt;/span> build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">cd&lt;/span> build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cmake ..
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cmake --build . --config Release
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.83.1" /><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/actions/index.xml">
+<meta name="generator" content="Hugo 0.147.0"><link rel="alternate" type="application/rss&#43;xml" href="../../../../zh/docs/preferences/actions/index.xml">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
@@ -19,24 +19,74 @@
 <link rel="icon" type="image/png" href="../../../../favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="../../../../favicons/android-192x192.png" sizes="192x192">
 
-<title>动作 | CP Editor</title><meta property="og:title" content="动作" />
-<meta property="og:description" content="专为算法竞赛设计的 IDE" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/zh/docs/preferences/actions/" /><meta property="og:site_name" content="CP Editor" />
+<title>动作 | CP Editor</title><meta property="og:url" content="/zh/docs/preferences/actions/">
+  <meta property="og:site_name" content="CP Editor">
+  <meta property="og:title" content="动作">
+  <meta property="og:description" content="保存 更快地保存文件 使用 QFile 而非 QSaveFile 来保存文件。
+启用该选项会有可忽略不计的丢失文件风险，但会显著提高保存文件的速度。
+保存文件时保存测试用例 在保存代码时将测试用例一并保存。
+你可以在 文件路径/测试点 中设置测试用例保存的位置。
+自动保存 自动保存间隔类型 自动保存机制以如下的方式运作：有一个计时器，每当它被“重置”，它就会“运行” 自动保存时间间隔 毫秒，当计时器“运行”了 自动保存时间间隔 毫秒后，当前代码就会被自动保存。
+After the last modification 计时器在每次修改代码后被重置。即，如果你在 自动保存时间间隔 毫秒内没有修改你的代码，则计时器完成了倒计时，同时你的代码会被自动保存。
+该模式适合使用较短的 自动保存时间间隔，以使代码能在你两次输入的间歇间被自动保存。如果设置的间隔时间过长，则难以让代码被自动保存。
+After the first modification 在计时器未运行时，若你修改了代码，则计时器将被重置。即，你的代码将在第一次修改后 自动保存时间间隔 毫秒被自动保存。
+该模式适合使用较长的 自动保存时间间隔。如果设置的时间过短，代码会在你输入的时候被自动保存，这可能会影响你的输入体验。
+Without modification 每当计时器完成倒计时，计时器会被重置。即，无论你是否修改了你的代码，你的代码都会以恒定的 自动保存时间间隔 被自动保存。
+该模式适合保存测试用例。在其他模式下，如果你不修改你的代码，测试用例不会被自动保存。
+终端中运行 终端程序 终端参数 本设置仅在 Linux 系统中可用。
+终端程序是你想要使用的终端模拟器的名称或路径。
+终端参数是终端模拟器中用于运行给定命令的参数。即，命令 &lt;终端程序&gt; &lt;终端参数&gt; &lt;命令&gt; 可在指定的终端模拟器中运行 &lt;命令&gt;。
+在大多数终端模拟器，如 konsole, xterm 和 xfce-terminal，终端参数为 -e，在 gnome-terminal 中，该参数为 --。
+你可以阅读你使用的终端模拟器的手册，以获取关于终端参数的相关信息。
+保存会话 在启动时恢复上一次会话 在退出 CP Editor 时保存当前状态，并在启动时恢复上一次会话。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="website">
 
-<meta itemprop="name" content="动作">
-<meta itemprop="description" content="专为算法竞赛设计的 IDE"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="动作"/>
-<meta name="twitter:description" content="专为算法竞赛设计的 IDE"/>
+  <meta itemprop="name" content="动作">
+  <meta itemprop="description" content="保存 更快地保存文件 使用 QFile 而非 QSaveFile 来保存文件。
+启用该选项会有可忽略不计的丢失文件风险，但会显著提高保存文件的速度。
+保存文件时保存测试用例 在保存代码时将测试用例一并保存。
+你可以在 文件路径/测试点 中设置测试用例保存的位置。
+自动保存 自动保存间隔类型 自动保存机制以如下的方式运作：有一个计时器，每当它被“重置”，它就会“运行” 自动保存时间间隔 毫秒，当计时器“运行”了 自动保存时间间隔 毫秒后，当前代码就会被自动保存。
+After the last modification 计时器在每次修改代码后被重置。即，如果你在 自动保存时间间隔 毫秒内没有修改你的代码，则计时器完成了倒计时，同时你的代码会被自动保存。
+该模式适合使用较短的 自动保存时间间隔，以使代码能在你两次输入的间歇间被自动保存。如果设置的间隔时间过长，则难以让代码被自动保存。
+After the first modification 在计时器未运行时，若你修改了代码，则计时器将被重置。即，你的代码将在第一次修改后 自动保存时间间隔 毫秒被自动保存。
+该模式适合使用较长的 自动保存时间间隔。如果设置的时间过短，代码会在你输入的时候被自动保存，这可能会影响你的输入体验。
+Without modification 每当计时器完成倒计时，计时器会被重置。即，无论你是否修改了你的代码，你的代码都会以恒定的 自动保存时间间隔 被自动保存。
+该模式适合保存测试用例。在其他模式下，如果你不修改你的代码，测试用例不会被自动保存。
+终端中运行 终端程序 终端参数 本设置仅在 Linux 系统中可用。
+终端程序是你想要使用的终端模拟器的名称或路径。
+终端参数是终端模拟器中用于运行给定命令的参数。即，命令 &lt;终端程序&gt; &lt;终端参数&gt; &lt;命令&gt; 可在指定的终端模拟器中运行 &lt;命令&gt;。
+在大多数终端模拟器，如 konsole, xterm 和 xfce-terminal，终端参数为 -e，在 gnome-terminal 中，该参数为 --。
+你可以阅读你使用的终端模拟器的手册，以获取关于终端参数的相关信息。
+保存会话 在启动时恢复上一次会话 在退出 CP Editor 时保存当前状态，并在启动时恢复上一次会话。">
+  <meta itemprop="dateModified" content="2024-02-17T12:04:45+08:00">
+  <meta itemprop="wordCount" content="141">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="动作">
+  <meta name="twitter:description" content="保存 更快地保存文件 使用 QFile 而非 QSaveFile 来保存文件。
+启用该选项会有可忽略不计的丢失文件风险，但会显著提高保存文件的速度。
+保存文件时保存测试用例 在保存代码时将测试用例一并保存。
+你可以在 文件路径/测试点 中设置测试用例保存的位置。
+自动保存 自动保存间隔类型 自动保存机制以如下的方式运作：有一个计时器，每当它被“重置”，它就会“运行” 自动保存时间间隔 毫秒，当计时器“运行”了 自动保存时间间隔 毫秒后，当前代码就会被自动保存。
+After the last modification 计时器在每次修改代码后被重置。即，如果你在 自动保存时间间隔 毫秒内没有修改你的代码，则计时器完成了倒计时，同时你的代码会被自动保存。
+该模式适合使用较短的 自动保存时间间隔，以使代码能在你两次输入的间歇间被自动保存。如果设置的间隔时间过长，则难以让代码被自动保存。
+After the first modification 在计时器未运行时，若你修改了代码，则计时器将被重置。即，你的代码将在第一次修改后 自动保存时间间隔 毫秒被自动保存。
+该模式适合使用较长的 自动保存时间间隔。如果设置的时间过短，代码会在你输入的时候被自动保存，这可能会影响你的输入体验。
+Without modification 每当计时器完成倒计时，计时器会被重置。即，无论你是否修改了你的代码，你的代码都会以恒定的 自动保存时间间隔 被自动保存。
+该模式适合保存测试用例。在其他模式下，如果你不修改你的代码，测试用例不会被自动保存。
+终端中运行 终端程序 终端参数 本设置仅在 Linux 系统中可用。
+终端程序是你想要使用的终端模拟器的名称或路径。
+终端参数是终端模拟器中用于运行给定命令的参数。即，命令 &lt;终端程序&gt; &lt;终端参数&gt; &lt;命令&gt; 可在指定的终端模拟器中运行 &lt;命令&gt;。
+在大多数终端模拟器，如 konsole, xterm 和 xfce-terminal，终端参数为 -e，在 gnome-terminal 中，该参数为 --。
+你可以阅读你使用的终端模拟器的手册，以获取关于终端参数的相关信息。
+保存会话 在启动时恢复上一次会话 在退出 CP Editor 时保存当前状态，并在启动时恢复上一次会话。">
 
 
 
 
-
-
-
-<link rel="preload" href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" as="style">
-<link href="../../../../scss/main.min.5403b140bcc30c403222d2dae3056d038625e83d5badd9c7ff96f48cf3385beb.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../../../scss/main.min.eaff2d8ad3e6cdbd7a08cf96d67fdef5712b79a8181d9c00d83a279995215ce7.css" as="style">
+<link href="../../../../scss/main.min.eaff2d8ad3e6cdbd7a08cf96d67fdef5712b79a8181d9c00d83a279995215ce7.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -124,8 +174,6 @@
 	
 	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
 	
-	<a class="dropdown-item" href="https://cpeditor.org/v6.7">v6.7</a>
-	
 </div>
 
 			</li>
@@ -161,7 +209,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.4cbd30e8e49683643425aaca7670fada.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.c1a8275eebc1b5f84073158d2122541b.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -193,7 +241,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.4cbd30e8e49683643425aaca7670fada.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.c1a8275eebc1b5f84073158d2122541b.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -493,10 +541,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="../../../../zh/docs/preferences/actions/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">动作</a>
+    <a  href="../../../../zh/docs/preferences/actions/" class="align-left pl-0 pr-2 collapsed active td-sidebar-link td-sidebar-link__section">动作</a>
   </li>
   <ul>
-    <li class="collapse show" id="zhdocspreferencesactions">
+    <li class="collapse " id="zhdocspreferencesactions">
       
       
       
@@ -714,7 +762,7 @@
 
 
 
-<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content/docs/preferences/actions/_index.zh.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content//docs/preferences/actions" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑此页</a>
 <a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=%e5%8a%a8%e4%bd%9c" target="_blank"><i class="fab fa-github fa-fw"></i> 提交文档问题</a>
 
 
@@ -793,6 +841,7 @@
   
 
           
+
 
 
 
@@ -1065,8 +1114,6 @@
     
 </div>
 
-	
-	
 	<div class="text-muted mt-5 pt-3 border-top">最后修改 February 17, 2024: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/8d2cd0eaecf4daa259fc32f0ff973a31b9ae67a2">chore(preferences): remove documentation for simple settings (#336) (8d2cd0ea)</a>
 </div>
 </div>
@@ -1149,7 +1196,7 @@
 
 
 
-<script src="../../../../js/main.min.63db3e552bd0543be17ce4a79a18b744e9cb72256bec42b540e3ab0cd43722d0.js" integrity="sha256-Y9s&#43;VSvQVDvhfOSnmhi3ROnLciVr7EK1QOOrDNQ3ItA=" crossorigin="anonymous"></script>
+<script src="../../../../js/main.min.27af2a485b4359ac7a0cd4cb4a2d165c56770c59ef3a9330e8f38fbe3bdc2f97.js" integrity="sha256-J68qSFtDWax6DNTLSi0WXFZ3DFnvOpMw6POPvjvcL5c=" crossorigin="anonymous"></script>
 
 
 
