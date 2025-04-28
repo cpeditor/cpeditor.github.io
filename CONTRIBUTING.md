@@ -27,7 +27,7 @@ yarn
 If you have cloned the repository but haven't cloned the submodules:
 
 ```sh
-git submodules update --init --recursive
+git submodule update --init --recursive
 ```
 
 ### Build static files

@@ -23,7 +23,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.83.1"
+          hugo-version: "0.147.0"
           extended: true
       - name: Build Site
         run: HUGO_ENV=production ./build.sh
