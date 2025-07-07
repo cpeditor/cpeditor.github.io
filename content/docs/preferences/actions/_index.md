@@ -131,11 +131,11 @@ This may reduce distractions caused by stopwatch updates.
 
 ## Stress Testing
 
-### Programming language for the generator template
+### Programming language for the template
 
 The programming language used for the generator template.
 
-### Path to the generator template file
+### Path to the template file
 
 See [Template Path](../language/#template-path).
 
@@ -145,8 +145,8 @@ See [Template Cursor Position](../language/#template-cursor-position).
 
 ### Template Cursor Position Offset Type
 
-Whether the offset is relative to the start of the regex or the end of the regex.
+See [Template Cursor Position](../language/#template-cursor-position).
 
 ### Template Cursor Position Offset Characters
 
-The offset relative to the match of the regex in the number of characters, including white spaces.
+See [Template Cursor Position](../language/#template-cursor-position).
