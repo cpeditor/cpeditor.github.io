@@ -48,19 +48,19 @@ Note that this won't replace the existing tab characters. In [Auto Indent](#auto
 
 ### Enable Vim emulation
 
-If enabled, code editor will emulate vim behaviour. In vim emulation, Control Key such as <kbd>Ctrl+N</kbd> will not be intercepted by CP Editor but by Code Editor. We provide some custom commands that can perform various tasks like opening new tab, running testcases etc. [Here](#custom-vim-commands) is a list of all supported custom vim commands.
+If enabled, the code editor will emulate vim behaviour. In vim emulation, control keys such as <kbd>Ctrl+N</kbd> will be handled by the vim layer instead of CP Editor's default key bindings. We provide some custom commands that can perform various tasks like opening new tabs, running test cases, etc. [Here](#custom-vim-commands) is a list of all supported custom vim commands.
 
-### Vim configuration
+### Vim Configuration
 
-The configuration to use in vim mode. The list of all supported vim commands are listed [here](#vim-commands)
+The configuration to use in vim mode. The list of all supported vim commands is [here](#vim-commands).
 
 ### Vim Commands
 
 #### Supported Features
 
-Most of supported commands can be followed by motion command or executed in visual mode, work with registers or can be prefixed with number of repetitions.
+Most supported commands can be followed by a motion command or executed in visual mode, work with registers, or be prefixed with a number of repetitions.
 
-Here is list of emulated commands with description where it can diverge from Vim in functionality.
+Here is a list of emulated commands with notes where behaviour can diverge from Vim.
 
 #### Modes
 
@@ -81,7 +81,7 @@ Here is list of emulated commands with description where it can diverge from Vim
 -   undo/redo
 -   `<C-A>`, `<C-X>` -- increase or decrease number in decimal/octal/hexadecimal format (e.g. `128<C-A>` on or before "0x0ff" changes it to "0x17f")
 -   `.` -- repeat last change
--   `/search`, `?search`, `*`, `#`, `n`, `N` -- most of regular expression syntax used in Vim except `\<` and `\>` just is the same as `\b` in QRegExp
+-   `/search`, `?search`, `*`, `#`, `n`, `N` -- most of the regular expression syntax used in Vim is supported; `\<` and `\>` are equivalent to `\b`
 -   `@`, `q` (macro recording, execution) -- special keys are saved as `<S-Left>`
 -   marks
 -   `gv` -- last visual selection; can differ if text is edited around it
@@ -180,21 +180,21 @@ vnoremap <C-S-K> :m-2<CR>gv=gv
 
 ### Custom Vim commands
 
-In this section we present a list of all custom vim commands that are supported to perform different operation in CP Editor.
+In this section we present a list of all custom vim commands supported in CP Editor.
 
 |    Command   | Shorthand |                                                        Description                                                        |            Usage            |
 | :----------: | :-------: | :-----------------------------------------------------------------------------------------------------------------------: | :-------------------------: |
-|     `new`    |   `new`   |                  Opens a new tab, if no langauge is specified, a tab in default editor langauge will open                 |      `new cpp` or `new`     |
-|    `open`    |   `opn`   |     Opens a new file, Only C++/Java/Python files will be opened. Without arguments it is same as open in Action menu.     |  `open` or `opn ~/cf/a.cpp` |
-|   `compile`  |   `cmp`   |                             Compiles the code, It is like clicking "Compile" button in a tab.                             |      `compile` or `cmp`     |
-|    `crun`    |   `crn`   |                          Compiles and run, It is like clicking "Compile and Run" button in a tab.                         |       `crun` or `crn`       |
-|     `run`    |   `run`   | Run, if no argument is provided all testcases are ran, otherwise nth testcase is ran. Counting includes hidden testcases. |       `run` or `run 2`      |
-|    `drun`    |   `drn`   |                                Detached run, It is same as clicking "Detached Run" in menu.                               |       `drun` or `drn`       |
-|   `killall`  |   `kap`   |                              Kill all process, It is same as clicking "Kill Process" in menu                              |      `killall` or `kap`     |
-|   `format`   |   `fmt`   |                                 Format Code, It is same as clicking "Format Code" in menu                                 |      `format` or `fmt`      |
-|   `snippet`  |   `snp`   |                             Open snippet dialog, It is same as clicking "Use Snippets" in menu                            |      `snippet` or `snp`     |
-|    `vmode`   |   `vmd`   |                      View mode, Changes the view mode. It can only toggle to "edit" and "split" mode                      | `vmode edit` or `vmd split` |
-| `preference` |   `prf`   |                                  Preferences, It is same as clicking "Preference" in menu                                 |    `preference` or `prf`    |
-|   `chlang`   |   `chl`   |                                 Language, It can be used to change the language of a tab.                                 |  `chlang cpp` or `chl java` |
-|    `clear`   |   `clr`   |                                                 Clear Message logger text                                                 |       `clear` or `clr`      |
-|    `exit`    |   `ext`   |                                        Exit, It is same as pressing "Quit" in menu.                                       |       `exit` or `ext`       |
+|     `new`    |   `new`   |                  Opens a new tab. If no language is specified, the default editor language is used.                        |      `new cpp` or `new`     |
+|    `open`    |   `opn`   |     Opens a file. Only C++/Java/Python files are supported. Without arguments, opens the file dialog.                     |  `open` or `opn ~/cf/a.cpp` |
+|   `compile`  |   `cmp`   |                             Compiles the code. Same as clicking the "Compile" button.                                     |      `compile` or `cmp`     |
+|    `crun`    |   `crn`   |                          Compiles and runs. Same as clicking the "Compile and Run" button.                                |       `crun` or `crn`       |
+|     `run`    |   `run`   | Runs test cases. Without arguments, runs all checked test cases. With a number, runs that specific test case.             |       `run` or `run 2`      |
+|    `drun`    |   `drn`   |                                Detached run. Same as clicking "Detached Run" in the menu.                                 |       `drun` or `drn`       |
+|   `killall`  |   `kap`   |                              Kills all running processes. Same as clicking "Kill Processes" in the menu.                  |      `killall` or `kap`     |
+|   `format`   |   `fmt`   |                                 Formats the code. Same as clicking "Format Code" in the menu.                             |      `format` or `fmt`      |
+|   `snippet`  |   `snp`   |                             Opens the snippet dialog. Same as clicking "Use Snippets" in the menu.                        |      `snippet` or `snp`     |
+|    `vmode`   |   `vmd`   |                      Changes the view mode. Supports "edit" and "split" modes.                                            | `vmode edit` or `vmd split` |
+| `preference` |   `prf`   |                                  Opens the preferences window.                                                            |    `preference` or `prf`    |
+|   `chlang`   |   `chl`   |                                 Changes the language of the current tab.                                                  |  `chlang cpp` or `chl java` |
+|    `clear`   |   `clr`   |                                                 Clears the message logger.                                                |       `clear` or `clr`      |
+|    `exit`    |   `ext`   |                                        Exits CP Editor. Same as clicking "Quit" in the menu.                              |       `exit` or `ext`       |
