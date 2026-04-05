@@ -128,3 +128,25 @@ If you switch to the correct tab when solving a problem, with this setting enabl
 Hide the time of the stopwatch and only show the time when the "Show" button is pressed.
 
 This may reduce distractions caused by stopwatch updates.
+
+## Stress Testing
+
+### Programming language for the template
+
+The programming language used for the generator template.
+
+### Path to the template file
+
+See [Template Path](../language/#template-path).
+
+### Template Cursor Position Regex
+
+See [Template Cursor Position](../language/#template-cursor-position).
+
+### Template Cursor Position Offset Type
+
+See [Template Cursor Position](../language/#template-cursor-position).
+
+### Template Cursor Position Offset Characters
+
+See [Template Cursor Position](../language/#template-cursor-position).
