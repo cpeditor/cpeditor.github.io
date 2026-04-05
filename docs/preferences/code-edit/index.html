@@ -32,8 +32,8 @@ Auto Indent When you start a new line, the new line will have the same indent (i
   <meta itemprop="description" content="Tab Width The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in Auto Indent and Replace tabs by spaces .
 Cursor Width The width of the text cursor in pixels.
 Auto Indent When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line. If the old line ends with {, an extra indent (a tab character or Tab Width spaces, depending on whether Replace tabs by spaces is enabled) will be inserted at the beginning of the new line. Wrap Text If a line is too long to fit in a single line, the line will be separated into several lines.">
-  <meta itemprop="dateModified" content="2021-05-23T22:19:00+08:00">
-  <meta itemprop="wordCount" content="348">
+  <meta itemprop="dateModified" content="2026-04-05T19:42:15+05:30">
+  <meta itemprop="wordCount" content="1133">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Code Edit">
   <meta name="twitter:description" content="Tab Width The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in Auto Indent and Replace tabs by spaces .
@@ -169,7 +169,7 @@ Auto Indent When you start a new line, the new line will have the same indent (i
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.3b63797b029c9800ef4832cebf47c8a4.json"
+  data-offline-search-index-json-src="../../../offline-search-index.942272cb1115362599dea0c09d1ac2a5.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -201,7 +201,7 @@ Auto Indent When you start a new line, the new line will have the same indent (i
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.3b63797b029c9800ef4832cebf47c8a4.json"
+  data-offline-search-index-json-src="../../../offline-search-index.942272cb1115362599dea0c09d1ac2a5.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -751,6 +751,10 @@ Auto Indent When you start a new line, the new line will have the same indent (i
         <li><a href="#auto-remove-parentheses">Auto Remove Parentheses</a></li>
         <li><a href="#jump-out-of-a-parenthesis-by-pressing-tab">Jump out of a parenthesis by pressing Tab</a></li>
         <li><a href="#replace-tabs-by-spaces">Replace tabs by spaces</a></li>
+        <li><a href="#enable-vim-emulation">Enable Vim emulation</a></li>
+        <li><a href="#vim-configuration">Vim Configuration</a></li>
+        <li><a href="#vim-commands">Vim Commands</a></li>
+        <li><a href="#custom-vim-commands">Custom Vim commands</a></li>
       </ul>
     </li>
   </ul>
@@ -965,6 +969,250 @@ Auto Indent When you start a new line, the new line will have the same indent (i
 
 <a href="#auto-indent"  >Auto Indent</a>
 , the tab characters in the old line will remain in the new line (however, the new indent inserted after <code>{</code> will be spaces).</p>
+<h3 id="enable-vim-emulation">Enable Vim emulation</h3>
+<p>If enabled, the code editor will emulate vim behaviour. In vim emulation, control keys such as <kbd>Ctrl+N</kbd> will be handled by the vim layer instead of CP Editor&rsquo;s default key bindings. We provide some custom commands that can perform various tasks like opening new tabs, running test cases, etc. 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#custom-vim-commands"  >Here</a>
+ is a list of all supported custom vim commands.</p>
+<h3 id="vim-configuration">Vim Configuration</h3>
+<p>The configuration to use in vim mode. The list of all supported vim commands is 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#vim-commands"  >here</a>
+.</p>
+<h3 id="vim-commands">Vim Commands</h3>
+<h4 id="supported-features">Supported Features</h4>
+<p>Most supported commands can be followed by a motion command or executed in visual mode, work with registers, or be prefixed with a number of repetitions.</p>
+<p>Here is a list of emulated commands with notes where behaviour can diverge from Vim.</p>
+<h4 id="modes">Modes</h4>
+<ul>
+<li>normal</li>
+<li>insert and replace</li>
+<li>visual</li>
+<li>command line (<code>:</code>)</li>
+</ul>
+<h4 id="normal-and-visual-modes">Normal and Visual Modes</h4>
+<ul>
+<li>basic movement &ndash; <code>h</code>/<code>j</code>/<code>k</code>/<code>l</code>, <code>&lt;C-U&gt;</code>, <code>&lt;C-D&gt;</code>, <code>&lt;C-F&gt;</code>, <code>&lt;C-B&gt;</code>, <code>gg</code>, <code>G</code>, <code>0</code>, <code>^</code>, <code>$</code> etc.</li>
+<li>word movement &ndash; <code>w</code>, <code>e</code>, <code>b</code> etc.</li>
+<li>&ldquo;inner/a&rdquo; movement &ndash; <code>ciw</code>, <code>3daw</code>, <code>ya{</code> etc.</li>
+<li><code>f</code>, <code>t</code> movement</li>
+<li><code>[</code>, <code>]</code> movement</li>
+<li><code>{</code>, <code>}</code> &ndash; paragraph movement</li>
+<li>delete/change/yank/paste with register</li>
+<li>undo/redo</li>
+<li><code>&lt;C-A&gt;</code>, <code>&lt;C-X&gt;</code> &ndash; increase or decrease number in decimal/octal/hexadecimal format (e.g. <code>128&lt;C-A&gt;</code> on or before &ldquo;0x0ff&rdquo; changes it to &ldquo;0x17f&rdquo;)</li>
+<li><code>.</code> &ndash; repeat last change</li>
+<li><code>/search</code>, <code>?search</code>, <code>*</code>, <code>#</code>, <code>n</code>, <code>N</code> &ndash; most of the regular expression syntax used in Vim is supported; <code>\&lt;</code> and <code>\&gt;</code> are equivalent to <code>\b</code></li>
+<li><code>@</code>, <code>q</code> (macro recording, execution) &ndash; special keys are saved as <code>&lt;S-Left&gt;</code></li>
+<li>marks</li>
+<li><code>gv</code> &ndash; last visual selection; can differ if text is edited around it</li>
+<li>indentation &ndash; <code>=</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code> etc. with movement, count and in visual mode</li>
+<li>&ldquo;to upper/lower&rdquo; &ndash; <code>~</code>, <code>gU</code>, <code>gu</code> etc.</li>
+<li><code>i</code>, <code>a</code>, <code>o</code>, <code>I</code>, <code>A</code>, <code>O</code> &ndash; enter insert mode</li>
+<li>scroll window &ndash; <code>zt</code>, <code>zb</code>, <code>zz</code> etc.</li>
+<li>wrap line movement &ndash; <code>gj</code>, <code>gk</code>, <code>g0</code>, <code>g^</code>, <code>g$</code></li>
+</ul>
+<h4 id="command-line-mode">Command Line Mode</h4>
+<ul>
+<li><code>:map</code>, <code>:unmap</code>, <code>:inoremap</code> etc.</li>
+<li><code>:source</code> &ndash; very basic line-by-line sourcing of vimrc files</li>
+<li><code>:substitute</code> &ndash; substitute expression in range</li>
+<li><code>:'&lt;,'&gt;!cmd</code> &ndash; filter through an external command (e.g. sort lines in file with <code>:%!sort</code>)</li>
+<li><code>:.!cmd</code> &ndash; insert standard output of an external command</li>
+<li><code>:read</code></li>
+<li><code>:yank</code>, <code>:delete</code>, <code>:change</code></li>
+<li><code>:move</code>, <code>:join</code></li>
+<li><code>:20</code> &ndash; go to address</li>
+<li><code>:history</code></li>
+<li><code>:registers</code>, <code>:display</code></li>
+<li><code>:nohlsearch</code></li>
+<li><code>:undo</code>, <code>:redo</code></li>
+<li><code>:normal</code></li>
+<li><code>:&lt;</code>, <code>:&gt;</code></li>
+</ul>
+<h4 id="insert-mode">Insert Mode</h4>
+<ul>
+<li><code>&lt;C-O&gt;</code> &ndash; execute single command and return to insert mode</li>
+<li><code>&lt;C-V&gt;</code> &ndash; insert raw character</li>
+<li><code>&lt;insert&gt;</code> &ndash; toggle replace mode</li>
+</ul>
+<h4 id="options-set-">Options (:set &hellip;)</h4>
+<ul>
+<li><code>autoindent</code></li>
+<li><code>clipboard</code></li>
+<li><code>backspace</code></li>
+<li><code>expandtab</code></li>
+<li><code>hlsearch</code></li>
+<li><code>ignorecase</code></li>
+<li><code>incsearch</code></li>
+<li><code>indent</code></li>
+<li><code>iskeyword</code></li>
+<li><code>scrolloff</code></li>
+<li><code>shiftwidth</code></li>
+<li><code>showcmd</code></li>
+<li><code>smartcase</code></li>
+<li><code>smartindent</code></li>
+<li><code>smarttab</code></li>
+<li><code>startofline</code></li>
+<li><code>tabstop</code></li>
+<li><code>tildeop</code></li>
+<li><code>wrapscan</code></li>
+</ul>
+<h4 id="example-vimrc">Example Vimrc</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vimrc" data-lang="vimrc"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; highlight matched</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">hlsearch</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; case insensitive search</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">ignorecase</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">smartcase</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; search while typing</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">incsearch</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; wrap-around when searching</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">wrapscan</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; show pressed keys in lower right corner</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">showcmd</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; tab -&gt; spaces</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">expandtab</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">tabstop</span><span style="color:#000;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">shiftwidth</span><span style="color:#000;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; keep a 5 line buffer for the cursor from top/bottom of window</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">scrolloff</span><span style="color:#000;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; X11 clipboard</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">clipboard</span><span style="color:#000;font-weight:bold">=</span><span style="color:#000">unnamed</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; use ~ with movement</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">tildeop</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; mappings</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">nnoremap</span> ; :
+</span></span><span style="display:flex;"><span><span style="color:#000">inoremap</span> <span style="color:#000">jj</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Esc</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; clear highlighted search term on space</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">noremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">silent</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Space</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">nohls</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; reselect visual block after indent</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">gv</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&gt;</span><span style="color:#000">gv</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; MOVE LINE/BLOCK</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">nnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">J</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span><span style="color:#000;font-weight:bold">+&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">nnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">K</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span><span style="color:#0000cf;font-weight:bold">-2</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">inoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">J</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Esc</span><span style="color:#000;font-weight:bold">&gt;</span>:<span style="color:#000">m</span><span style="color:#000;font-weight:bold">+&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span><span style="color:#000">gi</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">inoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">K</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Esc</span><span style="color:#000;font-weight:bold">&gt;</span>:<span style="color:#000">m</span><span style="color:#0000cf;font-weight:bold">-2</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span><span style="color:#000">gi</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">J</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span>&#39;<span style="color:#000;font-weight:bold">&gt;+&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;</span><span style="color:#000">gv</span><span style="color:#000;font-weight:bold">=</span><span style="color:#000">gv</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">K</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span><span style="color:#0000cf;font-weight:bold">-2</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;</span><span style="color:#000">gv</span><span style="color:#000;font-weight:bold">=</span><span style="color:#000">gv</span>
+</span></span></code></pre></div><h3 id="custom-vim-commands">Custom Vim commands</h3>
+<p>In this section we present a list of all custom vim commands supported in CP Editor.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Command</th>
+          <th style="text-align: center">Shorthand</th>
+          <th style="text-align: center">Description</th>
+          <th style="text-align: center">Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>new</code></td>
+          <td style="text-align: center"><code>new</code></td>
+          <td style="text-align: center">Opens a new tab. If no language is specified, the default editor language is used.</td>
+          <td style="text-align: center"><code>new cpp</code> or <code>new</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>open</code></td>
+          <td style="text-align: center"><code>opn</code></td>
+          <td style="text-align: center">Opens a file. Only C++/Java/Python files are supported. Without arguments, opens the file dialog.</td>
+          <td style="text-align: center"><code>open</code> or <code>opn ~/cf/a.cpp</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>compile</code></td>
+          <td style="text-align: center"><code>cmp</code></td>
+          <td style="text-align: center">Compiles the code. Same as clicking the &ldquo;Compile&rdquo; button.</td>
+          <td style="text-align: center"><code>compile</code> or <code>cmp</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>crun</code></td>
+          <td style="text-align: center"><code>crn</code></td>
+          <td style="text-align: center">Compiles and runs. Same as clicking the &ldquo;Compile and Run&rdquo; button.</td>
+          <td style="text-align: center"><code>crun</code> or <code>crn</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>run</code></td>
+          <td style="text-align: center"><code>run</code></td>
+          <td style="text-align: center">Runs test cases. Without arguments, runs all checked test cases. With a number, runs that specific test case.</td>
+          <td style="text-align: center"><code>run</code> or <code>run 2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>drun</code></td>
+          <td style="text-align: center"><code>drn</code></td>
+          <td style="text-align: center">Detached run. Same as clicking &ldquo;Detached Run&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>drun</code> or <code>drn</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>killall</code></td>
+          <td style="text-align: center"><code>kap</code></td>
+          <td style="text-align: center">Kills all running processes. Same as clicking &ldquo;Kill Processes&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>killall</code> or <code>kap</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>format</code></td>
+          <td style="text-align: center"><code>fmt</code></td>
+          <td style="text-align: center">Formats the code. Same as clicking &ldquo;Format Code&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>format</code> or <code>fmt</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>snippet</code></td>
+          <td style="text-align: center"><code>snp</code></td>
+          <td style="text-align: center">Opens the snippet dialog. Same as clicking &ldquo;Use Snippets&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>snippet</code> or <code>snp</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>vmode</code></td>
+          <td style="text-align: center"><code>vmd</code></td>
+          <td style="text-align: center">Changes the view mode. Supports &ldquo;edit&rdquo; and &ldquo;split&rdquo; modes.</td>
+          <td style="text-align: center"><code>vmode edit</code> or <code>vmd split</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>preference</code></td>
+          <td style="text-align: center"><code>prf</code></td>
+          <td style="text-align: center">Opens the preferences window.</td>
+          <td style="text-align: center"><code>preference</code> or <code>prf</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>chlang</code></td>
+          <td style="text-align: center"><code>chl</code></td>
+          <td style="text-align: center">Changes the language of the current tab.</td>
+          <td style="text-align: center"><code>chlang cpp</code> or <code>chl java</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>clear</code></td>
+          <td style="text-align: center"><code>clr</code></td>
+          <td style="text-align: center">Clears the message logger.</td>
+          <td style="text-align: center"><code>clear</code> or <code>clr</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>exit</code></td>
+          <td style="text-align: center"><code>ext</code></td>
+          <td style="text-align: center">Exits CP Editor. Same as clicking &ldquo;Quit&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>exit</code> or <code>ext</code></td>
+      </tr>
+  </tbody>
+</table>
 
         <div class="section-index">
     
@@ -1015,7 +1263,7 @@ Auto Indent When you start a new line, the new line will have the same indent (i
     
 </div>
 
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 23, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/9024448c93fc0370616fb1d1954c7c8edb6e8f4a">chore: use yarn and upgrade to Remark 9 (#173) (9024448c)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 5, 2026: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/a146eda9bc5e4bedaf0660866317c67cd6efce2b">docs: Add documentation for vim mode (#324) (a146eda9)</a>
 </div>
 </div>
 

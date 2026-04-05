@@ -42,7 +42,229 @@ settings.&lt;/p>
 .&lt;/p>
 &lt;p>Note that this won&amp;rsquo;t replace the existing tab characters. In
 &lt;a href="#auto-indent" >Auto Indent&lt;/a>
-, the tab characters in the old line will remain in the new line (however, the new indent inserted after &lt;code>{&lt;/code> will be spaces).&lt;/p></description></item><item><title>Docs: Language</title><link>/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/preferences/language/</guid><description>
+, the tab characters in the old line will remain in the new line (however, the new indent inserted after &lt;code>{&lt;/code> will be spaces).&lt;/p>
+&lt;h3 id="enable-vim-emulation">Enable Vim emulation&lt;/h3>
+&lt;p>If enabled, the code editor will emulate vim behaviour. In vim emulation, control keys such as &lt;kbd>Ctrl+N&lt;/kbd> will be handled by the vim layer instead of CP Editor&amp;rsquo;s default key bindings. We provide some custom commands that can perform various tasks like opening new tabs, running test cases, etc.
+&lt;a href="#custom-vim-commands" >Here&lt;/a>
+is a list of all supported custom vim commands.&lt;/p>
+&lt;h3 id="vim-configuration">Vim Configuration&lt;/h3>
+&lt;p>The configuration to use in vim mode. The list of all supported vim commands is
+&lt;a href="#vim-commands" >here&lt;/a>
+.&lt;/p>
+&lt;h3 id="vim-commands">Vim Commands&lt;/h3>
+&lt;h4 id="supported-features">Supported Features&lt;/h4>
+&lt;p>Most supported commands can be followed by a motion command or executed in visual mode, work with registers, or be prefixed with a number of repetitions.&lt;/p>
+&lt;p>Here is a list of emulated commands with notes where behaviour can diverge from Vim.&lt;/p>
+&lt;h4 id="modes">Modes&lt;/h4>
+&lt;ul>
+&lt;li>normal&lt;/li>
+&lt;li>insert and replace&lt;/li>
+&lt;li>visual&lt;/li>
+&lt;li>command line (&lt;code>:&lt;/code>)&lt;/li>
+&lt;/ul>
+&lt;h4 id="normal-and-visual-modes">Normal and Visual Modes&lt;/h4>
+&lt;ul>
+&lt;li>basic movement &amp;ndash; &lt;code>h&lt;/code>/&lt;code>j&lt;/code>/&lt;code>k&lt;/code>/&lt;code>l&lt;/code>, &lt;code>&amp;lt;C-U&amp;gt;&lt;/code>, &lt;code>&amp;lt;C-D&amp;gt;&lt;/code>, &lt;code>&amp;lt;C-F&amp;gt;&lt;/code>, &lt;code>&amp;lt;C-B&amp;gt;&lt;/code>, &lt;code>gg&lt;/code>, &lt;code>G&lt;/code>, &lt;code>0&lt;/code>, &lt;code>^&lt;/code>, &lt;code>$&lt;/code> etc.&lt;/li>
+&lt;li>word movement &amp;ndash; &lt;code>w&lt;/code>, &lt;code>e&lt;/code>, &lt;code>b&lt;/code> etc.&lt;/li>
+&lt;li>&amp;ldquo;inner/a&amp;rdquo; movement &amp;ndash; &lt;code>ciw&lt;/code>, &lt;code>3daw&lt;/code>, &lt;code>ya{&lt;/code> etc.&lt;/li>
+&lt;li>&lt;code>f&lt;/code>, &lt;code>t&lt;/code> movement&lt;/li>
+&lt;li>&lt;code>[&lt;/code>, &lt;code>]&lt;/code> movement&lt;/li>
+&lt;li>&lt;code>{&lt;/code>, &lt;code>}&lt;/code> &amp;ndash; paragraph movement&lt;/li>
+&lt;li>delete/change/yank/paste with register&lt;/li>
+&lt;li>undo/redo&lt;/li>
+&lt;li>&lt;code>&amp;lt;C-A&amp;gt;&lt;/code>, &lt;code>&amp;lt;C-X&amp;gt;&lt;/code> &amp;ndash; increase or decrease number in decimal/octal/hexadecimal format (e.g. &lt;code>128&amp;lt;C-A&amp;gt;&lt;/code> on or before &amp;ldquo;0x0ff&amp;rdquo; changes it to &amp;ldquo;0x17f&amp;rdquo;)&lt;/li>
+&lt;li>&lt;code>.&lt;/code> &amp;ndash; repeat last change&lt;/li>
+&lt;li>&lt;code>/search&lt;/code>, &lt;code>?search&lt;/code>, &lt;code>*&lt;/code>, &lt;code>#&lt;/code>, &lt;code>n&lt;/code>, &lt;code>N&lt;/code> &amp;ndash; most of the regular expression syntax used in Vim is supported; &lt;code>\&amp;lt;&lt;/code> and &lt;code>\&amp;gt;&lt;/code> are equivalent to &lt;code>\b&lt;/code>&lt;/li>
+&lt;li>&lt;code>@&lt;/code>, &lt;code>q&lt;/code> (macro recording, execution) &amp;ndash; special keys are saved as &lt;code>&amp;lt;S-Left&amp;gt;&lt;/code>&lt;/li>
+&lt;li>marks&lt;/li>
+&lt;li>&lt;code>gv&lt;/code> &amp;ndash; last visual selection; can differ if text is edited around it&lt;/li>
+&lt;li>indentation &amp;ndash; &lt;code>=&lt;/code>, &lt;code>&amp;lt;&amp;lt;&lt;/code>, &lt;code>&amp;gt;&amp;gt;&lt;/code> etc. with movement, count and in visual mode&lt;/li>
+&lt;li>&amp;ldquo;to upper/lower&amp;rdquo; &amp;ndash; &lt;code>~&lt;/code>, &lt;code>gU&lt;/code>, &lt;code>gu&lt;/code> etc.&lt;/li>
+&lt;li>&lt;code>i&lt;/code>, &lt;code>a&lt;/code>, &lt;code>o&lt;/code>, &lt;code>I&lt;/code>, &lt;code>A&lt;/code>, &lt;code>O&lt;/code> &amp;ndash; enter insert mode&lt;/li>
+&lt;li>scroll window &amp;ndash; &lt;code>zt&lt;/code>, &lt;code>zb&lt;/code>, &lt;code>zz&lt;/code> etc.&lt;/li>
+&lt;li>wrap line movement &amp;ndash; &lt;code>gj&lt;/code>, &lt;code>gk&lt;/code>, &lt;code>g0&lt;/code>, &lt;code>g^&lt;/code>, &lt;code>g$&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h4 id="command-line-mode">Command Line Mode&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>:map&lt;/code>, &lt;code>:unmap&lt;/code>, &lt;code>:inoremap&lt;/code> etc.&lt;/li>
+&lt;li>&lt;code>:source&lt;/code> &amp;ndash; very basic line-by-line sourcing of vimrc files&lt;/li>
+&lt;li>&lt;code>:substitute&lt;/code> &amp;ndash; substitute expression in range&lt;/li>
+&lt;li>&lt;code>:'&amp;lt;,'&amp;gt;!cmd&lt;/code> &amp;ndash; filter through an external command (e.g. sort lines in file with &lt;code>:%!sort&lt;/code>)&lt;/li>
+&lt;li>&lt;code>:.!cmd&lt;/code> &amp;ndash; insert standard output of an external command&lt;/li>
+&lt;li>&lt;code>:read&lt;/code>&lt;/li>
+&lt;li>&lt;code>:yank&lt;/code>, &lt;code>:delete&lt;/code>, &lt;code>:change&lt;/code>&lt;/li>
+&lt;li>&lt;code>:move&lt;/code>, &lt;code>:join&lt;/code>&lt;/li>
+&lt;li>&lt;code>:20&lt;/code> &amp;ndash; go to address&lt;/li>
+&lt;li>&lt;code>:history&lt;/code>&lt;/li>
+&lt;li>&lt;code>:registers&lt;/code>, &lt;code>:display&lt;/code>&lt;/li>
+&lt;li>&lt;code>:nohlsearch&lt;/code>&lt;/li>
+&lt;li>&lt;code>:undo&lt;/code>, &lt;code>:redo&lt;/code>&lt;/li>
+&lt;li>&lt;code>:normal&lt;/code>&lt;/li>
+&lt;li>&lt;code>:&amp;lt;&lt;/code>, &lt;code>:&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h4 id="insert-mode">Insert Mode&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>&amp;lt;C-O&amp;gt;&lt;/code> &amp;ndash; execute single command and return to insert mode&lt;/li>
+&lt;li>&lt;code>&amp;lt;C-V&amp;gt;&lt;/code> &amp;ndash; insert raw character&lt;/li>
+&lt;li>&lt;code>&amp;lt;insert&amp;gt;&lt;/code> &amp;ndash; toggle replace mode&lt;/li>
+&lt;/ul>
+&lt;h4 id="options-set-">Options (:set &amp;hellip;)&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>autoindent&lt;/code>&lt;/li>
+&lt;li>&lt;code>clipboard&lt;/code>&lt;/li>
+&lt;li>&lt;code>backspace&lt;/code>&lt;/li>
+&lt;li>&lt;code>expandtab&lt;/code>&lt;/li>
+&lt;li>&lt;code>hlsearch&lt;/code>&lt;/li>
+&lt;li>&lt;code>ignorecase&lt;/code>&lt;/li>
+&lt;li>&lt;code>incsearch&lt;/code>&lt;/li>
+&lt;li>&lt;code>indent&lt;/code>&lt;/li>
+&lt;li>&lt;code>iskeyword&lt;/code>&lt;/li>
+&lt;li>&lt;code>scrolloff&lt;/code>&lt;/li>
+&lt;li>&lt;code>shiftwidth&lt;/code>&lt;/li>
+&lt;li>&lt;code>showcmd&lt;/code>&lt;/li>
+&lt;li>&lt;code>smartcase&lt;/code>&lt;/li>
+&lt;li>&lt;code>smartindent&lt;/code>&lt;/li>
+&lt;li>&lt;code>smarttab&lt;/code>&lt;/li>
+&lt;li>&lt;code>startofline&lt;/code>&lt;/li>
+&lt;li>&lt;code>tabstop&lt;/code>&lt;/li>
+&lt;li>&lt;code>tildeop&lt;/code>&lt;/li>
+&lt;li>&lt;code>wrapscan&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h4 id="example-vimrc">Example Vimrc&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-vimrc" data-lang="vimrc">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; highlight matched&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">hlsearch&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; case insensitive search&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">ignorecase&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">smartcase&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; search while typing&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">incsearch&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; wrap-around when searching&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">wrapscan&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; show pressed keys in lower right corner&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">showcmd&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; tab -&amp;gt; spaces&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">expandtab&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">tabstop&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">shiftwidth&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; keep a 5 line buffer for the cursor from top/bottom of window&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">scrolloff&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; X11 clipboard&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">clipboard&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#000">unnamed&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; use ~ with movement&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">set&lt;/span> &lt;span style="color:#000">tildeop&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; mappings&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">nnoremap&lt;/span> ; :
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">inoremap&lt;/span> &lt;span style="color:#000">jj&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">Esc&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; clear highlighted search term on space&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">noremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">silent&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">Space&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> :&lt;span style="color:#000">nohls&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">CR&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; reselect visual block after indent&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">vnoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">gv&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">vnoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">gv&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&amp;#34; MOVE LINE/BLOCK&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">nnoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">C&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">S&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">J&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> :&lt;span style="color:#000">m&lt;/span>&lt;span style="color:#000;font-weight:bold">+&amp;lt;&lt;/span>&lt;span style="color:#000">CR&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;==&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">nnoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">C&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">S&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">K&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> :&lt;span style="color:#000">m&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">-2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">CR&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;==&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">inoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">C&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">S&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">J&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">Esc&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>:&lt;span style="color:#000">m&lt;/span>&lt;span style="color:#000;font-weight:bold">+&amp;lt;&lt;/span>&lt;span style="color:#000">CR&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;==&lt;/span>&lt;span style="color:#000">gi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">inoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">C&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">S&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">K&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">Esc&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>:&lt;span style="color:#000">m&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">-2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">CR&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;==&lt;/span>&lt;span style="color:#000">gi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">vnoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">C&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">S&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">J&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> :&lt;span style="color:#000">m&lt;/span>&amp;#39;&lt;span style="color:#000;font-weight:bold">&amp;gt;+&amp;lt;&lt;/span>&lt;span style="color:#000">CR&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">gv&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#000">gv&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">vnoremap&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">C&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">S&lt;/span>&lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#000">K&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> :&lt;span style="color:#000">m&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">-2&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">CR&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000">gv&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#000">gv&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="custom-vim-commands">Custom Vim commands&lt;/h3>
+&lt;p>In this section we present a list of all custom vim commands supported in CP Editor.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">Command&lt;/th>
+&lt;th style="text-align: center">Shorthand&lt;/th>
+&lt;th style="text-align: center">Description&lt;/th>
+&lt;th style="text-align: center">Usage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>new&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>new&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Opens a new tab. If no language is specified, the default editor language is used.&lt;/td>
+&lt;td style="text-align: center">&lt;code>new cpp&lt;/code> or &lt;code>new&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>open&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>opn&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Opens a file. Only C++/Java/Python files are supported. Without arguments, opens the file dialog.&lt;/td>
+&lt;td style="text-align: center">&lt;code>open&lt;/code> or &lt;code>opn ~/cf/a.cpp&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>compile&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>cmp&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Compiles the code. Same as clicking the &amp;ldquo;Compile&amp;rdquo; button.&lt;/td>
+&lt;td style="text-align: center">&lt;code>compile&lt;/code> or &lt;code>cmp&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>crun&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>crn&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Compiles and runs. Same as clicking the &amp;ldquo;Compile and Run&amp;rdquo; button.&lt;/td>
+&lt;td style="text-align: center">&lt;code>crun&lt;/code> or &lt;code>crn&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>run&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>run&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Runs test cases. Without arguments, runs all checked test cases. With a number, runs that specific test case.&lt;/td>
+&lt;td style="text-align: center">&lt;code>run&lt;/code> or &lt;code>run 2&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>drun&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>drn&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Detached run. Same as clicking &amp;ldquo;Detached Run&amp;rdquo; in the menu.&lt;/td>
+&lt;td style="text-align: center">&lt;code>drun&lt;/code> or &lt;code>drn&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>killall&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>kap&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Kills all running processes. Same as clicking &amp;ldquo;Kill Processes&amp;rdquo; in the menu.&lt;/td>
+&lt;td style="text-align: center">&lt;code>killall&lt;/code> or &lt;code>kap&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>format&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>fmt&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Formats the code. Same as clicking &amp;ldquo;Format Code&amp;rdquo; in the menu.&lt;/td>
+&lt;td style="text-align: center">&lt;code>format&lt;/code> or &lt;code>fmt&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>snippet&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>snp&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Opens the snippet dialog. Same as clicking &amp;ldquo;Use Snippets&amp;rdquo; in the menu.&lt;/td>
+&lt;td style="text-align: center">&lt;code>snippet&lt;/code> or &lt;code>snp&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>vmode&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>vmd&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Changes the view mode. Supports &amp;ldquo;edit&amp;rdquo; and &amp;ldquo;split&amp;rdquo; modes.&lt;/td>
+&lt;td style="text-align: center">&lt;code>vmode edit&lt;/code> or &lt;code>vmd split&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>preference&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>prf&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Opens the preferences window.&lt;/td>
+&lt;td style="text-align: center">&lt;code>preference&lt;/code> or &lt;code>prf&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>chlang&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>chl&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Changes the language of the current tab.&lt;/td>
+&lt;td style="text-align: center">&lt;code>chlang cpp&lt;/code> or &lt;code>chl java&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>clear&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>clr&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Clears the message logger.&lt;/td>
+&lt;td style="text-align: center">&lt;code>clear&lt;/code> or &lt;code>clr&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;code>exit&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>ext&lt;/code>&lt;/td>
+&lt;td style="text-align: center">Exits CP Editor. Same as clicking &amp;ldquo;Quit&amp;rdquo; in the menu.&lt;/td>
+&lt;td style="text-align: center">&lt;code>exit&lt;/code> or &lt;code>ext&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Language</title><link>/docs/preferences/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/preferences/language/</guid><description>
 &lt;h2 id="general">General&lt;/h2>
 &lt;h3 id="default-language">Default Language&lt;/h3>
 &lt;p>The default programming language. It&amp;rsquo;s used when opening a new tab and some other places.&lt;/p>
