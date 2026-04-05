@@ -9,7 +9,7 @@ In CP Editor, each file has a temporary directory, it can be used to save the ex
 
 You can treat it as a place to safely save something for each tab (i.e. each file) without affecting other files on your disk, and it will be automatically deleted when the tab is closed.
 
-On Linux, it's `/tmp/CP Editor-XXXXXX`. On Windows, it's `C:\Users\<username>\AppData\Local\Temp\CP Editor-XXXXXX`.
+On Linux, it's `/tmp/cpeditor-XXXXXX`. On Windows, it's `C:\Users\<username>\AppData\Local\Temp\cpeditor-XXXXXX`.
 
 ### Regular Expression
 

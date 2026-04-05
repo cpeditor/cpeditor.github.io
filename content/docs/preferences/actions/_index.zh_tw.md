@@ -11,14 +11,6 @@ Use [`QFile`](https://doc.qt.io/qt-5/qfile.html) instead of [`QSaveFile`](https:
 
 This is slightly unsafer but notably faster.
 
-### Save File On Compilation
-
-Save your code when compiling it.
-
-### Save File On Execution
-
-Save your code when executing it.
-
 ### Save Testcases on Save
 
 Save the test cases on the disk when saving the code.
@@ -73,7 +65,7 @@ You can read the manual of your terminal emulator to get the suitable arguments.
 
 Save the status of the editor, and restore most status from the last session when you start CP Editor.
 
-You can use the `--no-hot-exit` command-line option to temporarily disable this, in case that the last session is too big and the application hangs.
+You can use the `--no-restore-session` command-line option to temporarily disable this, in case that the last session is too big and the application hangs.
 
 ### Auto-save the current session periodically
 

@@ -9,7 +9,7 @@ weight: 1000
 
 你可以将其视为一个能够安全地为每个标签页（即每个文件）保存内容而不影响磁盘上其他文件的地方，并且在关闭标签页时它会被自动删除。
 
-在 Linux 上，它位于 `/tmp/CP Editor-XXXXXX`。在 Windows 上，它位于 `C:\Users\<username>\AppData\Local\Temp\CP Editor-XXXXXX`。
+在 Linux 上，它位于 `/tmp/cpeditor-XXXXXX`。在 Windows 上，它位于 `C:\Users\<username>\AppData\Local\Temp\cpeditor-XXXXXX`。
 
 ### 正则表达式
 

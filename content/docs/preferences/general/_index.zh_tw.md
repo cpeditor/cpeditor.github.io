@@ -11,8 +11,8 @@ CP Editor 中，每個檔案都位於各自的臨時目錄，用來存放可執�
 
 暫存目錄的位置因不同系統而異：
 
--   Linux：`/tmp/CP Editor-XXXXXX`
--   Windows：`C:\Users\<您的使用者名稱>\AppData\Local\Temp\CP Editor-XXXXXX`
+-   Linux：`/tmp/cpeditor-XXXXXX`
+-   Windows：`C:\Users\<您的使用者名稱>\AppData\Local\Temp\cpeditor-XXXXXX`
 
 ### 正規表達式
 

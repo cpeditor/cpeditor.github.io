@@ -23,8 +23,4 @@ menu:
 
 -   [<i class="fab fa-github"></i> 我覺得 CP Editor 爛透了](https://github.com/cpeditor/cpeditor/discussions/760)
 
-### 與其他使用者交流
-
--   [<i class="fab fa-telegram"></i> Telegram 群組](https://t.me/cpeditor)
-
 </div>
