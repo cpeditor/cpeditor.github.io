@@ -45,3 +45,156 @@ You can choose the parentheses to jump out by Tab in the [Parentheses](../langua
 When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the [Tab Width](#tab-width).
 
 Note that this won't replace the existing tab characters. In [Auto Indent](#auto-indent), the tab characters in the old line will remain in the new line (however, the new indent inserted after `{` will be spaces).
+
+### Enable Vim emulation
+
+If enabled, the code editor will emulate vim behaviour. In vim emulation, control keys such as <kbd>Ctrl+N</kbd> will be handled by the vim layer instead of CP Editor's default key bindings. We provide some custom commands that can perform various tasks like opening new tabs, running test cases, etc. [Here](#custom-vim-commands) is a list of all supported custom vim commands.
+
+### Vim Configuration
+
+The configuration to use in vim mode. The list of all supported vim commands is [here](#vim-commands).
+
+### Vim Commands
+
+#### Supported Features
+
+Most supported commands can be followed by a motion command or executed in visual mode, work with registers, or be prefixed with a number of repetitions.
+
+Here is a list of emulated commands with notes where behaviour can diverge from Vim.
+
+#### Modes
+
+-   normal
+-   insert and replace
+-   visual
+-   command line (`:`)
+
+#### Normal and Visual Modes
+
+-   basic movement -- `h`/`j`/`k`/`l`, `<C-U>`, `<C-D>`, `<C-F>`, `<C-B>`, `gg`, `G`, `0`, `^`, `$` etc.
+-   word movement -- `w`, `e`, `b` etc.
+-   "inner/a" movement -- `ciw`, `3daw`, `ya{` etc.
+-   `f`, `t` movement
+-   `[`, `]` movement
+-   `{`, `}` -- paragraph movement
+-   delete/change/yank/paste with register
+-   undo/redo
+-   `<C-A>`, `<C-X>` -- increase or decrease number in decimal/octal/hexadecimal format (e.g. `128<C-A>` on or before "0x0ff" changes it to "0x17f")
+-   `.` -- repeat last change
+-   `/search`, `?search`, `*`, `#`, `n`, `N` -- most of the regular expression syntax used in Vim is supported; `\<` and `\>` are equivalent to `\b`
+-   `@`, `q` (macro recording, execution) -- special keys are saved as `<S-Left>`
+-   marks
+-   `gv` -- last visual selection; can differ if text is edited around it
+-   indentation -- `=`, `<<`, `>>` etc. with movement, count and in visual mode
+-   "to upper/lower" -- `~`, `gU`, `gu` etc.
+-   `i`, `a`, `o`, `I`, `A`, `O` -- enter insert mode
+-   scroll window -- `zt`, `zb`, `zz` etc.
+-   wrap line movement -- `gj`, `gk`, `g0`, `g^`, `g$`
+
+#### Command Line Mode
+
+-   `:map`, `:unmap`, `:inoremap` etc.
+-   `:source` -- very basic line-by-line sourcing of vimrc files
+-   `:substitute` -- substitute expression in range
+-   `:'<,'>!cmd` -- filter through an external command (e.g. sort lines in file with `:%!sort`)
+-   `:.!cmd` -- insert standard output of an external command
+-   `:read`
+-   `:yank`, `:delete`, `:change`
+-   `:move`, `:join`
+-   `:20` -- go to address
+-   `:history`
+-   `:registers`, `:display`
+-   `:nohlsearch`
+-   `:undo`, `:redo`
+-   `:normal`
+-   `:<`, `:>`
+
+#### Insert Mode
+
+-   `<C-O>` -- execute single command and return to insert mode
+-   `<C-V>` -- insert raw character
+-   `<insert>` -- toggle replace mode
+
+#### Options (:set ...)
+
+-   `autoindent`
+-   `clipboard`
+-   `backspace`
+-   `expandtab`
+-   `hlsearch`
+-   `ignorecase`
+-   `incsearch`
+-   `indent`
+-   `iskeyword`
+-   `scrolloff`
+-   `shiftwidth`
+-   `showcmd`
+-   `smartcase`
+-   `smartindent`
+-   `smarttab`
+-   `startofline`
+-   `tabstop`
+-   `tildeop`
+-   `wrapscan`
+
+#### Example Vimrc
+
+```vimrc
+" highlight matched
+set hlsearch
+" case insensitive search
+set ignorecase
+set smartcase
+" search while typing
+set incsearch
+" wrap-around when searching
+set wrapscan
+" show pressed keys in lower right corner
+set showcmd
+" tab -> spaces
+set expandtab
+set tabstop=4
+set shiftwidth=4
+" keep a 5 line buffer for the cursor from top/bottom of window
+set scrolloff=5
+" X11 clipboard
+set clipboard=unnamed
+" use ~ with movement
+set tildeop
+" mappings
+nnoremap ; :
+inoremap jj <Esc>
+" clear highlighted search term on space
+noremap <silent> <Space> :nohls<CR>
+" reselect visual block after indent
+vnoremap < <gv
+vnoremap > >gv
+" MOVE LINE/BLOCK
+nnoremap <C-S-J> :m+<CR>==
+nnoremap <C-S-K> :m-2<CR>==
+inoremap <C-S-J> <Esc>:m+<CR>==gi
+inoremap <C-S-K> <Esc>:m-2<CR>==gi
+vnoremap <C-S-J> :m'>+<CR>gv=gv
+vnoremap <C-S-K> :m-2<CR>gv=gv
+```
+
+### Custom Vim commands
+
+In this section we present a list of all custom vim commands supported in CP Editor.
+
+|    Command   | Shorthand |                                                        Description                                                        |            Usage            |
+| :----------: | :-------: | :-----------------------------------------------------------------------------------------------------------------------: | :-------------------------: |
+|     `new`    |   `new`   |                  Opens a new tab. If no language is specified, the default editor language is used.                        |      `new cpp` or `new`     |
+|    `open`    |   `opn`   |     Opens a file. Only C++/Java/Python files are supported. Without arguments, opens the file dialog.                     |  `open` or `opn ~/cf/a.cpp` |
+|   `compile`  |   `cmp`   |                             Compiles the code. Same as clicking the "Compile" button.                                     |      `compile` or `cmp`     |
+|    `crun`    |   `crn`   |                          Compiles and runs. Same as clicking the "Compile and Run" button.                                |       `crun` or `crn`       |
+|     `run`    |   `run`   | Runs test cases. Without arguments, runs all checked test cases. With a number, runs that specific test case.             |       `run` or `run 2`      |
+|    `drun`    |   `drn`   |                                Detached run. Same as clicking "Detached Run" in the menu.                                 |       `drun` or `drn`       |
+|   `killall`  |   `kap`   |                              Kills all running processes. Same as clicking "Kill Processes" in the menu.                  |      `killall` or `kap`     |
+|   `format`   |   `fmt`   |                                 Formats the code. Same as clicking "Format Code" in the menu.                             |      `format` or `fmt`      |
+|   `snippet`  |   `snp`   |                             Opens the snippet dialog. Same as clicking "Use Snippets" in the menu.                        |      `snippet` or `snp`     |
+|    `vmode`   |   `vmd`   |                      Changes the view mode. Supports "edit" and "split" modes.                                            | `vmode edit` or `vmd split` |
+| `preference` |   `prf`   |                                  Opens the preferences window.                                                            |    `preference` or `prf`    |
+|   `chlang`   |   `chl`   |                                 Changes the language of the current tab.                                                  |  `chlang cpp` or `chl java` |
+|    `clear`   |   `clr`   |                                                 Clears the message logger.                                                |       `clear` or `clr`      |
+|    `exit`    |   `ext`   |                                        Exits CP Editor. Same as clicking "Quit" in the menu.                              |       `exit` or `ext`       |
