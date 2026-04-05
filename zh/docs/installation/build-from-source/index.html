@@ -28,8 +28,8 @@
 
   <meta itemprop="name" content="从源代码构建">
   <meta itemprop="description" content="通过这种方式，你可以使用最新的还未发布的特性，同时为参与开发做好准备。这需要更多的步骤，也是在你的操作系统不被支持时的唯一方案。">
-  <meta itemprop="dateModified" content="2024-02-13T21:31:23+08:00">
-  <meta itemprop="wordCount" content="172">
+  <meta itemprop="dateModified" content="2026-04-05T14:04:03+01:00">
+  <meta itemprop="wordCount" content="186">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="从源代码构建">
   <meta name="twitter:description" content="通过这种方式，你可以使用最新的还未发布的特性，同时为参与开发做好准备。这需要更多的步骤，也是在你的操作系统不被支持时的唯一方案。">
@@ -161,7 +161,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.c1a8275eebc1b5f84073158d2122541b.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.3b63797b029c9800ef4832cebf47c8a4.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -193,7 +193,7 @@
   aria-label="站内搜索…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.c1a8275eebc1b5f84073158d2122541b.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.3b63797b029c9800ef4832cebf47c8a4.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -867,7 +867,33 @@
 <p>如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：<code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>。例如，在 macOS 上，你可以运行 <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.15.2&quot;</code>。</p>
 </li>
 <li>
-<p>安装 KDE (kf5) Extra CMake Modules。</p>
+<p>安装 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/KDE/extra-cmake-modules"   target="_blank" >Extra CMake Modules</a>
+ 和 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/KDE/syntax-highlighting"   target="_blank" >KDE (kf5) Syntax Highlighting</a>
+。它们<strong>不再</strong>作为子模块捆绑，必须在构建前安装到系统中。</p>
 <ul>
 <li>
 <p>在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装它们。例如，在 Arch Linux 上可以使用 <code>sudo pacman -S syntax-highlighting5</code>，在 macOS 上可以使用 
@@ -886,13 +912,18 @@
  然后 <code>brew install kde-mac/kde/kf5-syntax-highlighting</code>。</p>
 </li>
 <li>
-<p>否则，你需要使用 CMake 先构建并安装 Extra CMake Modules 然后再是 KSH：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#204a87">cd</span> third_party/extra-cmake-modules
+<p>否则，你需要手动克隆并构建安装：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone --branch kf5 https://github.com/KDE/extra-cmake-modules.git
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> extra-cmake-modules
 </span></span><span style="display:flex;"><span>cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
 </span></span><span style="display:flex;"><span>cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># 可能需要 sudo</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ../syntax-highlighting
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ..
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git clone --branch kf5 https://github.com/KDE/syntax-highlighting.git
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> syntax-highlighting
 </span></span><span style="display:flex;"><span>cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
-</span></span><span style="display:flex;"><span>cmake --build build --config Release --target install
+</span></span><span style="display:flex;"><span>cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># 可能需要 sudo</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ..
 </span></span></code></pre></div></li>
 </ul>
 </li>
@@ -963,7 +994,7 @@
     
 </div>
 
-	<div class="text-muted mt-5 pt-3 border-top">最后修改 February 13, 2024: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/4577cad10327f2100856f4294bd669f726e461f3">feat(installation/build-from-source): add ECM and KSH, update commands (#333) (4577cad1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最后修改 April 5, 2026: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/84a02ae6861897fb6affbf32e6457e335b66d963">Docs updates for 7.1 release (#379) (84a02ae6)</a>
 </div>
 </div>
 

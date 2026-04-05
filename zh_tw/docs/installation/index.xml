@@ -82,6 +82,34 @@ or
 &lt;p>若 CMake 找不到 Qt 的安裝路徑，需要設定環境變數：&lt;code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake&lt;/code>。以 macOS 而言，執行這個命令 &lt;code>export CMAKE_PREFIX_PATH=&amp;quot;/usr/local/Cellar/qt/5.15.1&amp;quot;&lt;/code>。&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>安裝
+&lt;a href="https://github.com/KDE/extra-cmake-modules" target="_blank" >Extra CMake Modules&lt;/a>
+和
+&lt;a href="https://github.com/KDE/syntax-highlighting" target="_blank" >KDE (kf5) Syntax Highlighting&lt;/a>
+。它們&lt;strong>不再&lt;/strong>作為子模組捆綁，必須在建置前安裝到系統中。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>在 macOS 及某些 Linux 發行版，您可以透過套件管理系統來安裝。例如在 Arch Linux 上使用 &lt;code>sudo pacman -S syntax-highlighting5&lt;/code>，在 macOS 上使用
+&lt;a href="https://github.com/KDE/homebrew-kde" target="_blank" >Homebrew KDE&lt;/a>
+然後 &lt;code>brew install kde-mac/kde/kf5-syntax-highlighting&lt;/code>。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>否則，您需要手動 clone 並建置安裝：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>git clone --branch kf5 https://github.com/KDE/extra-cmake-modules.git
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> extra-cmake-modules
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake -B build -S . -DBUILD_HTML_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_MAN_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_QTHELP_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_TESTING&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake --build build --config Release --target install &lt;span style="color:#8f5902;font-style:italic"># 可能需要 sudo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> ..
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git clone --branch kf5 https://github.com/KDE/syntax-highlighting.git
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> syntax-highlighting
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake -B build -S . -DBUILD_HTML_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_MAN_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_QTHELP_DOCS&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF -DBUILD_TESTING&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>OFF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmake --build build --config Release --target install &lt;span style="color:#8f5902;font-style:italic"># 可能需要 sudo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> ..
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
 &lt;p>執行下列命令。&lt;/p>
 &lt;ul>
 &lt;li>

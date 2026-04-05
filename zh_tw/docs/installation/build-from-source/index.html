@@ -28,8 +28,8 @@
 
   <meta itemprop="name" content="編譯原始碼">
   <meta itemprop="description" content="此方式適合想要嘗鮮最新功能的使用者、協助進行開發的貢獻者使用。它的步驟較多，但若您使用不被支援的作業系統，這是使用 CP Editor 的唯一作法。">
-  <meta itemprop="dateModified" content="2021-08-13T01:02:28+08:00">
-  <meta itemprop="wordCount" content="87">
+  <meta itemprop="dateModified" content="2026-04-05T14:04:03+01:00">
+  <meta itemprop="wordCount" content="176">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="編譯原始碼">
   <meta name="twitter:description" content="此方式適合想要嘗鮮最新功能的使用者、協助進行開發的貢獻者使用。它的步驟較多，但若您使用不被支援的作業系統，這是使用 CP Editor 的唯一作法。">
@@ -161,7 +161,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.c1a8275eebc1b5f84073158d2122541b.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.3b63797b029c9800ef4832cebf47c8a4.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -193,7 +193,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.c1a8275eebc1b5f84073158d2122541b.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.3b63797b029c9800ef4832cebf47c8a4.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -752,11 +752,6 @@
 
 
 
-<div class="pageinfo pageinfo-primary">
-    The <a href='../../../../docs/installation/build-from-source/'>English version</a> of this page <a href='https://github.com/cpeditor/cpeditor.github.io/commits/hugo/content/docs/installation/build-from-source/_index.md'>has changed</a>. This page may be outdated.
-    You can help us <a href='https://github.com/cpeditor/cpeditor.github.io/edit/hugo/content//docs/installation/build-from-source'>translate this page</a>.
-</div>
-
 
 
 
@@ -868,6 +863,67 @@
 <p>若 CMake 找不到 Qt 的安裝路徑，需要設定環境變數：<code>CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake</code>。以 macOS 而言，執行這個命令 <code>export CMAKE_PREFIX_PATH=&quot;/usr/local/Cellar/qt/5.15.1&quot;</code>。</p>
 </li>
 <li>
+<p>安裝 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/KDE/extra-cmake-modules"   target="_blank" >Extra CMake Modules</a>
+ 和 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/KDE/syntax-highlighting"   target="_blank" >KDE (kf5) Syntax Highlighting</a>
+。它們<strong>不再</strong>作為子模組捆綁，必須在建置前安裝到系統中。</p>
+<ul>
+<li>
+<p>在 macOS 及某些 Linux 發行版，您可以透過套件管理系統來安裝。例如在 Arch Linux 上使用 <code>sudo pacman -S syntax-highlighting5</code>，在 macOS 上使用 
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/KDE/homebrew-kde"   target="_blank" >Homebrew KDE</a>
+ 然後 <code>brew install kde-mac/kde/kf5-syntax-highlighting</code>。</p>
+</li>
+<li>
+<p>否則，您需要手動 clone 並建置安裝：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone --branch kf5 https://github.com/KDE/extra-cmake-modules.git
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> extra-cmake-modules
+</span></span><span style="display:flex;"><span>cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
+</span></span><span style="display:flex;"><span>cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># 可能需要 sudo</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ..
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git clone --branch kf5 https://github.com/KDE/syntax-highlighting.git
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> syntax-highlighting
+</span></span><span style="display:flex;"><span>cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
+</span></span><span style="display:flex;"><span>cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># 可能需要 sudo</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ..
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
 <p>執行下列命令。</p>
 <ul>
 <li>
@@ -942,7 +998,7 @@
     
 </div>
 
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 13, 2021: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/456898402a22b2b513d86352070f4feed7f7b036">docs: Update zh_tw translation (#209) (45689840)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 5, 2026: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/84a02ae6861897fb6affbf32e6457e335b66d963">Docs updates for 7.1 release (#379) (84a02ae6)</a>
 </div>
 </div>
 

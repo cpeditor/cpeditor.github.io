@@ -253,7 +253,26 @@ is enabled, otherwise the changes won&amp;rsquo;t be loaded.&lt;/p>
 &lt;p>If you switch to the correct tab when solving a problem, with this setting enabled, you won&amp;rsquo;t need to manually start/stop the stopwatch.&lt;/p>
 &lt;h3 id="show-stopwatch-result-only-when-the-button-is-pressed">Show stopwatch result only when the button is pressed&lt;/h3>
 &lt;p>Hide the time of the stopwatch and only show the time when the &amp;ldquo;Show&amp;rdquo; button is pressed.&lt;/p>
-&lt;p>This may reduce distractions caused by stopwatch updates.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/preferences/extensions/</guid><description>
+&lt;p>This may reduce distractions caused by stopwatch updates.&lt;/p>
+&lt;h2 id="stress-testing">Stress Testing&lt;/h2>
+&lt;h3 id="programming-language-for-the-template">Programming language for the template&lt;/h3>
+&lt;p>The programming language used for the generator template.&lt;/p>
+&lt;h3 id="path-to-the-template-file">Path to the template file&lt;/h3>
+&lt;p>See
+&lt;a href="../../docs/preferences/language/#template-path" >Template Path&lt;/a>
+.&lt;/p>
+&lt;h3 id="template-cursor-position-regex">Template Cursor Position Regex&lt;/h3>
+&lt;p>See
+&lt;a href="../../docs/preferences/language/#template-cursor-position" >Template Cursor Position&lt;/a>
+.&lt;/p>
+&lt;h3 id="template-cursor-position-offset-type">Template Cursor Position Offset Type&lt;/h3>
+&lt;p>See
+&lt;a href="../../docs/preferences/language/#template-cursor-position" >Template Cursor Position&lt;/a>
+.&lt;/p>
+&lt;h3 id="template-cursor-position-offset-characters">Template Cursor Position Offset Characters&lt;/h3>
+&lt;p>See
+&lt;a href="../../docs/preferences/language/#template-cursor-position" >Template Cursor Position&lt;/a>
+.&lt;/p></description></item><item><title>Docs: Extensions</title><link>/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/preferences/extensions/</guid><description>
 &lt;h2 id="code-formatting">Code Formatting&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format is used to format the C/C++ and Java codes. You can click Actions-&amp;gt;Format Code or press the shortcut &lt;kbd>Ctrl+Shift+I&lt;/kbd> to format the codes. If you have selected a part of the code, only the selection (and its necessary adjacent codes) will be formatted.&lt;/p>

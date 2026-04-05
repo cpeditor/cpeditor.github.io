@@ -250,7 +250,26 @@
 &lt;p>启用了这个设置，如果你在做一道题时切换到正确的标签页，你就不需要手动启动/停止计时器了。&lt;/p>
 &lt;h3 id="只在按钮按下时显示计时结果">只在按钮按下时显示计时结果&lt;/h3>
 &lt;p>隐藏计时结果，只在“显示”按钮按下时显示。&lt;/p>
-&lt;p>这或许可以避免计时结果更新使人分心。&lt;/p></description></item><item><title>Docs: 扩展</title><link>/zh/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/extensions/</guid><description>
+&lt;p>这或许可以避免计时结果更新使人分心。&lt;/p>
+&lt;h2 id="对拍">对拍&lt;/h2>
+&lt;h3 id="模版使用的编程语言">模版使用的编程语言&lt;/h3>
+&lt;p>数据生成器模版使用的编程语言&lt;/p>
+&lt;h3 id="模板路径">模板路径&lt;/h3>
+&lt;p>参见
+&lt;a href="../../../zh/docs/preferences/language/#%e6%a8%a1%e6%9d%bf%e8%b7%af%e5%be%84" >模板路径&lt;/a>
+。&lt;/p>
+&lt;h3 id="使用模板时光标初始位置定位使用的正则表达式">使用模板时光标初始位置定位使用的正则表达式&lt;/h3>
+&lt;p>参见
+&lt;a href="../../../zh/docs/preferences/language/#%e4%bd%bf%e7%94%a8%e6%a8%a1%e6%9d%bf%e6%97%b6%e7%9a%84%e5%85%89%e6%a0%87%e5%88%9d%e5%a7%8b%e4%bd%8d%e7%bd%ae" >使用模板时的光标初始位置&lt;/a>
+。&lt;/p>
+&lt;h3 id="使用模板时光标初始位置的偏移类型">使用模板时光标初始位置的偏移类型&lt;/h3>
+&lt;p>参见
+&lt;a href="../../../zh/docs/preferences/language/#%e4%bd%bf%e7%94%a8%e6%a8%a1%e6%9d%bf%e6%97%b6%e7%9a%84%e5%85%89%e6%a0%87%e5%88%9d%e5%a7%8b%e4%bd%8d%e7%bd%ae" >使用模板时的光标初始位置&lt;/a>
+。&lt;/p>
+&lt;h3 id="使用模板时光标初始位置的偏移字符量">使用模板时光标初始位置的偏移字符量&lt;/h3>
+&lt;p>参见
+&lt;a href="../../../zh/docs/preferences/language/#%e4%bd%bf%e7%94%a8%e6%a8%a1%e6%9d%bf%e6%97%b6%e7%9a%84%e5%85%89%e6%a0%87%e5%88%9d%e5%a7%8b%e4%bd%8d%e7%bd%ae" >使用模板时的光标初始位置&lt;/a>
+。&lt;/p></description></item><item><title>Docs: 扩展</title><link>/zh/docs/preferences/extensions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/zh/docs/preferences/extensions/</guid><description>
 &lt;h2 id="代码格式化">代码格式化&lt;/h2>
 &lt;h3 id="clang-format">Clang Format&lt;/h3>
 &lt;p>Clang Format 是格式化 C/C++ 和 Java 代码的工具。你可以点击 动作-&amp;gt;格式化代码 或按快捷键 &lt;kbd>Ctrl+Shift+I&lt;/kbd> 来格式化代码。如果你选择了代码的一部分，只有被选择的部分（以及必要的相邻部分）会被格式化。&lt;/p>
