@@ -24,7 +24,7 @@ function build() {
         url = \"https://cpeditor.org/$version\"" >>config.toml
     done
 
-    hugo --minify
+    hugo --minify --disableKinds=RSS
 
     if [[ "$1" != "" ]]; then
         rm public/CNAME public/robots.txt
