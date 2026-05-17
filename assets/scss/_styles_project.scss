@@ -1,0 +1,283 @@
+/*
+   Project-level style overrides for Docsy theme
+   Applied to documentation pages
+*/
+
+// === Content Typography ===
+.td-content {
+  color: #4a5568;
+  font-size: 1rem;
+
+  > h1 {
+    font-weight: 800;
+    color: #1a202c;
+    font-size: 2.25rem;
+    letter-spacing: -0.5px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  > h2 {
+    font-weight: 700;
+    color: #1a202c;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.3px;
+  }
+
+  > h3 {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  > h4 {
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 1.05rem;
+    margin-top: 1.5rem;
+  }
+
+  p, li {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  strong {
+    color: #2d3748;
+  }
+
+  a {
+    color: #2b6cb0;
+    font-weight: 500;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: #1a365d;
+      text-decoration: underline;
+    }
+  }
+}
+
+// === Code Blocks ===
+.td-content {
+  pre {
+    background-color: #f7fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 8px;
+    padding: 1.25rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .highlight {
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    margin: 1.5rem 0;
+
+    pre {
+      border: none;
+      box-shadow: none;
+      margin: 0;
+    }
+  }
+
+  p code, li > code, table code {
+    background-color: #edf2f7;
+    color: #2d3748;
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+    font-size: 0.88em;
+    font-weight: 500;
+  }
+}
+
+// === Tables ===
+.td-content > table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  margin: 1.5rem 0;
+
+  th {
+    background-color: #f7fafc;
+    font-weight: 600;
+    color: #1a202c;
+    font-size: 0.88rem;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+}
+
+// === Blockquotes ===
+.td-content > blockquote {
+  border-left: 4px solid #4dabff;
+  background: #f7fafc;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  color: #4a5568;
+  margin: 1.5rem 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// === Alerts / Admonitions ===
+.alert {
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+
+  &.alert-primary, &.alert-info {
+    background: #ebf8ff;
+    border-left: 4px solid #4dabff;
+    color: #2b6cb0;
+  }
+
+  &.alert-warning {
+    background: #fffaf0;
+    border-left: 4px solid #ed8936;
+    color: #9c4221;
+  }
+
+  &.alert-danger {
+    background: #fff5f5;
+    border-left: 4px solid #fc8181;
+    color: #c53030;
+  }
+
+  &.alert-success {
+    background: #f0fff4;
+    border-left: 4px solid #68d391;
+    color: #276749;
+  }
+}
+
+// === Page Info Boxes ===
+.pageinfo {
+  border-radius: 8px;
+  border: 1px solid #edf2f7;
+}
+
+// === Breadcrumb ===
+.td-main .breadcrumb {
+  font-size: 0.85rem;
+  background: transparent;
+  padding: 0.25rem 0;
+  margin-bottom: 1rem;
+
+  a {
+    color: #718096;
+    font-weight: 500;
+
+    &:hover {
+      color: #2b6cb0;
+    }
+  }
+
+  .breadcrumb-item.active {
+    color: #a0aec0;
+  }
+}
+
+// === Sidebar Navigation ===
+.td-sidebar {
+  padding-top: 5rem;
+
+  a {
+    color: #4a5568;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      color: #2b6cb0;
+      background-color: rgba(#2b6cb0, 0.05);
+    }
+
+    &.active {
+      color: #2b6cb0;
+      font-weight: 600;
+      background-color: rgba(#2b6cb0, 0.08);
+    }
+  }
+}
+
+.td-sidebar-nav__section-title a {
+  font-weight: 600;
+  color: #1a202c;
+  font-size: 0.92rem;
+}
+
+// === Right TOC Sidebar ===
+.td-toc {
+  border-left-color: #edf2f7;
+  padding-top: 5rem;
+
+  a {
+    color: #718096;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: #2b6cb0;
+    }
+  }
+
+  li {
+    margin-bottom: 2px;
+  }
+}
+
+// === Section Index (list pages) ===
+.section-index .entry {
+  border-radius: 8px;
+  padding: 1rem;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    background-color: #f7fafc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  h5 {
+    margin-bottom: 0.25rem;
+
+    a {
+      color: #1a202c;
+      font-weight: 700;
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      &:hover {
+        color: #2b6cb0;
+      }
+    }
+  }
+
+  p {
+    color: #718096;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+// === Fix anchor offset for fixed header ===
+h2[id], h3[id], h4[id], h5[id], h6[id] {
+  scroll-margin-top: 5rem;
+}
+
+.td-offset-anchor:target {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden;
+}

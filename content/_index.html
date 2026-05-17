@@ -11,206 +11,224 @@ linkTitle = "CP Editor"
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">
 
-<div style="margin: -15px;">
+<div class="homepage-wrapper">
 
-<!--================Home Banner Area =================-->
+<!--================ Release Banner =================-->
+<div class="release-banner">
+  <a href="https://github.com/cpeditor/cpeditor/releases/tag/7.0.2" target="_blank">
+    <span class="badge">New</span>
+    CP Editor 7.0 is now available — KSyntaxHighlighting, code folding, and more!
+    <span class="arrow-icon">→</span>
+  </a>
+</div>
+<!--================ End Release Banner =================-->
+
+<!--================ Hero Section =================-->
 <div class="home_banner_area">
-	<div class="banner_inner">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5">
-					<div class="banner_content">
-						<h2>The Missing Editor <br />for Competitive Programmers</h2>
-						<p>CP Editor is designed for competitive programming. It helps you focus on your algorithms and automates compilation, execution and testing of your code. It can fetch test cases from different platforms and submit solutions to Codeforces.</p>
-						<a class="banner_btn" href="https://github.com/cpeditor/cpeditor">View on GitHub</a>
-						<a class="banner_btn2" href="download">Download</a>
-					</div>
-				</div>
-				<div class="col-lg-7">
-					<div class="home_left_img">
-						<img class="img-fluid" src="/img/banner/home-left-white.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="banner_inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="banner_content fade-in-up">
+            <h2>The <span class="highlight">IDE</span> for<br>Competitive Programmers</h2>
+            <p>CP Editor automates compilation, execution and testing so you can focus on your algorithms. Fetch test cases from competitive programming platforms and submit solutions to Codeforces — all from one editor.</p>
+            <div class="btn-group">
+              <a class="banner_btn" href="https://github.com/cpeditor/cpeditor" target="_blank">View on GitHub</a>
+              <a class="banner_btn2" href="download">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="home_left_img">
+            <img class="img-fluid" src="/img/banner/home-left-white.png" alt="CP Editor Screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!--================End Home Banner Area =================-->
+<!--================ End Hero =================-->
 
-<!--================Work Area =================-->
+<!--================ Features Section =================-->
 <div class="work_area p_120">
-	<div class="container">
-		<div class="main_title">
-			<h2>What it does</h2>
-			<p>It automates all that's reasonably possible and allows you to purely focus on your code. Say no to manual efforts of running and testing your code against expected outputs.</p>
-		</div>
-		<div class="work_inner row">
-			<div class="col-lg-4">
-				<div class="work_item">
-					<i class="lnr lnr-screen"></i>
-					<a><h4>Get the testcases</h4></a>
-					<p>It can fetch testcases automatically from almost all competitive programming sites. No more copy-pasting!</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="work_item">
-					<i class="lnr lnr-code"></i>
-					<a><h4>Test your solution</h4></a>
-					<p>With a single click you can run your code on multiple test cases and get verdicts.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="work_item">
-					<i class="lnr lnr-clock"></i>
-					<a><h4>Submit to CF</h4></a>
-					<p>Thanks to CF tools, It can submit your solution directly to codeforces and show you verdict without leaving the editor.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="main_title">
+      <h2>What it does</h2>
+      <p>CP Editor automates everything that's reasonably possible and allows you to purely focus on your code. Say no to manual efforts of running and testing your code against expected outputs.</p>
+    </div>
+    <div class="work_inner row">
+      <div class="col-lg-4">
+        <div class="work_item">
+          <div class="icon-wrap">
+            <i class="lnr lnr-screen"></i>
+          </div>
+          <a><h4>Fetch testcases</h4></a>
+          <p>Automatically fetch sample testcases from Codeforces, AtCoder, and many more competitive programming platforms with a single click.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="work_item">
+          <div class="icon-wrap">
+            <i class="lnr lnr-code"></i>
+          </div>
+          <a><h4>Compile & Run</h4></a>
+          <p>Compile and run your code on multiple test cases instantly. Get verdicts and compare outputs against expected results — no manual effort.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="work_item">
+          <div class="icon-wrap">
+            <i class="lnr lnr-clock"></i>
+          </div>
+          <a><h4>Submit solutions</h4></a>
+          <p>Submit directly to Codeforces using CF Tool right from the editor. View submission verdicts without ever leaving your workflow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!--================End Work Area =================-->
+<!--================ End Features =================-->
 
-<!--================Made Life Area =================-->
+<!--================ Feature Tabs Section =================-->
 <div class="made_life_area p_120">
-	<div class="container">
-		<div class="made_life_inner">
-			<ul class="nav nav-tabs" id="myTab" role="tablist">
-				<li class="nav-item">
-				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#withoutSaving" role="tab" aria-controls="home" aria-selected="true">Run without Saving</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#themes" role="tab" aria-controls="profile" aria-selected="false">Variety of Themes</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#linting" role="tab" aria-controls="contact" aria-selected="false">Code Linting</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" id="edge-tab" data-toggle="tab" href="#codeforces" role="tab" aria-controls="edge" aria-selected="false">Submit to Codeforces</a>
-				</li>
-			</ul>
-			<div class="tab-content" id="myTabContent">
-				<div class="tab-pane fade show active" id="withoutSaving" role="tabpanel" aria-labelledby="home-tab">
-					<div class="row made_life_text">
-						<div class="col-lg-6">
-							<div class="left_side_text">
-								<h3>Run your code<br />without saving</h3>
-								<h6>We know that you want to test something quickly.</h6>
-								<p>You can run your code with one click without saving and the hot exit feature makes it easy to restore your code from the last session.</p>
-								<a class="main_btn" href="download">Get Started Now</a>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="chart_img">
-								<img class="img-fluid" src="/img/simple.jpg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="themes" role="tabpanel" aria-labelledby="profile-tab">
-					<div class="row made_life_text">
-						<div class="col-lg-6">
-							<div class="left_side_text">
-								<h3>Dark themes? <br />We've got you covered</h3>
-								<h6>Our lives are colorful, why not our coding editor</h6>
-								<p>We have added five different themes for you to choose from: Light, Drakula, Monkai, Solarized Light and Solarized Dark. More themes are coming in the near future.</p>
-								<a class="main_btn" href="download">Get Started Now</a>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="chart_img">
-								<img class="img-fluid" src="/img/themes.jpg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="linting" role="tabpanel" aria-labelledby="contact-tab">
-					<div class="row made_life_text">
-						<div class="col-lg-6">
-							<div class="left_side_text">
-								<h3>Errors and Warnings?<br />We lint them while you are coding</h3>
-								<h6>Save your precious contest time with code linting</h6>
-								<p>Using Language Servers, we provide real-time linting for errors and warnings in your code. You can see squiggles under the code and hover over them to get useful tooltips.</p>
-								<a class="main_btn" href="download">Get Started Now</a>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="chart_img">
-								<img class="img-fluid" src="/img/linting.jpg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="codeforces" role="tabpanel" aria-labelledby="edge-tab">
-					<div class="row made_life_text">
-						<div class="col-lg-6">
-							<div class="left_side_text">
-								<h3>We can submit your <br/>Solutions to Codeforces</h3>
-								<h6>All thanks to Competitive Programming Community</h6>
-								<p>We have gathered the best tools in competitive programming and merged them into one editor. One such tool is called CF Tool. We have added it so you can submit and get verdicts in the editor.</p>
-								<a class="main_btn" href="download">Get Started Now</a>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="chart_img">
-								<img class="img-fluid" src="/img/codeforces.jfif" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="made_life_inner">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#withoutSaving" role="tab" aria-controls="home" aria-selected="true">Run without Saving</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#themes" role="tab" aria-controls="profile" aria-selected="false">Variety of Themes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#linting" role="tab" aria-controls="contact" aria-selected="false">Code Linting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="edge-tab" data-toggle="tab" href="#codeforces" role="tab" aria-controls="edge" aria-selected="false">Submit to Codeforces</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="withoutSaving" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row made_life_text">
+            <div class="col-lg-6">
+              <div class="left_side_text">
+                <h3>Run your code<br>without saving</h3>
+                <h6>We know that you want to test something quickly.</h6>
+                <p>You can run your code with one click without saving and the hot exit feature makes it easy to restore your code from the last session.</p>
+                <a class="main_btn" href="download">Get Started Now</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="chart_img">
+                <img class="img-fluid" src="/img/simple.jpg" alt="Run without saving">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="themes" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row made_life_text">
+            <div class="col-lg-6">
+              <div class="left_side_text">
+                <h3>Dark themes?<br>We've got you covered</h3>
+                <h6>Choose from hundreds of beautiful themes</h6>
+                <p>Powered by KSyntaxHighlighting (the same framework used by Kate editor), we now offer a vast library of color themes. Choose from Light, Drakula, Monkai, Solarized and hundreds more.</p>
+                <a class="main_btn" href="download">Get Started Now</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="chart_img">
+                <img class="img-fluid" src="/img/themes.jpg" alt="Themes">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="linting" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="row made_life_text">
+            <div class="col-lg-6">
+              <div class="left_side_text">
+                <h3>Errors and Warnings?<br>We highlight them while you type</h3>
+                <h6>Save your precious contest time with real-time diagnostics</h6>
+                <p>Using Language Server Protocol (LSP), CP Editor checks your code as you type and highlights errors and warnings with squiggly lines. You can customize the colors and hover over them for detailed tooltips.</p>
+                <a class="main_btn" href="download">Get Started Now</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="chart_img">
+                <img class="img-fluid" src="/img/linting.jpg" alt="Code Linting">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="codeforces" role="tabpanel" aria-labelledby="edge-tab">
+          <div class="row made_life_text">
+            <div class="col-lg-6">
+              <div class="left_side_text">
+                <h3>Submit your solutions<br>to Codeforces</h3>
+                <h6>Powered by the Competitive Programming Community</h6>
+                <p>We've integrated CF Tool into CP Editor, so you can submit solutions and view verdicts without leaving the editor. The best tools in competitive programming, all in one place.</p>
+                <a class="main_btn" href="download">Get Started Now</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="chart_img">
+                <img class="img-fluid" src="/img/codeforces.jfif" alt="Submit to Codeforces">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!--================End Made Life Area =================-->
+<!--================ End Feature Tabs =================-->
 
-<!--================Screen Area =================-->
+<!--================ Screenshot Section =================-->
 <div class="screen_area text-center p_120">
-	<div class="container">
-		<div class="main_title">
-			<h2>Simple and Adaptive User Interface</h2>
-			<p> We have made a simple UI with lots of flexibility and customisation and seamlessly adapts to your existing environment. <br> Everything you need is always in front of your eyes</p>
-		</div>
-		<img class="img-fluid" src="/img/banner/home-center-2.jpg" alt="">
-	</div>
+  <div class="container">
+    <div class="main_title">
+      <h2>Clean, Adaptive Interface</h2>
+      <p>We have crafted a simple yet powerful UI with code folding, syntax highlighting, and split views. <br>Everything you need is always in front of your eyes.</p>
+    </div>
+    <img class="img-fluid" src="/img/banner/home-center-2.jpg" alt="CP Editor Interface">
+  </div>
 </div>
-<!--================End Screen Area =================-->
+<!--================ End Screenshot =================-->
 
-<!--================Made Life Area =================-->
+<!--================ Language Support Section =================-->
 <div class="made_life_area made_white p_120">
-	<div class="container">
-		<div class="made_life_inner">
-			<div class="row made_life_text">
-				<div class="col-lg-6">
-					<div class="chart_img">
-						<img class="img-fluid" src="/img/banner/home-left-black.png" alt="">
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="left_side_text">
-						<h3>Full support for<br />C/C++, Java and Python</h3>
-						<h6>Use the language you like</h6>
-						<p>We officially support three languages in the editor. You can set your own compilation commands and pass runtime arguments to your code. It really gets exciting when you have the opportunity to use different languages in different tabs with one-click options.</p>
-						<a class="main_btn" href="download">Get Started Now</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="made_life_inner">
+      <div class="row made_life_text">
+        <div class="col-lg-6">
+          <div class="chart_img">
+            <img class="img-fluid" src="/img/banner/home-left-black.png" alt="Language Support">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="left_side_text">
+            <h3>Full support for<br>C/C++, Java and Python</h3>
+            <h6>Use the language you like</h6>
+            <p>We officially support three languages in the editor. You can set your own compilation commands and pass runtime arguments to your code. It really gets exciting when you have the opportunity to use different languages in different tabs with one-click options.</p>
+            <a class="main_btn" href="download">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!--================End Made Life Area =================-->
+<!--================ End Language Support =================-->
 
-<!--================Impress Area =================-->
+<!--================ CTA Section =================-->
 <div class="impress_area p_120">
-	<div class="container">
-		<div class="impress_inner">
-			<h2>Impressed by our features?</h2>
-			<p>We are excited that you have chosen to try out this editor. <br>We hope that our Editor will fulfill all your needs in Competitive Programming. <br>CP Editor is, "by competitive programmers, to competitive programmers, for competitive programmers".</p>
-			<a class="banner_btn2" href="download">Try it now</a>
-		</div>
-	</div>
+  <div class="container">
+    <div class="impress_inner">
+      <h2>Impressed by our features?</h2>
+      <p>We are excited that you have chosen to try out this editor. <br>We hope that CP Editor will fulfill all your competitive programming needs. <br>CP Editor is, "by competitive programmers, to competitive programmers, for competitive programmers".</p>
+      <a class="banner_btn2" href="download">Try it now</a>
+    </div>
+  </div>
 </div>
-<!--================End Impress Area =================-->
+<!--================ End CTA =================-->
 
 <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
 <script src="/js/index.js"></script>

@@ -26,3 +26,20 @@ $h6-font-weight: $font-weight-medium;
 $headings-line-height: 1.3;
 $line-height-base: 1.6;
 
+// Brand color overrides for docs
+$primary: #2b6cb0;
+$blue: #4dabff;
+$link-color: #2b6cb0;
+$link-hover-color: #1a365d;
+
+// Sidebar
+$td-sidebar-bg-color: rgba(#2b6cb0, 0.03);
+$td-sidebar-border-color: #edf2f7;
+
+// Code
+$code-color: #b75d00;
+
+// Border radius consistency
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+
