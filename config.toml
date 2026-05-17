@@ -5,7 +5,8 @@ enableRobotsTXT = true
 
 relativeURLs = true
 
-# Hugo allows theme composition (and inheritance). The precedence is from left to right.
+# Disable RSS (not a blog)
+disableKinds = ["RSS", "taxonomy"]
 theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
@@ -15,8 +16,6 @@ enableGitInfo = true
 defaultContentLanguage = "en"
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
-
-disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
