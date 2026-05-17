@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.147.0"><link rel="alternate" type="application/rss&#43;xml" href="../../../docs/installation/build-from-source/index.xml">
-<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="generator" content="Hugo 0.161.1"><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
 <link rel="shortcut icon" href="../../../favicons/favicon.ico" >
@@ -37,8 +36,8 @@
 
 
 
-<link rel="preload" href="../../../scss/main.min.2898a5a47aeabca125e5fc941962df9eae847d092af81656ba79cc5a326db998.css" as="style">
-<link href="../../../scss/main.min.2898a5a47aeabca125e5fc941962df9eae847d092af81656ba79cc5a326db998.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../../scss/main.min.48066cdfabaf8c53300097412ce3416cb454610b2806b663e5ef1a0249850b40.css" as="style">
+<link href="../../../scss/main.min.48066cdfabaf8c53300097412ce3416cb454610b2806b663e5ef1a0249850b40.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -163,7 +162,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.1d57ec72d192d36fe7ece41442da5ff4.json"
+  data-offline-search-index-json-src="../../../offline-search-index.25162f6c1be7d8dc3b46522631337cd0.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -195,7 +194,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.1d57ec72d192d36fe7ece41442da5ff4.json"
+  data-offline-search-index-json-src="../../../offline-search-index.25162f6c1be7d8dc3b46522631337cd0.json"
   data-offline-search-base-href="../../../"
   data-offline-search-max-results="10"
 >
@@ -786,7 +785,7 @@
 <ol>
 <li>
 <p>Clone this repo and submodules:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone --recurse-submodules https://github.com/cpeditor/cpeditor.git
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># or alternatively in two separate commands</span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># git clone https://github.com/cpeditor/cpeditor.git</span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># git submodule update --init --recursive</span>
@@ -875,7 +874,7 @@
 </li>
 <li>
 <p>Otherwise, you can use CMake to build and install Extra CMake Modules first and then KSH:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#204a87">cd</span> third_party/extra-cmake-modules
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#204a87">cd</span> third_party/extra-cmake-modules
 </span></span><span style="display:flex;"><span>cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
 </span></span><span style="display:flex;"><span>cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># may require sudo</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ../syntax-highlighting
@@ -889,12 +888,12 @@
 <ul>
 <li>
 <p>Linux/macOS:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cmake -S . -B build -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cmake -S . -B build -DCMAKE_BUILD_TYPE<span style="color:#ce5c00;font-weight:bold">=</span>Release
 </span></span><span style="display:flex;"><span>cmake --build build
 </span></span></code></pre></div></li>
 <li>
 <p>Windows:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>cmake -S . -B build
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>cmake -S . -B build
 </span></span><span style="display:flex;"><span>cmake --build build --config Release
 </span></span></code></pre></div></li>
 </ul>
