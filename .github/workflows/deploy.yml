@@ -17,13 +17,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: "16.x"
+          node-version: "26.x"
           cache: 'yarn'
       - run: yarn
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.147.0"
+          hugo-version: "0.161.1"
           extended: true
       - name: Build Site
         run: HUGO_ENV=production ./build.sh
