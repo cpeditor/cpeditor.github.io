@@ -26,7 +26,9 @@ description: In this way, you can get the latest unreleased features and get rea
 
 4.  Install [Extra CMake Modules](https://github.com/KDE/extra-cmake-modules) and [KDE (kf5) Syntax Highlighting](https://github.com/KDE/syntax-highlighting). These are **not** bundled as submodules and must be installed on the host system before building.
 
-    -   On some Linux distributions and macOS, you can install from your package manager. For example, `sudo pacman -S syntax-highlighting5` on Arch Linux, [Homebrew KDE](https://github.com/KDE/homebrew-kde) and then `brew install kde-mac/kde/kf5-syntax-highlighting` on macOS.
+    -   On some Linux distributions and macOS, you can install from your package manager. For example, `sudo pacman -S syntax-highlighting` on Arch Linux.
+
+    -   For macOS with Homebrew, you may need to build from source as KF6 formulas are not yet available in the [Homebrew KDE](https://github.com/KDE/homebrew-kde) tap.
 
     -   Otherwise, you can clone and build them manually:
 
