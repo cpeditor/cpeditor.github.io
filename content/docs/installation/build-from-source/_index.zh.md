@@ -17,26 +17,26 @@ description: 通过这种方式，你可以使用最新的还未发布的特性�
     cd cpeditor
     ```
 
-2.  安装 [Qt](https://www.qt.io/download)（5.15）, [CMake](https://cmake.org/download/)（3.12 或更高版本）以及 [Python3](https://www.python.org/downloads/)。
-    -   在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 `sudo pacman -S qt5-base`，在 macOS 上可以使用 `brew install qt@5`。
+2.  安装 [Qt](https://www.qt.io/download)（6.5 或更高版本）, [CMake](https://cmake.org/download/)（3.16 或更高版本）以及 [Python3](https://www.python.org/downloads/)。
+    -   在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装 Qt。例如，在 Arch Linux 上可以使用 `sudo pacman -S qt6-base`，在 macOS 上可以使用 `brew install qt`。
     -   你还可以使用 [aqtinstall](https://github.com/miurahr/aqtinstall) 来下载并安装。
 
 3.  如果 CMake 提示找不到 Qt 路径，你应该设置环境变量：`CMAKE_PREFIX_PATH=%QtPath%/%QtVersion%/%Compiler%/lib/cmake`。例如，在 macOS 上，你可以运行 `export CMAKE_PREFIX_PATH="/usr/local/Cellar/qt/5.15.2"`。
 
-4.  安装 [Extra CMake Modules](https://github.com/KDE/extra-cmake-modules) 和 [KDE (kf5) Syntax Highlighting](https://github.com/KDE/syntax-highlighting)。它们**不再**作为子模块捆绑，必须在构建前安装到系统中。
+4.  安装 [Extra CMake Modules](https://github.com/KDE/extra-cmake-modules) 和 [KDE (kf6) Syntax Highlighting](https://github.com/KDE/syntax-highlighting)。它们**不再**作为子模块捆绑，必须在构建前安装到系统中。
 
-    -   在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装它们。例如，在 Arch Linux 上可以使用 `sudo pacman -S syntax-highlighting5`，在 macOS 上可以使用 [Homebrew KDE](https://github.com/KDE/homebrew-kde) 然后 `brew install kde-mac/kde/kf5-syntax-highlighting`。
+    -   在一些 Linux 发行版和 macOS 系统上，你可以直接使用包管理器安装它们。例如，在 Arch Linux 上可以使用 `sudo pacman -S syntax-highlighting`。
 
     -   否则，你需要手动克隆并构建安装：
 
         ```sh
-        git clone --branch kf5 https://github.com/KDE/extra-cmake-modules.git
+        git clone https://github.com/KDE/extra-cmake-modules.git
         cd extra-cmake-modules
         cmake -B build -S . -DBUILD_HTML_DOCS=OFF -DBUILD_MAN_DOCS=OFF -DBUILD_QTHELP_DOCS=OFF -DBUILD_TESTING=OFF
         cmake --build build --config Release --target install # 可能需要 sudo
         cd ..
 
-        git clone --branch kf5 https://github.com/KDE/syntax-highlighting.git
+        git clone https://github.com/KDE/syntax-highlighting.git
         cd syntax-highlighting
         cmake -B build -S . -DBUILD_HTML_DOCS=OFF -DBUILD_MAN_DOCS=OFF -DBUILD_QTHELP_DOCS=OFF -DBUILD_TESTING=OFF
         cmake --build build --config Release --target install # 可能需要 sudo
