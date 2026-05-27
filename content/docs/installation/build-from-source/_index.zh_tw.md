@@ -20,7 +20,9 @@ description: 此方式適合想要嘗鮮最新功能的使用者、協助進行�
 
 4.  安裝 [Extra CMake Modules](https://github.com/KDE/extra-cmake-modules) 和 [KDE (kf6) Syntax Highlighting](https://github.com/KDE/syntax-highlighting)。它們**不再**作為子模組捆綁，必須在建置前安裝到系統中。
 
-    -   在 macOS 及某些 Linux 發行版，您可以透過套件管理系統來安裝。例如在 Arch Linux 上使用 `sudo pacman -S syntax-highlighting`。
+    -   在某些 Linux 發行版，您可以透過套件管理系統來安裝。例如在 Arch Linux 上使用 `sudo pacman -S syntax-highlighting`。
+
+    -   在 macOS 上，您需要從原始碼建置它們，因為套件管理器中還沒有可用的 KF6 公式。
 
     -   否則，您需要手動 clone 並建置安裝：
 

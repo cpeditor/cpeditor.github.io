@@ -20,7 +20,9 @@ description: In this way, you can get the latest unreleased features and get rea
 
 4.  Install [Extra CMake Modules](https://github.com/KDE/extra-cmake-modules) and [KDE (kf6) Syntax Highlighting](https://github.com/KDE/syntax-highlighting). These are **not** bundled as submodules and must be installed on the host system before building.
 
-    -   On some Linux distributions and macOS, you can install from your package manager. For example, `sudo pacman -S syntax-highlighting` on Arch Linux.
+    -   On some Linux distributions, you can install from your package manager. For example, `sudo pacman -S syntax-highlighting` on Arch Linux.
+
+    -   On macOS, you will need to build them from source as KF6 formulas are not yet available in package managers.
 
     -   Otherwise, you can clone and build them manually:
 
