@@ -27,8 +27,8 @@
 
   <meta itemprop="name" content="Build from source">
   <meta itemprop="description" content="In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps but is the only choice if your OS is not officially supported.">
-  <meta itemprop="dateModified" content="2026-04-05T14:04:03+01:00">
-  <meta itemprop="wordCount" content="270">
+  <meta itemprop="dateModified" content="2026-06-02T10:39:48+05:30">
+  <meta itemprop="wordCount" content="275">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Build from source">
   <meta name="twitter:description" content="In this way, you can get the latest unreleased features and get ready for contributing. It needs more steps but is the only choice if your OS is not officially supported.">
@@ -162,7 +162,7 @@
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.f5dcb5ab39f60c5aecd4a1886b99fd35.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.4979a89621fb00dddc61d018f8efde19.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -194,7 +194,7 @@
   aria-label="Поиск по сайту…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../../offline-search-index.f5dcb5ab39f60c5aecd4a1886b99fd35.json"
+  data-offline-search-index-json-src="../../../../offline-search-index.4979a89621fb00dddc61d018f8efde19.json"
   data-offline-search-base-href="../../../../"
   data-offline-search-max-results="10"
 >
@@ -820,7 +820,7 @@
 
 
 <a href="https://www.qt.io/download"   target="_blank" >Qt</a>
- (5.15 or higher), 
+ (6.5 or higher), 
 
 
 
@@ -833,7 +833,7 @@
 
 
 <a href="https://cmake.org/download/"   target="_blank" >CMake</a>
- (3.12 or higher) and 
+ (3.16 or higher) and 
 
 
 
@@ -848,7 +848,7 @@
 <a href="https://www.python.org/downloads/"   target="_blank" >Python3</a>
 .</p>
 <ul>
-<li>On some Linux distributions and macOS, you can install from your package manager. For example, <code>sudo pacman -S qt5</code> on Arch Linux, <code>brew install qt5</code> on macOS.</li>
+<li>On some Linux distributions and macOS, you can install from your package manager. For example, <code>sudo pacman -S qt6-base</code> on Arch Linux, <code>brew install qt</code> on macOS.</li>
 <li>You can also use 
 
 
@@ -894,34 +894,24 @@
 
 
 
-<a href="https://github.com/KDE/syntax-highlighting"   target="_blank" >KDE (kf5) Syntax Highlighting</a>
+<a href="https://github.com/KDE/syntax-highlighting"   target="_blank" >KDE (kf6) Syntax Highlighting</a>
 . These are <strong>not</strong> bundled as submodules and must be installed on the host system before building.</p>
 <ul>
 <li>
-<p>On some Linux distributions and macOS, you can install from your package manager. For example, <code>sudo pacman -S syntax-highlighting5</code> on Arch Linux, 
-
-
-
-
-
-
-
-
-
-
-
-<a href="https://github.com/KDE/homebrew-kde"   target="_blank" >Homebrew KDE</a>
- and then <code>brew install kde-mac/kde/kf5-syntax-highlighting</code> on macOS.</p>
+<p>On some Linux distributions, you can install from your package manager. For example, <code>sudo pacman -S syntax-highlighting</code> on Arch Linux.</p>
+</li>
+<li>
+<p>On macOS, you will need to build them from source as KF6 formulas are not yet available in package managers.</p>
 </li>
 <li>
 <p>Otherwise, you can clone and build them manually:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone --branch kf5 https://github.com/KDE/extra-cmake-modules.git
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/KDE/extra-cmake-modules.git
 </span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> extra-cmake-modules
 </span></span><span style="display:flex;"><span>cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
 </span></span><span style="display:flex;"><span>cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># may require sudo</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> ..
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git clone --branch kf5 https://github.com/KDE/syntax-highlighting.git
+</span></span><span style="display:flex;"><span>git clone https://github.com/KDE/syntax-highlighting.git
 </span></span><span style="display:flex;"><span><span style="color:#204a87">cd</span> syntax-highlighting
 </span></span><span style="display:flex;"><span>cmake -B build -S . -DBUILD_HTML_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_MAN_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_QTHELP_DOCS<span style="color:#ce5c00;font-weight:bold">=</span>OFF -DBUILD_TESTING<span style="color:#ce5c00;font-weight:bold">=</span>OFF
 </span></span><span style="display:flex;"><span>cmake --build build --config Release --target install <span style="color:#8f5902;font-style:italic"># may require sudo</span>
@@ -1002,7 +992,7 @@
     
 </div>
 
-	<div class="text-muted mt-5 pt-3 border-top">Изменено April 5, 2026: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/84a02ae6861897fb6affbf32e6457e335b66d963">Docs updates for 7.1 release (#379) (84a02ae6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Изменено June 2, 2026: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/3ed886ca54983fcaaae84e08004f9361ff83f115">feat: fix build instructions with qt6/kf6 (#390) (3ed886ca)</a>
 </div>
 </div>
 
