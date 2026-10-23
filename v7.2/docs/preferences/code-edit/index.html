@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.161.1"><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="../../../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../../../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../../../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../../../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../../../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../../../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../../../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../../../favicons/android-192x192.png" sizes="192x192">
+
+<title>Code Edit | CP Editor</title><meta property="og:url" content="/docs/preferences/code-edit/">
+  <meta property="og:site_name" content="CP Editor">
+  <meta property="og:title" content="Code Edit">
+  <meta property="og:description" content="Tab Width The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in Auto Indent and Replace tabs by spaces .
+Cursor Width The width of the text cursor in pixels.
+Auto Indent When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line. If the old line ends with {, an extra indent (a tab character or Tab Width spaces, depending on whether Replace tabs by spaces is enabled) will be inserted at the beginning of the new line. Wrap Text If a line is too long to fit in a single line, the line will be separated into several lines.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Code Edit">
+  <meta itemprop="description" content="Tab Width The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in Auto Indent and Replace tabs by spaces .
+Cursor Width The width of the text cursor in pixels.
+Auto Indent When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line. If the old line ends with {, an extra indent (a tab character or Tab Width spaces, depending on whether Replace tabs by spaces is enabled) will be inserted at the beginning of the new line. Wrap Text If a line is too long to fit in a single line, the line will be separated into several lines.">
+  <meta itemprop="dateModified" content="2026-04-05T19:42:15+05:30">
+  <meta itemprop="wordCount" content="1133">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Code Edit">
+  <meta name="twitter:description" content="Tab Width The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in Auto Indent and Replace tabs by spaces .
+Cursor Width The width of the text cursor in pixels.
+Auto Indent When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line. If the old line ends with {, an extra indent (a tab character or Tab Width spaces, depending on whether Replace tabs by spaces is enabled) will be inserted at the beginning of the new line. Wrap Text If a line is too long to fit in a single line, the line will be separated into several lines.">
+
+
+
+
+<link rel="preload" href="../../../scss/main.min.541cc89f1c0e79a79be2555bb77aa9b0e5749bb0a568f4dc449bfeb28f8bb737.css" as="style">
+<link href="../../../scss/main.min.541cc89f1c0e79a79be2555bb77aa9b0e5749bb0a568f4dc449bfeb28f8bb737.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body class="td-section">
+  <header>
+    
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../../../">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">CP Editor</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="../../../docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../../download/" ><span>Download</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="https://cpeditor.org/">alpha</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v7.2">v7.2</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v7.1">v7.1</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v7.0">v7.0</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.11">v6.11</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.10">v6.10</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.9">v6.9</a>
+	
+	<a class="dropdown-item" href="https://cpeditor.org/v6.8">v6.8</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../ru/docs/preferences/code-edit/">Русский</a>
+	
+	<a class="dropdown-item" href="../../../zh/docs/preferences/code-edit/">简体中文</a>
+	
+	<a class="dropdown-item" href="../../../zh_tw/docs/preferences/code-edit/">正體中文</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../offline-search-index.4979a89621fb00dddc61d018f8efde19.json"
+  data-offline-search-base-href="../../../"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+  </header>
+  <div class="container-fluid td-outer">
+    <div class="td-main">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="../../../offline-search-index.4979a89621fb00dddc61d018f8efde19.json"
+  data-offline-search-base-href="../../../"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="../../../ru/docs/preferences/code-edit/">Русский</a>
+	
+	<a class="dropdown-item" href="../../../zh/docs/preferences/code-edit/">简体中文</a>
+	
+	<a class="dropdown-item" href="../../../zh_tw/docs/preferences/code-edit/">正體中文</a>
+	
+</div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Installation</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallation">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/download-from-releases/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Download from Releases</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationdownload-from-releases">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/use-package-managers/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use package managers</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationuse-package-managers">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/build-from-source/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Build from source</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationbuild-from-source">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/installation/use-artifacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Use Artifacts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsinstallationuse-artifacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/setup/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Setup</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docssetup">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Preferences</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docspreferences">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/code-edit/" class="align-left pl-0 pr-2 collapsed active td-sidebar-link td-sidebar-link__section">Code Edit</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencescode-edit">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/language/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Language</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferenceslanguage">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/appearance/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Appearance</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesappearance">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/actions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Actions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesactions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/extensions/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Extensions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesextensions">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/file-path/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">File Path</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesfile-path">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/key-bindings/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Key Bindings</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferenceskey-bindings">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesadvanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/preferences/general/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">General</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docspreferencesgeneral">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tips</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docstips">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="../../../docs/faq/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">FAQ</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsfaq">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+        </div>
+        <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cpeditor/cpeditor.github.io/edit/v7.2/content//docs/preferences/code-edit" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cpeditor/cpeditor.github.io/issues/new?title=Code%20Edit" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/cpeditor/cpeditor/issues/new/choose" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tab-width">Tab Width</a></li>
+        <li><a href="#cursor-width">Cursor Width</a></li>
+        <li><a href="#auto-indent">Auto Indent</a></li>
+        <li><a href="#wrap-text">Wrap Text</a></li>
+        <li><a href="#auto-complete-parentheses">Auto Complete Parentheses</a></li>
+        <li><a href="#auto-remove-parentheses">Auto Remove Parentheses</a></li>
+        <li><a href="#jump-out-of-a-parenthesis-by-pressing-tab">Jump out of a parenthesis by pressing Tab</a></li>
+        <li><a href="#replace-tabs-by-spaces">Replace tabs by spaces</a></li>
+        <li><a href="#enable-vim-emulation">Enable Vim emulation</a></li>
+        <li><a href="#vim-configuration">Vim Configuration</a></li>
+        <li><a href="#vim-commands">Vim Commands</a></li>
+        <li><a href="#custom-vim-commands">Custom Vim commands</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          
+  
+
+          
+
+
+          <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="../../../docs/preferences/">Preferences</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="../../../docs/preferences/code-edit/">Code Edit</a>
+</li>
+
+	</ol>
+</nav	>
+
+          
+<div class="td-content">
+	<h1>Code Edit</h1>
+        
+	
+	<h3 id="tab-width">Tab Width</h3>
+<p>The width (number of characters) of an indent. It is used when displaying the tab characters. It is also used in 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#auto-indent"  >Auto Indent</a>
+ and 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#replace-tabs-by-spaces"  >Replace tabs by spaces</a>
+.</p>
+<h3 id="cursor-width">Cursor Width</h3>
+<p>The width of the text cursor in pixels.</p>
+<h3 id="auto-indent">Auto Indent</h3>
+<ol>
+<li>When you start a new line, the new line will have the same indent (i.e. white spaces at the beginning of the line) as the old line.</li>
+<li>If the old line ends with <code>{</code>, an extra indent (a tab character or 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#tab-width"  >Tab Width</a>
+ spaces, depending on whether 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#replace-tabs-by-spaces"  >Replace tabs by spaces</a>
+ is enabled) will be inserted at the beginning of the new line.</li>
+</ol>
+<h3 id="wrap-text">Wrap Text</h3>
+<p>If a line is too long to fit in a single line, the line will be separated into several lines.</p>
+<h3 id="auto-complete-parentheses">Auto Complete Parentheses</h3>
+<p>Automatically add the right parenthesis when you type the left one. For example, when you type <code>(</code>, <code>)</code> will be added.</p>
+<p>When the character next to the cursor is a right parenthesis and you type this parenthesis, instead of typing this parenthesis, the cursor will jump out of the parenthesis.</p>
+<p>You can choose the parentheses to auto-complete in the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/language/#parentheses"  >Parentheses</a>
+ settings.</p>
+<h3 id="auto-remove-parentheses">Auto Remove Parentheses</h3>
+<p>When you delete a left parenthesis, if a corresponding right parenthesis is next to it, the right parenthesis will also be deleted.</p>
+<p>You can choose the parentheses to auto-remove in the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/language/#parentheses"  >Parentheses</a>
+ settings.</p>
+<h3 id="jump-out-of-a-parenthesis-by-pressing-tab">Jump out of a parenthesis by pressing Tab</h3>
+<p>When the cursor is next to a right parenthesis, you can use the Tab key to jump out of it. If 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#auto-complete-parentheses"  >Auto Complete Parentheses</a>
+ is enabled, this is an alternative of typing the right parenthesis.</p>
+<p>You can choose the parentheses to jump out by Tab in the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../../../docs/preferences/language/#parentheses"  >Parentheses</a>
+ settings.</p>
+<h3 id="replace-tabs-by-spaces">Replace tabs by spaces</h3>
+<p>When you insert an indent, insert spaces instead of a tab character. The number of spaces is equal to the 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#tab-width"  >Tab Width</a>
+.</p>
+<p>Note that this won&rsquo;t replace the existing tab characters. In 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#auto-indent"  >Auto Indent</a>
+, the tab characters in the old line will remain in the new line (however, the new indent inserted after <code>{</code> will be spaces).</p>
+<h3 id="enable-vim-emulation">Enable Vim emulation</h3>
+<p>If enabled, the code editor will emulate vim behaviour. In vim emulation, control keys such as <kbd>Ctrl+N</kbd> will be handled by the vim layer instead of CP Editor&rsquo;s default key bindings. We provide some custom commands that can perform various tasks like opening new tabs, running test cases, etc. 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#custom-vim-commands"  >Here</a>
+ is a list of all supported custom vim commands.</p>
+<h3 id="vim-configuration">Vim Configuration</h3>
+<p>The configuration to use in vim mode. The list of all supported vim commands is 
+
+
+
+
+
+
+
+
+
+
+
+<a href="#vim-commands"  >here</a>
+.</p>
+<h3 id="vim-commands">Vim Commands</h3>
+<h4 id="supported-features">Supported Features</h4>
+<p>Most supported commands can be followed by a motion command or executed in visual mode, work with registers, or be prefixed with a number of repetitions.</p>
+<p>Here is a list of emulated commands with notes where behaviour can diverge from Vim.</p>
+<h4 id="modes">Modes</h4>
+<ul>
+<li>normal</li>
+<li>insert and replace</li>
+<li>visual</li>
+<li>command line (<code>:</code>)</li>
+</ul>
+<h4 id="normal-and-visual-modes">Normal and Visual Modes</h4>
+<ul>
+<li>basic movement &ndash; <code>h</code>/<code>j</code>/<code>k</code>/<code>l</code>, <code>&lt;C-U&gt;</code>, <code>&lt;C-D&gt;</code>, <code>&lt;C-F&gt;</code>, <code>&lt;C-B&gt;</code>, <code>gg</code>, <code>G</code>, <code>0</code>, <code>^</code>, <code>$</code> etc.</li>
+<li>word movement &ndash; <code>w</code>, <code>e</code>, <code>b</code> etc.</li>
+<li>&ldquo;inner/a&rdquo; movement &ndash; <code>ciw</code>, <code>3daw</code>, <code>ya{</code> etc.</li>
+<li><code>f</code>, <code>t</code> movement</li>
+<li><code>[</code>, <code>]</code> movement</li>
+<li><code>{</code>, <code>}</code> &ndash; paragraph movement</li>
+<li>delete/change/yank/paste with register</li>
+<li>undo/redo</li>
+<li><code>&lt;C-A&gt;</code>, <code>&lt;C-X&gt;</code> &ndash; increase or decrease number in decimal/octal/hexadecimal format (e.g. <code>128&lt;C-A&gt;</code> on or before &ldquo;0x0ff&rdquo; changes it to &ldquo;0x17f&rdquo;)</li>
+<li><code>.</code> &ndash; repeat last change</li>
+<li><code>/search</code>, <code>?search</code>, <code>*</code>, <code>#</code>, <code>n</code>, <code>N</code> &ndash; most of the regular expression syntax used in Vim is supported; <code>\&lt;</code> and <code>\&gt;</code> are equivalent to <code>\b</code></li>
+<li><code>@</code>, <code>q</code> (macro recording, execution) &ndash; special keys are saved as <code>&lt;S-Left&gt;</code></li>
+<li>marks</li>
+<li><code>gv</code> &ndash; last visual selection; can differ if text is edited around it</li>
+<li>indentation &ndash; <code>=</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code> etc. with movement, count and in visual mode</li>
+<li>&ldquo;to upper/lower&rdquo; &ndash; <code>~</code>, <code>gU</code>, <code>gu</code> etc.</li>
+<li><code>i</code>, <code>a</code>, <code>o</code>, <code>I</code>, <code>A</code>, <code>O</code> &ndash; enter insert mode</li>
+<li>scroll window &ndash; <code>zt</code>, <code>zb</code>, <code>zz</code> etc.</li>
+<li>wrap line movement &ndash; <code>gj</code>, <code>gk</code>, <code>g0</code>, <code>g^</code>, <code>g$</code></li>
+</ul>
+<h4 id="command-line-mode">Command Line Mode</h4>
+<ul>
+<li><code>:map</code>, <code>:unmap</code>, <code>:inoremap</code> etc.</li>
+<li><code>:source</code> &ndash; very basic line-by-line sourcing of vimrc files</li>
+<li><code>:substitute</code> &ndash; substitute expression in range</li>
+<li><code>:'&lt;,'&gt;!cmd</code> &ndash; filter through an external command (e.g. sort lines in file with <code>:%!sort</code>)</li>
+<li><code>:.!cmd</code> &ndash; insert standard output of an external command</li>
+<li><code>:read</code></li>
+<li><code>:yank</code>, <code>:delete</code>, <code>:change</code></li>
+<li><code>:move</code>, <code>:join</code></li>
+<li><code>:20</code> &ndash; go to address</li>
+<li><code>:history</code></li>
+<li><code>:registers</code>, <code>:display</code></li>
+<li><code>:nohlsearch</code></li>
+<li><code>:undo</code>, <code>:redo</code></li>
+<li><code>:normal</code></li>
+<li><code>:&lt;</code>, <code>:&gt;</code></li>
+</ul>
+<h4 id="insert-mode">Insert Mode</h4>
+<ul>
+<li><code>&lt;C-O&gt;</code> &ndash; execute single command and return to insert mode</li>
+<li><code>&lt;C-V&gt;</code> &ndash; insert raw character</li>
+<li><code>&lt;insert&gt;</code> &ndash; toggle replace mode</li>
+</ul>
+<h4 id="options-set-">Options (:set &hellip;)</h4>
+<ul>
+<li><code>autoindent</code></li>
+<li><code>clipboard</code></li>
+<li><code>backspace</code></li>
+<li><code>expandtab</code></li>
+<li><code>hlsearch</code></li>
+<li><code>ignorecase</code></li>
+<li><code>incsearch</code></li>
+<li><code>indent</code></li>
+<li><code>iskeyword</code></li>
+<li><code>scrolloff</code></li>
+<li><code>shiftwidth</code></li>
+<li><code>showcmd</code></li>
+<li><code>smartcase</code></li>
+<li><code>smartindent</code></li>
+<li><code>smarttab</code></li>
+<li><code>startofline</code></li>
+<li><code>tabstop</code></li>
+<li><code>tildeop</code></li>
+<li><code>wrapscan</code></li>
+</ul>
+<h4 id="example-vimrc">Example Vimrc</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-vimrc" data-lang="vimrc"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; highlight matched</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">hlsearch</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; case insensitive search</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">ignorecase</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">smartcase</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; search while typing</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">incsearch</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; wrap-around when searching</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">wrapscan</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; show pressed keys in lower right corner</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">showcmd</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; tab -&gt; spaces</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">expandtab</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">tabstop</span><span style="color:#000;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">shiftwidth</span><span style="color:#000;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; keep a 5 line buffer for the cursor from top/bottom of window</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">scrolloff</span><span style="color:#000;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; X11 clipboard</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">clipboard</span><span style="color:#000;font-weight:bold">=</span><span style="color:#000">unnamed</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; use ~ with movement</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">set</span> <span style="color:#000">tildeop</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; mappings</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">nnoremap</span> ; :
+</span></span><span style="display:flex;"><span><span style="color:#000">inoremap</span> <span style="color:#000">jj</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Esc</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; clear highlighted search term on space</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">noremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">silent</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Space</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">nohls</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; reselect visual block after indent</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">gv</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&gt;</span><span style="color:#000">gv</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">&#34; MOVE LINE/BLOCK</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">nnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">J</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span><span style="color:#000;font-weight:bold">+&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">nnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">K</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span><span style="color:#0000cf;font-weight:bold">-2</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">inoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">J</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Esc</span><span style="color:#000;font-weight:bold">&gt;</span>:<span style="color:#000">m</span><span style="color:#000;font-weight:bold">+&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span><span style="color:#000">gi</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">inoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">K</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">Esc</span><span style="color:#000;font-weight:bold">&gt;</span>:<span style="color:#000">m</span><span style="color:#0000cf;font-weight:bold">-2</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;==</span><span style="color:#000">gi</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">J</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span>&#39;<span style="color:#000;font-weight:bold">&gt;+&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;</span><span style="color:#000">gv</span><span style="color:#000;font-weight:bold">=</span><span style="color:#000">gv</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">vnoremap</span> <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">C</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">S</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">K</span><span style="color:#000;font-weight:bold">&gt;</span> :<span style="color:#000">m</span><span style="color:#0000cf;font-weight:bold">-2</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">CR</span><span style="color:#000;font-weight:bold">&gt;</span><span style="color:#000">gv</span><span style="color:#000;font-weight:bold">=</span><span style="color:#000">gv</span>
+</span></span></code></pre></div><h3 id="custom-vim-commands">Custom Vim commands</h3>
+<p>In this section we present a list of all custom vim commands supported in CP Editor.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Command</th>
+          <th style="text-align: center">Shorthand</th>
+          <th style="text-align: center">Description</th>
+          <th style="text-align: center">Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>new</code></td>
+          <td style="text-align: center"><code>new</code></td>
+          <td style="text-align: center">Opens a new tab. If no language is specified, the default editor language is used.</td>
+          <td style="text-align: center"><code>new cpp</code> or <code>new</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>open</code></td>
+          <td style="text-align: center"><code>opn</code></td>
+          <td style="text-align: center">Opens a file. Only C++/Java/Python files are supported. Without arguments, opens the file dialog.</td>
+          <td style="text-align: center"><code>open</code> or <code>opn ~/cf/a.cpp</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>compile</code></td>
+          <td style="text-align: center"><code>cmp</code></td>
+          <td style="text-align: center">Compiles the code. Same as clicking the &ldquo;Compile&rdquo; button.</td>
+          <td style="text-align: center"><code>compile</code> or <code>cmp</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>crun</code></td>
+          <td style="text-align: center"><code>crn</code></td>
+          <td style="text-align: center">Compiles and runs. Same as clicking the &ldquo;Compile and Run&rdquo; button.</td>
+          <td style="text-align: center"><code>crun</code> or <code>crn</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>run</code></td>
+          <td style="text-align: center"><code>run</code></td>
+          <td style="text-align: center">Runs test cases. Without arguments, runs all checked test cases. With a number, runs that specific test case.</td>
+          <td style="text-align: center"><code>run</code> or <code>run 2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>drun</code></td>
+          <td style="text-align: center"><code>drn</code></td>
+          <td style="text-align: center">Detached run. Same as clicking &ldquo;Detached Run&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>drun</code> or <code>drn</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>killall</code></td>
+          <td style="text-align: center"><code>kap</code></td>
+          <td style="text-align: center">Kills all running processes. Same as clicking &ldquo;Kill Processes&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>killall</code> or <code>kap</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>format</code></td>
+          <td style="text-align: center"><code>fmt</code></td>
+          <td style="text-align: center">Formats the code. Same as clicking &ldquo;Format Code&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>format</code> or <code>fmt</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>snippet</code></td>
+          <td style="text-align: center"><code>snp</code></td>
+          <td style="text-align: center">Opens the snippet dialog. Same as clicking &ldquo;Use Snippets&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>snippet</code> or <code>snp</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>vmode</code></td>
+          <td style="text-align: center"><code>vmd</code></td>
+          <td style="text-align: center">Changes the view mode. Supports &ldquo;edit&rdquo; and &ldquo;split&rdquo; modes.</td>
+          <td style="text-align: center"><code>vmode edit</code> or <code>vmd split</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>preference</code></td>
+          <td style="text-align: center"><code>prf</code></td>
+          <td style="text-align: center">Opens the preferences window.</td>
+          <td style="text-align: center"><code>preference</code> or <code>prf</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>chlang</code></td>
+          <td style="text-align: center"><code>chl</code></td>
+          <td style="text-align: center">Changes the language of the current tab.</td>
+          <td style="text-align: center"><code>chlang cpp</code> or <code>chl java</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>clear</code></td>
+          <td style="text-align: center"><code>clr</code></td>
+          <td style="text-align: center">Clears the message logger.</td>
+          <td style="text-align: center"><code>clear</code> or <code>clr</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>exit</code></td>
+          <td style="text-align: center"><code>ext</code></td>
+          <td style="text-align: center">Exits CP Editor. Same as clicking &ldquo;Quit&rdquo; in the menu.</td>
+          <td style="text-align: center"><code>exit</code> or <code>ext</code></td>
+      </tr>
+  </tbody>
+</table>
+
+        <div class="section-index">
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 5, 2026: <a  href="https://github.com/cpeditor/cpeditor.github.io/commit/a146eda9bc5e4bedaf0660866317c67cd6efce2b">docs: Add documentation for vim mode (#324) (a146eda9)</a>
+</div>
+</div>
+
+        </main>
+      </div>
+    </div>
+    
+<footer class="bg-dark py-4 row d-print-none" style="min-height: unset;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Telegram" aria-label="Telegram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://t.me/cpeditor">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="QQ Group" aria-label="QQ Group">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://jq.qq.com/?_wv=1027&amp;k=50eq8yF">
+      <i class="fab fa-qq"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/cpeditor/cpeditor/discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2026 The CP Editor team</small>
+        
+        <br>
+        <small class="text-white">Except where otherwise noted, this website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>.</small>
+	
+		<p class="mt-2 mb-0"><a href="../../../about/">About CP Editor</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../../js/main.min.27af2a485b4359ac7a0cd4cb4a2d165c56770c59ef3a9330e8f38fbe3bdc2f97.js" integrity="sha256-J68qSFtDWax6DNTLSi0WXFZ3DFnvOpMw6POPvjvcL5c=" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
